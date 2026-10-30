@@ -1,0 +1,12 @@
+services:
+  notebook:
+    build: .
+    ports:
+      - "127.0.0.1:3001:3001"
+    environment:
+      PUBLIC_ORIGIN: ${PUBLIC_ORIGIN:-http://localhost:3001}
+    volumes:
+      - notebook-data:/app/data
+    restart: unless-stopped
+volumes:
+  notebook-data:

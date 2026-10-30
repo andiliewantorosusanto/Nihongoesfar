@@ -1,0 +1,44 @@
+{
+  "name": "nihongoesfar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A minimal Japanese reference and practice notebook. White pages, readable Japanese, and direct access to every exercise. No accounts, studied-status tracking, review schedules, streaks, or saved answer history.",
+  "homepage": "https://github.com/andiliewantorosusanto/nihongoesfar#readme",
+  "bugs": {
+    "url": "https://github.com/andiliewantorosusanto/nihongoesfar/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andiliewantorosusanto/nihongoesfar.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "tsc --noEmit && vite build",
+    "start": "node server/index.ts",
+    "test": "node --test tests/*.test.ts",
+    "check": "tsc --noEmit",
+    "update:compounds": "python3 scripts/update-compounds.py"
+  },
+  "dependencies": {
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "lucide-react": "^1.31.0"
+  },
+  "devDependencies": {
+    "vite": "8.0.13",
+    "typescript": "5.9.3",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}

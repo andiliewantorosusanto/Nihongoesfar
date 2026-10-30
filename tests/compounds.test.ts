@@ -1,0 +1,35 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {entries,mergeEntry} from '../app/lib/content.ts';
+import {makePractice,answerFor,grade,promptFor} from '../app/lib/learning.ts';
+import strokes from '../app/lib/strokes.json' with {type:'json'};
+test('every starter kanji has varied, real compounds rather than one repeated example',()=>{
+ const kanji=entries.filter(e=>e.kind==='kanji');
+ assert.equal(kanji.length,100);
+ assert.ok(kanji.reduce((n,e)=>n+(e.compounds?.length||0),0)>1500);
+ for(const e of kanji){assert.ok(e.compounds!.length>=6,e.japanese);assert.equal(new Set(e.compounds!.map(c=>c.japanese+':'+c.reading)).size,e.compounds!.length,e.japanese);for(const c of e.compounds!){assert.ok(c.japanese.includes(e.japanese));assert.ok((c.japanese.match(/[一-龯]/g)||[]).length>=2);assert.ok(c.reading);assert.ok(c.meaning)}}
+ const fire=kanji.find(e=>e.japanese==='火')!;
+ for(const [word,reading] of [['火山','かざん'],['火事','かじ'],['花火','はなび'],['消火','しょうか'],['火災','かさい']])assert.ok(fire.compounds?.some(c=>c.japanese===word&&c.reading===reading),word);
+});
+test('compound reading questions display and grade the actual chosen word',()=>{
+ const fire=entries.find(e=>e.japanese==='火'&&e.kind==='kanji')!;
+ const q=makePractice(entries,Object.keys(strokes),{entryId:fire.id,word:'火山'});
+ assert.equal(q.length,1);assert.equal(q[0].skill,'reading');assert.equal(q[0].word,'火山');
+ assert.equal(promptFor(fire,'reading','火山'),'How do you read 火山?');
+ assert.deepEqual(answerFor(fire,'reading','火山'),['かざん']);assert.ok(grade(fire,'reading','カザン','火山'));assert.equal(grade(fire,'reading','かようび','火山'),false);
+ const mixed=makePractice(entries,Object.keys(strokes),{entryId:fire.id});assert.ok(mixed.some(q=>q.skill==='writing'));assert.ok(mixed.some(q=>q.skill==='meaning'));assert.ok(mixed.some(q=>q.word));
+});
+test('new dictionary compounds reach entries with existing personal note edits',()=>{
+ const fire=entries.find(e=>e.japanese==='火'&&e.kind==='kanji')!;
+ const custom={...fire,note:'My own note.',compounds:[{japanese:'火曜日',reading:'かようび',meaning:'Tuesday'}]};
+ const merged=mergeEntry(fire,custom);assert.equal(merged.note,'My own note.');assert.ok(merged.compounds?.some(c=>c.japanese==='火山'));assert.ok(merged.compounds!.length>=20);
+});
+test('dictionary selection keeps irregular readings and separates same-spelling senses',()=>{
+ const fire=entries.find(e=>e.kind==='kanji'&&e.japanese==='火')!;
+ assert.ok(fire.compounds?.some(c=>c.japanese==='火傷'&&c.reading==='やけど'));
+ assert.ok(fire.compounds?.some(c=>c.japanese==='火口'&&c.reading==='かこう'&&c.meaning.includes('crater')));
+ const person=entries.find(e=>e.kind==='kanji'&&e.japanese==='人')!;assert.ok(person.compounds?.some(c=>c.japanese==='大人'&&c.reading==='おとな'));
+ const one=entries.find(e=>e.kind==='kanji'&&e.japanese==='一')!;
+ assert.ok(one.compounds?.some(c=>c.japanese==='一日'&&c.reading==='いちにち'&&c.meaning==='one day'));
+ assert.ok(one.compounds?.some(c=>c.japanese==='一日'&&c.reading==='ついたち'&&c.meaning.includes('first day of the month')));
+});
