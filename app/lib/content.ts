@@ -1,3 +1,5 @@
+import {makeStudyEntries,type ReferenceTable} from './study-topics.ts';
+import {grammarCourse,type GrammarLesson,type GuidedExercise} from './grammar-course.ts';
 import {sentenceAlignments,type TranslationToken} from './sentence-support.ts';
 import compoundData from './compounds.json' with {type:'json'};
 export type Entry = {
@@ -6,6 +8,8 @@ export type Entry = {
   level: string; topic: string; tags: string[]; note: string;
   examples: { japanese: string; reading: string; meaning: string; tokens?: { text: string; role: string; wordClass: string; reading?: string }[]; translationTokens?: TranslationToken[] }[];
   on?: string; kun?: string; compounds?: { japanese: string; reading: string; meaning: string }[];
+  references?:ReferenceTable[];
+  lesson?:GrammarLesson; exercises?:GuidedExercise[];
   exercise?: { prompt: string; answers: string[]; explanation: string; tiles?: string[] };
 };
 const rows = (text: string) => text.trim().split('\n').map(line => line.split('|'));
@@ -702,7 +706,9 @@ for (const entry of adjectives) {
  if (entry.japanese==='いい') entry.exercise!.answers.push('良くないです','良くありません');
  if (entry.japanese==='きれい') entry.exercise!.answers.push('綺麗じゃありません','綺麗ではありません','綺麗じゃないです');
 }
-export const entries:Entry[]=[...kana,...grammarLessons,...kanji,...vocabulary,...numbers,...adjectives];
+for(const entry of grammarLessons)Object.assign(entry,grammarCourse[entry.id]);
+const baseEntries:Entry[]=[...kana,...grammarLessons,...kanji,...vocabulary,...numbers,...adjectives];
+export const entries:Entry[]=[...baseEntries,...makeStudyEntries(baseEntries)];
 
 // Keep personal notes while letting newer dictionary coverage reach previously edited entries.
 export function mergeEntry(base:Entry,custom?:Entry):Entry{

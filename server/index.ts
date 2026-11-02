@@ -2,6 +2,8 @@ import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
 import { GET, POST } from './routes.ts';
+import { initializeDatabase, db } from './database.ts';
+await initializeDatabase();
 const host=process.env.HOST||'127.0.0.1',port=Number(process.env.PORT||3001),root=resolve('dist');
 const types:Record<string,string>={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json','.svg':'image/svg+xml','.woff2':'font/woff2','.png':'image/png'};
 const server=createServer(async(req,res)=>{
@@ -28,4 +30,4 @@ const server=createServer(async(req,res)=>{
  }catch(e){console.error(e);res.writeHead(500,{'Content-Type':'text/plain'});res.end('The notebook could not complete this request.')}
 });
 server.listen(port,host,()=>console.log(`Nihongoesfar ready at http://${host}:${port}`));
-for(const signal of ['SIGINT','SIGTERM'] as const)process.on(signal,()=>server.close(()=>process.exit(0)));
+for(const signal of ['SIGINT','SIGTERM'] as const)process.on(signal,()=>server.close(async()=>{await db.end();process.exit(0)}));
