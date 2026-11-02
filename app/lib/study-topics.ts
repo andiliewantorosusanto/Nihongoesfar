@@ -85,6 +85,25 @@ export function makeStudyEntries(existing:Entry[]):Entry[]{
  push(guide('ask-job','grammar','Ask and answer: your job','Ask お仕事は何ですか (おしごとはなんですか). Answer with your occupation + です. A student can answer 学生です. These are example answers, not information about the visitor.',jobSamples,[table('Useful answers',['Japanese','Meaning'],[[c('会社員','かいしゃいん'),'company employee'],[c('学生','がくせい'),'student'],[c('教師','きょうし'),'teacher (occupation)'],[c('医者','いしゃ'),'doctor']])],0));
  const hobbySamples=[s('ご趣味~ごしゅみ~topic|は~は~particle|何です~なんです~predicate|か~か~particle','What is ~predicate|your hobby~topic|?~particle'),s('趣味~しゅみ~topic|は~は~particle|読書です~どくしょです~predicate','My hobby~topic| is reading.~predicate'),s('趣味~しゅみ~topic|は~は~particle|料理です~りょうりです~predicate','My hobby~topic| is cooking.~predicate'),s('趣味~しゅみ~topic|は~は~particle|音楽です~おんがくです~predicate','My hobby~topic| is music.~predicate')];
  push(guide('ask-hobby','grammar','Ask and answer: your hobby','Ask 趣味は何ですか or the polite ご趣味は何ですか (ごしゅみはなんですか). Answer 趣味は～です. Use a noun such as 読書 (reading) or 料理 (cooking).',hobbySamples,[table('Hobbies',['Japanese','Meaning'],[[c('読書','どくしょ'),'reading'],[c('料理','りょうり'),'cooking'],[c('音楽','おんがく'),'music'],[c('旅行','りょこう'),'travel']])]));
+ const routineRows=[
+ ['Wake up','何時に起きますか','なんじにおきますか','六時に起きます','ろくじにおきます','What time do you wake up? → I wake up at six.'],
+ ['Go to school','何時に学校に行きますか','なんじにがっこうにいきますか','八時に学校に行きます','はちじにがっこうにいきます','What time do you go to school? → I go at eight.'],
+ ['Go to work','何時に仕事に行きますか','なんじにしごとにいきますか','九時に仕事に行きます','くじにしごとにいきます','What time do you go to work? → I go at nine.'],
+ ['Travel to school','学校までどのくらいかかりますか','がっこうまでどのくらいかかりますか','三十分かかります','さんじゅっぷんかかります','How long does it take to get to school? → It takes thirty minutes.'],
+ ['Travel to work','職場までどのくらいかかりますか','しょくばまでどのくらいかかりますか','一時間かかります','いちじかんかかります','How long does it take to get to work? → It takes an hour.'],
+ ['Time at school','毎日何時間学校にいますか','まいにちなんじかんがっこうにいますか','六時間います','ろくじかんいます','How many hours are you at school each day? → Six hours.'],
+ ['Hours of work','毎日何時間働きますか','まいにちなんじかんはたらきますか','八時間働きます','はちじかんはたらきます','How many hours do you work each day? → Eight hours.'],
+ ['Food','昨日、何を食べましたか','きのう、なにをたべましたか','カレーを食べました','かれーをたべました','What did you eat yesterday? → I ate curry.'],
+ ['Cooking','昨日、何を作りましたか','きのう、なにをつくりましたか','晩ご飯にカレーを作りました','ばんごはんにかれーをつくりました','What did you make yesterday? → I made curry for dinner.'],
+ ['Activities','昨日、何をしましたか','きのう、なにをしましたか','日本語を勉強しました','にほんごをべんきょうしました','What did you do yesterday? → I studied Japanese.'],
+ ['Bedtime','何時に寝ますか','なんじにねますか','十一時に寝ます','じゅういちじにねます','What time do you go to bed? → I go to bed at eleven.']
+ ];
+ const routineSamples=[
+ s('何時~なんじ~modifier|に~に~particle|起きます~おきます~predicate|か~か~particle','What time ~modifier|do you wake up~predicate|?~particle'),
+ s('六時~ろくじ~modifier|に~に~particle|起きます~おきます~predicate','At six ~modifier|I wake up.~predicate'),
+ s('十一時~じゅういちじ~modifier|に~に~particle|寝ます~ねます~predicate','At eleven ~modifier|I go to bed.~predicate'),
+ s('八時~はちじ~modifier|に~に~particle|起きます~おきます~predicate','At eight ~modifier|I wake up.~predicate')];
+ push(guide('daily-routine','grammar','Daily routine: ask and answer','何時に asks at what time; 何時間 asks how many hours. Use どのくらいかかりますか for travel time. Answer clock times with に, but durations without に. Use ます for routines and ました for past activities. Replace these example answers with your own.',routineSamples,[table('Daily routine',['Topic','Ask','Example answer','Meaning'],routineRows.map(([label,q,qr,a,ar,en])=>[label,c(q+'。',qr+'。'),c(a+'。',ar+'。'),en]))]));
  const ageSamples=[s('何歳です~なんさいです~predicate|か~か~particle','How old are you~predicate|?~particle'),s('二十歳です~はたちです~predicate','I ~implicit|am twenty years old.~predicate'),s('二十一歳です~にじゅういっさいです~predicate','I ~implicit|am twenty-one years old.~predicate'),s('おいくつです~おいくつです~predicate|か~か~particle','How old are you (more politely)~predicate|?~particle')];
  const ages=[['1','一歳','いっさい'],['2','二歳','にさい'],['3','三歳','さんさい'],['4','四歳','よんさい'],['5','五歳','ごさい'],['6','六歳','ろくさい'],['7','七歳','ななさい'],['8','八歳','はっさい'],['9','九歳','きゅうさい'],['10','十歳','じゅっさい'],['20','二十歳','はたち'],['21','二十一歳','にじゅういっさい'],['30','三十歳','さんじゅっさい'],['40','四十歳','よんじゅっさい']];
  push(guide('ages','numbers','Age — 歳 and asking how old','歳 is read さい (sai). Watch 一歳 (いっさい), 八歳 (はっさい), 十歳 (じゅっさい / じっさい), and 二十歳 (はたち). For 21, return to number + さい: にじゅういっさい. Do not add さい after はたち. Ask 何歳ですか; おいくつですか is more polite. Age can be personal, so ask only when appropriate.',ageSamples,[table('Age readings',['Age','Japanese and reading'],ages.map(([n,jp,r])=>[n,c(jp,r)]))],0));

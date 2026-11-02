@@ -5,9 +5,9 @@ import {entries} from '../app/lib/content.ts';
 import {makePractice,answerFor,grade,withAlternate,normalize,isReadingQuestion} from '../app/lib/learning.ts';
 import {rubyParts,proseReadings} from '../app/lib/sentence-support.ts';
 const lessons=entries.filter(e=>e.lesson).sort((a,b)=>a.lesson!.order-b.lesson!.order);
-test('all 25 grammar lessons have an ordered path, meaningful examples and six fully readable exercises',()=>{
- assert.equal(lessons.length,25);assert.deepEqual(lessons.map(e=>e.lesson!.order),Array.from({length:25},(_,i)=>i+1));
- assert.deepEqual([...new Set(lessons.map(e=>e.lesson!.group))],['Sentence basics','Polite verbs and particles','Existence and location','Negatives and past','Descriptions and preferences','Requests and ongoing actions']);
+test('all 30 grammar lessons have an ordered path, meaningful examples and six fully readable exercises',()=>{
+ assert.equal(lessons.length,30);assert.deepEqual(lessons.map(e=>e.lesson!.order),Array.from({length:30},(_,i)=>i+1));
+ assert.deepEqual([...new Set(lessons.map(e=>e.lesson!.group))],['Sentence basics','Polite verbs and particles','Existence and location','Negatives and past','Descriptions and preferences','Requests and ongoing actions','Connecting descriptions and actions','Passing places']);
  for(const e of lessons){
   const l=e.lesson!;assert.ok(l.goal&&l.recap&&l.comparison,e.id);
   for(const id of l.prerequisites)assert.ok(lessons.some(p=>p.id===id&&p.lesson!.order<l.order),e.id+': prerequisite '+id);

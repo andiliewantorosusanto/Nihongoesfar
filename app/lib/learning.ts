@@ -10,13 +10,18 @@ export function skillsFor(e:Entry,hasStrokes:boolean):Skill[]{
  if(e.kind==='adjectives' || e.kind==='numbers')return e.exercise?['reading','meaning','grammar']:['reading','meaning'];
  return ['reading','meaning'];
 }
+export function entryInBook(e:Entry,book:string){
+ if(book==='time')return e.kind==='numbers'&&['Clock time','Minutes'].includes(e.topic);
+ if(book==='numbers')return e.kind==='numbers'&&!['Clock time','Minutes','Dates','Months','Weekdays','Durations'].includes(e.topic)&&!['study-weekdays','study-months','study-dates','study-relative-time','study-durations','study-every','study-ages'].includes(e.id)&&!e.id.startsWith('study-age-');
+ return book==='notes'?e.id.startsWith('custom-'):e.kind===book;
+}
 export function makePractice(entries:Entry[],strokeIds:string[],options:{kind?:string;entryId?:string;skill?:Skill;word?:string;mode?:'guided'|'mixed'}={},random=Math.random):Question[]{
  if(options.mode==='guided'&&options.entryId){
   const e=entries.find(e=>e.id===options.entryId);
   if(e?.exercises?.length)return e.exercises.filter(x=>!x.alternate).map(x=>({id:e.id+':'+x.id,entryId:e.id,skill:'grammar',exerciseId:x.id}));
  }
  const questions:Question[]=[];
- for(const e of entries.filter(e=>(!options.kind||(options.kind==='notes'?e.id.startsWith('custom-'):e.kind===options.kind))&&(!options.entryId||e.id===options.entryId))){
+ for(const e of entries.filter(e=>(!options.kind||entryInBook(e,options.kind))&&(!options.entryId||e.id===options.entryId))){
   for(const skill of skillsFor(e,strokeIds.includes(e.japanese)).filter(s=>!options.skill||s===options.skill)){
    if(skill==='grammar'&&e.exercises?.length){
     for(const exercise of e.exercises.filter(x=>!x.alternate))questions.push({id:e.id+':'+exercise.id,entryId:e.id,skill,exerciseId:exercise.id});

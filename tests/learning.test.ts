@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {entries} from '../app/lib/content.ts';
-import {makePractice,grade,normalize,skillsFor} from '../app/lib/learning.ts';
+import {makePractice,grade,normalize,skillsFor,entryInBook} from '../app/lib/learning.ts';
 import {checkStroke,type Point} from '../app/lib/stroke-check.ts';
 import strokes from '../app/lib/strokes.json' with {type:'json'};
 test('starter library is complete, linked, and has distinct grammar concepts',()=>{
@@ -23,4 +23,19 @@ test('practice starts immediately without study selections and supports book, sk
 test('Japanese answer normalization supports kana, IME width, spacing, punctuation',()=>{assert.equal(normalize('ワタシ は 学生です。'),normalize('わたしは学生です'));assert.equal(normalize('ﾆﾎﾝ'),normalize('にほん'));const e=entries.find(e=>e.kind==='grammar')!;assert.ok(grade(e,'grammar',e.exercise!.answers[0]));assert.equal(grade(e,'grammar','incorrect'),false)});
 test('guided strokes accept approximate shapes and reject reversed, displaced, or missing strokes',()=>{
  const line=Array.from({length:30},(_,i)=>({x:10+i*2,y:40+i*.2}));assert.ok(checkStroke(line,line));assert.ok(checkStroke(line.map(p=>({x:p.x+3,y:p.y-2})),line));assert.equal(checkStroke([...line].reverse(),line),false);assert.equal(checkStroke(line.map(p=>({x:p.x,y:p.y+35})),line),false);assert.equal(checkStroke([{x:10,y:40}],line),false);
+});
+
+test('numbers and time books keep their entries and practice separate',()=>{
+ const time=entries.filter(e=>entryInBook(e,'time'));
+ const numbers=entries.filter(e=>entryInBook(e,'numbers'));
+ assert.ok(time.some(e=>e.topic==='Clock time'));
+ assert.ok(time.some(e=>e.topic==='Minutes'));
+ assert.ok(numbers.some(e=>e.japanese==='二十'));
+ assert.ok(numbers.some(e=>e.japanese==='百'));
+ assert.ok(!numbers.some(e=>time.includes(e)||['Dates','Months','Weekdays','Durations'].includes(e.topic)));
+ for(const kind of ['numbers','time']){
+  const queue=makePractice(entries,[],{kind});
+  assert.ok(queue.length);
+  for(const q of queue)assert.ok(entryInBook(entries.find(e=>e.id===q.entryId)!,kind));
+ }
 });

@@ -77,7 +77,7 @@ export async function POST(req:Request,{params}:{params:Promise<{resource:string
  const state=await load();
  if(resource==='practice'){
   if(b.mode!==undefined&&!['guided','mixed'].includes(b.mode)||b.mode==='guided'&&!b.entryId)return json({error:'Choose a lesson for guided practice.'},400);
-  if(b.kind!==undefined&&![...kinds,'notes'].includes(b.kind)||b.entryId!==undefined&&!state.entries.some(e=>e.id===b.entryId)||b.skill!==undefined&&!['recognition','reading','meaning','writing','grammar'].includes(b.skill))return json({error:'Choose a valid book or practice type.'},400);
+  if(b.kind!==undefined&&![...kinds,'notes','time'].includes(b.kind)||b.entryId!==undefined&&!state.entries.some(e=>e.id===b.entryId)||b.skill!==undefined&&!['recognition','reading','meaning','writing','grammar'].includes(b.skill))return json({error:'Choose a valid book or practice type.'},400);
   if(b.word!==undefined&&(!text(b.word,80)||!state.entries.find(e=>e.id===b.entryId)?.compounds?.some(c=>c.japanese===b.word)))return json({error:'Choose a compound from this entry.'},400);
   return json({queue:makePractice(state.entries,state.strokeIds,{kind:b.kind,entryId:b.entryId,skill:b.skill,word:b.word,mode:b.mode})});
  }

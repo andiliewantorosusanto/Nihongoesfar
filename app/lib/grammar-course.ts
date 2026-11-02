@@ -161,7 +161,37 @@ const authored=`
 今 名前 を 書いています|いま なまえ を かいています|I am writing my name now.
 今 パン を 食べています|いま ぱん を たべています|I am eating bread now.
 !今 本 を 読みますいます|いま ほん を よみますいます|I read a book yesterday.
-`;
+@adjective-kute|Connecting descriptions and actions|Join two descriptions with an い-adjective.|i-adjective|Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final description carries tense and politeness.|Use くて on the first い-adjective.|3
+この 本 は 面白くて 安い です|この ほん は おもしろくて やすい です|This book is interesting and inexpensive.
+この 車 は 大きくて 新しい です|この くるま は おおきくて あたらしい です|This car is big and new.
+この 部屋 は 明るくて 広い です|この へや は あかるくて ひろい です|This room is bright and spacious.
+この かばん は 軽くて 便利 です|この かばん は かるくて べんり です|This bag is light and convenient.
+!この 本 は 面白いで 安い です|この ほん は おもしろいで やすい です|This book is interesting but expensive.
+@description-de|Connecting descriptions and actions|Join descriptions using a な-adjective or noun.|na-adjective,adjective-kute|Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending in い. This connecting で differs from the place or means particle で.|Connect the first description with で.|4
+この 町 は 静か で 便利 です|この まち は しずか で べんり です|This town is quiet and convenient.
+この 部屋 は きれい で 静か です|この へや は きれい で しずか です|This room is clean and quiet.
+田中さん は 先生 で 親切 です|たなかさん は せんせい で しんせつ です|Tanaka is a teacher and kind.
+母 は 医者 で 元気 です|はは は いしゃ で げんき です|My mother is a doctor and healthy.
+!この 町 は 静かくて 便利 です|この まち は しずかくて べんり です|This town is quiet but inconvenient.
+@te-sequence|Connecting descriptions and actions|Connect two actions in sequence.|te-request|Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to every verb. The final verb sets tense and politeness.|Put the first action in its て-form.|2
+パン を 食べて 学校 に 行きます|ぱん を たべて がっこう に いきます|I eat bread and then go to school.
+本 を 読んで 寝ます|ほん を よんで ねます|I read a book and then go to bed.
+家 に 帰って 勉強します|いえ に かえって べんきょうします|I return home and then study.
+水 を 飲んで 休みます|みず を のんで やすみます|I drink water and then rest.
+!パン を 食べます 学校 に 行きます|ぱん を たべます がっこう に いきます|I eat bread and then return home.
+@pass-by|Passing places|Say you pass by or through a place.|object,destination|Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ: えきのまえをとおります. を marks the route here, rather than a direct object.|Mark the route with を.|3
+駅 の 前 を 通ります|えき の まえ を とおります|I pass in front of the station.
+学校 の 前 を 通ります|がっこう の まえ を とおります|I pass in front of the school.
+公園 を 通って 帰ります|こうえん を とおって かえります|I go home through the park.
+この 道 を 通ります|この みち を とおります|I take this road.
+!駅 の 前 で 通ります|えき の まえ で とおります|I stop at the station.
+@drop-by|Passing places|Say you stop by a place on the way.|destination,te-sequence|Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means passing along or by; よる means stopping there.|Use に for the place you stop at.|1
+店 に 寄ります|みせ に よります|I stop by the shop.
+銀行 に 寄って 帰ります|ぎんこう に よって かえります|I stop by the bank and then go home.
+友達 の 家 に 寄ります|ともだち の いえ に よります|I drop by my friend's house.
+コンビニ に 寄ります|こんびに に よります|I stop by the convenience store.
+!店 を 寄ります|みせ を よります|I pass by the shop.
+`; 
 
 const vocabulary=Object.fromEntries("私:I / me|学生:student|田中さん:Tanaka (a person's name)|先生:teacher|本:book|時計:clock / watch|学校:school|車:car|母:my mother|かばん:bag|毎日:every day|勉強し:study (verb stem)|朝:morning|働き:work (verb stem)|歩き:walk (verb stem)|夜:night|水:water|飲みます:drink|読みます:read|食べます:eat|お茶:tea|パン:bread|図書館:library|勉強します:study|家:home / house|行きます:go|帰ります:return|日本:Japan|七時:seven o'clock|起きます:get up|八時:eight o'clock|九時:nine o'clock|六時:six o'clock|机:desk|猫:cat|犬:dog|部屋:room|昨日:yesterday|休み:day off / rest|雨:rain|飲みません:do not drink|読みません:do not read|食べません:do not eat|今日:today|働きません:do not work|読みました:read (past)|飲みました:drank|食べました:ate|行きました:went|面白い:interesting|高い:expensive / high|大きい:big|新しい:new|静か:quiet|便利:convenient|きれい:clean / beautiful|町:town|好きです:like|ほしいです:want a thing|飲みたいです:want to drink|読みたいです:want to read|食べたいです:want to eat|行きたいです:want to go|読んで:read (て-form)|飲んで:drink (て-form)|名前:name|書いて:write (て-form)|食べて:eat (て-form)|今:now|読んでいます:am reading|飲んでいます:am drinking|書いています:am writing|食べています:am eating".split('|').map(row=>row.split(':')));
 function sentence(row:string,id:string,index:number,wrong=false){

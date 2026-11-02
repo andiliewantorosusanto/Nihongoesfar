@@ -8,9 +8,10 @@ const layouts:Record<string,string|string[]>={
  masu:'mvv',object:'opv',de:['mpv','mpopv','mpopv','mpopv'],destination:'mpv','time-ni':'mpv',
  arimasu:'spv',imasu:'spv',location:'mpspv','noun-negative':'tpvv','noun-past':'tpvv',masen:['opv','opv','opv','tpv'],
  'verb-past':'mopv','existence-negative':'spv','i-adjective':'mtpvv','na-adjective':'mtpvv',suki:'tpspv',hoshii:'tpspv',tai:['opv','opv','opv','mpv'],
+ 'adjective-kute':'mtpvvv','description-de':['mtpvpvv','mtpvpvv','tpvpvv','tpvpvv'],'te-sequence':['opvmpv','opvv','mpvv','opvv'],'pass-by':['mpmpv','mpmpv','mpvv','mmpv'],'drop-by':['mpv','mpvv','mpmpv','mpv'],
  'te-request':'opvv','te-imasu':'mopv',
 };
-const wrongLayouts:Record<string,string>={question:'tpvpv',mo:'tppvv',demonstratives:'mpvv',object:'spv','i-adjective':'mtpvpv','na-adjective':'mtpvpv'};
+const wrongLayouts:Record<string,string>={'description-de':'mtpvvv',question:'tpvpv',mo:'tppvv',demonstratives:'mpvv',object:'spv','i-adjective':'mtpvpv','na-adjective':'mtpvpv'};
 const english=`
 @desu
 I~topic| am a student.~predicate
@@ -137,6 +138,31 @@ I ~implicit|am reading ~predicate|a book~object| now.~modifier
 I ~implicit|am drinking ~predicate|water~object| now.~modifier
 I ~implicit|am writing ~predicate|my name~object| now.~modifier
 I ~implicit|am eating ~predicate|bread~object| now.~modifier
+@adjective-kute
+This ~modifier|book~topic| is interesting and inexpensive.~predicate
+This ~modifier|car~topic| is big and new.~predicate
+This ~modifier|room~topic| is bright and spacious.~predicate
+This ~modifier|bag~topic| is light and convenient.~predicate
+@description-de
+This ~modifier|town~topic| is quiet and convenient.~predicate
+This ~modifier|room~topic| is clean and quiet.~predicate
+Tanaka~topic| is a teacher and kind.~predicate
+My mother~topic| is a doctor and healthy.~predicate
+@te-sequence
+I ~implicit|eat ~predicate|bread~object| and then go~predicate| to school.~modifier
+I ~implicit|read ~predicate|a book~object| and then go to bed.~predicate
+I ~implicit|return ~predicate|home~modifier| and then study.~predicate
+I ~implicit|drink ~predicate|water~object| and then rest.~predicate
+@pass-by
+I ~implicit|pass~predicate| in front of the station.~modifier
+I ~implicit|pass~predicate| in front of the school.~modifier
+I ~implicit|go home~predicate| through the park.~modifier
+I ~implicit|take~predicate| this road.~modifier
+@drop-by
+I ~implicit|stop by~predicate| the shop.~modifier
+I ~implicit|stop by~predicate| the bank~modifier| and then go home.~predicate
+I ~implicit|drop by~predicate| my friend's house.~modifier
+I ~implicit|stop by~predicate| the convenience store.~modifier
 `;
 const translations=Object.fromEntries(english.trim().split('\n@').map(block=>{
  const [id,...rows]=block.replace(/^@/,'').split('\n');

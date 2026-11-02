@@ -7,6 +7,7 @@ export type Entry = {
   title: string; japanese: string; reading: string; romaji?: string; meaning: string;
   level: string; topic: string; tags: string[]; note: string;
   examples: { japanese: string; reading: string; meaning: string; tokens?: { text: string; role: string; wordClass: string; reading?: string }[]; translationTokens?: TranslationToken[] }[];
+  forms?:{polite:string;casual:string};
   on?: string; kun?: string; compounds?: { japanese: string; reading: string; meaning: string }[];
   references?:ReferenceTable[];
   lesson?:GrammarLesson; exercises?:GuidedExercise[];
@@ -454,8 +455,29 @@ const vocabulary: Entry[] = vocabularyRows.map(([topic,japanese,reading,meaning]
  if(japanese==='家族'){jp='これは家族の写真です。';rp='これはかぞくのしゃしんです。';english='This is a photo of my family.';}
  if(japanese==='お父さん'){jp='お父さん、元気ですか。';rp='おとうさん、げんきですか。';english='Dad, how are you?';}
  if(japanese==='お母さん'){jp='お母さん、元気ですか。';rp='おかあさん、げんきですか。';english='Mom, how are you?';}
- return {id:`vocabulary-${code(japanese)}`,kind:'vocabulary',title:japanese,japanese,reading,meaning,level:'N5',topic:topic[0].toUpperCase()+topic.slice(1),tags:[topic,'Noun'],note:topic==='people'?'Use family terms according to who you are talking about. 父 / 母 refer to your own parents when speaking to outsiders; お父さん / お母さん also serve as forms of address.':'Learn the spelling and reading together. In practice, readings are entered in hiragana; English meanings can be recalled separately.',examples:[ex(jp,rp,english)]};
+ const token=(text:string,reading:string,role:string,wordClass:string)=>({text,reading,role,wordClass});
+ let sample:Entry['examples'][number]={...ex(jp,rp,english),tokens:[token(place?'ここ':person?'あの人':'これ',place?'ここ':person?'あのひと':'これ','topic','pronoun'),token('は','は','particle','topic particle'),token(japanese,reading,'predicate','noun'),token('です','です','predicate','copula')],translationTokens:[{text:person?'That person':'This',role:'topic'},{text:` is ${article}${englishNoun}.`,role:'predicate'}]};
+ if(japanese==='家族')sample={...sample,tokens:[token('これ','これ','topic','pronoun'),token('は','は','particle','topic particle'),token('家族','かぞく','modifier','noun'),token('の','の','particle','possessive particle'),token('写真','しゃしん','predicate','noun'),token('です','です','predicate','copula')],translationTokens:[{text:'This',role:'topic'},{text:' is a photo',role:'predicate'},{text:' of my family.',role:'modifier'}]};
+ if(['お父さん','お母さん'].includes(japanese))sample={...sample,tokens:[token(japanese,reading,'topic','address'),token('、','、','particle','punctuation'),token('元気','げんき','predicate','na-adjective'),token('です','です','predicate','copula'),token('か','か','particle','question particle')],translationTokens:[{text:japanese==='お父さん'?'Dad, ':'Mom, ',role:'topic'},{text:'how are you',role:'predicate'},{text:'?',role:'particle'}]};
+ return {id:`vocabulary-${code(japanese)}`,kind:'vocabulary',title:japanese,japanese,reading,meaning,level:'N5',topic:topic[0].toUpperCase()+topic.slice(1),tags:[topic,'Noun'],note:topic==='people'?'Use family terms according to who you are talking about. 父 / 母 refer to your own parents when speaking to outsiders; お父さん / お母さん also serve as forms of address.':'',examples:[sample]};
 });
+const vehicles=rows(`車|くるま|kuruma|car|車で会社に行きます。|くるまでかいしゃにいきます。|I go to work by car.
+自動車|じどうしゃ|jidousha|automobile; car|これは日本の自動車です。|これはにほんのじどうしゃです。|This is a Japanese car.
+自転車|じてんしゃ|jitensha|bicycle|自転車で学校に行きます。|じてんしゃでがっこうにいきます。|I go to school by bicycle.
+電車|でんしゃ|densha|train|毎朝、電車に乗ります。|まいあさ、でんしゃにのります。|I take the train every morning.
+地下鉄|ちかてつ|chikatetsu|subway|地下鉄で駅に行きます。|ちかてつでえきにいきます。|I go to the station by subway.
+新幹線|しんかんせん|shinkansen|bullet train|新幹線で京都に行きます。|しんかんせんできょうとにいきます。|I go to Kyoto by bullet train.
+バス|ばす|basu|bus|バスを待っています。|ばすをまっています。|I am waiting for the bus.
+タクシー|たくしー|takushii|taxi|タクシーで家に帰ります。|たくしーでいえにかえります。|I go home by taxi.
+飛行機|ひこうき|hikouki|airplane|飛行機で日本に行きます。|ひこうきでにほんにいきます。|I go to Japan by airplane.
+船|ふね|fune|boat; ship|船で島に行きます。|ふねでしまにいきます。|I go to the island by boat.
+バイク|ばいく|baiku|motorcycle|兄はバイクに乗ります。|あにはばいくにのります。|My older brother rides a motorcycle.
+トラック|とらっく|torakku|truck|大きいトラックが来ました。|おおきいとらっくがきました。|A large truck arrived.`);
+for(const [japanese,reading,romaji,meaning,jp,rp,en] of vehicles){
+ const entry:Entry={id:`vocabulary-${code(japanese)}`,kind:'vocabulary',title:japanese,japanese,reading,romaji,meaning,level:'Beginner',topic:'Vehicles',tags:['Vehicles','Noun'],note:'Use で for travel by a vehicle, and に with 乗る (to board or ride). 車 is the everyday word for car; 自動車 is more formal. バイク usually means motorcycle.',examples:[ex(jp,rp,en)]};
+ const existing=vocabulary.find(e=>e.id===entry.id);
+ if(existing)Object.assign(existing,entry);else vocabulary.push(entry);
+}
 const timeWords=rows(`今日|きょう|today|今日は休みです。|きょうはやすみです。|Today is a day off.
 昨日|きのう|yesterday|昨日は休みでした。|きのうはやすみでした。|Yesterday was a day off.
 明日|あした|tomorrow|明日、学校に行きます。|あした、がっこうにいきます。|I will go to school tomorrow.
@@ -541,6 +563,25 @@ const grammarLessons:Entry[] = [
  grammar('i-adjective','い-adjectives in sentences','このほんはおもしろいです。','This book is interesting.','Most い-adjectives keep final い before a noun: 面白い本. Negative: 面白くないです; past: 面白かったです; negative past: 面白くなかったです. Add です for polite speech, but not な before the noun.','この~modifier~determiner|本~topic~noun|は~particle~topic particle|面白いです~predicate~i-adjective + polite ending','Make 面白いです negative.',['面白くないです','おもしろくないです','面白くありません','おもしろくありません']),
  grammar('na-adjective','な-adjectives in sentences','ここはしずかです。','It is quiet here.','A な-adjective uses な directly before a noun: 静かな部屋. At the end of a polite sentence, use 静かです, not 静かなです. Negative: 静かじゃありません; past: 静かでした. きれい and 嫌い belong to this group.','ここ~topic~place pronoun|は~particle~topic particle|静かです~predicate~na-adjective + copula','Fill the missing word: 静か __ 部屋 (a quiet room).',['な'])
 ];
+
+const registerForms:Record<string,[string,string,string]>={
+ desu:['Noun statements: です / だ','学生です','学生だ'],
+ 'noun-negative':['Noun negatives: じゃありません / じゃない','先生じゃありません','先生じゃない'],
+ 'noun-past':['Noun past: でした / だった','休みでした','休みだった'],
+ masu:['Verb non-past: ます / dictionary form','読みます','読む'],
+ masen:['Verb negatives: ません / ない','食べません','食べない'],
+ 'verb-past':['Verb past: ました / た','読みました','読んだ'],
+ arimasu:['Things that exist: あります / ある','あります','ある'],
+ imasu:['People and animals: います / いる','います','いる'],
+ 'existence-negative':['Absence: polite and casual','ありません / いません','ない / いない'],
+ 'te-imasu':['Ongoing actions: ています / ている','読んでいます','読んでいる'],
+ 'i-adjective':['い-adjectives: polite and casual','面白いです','面白い'],
+ 'na-adjective':['な-adjectives: polite and casual','静かです','静かだ'],
+};
+for(const entry of grammarLessons){
+ const forms=registerForms[entry.id.replace('grammar-','')];
+ if(forms){entry.title=forms[0];entry.forms={polite:forms[1],casual:forms[2]};}
+}
 
 const numberRows=rows(`Numbers|零|れい|zero|ゼロ is also common.
 Numbers|一|いち|one|A following counter may change the pronunciation.
@@ -705,6 +746,17 @@ const adjectives:Entry[]=adjectiveRows.map(([japanese,reading,meaning,topic,jp,r
 for (const entry of adjectives) {
  if (entry.japanese==='いい') entry.exercise!.answers.push('良くないです','良くありません');
  if (entry.japanese==='きれい') entry.exercise!.answers.push('綺麗じゃありません','綺麗ではありません','綺麗じゃないです');
+}
+const connectingGrammar=[
+ ['adjective-kute','Connecting い-adjectives: 〜くて'],
+ ['description-de','Connecting な-adjectives and nouns: 〜で'],
+ ['te-sequence','Connecting actions: て-form'],
+ ['pass-by','Passing by or through: 〜を通る'],
+ ['drop-by','Stopping by: 〜に寄る'],
+];
+for(const [id,title] of connectingGrammar){
+ const course=grammarCourse['grammar-'+id],example=course.lesson.examples[0];
+ grammarLessons.push({id:'grammar-'+id,kind:'grammar',title,japanese:example.japanese,reading:example.reading,meaning:example.meaning,level:'N5',topic:course.lesson.group,tags:['Grammar',id],note:course.lesson.comparison,examples:course.lesson.examples});
 }
 for(const entry of grammarLessons)Object.assign(entry,grammarCourse[entry.id]);
 const baseEntries:Entry[]=[...kana,...grammarLessons,...kanji,...vocabulary,...numbers,...adjectives];
