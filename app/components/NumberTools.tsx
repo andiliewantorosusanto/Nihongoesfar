@@ -141,7 +141,7 @@ export default function NumberTools() {
                 Next number
               </button>
             </form>
-            <p role="status">{feedback}</p>
+            <output className="number-feedback">{feedback}</output>
           </>
         )}
       </section>

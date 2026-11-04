@@ -63,3 +63,14 @@
   font-size: 13px;
   line-height: 1.8;
 }
+
+.scroll-container {
+  min-width: 0;
+}
+.scroll-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  margin: 8px 0;
+}

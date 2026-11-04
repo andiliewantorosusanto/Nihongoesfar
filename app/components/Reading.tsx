@@ -1,3 +1,4 @@
+import Scrollable from './Scrollable';
 import { keyed } from '../lib/ui/list-keys';
 import { toRomaji } from '../lib/japanese/romaji';
 import type { ReadingText } from '../lib/content/grammar-course';
@@ -196,8 +197,7 @@ export function ReferenceTables({
       {keyed(tables).map(({ value: table, key }) => (
         <section className="study-reference" key={key}>
           <h3>{table.heading}</h3>
-          {/* Keyboard focus lets readers scroll wide tables with arrow keys. */}
-          <section className="reference-scroll" tabIndex={0} aria-label={table.heading}>
+          <Scrollable className="reference-scroll" label={table.heading}>
             <table className="quick-table">
               <thead>
                 <tr>
@@ -228,7 +228,7 @@ export function ReferenceTables({
                 ))}
               </tbody>
             </table>
-          </section>
+          </Scrollable>
         </section>
       ))}
     </>

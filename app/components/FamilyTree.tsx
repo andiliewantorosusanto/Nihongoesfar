@@ -1,3 +1,4 @@
+import Scrollable from './Scrollable';
 import { useState } from 'react';
 import type { Entry } from '../lib/content/content';
 import {
@@ -135,12 +136,7 @@ export default function FamilyTree({
       ) : (
         <>
           <p className="family-scroll-help">Swipe sideways to see the whole tree.</p>
-          {/* Keyboard focus lets readers scroll the relationship map with arrow keys. */}
-          <section
-            className="family-tree-scroll"
-            tabIndex={0}
-            aria-label="Family relationship diagram"
-          >
+          <Scrollable className="family-tree-scroll" label="Family relationship diagram">
             <div className="family-tree-canvas">
               <div className="family-ancestors">
                 {['Father’s parents', 'Mother’s parents'].map((side) => (
@@ -164,7 +160,7 @@ export default function FamilyTree({
                 <div className="family-child-branch">{card('daughter')}</div>
               </div>
             </div>
-          </section>
+          </Scrollable>
           <div className="family-collective">
             <h4>Words for the group</h4>
             <div>

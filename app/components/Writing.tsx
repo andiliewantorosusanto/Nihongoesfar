@@ -1,3 +1,4 @@
+import { keyed } from '../lib/ui/list-keys';
 import { useRef, useState, useEffect } from 'react';
 import { Play, RotateCcw, Undo2, Eye, Check } from 'lucide-react';
 import strokeData from '../../public/stroke-data.json';
@@ -118,10 +119,10 @@ export default function Writing({
           strokeWidth=".4"
           strokeDasharray="2 2"
         />
-        {data.paths.map((d, i) => (
+        {keyed(data.paths).map(({ value: d, key }) => (
           <path
             className="reference-path"
-            key={i}
+            key={key}
             d={d}
             fill="none"
             stroke={trace ? '#dddddd' : 'transparent'}
@@ -130,23 +131,21 @@ export default function Writing({
           />
         ))}
         {playing >= 0 &&
-          data.paths
-            .slice(0, playing + 1)
-            .map((d, i) => (
-              <path
-                key={`${replayKey}-${i}`}
-                d={d}
-                fill="none"
-                stroke={i === playing ? '#555555' : '#aaaaaa'}
-                strokeWidth="3"
-                strokeLinecap="round"
-                pathLength="1"
-                className={i === playing ? 'animated-stroke' : ''}
-              />
-            ))}
-        {ink.map((p, i) => (
+          keyed(data.paths.slice(0, playing + 1)).map(({ value: d, key }, i) => (
+            <path
+              key={`${replayKey}-${key}`}
+              d={d}
+              fill="none"
+              stroke={i === playing ? '#555555' : '#aaaaaa'}
+              strokeWidth="3"
+              strokeLinecap="round"
+              pathLength="1"
+              className={i === playing ? 'animated-stroke' : ''}
+            />
+          ))}
+        {keyed(ink).map(({ value: p, key }) => (
           <path
-            key={i}
+            key={key}
             d={line(p)}
             fill="none"
             stroke="#333333"

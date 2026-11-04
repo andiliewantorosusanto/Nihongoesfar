@@ -88,7 +88,7 @@ export function PracticeFinished({
           Next lesson: {nextLesson.title} →
         </button>
       )}
-      {(lesson?.lesson || lesson?.references?.length) && (
+      {lesson && Boolean(lesson.lesson || lesson.references?.length) && (
         <button className="secondary" onClick={() => onRepeat(lesson)}>
           Repeat this lesson
         </button>

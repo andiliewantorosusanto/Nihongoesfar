@@ -1,3 +1,4 @@
+import { keyed } from '../lib/ui/list-keys';
 import type { Entry } from '../lib/content/content';
 import { Sentence, Furigana, JapaneseProse } from './Reading';
 export function GrammarLessons({
@@ -7,12 +8,11 @@ export function GrammarLessons({
   entries: Entry[];
   onOpen: (e: Entry) => void;
 }>) {
-  const lessonOrder = (entry: Entry) =>
-    entry.id === 'study-present-tense'
-      ? -2
-      : entry.id === 'study-past-tense'
-        ? -1
-        : (entry.lesson?.order ?? Number.MAX_SAFE_INTEGER);
+  const lessonOrder = (entry: Entry) => {
+    if (entry.id === 'study-present-tense') return -2;
+    if (entry.id === 'study-past-tense') return -1;
+    return entry.lesson?.order ?? Number.MAX_SAFE_INTEGER;
+  };
   const ordered = [...entries].sort((a, b) => lessonOrder(a) - lessonOrder(b));
   const displayLevel = (entry: Entry) => (entry.level === 'Beginner' ? 'N5' : entry.level);
   const levels = [...new Set(['N5', ...ordered.map(displayLevel)])].filter((level) =>
@@ -116,8 +116,8 @@ export function LessonIntro({
         </p>
       </div>
       <h3>See the pattern in three examples</h3>
-      {l.examples.map((example, i) => (
-        <Sentence romaji={romaji} key={i} example={example} furigana={furigana} />
+      {keyed(l.examples).map(({ value: example, key }) => (
+        <Sentence romaji={romaji} key={key} example={example} furigana={furigana} />
       ))}
       <details className="lesson-vocabulary">
         <summary>Words used in this lesson</summary>

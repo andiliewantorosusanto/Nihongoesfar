@@ -1,6 +1,6 @@
 import { toRomaji } from '../lib/japanese/romaji';
 import { tenseTopicFor } from '../lib/content/tense-forms';
-import { useState, useEffect, useRef, type ReactNode } from 'react';
+import { useState, useEffect, useEffectEvent, useRef, type ReactNode } from 'react';
 import {
   BookOpen,
   Languages,
@@ -140,9 +140,20 @@ function Modal({
   wide?: boolean;
 }>) {
   const ref = useRef<HTMLDialogElement>(null);
+  const dismiss = useEffectEvent(onClose);
   useEffect(() => {
-    ref.current?.showModal();
-    return () => ref.current?.close();
+    const dialog = ref.current;
+    if (!dialog) return;
+    dialog.showModal();
+    // The backdrop is part of the native dialog, not its inner content.
+    const dismissBackdrop = (event: MouseEvent) => {
+      if (event.target === dialog) dismiss();
+    };
+    dialog.addEventListener('click', dismissBackdrop);
+    return () => {
+      dialog.removeEventListener('click', dismissBackdrop);
+      dialog.close();
+    };
   }, []);
   return (
     <dialog
@@ -153,7 +164,6 @@ function Modal({
         e.preventDefault();
         onClose();
       }}
-      closedby="any"
     >
       <div className="modal-inner">
         <button className="icon-button modal-close" aria-label="Close" onClick={onClose}>

@@ -31,3 +31,8 @@
   margin: 8px 0 16px 12px;
   padding: 6px;
 }
+
+.number-feedback {
+  display: block;
+  margin: 1em 0;
+}
