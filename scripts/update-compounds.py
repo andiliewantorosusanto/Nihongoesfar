@@ -19,11 +19,12 @@ source = args.source or ROOT / 'work/compounds/JMdict_e.gz'
 if not args.source:
     source.parent.mkdir(parents=True, exist_ok=True)
     urllib.request.urlretrieve(URL, source)
-content = (ROOT / 'app/lib/content/content.ts').read_text()
-kanji_section = content.split('const kanjiRows = rows(`', 1)[1].split('`);', 1)[0]
-characters = {line.split('|')[0] for line in kanji_section.splitlines() if line}
-# Prefer words already introduced in the notebook, then general-use dictionary words.
-introduced = set(re.findall(r'(?:^|\|)([一-龯々ヶ]{2,8})(?:\||$)', content, re.M))
+library = [json.loads((ROOT / f'public/{subject}.json').read_text())
+           for subject in ['kana', 'kanji', 'grammar', 'vocabulary', 'numbers', 'adjectives']]
+characters = {entry['japanese'] for subject in library for entry in subject if entry['kind'] == 'kanji'}
+# Prefer words already introduced in the editable JSON library.
+introduced = {entry['japanese'] for subject in library for entry in subject
+              if re.fullmatch(r'[一-龯々ヶ]{2,8}', entry['japanese'])}
 # These everyday fire words make a useful range of native and Sino-Japanese readings.
 fire_basics = ['火曜日', '火山', '火事', '花火', '火災', '消火', '火傷', '火力', '火口', '防火', '出火', '引火', '点火', '発火', '火花']
 by_kanji = {c: {} for c in characters}

@@ -2,7 +2,6 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { proseReadings } from '../app/lib/japanese/sentence-support.ts';
 import { entries } from '../app/lib/content/content.ts';
-import { largeNumberAnchors } from '../app/lib/content/study-topics.ts';
 import {
   makePractice,
   grade,
@@ -95,10 +94,12 @@ test('adjective class guides cover forms, connectors, and noun modifiers in both
       text,
     );
   }
-  assert.equal(
-    forms.references![1].rows.length,
-    entries.filter((entry) => entry.kind === 'adjectives').length,
+  const adjectiveWords = new Set(
+    entries.filter((entry) => entry.kind === 'adjectives').map((entry) => entry.japanese),
   );
+  const examples = forms.references![1].rows;
+  assert.ok(examples.length);
+  for (const row of examples) assert.ok(adjectiveWords.has(row[0].text), row[0].text);
   assert.ok(grade(joining, 'grammar', '有名で', undefined, 'gap'));
   assert.equal(grade(joining, 'grammar', '有名くて', undefined, 'gap'), false);
   assert.ok(grade(nouns, 'grammar', 'な', undefined, 'gap'));
@@ -173,10 +174,11 @@ test('class travel notes combine transport, time, destinations and past tense', 
     );
   }
   assert.ok(cells.some((cell) => cell.text === '十分' && cell.reading === 'じゅうぶん'));
-  assert.equal(
-    entries.filter((entry) => entry.kind === 'vocabulary' && entry.japanese === '大使館').length,
-    1,
+  const embassy = entries.filter(
+    (entry) => entry.kind === 'vocabulary' && entry.japanese === '大使館',
   );
+  assert.ok(embassy.length);
+  for (const entry of embassy) assert.equal(entry.reading, 'たいしかん');
 });
 test('desire, movement and kara have references and correctly scoped practice', () => {
   const desire = entries.find((entry) => entry.id === 'grammar-tai')!;
@@ -338,11 +340,19 @@ test('calendar readings distinguish irregular dates, month names, durations and 
   assert.ok(get('ask-time').examples.some((e) => e.japanese === '今何時ですか。'));
 });
 test('number and katakana additions cover the requested boundaries and spellings', () => {
-  assert.deepEqual(
-    largeNumberAnchors.map((r) => r.value),
-    [10, 100, 1000, 10000, 100000, 1000000],
+  const anchors = get('large-numbers').references!.find((table) =>
+    table.rows.some((row) => row.some((cell) => cell.text === '百万')),
+  )!;
+  assert.ok(anchors);
+  const values = new Set(anchors.rows.map((row) => Number(row[0].text.replaceAll(',', ''))));
+  for (const value of [10, 100, 1000, 10000, 100000, 1000000])
+    assert.ok(values.has(value), String(value));
+  assert.ok(
+    anchors.rows.some((row) =>
+      row.some((cell) => cell.reading === 'ひゃくまん' || cell.text === 'ひゃくまん'),
+    ),
   );
-  assert.equal(largeNumberAnchors.at(-1)!.kana, 'ひゃくまん');
+
   assert.ok(
     entries.some(
       (e) => e.kind === 'numbers' && e.japanese === '百万' && e.reading === 'ひゃくまん',

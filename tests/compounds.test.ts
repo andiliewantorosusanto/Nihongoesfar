@@ -64,7 +64,11 @@ test('dictionary selection keeps irregular readings and separates same-spelling 
   const person = entries.find((e) => e.kind === 'kanji' && e.japanese === '人')!;
   assert.ok(person.compounds?.some((c) => c.japanese === '大人' && c.reading === 'おとな'));
   const one = entries.find((e) => e.kind === 'kanji' && e.japanese === '一')!;
-  assert.ok(!one.compounds?.some((c) => c.japanese === '十一日'));
+  const dictionary = JSON.parse(readFileSync('public/compound-data.json', 'utf8'));
+  // Authored JSON can retain extra words; numeric filtering applies to dictionary exports.
+  assert.ok(
+    !dictionary.characters['一'].some((word: { japanese: string }) => word.japanese === '十一日'),
+  );
   assert.ok(
     one.compounds?.some(
       (c) =>

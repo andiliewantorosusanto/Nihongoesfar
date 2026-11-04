@@ -1,6 +1,6 @@
 import { Check, X, SkipForward, Eye, EyeOff } from 'lucide-react';
 import type { Entry } from '../lib/content/content';
-import type { ReadingText, GuidedExercise } from '../lib/content/grammar-course';
+import type { ReadingText, GuidedExercise } from '../lib/content/types';
 import { promptFor, normalize, isReadingQuestion, type Question } from '../lib/practice/learning';
 import { keyed } from '../lib/ui/list-keys';
 import { Furigana, JapaneseProse, RoleText, RoleReading, AlignedTranslation } from './Reading';

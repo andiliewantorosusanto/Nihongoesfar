@@ -1,7 +1,7 @@
 import Scrollable from './Scrollable';
 import { keyed } from '../lib/ui/list-keys';
 import { toRomaji } from '../lib/japanese/romaji';
-import type { ReadingText } from '../lib/content/grammar-course';
+import type { ReadingText } from '../lib/content/types';
 import type { Entry } from '../lib/content/content';
 import { rubyParts, proseReadings } from '../lib/japanese/sentence-support';
 export function Furigana({

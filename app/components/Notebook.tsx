@@ -1,5 +1,5 @@
 import { toRomaji } from '../lib/japanese/romaji';
-import { tenseTopicFor } from '../lib/content/tense-forms';
+import { tenseTopicFor } from '../lib/guides/tense-topics';
 import { useState, useEffect, useEffectEvent, useRef, type ReactNode } from 'react';
 import {
   BookOpen,

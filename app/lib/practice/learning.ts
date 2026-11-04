@@ -1,6 +1,6 @@
 import type { Entry } from '../content/content.ts';
 import { topicBookFor } from '../guides/topic-books.ts';
-import { tenseTopicFor } from '../content/tense-forms.ts';
+import { tenseTopicFor } from '../guides/tense-topics.ts';
 export type Skill = 'recognition' | 'reading' | 'meaning' | 'writing' | 'grammar';
 export type Question = {
   id: string;
