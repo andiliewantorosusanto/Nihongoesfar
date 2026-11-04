@@ -100,12 +100,22 @@ with gzip.open(source, 'rb') as stream:
                 break
         entry.clear()
 
-selection = {c: [item for _, item in sorted(words.values(), key=lambda x: (x[0], x[1]['japanese']))[:12]] for c, words in sorted(by_kanji.items())}
+selection = {c: [item for _, item in sorted(words.values(), key=lambda x: (x[0], x[1]['japanese']))] for c, words in sorted(by_kanji.items())}
 missing = [c for c, words in selection.items() if not words]
 if missing:
     raise SystemExit('No compounds found for: ' + ''.join(missing))
-bundle = {'attribution': 'JMdict © James William Breen and the Electronic Dictionary Research and Development Group', 'license': 'CC BY-SA 4.0', 'licenseUrl': 'https://www.edrdg.org/edrdg/licence.html', 'source': URL, 'sourceSha256': hashlib.sha256(source.read_bytes()).hexdigest(), 'updatedAt': datetime.datetime.now(datetime.timezone.utc).date().isoformat(), 'modifications': 'Selected common multi-kanji spellings for the notebook’s 100 kanji; paired reading/spelling and sense restrictions respected; first applicable English sense retained. At most 12 per character, prioritizing introduced words; routine numeric, date, time and counter combinations excluded except selected irregular or lexical readings. Not an exhaustive dictionary or JLPT list.', 'characters': selection}
+bundle = {'attribution': 'JMdict © James William Breen and the Electronic Dictionary Research and Development Group', 'license': 'CC BY-SA 4.0', 'licenseUrl': 'https://www.edrdg.org/edrdg/licence.html', 'source': URL, 'sourceSha256': hashlib.sha256(source.read_bytes()).hexdigest(), 'updatedAt': datetime.datetime.now(datetime.timezone.utc).date().isoformat(), 'modifications': 'Selected common multi-kanji spellings for the notebook’s 100 kanji; paired reading/spelling and sense restrictions respected; first applicable English sense retained. No per-character count cap, prioritizing introduced words; routine numeric, date, time and counter combinations excluded except selected irregular or lexical readings. Not an exhaustive dictionary or JLPT list.', 'characters': selection}
 serialized = json.dumps(bundle, ensure_ascii=False, indent=2) + '\n'
 (ROOT / 'app/lib/compounds.json').write_text(serialized)
 (ROOT / 'public/compound-data.json').write_text(serialized)
+# Refresh only compounds in the static library, preserving directly authored lessons.
+static_path = ROOT / 'public/kanji.json'
+if static_path.exists():
+    static_entries = json.loads(static_path.read_text())
+    for entry in static_entries:
+        if entry['japanese'] in selection:
+            words = {item['japanese'] + ':' + item['reading']: item for item in entry.get('compounds', [])}
+            words.update({item['japanese'] + ':' + item['reading']: item for item in selection[entry['japanese']]})
+            entry['compounds'] = list(words.values())
+    static_path.write_text(json.dumps(static_entries, ensure_ascii=False, indent=2) + '\n')
 print(json.dumps({'characters': len(selection), 'compoundRows': sum(map(len, selection.values())), 'uniqueWords': len({w['japanese'] for words in selection.values() for w in words}), 'minimum': min(map(len, selection.values())), 'fire': selection['火']}, ensure_ascii=False, indent=2))

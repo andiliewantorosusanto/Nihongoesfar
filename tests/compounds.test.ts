@@ -1,3 +1,4 @@
+import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { entries, mergeEntry } from '../app/lib/content.ts';
@@ -6,9 +7,10 @@ import strokes from '../app/lib/strokes.json' with { type: 'json' };
 test('every starter kanji has varied, real compounds rather than one repeated example', () => {
   const kanji = entries.filter((e) => e.kind === 'kanji');
   assert.equal(kanji.length, 100);
+  assert.ok(kanji.some((e) => e.compounds!.length > 20));
   assert.ok(kanji.reduce((n, e) => n + (e.compounds?.length || 0), 0) >= 600);
   for (const e of kanji) {
-    assert.ok(e.compounds!.length >= 3 && e.compounds!.length <= 12, e.japanese);
+    assert.ok(e.compounds!.length >= 3, e.japanese);
     assert.equal(
       new Set(e.compounds!.map((c) => c.japanese + ':' + c.reading)).size,
       e.compounds!.length,
@@ -81,4 +83,15 @@ test('dictionary selection keeps irregular readings and separates same-spelling 
         c.meaning.includes('first day of the month'),
     ),
   );
+});
+
+test('static kanji library includes every exported dictionary compound', () => {
+  const published = JSON.parse(readFileSync('public/kanji.json', 'utf8'));
+  for (const entry of entries.filter((entry) => entry.kind === 'kanji')) {
+    const saved = published.find((item: any) => item.id === entry.id);
+    assert.ok(saved, entry.id);
+    const words = new Set(saved.compounds.map((word: any) => word.japanese + ':' + word.reading));
+    for (const word of entry.compounds!)
+      assert.ok(words.has(word.japanese + ':' + word.reading), word.japanese);
+  }
 });

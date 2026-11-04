@@ -178,7 +178,7 @@ KanjiVG stroke paths © Ulrich Apel and contributors, CC BY-SA 3.0. The derived 
 
 ## Compound dictionary
 
-Each starter kanji has up to 20 selected common compound forms, with kana readings and English meanings. Some words are above N5. Different readings of the same spelling may have separate entries; reading practice accepts the readings listed for that word. Search a kanji’s compound list or use its arrow button to practice that word immediately. Seed data is imported once; refreshing the source dictionary does not automatically replace entries already stored in PostgreSQL.
+Each starter kanji includes all compounds accepted by the dictionary selection rules, without a per-kanji count cap, with kana readings and English meanings. Some words are above N5. Different readings of the same spelling may have separate entries; reading practice accepts the readings listed for that word. The list initially shows 12 entries; use Show more to reveal another 12, or search the entire list. Search a kanji’s compound list or use its arrow button to practice that word immediately. Seed data is imported once; refreshing the source dictionary does not automatically replace entries already stored in PostgreSQL.
 
 Compound entries are derived from JMdict © James William Breen and the Electronic Dictionary Research and Development Group, CC BY-SA 4.0. The offline dataset includes source entry identifiers, its source-file checksum, update date, selection notes, and attribution. See `public/credits.html#dictionary` and `public/compound-data.json`.
 

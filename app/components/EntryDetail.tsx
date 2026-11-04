@@ -74,6 +74,7 @@ export default function EntryDetail({
 }) {
   const [tab, setTab] = useState('learn');
   const [compoundSearch, setCompoundSearch] = useState('');
+  const [compoundLimit, setCompoundLimit] = useState(12);
   if (entry.kind === 'kana')
     return (
       <>
@@ -263,14 +264,17 @@ export default function EntryDetail({
                   JMdict ↗
                 </a>
               </div>
-              <p>Common words using this kanji. Some go beyond N5.</p>
+              <p>Dictionary words using this kanji. Some are uncommon or go beyond N5.</p>
               <label className="search-field compound-search">
                 <Search size={16} />
                 <input
                   aria-label="Filter compounds"
                   placeholder="Find a compound, reading, or meaning…"
                   value={compoundSearch}
-                  onChange={(ev) => setCompoundSearch(ev.target.value)}
+                  onChange={(ev) => {
+                    setCompoundSearch(ev.target.value);
+                    setCompoundLimit(12);
+                  }}
                 />
               </label>
               <div className="compound-labels">
@@ -279,7 +283,7 @@ export default function EntryDetail({
                 <span>Meaning</span>
                 <span />
               </div>
-              {compounds.map((c) => (
+              {compounds.slice(0, compoundLimit).map((c) => (
                 <div className="compound" key={c.japanese + ':' + c.reading}>
                   <span className="jp" lang="ja">
                     {c.japanese}
@@ -297,6 +301,11 @@ export default function EntryDetail({
                   </button>
                 </div>
               ))}
+              {compounds.length > compoundLimit && (
+                <button className="button" onClick={() => setCompoundLimit(compoundLimit + 12)}>
+                  Show more ({compounds.length - compoundLimit} remaining)
+                </button>
+              )}
               {!compounds.length && <p className="no-compounds">No compounds match your search.</p>}
             </section>
           )}
