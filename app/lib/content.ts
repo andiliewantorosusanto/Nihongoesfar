@@ -1,20 +1,47 @@
-import {makeStudyEntries,type ReferenceTable} from './study-topics.ts';
-import {grammarCourse,type GrammarLesson,type GuidedExercise} from './grammar-course.ts';
-import {sentenceAlignments,type TranslationToken} from './sentence-support.ts';
-import compoundData from './compounds.json' with {type:'json'};
+import { movementVocabulary, movementGuides } from './movement-vocabulary.ts';
+import { routineVocabulary, routineGuides } from './routine-vocabulary.ts';
+import photoVocabulary from './photo-vocabulary.json' with { type: 'json' };
+import { makeStudyEntries, type ReferenceTable } from './study-topics.ts';
+import { grammarCourse, type GrammarLesson, type GuidedExercise } from './grammar-course.ts';
+import { sentenceAlignments, type TranslationToken } from './sentence-support.ts';
+import compoundData from './compounds.json' with { type: 'json' };
 export type Entry = {
-  id: string; kind: 'kana' | 'kanji' | 'grammar' | 'vocabulary' | 'numbers' | 'adjectives';
-  title: string; japanese: string; reading: string; romaji?: string; meaning: string;
-  level: string; topic: string; tags: string[]; note: string;
-  examples: { japanese: string; reading: string; meaning: string; tokens?: { text: string; role: string; wordClass: string; reading?: string }[]; translationTokens?: TranslationToken[] }[];
-  forms?:{polite:string;casual:string};
-  on?: string; kun?: string; compounds?: { japanese: string; reading: string; meaning: string }[];
-  references?:ReferenceTable[];
-  lesson?:GrammarLesson; exercises?:GuidedExercise[];
+  id: string;
+  kind: 'kana' | 'kanji' | 'grammar' | 'vocabulary' | 'numbers' | 'adjectives';
+  title: string;
+  japanese: string;
+  reading: string;
+  romaji?: string;
+  meaning: string;
+  level: string;
+  topic: string;
+  tags: string[];
+  note: string;
+  examples: {
+    japanese: string;
+    reading: string;
+    meaning: string;
+    tokens?: { text: string; role: string; wordClass: string; reading?: string }[];
+    translationTokens?: TranslationToken[];
+  }[];
+  forms?: { polite: string; casual: string };
+  on?: string;
+  kun?: string;
+  compounds?: { japanese: string; reading: string; meaning: string }[];
+  references?: ReferenceTable[];
+  lesson?: GrammarLesson;
+  exercises?: GuidedExercise[];
   exercise?: { prompt: string; answers: string[]; explanation: string; tiles?: string[] };
 };
-const rows = (text: string) => text.trim().split('\n').map(line => line.split('|'));
-const code = (s: string) => Array.from(s).map(c => c.codePointAt(0)!.toString(16)).join('-');
+const rows = (text: string) =>
+  text
+    .trim()
+    .split('\n')
+    .map((line) => line.split('|'));
+const code = (s: string) =>
+  Array.from(s)
+    .map((c) => c.codePointAt(0)!.toString(16))
+    .join('-');
 const ex = (japanese: string, reading: string, meaning: string) => ({ japanese, reading, meaning });
 
 const kanaRows = rows(`あ|a
@@ -136,22 +163,59 @@ const kana: Entry[] = [];
 for (const script of ['Hiragana', 'Katakana']) {
   for (let n = 0; n < kanaRows.length; n++) {
     const [hira, romaji] = kanaRows[n];
-    const japanese = script === 'Hiragana' ? hira : Array.from(hira).map(c => String.fromCodePoint(c.codePointAt(0)! + 0x60)).join('');
-    const small = ['ぁ','ぃ','ぅ','ぇ','ぉ','ゃ','ゅ','ょ','っ','ゎ'].includes(hira);
+    const japanese =
+      script === 'Hiragana'
+        ? hira
+        : Array.from(hira)
+            .map((c) => String.fromCodePoint(c.codePointAt(0)! + 0x60))
+            .join('');
+    const small = ['ぁ', 'ぃ', 'ぅ', 'ぇ', 'ぉ', 'ゃ', 'ゅ', 'ょ', 'っ', 'ゎ'].includes(hira);
     const combination = hira.length > 1;
     let note = `${script} represents a sound, rather than a meaning. Read this as “${romaji}”.`;
-    if (combination) note = `A full-size kana plus small ${script === 'Hiragana' ? 'ゃ, ゅ or ょ' : 'ャ, ュ or ョ'} makes one combined sound (one mora). ${japanese} is “${romaji}”, not two separate full-size sounds.`;
-    if (small) note = hira === 'っ' ? 'Small tsu marks a held consonant: きって (kitte, stamp) differs from きて (kite, come). It is not pronounced “tsu” here.' : 'This is a small kana. Size changes how it joins neighboring sounds; compare with the full-size form. Small vowels are especially useful in katakana loanwords.';
+    if (combination)
+      note = `A full-size kana plus small ${script === 'Hiragana' ? 'ゃ, ゅ or ょ' : 'ャ, ュ or ョ'} makes one combined sound (one mora). ${japanese} is “${romaji}”, not two separate full-size sounds.`;
+    if (small)
+      note =
+        hira === 'っ'
+          ? 'Small tsu marks a held consonant: きって (kitte, stamp) differs from きて (kite, come). It is not pronounced “tsu” here.'
+          : 'This is a small kana. Size changes how it joins neighboring sounds; compare with the full-size form. Small vowels are especially useful in katakana loanwords.';
     if (hira === 'は') note += ' As the topic particle, は is pronounced wa.';
     if (hira === 'へ') note += ' As the direction particle, へ is pronounced e.';
-    if (hira === 'を') note += ' Usually used as the direct-object particle and pronounced o in modern Japanese.';
-    if (hira === 'ぢ' || hira === 'づ') note += ' Usually sounds like じ / ず; spelling depends on the word, as in はなぢ and つづく.';
-    if (hira === 'ん') note += ' This is one mora. Its exact sound changes with the next sound; before a vowel, romaji may use an apostrophe.';
-    if (hira === 'ゔ') note += ' An extension for foreign sounds; katakana ヴ is more usual than hiragana ゔ.';
-    kana.push({id:`kana-${code(japanese)}`,kind:'kana',title:japanese,japanese,reading:hira,romaji,meaning:small ? `Small ${romaji.replace('small ','')}` : `${romaji} sound`,level:'Foundation',topic:script,tags:[small?'Small kana':combination?'Combinations':n<46?'Basic kana':'Voiced sounds'],note,examples:[ex(japanese,hira,`${script} reading: ${romaji}`)]});
+    if (hira === 'を')
+      note += ' Usually used as the direct-object particle and pronounced o in modern Japanese.';
+    if (hira === 'ぢ' || hira === 'づ')
+      note +=
+        ' Usually sounds like じ / ず; spelling depends on the word, as in はなぢ and つづく.';
+    if (hira === 'ん')
+      note +=
+        ' This is one mora. Its exact sound changes with the next sound; before a vowel, romaji may use an apostrophe.';
+    if (hira === 'ゔ')
+      note += ' An extension for foreign sounds; katakana ヴ is more usual than hiragana ゔ.';
+    kana.push({
+      id: `kana-${code(japanese)}`,
+      kind: 'kana',
+      title: japanese,
+      japanese,
+      reading: hira,
+      romaji,
+      meaning: small ? `Small ${romaji.replace('small ', '')}` : `${romaji} sound`,
+      level: 'Foundation',
+      topic: script,
+      tags: [
+        small
+          ? 'Small kana'
+          : combination
+            ? 'Combinations'
+            : n < 46
+              ? 'Basic kana'
+              : 'Voiced sounds',
+      ],
+      note,
+      examples: [ex(japanese, hira, `${script} reading: ${romaji}`)],
+    });
   }
 }
-const loanSounds=rows(`ティ|てぃ|ti
+const loanSounds = rows(`ティ|てぃ|ti
 ディ|でぃ|di
 トゥ|とぅ|tu
 ドゥ|どぅ|du
@@ -171,8 +235,41 @@ const loanSounds=rows(`ティ|てぃ|ti
 ジェ|じぇ|je
 ヵ|か|small ka
 ヶ|け|small ke`);
-kana.push(...loanSounds.map(([japanese,reading,romaji]):Entry=>({id:`kana-${code(japanese)}`,kind:'kana',title:japanese,japanese,reading,romaji,meaning:`${romaji} sound`,level:'Foundation',topic:'Katakana',tags:['Loanword sounds'],note:japanese==='ヶ'?'Small ヶ appears in counters and place names; 一ヶ月 is read いっかげつ. Its shape resembles ケ but does not always represent the ke sound. Learn its reading in the whole word.':japanese==='ヵ'?'Small ヵ is used in spellings such as 一ヵ月 (いっかげつ). It is not the same size as full カ.':'Katakana uses small vowels to represent additional sounds in loanwords. Read the combination as one sound unit rather than separate full-size kana.',examples:[ex(japanese,reading,`Katakana reading: ${romaji}`)]})));
-kana.push({id:'kana-long-vowels',kind:'kana',title:'Long vowels',japanese:'おばあさん・コーヒー',reading:'おばあさん・こーひー',romaji:'obaasan / kōhī',meaning:'Hold the vowel for an extra beat',level:'Foundation',topic:'Reading rules',tags:['Long vowels'],note:'Vowel length can change meaning. Hiragana often repeats あ, い or う; おう is usually a long o sound and えい often a long e sound. Learn each word’s spelling. Katakana usually uses ー: コーヒー. Compare おばさん (aunt) and おばあさん (grandmother).',examples:[ex('おばあさん','おばあさん','grandmother'),ex('コーヒー','こーひー','coffee')]});
+kana.push(
+  ...loanSounds.map(([japanese, reading, romaji]): Entry => ({
+    id: `kana-${code(japanese)}`,
+    kind: 'kana',
+    title: japanese,
+    japanese,
+    reading,
+    romaji,
+    meaning: `${romaji} sound`,
+    level: 'Foundation',
+    topic: 'Katakana',
+    tags: ['Loanword sounds'],
+    note:
+      japanese === 'ヶ'
+        ? 'Small ヶ appears in counters and place names; 一ヶ月 is read いっかげつ. Its shape resembles ケ but does not always represent the ke sound. Learn its reading in the whole word.'
+        : japanese === 'ヵ'
+          ? 'Small ヵ is used in spellings such as 一ヵ月 (いっかげつ). It is not the same size as full カ.'
+          : 'Katakana uses small vowels to represent additional sounds in loanwords. Read the combination as one sound unit rather than separate full-size kana.',
+    examples: [ex(japanese, reading, `Katakana reading: ${romaji}`)],
+  })),
+);
+kana.push({
+  id: 'kana-long-vowels',
+  kind: 'kana',
+  title: 'Long vowels',
+  japanese: 'おばあさん・コーヒー',
+  reading: 'おばあさん・こーひー',
+  romaji: 'obaasan / kōhī',
+  meaning: 'Hold the vowel for an extra beat',
+  level: 'Foundation',
+  topic: 'Reading rules',
+  tags: ['Long vowels'],
+  note: 'Vowel length can change meaning. Hiragana often repeats あ, い or う; おう is usually a long o sound and えい often a long e sound. Learn each word’s spelling. Katakana usually uses ー: コーヒー. Compare おばさん (aunt) and おばあさん (grandmother).',
+  examples: [ex('おばあさん', 'おばあさん', 'grandmother'), ex('コーヒー', 'こーひー', 'coffee')],
+});
 
 const kanjiRows = rows(`一|one|イチ、イツ|ひと|一つ|ひとつ|one thing
 二|two|ニ|ふた|二つ|ふたつ|two things
@@ -274,11 +371,24 @@ const kanjiRows = rows(`一|one|イチ、イツ|ひと|一つ|ひとつ|one thin
 高|high; expensive|コウ|たか|高校|こうこう|high school
 安|inexpensive; peaceful|アン|やす|安全|あんぜん|safety
 新|new|シン|あたら、あら、にい|新聞|しんぶん|newspaper`);
-const kanji: Entry[] = kanjiRows.map(([japanese,meaning,on,kun,word,reading,wordMeaning]) => ({
- id:`kanji-${code(japanese)}`,kind:'kanji',title:japanese,japanese,reading,meaning,level:'N5',topic:'Beginner kanji',tags:['Kanji','Compounds'],on,kun,
- note:'Readings change with the word. On-readings are shown in katakana; kun-reading stems are shown in hiragana (add the word’s okurigana). These are selected common readings, not an exhaustive dictionary entry. Reading practice uses whole words and compounds so you learn each reading in context.',
- examples:[ex(word,reading,wordMeaning)],compounds:compoundData.characters[japanese as keyof typeof compoundData.characters]||[]
-}));
+const kanji: Entry[] = kanjiRows.map(
+  ([japanese, meaning, on, kun, word, reading, wordMeaning]) => ({
+    id: `kanji-${code(japanese)}`,
+    kind: 'kanji',
+    title: japanese,
+    japanese,
+    reading,
+    meaning,
+    level: 'N5',
+    topic: 'Beginner kanji',
+    tags: ['Kanji', 'Compounds'],
+    on,
+    kun,
+    note: 'Readings change with the word. On-readings are shown in katakana; kun-reading stems are shown in hiragana (add the word’s okurigana). These are selected common readings, not an exhaustive dictionary entry. Reading practice uses whole words and compounds so you learn each reading in context.',
+    examples: [ex(word, reading, wordMeaning)],
+    compounds: compoundData.characters[japanese as keyof typeof compoundData.characters] || [],
+  }),
+);
 
 const vocabularyRows = rows(`places|学校|がっこう|school
 places|大学|だいがく|university
@@ -441,27 +551,162 @@ body|顔|かお|face
 body|体|からだ|body
 body|名前|なまえ|name
 `);
-const vocabulary: Entry[] = vocabularyRows.map(([topic,japanese,reading,meaning]) => {
- const place = topic === 'places';
- const person=topic==='people' && japanese!=='家族';
- const prefix=place?'ここは':person?'あの人は':'これは';
- const readingPrefix=place?'ここは':person?'あのひとは':'これは';
- let jp = `${prefix}${japanese}です。`;
- let rp = `${readingPrefix}${reading}です。`;
- const englishNoun=meaning.split(';')[0];
- const uncountable=['Japan','water','tea','black tea','coffee','milk','juice','beer','alcohol','sugar','salt','soy sauce','miso','soup','salad','sushi','udon noodles','soba noodles','ramen','curry','ice cream','snacks','cheese','butter','chicken meat','pork','beef','cooking','bread','cooked rice','meat','fish','vegetables','fruit','paper','glasses','clothes','shoes','money','weather','rain','snow','wind','spring','summer','autumn','winter','work'];
- const article=uncountable.includes(englishNoun)||englishNoun.startsWith('my ')?'':/^[aeiou]/i.test(englishNoun)?'an ':'a ';
- let english=`${person?'That person is':'This is'} ${article}${englishNoun}.`;
- if(japanese==='家族'){jp='これは家族の写真です。';rp='これはかぞくのしゃしんです。';english='This is a photo of my family.';}
- if(japanese==='お父さん'){jp='お父さん、元気ですか。';rp='おとうさん、げんきですか。';english='Dad, how are you?';}
- if(japanese==='お母さん'){jp='お母さん、元気ですか。';rp='おかあさん、げんきですか。';english='Mom, how are you?';}
- const token=(text:string,reading:string,role:string,wordClass:string)=>({text,reading,role,wordClass});
- let sample:Entry['examples'][number]={...ex(jp,rp,english),tokens:[token(place?'ここ':person?'あの人':'これ',place?'ここ':person?'あのひと':'これ','topic','pronoun'),token('は','は','particle','topic particle'),token(japanese,reading,'predicate','noun'),token('です','です','predicate','copula')],translationTokens:[{text:person?'That person':'This',role:'topic'},{text:` is ${article}${englishNoun}.`,role:'predicate'}]};
- if(japanese==='家族')sample={...sample,tokens:[token('これ','これ','topic','pronoun'),token('は','は','particle','topic particle'),token('家族','かぞく','modifier','noun'),token('の','の','particle','possessive particle'),token('写真','しゃしん','predicate','noun'),token('です','です','predicate','copula')],translationTokens:[{text:'This',role:'topic'},{text:' is a photo',role:'predicate'},{text:' of my family.',role:'modifier'}]};
- if(['お父さん','お母さん'].includes(japanese))sample={...sample,tokens:[token(japanese,reading,'topic','address'),token('、','、','particle','punctuation'),token('元気','げんき','predicate','na-adjective'),token('です','です','predicate','copula'),token('か','か','particle','question particle')],translationTokens:[{text:japanese==='お父さん'?'Dad, ':'Mom, ',role:'topic'},{text:'how are you',role:'predicate'},{text:'?',role:'particle'}]};
- return {id:`vocabulary-${code(japanese)}`,kind:'vocabulary',title:japanese,japanese,reading,meaning,level:'N5',topic:topic[0].toUpperCase()+topic.slice(1),tags:[topic,'Noun'],note:topic==='people'?'Use family terms according to who you are talking about. 父 / 母 refer to your own parents when speaking to outsiders; お父さん / お母さん also serve as forms of address.':'',examples:[sample]};
+const vocabulary: Entry[] = vocabularyRows.map(([topic, japanese, reading, meaning]) => {
+  const place = topic === 'places';
+  const person = topic === 'people' && japanese !== '家族';
+  const prefix = place ? 'ここは' : person ? 'あの人は' : 'これは';
+  const readingPrefix = place ? 'ここは' : person ? 'あのひとは' : 'これは';
+  let jp = `${prefix}${japanese}です。`;
+  let rp = `${readingPrefix}${reading}です。`;
+  const englishNoun = meaning.split(';')[0];
+  const uncountable = [
+    'Japan',
+    'water',
+    'tea',
+    'black tea',
+    'coffee',
+    'milk',
+    'juice',
+    'beer',
+    'alcohol',
+    'sugar',
+    'salt',
+    'soy sauce',
+    'miso',
+    'soup',
+    'salad',
+    'sushi',
+    'udon noodles',
+    'soba noodles',
+    'ramen',
+    'curry',
+    'ice cream',
+    'snacks',
+    'cheese',
+    'butter',
+    'chicken meat',
+    'pork',
+    'beef',
+    'cooking',
+    'bread',
+    'cooked rice',
+    'meat',
+    'fish',
+    'vegetables',
+    'fruit',
+    'paper',
+    'glasses',
+    'clothes',
+    'shoes',
+    'money',
+    'weather',
+    'rain',
+    'snow',
+    'wind',
+    'spring',
+    'summer',
+    'autumn',
+    'winter',
+    'work',
+  ];
+  const article =
+    uncountable.includes(englishNoun) || englishNoun.startsWith('my ')
+      ? ''
+      : /^[aeiou]/i.test(englishNoun)
+        ? 'an '
+        : 'a ';
+  let english = `${person ? 'That person is' : 'This is'} ${article}${englishNoun}.`;
+  if (japanese === '家族') {
+    jp = 'これは家族の写真です。';
+    rp = 'これはかぞくのしゃしんです。';
+    english = 'This is a photo of my family.';
+  }
+  if (japanese === 'お父さん') {
+    jp = 'お父さん、元気ですか。';
+    rp = 'おとうさん、げんきですか。';
+    english = 'Dad, how are you?';
+  }
+  if (japanese === 'お母さん') {
+    jp = 'お母さん、元気ですか。';
+    rp = 'おかあさん、げんきですか。';
+    english = 'Mom, how are you?';
+  }
+  const token = (text: string, reading: string, role: string, wordClass: string) => ({
+    text,
+    reading,
+    role,
+    wordClass,
+  });
+  let sample: Entry['examples'][number] = {
+    ...ex(jp, rp, english),
+    tokens: [
+      token(
+        place ? 'ここ' : person ? 'あの人' : 'これ',
+        place ? 'ここ' : person ? 'あのひと' : 'これ',
+        'topic',
+        'pronoun',
+      ),
+      token('は', 'は', 'particle', 'topic particle'),
+      token(japanese, reading, 'predicate', 'noun'),
+      token('です', 'です', 'predicate', 'copula'),
+    ],
+    translationTokens: [
+      { text: person ? 'That person' : 'This', role: 'topic' },
+      { text: ` is ${article}${englishNoun}.`, role: 'predicate' },
+    ],
+  };
+  if (japanese === '家族')
+    sample = {
+      ...sample,
+      tokens: [
+        token('これ', 'これ', 'topic', 'pronoun'),
+        token('は', 'は', 'particle', 'topic particle'),
+        token('家族', 'かぞく', 'modifier', 'noun'),
+        token('の', 'の', 'particle', 'possessive particle'),
+        token('写真', 'しゃしん', 'predicate', 'noun'),
+        token('です', 'です', 'predicate', 'copula'),
+      ],
+      translationTokens: [
+        { text: 'This', role: 'topic' },
+        { text: ' is a photo', role: 'predicate' },
+        { text: ' of my family.', role: 'modifier' },
+      ],
+    };
+  if (['お父さん', 'お母さん'].includes(japanese))
+    sample = {
+      ...sample,
+      tokens: [
+        token(japanese, reading, 'topic', 'address'),
+        token('、', '、', 'particle', 'punctuation'),
+        token('元気', 'げんき', 'predicate', 'na-adjective'),
+        token('です', 'です', 'predicate', 'copula'),
+        token('か', 'か', 'particle', 'question particle'),
+      ],
+      translationTokens: [
+        { text: japanese === 'お父さん' ? 'Dad, ' : 'Mom, ', role: 'topic' },
+        { text: 'how are you', role: 'predicate' },
+        { text: '?', role: 'particle' },
+      ],
+    };
+  return {
+    id: `vocabulary-${code(japanese)}`,
+    kind: 'vocabulary',
+    title: japanese,
+    japanese,
+    reading,
+    meaning,
+    level: 'N5',
+    topic: topic[0].toUpperCase() + topic.slice(1),
+    tags: [topic, 'Noun'],
+    note:
+      topic === 'people'
+        ? 'Use family terms according to who you are talking about. 父 / 母 refer to your own parents when speaking to outsiders; お父さん / お母さん also serve as forms of address.'
+        : '',
+    examples: [sample],
+  };
 });
-const vehicles=rows(`車|くるま|kuruma|car|車で会社に行きます。|くるまでかいしゃにいきます。|I go to work by car.
+const vehicles =
+  rows(`車|くるま|kuruma|car|車で会社に行きます。|くるまでかいしゃにいきます。|I go to work by car.
 自動車|じどうしゃ|jidousha|automobile; car|これは日本の自動車です。|これはにほんのじどうしゃです。|This is a Japanese car.
 自転車|じてんしゃ|jitensha|bicycle|自転車で学校に行きます。|じてんしゃでがっこうにいきます。|I go to school by bicycle.
 電車|でんしゃ|densha|train|毎朝、電車に乗ります。|まいあさ、でんしゃにのります。|I take the train every morning.
@@ -473,12 +718,26 @@ const vehicles=rows(`車|くるま|kuruma|car|車で会社に行きます。|く
 船|ふね|fune|boat; ship|船で島に行きます。|ふねでしまにいきます。|I go to the island by boat.
 バイク|ばいく|baiku|motorcycle|兄はバイクに乗ります。|あにはばいくにのります。|My older brother rides a motorcycle.
 トラック|とらっく|torakku|truck|大きいトラックが来ました。|おおきいとらっくがきました。|A large truck arrived.`);
-for(const [japanese,reading,romaji,meaning,jp,rp,en] of vehicles){
- const entry:Entry={id:`vocabulary-${code(japanese)}`,kind:'vocabulary',title:japanese,japanese,reading,romaji,meaning,level:'Beginner',topic:'Vehicles',tags:['Vehicles','Noun'],note:'Use で for travel by a vehicle, and に with 乗る (to board or ride). 車 is the everyday word for car; 自動車 is more formal. バイク usually means motorcycle.',examples:[ex(jp,rp,en)]};
- const existing=vocabulary.find(e=>e.id===entry.id);
- if(existing)Object.assign(existing,entry);else vocabulary.push(entry);
+for (const [japanese, reading, romaji, meaning, jp, rp, en] of vehicles) {
+  const entry: Entry = {
+    id: `vocabulary-${code(japanese)}`,
+    kind: 'vocabulary',
+    title: japanese,
+    japanese,
+    reading,
+    romaji,
+    meaning,
+    level: 'Beginner',
+    topic: 'Vehicles',
+    tags: ['Vehicles', 'Noun'],
+    note: 'Use で for travel by a vehicle, and に with 乗る (to board or ride). 車 is the everyday word for car; 自動車 is more formal. バイク usually means motorcycle.',
+    examples: [ex(jp, rp, en)],
+  };
+  const existing = vocabulary.find((e) => e.id === entry.id);
+  if (existing) Object.assign(existing, entry);
+  else vocabulary.push(entry);
 }
-const timeWords=rows(`今日|きょう|today|今日は休みです。|きょうはやすみです。|Today is a day off.
+const timeWords = rows(`今日|きょう|today|今日は休みです。|きょうはやすみです。|Today is a day off.
 昨日|きのう|yesterday|昨日は休みでした。|きのうはやすみでした。|Yesterday was a day off.
 明日|あした|tomorrow|明日、学校に行きます。|あした、がっこうにいきます。|I will go to school tomorrow.
 一昨日|おととい|the day before yesterday|一昨日、本を買いました。|おととい、ほんをかいました。|I bought a book the day before yesterday.
@@ -508,8 +767,22 @@ const timeWords=rows(`今日|きょう|today|今日は休みです。|きょう�
 休み|やすみ|rest; day off|明日は休みです。|あしたはやすみです。|Tomorrow is a day off.
 昼休み|ひるやすみ|lunch break|昼休みに本を読みます。|ひるやすみにほんをよみます。|I read during the lunch break.
 今|いま|now|今、勉強しています。|いま、べんきょうしています。|I am studying now.`);
-vocabulary.push(...timeWords.map(([japanese,reading,meaning,jp,rp,en]):Entry=>({id:`vocabulary-${code(japanese)}`,kind:'vocabulary',title:japanese,japanese,reading,meaning,level:'N5',topic:'Time',tags:['Time'],note:'Relative time words such as 今日, 明日 and 毎日 usually do not take the time particle に. Specific clock times usually do.',examples:[ex(jp,rp,en)]})));
-const actionWords=rows(`行く|いく|go|学校に行きます。|がっこうにいきます。|I go to school.
+vocabulary.push(
+  ...timeWords.map(([japanese, reading, meaning, jp, rp, en]): Entry => ({
+    id: `vocabulary-${code(japanese)}`,
+    kind: 'vocabulary',
+    title: japanese,
+    japanese,
+    reading,
+    meaning,
+    level: 'N5',
+    topic: 'Time',
+    tags: ['Time'],
+    note: 'Relative time words such as 今日, 明日 and 毎日 usually do not take the time particle に. Specific clock times usually do.',
+    examples: [ex(jp, rp, en)],
+  })),
+);
+const actionWords = rows(`行く|いく|go|学校に行きます。|がっこうにいきます。|I go to school.
 来る|くる|come|友達が来ます。|ともだちがきます。|A friend is coming.
 帰る|かえる|return home|家に帰ります。|いえにかえります。|I go home.
 食べる|たべる|eat|パンを食べます。|ぱんをたべます。|I eat bread.
@@ -529,61 +802,369 @@ const actionWords=rows(`行く|いく|go|学校に行きます。|がっこう�
 会う|あう|meet|友達に会います。|ともだちにあいます。|I meet a friend.
 歩く|あるく|walk|公園を歩きます。|こうえんをあるきます。|I walk through the park.
 待つ|まつ|wait|ここで待ちます。|ここでまちます。|I wait here.`);
-vocabulary.push(...actionWords.map(([japanese,reading,meaning,jp,rp,en]):Entry=>({id:`vocabulary-${code(japanese)}`,kind:'vocabulary',title:japanese,japanese,reading,meaning,level:'N5',topic:'Daily actions',tags:['Verb'],note:'The headword is the dictionary form. The example uses the polite ます form. Verb endings change with tense and politeness; this is different from noun + です.',examples:[ex(jp,rp,en)]})));
+vocabulary.push(
+  ...actionWords.map(([japanese, reading, meaning, jp, rp, en]): Entry => ({
+    id: `vocabulary-${code(japanese)}`,
+    kind: 'vocabulary',
+    title: japanese,
+    japanese,
+    reading,
+    meaning,
+    level: 'N5',
+    topic: 'Daily actions',
+    tags: ['Verb'],
+    note: 'The headword is the dictionary form. The example uses the polite ます form. Verb endings change with tense and politeness; this is different from noun + です.',
+    examples: [ex(jp, rp, en)],
+  })),
+);
 
-function grammar(id:string,title:string,reading:string,meaning:string,note:string,parts:string,prompt:string,answers:string[],tiles?:string[]):Entry {
- const tokens = parts.split('|').map(p=>{const [text,role,wordClass]=p.split('~'); return {text,role,wordClass,reading:sentenceAlignments[id]?.readings[parts.split('|').indexOf(p)]};});
- const japanese=tokens.map(t=>t.text).join('')+'。';
- return {id:`grammar-${id}`,kind:'grammar',title,japanese,reading,meaning,level:'N5',topic:'Sentence building',tags:['Grammar',id],note,examples:[{japanese,reading,meaning,tokens,translationTokens:sentenceAlignments[id]?.english}],exercise:{prompt,answers,explanation:note,tiles}};
+function grammar(
+  id: string,
+  title: string,
+  reading: string,
+  meaning: string,
+  note: string,
+  parts: string,
+  prompt: string,
+  answers: string[],
+  tiles?: string[],
+): Entry {
+  const tokens = parts.split('|').map((p) => {
+    const [text, role, wordClass] = p.split('~');
+    return {
+      text,
+      role,
+      wordClass,
+      reading: sentenceAlignments[id]?.readings[parts.split('|').indexOf(p)],
+    };
+  });
+  const japanese = tokens.map((t) => t.text).join('') + '。';
+  return {
+    id: `grammar-${id}`,
+    kind: 'grammar',
+    title,
+    japanese,
+    reading,
+    meaning,
+    level: 'N5',
+    topic: 'Sentence building',
+    tags: ['Grammar', id],
+    note,
+    examples: [
+      { japanese, reading, meaning, tokens, translationTokens: sentenceAlignments[id]?.english },
+    ],
+    exercise: { prompt, answers, explanation: note, tiles },
+  };
 }
-const grammarLessons:Entry[] = [
- grammar('desu','A は B です','わたしはがくせいです。','I am a student.','は marks the topic (pronounced wa). A noun followed by です makes a polite statement. Japanese often leaves out an understood topic; は does not automatically mean the grammatical subject.','私~topic~pronoun|は~particle~particle|学生です~predicate~noun + copula','Build: “I am a student.” Start with 私.',['私は学生です','わたしはがくせいです'],['私','は','学生','です']),
- grammar('noun-negative','Noun negation: じゃありません','わたしはせんせいじゃありません。','I am not a teacher.','For noun predicates, replace です with じゃありません (polite) or ではありません (more formal). じゃないです is also common polite speech. Do not use plain ありません directly after a noun to mean “is not”.','私~topic~pronoun|は~particle~particle|先生じゃありません~predicate~noun + negative copula','Build: “I am not a teacher.” Start with 私.',['私は先生じゃありません','私は先生ではありません','私は先生じゃないです','わたしはせんせいじゃありません','わたしはせんせいではありません','わたしはせんせいじゃないです'],['私','は','先生','じゃありません']),
- grammar('noun-past','Noun past: でした','きのうはやすみでした。','Yesterday was a day off.','Noun + でした is the polite past of noun + です. Negative past: じゃありませんでした / ではありませんでした. This noun pattern is different from an い-adjective past ending in かった.','昨日~topic~time noun|は~particle~particle|休みでした~predicate~noun + past copula','Build: “Yesterday was a day off.”',['昨日は休みでした','きのうはやすみでした'],['昨日','は','休み','でした']),
- grammar('question','Questions with か','これはほんですか。','Is this a book?','Add か to a polite statement to ask a question. A question mark is optional. Answer with はい / いいえ and the relevant predicate. 何ですか asks what something is.','これ~topic~demonstrative pronoun|は~particle~particle|本です~predicate~noun + copula|か~particle~question particle','Build: “Is this a book?”',['これは本ですか','これはほんですか'],['これ','は','本','です','か']),
- grammar('no','Possession and connection: の','これはわたしのほんです。','This is my book.','Noun A + の + noun B links the nouns. It may express ownership (私の本), affiliation (学校の先生), or another relationship. の follows the possessor, unlike English apostrophe placement.','これ~topic~demonstrative pronoun|は~particle~particle|私の~modifier~pronoun + particle|本です~predicate~noun + copula','Build: “This is my book.”',['これは私の本です','これはわたしのほんです'],['これ','は','私','の','本','です']),
- grammar('mo','Also: も','わたしもがくせいです。','I am also a student.','も means “also / too” and often replaces は, が or を in the same position. 私も学生です adds me to a group of students already mentioned.','私~topic~pronoun|も~particle~additive particle|学生です~predicate~noun + copula','Build: “I am also a student.”',['私も学生です','わたしもがくせいです'],['私','も','学生','です']),
- grammar('demonstratives','これ・それ・あれ and この','このほんはおもしろいです。','This book is interesting.','これ stands alone: これは本です. この must come before a noun: この本. それ / その refer to something near the listener or already mentioned; あれ / あの are distant from both speakers.','この~modifier~demonstrative determiner|本~topic~noun|は~particle~particle|面白いです~predicate~i-adjective + polite ending','Build: “This book is interesting.” Start with この本.',['この本は面白いです','この本はおもしろいです','このほんはおもしろいです'],['この','本','は','面白い','です']),
- grammar('arimasu','Things exist: あります','つくえがあります。','There is a desk.','Use あります for things and plants. が marks what exists. The existence pattern can also express possession: 時間があります means “I have time”. This is an existence verb, not the negative copula in じゃありません.','机~subject~noun|が~particle~subject particle|あります~predicate~existence verb','Build: “There is a desk.”',['机があります','つくえがあります'],['机','が','あります']),
- grammar('imasu','People and animals: います','ねこがいます。','There is a cat.','Use います for people and animals. Compare 本があります (there is a book) and 猫がいます (there is a cat). います is also used with verb て-forms, but that is a different construction.','猫~subject~noun|が~particle~subject particle|います~predicate~animate existence verb','Build: “There is a cat.”',['猫がいます','ねこがいます'],['猫','が','います']),
- grammar('existence-negative','Negative existence: ありません・いません','じかんがありません。','I do not have time.','The negative of あります is ありません; the negative of います is いません. 時間がありません means there is no time / I do not have time. 私は学生じゃありません instead negates the noun predicate “student”.','時間~subject~noun|が~particle~subject particle|ありません~predicate~negative existence verb','Build: “I do not have time.” Use 時間が.',['時間がありません','じかんがありません'],['時間','が','ありません']),
- grammar('location','Location of existence: に','へやにねこがいます。','There is a cat in the room.','Place + に marks where something exists with あります / います. Place + で instead marks where an action happens. For describing an already-known cat: 猫は部屋にいます.','部屋に~modifier~place noun + location particle|猫~subject~noun|が~particle~subject particle|います~predicate~existence verb','Build: “There is a cat in the room.” Start with 部屋に.',['部屋に猫がいます','へやにねこがいます'],['部屋','に','猫','が','います']),
- grammar('object','Direct object: を','みずをのみます。','I drink water.','を marks the direct object of many action verbs and is pronounced o. The person doing the action can be omitted when clear. 水を飲みます is a verb sentence; 水です is a noun sentence.','水~object~noun|を~particle~object particle|飲みます~predicate~verb','Build: “I drink water.” Leave out 私.',['水を飲みます','みずをのみます'],['水','を','飲みます']),
- grammar('de','Action place and means: で','としょかんでべんきょうします。','I study at the library.','で marks the place where an action occurs. It also marks means: バスで行きます (go by bus). Use に for a destination or the location of existence, not で.','図書館で~modifier~place noun + particle|勉強します~predicate~verb','Build: “I study at the library.”',['図書館で勉強します','としょかんでべんきょうします'],['図書館','で','勉強します']),
- grammar('destination','Destinations: に・へ','がっこうにいきます。','I go to school.','に marks a destination with 行きます / 来ます / 帰ります. へ emphasizes direction and is pronounced e. 学校に行きます and 学校へ行きます are both natural here.','学校に~modifier~destination noun + particle|行きます~predicate~verb','Build: “I go to school.”',['学校に行きます','学校へ行きます','がっこうにいきます','がっこうへいきます'],['学校','に','行きます']),
- grammar('time-ni','Specific times: に','しちじにおきます。','I get up at seven.','Use に after a specific clock time: 七時に. It is usually omitted after relative times such as 今日, 明日 and 毎日. Seven o’clock is commonly しちじ; four o’clock is よじ and nine o’clock is くじ.','七時に~modifier~time noun + particle|起きます~predicate~verb','Fill the missing particle: 七時 __ 起きます。',['に']),
- grammar('masu','Polite non-past: ます','まいにちほんをよみます。','I read a book every day.','ます is a polite verb ending. It describes habits or future actions depending on context. It does not by itself mean an action is happening right now. Learn each verb’s ます form alongside its dictionary form.','毎日~modifier~time noun|本~object~noun|を~particle~object particle|読みます~predicate~verb','Build: “I read a book every day.” Start with 毎日.',['毎日本を読みます','まいにちほんをよみます'],['毎日','本','を','読みます']),
- grammar('masen','Polite verb negative: ません','にくをたべません。','I do not eat meat.','Replace ます with ません for a polite non-past negative: 食べます → 食べません. Do not add じゃありません to the dictionary form of a verb. 食べません may mean a habit or a future choice in context.','肉~object~noun|を~particle~object particle|食べません~predicate~negative verb','Build: “I do not eat meat.”',['肉を食べません','にくをたべません'],['肉','を','食べません']),
- grammar('verb-past','Polite verb past','きのうほんをかいました。','I bought a book yesterday.','Replace ます with ました for past affirmative and with ませんでした for past negative: 買います → 買いました / 買いませんでした. Noun and adjective past forms follow other patterns.','昨日~modifier~time noun|本~object~noun|を~particle~object particle|買いました~predicate~past verb','Build: “I bought a book yesterday.” Start with 昨日.',['昨日本を買いました','きのうほんをかいました'],['昨日','本','を','買いました']),
- grammar('te-request','Requests: てください','なまえをかいてください。','Please write your name.','Verb て-form + ください makes a request. 書く becomes 書いて. て-form changes depend on the verb group: 食べる→食べて, 読む→読んで, する→して, 来る→来て; 行く is exceptional: 行って.','名前~object~noun|を~particle~object particle|書いてください~predicate~verb + request expression','Build: “Please write your name.”',['名前を書いてください','なまえをかいてください'],['名前','を','書いて','ください']),
- grammar('te-imasu','Ongoing actions: ています','いまほんをよんでいます。','I am reading a book now.','Verb て-form + います often describes an ongoing action: 読んでいます. It can also describe a resulting state with some verbs, so it is not always an exact equivalent of English “-ing”.','今~modifier~time noun|本~object~noun|を~particle~object particle|読んでいます~predicate~verb + auxiliary','Build: “I am reading a book now.” Start with 今.',['今本を読んでいます','いまほんをよんでいます'],['今','本','を','読んで','います']),
- grammar('hoshii','Want a thing: ほしい','わたしはほんがほしいです。','I want a book.','ほしい is an い-adjective, not a verb. A common beginner pattern is 私は noun がほしいです. Its negative is ほしくないです. Use verb stem + たい for wanting to do an action. Direct statements normally describe the speaker’s own desire.','私~topic~pronoun|は~particle~topic particle|本~subject~noun|が~particle~subject particle|ほしいです~predicate~i-adjective + polite ending','Build: “I want a book.” Start with 私は.',['私は本がほしいです','私は本が欲しいです','わたしはほんがほしいです'],['私','は','本','が','ほしい','です']),
- grammar('tai','Want to do: たい','にほんにいきたいです。','I want to go to Japan.','Attach たい to the ます stem: 行きます → 行きたいです. The resulting expression inflects like an い-adjective: 行きたくないです. Use ほしい for a desired thing.','日本に~modifier~destination noun + particle|行きたいです~predicate~verb stem + desire adjective','Build: “I want to go to Japan.”',['日本に行きたいです','日本へ行きたいです','にほんにいきたいです','にほんへいきたいです'],['日本','に','行きたい','です']),
- grammar('suki','Likes: 好きです','ねこがすきです。','I like cats.','好き is a な-adjective, not a verb. Use noun が好きです to say what you like. Before another noun, use 好きな: 好きな食べ物 (favorite food). 嫌い (disliked) is also a な-adjective despite ending in い.','猫~subject~noun|が~particle~subject particle|好きです~predicate~na-adjective + copula','Build: “I like cats.” Leave out 私.',['猫が好きです','ねこがすきです','猫がすきです'],['猫','が','好き','です']),
- grammar('i-adjective','い-adjectives in sentences','このほんはおもしろいです。','This book is interesting.','Most い-adjectives keep final い before a noun: 面白い本. Negative: 面白くないです; past: 面白かったです; negative past: 面白くなかったです. Add です for polite speech, but not な before the noun.','この~modifier~determiner|本~topic~noun|は~particle~topic particle|面白いです~predicate~i-adjective + polite ending','Make 面白いです negative.',['面白くないです','おもしろくないです','面白くありません','おもしろくありません']),
- grammar('na-adjective','な-adjectives in sentences','ここはしずかです。','It is quiet here.','A な-adjective uses な directly before a noun: 静かな部屋. At the end of a polite sentence, use 静かです, not 静かなです. Negative: 静かじゃありません; past: 静かでした. きれい and 嫌い belong to this group.','ここ~topic~place pronoun|は~particle~topic particle|静かです~predicate~na-adjective + copula','Fill the missing word: 静か __ 部屋 (a quiet room).',['な'])
+const grammarLessons: Entry[] = [
+  grammar(
+    'desu',
+    'A は B です',
+    'わたしはがくせいです。',
+    'I am a student.',
+    'は marks the topic (pronounced wa). A noun followed by です makes a polite statement. Japanese often leaves out an understood topic; は does not automatically mean the grammatical subject.',
+    '私~topic~pronoun|は~particle~particle|学生です~predicate~noun + copula',
+    'Build: “I am a student.” Start with 私.',
+    ['私は学生です', 'わたしはがくせいです'],
+    ['私', 'は', '学生', 'です'],
+  ),
+  grammar(
+    'noun-negative',
+    'Noun negation: じゃありません',
+    'わたしはせんせいじゃありません。',
+    'I am not a teacher.',
+    'For noun predicates, replace です with じゃありません (polite) or ではありません (more formal). じゃないです is also common polite speech. Do not use plain ありません directly after a noun to mean “is not”.',
+    '私~topic~pronoun|は~particle~particle|先生じゃありません~predicate~noun + negative copula',
+    'Build: “I am not a teacher.” Start with 私.',
+    [
+      '私は先生じゃありません',
+      '私は先生ではありません',
+      '私は先生じゃないです',
+      'わたしはせんせいじゃありません',
+      'わたしはせんせいではありません',
+      'わたしはせんせいじゃないです',
+    ],
+    ['私', 'は', '先生', 'じゃありません'],
+  ),
+  grammar(
+    'noun-past',
+    'Noun past: でした',
+    'きのうはやすみでした。',
+    'Yesterday was a day off.',
+    'Noun + でした is the polite past of noun + です. Negative past: じゃありませんでした / ではありませんでした. This noun pattern is different from an い-adjective past ending in かった.',
+    '昨日~topic~time noun|は~particle~particle|休みでした~predicate~noun + past copula',
+    'Build: “Yesterday was a day off.”',
+    ['昨日は休みでした', 'きのうはやすみでした'],
+    ['昨日', 'は', '休み', 'でした'],
+  ),
+  grammar(
+    'question',
+    'Questions with か',
+    'これはほんですか。',
+    'Is this a book?',
+    'Add か to a polite statement to ask a question. A question mark is optional. Answer with はい / いいえ and the relevant predicate. 何ですか asks what something is.',
+    'これ~topic~demonstrative pronoun|は~particle~particle|本です~predicate~noun + copula|か~particle~question particle',
+    'Build: “Is this a book?”',
+    ['これは本ですか', 'これはほんですか'],
+    ['これ', 'は', '本', 'です', 'か'],
+  ),
+  grammar(
+    'no',
+    'Possession and connection: の',
+    'これはわたしのほんです。',
+    'This is my book.',
+    'Noun A + の + noun B links the nouns. It may express ownership (私の本), affiliation (学校の先生), or another relationship. の follows the possessor, unlike English apostrophe placement.',
+    'これ~topic~demonstrative pronoun|は~particle~particle|私の~modifier~pronoun + particle|本です~predicate~noun + copula',
+    'Build: “This is my book.”',
+    ['これは私の本です', 'これはわたしのほんです'],
+    ['これ', 'は', '私', 'の', '本', 'です'],
+  ),
+  grammar(
+    'mo',
+    'Also: も',
+    'わたしもがくせいです。',
+    'I am also a student.',
+    'も means “also / too” and often replaces は, が or を in the same position. 私も学生です adds me to a group of students already mentioned.',
+    '私~topic~pronoun|も~particle~additive particle|学生です~predicate~noun + copula',
+    'Build: “I am also a student.”',
+    ['私も学生です', 'わたしもがくせいです'],
+    ['私', 'も', '学生', 'です'],
+  ),
+  grammar(
+    'demonstratives',
+    'これ・それ・あれ and この',
+    'このほんはおもしろいです。',
+    'This book is interesting.',
+    'これ stands alone: これは本です. この must come before a noun: この本. それ / その refer to something near the listener or already mentioned; あれ / あの are distant from both speakers.',
+    'この~modifier~demonstrative determiner|本~topic~noun|は~particle~particle|面白いです~predicate~i-adjective + polite ending',
+    'Build: “This book is interesting.” Start with この本.',
+    ['この本は面白いです', 'この本はおもしろいです', 'このほんはおもしろいです'],
+    ['この', '本', 'は', '面白い', 'です'],
+  ),
+  grammar(
+    'arimasu',
+    'Things exist: あります',
+    'つくえがあります。',
+    'There is a desk.',
+    'Use あります for things and plants. が marks what exists. The existence pattern can also express possession: 時間があります means “I have time”. This is an existence verb, not the negative copula in じゃありません.',
+    '机~subject~noun|が~particle~subject particle|あります~predicate~existence verb',
+    'Build: “There is a desk.”',
+    ['机があります', 'つくえがあります'],
+    ['机', 'が', 'あります'],
+  ),
+  grammar(
+    'imasu',
+    'People and animals: います',
+    'ねこがいます。',
+    'There is a cat.',
+    'Use います for people and animals. Compare 本があります (there is a book) and 猫がいます (there is a cat). います is also used with verb て-forms, but that is a different construction.',
+    '猫~subject~noun|が~particle~subject particle|います~predicate~animate existence verb',
+    'Build: “There is a cat.”',
+    ['猫がいます', 'ねこがいます'],
+    ['猫', 'が', 'います'],
+  ),
+  grammar(
+    'existence-negative',
+    'Negative existence: ありません・いません',
+    'じかんがありません。',
+    'I do not have time.',
+    'The negative of あります is ありません; the negative of います is いません. 時間がありません means there is no time / I do not have time. 私は学生じゃありません instead negates the noun predicate “student”.',
+    '時間~subject~noun|が~particle~subject particle|ありません~predicate~negative existence verb',
+    'Build: “I do not have time.” Use 時間が.',
+    ['時間がありません', 'じかんがありません'],
+    ['時間', 'が', 'ありません'],
+  ),
+  grammar(
+    'location',
+    'Location of existence: に',
+    'へやにねこがいます。',
+    'There is a cat in the room.',
+    'Place + に marks where something exists with あります / います. Place + で instead marks where an action happens. For describing an already-known cat: 猫は部屋にいます.',
+    '部屋に~modifier~place noun + location particle|猫~subject~noun|が~particle~subject particle|います~predicate~existence verb',
+    'Build: “There is a cat in the room.” Start with 部屋に.',
+    ['部屋に猫がいます', 'へやにねこがいます'],
+    ['部屋', 'に', '猫', 'が', 'います'],
+  ),
+  grammar(
+    'object',
+    'Direct object: を',
+    'みずをのみます。',
+    'I drink water.',
+    'を marks the direct object of many action verbs and is pronounced o. The person doing the action can be omitted when clear. 水を飲みます is a verb sentence; 水です is a noun sentence.',
+    '水~object~noun|を~particle~object particle|飲みます~predicate~verb',
+    'Build: “I drink water.” Leave out 私.',
+    ['水を飲みます', 'みずをのみます'],
+    ['水', 'を', '飲みます'],
+  ),
+  grammar(
+    'de',
+    'Action place and means: で',
+    'としょかんでべんきょうします。',
+    'I study at the library.',
+    'で marks the place where an action occurs. It also marks means: バスで行きます (go by bus). Use に for a destination or the location of existence, not で.',
+    '図書館で~modifier~place noun + particle|勉強します~predicate~verb',
+    'Build: “I study at the library.”',
+    ['図書館で勉強します', 'としょかんでべんきょうします'],
+    ['図書館', 'で', '勉強します'],
+  ),
+  grammar(
+    'destination',
+    'Destinations: に・へ',
+    'がっこうにいきます。',
+    'I go to school.',
+    'に marks a destination with 行きます / 来ます / 帰ります. へ emphasizes direction and is pronounced e. 学校に行きます and 学校へ行きます are both natural here.',
+    '学校に~modifier~destination noun + particle|行きます~predicate~verb',
+    'Build: “I go to school.”',
+    ['学校に行きます', '学校へ行きます', 'がっこうにいきます', 'がっこうへいきます'],
+    ['学校', 'に', '行きます'],
+  ),
+  grammar(
+    'time-ni',
+    'Specific times: に',
+    'しちじにおきます。',
+    'I get up at seven.',
+    'Use に after a specific clock time: 七時に. It is usually omitted after relative times such as 今日, 明日 and 毎日. Seven o’clock is commonly しちじ; four o’clock is よじ and nine o’clock is くじ.',
+    '七時に~modifier~time noun + particle|起きます~predicate~verb',
+    'Fill the missing particle: 七時 __ 起きます。',
+    ['に'],
+  ),
+  grammar(
+    'masu',
+    'Polite non-past: ます',
+    'まいにちほんをよみます。',
+    'I read a book every day.',
+    'ます is a polite verb ending. It describes habits or future actions depending on context. It does not by itself mean an action is happening right now. Learn each verb’s ます form alongside its dictionary form.',
+    '毎日~modifier~time noun|本~object~noun|を~particle~object particle|読みます~predicate~verb',
+    'Build: “I read a book every day.” Start with 毎日.',
+    ['毎日本を読みます', 'まいにちほんをよみます'],
+    ['毎日', '本', 'を', '読みます'],
+  ),
+  grammar(
+    'masen',
+    'Polite verb negative: ません',
+    'にくをたべません。',
+    'I do not eat meat.',
+    'Replace ます with ません for a polite non-past negative: 食べます → 食べません. Do not add じゃありません to the dictionary form of a verb. 食べません may mean a habit or a future choice in context.',
+    '肉~object~noun|を~particle~object particle|食べません~predicate~negative verb',
+    'Build: “I do not eat meat.”',
+    ['肉を食べません', 'にくをたべません'],
+    ['肉', 'を', '食べません'],
+  ),
+  grammar(
+    'verb-past',
+    'Polite verb past',
+    'きのうほんをかいました。',
+    'I bought a book yesterday.',
+    'Replace ます with ました for past affirmative and with ませんでした for past negative: 買います → 買いました / 買いませんでした. Noun and adjective past forms follow other patterns.',
+    '昨日~modifier~time noun|本~object~noun|を~particle~object particle|買いました~predicate~past verb',
+    'Build: “I bought a book yesterday.” Start with 昨日.',
+    ['昨日本を買いました', 'きのうほんをかいました'],
+    ['昨日', '本', 'を', '買いました'],
+  ),
+  grammar(
+    'te-request',
+    'Requests: てください',
+    'なまえをかいてください。',
+    'Please write your name.',
+    'Verb て-form + ください makes a request. 書く becomes 書いて. て-form changes depend on the verb group: 食べる→食べて, 読む→読んで, する→して, 来る→来て; 行く is exceptional: 行って.',
+    '名前~object~noun|を~particle~object particle|書いてください~predicate~verb + request expression',
+    'Build: “Please write your name.”',
+    ['名前を書いてください', 'なまえをかいてください'],
+    ['名前', 'を', '書いて', 'ください'],
+  ),
+  grammar(
+    'te-imasu',
+    'Ongoing actions: ています',
+    'いまほんをよんでいます。',
+    'I am reading a book now.',
+    'Verb て-form + います often describes an ongoing action: 読んでいます. It can also describe a resulting state with some verbs, so it is not always an exact equivalent of English “-ing”.',
+    '今~modifier~time noun|本~object~noun|を~particle~object particle|読んでいます~predicate~verb + auxiliary',
+    'Build: “I am reading a book now.” Start with 今.',
+    ['今本を読んでいます', 'いまほんをよんでいます'],
+    ['今', '本', 'を', '読んで', 'います'],
+  ),
+  grammar(
+    'hoshii',
+    'Want a thing: ほしい',
+    'わたしはほんがほしいです。',
+    'I want a book.',
+    'ほしい is an い-adjective, not a verb. A common beginner pattern is 私は noun がほしいです. Its negative is ほしくないです. Use verb stem + たい for wanting to do an action. Direct statements normally describe the speaker’s own desire.',
+    '私~topic~pronoun|は~particle~topic particle|本~subject~noun|が~particle~subject particle|ほしいです~predicate~i-adjective + polite ending',
+    'Build: “I want a book.” Start with 私は.',
+    ['私は本がほしいです', '私は本が欲しいです', 'わたしはほんがほしいです'],
+    ['私', 'は', '本', 'が', 'ほしい', 'です'],
+  ),
+  grammar(
+    'tai',
+    'Want to do: たい',
+    'にほんにいきたいです。',
+    'I want to go to Japan.',
+    'Attach たい to the ます stem: 行きます → 行きたいです. The resulting expression inflects like an い-adjective: 行きたくないです. Use ほしい for a desired thing.',
+    '日本に~modifier~destination noun + particle|行きたいです~predicate~verb stem + desire adjective',
+    'Build: “I want to go to Japan.”',
+    ['日本に行きたいです', '日本へ行きたいです', 'にほんにいきたいです', 'にほんへいきたいです'],
+    ['日本', 'に', '行きたい', 'です'],
+  ),
+  grammar(
+    'suki',
+    'Likes: 好きです',
+    'ねこがすきです。',
+    'I like cats.',
+    '好き is a な-adjective, not a verb. Use noun が好きです to say what you like. Before another noun, use 好きな: 好きな食べ物 (favorite food). 嫌い (disliked) is also a な-adjective despite ending in い.',
+    '猫~subject~noun|が~particle~subject particle|好きです~predicate~na-adjective + copula',
+    'Build: “I like cats.” Leave out 私.',
+    ['猫が好きです', 'ねこがすきです', '猫がすきです'],
+    ['猫', 'が', '好き', 'です'],
+  ),
+  grammar(
+    'i-adjective',
+    'い-adjectives in sentences',
+    'このほんはおもしろいです。',
+    'This book is interesting.',
+    'Most い-adjectives keep final い before a noun: 面白い本. Negative: 面白くないです; past: 面白かったです; negative past: 面白くなかったです. Add です for polite speech, but not な before the noun.',
+    'この~modifier~determiner|本~topic~noun|は~particle~topic particle|面白いです~predicate~i-adjective + polite ending',
+    'Make 面白いです negative.',
+    ['面白くないです', 'おもしろくないです', '面白くありません', 'おもしろくありません'],
+  ),
+  grammar(
+    'na-adjective',
+    'な-adjectives in sentences',
+    'ここはしずかです。',
+    'It is quiet here.',
+    'A な-adjective uses な directly before a noun: 静かな部屋. At the end of a polite sentence, use 静かです, not 静かなです. Negative: 静かじゃありません; past: 静かでした. きれい and 嫌い belong to this group.',
+    'ここ~topic~place pronoun|は~particle~topic particle|静かです~predicate~na-adjective + copula',
+    'Fill the missing word: 静か __ 部屋 (a quiet room).',
+    ['な'],
+  ),
 ];
 
-const registerForms:Record<string,[string,string,string]>={
- desu:['Noun statements: です / だ','学生です','学生だ'],
- 'noun-negative':['Noun negatives: じゃありません / じゃない','先生じゃありません','先生じゃない'],
- 'noun-past':['Noun past: でした / だった','休みでした','休みだった'],
- masu:['Verb non-past: ます / dictionary form','読みます','読む'],
- masen:['Verb negatives: ません / ない','食べません','食べない'],
- 'verb-past':['Verb past: ました / た','読みました','読んだ'],
- arimasu:['Things that exist: あります / ある','あります','ある'],
- imasu:['People and animals: います / いる','います','いる'],
- 'existence-negative':['Absence: polite and casual','ありません / いません','ない / いない'],
- 'te-imasu':['Ongoing actions: ています / ている','読んでいます','読んでいる'],
- 'i-adjective':['い-adjectives: polite and casual','面白いです','面白い'],
- 'na-adjective':['な-adjectives: polite and casual','静かです','静かだ'],
+const registerForms: Record<string, [string, string, string]> = {
+  desu: ['Noun statements: です / だ', '学生です', '学生だ'],
+  'noun-negative': [
+    'Noun negatives: じゃありません / じゃない',
+    '先生じゃありません',
+    '先生じゃない',
+  ],
+  'noun-past': ['Noun past: でした / だった', '休みでした', '休みだった'],
+  masu: ['Verb non-past: ます / dictionary form', '読みます', '読む'],
+  masen: ['Verb negatives: ません / ない', '食べません', '食べない'],
+  'verb-past': ['Verb past: ました / た', '読みました', '読んだ'],
+  arimasu: ['Things that exist: あります / ある', 'あります', 'ある'],
+  imasu: ['People and animals: います / いる', 'います', 'いる'],
+  'existence-negative': ['Absence: polite and casual', 'ありません / いません', 'ない / いない'],
+  'te-imasu': ['Ongoing actions: ています / ている', '読んでいます', '読んでいる'],
+  'i-adjective': ['い-adjectives: polite and casual', '面白いです', '面白い'],
+  'na-adjective': ['な-adjectives: polite and casual', '静かです', '静かだ'],
 };
-for(const entry of grammarLessons){
- const forms=registerForms[entry.id.replace('grammar-','')];
- if(forms){entry.title=forms[0];entry.forms={polite:forms[1],casual:forms[2]};}
+for (const entry of grammarLessons) {
+  const forms = registerForms[entry.id.replace('grammar-', '')];
+  if (forms) {
+    entry.title = forms[0];
+    entry.forms = { polite: forms[1], casual: forms[2] };
+  }
 }
 
-const numberRows=rows(`Numbers|零|れい|zero|ゼロ is also common.
+const numberRows = rows(`Numbers|零|れい|zero|ゼロ is also common.
 Numbers|一|いち|one|A following counter may change the pronunciation.
 Numbers|二|に|two|A following counter may change the pronunciation.
 Numbers|三|さん|three|Three hundred is さんびゃく, not さんひゃく.
@@ -704,10 +1285,39 @@ Counters|一本|いっぽん|one long cylindrical item|本 counts long objects. 
 Counters|一匹|いっぴき|one small animal|匹 counts small animals. Two: にひき; three: さんびき.
 Counters|一歳|いっさい|one year old|Age uses 歳. Eight: はっさい; ten: じゅっさい / じっさい.
 Counters|二十歳|はたち|twenty years old|The usual age reading is はたち. にじゅっさい is also understandable in explicit counting.`);
-const numberAlternatives:Record<string,string[]>={四:['し'],七:['しち'],九:['く'],零:['ゼロ','ぜろ'],七時:['ななじ'],八分:['はちふん'],十分:['じっぷん'],二十分:['にじっぷん'],三十分:['さんじっぷん'],二十歳:['にじゅっさい','にじっさい']};
-const numbers:Entry[]=numberRows.map(([topic,japanese,reading,meaning,note])=>({id:`numbers-${topic.toLowerCase().replaceAll(' ','-')}-${code(japanese)}`,kind:'numbers',title:japanese,japanese,reading,meaning,level:'N5',topic,tags:[topic],note,examples:[ex(japanese,reading,meaning)],exercise:{prompt:`Read ${japanese} in hiragana (${meaning}).`,answers:[reading,...(numberAlternatives[japanese]??[])],explanation:note}}));
+const numberAlternatives: Record<string, string[]> = {
+  四: ['し'],
+  七: ['しち'],
+  九: ['く'],
+  零: ['ゼロ', 'ぜろ'],
+  七時: ['ななじ'],
+  八分: ['はちふん'],
+  十分: ['じっぷん'],
+  二十分: ['にじっぷん'],
+  三十分: ['さんじっぷん'],
+  二十歳: ['にじゅっさい', 'にじっさい'],
+};
+const numbers: Entry[] = numberRows.map(([topic, japanese, reading, meaning, note]) => ({
+  id: `numbers-${topic.toLowerCase().replaceAll(' ', '-')}-${code(japanese)}`,
+  kind: 'numbers',
+  title: japanese,
+  japanese,
+  reading,
+  meaning,
+  level: 'N5',
+  topic,
+  tags: [topic],
+  note,
+  examples: [ex(japanese, reading, meaning)],
+  exercise: {
+    prompt: `Read ${japanese} in hiragana (${meaning}).`,
+    answers: [reading, ...(numberAlternatives[japanese] ?? [])],
+    explanation: note,
+  },
+}));
 
-const adjectiveRows=rows(`おいしい|おいしい|delicious|い-adjectives|このパンはおいしいです。|このぱんはおいしいです。|This bread is delicious.
+const adjectiveRows =
+  rows(`おいしい|おいしい|delicious|い-adjectives|このパンはおいしいです。|このぱんはおいしいです。|This bread is delicious.
 大きい|おおきい|big|い-adjectives|大きい家です。|おおきいいえです。|It is a big house.
 小さい|ちいさい|small|い-adjectives|小さい猫です。|ちいさいねこです。|It is a small cat.
 高い|たかい|high; expensive|い-adjectives|この本は高いです。|このほんはたかいです。|This book is expensive.
@@ -730,48 +1340,283 @@ const adjectiveRows=rows(`おいしい|おいしい|delicious|い-adjectives|こ
 好き|すき|liked; favorite|な-adjectives|好きな食べ物は何ですか。|すきなたべものはなんですか。|What is your favorite food?
 いい|いい|good|Exceptions|いい本です。|いいほんです。|It is a good book.
 ほしい|ほしい|wanted; desirable|Exceptions|本がほしいです。|ほんがほしいです。|I want a book.`);
-const adjectives:Entry[]=adjectiveRows.map(([japanese,reading,meaning,topic,jp,rp,en])=>{
- const na=topic==='な-adjectives'||['きれい','嫌い'].includes(japanese);
- const stem=japanese==='いい'?'よ':japanese.slice(0,-1);
- const readingStem=japanese==='いい'?'よ':reading.slice(0,-1);
- const negative=na?`${japanese}じゃありません`:`${stem}くないです`;
- const past=na?`${japanese}でした`:`${stem}かったです`;
- const negativePast=na?`${japanese}じゃありませんでした`:`${stem}くなかったです`;
- const note=na?`な-adjective. Before a noun: ${japanese}な + noun. Polite statement: ${japanese}です. Negative: ${negative}. Past: ${past}. Negative past: ${negativePast}.`:`い-adjective. Before a noun, keep the final い: ${japanese} + noun. Negative: ${negative}. Past: ${past}. Negative past: ${negativePast}.`;
- const exception=japanese==='いい'?' いい uses the よい stem in inflected forms: よくない, よかった, よくなかった.':japanese==='きれい'||japanese==='嫌い'?' Although this word ends in the sound い, it is a な-adjective.':japanese==='ほしい'?' ほしい expresses wanting a thing; it is an adjective, not a verb. Usually use noun がほしいです for your own desire.':'';
- return {id:`adjectives-${code(japanese)}`,kind:'adjectives',title:japanese,japanese,reading,meaning,level:'N5',topic,tags:[na?'な-adjective':'い-adjective',...(topic==='Exceptions'?['Exception']:[])],note:note+exception,examples:[ex(jp,rp,en),ex(negative,na?`${reading}じゃありません`:`${readingStem}くないです`,`not ${meaning.split(';')[0]}`),ex(past,na?`${reading}でした`:`${readingStem}かったです`,`was ${meaning.split(';')[0]}`),ex(negativePast,na?`${reading}じゃありませんでした`:`${readingStem}くなかったです`,`was not ${meaning.split(';')[0]}`)],exercise:{prompt:`Make ${japanese}です negative in polite Japanese.`,answers:na?[negative,`${japanese}ではありません`,`${japanese}じゃないです`,`${reading}じゃありません`,`${reading}ではありません`,`${reading}じゃないです`]:[negative,`${stem}くありません`,`${readingStem}くないです`,`${readingStem}くありません`],explanation:note+exception}};
+adjectiveRows.push(
+  ...rows(`熱い|あつい|hot (objects; liquids)|い-adjectives|このお茶は熱いです。|このおちゃはあついです。|This tea is hot.
+冷たい|つめたい|cold (to the touch)|い-adjectives|水が冷たいです。|みずがつめたいです。|The water is cold.
+長い|ながい|long|い-adjectives|この道は長いです。|このみちはながいです。|This road is long.
+短い|みじかい|short (length; duration)|い-adjectives|この鉛筆は短いです。|このえんぴつはみじかいです。|This pencil is short.
+重い|おもい|heavy|い-adjectives|このかばんは重いです。|このかばんはおもいです。|This bag is heavy.
+軽い|かるい|light (weight)|い-adjectives|この箱は軽いです。|このはこはかるいです。|This box is light.
+暖かい|あたたかい|warm (weather; surroundings)|い-adjectives|今日は暖かいです。|きょうはあたたかいです。|It is warm today.
+温かい|あたたかい|warm (objects; food; feelings)|い-adjectives|温かいスープを飲みます。|あたたかいすーぷをのみます。|I drink warm soup.
+涼しい|すずしい|cool (pleasant weather)|い-adjectives|今日は涼しいです。|きょうはすずしいです。|It is cool today.
+広い|ひろい|wide; spacious|い-adjectives|この部屋は広いです。|このへやはひろいです。|This room is spacious.
+狭い|せまい|narrow; cramped|い-adjectives|この道は狭いです。|このみちはせまいです。|This road is narrow.
+遠い|とおい|far|い-adjectives|駅は遠いです。|えきはとおいです。|The station is far away.
+近い|ちかい|near|い-adjectives|学校は近いです。|がっこうはちかいです。|The school is nearby.
+甘い|あまい|sweet|い-adjectives|このお菓子は甘いです。|このおかしはあまいです。|This sweet is sweet-tasting.
+辛い|からい|spicy; hot (taste)|い-adjectives|このカレーは辛いです。|このかれーはからいです。|This curry is spicy.
+苦い|にがい|bitter|い-adjectives|この薬は苦いです。|このくすりはにがいです。|This medicine is bitter.
+易しい|やさしい|easy|い-adjectives|この問題は易しいです。|このもんだいはやさしいです。|This question is easy.
+難しい|むずかしい|difficult|い-adjectives|この漢字は難しいです。|このかんじはむずかしいです。|This kanji is difficult.
+つまらない|つまらない|boring; uninteresting|い-adjectives|この映画はつまらないです。|このえいがはつまらないです。|This movie is boring.
+暇|ひま|free; not busy|な-adjectives|今日は暇です。|きょうはひまです。|I am free today.
+悪い|わるい|bad|い-adjectives|天気が悪いです。|てんきがわるいです。|The weather is bad.
+低い|ひくい|low; short (height)|い-adjectives|この机は低いです。|このつくえはひくいです。|This desk is low.
+厚い|あつい|thick|い-adjectives|この本は厚いです。|このほんはあついです。|This book is thick.
+薄い|うすい|thin; weak (flavor)|い-adjectives|この本は薄いです。|このほんはうすいです。|This book is thin.
+明るい|あかるい|bright; cheerful|い-adjectives|この部屋は明るいです。|このへやはあかるいです。|This room is bright.
+暗い|くらい|dark|い-adjectives|この部屋は暗いです。|このへやはくらいです。|This room is dark.
+速い|はやい|fast|い-adjectives|この電車は速いです。|このでんしゃははやいです。|This train is fast.
+遅い|おそい|slow; late|い-adjectives|このバスは遅いです。|このばすはおそいです。|This bus is slow.`),
+);
+const adjectives: Entry[] = adjectiveRows.map(([japanese, reading, meaning, topic, jp, rp, en]) => {
+  const na = topic === 'な-adjectives' || ['きれい', '嫌い'].includes(japanese);
+  const stem = japanese === 'いい' ? 'よ' : japanese.slice(0, -1);
+  const readingStem = japanese === 'いい' ? 'よ' : reading.slice(0, -1);
+  const negative = na ? `${japanese}じゃありません` : `${stem}くないです`;
+  const past = na ? `${japanese}でした` : `${stem}かったです`;
+  const negativePast = na ? `${japanese}じゃありませんでした` : `${stem}くなかったです`;
+  const note = na
+    ? `な-adjective. Before a noun: ${japanese}な + noun. Polite statement: ${japanese}です. Negative: ${negative}. Past: ${past}. Negative past: ${negativePast}.`
+    : `い-adjective. Before a noun, keep the final い: ${japanese} + noun. Negative: ${negative}. Past: ${past}. Negative past: ${negativePast}.`;
+  const exception =
+    japanese === 'いい'
+      ? ' いい uses the よい stem in inflected forms: よくない, よかった, よくなかった.'
+      : japanese === 'きれい' || japanese === '嫌い'
+        ? ' Although this word ends in the sound い, it is a な-adjective.'
+        : japanese === 'ほしい'
+          ? ' ほしい expresses wanting a thing; it is an adjective, not a verb. Usually use noun がほしいです for your own desire.'
+          : '';
+  return {
+    id: `adjectives-${code(japanese)}`,
+    kind: 'adjectives',
+    title: japanese,
+    japanese,
+    reading,
+    meaning,
+    level: 'N5',
+    topic,
+    tags: [na ? 'な-adjective' : 'い-adjective', ...(topic === 'Exceptions' ? ['Exception'] : [])],
+    note: note + exception,
+    examples: [
+      ex(jp, rp, en),
+      ex(
+        negative,
+        na ? `${reading}じゃありません` : `${readingStem}くないです`,
+        `not ${meaning.split(';')[0]}`,
+      ),
+      ex(
+        past,
+        na ? `${reading}でした` : `${readingStem}かったです`,
+        `was ${meaning.split(';')[0]}`,
+      ),
+      ex(
+        negativePast,
+        na ? `${reading}じゃありませんでした` : `${readingStem}くなかったです`,
+        `was not ${meaning.split(';')[0]}`,
+      ),
+    ],
+    exercise: {
+      prompt: `Make ${japanese}です negative in polite Japanese.`,
+      answers: na
+        ? [
+            negative,
+            `${japanese}ではありません`,
+            `${japanese}じゃないです`,
+            `${reading}じゃありません`,
+            `${reading}ではありません`,
+            `${reading}じゃないです`,
+          ]
+        : [
+            negative,
+            `${stem}くありません`,
+            `${readingStem}くないです`,
+            `${readingStem}くありません`,
+          ],
+      explanation: note + exception,
+    },
+  };
 });
 
 /** Starter selections are approximate pedagogical groupings, not an official JLPT syllabus. */
 for (const entry of adjectives) {
- if (entry.japanese==='いい') entry.exercise!.answers.push('良くないです','良くありません');
- if (entry.japanese==='きれい') entry.exercise!.answers.push('綺麗じゃありません','綺麗ではありません','綺麗じゃないです');
+  if (entry.japanese === 'いい') entry.exercise!.answers.push('良くないです', '良くありません');
+  if (entry.japanese === 'きれい')
+    entry.exercise!.answers.push('綺麗じゃありません', '綺麗ではありません', '綺麗じゃないです');
 }
-const connectingGrammar=[
- ['adjective-kute','Connecting い-adjectives: 〜くて'],
- ['description-de','Connecting な-adjectives and nouns: 〜で'],
- ['te-sequence','Connecting actions: て-form'],
- ['pass-by','Passing by or through: 〜を通る'],
- ['drop-by','Stopping by: 〜に寄る'],
+const connectingGrammar = [
+  ['adjective-kute', 'Connecting い-adjectives: 〜くて'],
+  ['description-de', 'Connecting な-adjectives and nouns: 〜で'],
+  ['te-sequence', 'Connecting actions: て-form'],
+  ['pass-by', 'Passing by or through: 〜を通る'],
+  ['drop-by', 'Stopping by: 〜に寄る'],
 ];
-for(const [id,title] of connectingGrammar){
- const course=grammarCourse['grammar-'+id],example=course.lesson.examples[0];
- grammarLessons.push({id:'grammar-'+id,kind:'grammar',title,japanese:example.japanese,reading:example.reading,meaning:example.meaning,level:'N5',topic:course.lesson.group,tags:['Grammar',id],note:course.lesson.comparison,examples:course.lesson.examples});
+for (const [id, title] of connectingGrammar) {
+  const course = grammarCourse['grammar-' + id];
+  const example = course.lesson.examples[0];
+  grammarLessons.push({
+    id: 'grammar-' + id,
+    kind: 'grammar',
+    title,
+    japanese: example.japanese,
+    reading: example.reading,
+    meaning: example.meaning,
+    level: 'N5',
+    topic: course.lesson.group,
+    tags: ['Grammar', id],
+    note: course.lesson.comparison,
+    examples: course.lesson.examples,
+  });
 }
-for(const entry of grammarLessons)Object.assign(entry,grammarCourse[entry.id]);
-const baseEntries:Entry[]=[...kana,...grammarLessons,...kanji,...vocabulary,...numbers,...adjectives];
-export const entries:Entry[]=[...baseEntries,...makeStudyEntries(baseEntries)];
+for (const entry of grammarLessons) Object.assign(entry, grammarCourse[entry.id]);
+const desireLesson = grammarLessons.find((entry) => entry.id === 'grammar-tai')!;
+desireLesson.title = 'Want to do: ～たいです';
+desireLesson.references = [
+  {
+    heading: 'ます stem + たい: polite and casual',
+    columns: ['Verb', 'Polite', 'Casual', 'Negative (polite)'],
+    rows: [
+      [
+        '食べます',
+        'たべます',
+        '食べたいです',
+        'たべたいです',
+        '食べたい',
+        'たべたい',
+        '食べたくないです',
+        'たべたくないです',
+      ],
+      [
+        '飲みます',
+        'のみます',
+        '飲みたいです',
+        'のみたいです',
+        '飲みたい',
+        'のみたい',
+        '飲みたくないです',
+        'のみたくないです',
+      ],
+      [
+        '行きます',
+        'いきます',
+        '行きたいです',
+        'いきたいです',
+        '行きたい',
+        'いきたい',
+        '行きたくないです',
+        'いきたくないです',
+      ],
+      [
+        '勉強します',
+        'べんきょうします',
+        '勉強したいです',
+        'べんきょうしたいです',
+        '勉強したい',
+        'べんきょうしたい',
+        '勉強したくないです',
+        'べんきょうしたくないです',
+      ],
+    ].map((row) => [0, 2, 4, 6].map((index) => ({ text: row[index], reading: row[index + 1] }))),
+  },
+];
+const movementLesson = grammarLessons.find((entry) => entry.id === 'grammar-destination')!;
+movementLesson.title = 'に／へ + 行きます・来ます・帰ります';
+movementLesson.note +=
+  '\n行きます (いきます) means go; 来ます (きます) means come toward the speaker or the viewpoint location; 帰ります (かえります) means return home or to a familiar base. に and へ can both mark the destination in these examples. へ is pronounced “e”. Use で for transport, as in バスで学校に行きます (ばすでがっこうにいきます).';
+movementLesson.references = [
+  {
+    heading: 'Destination + に / へ + movement verb',
+    columns: ['Verb', 'With に', 'With へ', 'Meaning'],
+    rows: [
+      [
+        { text: '行きます / 行く', reading: 'いきます / いく' },
+        { text: '学校に行きます', reading: 'がっこうにいきます' },
+        { text: '学校へ行きます', reading: 'がっこうへいきます' },
+        { text: 'go to school', reading: '' },
+      ],
+      [
+        { text: '来ます / 来る', reading: 'きます / くる' },
+        { text: 'ここに来ます', reading: 'ここにきます' },
+        { text: 'ここへ来ます', reading: 'ここへきます' },
+        { text: 'come here', reading: '' },
+      ],
+      [
+        { text: '帰ります / 帰る', reading: 'かえります / かえる' },
+        { text: '家に帰ります', reading: 'いえにかえります' },
+        { text: '家へ帰ります', reading: 'いえへかえります' },
+        { text: 'return home', reading: '' },
+      ],
+    ],
+  },
+];
+// Preserve existing authored entries; retain distinct readings of the same spelling.
+for (const word of photoVocabulary) {
+  if (
+    vocabulary.some((entry) => entry.japanese === word.japanese && entry.reading === word.reading)
+  )
+    continue;
+  vocabulary.push({
+    ...word,
+    id: `photo-vocabulary-${code(word.japanese)}-${code(word.reading)}`,
+    kind: 'vocabulary',
+    title: word.japanese,
+    level: 'N5',
+    tags: ['Photo vocabulary', word.topic],
+    note: word.japanese.includes('〜')
+      ? 'A suffix or counter: attach it to the appropriate word or number. Counter pronunciation can change with the number.'
+      : '',
+    examples: [ex(word.japanese, word.reading, word.meaning)],
+  });
+}
+const baseEntries: Entry[] = [
+  ...kana,
+  ...grammarLessons,
+  ...kanji,
+  ...vocabulary,
+  ...routineVocabulary.filter(
+    (word) => !vocabulary.some((e) => e.japanese === word.japanese && e.reading === word.reading),
+  ),
+  ...routineGuides,
+  ...movementVocabulary.filter(
+    (word) =>
+      ![...vocabulary, ...routineVocabulary].some(
+        (e) => e.japanese === word.japanese && e.reading === word.reading,
+      ),
+  ),
+  ...movementGuides,
+  ...numbers,
+  ...adjectives,
+];
+export const entries: Entry[] = [...baseEntries, ...makeStudyEntries(baseEntries)];
 
 // Keep personal notes while letting newer dictionary coverage reach previously edited entries.
-export function mergeEntry(base:Entry,custom?:Entry):Entry{
- if(!custom)return base;
- if(base.kind==='grammar'&&custom.kind==='grammar')return {...custom,examples:custom.examples.map(ex=>{
-  const original=base.examples.find(b=>b.japanese===ex.japanese&&b.reading===ex.reading&&b.meaning===ex.meaning);
-  if(!original)return ex;
-  return {...ex,tokens:ex.tokens?.map(t=>({...original.tokens?.find(b=>b.text===t.text&&b.role===t.role&&b.wordClass===t.wordClass),...t}))||original.tokens,translationTokens:ex.translationTokens||original.translationTokens};
- })};
- if(base.kind!=='kanji'||custom.kind!=='kanji')return custom;
- const words=new Map<string,NonNullable<Entry['compounds']>[number]>();
- for(const c of [...(base.compounds||[]),...(custom.compounds||[])])words.set(c.japanese+':'+c.reading,c);
- return {...custom,compounds:[...words.values()]};
+export function mergeEntry(base: Entry, custom?: Entry): Entry {
+  if (!custom) return base;
+  if (base.kind === 'grammar' && custom.kind === 'grammar')
+    return {
+      ...custom,
+      examples: custom.examples.map((ex) => {
+        const original = base.examples.find(
+          (b) => b.japanese === ex.japanese && b.reading === ex.reading && b.meaning === ex.meaning,
+        );
+        if (!original) return ex;
+        return {
+          ...ex,
+          tokens:
+            ex.tokens?.map((t) => ({
+              ...original.tokens?.find(
+                (b) => b.text === t.text && b.role === t.role && b.wordClass === t.wordClass,
+              ),
+              ...t,
+            })) || original.tokens,
+          translationTokens: ex.translationTokens || original.translationTokens,
+        };
+      }),
+    };
+  if (base.kind !== 'kanji' || custom.kind !== 'kanji') return custom;
+  const words = new Map<string, NonNullable<Entry['compounds']>[number]>();
+  for (const c of [...(base.compounds || []), ...(custom.compounds || [])])
+    words.set(c.japanese + ':' + c.reading, c);
+  return { ...custom, compounds: [...words.values()] };
 }

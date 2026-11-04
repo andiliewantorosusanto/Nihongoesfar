@@ -1,16 +1,40 @@
-import {annotateGrammarSentence} from './grammar-annotations.ts';
-import type {Entry} from './content.ts';
-export type ReadingText={text:string;reading:string;role?:string;wordClass?:string;tokens?:Entry['examples'][number]['tokens'];translationTokens?:Entry['examples'][number]['translationTokens']};
-export type GuidedExercise={
- id:string;type:'meaning-choice'|'pattern-choice'|'gap'|'tiles'|'typing';prompt:string;
- context?:ReadingText;choices?:ReadingText[];tiles?:ReadingText[];answers:string[];
- hint:string;explanation:string;feedback:ReadingText & {meaning?:string};alternate?:boolean;
+import { annotateGrammarSentence } from './grammar-annotations.ts';
+import type { Entry } from './content.ts';
+export type ReadingText = {
+  text: string;
+  reading: string;
+  role?: string;
+  wordClass?: string;
+  tokens?: Entry['examples'][number]['tokens'];
+  translationTokens?: Entry['examples'][number]['translationTokens'];
 };
-export type GrammarLesson={order:number;group:string;goal:string;prerequisites:string[];recap:string;comparison:string;examples:Entry['examples'];vocabulary:(ReadingText & {meaning:string})[]};
+export type GuidedExercise = {
+  id: string;
+  type: 'meaning-choice' | 'pattern-choice' | 'gap' | 'tiles' | 'typing';
+  prompt: string;
+  context?: ReadingText;
+  choices?: ReadingText[];
+  tiles?: ReadingText[];
+  answers: string[];
+  hint: string;
+  explanation: string;
+  feedback: ReadingText & { meaning?: string };
+  alternate?: boolean;
+};
+export type GrammarLesson = {
+  order: number;
+  group: string;
+  goal: string;
+  prerequisites: string[];
+  recap: string;
+  comparison: string;
+  examples: Entry['examples'];
+  vocabulary: (ReadingText & { meaning: string })[];
+};
 
 // Each row is authored teaching content, with word boundaries paired to kana readings.
 // Four distinct sentences supply three demonstrations plus a new retry sentence.
-const authored=`
+const authored = `
 @desu|Sentence basics|Introduce someone or identify something politely.||Use noun + です. A noun does not take the verb ending ます.|Look for the polite ending used after a noun.|3
 私 は 学生 です|わたし は がくせい です|I am a student.
 田中さん は 先生 です|たなかさん は せんせい です|Tanaka is a teacher.
@@ -191,40 +215,259 @@ const authored=`
 友達 の 家 に 寄ります|ともだち の いえ に よります|I drop by my friend's house.
 コンビニ に 寄ります|こんびに に よります|I stop by the convenience store.
 !店 を 寄ります|みせ を よります|I pass by the shop.
-`; 
+`;
 
-const vocabulary=Object.fromEntries("私:I / me|学生:student|田中さん:Tanaka (a person's name)|先生:teacher|本:book|時計:clock / watch|学校:school|車:car|母:my mother|かばん:bag|毎日:every day|勉強し:study (verb stem)|朝:morning|働き:work (verb stem)|歩き:walk (verb stem)|夜:night|水:water|飲みます:drink|読みます:read|食べます:eat|お茶:tea|パン:bread|図書館:library|勉強します:study|家:home / house|行きます:go|帰ります:return|日本:Japan|七時:seven o'clock|起きます:get up|八時:eight o'clock|九時:nine o'clock|六時:six o'clock|机:desk|猫:cat|犬:dog|部屋:room|昨日:yesterday|休み:day off / rest|雨:rain|飲みません:do not drink|読みません:do not read|食べません:do not eat|今日:today|働きません:do not work|読みました:read (past)|飲みました:drank|食べました:ate|行きました:went|面白い:interesting|高い:expensive / high|大きい:big|新しい:new|静か:quiet|便利:convenient|きれい:clean / beautiful|町:town|好きです:like|ほしいです:want a thing|飲みたいです:want to drink|読みたいです:want to read|食べたいです:want to eat|行きたいです:want to go|読んで:read (て-form)|飲んで:drink (て-form)|名前:name|書いて:write (て-form)|食べて:eat (て-form)|今:now|読んでいます:am reading|飲んでいます:am drinking|書いています:am writing|食べています:am eating".split('|').map(row=>row.split(':')));
-function sentence(row:string,id:string,index:number,wrong=false){
- const [words,kana,meaning]=row.split('|');
- const texts=words.split(' '),readings=kana.split(' ');
- if(texts.length!==readings.length)throw new Error('Unaligned grammar sentence: '+row);
- const tiles=texts.map((text,i)=>({text,reading:readings[i]}));
- return {text:texts.join('')+'。',reading:readings.join('')+'。',meaning,...annotateGrammarSentence(tiles,id,index,meaning,wrong)};
-}
-function variants(tiles:ReadingText[]):string[]{
- return [...new Set(tiles.reduce<string[]>((all,t)=>all.flatMap(prefix=>[prefix+t.text,prefix+t.reading]),['']))];
-}
-export const grammarCourse:Record<string,{lesson:GrammarLesson;exercises:GuidedExercise[]}>=Object.fromEntries(authored.trim().split('\n@').map((block,index)=>{
- const [header,...rows]=block.replace(/^@/,'').split('\n');
- const [id,group,goal,prereqs,comparison,hint,gapNumber]=header.split('|');
- const examples=rows.slice(0,4).map((row,i)=>sentence(row,id,i)),[a,b,c,d]=examples;
- const wrong=sentence(rows[4].slice(1),id,0,true),gapIndex=Number(gapNumber),gap=b.tiles[gapIndex];
- const gapParts=b.tiles.map((t,i)=>i===gapIndex?{...t,text:'___',reading:'___'}:t);
- const context={tokens:annotateGrammarSentence(gapParts,id,1,b.meaning).tokens,text:b.tiles.map((t,i)=>i===gapIndex?'___':t.text).join('')+'。',reading:b.tiles.map((t,i)=>i===gapIndex?'___':t.reading).join('')+'。'};
- const base={hint,explanation:comparison};
- const exercises:GuidedExercise[]=[
-  {...base,id:'meaning',type:'meaning-choice',prompt:'Choose the meaning of this sentence.',context:a,choices:[{text:a.meaning,reading:''},{text:wrong.meaning,reading:''}],answers:[a.meaning],feedback:a},
-  {...base,id:'pattern',type:'pattern-choice',prompt:'Choose the correct Japanese: '+a.meaning,choices:[a,wrong],answers:variants(a.tiles),feedback:a},
-  {...base,id:'gap',type:'gap',prompt:'Fill the gap: '+b.meaning,context,answers:[gap.text,gap.reading],feedback:b},
-  {...base,id:'tiles',type:'tiles',prompt:'Build this sentence: '+b.meaning,tiles:b.tiles,answers:variants(b.tiles),feedback:b},
-  {...base,id:'typing',type:'typing',prompt:'Write in Japanese: '+c.meaning,answers:variants(c.tiles),feedback:c},
-  {...base,id:'alternate',type:'typing',prompt:'One more example: '+d.meaning,answers:variants(d.tiles),feedback:d,alternate:true},
- ];
- // Destination particles are interchangeable in these particular authored sentences.
- if(id==='destination')for(const ex of exercises.filter(e=>['gap','tiles','typing','alternate'].includes(e.id)))ex.answers=[...new Set([...ex.answers,...ex.answers.map(a=>a==='に'?'へ':a.replace(/に(?=行|いき|帰|かえ)/,'へ'))])];
- // The noun-negative sentences also accept common polite equivalent endings.
- if(id==='noun-negative')for(const ex of exercises.filter(e=>e.type!=='meaning-choice'))ex.answers=[...new Set(ex.answers.flatMap(a=>[a,a.replace('じゃありません','ではありません'),a.replace('じゃありません','じゃないです')]))];
- const lesson:GrammarLesson={order:index+1,group,goal,prerequisites:prereqs?prereqs.split(',').map(p=>'grammar-'+p):[],recap:comparison,comparison,examples:examples.slice(0,3).map(s=>({japanese:s.text,reading:s.reading,meaning:s.meaning,tokens:s.tokens,translationTokens:s.translationTokens})),vocabulary:[...new Map(examples.flatMap(s=>s.tiles).filter(t=>vocabulary[t.text]).map(t=>[t.text,{...t,meaning:vocabulary[t.text]}])).values()]};
- return ['grammar-'+id,{lesson,exercises}];
-}));
+// Substitutions stay within the same grammatical and semantic category.
+const practiceWords = [
+  '町:まち:town|村:むら:village|都市:とし:city|地域:ちいき:area|地区:ちく:district|島:しま:island|近所:きんじょ:neighborhood|場所:ばしょ:place|住宅街:じゅうたくがい:residential area|商店街:しょうてんがい:shopping street|田舎:いなか:countryside',
 
+  'パン:ぱん:bread|ご飯:ごはん:rice|寿司:すし:sushi|魚:さかな:fish|肉:にく:meat|卵:たまご:eggs|野菜:やさい:vegetables|果物:くだもの:fruit|りんご:りんご:apples|バナナ:ばなな:bananas|チーズ:ちーず:cheese',
+  '昨日:きのう:Yesterday|月曜日:げつようび:Monday|火曜日:かようび:Tuesday|水曜日:すいようび:Wednesday|木曜日:もくようび:Thursday|金曜日:きんようび:Friday|土曜日:どようび:Saturday|日曜日:にちようび:Sunday',
+
+  '本:ほん:book|雑誌:ざっし:magazine|新聞:しんぶん:newspaper|辞書:じしょ:dictionary|小説:しょうせつ:novel|漫画:まんが:comic|教科書:きょうかしょ:textbook|絵本:えほん:picture book|手紙:てがみ:letter|日記:にっき:diary|記事:きじ:article',
+  '水:みず:water|お茶:おちゃ:tea|牛乳:ぎゅうにゅう:milk|コーヒー:こーひー:coffee|ジュース:じゅーす:juice|紅茶:こうちゃ:black tea|緑茶:りょくちゃ:green tea|豆乳:とうにゅう:soy milk|麦茶:むぎちゃ:barley tea|冷水:れいすい:cold water|炭酸水:たんさんすい:sparkling water',
+  '学校:がっこう:school|図書館:としょかん:library|店:みせ:shop|銀行:ぎんこう:bank|駅:えき:station|公園:こうえん:park|病院:びょういん:hospital|会社:かいしゃ:office|郵便局:ゆうびんきょく:post office|美術館:びじゅつかん:art museum|スーパー:すーぱー:supermarket|大学:だいがく:university|空港:くうこう:airport|港:みなと:port|市場:いちば:market|劇場:げきじょう:theater|映画館:えいがかん:cinema|博物館:はくぶつかん:museum|動物園:どうぶつえん:zoo|水族館:すいぞくかん:aquarium|体育館:たいいくかん:gym|食堂:しょくどう:cafeteria|喫茶店:きっさてん:cafe|本屋:ほんや:bookstore|薬局:やっきょく:pharmacy|交番:こうばん:police box|市役所:しやくしょ:city hall|ホテル:ほてる:hotel',
+  '猫:ねこ:cat|犬:いぬ:dog|鳥:とり:bird|馬:うま:horse|魚:さかな:fish|兎:うさぎ:rabbit|亀:かめ:turtle|牛:うし:cow|羊:ひつじ:sheep|猿:さる:monkey|豚:ぶた:pig',
+  '車:くるま:car|時計:とけい:clock|机:つくえ:desk|かばん:かばん:bag|椅子:いす:chair|自転車:じてんしゃ:bicycle|靴:くつ:shoe|傘:かさ:umbrella|箱:はこ:box|帽子:ぼうし:hat|財布:さいふ:wallet',
+  '田中さん:たなかさん:Tanaka|山田さん:やまださん:Yamada|佐藤さん:さとうさん:Sato|鈴木さん:すずきさん:Suzuki|高橋さん:たかはしさん:Takahashi|伊藤さん:いとうさん:Ito|中村さん:なかむらさん:Nakamura|小林さん:こばやしさん:Kobayashi|加藤さん:かとうさん:Kato|吉田さん:よしださん:Yoshida|山本さん:やまもとさん:Yamamoto',
+  '七時:しちじ:seven|八時:はちじ:eight|九時:くじ:nine|六時:ろくじ:six|一時:いちじ:one|二時:にじ:two|三時:さんじ:three|四時:よじ:four|五時:ごじ:five|十時:じゅうじ:ten|十一時:じゅういちじ:eleven',
+  '毎日:まいにち:every day|朝:あさ:in the morning|夜:よる:at night|毎朝:まいあさ:every morning|毎晩:まいばん:every evening|毎週:まいしゅう:every week|毎月:まいつき:every month|毎年:まいとし:every year|週末:しゅうまつ:on weekends|午後:ごご:in the afternoon|夕方:ゆうがた:in the evening',
+].map((group) => group.split('|').map((word) => word.split(':')));
+
+function expandedSentences(examples: ReturnType<typeof sentence>[]) {
+  const result: ReturnType<typeof sentence>[] = [];
+  const seen = new Set(examples.map((s) => s.text));
+  for (const source of examples) {
+    for (const group of practiceWords) {
+      const from = group.find(([text]) => source.tiles.some((t) => t.text === text));
+      if (!from) continue;
+      for (const to of group) {
+        if (to === from) continue;
+        const replace = (value: string) =>
+          value.replaceAll(from[0], to[0]).replaceAll(from[1], to[1]);
+        const translate = (value: string) => value.replaceAll(from[2], to[2]);
+        // Only substitute words whose English counterpart is explicitly present.
+        if (!source.meaning.includes(from[2])) continue;
+        const next = {
+          ...source,
+          text: replace(source.text),
+          reading: replace(source.reading),
+          meaning: translate(source.meaning),
+          tiles: source.tiles.map((t) => ({
+            ...t,
+            text: replace(t.text),
+            reading: replace(t.reading),
+          })),
+          tokens: source.tokens.map((t) => ({
+            ...t,
+            text: replace(t.text),
+            reading: replace(t.reading || ''),
+          })),
+          translationTokens: source.translationTokens?.map((t) => ({
+            ...t,
+            text: translate(t.text),
+          })),
+        };
+        if (!seen.has(next.text)) {
+          seen.add(next.text);
+          result.push(next);
+        }
+        if (result.length === 25) return result;
+      }
+    }
+  }
+  if (result.length < 17)
+    throw new Error('Not enough variants: ' + examples[0].text + ' (' + result.length + ')');
+  return result;
+}
+
+const vocabulary = Object.fromEntries(
+  "私:I / me|学生:student|田中さん:Tanaka (a person's name)|先生:teacher|本:book|時計:clock / watch|学校:school|車:car|母:my mother|かばん:bag|毎日:every day|勉強し:study (verb stem)|朝:morning|働き:work (verb stem)|歩き:walk (verb stem)|夜:night|水:water|飲みます:drink|読みます:read|食べます:eat|お茶:tea|パン:bread|図書館:library|勉強します:study|家:home / house|行きます:go|帰ります:return|日本:Japan|七時:seven o'clock|起きます:get up|八時:eight o'clock|九時:nine o'clock|六時:six o'clock|机:desk|猫:cat|犬:dog|部屋:room|昨日:yesterday|休み:day off / rest|雨:rain|飲みません:do not drink|読みません:do not read|食べません:do not eat|今日:today|働きません:do not work|読みました:read (past)|飲みました:drank|食べました:ate|行きました:went|面白い:interesting|高い:expensive / high|大きい:big|新しい:new|静か:quiet|便利:convenient|きれい:clean / beautiful|町:town|好きです:like|ほしいです:want a thing|飲みたいです:want to drink|読みたいです:want to read|食べたいです:want to eat|行きたいです:want to go|読んで:read (て-form)|飲んで:drink (て-form)|名前:name|書いて:write (て-form)|食べて:eat (て-form)|今:now|読んでいます:am reading|飲んでいます:am drinking|書いています:am writing|食べています:am eating"
+    .split('|')
+    .map((row) => row.split(':')),
+);
+function sentence(row: string, id: string, index: number, wrong = false) {
+  const [words, kana, meaning] = row.split('|');
+  const texts = words.split(' ');
+  const readings = kana.split(' ');
+  if (texts.length !== readings.length) throw new Error('Unaligned grammar sentence: ' + row);
+  const tiles = texts.map((text, i) => ({ text, reading: readings[i] }));
+  return {
+    text: texts.join('') + '。',
+    reading: readings.join('') + '。',
+    meaning,
+    ...annotateGrammarSentence(tiles, id, index, meaning, wrong),
+  };
+}
+function variants(tiles: ReadingText[]): string[] {
+  return [
+    ...new Set(
+      tiles.reduce<string[]>(
+        (all, t) => all.flatMap((prefix) => [prefix + t.text, prefix + t.reading]),
+        [''],
+      ),
+    ),
+  ];
+}
+export const grammarCourse: Record<string, { lesson: GrammarLesson; exercises: GuidedExercise[] }> =
+  Object.fromEntries(
+    authored
+      .trim()
+      .split('\n@')
+      .map((block, index) => {
+        const [header, ...rows] = block.replace(/^@/, '').split('\n');
+        const [id, group, goal, prereqs, comparison, hint, gapNumber] = header.split('|');
+        const examples = rows.slice(0, 4).map((row, i) => sentence(row, id, i));
+        const [a, b, c, d] = examples;
+        const wrong = sentence(rows[4].slice(1), id, 0, true);
+        const gapIndex = Number(gapNumber);
+        const gap = b.tiles[gapIndex];
+        const gapParts = b.tiles.map((t, i) =>
+          i === gapIndex ? { ...t, text: '___', reading: '___' } : t,
+        );
+        const context = {
+          tokens: annotateGrammarSentence(gapParts, id, 1, b.meaning).tokens,
+          text: b.tiles.map((t, i) => (i === gapIndex ? '___' : t.text)).join('') + '。',
+          reading: b.tiles.map((t, i) => (i === gapIndex ? '___' : t.reading)).join('') + '。',
+        };
+        const base = { hint, explanation: comparison };
+        const exercises: GuidedExercise[] = [
+          {
+            ...base,
+            id: 'meaning',
+            type: 'meaning-choice',
+            prompt: 'Choose the meaning of this sentence.',
+            context: a,
+            choices: [
+              { text: a.meaning, reading: '' },
+              { text: wrong.meaning, reading: '' },
+            ],
+            answers: [a.meaning],
+            feedback: a,
+          },
+          {
+            ...base,
+            id: 'pattern',
+            type: 'pattern-choice',
+            prompt: 'Choose the correct Japanese: ' + a.meaning,
+            choices: [a, wrong],
+            answers: variants(a.tiles),
+            feedback: a,
+          },
+          {
+            ...base,
+            id: 'gap',
+            type: 'gap',
+            prompt: 'Fill the gap: ' + b.meaning,
+            context,
+            answers: [gap.text, gap.reading],
+            feedback: b,
+          },
+          {
+            ...base,
+            id: 'tiles',
+            type: 'tiles',
+            prompt: 'Build this sentence: ' + b.meaning,
+            tiles: b.tiles,
+            answers: variants(b.tiles),
+            feedback: b,
+          },
+          {
+            ...base,
+            id: 'typing',
+            type: 'typing',
+            prompt: 'Write in Japanese: ' + c.meaning,
+            answers: variants(c.tiles),
+            feedback: c,
+          },
+          {
+            ...base,
+            id: 'alternate',
+            type: 'typing',
+            prompt: 'One more example: ' + d.meaning,
+            answers: variants(d.tiles),
+            feedback: d,
+            alternate: true,
+          },
+        ];
+        for (const [i, example] of expandedSentences(examples).entries()) {
+          for (const type of ['tiles', 'typing', 'meaning-choice'] as const) {
+            if (exercises.length >= 56) break;
+            exercises.push({
+              ...base,
+              id: `extra-${i + 1}-${type}`,
+              type,
+              prompt:
+                type === 'meaning-choice'
+                  ? 'Choose the meaning: ' + example.text
+                  : (type === 'tiles' ? 'Build this sentence: ' : 'Write in Japanese: ') +
+                    example.meaning,
+              ...(type === 'meaning-choice'
+                ? {
+                    context: example,
+                    choices: [
+                      { text: example.meaning, reading: '' },
+                      {
+                        text: examples.find((s) => s.meaning !== example.meaning)!.meaning,
+                        reading: '',
+                      },
+                    ],
+                  }
+                : {}),
+              ...(type === 'tiles' ? { tiles: example.tiles } : {}),
+              answers: type === 'meaning-choice' ? [example.meaning] : variants(example.tiles),
+              feedback: example,
+            });
+          }
+        }
+        // Destination particles are interchangeable in these particular authored sentences.
+        if (id === 'destination')
+          for (const ex of exercises.filter(
+            (e) => e.type !== 'meaning-choice' && e.type !== 'pattern-choice',
+          ))
+            ex.answers = [
+              ...new Set([
+                ...ex.answers,
+                ...ex.answers.map((a) =>
+                  a === 'に' ? 'へ' : a.replace(/に(?=行|いき|帰|かえ)/, 'へ'),
+                ),
+              ]),
+            ];
+        // The noun-negative sentences also accept common polite equivalent endings.
+        if (id === 'noun-negative')
+          for (const ex of exercises.filter((e) => e.type !== 'meaning-choice'))
+            ex.answers = [
+              ...new Set(
+                ex.answers.flatMap((a) => [
+                  a,
+                  a.replace('じゃありません', 'ではありません'),
+                  a.replace('じゃありません', 'じゃないです'),
+                ]),
+              ),
+            ];
+        const lesson: GrammarLesson = {
+          order: index + 1,
+          group,
+          goal,
+          prerequisites: prereqs ? prereqs.split(',').map((p) => 'grammar-' + p) : [],
+          recap: comparison,
+          comparison,
+          examples: examples.slice(0, 3).map((s) => ({
+            japanese: s.text,
+            reading: s.reading,
+            meaning: s.meaning,
+            tokens: s.tokens,
+            translationTokens: s.translationTokens,
+          })),
+          vocabulary: [
+            ...new Map(
+              examples
+                .flatMap((s) => s.tiles)
+                .filter((t) => vocabulary[t.text])
+                .map((t) => [t.text, { ...t, meaning: vocabulary[t.text] }]),
+            ).values(),
+          ],
+        };
+        return ['grammar-' + id, { lesson, exercises }];
+      }),
+  );

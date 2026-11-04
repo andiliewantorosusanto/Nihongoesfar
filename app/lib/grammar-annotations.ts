@@ -1,18 +1,57 @@
-import type {Entry} from './content.ts';
-import type {TranslationToken} from './sentence-support.ts';
-type Token=NonNullable<Entry['examples'][number]['tokens']>[number];
-const roles:Record<string,string>={t:'topic',s:'subject',o:'object',p:'particle',m:'modifier',v:'predicate'};
-// Roles belong to these authored sentences, rather than a guessed Japanese parser.
-const layouts:Record<string,string|string[]>={
- desu:'tpvv',question:'tpvvp',no:'tpmpvv',mo:'tpvv',demonstratives:['tpvv','mtpvpv','mtpvpv','mtpvpv'],
- masu:'mvv',object:'opv',de:['mpv','mpopv','mpopv','mpopv'],destination:'mpv','time-ni':'mpv',
- arimasu:'spv',imasu:'spv',location:'mpspv','noun-negative':'tpvv','noun-past':'tpvv',masen:['opv','opv','opv','tpv'],
- 'verb-past':'mopv','existence-negative':'spv','i-adjective':'mtpvv','na-adjective':'mtpvv',suki:'tpspv',hoshii:'tpspv',tai:['opv','opv','opv','mpv'],
- 'adjective-kute':'mtpvvv','description-de':['mtpvpvv','mtpvpvv','tpvpvv','tpvpvv'],'te-sequence':['opvmpv','opvv','mpvv','opvv'],'pass-by':['mpmpv','mpmpv','mpvv','mmpv'],'drop-by':['mpv','mpvv','mpmpv','mpv'],
- 'te-request':'opvv','te-imasu':'mopv',
+import type { Entry } from './content.ts';
+import type { TranslationToken } from './sentence-support.ts';
+type Token = NonNullable<Entry['examples'][number]['tokens']>[number];
+const roles: Record<string, string> = {
+  t: 'topic',
+  s: 'subject',
+  o: 'object',
+  p: 'particle',
+  m: 'modifier',
+  v: 'predicate',
 };
-const wrongLayouts:Record<string,string>={'description-de':'mtpvvv',question:'tpvpv',mo:'tppvv',demonstratives:'mpvv',object:'spv','i-adjective':'mtpvpv','na-adjective':'mtpvpv'};
-const english=`
+// Roles belong to these authored sentences, rather than a guessed Japanese parser.
+const layouts: Record<string, string | string[]> = {
+  desu: 'tpvv',
+  question: 'tpvvp',
+  no: 'tpmpvv',
+  mo: 'tpvv',
+  demonstratives: ['tpvv', 'mtpvpv', 'mtpvpv', 'mtpvpv'],
+  masu: 'mvv',
+  object: 'opv',
+  de: ['mpv', 'mpopv', 'mpopv', 'mpopv'],
+  destination: 'mpv',
+  'time-ni': 'mpv',
+  arimasu: 'spv',
+  imasu: 'spv',
+  location: 'mpspv',
+  'noun-negative': 'tpvv',
+  'noun-past': 'tpvv',
+  masen: ['opv', 'opv', 'opv', 'tpv'],
+  'verb-past': 'mopv',
+  'existence-negative': 'spv',
+  'i-adjective': 'mtpvv',
+  'na-adjective': 'mtpvv',
+  suki: 'tpspv',
+  hoshii: 'tpspv',
+  tai: ['opv', 'opv', 'opv', 'mpv'],
+  'adjective-kute': 'mtpvvv',
+  'description-de': ['mtpvpvv', 'mtpvpvv', 'tpvpvv', 'tpvpvv'],
+  'te-sequence': ['opvmpv', 'opvv', 'mpvv', 'opvv'],
+  'pass-by': ['mpmpv', 'mpmpv', 'mpvv', 'mmpv'],
+  'drop-by': ['mpv', 'mpvv', 'mpmpv', 'mpv'],
+  'te-request': 'opvv',
+  'te-imasu': 'mopv',
+};
+const wrongLayouts: Record<string, string> = {
+  'description-de': 'mtpvvv',
+  question: 'tpvpv',
+  mo: 'tppvv',
+  demonstratives: 'mpvv',
+  object: 'spv',
+  'i-adjective': 'mtpvpv',
+  'na-adjective': 'mtpvpv',
+};
+const english = `
 @desu
 I~topic| am a student.~predicate
 Tanaka~topic| is a teacher.~predicate
@@ -164,33 +203,105 @@ I ~implicit|stop by~predicate| the bank~modifier| and then go home.~predicate
 I ~implicit|drop by~predicate| my friend's house.~modifier
 I ~implicit|stop by~predicate| the convenience store.~modifier
 `;
-const translations=Object.fromEntries(english.trim().split('\n@').map(block=>{
- const [id,...rows]=block.replace(/^@/,'').split('\n');
- return [id,rows.map(row=>row.split('|').map(part=>{const [text,role]=part.split('~');return {text,role, ...(role==='implicit'?{implicit:true}:{})} as TranslationToken}))];
-}));
-export function annotateGrammarSentence(tiles:{text:string;reading:string}[],id:string,index:number,meaning?:string,wrong=false){
- const layout=layouts[id];const letters=wrong&&wrongLayouts[id]|| (Array.isArray(layout)?layout[index]:layout);
- if(!letters||letters.length!==tiles.length)throw new Error(`Missing role alignment: ${id}/${index} (${tiles.length})`);
- const annotated=tiles.map((tile,i)=>({...tile,role:roles[letters[i]],wordClass:letters[i]==='p'?'particle':letters[i]==='v'?'predicate':letters[i]==='m'?'modifier':'noun phrase'}));
- const tokens:Token[]=[];
- for(const tile of annotated){const previous=tokens.at(-1);if(previous&&previous.role===tile.role){previous.text+=tile.text;previous.reading=(previous.reading||'')+tile.reading}else tokens.push({...tile})}
- const translationTokens=wrong?undefined:translations[id]?.[index];
- if(translationTokens&&translationTokens.map(t=>t.text).join('')!==meaning)throw new Error(`Translation changed: ${id}/${index}`);
- return {tiles:annotated,tokens,translationTokens};
+const translations = Object.fromEntries(
+  english
+    .trim()
+    .split('\n@')
+    .map((block) => {
+      const [id, ...rows] = block.replace(/^@/, '').split('\n');
+      return [
+        id,
+        rows.map((row) =>
+          row.split('|').map((part) => {
+            const [text, role] = part.split('~');
+            return {
+              text,
+              role,
+              ...(role === 'implicit' ? { implicit: true } : {}),
+            } as TranslationToken;
+          }),
+        ),
+      ];
+    }),
+);
+export function annotateGrammarSentence(
+  tiles: { text: string; reading: string }[],
+  id: string,
+  index: number,
+  meaning?: string,
+  wrong = false,
+) {
+  const layout = layouts[id];
+  const letters = (wrong && wrongLayouts[id]) || (Array.isArray(layout) ? layout[index] : layout);
+  if (!letters || letters.length !== tiles.length)
+    throw new Error(`Missing role alignment: ${id}/${index} (${tiles.length})`);
+  const annotated = tiles.map((tile, i) => ({
+    ...tile,
+    role: roles[letters[i]],
+    wordClass:
+      letters[i] === 'p'
+        ? 'particle'
+        : letters[i] === 'v'
+          ? 'predicate'
+          : letters[i] === 'm'
+            ? 'modifier'
+            : 'noun phrase',
+  }));
+  const tokens: Token[] = [];
+  for (const tile of annotated) {
+    const previous = tokens.at(-1);
+    if (previous && previous.role === tile.role) {
+      previous.text += tile.text;
+      previous.reading = (previous.reading || '') + tile.reading;
+    } else tokens.push({ ...tile });
+  }
+  const translationTokens = wrong ? undefined : translations[id]?.[index];
+  if (translationTokens && translationTokens.map((t) => t.text).join('') !== meaning)
+    throw new Error(`Translation changed: ${id}/${index}`);
+  return { tiles: annotated, tokens, translationTokens };
 }
 
 // Add only absent annotations to unchanged authored text. Owner edits stay intact.
-export function addGrammarAnnotations(saved:Entry,source:Entry):Entry{
- const annotate=(value:any,reference:any)=>{
-  if(!value||!reference)return value;
-  const same=(value.text??value.japanese)===(reference.text??reference.japanese)&&value.reading===reference.reading;
-  if(!same)return value;
-  return {...value,...(!value.tokens&&reference.tokens?{tokens:reference.tokens}:{}),...(!value.role&&reference.role?{role:reference.role,wordClass:reference.wordClass}:{}),...(!value.translationTokens&&reference.translationTokens&&(value.meaning===undefined||value.meaning===reference.meaning)?{translationTokens:reference.translationTokens}:{})};
- };
- const examples=saved.lesson?.examples.map(ex=>annotate(ex,source.lesson?.examples.find(s=>s.japanese===ex.japanese&&s.reading===ex.reading)));
- const exercises=saved.exercises?.map(ex=>{
-  const ref=source.exercises?.find(s=>s.id===ex.id);if(!ref)return ex;
-  return {...ex,context:annotate(ex.context,ref.context),feedback:annotate(ex.feedback,ref.feedback),choices:ex.choices?.map((v,i)=>annotate(v,ref.choices?.[i])),tiles:ex.tiles?.map((v,i)=>annotate(v,ref.tiles?.[i]))};
- });
- return {...saved,...(saved.lesson?{lesson:{...saved.lesson,examples:examples!}}:{}),...(exercises?{exercises}:{})};
+export function addGrammarAnnotations(saved: Entry, source: Entry): Entry {
+  const annotate = (value: any, reference: any) => {
+    if (!value || !reference) return value;
+    const same =
+      (value.text ?? value.japanese) === (reference.text ?? reference.japanese) &&
+      value.reading === reference.reading;
+    if (!same) return value;
+    return {
+      ...value,
+      ...(!value.tokens && reference.tokens ? { tokens: reference.tokens } : {}),
+      ...(!value.role && reference.role
+        ? { role: reference.role, wordClass: reference.wordClass }
+        : {}),
+      ...(!value.translationTokens &&
+      reference.translationTokens &&
+      (value.meaning === undefined || value.meaning === reference.meaning)
+        ? { translationTokens: reference.translationTokens }
+        : {}),
+    };
+  };
+  const examples = saved.lesson?.examples.map((ex) =>
+    annotate(
+      ex,
+      source.lesson?.examples.find((s) => s.japanese === ex.japanese && s.reading === ex.reading),
+    ),
+  );
+  const exercises = saved.exercises?.map((ex) => {
+    const ref = source.exercises?.find((s) => s.id === ex.id);
+    if (!ref) return ex;
+    return {
+      ...ex,
+      context: annotate(ex.context, ref.context),
+      feedback: annotate(ex.feedback, ref.feedback),
+      choices: ex.choices?.map((v, i) => annotate(v, ref.choices?.[i])),
+      tiles: ex.tiles?.map((v, i) => annotate(v, ref.tiles?.[i])),
+    };
+  });
+  return {
+    ...saved,
+    ...(saved.lesson ? { lesson: { ...saved.lesson, examples: examples! } } : {}),
+    ...(exercises ? { exercises } : {}),
+  };
 }
