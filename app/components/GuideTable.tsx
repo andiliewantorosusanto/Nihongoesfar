@@ -13,19 +13,15 @@ export default function GuideTable({
   rows,
   romaji,
   children,
-  collapsible = true,
 }: Readonly<{
   title: string;
   rows: GuideRow[];
   romaji: boolean;
   children?: ReactNode;
-  collapsible?: boolean;
 }>) {
-  const Container = collapsible ? 'details' : 'section';
-  const Heading = collapsible ? 'summary' : 'h3';
   return (
-    <Container className="large-number-guide guide-reference">
-      <Heading>{title}</Heading>
+    <section className="large-number-guide guide-reference">
+      <h3>{title}</h3>
       {children}
       <table className="quick-table">
         <caption className="sr-only">{title}</caption>
@@ -43,7 +39,9 @@ export default function GuideTable({
               <td lang="ja">{row.japanese}</td>
               <td className={row.special ? 'sound-change' : undefined}>
                 <span className="guide-reading">
-                  <span lang="ja">{row.kana}</span>
+                  <span className="jp" lang="ja">
+                    {row.kana}
+                  </span>
                   {romaji && <small>{row.romaji}</small>}
                 </span>
               </td>
@@ -51,6 +49,6 @@ export default function GuideTable({
           ))}
         </tbody>
       </table>
-    </Container>
+    </section>
   );
 }
