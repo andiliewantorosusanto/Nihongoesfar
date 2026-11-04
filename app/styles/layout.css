@@ -15,6 +15,10 @@
   z-index: 30;
 }
 .brand {
+  border: 0;
+  background: transparent;
+  width: 100%;
+  text-align: left;
   display: flex;
   align-items: center;
   gap: 11px;
