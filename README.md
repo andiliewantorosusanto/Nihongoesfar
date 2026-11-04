@@ -17,7 +17,9 @@ The material focuses on beginner Japanese, with level labels to help you browse.
 
 ## How to use it
 
-Typing exercises offer **Need help with vocabulary?** to reveal supporting words and their kana when needed.
+Sentence-writing and gap prompts label the expected polite or casual form.
+
+Typing exercises mark vocabulary words with dotted underlines. Hover, focus, or tap a marked word to reveal its Japanese and kana.
 
 Open a book and browse, or search for the word or topic you need. Read an explanation, compare examples, then start practice from that entry or the whole book.
 

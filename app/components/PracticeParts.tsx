@@ -177,8 +177,11 @@ function QuestionPrompt({
   return (
     <>
       <h2>
-        {exercise?.prompt ||
-          annotatedPrompt(promptFor(entry, question.skill, question.word), entry, show)}
+        {exercise ? (
+          <VocabularyPrompt key={question.id} exercise={exercise} />
+        ) : (
+          annotatedPrompt(promptFor(entry, question.skill, question.word), entry, show)
+        )}
       </h2>
       {exercise?.context && (
         <div className="practice-context jp">
@@ -364,24 +367,43 @@ type AnswerProps = Readonly<{
   onAnswer: (answer: string) => void;
   onSubmit: (writingCorrect?: boolean) => void;
 }>;
-function VocabularyHint({ exercise }: { exercise?: GuidedExercise }) {
-  const hints = vocabularyHints(exercise);
-  if (!hints.length) return null;
+function VocabularyPrompt({ exercise }: { exercise: GuidedExercise }) {
+  const hints = vocabularyHints(exercise).filter((hint) => hint.meaning);
+  const prompt = exercise.prompt;
+  const matches = hints
+    .flatMap((hint) => {
+      const at = prompt.toLowerCase().indexOf(hint.meaning.toLowerCase());
+      return at < 0 ? [] : [{ ...hint, at }];
+    })
+    .sort((a, b) => a.at - b.at);
+  let end = 0;
   return (
-    <details className="vocabulary-hint">
-      <summary>Need help with vocabulary?</summary>
-      <ul>
-        {hints.map((hint) => (
-          <li key={hint.text}>
-            {hint.meaning && <span>{hint.meaning} → </span>}
-            <span lang="ja">
-              {hint.text}
-              {hint.reading && hint.reading !== hint.text ? `（${hint.reading}）` : ''}
-            </span>
-          </li>
-        ))}
-      </ul>
-    </details>
+    <>
+      {matches.map((hint) => {
+        if (hint.at < end) return null;
+        const before = prompt.slice(end, hint.at);
+        end = hint.at + hint.meaning.length;
+        return (
+          <span key={hint.text}>
+            {before}
+            <button
+              type="button"
+              className="vocabulary-word"
+              onClick={(event) => event.currentTarget.classList.toggle('hint-open')}
+              onBlur={(event) => event.currentTarget.classList.remove('hint-open')}
+              aria-label={`${prompt.slice(hint.at, end)}: ${hint.text}${hint.reading ? ` (${hint.reading})` : ''}`}
+            >
+              {prompt.slice(hint.at, end)}
+              <span className="vocabulary-tooltip" lang="ja">
+                {hint.text}
+                {hint.reading && hint.reading !== hint.text ? `（${hint.reading}）` : ''}
+              </span>
+            </button>
+          </span>
+        );
+      })}
+      {prompt.slice(end)}
+    </>
   );
 }
 
@@ -459,10 +481,6 @@ function AnswerForm(props: AnswerProps) {
           )}
         </>
       )}
-      <VocabularyHint
-        key={question.id}
-        exercise={entry.exercises?.find((item) => item.id === question.exerciseId)}
-      />
       {(choices.length > 0 || question.skill === 'recognition') && (
         <div className="practice-actions">
           <button className="primary" disabled={busy || !answer.trim()} type="submit">

@@ -6,6 +6,7 @@ export type ReadingText = {
   role?: string;
   wordClass?: string;
   tokens?: Entry['examples'][number]['tokens'];
+  tiles?: Entry['examples'][number]['tokens'];
   translationTokens?: Entry['examples'][number]['translationTokens'];
 };
 export type GuidedExercise = {

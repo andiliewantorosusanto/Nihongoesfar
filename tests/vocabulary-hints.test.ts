@@ -9,7 +9,7 @@ test('typing hints reveal umbrella and kana without revealing the negative predi
     .find(
       (exercise) =>
         exercise.type === 'typing' &&
-        exercise.prompt === 'Write in Japanese: There is no umbrella.',
+        exercise.prompt === 'Write in Japanese: There is no umbrella. (polite)',
     );
   assert.ok(exercise);
   assert.deepEqual(vocabularyHints(exercise), [
@@ -24,4 +24,18 @@ test('typing hints reveal umbrella and kana without revealing the negative predi
     }),
     [],
   );
+});
+
+test('textbook question hints supply the noun rather than the demonstrative', () => {
+  const exercise = entries
+    .flatMap((entry) => entry.exercises ?? [])
+    .find(
+      (exercise) =>
+        exercise.type === 'typing' &&
+        exercise.prompt === 'Write in Japanese: Is this a textbook? (polite)',
+    );
+  assert.ok(exercise);
+  assert.deepEqual(vocabularyHints(exercise), [
+    { text: '教科書', reading: 'きょうかしょ', meaning: 'textbook' },
+  ]);
 });
