@@ -13,15 +13,17 @@ export default function GuideTable({
   rows,
   romaji,
   children,
+  showTitle = true,
 }: Readonly<{
   title: string;
   rows: GuideRow[];
   romaji: boolean;
   children?: ReactNode;
+  showTitle?: boolean;
 }>) {
   return (
     <section className="large-number-guide guide-reference">
-      <h3>{title}</h3>
+      {showTitle && <h3>{title}</h3>}
       {children}
       <table className="quick-table">
         <caption className="sr-only">{title}</caption>

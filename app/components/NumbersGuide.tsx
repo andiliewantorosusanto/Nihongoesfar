@@ -39,11 +39,7 @@ export default function NumbersGuide({
     >
       {view === 'numbers' ? (
         <>
-          <GuideTable title="Number patterns and sound changes" rows={numberRows} romaji={romaji}>
-            <p>
-              Build numbers from large to small. Japanese groups large numbers around 万 and 億.
-              Highlighted readings have sound changes.
-            </p>
+          <GuideTable title="Numbers" showTitle={false} rows={numberRows} romaji={romaji}>
             <label htmlFor="number-place">Place value</label>
             <select
               id="number-place"
