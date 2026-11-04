@@ -1,15 +1,15 @@
 import { Check, X, SkipForward, Eye, EyeOff } from 'lucide-react';
 import { useMemo, useState } from 'react';
-import type { Entry } from '../lib/content';
-import type { ReadingText } from '../lib/grammar-course';
+import type { Entry } from '../lib/content/content';
+import type { ReadingText } from '../lib/content/grammar-course';
 import {
   promptFor,
   normalize,
   withAlternate,
   isReadingQuestion,
   type Question,
-} from '../lib/learning';
-import { api } from '../lib/api';
+} from '../lib/practice/learning';
+import { api } from '../lib/api/api';
 import { Furigana, JapaneseProse, RoleText, RoleReading, AlignedTranslation } from './Reading';
 import Writing from './Writing';
 

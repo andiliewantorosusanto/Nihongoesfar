@@ -1,5 +1,5 @@
-import { toRomaji } from '../lib/romaji';
-import { tenseTopicFor } from '../lib/tense-forms';
+import { toRomaji } from '../lib/japanese/romaji';
+import { tenseTopicFor } from '../lib/content/tense-forms';
 import { useState, useEffect, useRef, type ReactNode } from 'react';
 import {
   BookOpen,
@@ -18,14 +18,14 @@ import {
   CalendarDays,
   MessageCircle,
 } from 'lucide-react';
-import type { Entry } from '../lib/content';
-import { skillsFor, entryInBook, type Question } from '../lib/learning';
-import { api } from '../lib/api';
+import type { Entry } from '../lib/content/content';
+import { skillsFor, entryInBook, type Question } from '../lib/practice/learning';
+import { api } from '../lib/api/api';
 import Practice from './Practice';
 import { GrammarLessons } from './GrammarLessons';
 import EntryDetail from './EntryDetail';
 import NumbersGuide from './NumbersGuide';
-import { topicBooks, topicBookFor, topicBookEntries } from '../lib/topic-books';
+import { topicBooks, topicBookFor, topicBookEntries } from '../lib/guides/topic-books';
 const books = [
   {
     id: 'kana',

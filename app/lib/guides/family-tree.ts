@@ -1,4 +1,4 @@
-import type { Entry } from './content.ts';
+import type { Entry } from '../content/content.ts';
 export type FamilyWordMode = 'own' | 'other';
 // Romaji is authored pronunciation help; kanji and kana come from the saved entry.
 const pronunciation: Record<string, string> = {

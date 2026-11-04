@@ -1,4 +1,4 @@
-import type { Entry } from './content.ts';
+import type { Entry } from '../content/content.ts';
 import type { TranslationToken } from './sentence-support.ts';
 type Token = NonNullable<Entry['examples'][number]['tokens']>[number];
 const roles: Record<string, string> = {

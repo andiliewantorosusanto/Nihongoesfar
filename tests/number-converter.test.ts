@@ -5,7 +5,7 @@ import {
   numberInRange,
   parseNumberInput,
   maximumNumber,
-} from '../app/lib/number-converter.ts';
+} from '../app/lib/guides/number-converter.ts';
 
 test('number converter handles zero, irregular sounds and Japanese large-number groups', () => {
   for (const [value, kanji, hiragana] of [

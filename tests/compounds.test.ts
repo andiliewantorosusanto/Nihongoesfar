@@ -1,9 +1,10 @@
 import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { entries } from '../app/lib/content.ts';
-import { makePractice, answerFor, grade, promptFor } from '../app/lib/learning.ts';
-import strokes from '../app/lib/strokes.json' with { type: 'json' };
+import { entries } from '../app/lib/content/content.ts';
+import { makePractice, answerFor, grade, promptFor } from '../app/lib/practice/learning.ts';
+import strokeData from '../public/stroke-data.json' with { type: 'json' };
+const strokes = strokeData.characters;
 test('every starter kanji has varied, real compounds rather than one repeated example', () => {
   const kanji = entries.filter((e) => e.kind === 'kanji');
   assert.equal(kanji.length, 100);

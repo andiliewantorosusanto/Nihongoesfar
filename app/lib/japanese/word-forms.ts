@@ -1,5 +1,5 @@
-import type { Entry } from './content.ts';
-import type { ReferenceTable } from './study-topics.ts';
+import type { Entry } from '../content/content.ts';
+import type { ReferenceTable } from '../content/study-topics.ts';
 
 // Explicit verb roots avoid guessing the group from a final る or mistaking nouns for verbs.
 const roots: Record<string, [string, 'godan' | 'ichidan' | 'suru' | 'kuru']> = {};

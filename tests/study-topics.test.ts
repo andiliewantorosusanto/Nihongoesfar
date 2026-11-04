@@ -1,15 +1,15 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { proseReadings } from '../app/lib/sentence-support.ts';
-import { entries } from '../app/lib/content.ts';
-import { largeNumberAnchors } from '../app/lib/study-topics.ts';
+import { proseReadings } from '../app/lib/japanese/sentence-support.ts';
+import { entries } from '../app/lib/content/content.ts';
+import { largeNumberAnchors } from '../app/lib/content/study-topics.ts';
 import {
   makePractice,
   grade,
   skillsFor,
   isReadingQuestion,
   entryInBook,
-} from '../app/lib/learning.ts';
+} from '../app/lib/practice/learning.ts';
 const get = (id: string) => {
   const e = entries.find((e) => e.id === 'study-' + id);
   assert.ok(e, id);

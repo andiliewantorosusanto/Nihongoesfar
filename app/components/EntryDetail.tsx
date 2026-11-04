@@ -1,9 +1,9 @@
-import { wordForms } from '../lib/word-forms';
+import { wordForms } from '../lib/japanese/word-forms';
 import { useState } from 'react';
 import { ArrowRight, Search } from 'lucide-react';
-import type { Entry } from '../lib/content';
-import { skillsFor } from '../lib/learning';
-import { toRomaji } from '../lib/romaji';
+import type { Entry } from '../lib/content/content';
+import { skillsFor } from '../lib/practice/learning';
+import { toRomaji } from '../lib/japanese/romaji';
 import FamilyTree from './FamilyTree';
 import Writing from './Writing';
 import { Sentence, ReferenceTables } from './Reading';

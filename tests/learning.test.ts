@@ -1,9 +1,16 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { entries } from '../app/lib/content.ts';
-import { makePractice, grade, normalize, skillsFor, entryInBook } from '../app/lib/learning.ts';
-import { checkStroke } from '../app/lib/stroke-check.ts';
-import strokes from '../app/lib/strokes.json' with { type: 'json' };
+import { entries } from '../app/lib/content/content.ts';
+import {
+  makePractice,
+  grade,
+  normalize,
+  skillsFor,
+  entryInBook,
+} from '../app/lib/practice/learning.ts';
+import { checkStroke } from '../app/lib/practice/stroke-check.ts';
+import strokeData from '../public/stroke-data.json' with { type: 'json' };
+const strokes = strokeData.characters;
 test('starter library is complete, linked, and has distinct grammar concepts', () => {
   assert.equal(new Set(entries.map((e) => e.id)).size, entries.length);
   for (const kind of ['kana', 'grammar', 'kanji', 'vocabulary', 'numbers', 'adjectives'])

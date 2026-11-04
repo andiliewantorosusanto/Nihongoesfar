@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { entries } from '../app/lib/content.ts';
-import { familyTreeWord, familySiblingPositions } from '../app/lib/family-tree.ts';
+import { entries } from '../app/lib/content/content.ts';
+import { familyTreeWord, familySiblingPositions } from '../app/lib/guides/family-tree.ts';
 const family = entries.find((e) => e.id === 'study-family')!;
 test('family tree uses the stored own-family and polite-family words with kana and romaji', () => {
   for (const row of family.references![0].rows)

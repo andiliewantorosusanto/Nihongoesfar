@@ -1,4 +1,4 @@
-import { annotateGrammarSentence } from './grammar-annotations.ts';
+import { annotateGrammarSentence } from '../japanese/grammar-annotations.ts';
 import type { Entry } from './content.ts';
 export type ReadingText = {
   text: string;

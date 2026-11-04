@@ -3,8 +3,8 @@ import { routineVocabulary, routineGuides } from './routine-vocabulary.ts';
 import photoVocabulary from './photo-vocabulary.json' with { type: 'json' };
 import { makeStudyEntries, type ReferenceTable } from './study-topics.ts';
 import { grammarCourse, type GrammarLesson, type GuidedExercise } from './grammar-course.ts';
-import { sentenceAlignments, type TranslationToken } from './sentence-support.ts';
-import compoundData from './compounds.json' with { type: 'json' };
+import { sentenceAlignments, type TranslationToken } from '../japanese/sentence-support.ts';
+import compoundData from '../../../public/compound-data.json' with { type: 'json' };
 export type Entry = {
   id: string;
   kind: 'kana' | 'kanji' | 'grammar' | 'vocabulary' | 'numbers' | 'adjectives';

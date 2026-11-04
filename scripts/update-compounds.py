@@ -19,7 +19,7 @@ source = args.source or ROOT / 'work/compounds/JMdict_e.gz'
 if not args.source:
     source.parent.mkdir(parents=True, exist_ok=True)
     urllib.request.urlretrieve(URL, source)
-content = (ROOT / 'app/lib/content.ts').read_text()
+content = (ROOT / 'app/lib/content/content.ts').read_text()
 kanji_section = content.split('const kanjiRows = rows(`', 1)[1].split('`);', 1)[0]
 characters = {line.split('|')[0] for line in kanji_section.splitlines() if line}
 # Prefer words already introduced in the notebook, then general-use dictionary words.
@@ -114,7 +114,6 @@ if missing:
     raise SystemExit('No compounds found for: ' + ''.join(missing))
 bundle = {'attribution': 'JMdict © James William Breen and the Electronic Dictionary Research and Development Group', 'license': 'CC BY-SA 4.0', 'licenseUrl': 'https://www.edrdg.org/edrdg/licence.html', 'source': URL, 'sourceSha256': hashlib.sha256(source.read_bytes()).hexdigest(), 'updatedAt': datetime.datetime.now(datetime.timezone.utc).date().isoformat(), 'modifications': 'Selected common multi-kanji spellings for the notebook’s 100 kanji; paired reading/spelling and sense restrictions respected; first applicable English sense retained. No per-character count cap, prioritizing introduced words; routine numeric, date, time and counter combinations excluded except selected irregular or lexical readings. Not an exhaustive dictionary or JLPT list.', 'characters': selection}
 serialized = json.dumps(bundle, ensure_ascii=False, indent=2) + '\n'
-(ROOT / 'app/lib/compounds.json').write_text(serialized)
 (ROOT / 'public/compound-data.json').write_text(serialized)
 # Refresh only compounds in the static library, preserving directly authored lessons.
 static_path = ROOT / 'public/kanji.json'

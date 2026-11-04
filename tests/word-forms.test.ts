@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { entries } from '../app/lib/content.ts';
-import { wordForms } from '../app/lib/word-forms.ts';
+import { entries } from '../app/lib/content/content.ts';
+import { wordForms } from '../app/lib/japanese/word-forms.ts';
 const get = (word: string) =>
   wordForms(
     entries.find((e) => e.japanese === word && ['vocabulary', 'adjectives'].includes(e.kind))!,

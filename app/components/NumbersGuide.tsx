@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { numberGuide, hourGuide, minuteGuide } from '../lib/number-guide';
-import { convertNumber, maximumNumber } from '../lib/number-converter';
-import { toRomaji } from '../lib/romaji';
+import { numberGuide, hourGuide, minuteGuide } from '../lib/guides/number-guide';
+import { convertNumber, maximumNumber } from '../lib/guides/number-converter';
+import { toRomaji } from '../lib/japanese/romaji';
 import GuideTable from './GuideTable';
 import NumberTools from './NumberTools';
 

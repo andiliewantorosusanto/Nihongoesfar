@@ -1,7 +1,8 @@
 import { useRef, useState, useEffect } from 'react';
 import { Play, RotateCcw, Undo2, Eye, Check } from 'lucide-react';
-import strokes from '../lib/strokes.json';
-import { checkStroke, type Point } from '../lib/stroke-check';
+import strokeData from '../../public/stroke-data.json';
+const strokes = strokeData.characters;
+import { checkStroke, type Point } from '../lib/practice/stroke-check';
 type Stroke = { paths: string[]; source: string };
 const allStrokes = strokes as Record<string, Stroke>;
 export default function Writing({

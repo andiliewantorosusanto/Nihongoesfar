@@ -75,6 +75,18 @@ npm run dev
 
 Open **http://127.0.0.1:5173**. To preview production output, run `npm run build` and `npm start`, then open **http://127.0.0.1:4173**.
 
+## Library organization
+
+`app/lib/` groups shared code by responsibility:
+
+- `api/`: browser JSON loading and practice requests.
+- `content/`: lesson source builders and source vocabulary data.
+- `japanese/`: readings, sentence annotations, romanization, and word forms.
+- `practice/`: question generation, grading, and stroke checking.
+- `guides/`: number conversion, reference readings, family and topic helpers.
+
+The editable subject files and attributed stroke/compound datasets live in `public/`. Stroke and compound code imports those same datasets, avoiding duplicate JSON copies. Source photo vocabulary stays in `content/` because lesson builders and their tests still use it.
+
 ## Styles
 
 `app/globals.css` is the ordered stylesheet entry point. Feature styles live in `app/styles/` (layout, notebook, entry details, writing, practice, guides, reading, grammar, references, family tree, and topic books). Shared base and responsive rules remain separate. Keep import order stable because later rules refine earlier styles.

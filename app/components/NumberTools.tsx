@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { convertNumber, numberInRange, parseNumberInput } from '../lib/number-converter';
-import { normalize } from '../lib/learning';
+import { convertNumber, numberInRange, parseNumberInput } from '../lib/guides/number-converter';
+import { normalize } from '../lib/practice/learning';
 
 export default function NumberTools() {
   const [input, setInput] = useState('12345');

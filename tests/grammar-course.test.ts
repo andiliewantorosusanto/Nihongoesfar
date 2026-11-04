@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { entries } from '../app/lib/content.ts';
+import { entries } from '../app/lib/content/content.ts';
 import {
   makePractice,
   answerFor,
@@ -8,8 +8,8 @@ import {
   withAlternate,
   normalize,
   isReadingQuestion,
-} from '../app/lib/learning.ts';
-import { rubyParts, proseReadings } from '../app/lib/sentence-support.ts';
+} from '../app/lib/practice/learning.ts';
+import { rubyParts, proseReadings } from '../app/lib/japanese/sentence-support.ts';
 const lessons = entries.filter((e) => e.lesson).sort((a, b) => a.lesson!.order - b.lesson!.order);
 test('all 30 grammar lessons have an ordered path, meaningful examples and 56 fully readable exercises', () => {
   assert.equal(lessons.length, 30);

@@ -1,4 +1,4 @@
-import type { Entry } from './content.ts';
+import type { Entry } from '../content/content.ts';
 
 export const topicBooks: Record<string, readonly string[]> = {
   family: ['study-family'],

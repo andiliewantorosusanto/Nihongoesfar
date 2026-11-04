@@ -1,6 +1,7 @@
-import type { Entry } from './content.ts';
-import { makePractice, grade, answerFor, type Skill } from './learning.ts';
-import strokes from './strokes.json' with { type: 'json' };
+import type { Entry } from '../content/content.ts';
+import { makePractice, grade, answerFor, type Skill } from '../practice/learning.ts';
+import strokeData from '../../../public/stroke-data.json' with { type: 'json' };
+const strokes = strokeData.characters;
 
 let library:
   Promise<{ content: Entry[]; preferences: { furigana: boolean; romaji: boolean } }> | undefined;

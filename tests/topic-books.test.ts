@@ -1,8 +1,8 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { entries } from '../app/lib/content.ts';
-import { topicBooks, topicBookFor, topicBookEntries } from '../app/lib/topic-books.ts';
-import { makePractice } from '../app/lib/learning.ts';
+import { entries } from '../app/lib/content/content.ts';
+import { topicBooks, topicBookFor, topicBookEntries } from '../app/lib/guides/topic-books.ts';
+import { makePractice } from '../app/lib/practice/learning.ts';
 
 test('topic books open all their saved guides in order and keep practice scoped to each topic', () => {
   for (const [book, ids] of Object.entries(topicBooks)) {

@@ -1,7 +1,7 @@
-import { toRomaji } from '../lib/romaji';
-import type { ReadingText } from '../lib/grammar-course';
-import type { Entry } from '../lib/content';
-import { rubyParts, proseReadings } from '../lib/sentence-support';
+import { toRomaji } from '../lib/japanese/romaji';
+import type { ReadingText } from '../lib/content/grammar-course';
+import type { Entry } from '../lib/content/content';
+import { rubyParts, proseReadings } from '../lib/japanese/sentence-support';
 export function Furigana({
   text,
   reading,

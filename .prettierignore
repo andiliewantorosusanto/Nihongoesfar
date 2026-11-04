@@ -6,6 +6,4 @@ work/
 .agents/
 .codex/
 package-lock.json
-app/lib/compounds.json
-app/lib/strokes.json
 public/*.json

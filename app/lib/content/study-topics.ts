@@ -1267,7 +1267,7 @@ export function makeStudyEntries(existing: Entry[]): Entry[] {
       en,
       'Polite form of ' +
         form +
-        '. Destination + に / へ is possible. 行きます goes away from the current viewpoint; 来ます comes toward it; 帰ります returns to home or a familiar base. へ is not limited to these three verbs.',
+        '../. Destination + に / へ is possible. 行きます goes away from the current viewpoint; 来ます comes toward it; 帰ります returns to home or a familiar base. へ is not limited to these three verbs.',
       romaji,
     );
     e.examples = particleExamples.e.filter((ex) => ex.japanese.includes(jp));

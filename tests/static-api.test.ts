@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { entries, type Entry } from '../app/lib/content.ts';
-import { staticResult, staticApi } from '../app/lib/static-api.ts';
+import { entries, type Entry } from '../app/lib/content/content.ts';
+import { staticResult, staticApi } from '../app/lib/api/static-api.ts';
 import { readFile } from 'node:fs/promises';
 
 test('static practice filters vocabulary and grades answers without a server', () => {

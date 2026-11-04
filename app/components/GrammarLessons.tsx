@@ -1,4 +1,4 @@
-import type { Entry } from '../lib/content';
+import type { Entry } from '../lib/content/content';
 import { Sentence, Furigana, JapaneseProse } from './Reading';
 export function GrammarLessons({
   entries,

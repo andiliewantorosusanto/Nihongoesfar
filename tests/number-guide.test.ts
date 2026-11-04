@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { numberGuide, hourGuide, minuteGuide } from '../app/lib/number-guide.ts';
+import { numberGuide, hourGuide, minuteGuide } from '../app/lib/guides/number-guide.ts';
 test('number guide contrasts regular patterns with the important hundred and thousand sound changes', () => {
   assert.deepEqual(
     numberGuide.map((r) => r.value),

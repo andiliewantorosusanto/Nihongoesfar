@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { entries } from '../app/lib/content.ts';
-import { rubyParts } from '../app/lib/sentence-support.ts';
+import { entries } from '../app/lib/content/content.ts';
+import { rubyParts } from '../app/lib/japanese/sentence-support.ts';
 test('all grammar examples have aligned readings and exact natural English translations', () => {
   for (const e of entries.filter((e) => e.kind === 'grammar')) {
     const ex = e.examples[0];

@@ -1,6 +1,10 @@
 import { useState } from 'react';
-import type { Entry } from '../lib/content';
-import { familyTreeWord, familySiblingPositions, type FamilyWordMode } from '../lib/family-tree';
+import type { Entry } from '../lib/content/content';
+import {
+  familyTreeWord,
+  familySiblingPositions,
+  type FamilyWordMode,
+} from '../lib/guides/family-tree';
 
 export default function FamilyTree({
   entry,
