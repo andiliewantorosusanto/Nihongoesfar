@@ -8,7 +8,6 @@ import {
 import { convertNumber, maximumNumber } from '../lib/guides/number-converter';
 import { toRomaji } from '../lib/japanese/romaji';
 import GuideTable from './GuideTable';
-import NumberTools from './NumberTools';
 
 export default function NumbersGuide({
   view,
@@ -40,7 +39,6 @@ export default function NumbersGuide({
     >
       {view === 'numbers' ? (
         <>
-          <NumberTools />
           <GuideTable title="Number patterns and sound changes" rows={numberRows} romaji={romaji}>
             <p>
               Build numbers from large to small. Japanese groups large numbers around 万 and 億.

@@ -1,5 +1,5 @@
 .number-tools {
-  margin-bottom: 24px;
+  margin-bottom: 0;
 }
 .number-tools label {
   display: block;
@@ -50,10 +50,7 @@
   margin-bottom: 8px;
 }
 .number-converter {
-  max-width: 360px;
-  padding: 14px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
+  width: 100%;
 }
 .number-conversion-result {
   display: grid;
@@ -69,7 +66,7 @@
   font-size: 13px;
 }
 .number-range-practice {
-  width: 300px;
+  width: 100%;
   max-width: 100%;
   margin-bottom: 0;
 }
@@ -105,5 +102,15 @@
   }
   .number-converter {
     max-width: none;
+  }
+}
+
+.book-practice-actions .practice-controls {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+@media (max-width: 650px) {
+  .book-practice-actions .practice-controls {
+    justify-content: flex-start;
   }
 }

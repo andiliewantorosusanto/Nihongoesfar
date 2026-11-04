@@ -25,7 +25,7 @@ import Practice from './Practice';
 import { GrammarLessons } from './GrammarLessons';
 import EntryDetail from './EntryDetail';
 import NumbersGuide from './NumbersGuide';
-import { NumberRangePractice } from './NumberTools';
+import NumberTools, { NumberRangePractice } from './NumberTools';
 import { topicBooks, topicBookFor, topicBookEntries } from '../lib/guides/topic-books';
 const books = [
   {
@@ -187,6 +187,7 @@ export default function Notebook() {
   const [tag, setTag] = useState('all');
   const [menu, setMenu] = useState(false);
   const [settings, setSettings] = useState(false);
+  const [numberTool, setNumberTool] = useState<'converter' | 'range' | null>(null);
   const [questions, setQuestions] = useState<Question[] | null>(null);
   const [mode, setMode] = useState('mixed');
   const [busy, setBusy] = useState(false);
@@ -221,7 +222,7 @@ export default function Notebook() {
     setPage(p);
     setTopicEntryId('');
     setGrammarDetailed(false);
-    setMode('mixed');
+    setMode(p === 'numbers' ? 'range' : 'mixed');
     setSearch('');
     setTopic('all');
     setLevel('all');
@@ -390,11 +391,17 @@ export default function Notebook() {
                     </select>
                   </>
                 )}
+                {page === 'numbers' && (
+                  <button className="secondary" onClick={() => setNumberTool('converter')}>
+                    Convert number
+                  </button>
+                )}
                 <select
                   aria-label="Practice type"
                   value={mode}
                   onChange={(e) => setMode(e.target.value)}
                 >
+                  {page === 'numbers' && <option value="range">Range practice</option>}
                   <option value="mixed">Mixed practice</option>
                   {availableModes.map((s) => (
                     <option value={s} key={s}>
@@ -405,13 +412,16 @@ export default function Notebook() {
                 <button
                   className="primary"
                   disabled={busy || !availableModes.length}
-                  onClick={() => startPractice(page === 'notes' ? 'notes' : current?.id)}
+                  onClick={() =>
+                    page === 'numbers' && mode === 'range'
+                      ? setNumberTool('range')
+                      : startPractice(page === 'notes' ? 'notes' : current?.id)
+                  }
                 >
                   {page === 'grammar' ? 'Mixed grammar practice' : 'Practice'}{' '}
                   <ArrowRight size={16} />
                 </button>
               </div>
-              {page === 'numbers' && <NumberRangePractice />}
             </div>
           )}
         </div>
@@ -698,6 +708,14 @@ export default function Notebook() {
         </Modal>
       )}
 
+      {numberTool && (
+        <Modal
+          label={numberTool === 'converter' ? 'Number converter' : 'Range practice'}
+          onClose={() => setNumberTool(null)}
+        >
+          {numberTool === 'converter' ? <NumberTools /> : <NumberRangePractice />}
+        </Modal>
+      )}
       {settings && data && (
         <Modal label="Preferences" onClose={() => setSettings(false)}>
           <p className="eyebrow">READING SUPPORT</p>
