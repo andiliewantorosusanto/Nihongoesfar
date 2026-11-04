@@ -9,13 +9,26 @@ import Writing from './Writing';
 import { Sentence, ReferenceTables } from './Reading';
 import { LessonIntro } from './GrammarLessons';
 
+type EntryDetailProps = Readonly<{
+  fullPage?: boolean;
+  entry: Entry;
+  data: {
+    entries: Entry[];
+    preferences: { furigana: boolean; romaji: boolean };
+    strokeIds: string[];
+  };
+  busy: boolean;
+  onOpen: (entry: Entry) => void;
+  onPractice: (word?: string) => void;
+}>;
+
 function WordForms({
   entry,
   preferences,
-}: {
+}: Readonly<{
   entry: Entry;
   preferences: { furigana: boolean; romaji: boolean };
-}) {
+}>) {
   const forms = wordForms(entry);
   if (!forms) return null;
   return (
@@ -31,7 +44,7 @@ function WordForms({
   );
 }
 
-function KanaWriting({ entry }: { entry: Entry }) {
+function KanaWriting({ entry }: Readonly<{ entry: Entry }>) {
   const characters = [...new Set([...entry.japanese].filter((c) => /[ぁ-ヿ]/.test(c)))];
   const [selected, setSelected] = useState(characters[0] || entry.japanese);
   return (
@@ -53,6 +66,131 @@ function KanaWriting({ entry }: { entry: Entry }) {
     </>
   );
 }
+
+function EntryReferences({
+  entry,
+  data,
+  busy,
+  onPractice,
+}: Readonly<Pick<EntryDetailProps, 'entry' | 'data' | 'busy' | 'onPractice'>>) {
+  const [compoundSearch, setCompoundSearch] = useState('');
+  const [compoundLimit, setCompoundLimit] = useState(12);
+  const compounds = (entry.compounds || []).filter((c) =>
+    [c.japanese, c.reading, c.meaning]
+      .join(' ')
+      .toLowerCase()
+      .includes(compoundSearch.toLowerCase()),
+  );
+  if (entry.lesson) {
+    if (!entry.references?.length) return null;
+    return (
+      <ReferenceTables
+        romaji={data.preferences.romaji}
+        tables={entry.references}
+        furigana={data.preferences.furigana}
+      />
+    );
+  }
+  return (
+    <div className="reference-details">
+      {entry.kind !== 'kanji' && entry.note && (
+        <div className="lesson-note">
+          {entry.note.split('\n').map((p) => (
+            <p key={p}>{p}</p>
+          ))}
+        </div>
+      )}
+      {entry.on && (
+        <div className="kanji-readings">
+          <div>
+            <small>ON READING</small>
+            <span className="jp">{entry.on}</span>
+          </div>
+          <div>
+            <small>KUN READING</small>
+            <span className="jp">{entry.kun || '—'}</span>
+          </div>
+        </div>
+      )}
+      {!!entry.references?.length && (
+        <ReferenceTables
+          romaji={data.preferences.romaji}
+          tables={entry.references}
+          furigana={data.preferences.furigana}
+        />
+      )}
+      {entry.kind !== 'kanji' && (
+        <>
+          <h3>Examples</h3>
+          {entry.examples.map((ex) => (
+            <Sentence
+              romaji={data.preferences.romaji}
+              key={ex.japanese + ':' + ex.reading + ':' + ex.meaning}
+              example={ex}
+              furigana={data.preferences.furigana}
+            />
+          ))}
+        </>
+      )}
+      {!!entry.compounds?.length && (
+        <section className="compounds-section">
+          <div className="compound-heading">
+            <h3>
+              Compounds <span>{entry.compounds.length}</span>
+            </h3>
+            <a href="/credits.html#dictionary" target="_blank" rel="noreferrer">
+              JMdict ↗
+            </a>
+          </div>
+          <p>Dictionary words using this kanji. Some are uncommon or go beyond N5.</p>
+          <label className="search-field compound-search">
+            <Search size={16} />
+            <input
+              aria-label="Filter compounds"
+              placeholder="Find a compound, reading, or meaning…"
+              value={compoundSearch}
+              onChange={(ev) => {
+                setCompoundSearch(ev.target.value);
+                setCompoundLimit(12);
+              }}
+            />
+          </label>
+          <div className="compound-labels">
+            <span>Word</span>
+            <span>Reading</span>
+            <span>Meaning</span>
+            <span />
+          </div>
+          {compounds.slice(0, compoundLimit).map((c) => (
+            <div className="compound" key={c.japanese + ':' + c.reading}>
+              <span className="jp" lang="ja">
+                {c.japanese}
+              </span>
+              <span lang="ja">{c.reading}</span>
+              <span>{c.meaning}</span>
+              <button
+                className="icon-button"
+                aria-label={'Practice reading ' + c.japanese}
+                title="Practice this word’s reading"
+                disabled={busy}
+                onClick={() => onPractice(c.japanese)}
+              >
+                <ArrowRight size={16} />
+              </button>
+            </div>
+          ))}
+          {compounds.length > compoundLimit && (
+            <button className="button" onClick={() => setCompoundLimit(compoundLimit + 12)}>
+              Show more ({compounds.length - compoundLimit} remaining)
+            </button>
+          )}
+          {!compounds.length && <p className="no-compounds">No compounds match your search.</p>}
+        </section>
+      )}
+    </div>
+  );
+}
+
 export default function EntryDetail({
   entry,
   data,
@@ -60,21 +198,8 @@ export default function EntryDetail({
   onPractice,
   onOpen,
   fullPage = false,
-}: {
-  fullPage?: boolean;
-  entry: Entry;
-  data: {
-    entries: Entry[];
-    preferences: { furigana: boolean; romaji: boolean };
-    strokeIds: string[];
-  };
-  busy: boolean;
-  onOpen: (entry: Entry) => void;
-  onPractice: (word?: string) => void;
-}) {
+}: EntryDetailProps) {
   const [tab, setTab] = useState('learn');
-  const [compoundSearch, setCompoundSearch] = useState('');
-  const [compoundLimit, setCompoundLimit] = useState(12);
   if (entry.kind === 'kana')
     return (
       <>
@@ -117,12 +242,6 @@ export default function EntryDetail({
         onPractice={() => onPractice()}
       />
     );
-  const compounds = (entry.compounds || []).filter((c) =>
-    [c.japanese, c.reading, c.meaning]
-      .join(' ')
-      .toLowerCase()
-      .includes(compoundSearch.toLowerCase()),
-  );
   return (
     <>
       <p className="eyebrow">
@@ -182,13 +301,13 @@ export default function EntryDetail({
       {!fullPage && entry.kind === 'kanji' && (
         <div className="tabs">
           <button className={tab === 'learn' ? 'selected' : ''} onClick={() => setTab('learn')}>
-            {entry.kind === 'kanji' ? 'Readings & compounds' : 'Learn & examples'}
+            Readings & compounds
           </button>
-          {['kana', 'kanji'].includes(entry.kind) && (
+          {
             <button className={tab === 'write' ? 'selected' : ''} onClick={() => setTab('write')}>
               Stroke order & writing
             </button>
-          )}
+          }
         </div>
       )}
       {tab === 'learn' && entry.lesson && (
@@ -205,111 +324,8 @@ export default function EntryDetail({
       )}
       {tab === 'write' ? (
         <Writing character={entry.japanese} />
-      ) : entry.lesson ? (
-        entry.references?.length ? (
-          <ReferenceTables
-            romaji={data.preferences.romaji}
-            tables={entry.references}
-            furigana={data.preferences.furigana}
-          />
-        ) : null
       ) : (
-        <div className="reference-details">
-          {entry.kind !== 'kanji' && entry.note && (
-            <div className="lesson-note">
-              {entry.note.split('\n').map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
-            </div>
-          )}
-          {entry.on && (
-            <div className="kanji-readings">
-              <div>
-                <small>ON READING</small>
-                <span className="jp">{entry.on}</span>
-              </div>
-              <div>
-                <small>KUN READING</small>
-                <span className="jp">{entry.kun || '—'}</span>
-              </div>
-            </div>
-          )}
-          {!!entry.references?.length && (
-            <ReferenceTables
-              romaji={data.preferences.romaji}
-              tables={entry.references}
-              furigana={data.preferences.furigana}
-            />
-          )}
-          {entry.kind !== 'kanji' && (
-            <>
-              <h3>Examples</h3>
-              {entry.examples.map((ex, i) => (
-                <Sentence
-                  romaji={data.preferences.romaji}
-                  key={i}
-                  example={ex}
-                  furigana={data.preferences.furigana}
-                />
-              ))}
-            </>
-          )}
-          {!!entry.compounds?.length && (
-            <section className="compounds-section">
-              <div className="compound-heading">
-                <h3>
-                  Compounds <span>{entry.compounds.length}</span>
-                </h3>
-                <a href="/credits.html#dictionary" target="_blank" rel="noreferrer">
-                  JMdict ↗
-                </a>
-              </div>
-              <p>Dictionary words using this kanji. Some are uncommon or go beyond N5.</p>
-              <label className="search-field compound-search">
-                <Search size={16} />
-                <input
-                  aria-label="Filter compounds"
-                  placeholder="Find a compound, reading, or meaning…"
-                  value={compoundSearch}
-                  onChange={(ev) => {
-                    setCompoundSearch(ev.target.value);
-                    setCompoundLimit(12);
-                  }}
-                />
-              </label>
-              <div className="compound-labels">
-                <span>Word</span>
-                <span>Reading</span>
-                <span>Meaning</span>
-                <span />
-              </div>
-              {compounds.slice(0, compoundLimit).map((c) => (
-                <div className="compound" key={c.japanese + ':' + c.reading}>
-                  <span className="jp" lang="ja">
-                    {c.japanese}
-                  </span>
-                  <span lang="ja">{c.reading}</span>
-                  <span>{c.meaning}</span>
-                  <button
-                    className="icon-button"
-                    aria-label={'Practice reading ' + c.japanese}
-                    title="Practice this word’s reading"
-                    disabled={busy}
-                    onClick={() => onPractice(c.japanese)}
-                  >
-                    <ArrowRight size={16} />
-                  </button>
-                </div>
-              ))}
-              {compounds.length > compoundLimit && (
-                <button className="button" onClick={() => setCompoundLimit(compoundLimit + 12)}>
-                  Show more ({compounds.length - compoundLimit} remaining)
-                </button>
-              )}
-              {!compounds.length && <p className="no-compounds">No compounds match your search.</p>}
-            </section>
-          )}
-        </div>
+        <EntryReferences entry={entry} data={data} busy={busy} onPractice={onPractice} />
       )}
     </>
   );

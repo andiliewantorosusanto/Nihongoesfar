@@ -34,13 +34,21 @@ def useful_compound(word, reading):
     exceptions = {('一人','ひとり'),('二人','ふたり'),('一日','ついたち'),('二十日','はつか'),('十分','じゅうぶん'),('一時','ひととき')}
     if (word, reading) in exceptions:
         return True
-    return not re.fullmatch(r'[〇零一二三四五六七八九十百千万億兆]+(?:日|月|年|時|分|秒|時間|週間|年間|人|本|枚|匹|個|円|歳|才|回|台|階|番|号)?', word)
+    numeric = re.match(r'[〇零一二三四五六七八九十百千万億兆]+', word)
+    if not numeric:
+        return True
+    counters = {'', '日', '月', '年', '時', '分', '秒', '時間', '週間', '年間', '人', '本', '枚', '匹', '個', '円', '歳', '才', '回', '台', '階', '番', '号'}
+    return word[numeric.end():] not in counters
 
 
 def frequency(priorities):
     ranks = [int(p[2:]) for p in priorities if re.fullmatch(r'nf\d+', p)]
     rank = min(ranks, default=49)
-    familiar = 0 if 'ichi1' in priorities else 100 if 'spec1' in priorities else 300
+    familiar = 300
+    if 'ichi1' in priorities:
+        familiar = 0
+    elif 'spec1' in priorities:
+        familiar = 100
     return rank * 20 + familiar
 
 

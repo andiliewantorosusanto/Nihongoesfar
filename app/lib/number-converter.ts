@@ -3,6 +3,33 @@ import { numberGuide } from './number-guide.ts';
 export const maximumNumber = 999_999_999_999;
 const digits = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
 
+function digitReading(digit: number, place: number): string {
+  const row = numberGuide[digit - 1];
+  if (place === 1000) return row.thousand.kana;
+  if (place === 100) return row.hundred.kana;
+  if (place === 10) return (digit === 1 ? '' : row.unit.kana) + 'じゅう';
+  return row.unit.kana;
+}
+
+function convertGroup(value: number): { kanji: string; hiragana: string } {
+  let kanji = '';
+  let hiragana = '';
+  for (const [place, unit] of [
+    [1000, '千'],
+    [100, '百'],
+    [10, '十'],
+    [1, ''],
+  ] as const) {
+    const digit = Math.floor(value / place);
+    value %= place;
+    if (!digit) continue;
+    const omitOne = digit === 1 && place > 1;
+    kanji += (omitOne ? '' : digits[digit]) + unit;
+    hiragana += digitReading(digit, place);
+  }
+  return { kanji, hiragana };
+}
+
 export function convertNumber(value: number): { kanji: string; hiragana: string } {
   if (!Number.isSafeInteger(value) || value < 0 || value > maximumNumber)
     throw new Error('Enter a whole number from 0 to 999,999,999,999.');
@@ -18,29 +45,9 @@ export function convertNumber(value: number): { kanji: string; hiragana: string 
     const group = Math.floor(value / size);
     value %= size;
     if (!group) continue;
-    let remainder = group;
-    for (const [place, unit] of [
-      [1000, '千'],
-      [100, '百'],
-      [10, '十'],
-      [1, ''],
-    ] as const) {
-      const digit = Math.floor(remainder / place);
-      remainder %= place;
-      if (!digit) continue;
-      kanji += (digit === 1 && place > 1 ? '' : digits[digit]) + unit;
-      const row = numberGuide[digit - 1];
-      hiragana +=
-        place === 1000
-          ? row.thousand.kana
-          : place === 100
-            ? row.hundred.kana
-            : place === 10
-              ? (digit === 1 ? '' : row.unit.kana) + 'じゅう'
-              : row.unit.kana;
-    }
-    kanji += symbol;
-    hiragana += reading;
+    const converted = convertGroup(group);
+    kanji += converted.kanji + symbol;
+    hiragana += converted.hiragana + reading;
   }
   return { kanji, hiragana };
 }
