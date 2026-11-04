@@ -4,57 +4,15 @@
   "licenseUrl": "https://www.edrdg.org/edrdg/licence.html",
   "source": "https://www.edrdg.org/pub/Nihongo/JMdict_e.gz",
   "sourceSha256": "965d176378afcccf21d45a2906e22f534b31b5bcddf488c3feca6d0298a8c059",
-  "updatedAt": "2026-10-30",
-  "modifications": "Selected common multi-kanji spellings for the notebook’s 100 kanji; paired reading/spelling and sense restrictions respected; first applicable English sense retained. At most 20 per character, prioritizing introduced words. Not an exhaustive dictionary or JLPT list.",
+  "updatedAt": "2026-11-02",
+  "modifications": "Selected common multi-kanji spellings for the notebook’s 100 kanji; paired reading/spelling and sense restrictions respected; first applicable English sense retained. At most 12 per character, prioritizing introduced words; routine numeric, date, time and counter combinations excluded except selected irregular or lexical readings. Not an exhaustive dictionary or JLPT list.",
   "characters": {
     "一": [
-      {
-        "japanese": "一時",
-        "reading": "いちじ",
-        "meaning": "one o'clock",
-        "dictionaryId": "1576100"
-      },
       {
         "japanese": "一人",
         "reading": "ひとり",
         "meaning": "one person",
         "dictionaryId": "1576150"
-      },
-      {
-        "japanese": "一月",
-        "reading": "いちがつ",
-        "meaning": "January",
-        "dictionaryId": "1162120"
-      },
-      {
-        "japanese": "十一月",
-        "reading": "じゅういちがつ",
-        "meaning": "November",
-        "dictionaryId": "1334480"
-      },
-      {
-        "japanese": "十一",
-        "reading": "じゅういち",
-        "meaning": "eleven; 11",
-        "dictionaryId": "1334470"
-      },
-      {
-        "japanese": "一本",
-        "reading": "いっぽん",
-        "meaning": "one long cylindrical thing; one film, TV show, etc.; one goal, home run, etc.",
-        "dictionaryId": "1166600"
-      },
-      {
-        "japanese": "一分",
-        "reading": "いちぶ",
-        "meaning": "one tenth; one hundredth; one percent",
-        "dictionaryId": "1166270"
-      },
-      {
-        "japanese": "一日",
-        "reading": "いちにち",
-        "meaning": "one day",
-        "dictionaryId": "1576260"
       },
       {
         "japanese": "一日",
@@ -69,151 +27,61 @@
         "dictionaryId": "1162920"
       },
       {
-        "japanese": "一万",
-        "reading": "いちまん",
-        "meaning": "10,000; ten thousand; 10^4",
-        "dictionaryId": "2121800"
-      },
-      {
-        "japanese": "一月",
-        "reading": "ひとつき",
-        "meaning": "one month",
-        "dictionaryId": "1162130"
-      },
-      {
-        "japanese": "十一日",
-        "reading": "じゅういちにち",
-        "meaning": "11th day of the month",
-        "dictionaryId": "2723090"
-      },
-      {
-        "japanese": "三十一日",
-        "reading": "さんじゅういちにち",
-        "meaning": "31st day of the month",
-        "dictionaryId": "2738480"
-      },
-      {
-        "japanese": "二十一日",
-        "reading": "にじゅういちにち",
-        "meaning": "21st day of the month",
-        "dictionaryId": "2737910"
-      },
-      {
-        "japanese": "一枚",
-        "reading": "いちまい",
-        "meaning": "one (thin, flat object); one sheet",
-        "dictionaryId": "1166710"
-      },
-      {
-        "japanese": "一週間",
-        "reading": "いっしゅうかん",
-        "meaning": "one week",
-        "dictionaryId": "1163270"
-      },
-      {
         "japanese": "一昨日",
         "reading": "おととい",
         "meaning": "day before yesterday",
         "dictionaryId": "1576050"
       },
       {
-        "japanese": "一匹",
-        "reading": "いっぴき",
-        "meaning": "one (small animal)",
-        "dictionaryId": "1166060"
+        "japanese": "一生",
+        "reading": "いっしょう",
+        "meaning": "whole life; a lifetime; all through life",
+        "dictionaryId": "1576200"
       },
       {
-        "japanese": "一時間",
-        "reading": "いちじかん",
-        "meaning": "one hour",
-        "dictionaryId": "1162940"
+        "japanese": "一口",
+        "reading": "ひとくち",
+        "meaning": "mouthful; morsel; bite",
+        "dictionaryId": "1162370"
+      },
+      {
+        "japanese": "一人前",
+        "reading": "いちにんまえ",
+        "meaning": "one portion; one serving; one person",
+        "dictionaryId": "1163770"
+      },
+      {
+        "japanese": "一気",
+        "reading": "いっき",
+        "meaning": "one breath",
+        "dictionaryId": "1161720"
+      },
+      {
+        "japanese": "一目",
+        "reading": "ひとめ",
+        "meaning": "glance; look; glimpse",
+        "dictionaryId": "1166950"
+      },
+      {
+        "japanese": "一見",
+        "reading": "いっけん",
+        "meaning": "look; glimpse; glance",
+        "dictionaryId": "1162170"
+      },
+      {
+        "japanese": "一行",
+        "reading": "いちぎょう",
+        "meaning": "(one) line; (one) row",
+        "dictionaryId": "1576020"
+      },
+      {
+        "japanese": "日本一",
+        "reading": "にほんいち",
+        "meaning": "Japan's best; number one in Japan",
+        "dictionaryId": "1730040"
       }
     ],
     "七": [
-      {
-        "japanese": "七月",
-        "reading": "しちがつ",
-        "meaning": "July",
-        "dictionaryId": "1319280"
-      },
-      {
-        "japanese": "七日",
-        "reading": "なのか",
-        "meaning": "7th day of the month",
-        "dictionaryId": "1579630"
-      },
-      {
-        "japanese": "七時",
-        "reading": "しちじ",
-        "meaning": "seven o'clock",
-        "dictionaryId": "2845363"
-      },
-      {
-        "japanese": "十七日",
-        "reading": "じゅうしちにち",
-        "meaning": "17th day of the month",
-        "dictionaryId": "2737800"
-      },
-      {
-        "japanese": "二十七日",
-        "reading": "にじゅうしちにち",
-        "meaning": "27th day of the month",
-        "dictionaryId": "2738430"
-      },
-      {
-        "japanese": "七十",
-        "reading": "しちじゅう",
-        "meaning": "seventy; 70",
-        "dictionaryId": "1579610"
-      },
-      {
-        "japanese": "一七",
-        "reading": "じゅうなな",
-        "meaning": "seventeen; 17",
-        "dictionaryId": "1579880"
-      },
-      {
-        "japanese": "十七",
-        "reading": "じゅうなな",
-        "meaning": "seventeen; 17",
-        "dictionaryId": "1579880"
-      },
-      {
-        "japanese": "七七日",
-        "reading": "しちしちにち",
-        "meaning": "49th day after death",
-        "dictionaryId": "1594370"
-      },
-      {
-        "japanese": "二七日",
-        "reading": "ふたなぬか",
-        "meaning": "second week's memorial services",
-        "dictionaryId": "1582650"
-      },
-      {
-        "japanese": "一七日",
-        "reading": "じゅうしちにち",
-        "meaning": "17th day of the month",
-        "dictionaryId": "2737800"
-      },
-      {
-        "japanese": "二七日",
-        "reading": "にじゅうしちにち",
-        "meaning": "27th day of the month",
-        "dictionaryId": "2738430"
-      },
-      {
-        "japanese": "七三",
-        "reading": "しちさん",
-        "meaning": "seven-to-three ratio; 70-30 split",
-        "dictionaryId": "1721380"
-      },
-      {
-        "japanese": "七五三",
-        "reading": "しちごさん",
-        "meaning": "shichi-go-san; 7-5-3 day; festival day for children aged 7, 5 and 3 held on or around November 15",
-        "dictionaryId": "1319310"
-      },
       {
         "japanese": "七夕",
         "reading": "たなばた",
@@ -249,62 +117,38 @@
         "reading": "なないろ",
         "meaning": "seven colours (of the rainbow); prismatic colors",
         "dictionaryId": "1579620"
+      },
+      {
+        "japanese": "七回忌",
+        "reading": "しちかいき",
+        "meaning": "sixth anniversary of a death",
+        "dictionaryId": "1319250"
+      },
+      {
+        "japanese": "七面鳥",
+        "reading": "しちめんちょう",
+        "meaning": "turkey (Meleagris gallopavo)",
+        "dictionaryId": "1319520"
+      },
+      {
+        "japanese": "七福神",
+        "reading": "しちふくじん",
+        "meaning": "Seven Gods of Fortune; Seven Deities of Good Luck; Seven Lucky Gods",
+        "dictionaryId": "1319460"
+      },
+      {
+        "japanese": "七不思議",
+        "reading": "ななふしぎ",
+        "meaning": "seven wonders (of a particular area)",
+        "dictionaryId": "1319450"
       }
     ],
     "万": [
-      {
-        "japanese": "一万",
-        "reading": "いちまん",
-        "meaning": "10,000; ten thousand; 10^4",
-        "dictionaryId": "2121800"
-      },
-      {
-        "japanese": "十万",
-        "reading": "じゅうまん",
-        "meaning": "100,000; hundred thousand",
-        "dictionaryId": "1335140"
-      },
-      {
-        "japanese": "百万",
-        "reading": "ひゃくまん",
-        "meaning": "1,000,000; one million; million",
-        "dictionaryId": "1488500"
-      },
-      {
-        "japanese": "万一",
-        "reading": "まんいち",
-        "meaning": "(unlikely event of) emergency; the worst(-case scenario); 10000 to 1",
-        "dictionaryId": "1525780"
-      },
       {
         "japanese": "万国",
         "reading": "ばんこく",
         "meaning": "all countries; the whole world; universal",
         "dictionaryId": "1525960"
-      },
-      {
-        "japanese": "万年",
-        "reading": "まんねん",
-        "meaning": "ten thousand years; eternity",
-        "dictionaryId": "1526310"
-      },
-      {
-        "japanese": "千万",
-        "reading": "せんばん",
-        "meaning": "exceedingly; extremely; very many",
-        "dictionaryId": "1389240"
-      },
-      {
-        "japanese": "万人",
-        "reading": "ばんにん",
-        "meaning": "all people; everybody",
-        "dictionaryId": "1584500"
-      },
-      {
-        "japanese": "八百万",
-        "reading": "やおよろず",
-        "meaning": "myriad; countless things",
-        "dictionaryId": "1476980"
       },
       {
         "japanese": "拾万",
@@ -317,12 +161,6 @@
         "reading": "ばんのう",
         "meaning": "all-purpose; utility; universal",
         "dictionaryId": "1584530"
-      },
-      {
-        "japanese": "万歳",
-        "reading": "ばんざい",
-        "meaning": "banzai; hurray; hurrah",
-        "dictionaryId": "1601350"
       },
       {
         "japanese": "万年筆",
@@ -361,109 +199,25 @@
         "dictionaryId": "1526580"
       },
       {
-        "japanese": "億万",
-        "reading": "おくまん",
-        "meaning": "millions and millions",
-        "dictionaryId": "1759980"
-      },
-      {
         "japanese": "万世",
         "reading": "ばんせい",
         "meaning": "all ages; eternity",
         "dictionaryId": "1526190"
+      },
+      {
+        "japanese": "万物",
+        "reading": "ばんぶつ",
+        "meaning": "all things; all creation",
+        "dictionaryId": "1584560"
+      },
+      {
+        "japanese": "万端",
+        "reading": "ばんたん",
+        "meaning": "all; everything",
+        "dictionaryId": "1526260"
       }
     ],
     "三": [
-      {
-        "japanese": "三月",
-        "reading": "さんがつ",
-        "meaning": "March",
-        "dictionaryId": "1300250"
-      },
-      {
-        "japanese": "三千",
-        "reading": "さんぜん",
-        "meaning": "3000; three thousand",
-        "dictionaryId": "1301110"
-      },
-      {
-        "japanese": "三百",
-        "reading": "さんびゃく",
-        "meaning": "300; three hundred",
-        "dictionaryId": "1301490"
-      },
-      {
-        "japanese": "三人",
-        "reading": "さんにん",
-        "meaning": "three people",
-        "dictionaryId": "1301000"
-      },
-      {
-        "japanese": "三十日",
-        "reading": "みそか",
-        "meaning": "last day of the month",
-        "dictionaryId": "1604510"
-      },
-      {
-        "japanese": "三時",
-        "reading": "さんじ",
-        "meaning": "3 o'clock",
-        "dictionaryId": "1300520"
-      },
-      {
-        "japanese": "三日",
-        "reading": "みっか",
-        "meaning": "3rd day of the month",
-        "dictionaryId": "1301330"
-      },
-      {
-        "japanese": "三十日",
-        "reading": "さんじゅうにち",
-        "meaning": "30th day of the month",
-        "dictionaryId": "1300670"
-      },
-      {
-        "japanese": "十三日",
-        "reading": "じゅうさんにち",
-        "meaning": "13th day of the month",
-        "dictionaryId": "2737290"
-      },
-      {
-        "japanese": "三十一日",
-        "reading": "さんじゅういちにち",
-        "meaning": "31st day of the month",
-        "dictionaryId": "2738480"
-      },
-      {
-        "japanese": "二十三日",
-        "reading": "にじゅうさんにち",
-        "meaning": "23rd day of the month",
-        "dictionaryId": "2738200"
-      },
-      {
-        "japanese": "三十",
-        "reading": "さんじゅう",
-        "meaning": "thirty; 30",
-        "dictionaryId": "1922770"
-      },
-      {
-        "japanese": "一三",
-        "reading": "じゅうさん",
-        "meaning": "thirteen; 13",
-        "dictionaryId": "1334610"
-      },
-      {
-        "japanese": "十三",
-        "reading": "じゅうさん",
-        "meaning": "thirteen; 13",
-        "dictionaryId": "1334610"
-      },
-      {
-        "japanese": "三本",
-        "reading": "さんぼん",
-        "meaning": "three (long cylindrical things)",
-        "dictionaryId": "1301640"
-      },
       {
         "japanese": "三男",
         "reading": "さんなん",
@@ -489,10 +243,52 @@
         "dictionaryId": "1300340"
       },
       {
-        "japanese": "二三",
-        "reading": "にさん",
-        "meaning": "two or three",
-        "dictionaryId": "1461790"
+        "japanese": "三文",
+        "reading": "さんもん",
+        "meaning": "paltry amount of money; cheapness; worthlessness",
+        "dictionaryId": "1301590"
+      },
+      {
+        "japanese": "三食",
+        "reading": "さんしょく",
+        "meaning": "three meals (a day)",
+        "dictionaryId": "1300970"
+      },
+      {
+        "japanese": "再三",
+        "reading": "さいさん",
+        "meaning": "again and again; repeatedly",
+        "dictionaryId": "1292760"
+      },
+      {
+        "japanese": "三角",
+        "reading": "さんかく",
+        "meaning": "triangle; triangular shape",
+        "dictionaryId": "1299970"
+      },
+      {
+        "japanese": "三塁",
+        "reading": "さんるい",
+        "meaning": "third base",
+        "dictionaryId": "1301880"
+      },
+      {
+        "japanese": "三役",
+        "reading": "さんやく",
+        "meaning": "three highest ranks (wrestling, unions, etc.)",
+        "dictionaryId": "1301810"
+      },
+      {
+        "japanese": "三振",
+        "reading": "さんしん",
+        "meaning": "strikeout",
+        "dictionaryId": "1300990"
+      },
+      {
+        "japanese": "三者",
+        "reading": "さんしゃ",
+        "meaning": "three persons; three parties",
+        "dictionaryId": "1657940"
       }
     ],
     "上": [
@@ -567,54 +363,6 @@
         "reading": "じょうでき",
         "meaning": "good performance; good work; great success",
         "dictionaryId": "1353390"
-      },
-      {
-        "japanese": "山上",
-        "reading": "さんじょう",
-        "meaning": "mountain top",
-        "dictionaryId": "1302960"
-      },
-      {
-        "japanese": "上水",
-        "reading": "じょうすい",
-        "meaning": "water supply; tap water",
-        "dictionaryId": "1353560"
-      },
-      {
-        "japanese": "上下",
-        "reading": "うえした",
-        "meaning": "top and bottom; up and down; high and low",
-        "dictionaryId": "1352700"
-      },
-      {
-        "japanese": "上気",
-        "reading": "じょうき",
-        "meaning": "flushing (of one's cheeks); dizziness; rush of blood to the head",
-        "dictionaryId": "1352870"
-      },
-      {
-        "japanese": "右上",
-        "reading": "みぎうえ",
-        "meaning": "upper right",
-        "dictionaryId": "1171140"
-      },
-      {
-        "japanese": "左上",
-        "reading": "ひだりうえ",
-        "meaning": "upper left",
-        "dictionaryId": "1290920"
-      },
-      {
-        "japanese": "上昇",
-        "reading": "じょうしょう",
-        "meaning": "rising; ascending; climbing",
-        "dictionaryId": "1353450"
-      },
-      {
-        "japanese": "史上",
-        "reading": "しじょう",
-        "meaning": "in history; ever; historical",
-        "dictionaryId": "1306860"
       }
     ],
     "下": [
@@ -689,54 +437,6 @@
         "reading": "したび",
         "meaning": "dying down (of a fire); waning",
         "dictionaryId": "1184580"
-      },
-      {
-        "japanese": "高下",
-        "reading": "こうげ",
-        "meaning": "rise and fall (e.g. prices); fluctuation",
-        "dictionaryId": "1657180"
-      },
-      {
-        "japanese": "南下",
-        "reading": "なんか",
-        "meaning": "going south",
-        "dictionaryId": "1460000"
-      },
-      {
-        "japanese": "下校",
-        "reading": "げこう",
-        "meaning": "leaving school (at the end of the day); getting out of school; coming home from school",
-        "dictionaryId": "1184920"
-      },
-      {
-        "japanese": "山下",
-        "reading": "やまもと",
-        "meaning": "foot of a mountain; base of a mountain",
-        "dictionaryId": "1755110"
-      },
-      {
-        "japanese": "上下",
-        "reading": "うえした",
-        "meaning": "top and bottom; up and down; high and low",
-        "dictionaryId": "1352700"
-      },
-      {
-        "japanese": "下手",
-        "reading": "したて",
-        "meaning": "humble position; inferior",
-        "dictionaryId": "1185190"
-      },
-      {
-        "japanese": "目下",
-        "reading": "もっか",
-        "meaning": "at present; now",
-        "dictionaryId": "1535330"
-      },
-      {
-        "japanese": "川下",
-        "reading": "かわしも",
-        "meaning": "downstream",
-        "dictionaryId": "1390050"
       }
     ],
     "中": [
@@ -811,140 +511,14 @@
         "reading": "ちゅうしょう",
         "meaning": "small and medium",
         "dictionaryId": "1424520"
-      },
-      {
-        "japanese": "中前",
-        "reading": "ちゅうぜん",
-        "meaning": "front of center field; front of centre field",
-        "dictionaryId": "1424830"
-      },
-      {
-        "japanese": "中日",
-        "reading": "ちゅうにち",
-        "meaning": "China and Japan; Chinese-Japanese; Sino-Japanese",
-        "dictionaryId": "1425210"
-      },
-      {
-        "japanese": "中高",
-        "reading": "ちゅうこう",
-        "meaning": "middle and high school",
-        "dictionaryId": "1984240"
-      },
-      {
-        "japanese": "車中",
-        "reading": "しゃちゅう",
-        "meaning": "in a train (car, bus, etc.); on a train",
-        "dictionaryId": "1658900"
-      },
-      {
-        "japanese": "手中",
-        "reading": "しゅちゅう",
-        "meaning": "in one's hands; in one's control",
-        "dictionaryId": "1659070"
-      },
-      {
-        "japanese": "人中",
-        "reading": "ひとなか",
-        "meaning": "society; company; the public",
-        "dictionaryId": "1368800"
-      },
-      {
-        "japanese": "文中",
-        "reading": "ぶんちゅう",
-        "meaning": "in the sentence; in the text",
-        "dictionaryId": "1505530"
-      },
-      {
-        "japanese": "土中",
-        "reading": "どちゅう",
-        "meaning": "in the earth; in the ground; underground",
-        "dictionaryId": "1638280"
       }
     ],
     "九": [
-      {
-        "japanese": "九月",
-        "reading": "くがつ",
-        "meaning": "September",
-        "dictionaryId": "1243660"
-      },
-      {
-        "japanese": "九分",
-        "reading": "くぶ",
-        "meaning": "nine parts; ninety percent; mostly",
-        "dictionaryId": "1243870"
-      },
-      {
-        "japanese": "九日",
-        "reading": "ここのか",
-        "meaning": "9th day of the month",
-        "dictionaryId": "1243850"
-      },
-      {
-        "japanese": "十九日",
-        "reading": "じゅうくにち",
-        "meaning": "19th day of the month",
-        "dictionaryId": "2719740"
-      },
-      {
-        "japanese": "二十九日",
-        "reading": "にじゅうくにち",
-        "meaning": "29th day of the month",
-        "dictionaryId": "2738470"
-      },
-      {
-        "japanese": "九十",
-        "reading": "きゅうじゅう",
-        "meaning": "ninety; 90",
-        "dictionaryId": "1578160"
-      },
-      {
-        "japanese": "一九",
-        "reading": "じゅうきゅう",
-        "meaning": "nineteen; 19",
-        "dictionaryId": "1334560"
-      },
-      {
-        "japanese": "十九",
-        "reading": "じゅうきゅう",
-        "meaning": "nineteen; 19",
-        "dictionaryId": "1334560"
-      },
-      {
-        "japanese": "九九",
-        "reading": "くく",
-        "meaning": "multiplication table; times table",
-        "dictionaryId": "1243650"
-      },
-      {
-        "japanese": "四十九日",
-        "reading": "しじゅうくにち",
-        "meaning": "forty-ninth day after a person's death",
-        "dictionaryId": "1766940"
-      },
-      {
-        "japanese": "一九日",
-        "reading": "じゅうくにち",
-        "meaning": "19th day of the month",
-        "dictionaryId": "2719740"
-      },
-      {
-        "japanese": "二九日",
-        "reading": "にじゅうくにち",
-        "meaning": "29th day of the month",
-        "dictionaryId": "2738470"
-      },
       {
         "japanese": "九州",
         "reading": "きゅうしゅう",
         "meaning": "Kyūshū (southernmost of the four main islands of Japan)",
         "dictionaryId": "1243710"
-      },
-      {
-        "japanese": "一一九番",
-        "reading": "ひゃくじゅうきゅうばん",
-        "meaning": "119 (ambulance and fire brigade emergency telephone number in Japan)",
-        "dictionaryId": "1602160"
       },
       {
         "japanese": "九重",
@@ -979,181 +553,73 @@
         "dictionaryId": "1582670"
       },
       {
-        "japanese": "二月",
-        "reading": "にがつ",
-        "meaning": "February",
-        "dictionaryId": "1461560"
-      },
-      {
-        "japanese": "十二月",
-        "reading": "じゅうにがつ",
-        "meaning": "December",
-        "dictionaryId": "1334910"
-      },
-      {
-        "japanese": "二分",
-        "reading": "にぶん",
-        "meaning": "halving; dividing (into two parts); bisection",
-        "dictionaryId": "1463100"
-      },
-      {
-        "japanese": "二十",
-        "reading": "にじゅう",
-        "meaning": "twenty; 20",
-        "dictionaryId": "1462000"
-      },
-      {
-        "japanese": "二十",
-        "reading": "はたち",
-        "meaning": "20 years old",
-        "dictionaryId": "1600790"
-      },
-      {
-        "japanese": "二日",
-        "reading": "ふつか",
-        "meaning": "2nd day of the month",
-        "dictionaryId": "1462900"
-      },
-      {
         "japanese": "二十日",
         "reading": "はつか",
         "meaning": "20th day of the month",
         "dictionaryId": "1600850"
       },
       {
-        "japanese": "十二日",
-        "reading": "じゅうににち",
-        "meaning": "12th day of the month",
-        "dictionaryId": "2736890"
+        "japanese": "二子",
+        "reading": "ふたご",
+        "meaning": "twins; twin",
+        "dictionaryId": "1398750"
       },
       {
-        "japanese": "二十一日",
-        "reading": "にじゅういちにち",
-        "meaning": "21st day of the month",
-        "dictionaryId": "2737910"
+        "japanese": "二男",
+        "reading": "じなん",
+        "meaning": "second son",
+        "dictionaryId": "1316710"
       },
       {
-        "japanese": "二十七日",
-        "reading": "にじゅうしちにち",
-        "meaning": "27th day of the month",
-        "dictionaryId": "2738430"
+        "japanese": "二食",
+        "reading": "にしょく",
+        "meaning": "two meals; (eating) two meals a day",
+        "dictionaryId": "1582660"
       },
       {
-        "japanese": "二十三日",
-        "reading": "にじゅうさんにち",
-        "meaning": "23rd day of the month",
-        "dictionaryId": "2738200"
+        "japanese": "二人前",
+        "reading": "ににんまえ",
+        "meaning": "for two people; (work) of two; (meals) for two",
+        "dictionaryId": "1582680"
       },
       {
-        "japanese": "二十九日",
-        "reading": "にじゅうくにち",
-        "meaning": "29th day of the month",
-        "dictionaryId": "2738470"
+        "japanese": "二手",
+        "reading": "ふたて",
+        "meaning": "two groups; two bands",
+        "dictionaryId": "1461970"
       },
       {
-        "japanese": "二十二日",
-        "reading": "にじゅうににち",
-        "meaning": "22nd day of the month",
-        "dictionaryId": "2738190"
+        "japanese": "二目",
+        "reading": "ふため",
+        "meaning": "for a second time",
+        "dictionaryId": "1463230"
       },
       {
-        "japanese": "二十五日",
-        "reading": "にじゅうごにち",
-        "meaning": "25th day of the month",
-        "dictionaryId": "2738210"
+        "japanese": "二度",
+        "reading": "ふたたび",
+        "meaning": "again; once more; a second time",
+        "dictionaryId": "1292300"
       },
       {
-        "japanese": "二十八日",
-        "reading": "にじゅうはちにち",
-        "meaning": "28th day of the month",
-        "dictionaryId": "2738440"
+        "japanese": "二重",
+        "reading": "にじゅう",
+        "meaning": "double; two-fold; two layers",
+        "dictionaryId": "1462080"
       },
       {
-        "japanese": "二十六日",
-        "reading": "にじゅうろくにち",
-        "meaning": "26th day of the month",
-        "dictionaryId": "2738420"
+        "japanese": "二塁",
+        "reading": "にるい",
+        "meaning": "second base",
+        "dictionaryId": "1463310"
       },
       {
-        "japanese": "二十四日",
-        "reading": "にじゅうよっか",
-        "meaning": "24th day of the month",
-        "dictionaryId": "1629300"
-      },
-      {
-        "japanese": "二十歳",
-        "reading": "はたち",
-        "meaning": "20 years old",
-        "dictionaryId": "1600790"
-      },
-      {
-        "japanese": "二百",
-        "reading": "にひゃく",
-        "meaning": "200; two hundred",
-        "dictionaryId": "1656380"
+        "japanese": "二死",
+        "reading": "にし",
+        "meaning": "two out; two down (and one to go)",
+        "dictionaryId": "1461840"
       }
     ],
     "五": [
-      {
-        "japanese": "五月",
-        "reading": "ごがつ",
-        "meaning": "May",
-        "dictionaryId": "1268170"
-      },
-      {
-        "japanese": "五分",
-        "reading": "ごぶ",
-        "meaning": "half; 50%",
-        "dictionaryId": "1268590"
-      },
-      {
-        "japanese": "五日",
-        "reading": "いつか",
-        "meaning": "5th day of the month",
-        "dictionaryId": "1268570"
-      },
-      {
-        "japanese": "十五日",
-        "reading": "じゅうごにち",
-        "meaning": "15th day of the month",
-        "dictionaryId": "2275300"
-      },
-      {
-        "japanese": "二十五日",
-        "reading": "にじゅうごにち",
-        "meaning": "25th day of the month",
-        "dictionaryId": "2738210"
-      },
-      {
-        "japanese": "五十",
-        "reading": "ごじゅう",
-        "meaning": "fifty; 50",
-        "dictionaryId": "1693050"
-      },
-      {
-        "japanese": "一五",
-        "reading": "じゅうご",
-        "meaning": "fifteen; 15",
-        "dictionaryId": "1334590"
-      },
-      {
-        "japanese": "十五",
-        "reading": "じゅうご",
-        "meaning": "fifteen; 15",
-        "dictionaryId": "1334590"
-      },
-      {
-        "japanese": "一五日",
-        "reading": "じゅうごにち",
-        "meaning": "15th day of the month",
-        "dictionaryId": "2275300"
-      },
-      {
-        "japanese": "二五日",
-        "reading": "にじゅうごにち",
-        "meaning": "25th day of the month",
-        "dictionaryId": "2738210"
-      },
       {
         "japanese": "五目",
         "reading": "ごもく",
@@ -1165,18 +631,6 @@
         "reading": "ごぶごぶ",
         "meaning": "as likely as not; fifty-fifty; even match",
         "dictionaryId": "1268610"
-      },
-      {
-        "japanese": "三三五五",
-        "reading": "さんさんごご",
-        "meaning": "in groups of twos and threes; in small groups; (in groups of) threes and fives",
-        "dictionaryId": "1593970"
-      },
-      {
-        "japanese": "七五三",
-        "reading": "しちごさん",
-        "meaning": "shichi-go-san; 7-5-3 day; festival day for children aged 7, 5 and 3 held on or around November 15",
-        "dictionaryId": "1319310"
       },
       {
         "japanese": "五月雨",
@@ -1213,6 +667,30 @@
         "reading": "ごしょく",
         "meaning": "five colors (esp. red, blue, yellow, white and black); five colours",
         "dictionaryId": "1578590"
+      },
+      {
+        "japanese": "四捨五入",
+        "reading": "ししゃごにゅう",
+        "meaning": "rounding (off; a number); rounding half away from zero",
+        "dictionaryId": "1307250"
+      },
+      {
+        "japanese": "五線",
+        "reading": "ごせん",
+        "meaning": "staff; stave",
+        "dictionaryId": "1268450"
+      },
+      {
+        "japanese": "五重",
+        "reading": "ごじゅう",
+        "meaning": "five-storied; quintuplicate; fivefold",
+        "dictionaryId": "1578580"
+      },
+      {
+        "japanese": "五人組",
+        "reading": "ごにんぐみ",
+        "meaning": "five-family unit; five-man group; quintet",
+        "dictionaryId": "1268400"
       }
     ],
     "人": [
@@ -1235,22 +713,10 @@
         "dictionaryId": "1203650"
       },
       {
-        "japanese": "三人",
-        "reading": "さんにん",
-        "meaning": "three people",
-        "dictionaryId": "1301000"
-      },
-      {
         "japanese": "日本人",
         "reading": "にほんじん",
         "meaning": "Japanese person",
         "dictionaryId": "1464700"
-      },
-      {
-        "japanese": "四人",
-        "reading": "よにん",
-        "meaning": "four people",
-        "dictionaryId": "1985310"
       },
       {
         "japanese": "人人",
@@ -1299,42 +765,6 @@
         "reading": "おとな",
         "meaning": "adult; grown-up",
         "dictionaryId": "1414170"
-      },
-      {
-        "japanese": "名人",
-        "reading": "めいじん",
-        "meaning": "master; expert",
-        "dictionaryId": "1531680"
-      },
-      {
-        "japanese": "白人",
-        "reading": "はくじん",
-        "meaning": "white person; Caucasian",
-        "dictionaryId": "1475250"
-      },
-      {
-        "japanese": "社会人",
-        "reading": "しゃかいじん",
-        "meaning": "working adult; full-fledged member of society",
-        "dictionaryId": "1322770"
-      },
-      {
-        "japanese": "人出",
-        "reading": "ひとで",
-        "meaning": "crowd; turnout",
-        "dictionaryId": "1368110"
-      },
-      {
-        "japanese": "一人前",
-        "reading": "いちにんまえ",
-        "meaning": "one portion; one serving; one person",
-        "dictionaryId": "1163770"
-      },
-      {
-        "japanese": "人目",
-        "reading": "ひとめ",
-        "meaning": "(public) notice; attention; public eye",
-        "dictionaryId": "1580760"
       }
     ],
     "今": [
@@ -1409,54 +839,6 @@
         "reading": "こんき",
         "meaning": "this season",
         "dictionaryId": "1657590"
-      },
-      {
-        "japanese": "今夜",
-        "reading": "こんや",
-        "meaning": "this evening; tonight",
-        "dictionaryId": "1289520"
-      },
-      {
-        "japanese": "今春",
-        "reading": "こんしゅん",
-        "meaning": "this spring; spring this year",
-        "dictionaryId": "1289250"
-      },
-      {
-        "japanese": "今年度",
-        "reading": "こんねんど",
-        "meaning": "this year; this fiscal year; this school year",
-        "dictionaryId": "1657600"
-      },
-      {
-        "japanese": "今秋",
-        "reading": "こんしゅう",
-        "meaning": "this autumn; this fall; autumn of this year",
-        "dictionaryId": "1289210"
-      },
-      {
-        "japanese": "今夏",
-        "reading": "こんか",
-        "meaning": "this summer; next summer; last summer",
-        "dictionaryId": "1289060"
-      },
-      {
-        "japanese": "今期",
-        "reading": "こんき",
-        "meaning": "the present term; the present session",
-        "dictionaryId": "1289080"
-      },
-      {
-        "japanese": "昨今",
-        "reading": "さっこん",
-        "meaning": "these days; nowadays; recently",
-        "dictionaryId": "1298210"
-      },
-      {
-        "japanese": "古今",
-        "reading": "ここん",
-        "meaning": "ancient and modern times; all ages; past and present",
-        "dictionaryId": "1265380"
       }
     ],
     "休": [
@@ -1531,54 +913,6 @@
         "reading": "きゅうけい",
         "meaning": "rest; break; recess",
         "dictionaryId": "1227720"
-      },
-      {
-        "japanese": "休養",
-        "reading": "きゅうよう",
-        "meaning": "rest; relaxation; recreation",
-        "dictionaryId": "1228100"
-      },
-      {
-        "japanese": "無休",
-        "reading": "むきゅう",
-        "meaning": "without a holiday; nonstop",
-        "dictionaryId": "1529800"
-      },
-      {
-        "japanese": "休息",
-        "reading": "きゅうそく",
-        "meaning": "rest; relief; relaxation",
-        "dictionaryId": "1227940"
-      },
-      {
-        "japanese": "休戦",
-        "reading": "きゅうせん",
-        "meaning": "cease-fire; truce; armistice",
-        "dictionaryId": "1227890"
-      },
-      {
-        "japanese": "休職",
-        "reading": "きゅうしょく",
-        "meaning": "temporary retirement; leave of absence; suspension from office",
-        "dictionaryId": "1227840"
-      },
-      {
-        "japanese": "運休",
-        "reading": "うんきゅう",
-        "meaning": "suspension (of a transportation service); cancellation; stoppage",
-        "dictionaryId": "1172730"
-      },
-      {
-        "japanese": "休館",
-        "reading": "きゅうかん",
-        "meaning": "closure (of a library, museum, etc.)",
-        "dictionaryId": "1836050"
-      },
-      {
-        "japanese": "休場",
-        "reading": "きゅうじょう",
-        "meaning": "(temporary) closure (of a theater, entertainment venue, etc.)",
-        "dictionaryId": "1227830"
       }
     ],
     "会": [
@@ -1653,54 +987,6 @@
         "reading": "かいしょく",
         "meaning": "eating together; dining together; having a meal together",
         "dictionaryId": "1198670"
-      },
-      {
-        "japanese": "出会",
-        "reading": "であい",
-        "meaning": "meeting; rendezvous; encounter",
-        "dictionaryId": "1338400"
-      },
-      {
-        "japanese": "社会学",
-        "reading": "しゃかいがく",
-        "meaning": "sociology",
-        "dictionaryId": "1322730"
-      },
-      {
-        "japanese": "年会",
-        "reading": "ねんかい",
-        "meaning": "conference; annual convention",
-        "dictionaryId": "1468280"
-      },
-      {
-        "japanese": "休会",
-        "reading": "きゅうかい",
-        "meaning": "adjournment; recess",
-        "dictionaryId": "1227640"
-      },
-      {
-        "japanese": "立会人",
-        "reading": "たちあいにん",
-        "meaning": "witness; observer",
-        "dictionaryId": "1837720"
-      },
-      {
-        "japanese": "分会",
-        "reading": "ぶんかい",
-        "meaning": "branch; chapter",
-        "dictionaryId": "1503200"
-      },
-      {
-        "japanese": "入会",
-        "reading": "にゅうかい",
-        "meaning": "admission (to a society, club, etc.); joining; entrance",
-        "dictionaryId": "1465790"
-      },
-      {
-        "japanese": "日本社会",
-        "reading": "にほんしゃかい",
-        "meaning": "Japanese society",
-        "dictionaryId": "2132420"
       }
     ],
     "何": [
@@ -1775,54 +1061,6 @@
         "reading": "なんど",
         "meaning": "how many times",
         "dictionaryId": "1189170"
-      },
-      {
-        "japanese": "何等",
-        "reading": "なんら",
-        "meaning": "(not) in any way; (not) at all; (none) whatsoever",
-        "dictionaryId": "1189220"
-      },
-      {
-        "japanese": "何事",
-        "reading": "なにごと",
-        "meaning": "what; what sort of thing",
-        "dictionaryId": "1188740"
-      },
-      {
-        "japanese": "何回",
-        "reading": "なんかい",
-        "meaning": "how many times",
-        "dictionaryId": "1188650"
-      },
-      {
-        "japanese": "何者",
-        "reading": "なにもの",
-        "meaning": "who; what kind of person",
-        "dictionaryId": "1188980"
-      },
-      {
-        "japanese": "幾何学",
-        "reading": "きかがく",
-        "meaning": "geometry",
-        "dictionaryId": "1220020"
-      },
-      {
-        "japanese": "幾何",
-        "reading": "きか",
-        "meaning": "geometry",
-        "dictionaryId": "1220010"
-      },
-      {
-        "japanese": "何故",
-        "reading": "なにゆえ",
-        "meaning": "why",
-        "dictionaryId": "2859936"
-      },
-      {
-        "japanese": "何物",
-        "reading": "なにもの",
-        "meaning": "what kind of thing",
-        "dictionaryId": "1189300"
       }
     ],
     "先": [
@@ -1897,54 +1135,6 @@
         "reading": "さきやす",
         "meaning": "lower future quotations",
         "dictionaryId": "1387350"
-      },
-      {
-        "japanese": "小手先",
-        "reading": "こてさき",
-        "meaning": "tip of the hand; (use of) one's hands",
-        "dictionaryId": "1743470"
-      },
-      {
-        "japanese": "店先",
-        "reading": "みせさき",
-        "meaning": "storefront; shopfront",
-        "dictionaryId": "1440720"
-      },
-      {
-        "japanese": "先人",
-        "reading": "せんじん",
-        "meaning": "predecessor; pioneer; ancestor",
-        "dictionaryId": "1387960"
-      },
-      {
-        "japanese": "手先",
-        "reading": "てさき",
-        "meaning": "fingers; fingertips",
-        "dictionaryId": "1328010"
-      },
-      {
-        "japanese": "先高",
-        "reading": "さきだか",
-        "meaning": "higher future quotations",
-        "dictionaryId": "1387660"
-      },
-      {
-        "japanese": "出先",
-        "reading": "でさき",
-        "meaning": "one's destination; place where someone is going; place where someone has gone",
-        "dictionaryId": "1339510"
-      },
-      {
-        "japanese": "一先",
-        "reading": "ひとまず",
-        "meaning": "for now; for the time being; for the present",
-        "dictionaryId": "1601990"
-      },
-      {
-        "japanese": "先天",
-        "reading": "せんてん",
-        "meaning": "inherent; innate",
-        "dictionaryId": "1766390"
       }
     ],
     "入": [
@@ -2019,123 +1209,9 @@
         "reading": "にゅうらい",
         "meaning": "august visit; arrival",
         "dictionaryId": "1466830"
-      },
-      {
-        "japanese": "入校",
-        "reading": "にゅうこう",
-        "meaning": "admission (to a school); entrance; enrolment",
-        "dictionaryId": "1466090"
-      },
-      {
-        "japanese": "入会",
-        "reading": "にゅうかい",
-        "meaning": "admission (to a society, club, etc.); joining; entrance",
-        "dictionaryId": "1465790"
-      },
-      {
-        "japanese": "輸入",
-        "reading": "ゆにゅう",
-        "meaning": "import; importation; introduction",
-        "dictionaryId": "1538870"
-      },
-      {
-        "japanese": "入水",
-        "reading": "にゅうすい",
-        "meaning": "suicide by drowning; drowning oneself",
-        "dictionaryId": "1582840"
-      },
-      {
-        "japanese": "収入",
-        "reading": "しゅうにゅう",
-        "meaning": "income; earnings; revenue",
-        "dictionaryId": "1330790"
-      },
-      {
-        "japanese": "導入",
-        "reading": "どうにゅう",
-        "meaning": "introduction; bringing in; installation",
-        "dictionaryId": "1453790"
-      },
-      {
-        "japanese": "購入",
-        "reading": "こうにゅう",
-        "meaning": "purchase; buying",
-        "dictionaryId": "1282440"
-      },
-      {
-        "japanese": "入札",
-        "reading": "にゅうさつ",
-        "meaning": "bid; tender; bidding",
-        "dictionaryId": "1466180"
       }
     ],
     "八": [
-      {
-        "japanese": "八月",
-        "reading": "はちがつ",
-        "meaning": "August",
-        "dictionaryId": "1476730"
-      },
-      {
-        "japanese": "八日",
-        "reading": "ようか",
-        "meaning": "8th day of the month",
-        "dictionaryId": "1476920"
-      },
-      {
-        "japanese": "十八日",
-        "reading": "じゅうはちにち",
-        "meaning": "18th day of the month",
-        "dictionaryId": "2737900"
-      },
-      {
-        "japanese": "二十八日",
-        "reading": "にじゅうはちにち",
-        "meaning": "28th day of the month",
-        "dictionaryId": "2738440"
-      },
-      {
-        "japanese": "八十",
-        "reading": "はちじゅう",
-        "meaning": "eighty; 80",
-        "dictionaryId": "1649490"
-      },
-      {
-        "japanese": "一八",
-        "reading": "じゅうはち",
-        "meaning": "eighteen; 18",
-        "dictionaryId": "1335050"
-      },
-      {
-        "japanese": "十八",
-        "reading": "じゅうはち",
-        "meaning": "eighteen; 18",
-        "dictionaryId": "1335050"
-      },
-      {
-        "japanese": "八本",
-        "reading": "はちほん",
-        "meaning": "eight (long cylindrical things)",
-        "dictionaryId": "1583120"
-      },
-      {
-        "japanese": "八百万",
-        "reading": "やおよろず",
-        "meaning": "myriad; countless things",
-        "dictionaryId": "1476980"
-      },
-      {
-        "japanese": "一八日",
-        "reading": "じゅうはちにち",
-        "meaning": "18th day of the month",
-        "dictionaryId": "2737900"
-      },
-      {
-        "japanese": "二八日",
-        "reading": "にじゅうはちにち",
-        "meaning": "28th day of the month",
-        "dictionaryId": "2738440"
-      },
       {
         "japanese": "八百屋",
         "reading": "やおや",
@@ -2161,12 +1237,6 @@
         "dictionaryId": "1680790"
       },
       {
-        "japanese": "十八番",
-        "reading": "じゅうはちばん",
-        "meaning": "one's favourite party trick (favorite); one's specialty; one's forte",
-        "dictionaryId": "1579900"
-      },
-      {
         "japanese": "八方",
         "reading": "はっぽう",
         "meaning": "all sides; the four cardinal directions and the four ordinal directions",
@@ -2189,63 +1259,33 @@
         "reading": "やちよ",
         "meaning": "very long period; forever",
         "dictionaryId": "1476870"
+      },
+      {
+        "japanese": "尺八",
+        "reading": "しゃくはち",
+        "meaning": "shakuhachi; end-blown fippleless bamboo flute",
+        "dictionaryId": "1324140"
+      },
+      {
+        "japanese": "八百長",
+        "reading": "やおちょう",
+        "meaning": "match fixing; put-up job; fixed game",
+        "dictionaryId": "1476970"
+      },
+      {
+        "japanese": "八景",
+        "reading": "はっけい",
+        "meaning": "eight picturesque sights",
+        "dictionaryId": "1680810"
+      },
+      {
+        "japanese": "八千草",
+        "reading": "やちぐさ",
+        "meaning": "variety of plants; various herbs",
+        "dictionaryId": "1476860"
       }
     ],
     "六": [
-      {
-        "japanese": "六月",
-        "reading": "ろくがつ",
-        "meaning": "June",
-        "dictionaryId": "1561330"
-      },
-      {
-        "japanese": "六日",
-        "reading": "むいか",
-        "meaning": "6th day of the month",
-        "dictionaryId": "1561470"
-      },
-      {
-        "japanese": "十六日",
-        "reading": "じゅうろくにち",
-        "meaning": "16th day of the month",
-        "dictionaryId": "2737790"
-      },
-      {
-        "japanese": "二十六日",
-        "reading": "にじゅうろくにち",
-        "meaning": "26th day of the month",
-        "dictionaryId": "2738420"
-      },
-      {
-        "japanese": "六十",
-        "reading": "ろくじゅう",
-        "meaning": "sixty; 60",
-        "dictionaryId": "1824040"
-      },
-      {
-        "japanese": "一六",
-        "reading": "じゅうろく",
-        "meaning": "sixteen; 16",
-        "dictionaryId": "1335180"
-      },
-      {
-        "japanese": "十六",
-        "reading": "じゅうろく",
-        "meaning": "sixteen; 16",
-        "dictionaryId": "1335180"
-      },
-      {
-        "japanese": "一六日",
-        "reading": "じゅうろくにち",
-        "meaning": "16th day of the month",
-        "dictionaryId": "2737790"
-      },
-      {
-        "japanese": "二六日",
-        "reading": "にじゅうろくにち",
-        "meaning": "26th day of the month",
-        "dictionaryId": "2738420"
-      },
       {
         "japanese": "四六時中",
         "reading": "しろくじちゅう",
@@ -2267,12 +1307,6 @@
     ],
     "円": [
       {
-        "japanese": "千円",
-        "reading": "せんえん",
-        "meaning": "1000 yen",
-        "dictionaryId": "1388780"
-      },
-      {
         "japanese": "円高",
         "reading": "えんだか",
         "meaning": "appreciation of the yen; strong yen",
@@ -2283,12 +1317,6 @@
         "reading": "えんやす",
         "meaning": "depreciation of the yen; weak yen",
         "dictionaryId": "1175620"
-      },
-      {
-        "japanese": "一円",
-        "reading": "いちえん",
-        "meaning": "one yen",
-        "dictionaryId": "1161130"
       },
       {
         "japanese": "半円",
@@ -2349,42 +1377,6 @@
         "reading": "えんじゅく",
         "meaning": "ripeness; mellowness; maturity",
         "dictionaryId": "1175880"
-      },
-      {
-        "japanese": "円柱",
-        "reading": "えんちゅう",
-        "meaning": "column; shaft; cylinder",
-        "dictionaryId": "1176010"
-      },
-      {
-        "japanese": "円周",
-        "reading": "えんしゅう",
-        "meaning": "circumference",
-        "dictionaryId": "1175860"
-      },
-      {
-        "japanese": "円環",
-        "reading": "えんかん",
-        "meaning": "circle; ring",
-        "dictionaryId": "1175710"
-      },
-      {
-        "japanese": "円顔",
-        "reading": "まるがお",
-        "meaning": "round face; moon face",
-        "dictionaryId": "1604240"
-      },
-      {
-        "japanese": "千円札",
-        "reading": "せんえんさつ",
-        "meaning": "1,000 yen bill",
-        "dictionaryId": "1388790"
-      },
-      {
-        "japanese": "円錐",
-        "reading": "まるぎり",
-        "meaning": "round gimlet",
-        "dictionaryId": "1175930"
       }
     ],
     "出": [
@@ -2459,54 +1451,6 @@
         "reading": "しゅってん",
         "meaning": "opening a new store; opening a new branch",
         "dictionaryId": "2404300"
-      },
-      {
-        "japanese": "出来",
-        "reading": "しゅったい",
-        "meaning": "occurrence; happening; taking place",
-        "dictionaryId": "1340420"
-      },
-      {
-        "japanese": "出足",
-        "reading": "であし",
-        "meaning": "turnout (of people)",
-        "dictionaryId": "1339580"
-      },
-      {
-        "japanese": "出土",
-        "reading": "しゅつど",
-        "meaning": "archeological excavation (archaeological)",
-        "dictionaryId": "1339840"
-      },
-      {
-        "japanese": "出入",
-        "reading": "しゅつにゅう",
-        "meaning": "in and out; income and expenses; free associations",
-        "dictionaryId": "1339900"
-      },
-      {
-        "japanese": "出社",
-        "reading": "しゅっしゃ",
-        "meaning": "going to work (e.g. in the morning); coming to work",
-        "dictionaryId": "1339150"
-      },
-      {
-        "japanese": "出水",
-        "reading": "しゅっすい",
-        "meaning": "flood; freshet; inundation",
-        "dictionaryId": "1580040"
-      },
-      {
-        "japanese": "上出来",
-        "reading": "じょうでき",
-        "meaning": "good performance; good work; great success",
-        "dictionaryId": "1353390"
-      },
-      {
-        "japanese": "出先",
-        "reading": "でさき",
-        "meaning": "one's destination; place where someone is going; place where someone has gone",
-        "dictionaryId": "1339510"
       }
     ],
     "分": [
@@ -2515,30 +1459,6 @@
         "reading": "じゅうぶん",
         "meaning": "enough; sufficient; plenty",
         "dictionaryId": "1335080"
-      },
-      {
-        "japanese": "五分",
-        "reading": "ごぶ",
-        "meaning": "half; 50%",
-        "dictionaryId": "1268590"
-      },
-      {
-        "japanese": "一分",
-        "reading": "いちぶ",
-        "meaning": "one tenth; one hundredth; one percent",
-        "dictionaryId": "1166270"
-      },
-      {
-        "japanese": "二分",
-        "reading": "にぶん",
-        "meaning": "halving; dividing (into two parts); bisection",
-        "dictionaryId": "1463100"
-      },
-      {
-        "japanese": "九分",
-        "reading": "くぶ",
-        "meaning": "nine parts; ninety percent; mostly",
-        "dictionaryId": "1243870"
       },
       {
         "japanese": "半分",
@@ -2577,12 +1497,6 @@
         "dictionaryId": "1504400"
       },
       {
-        "japanese": "十二分",
-        "reading": "じゅうにぶん",
-        "meaning": "more than enough; more than ample; exhaustive",
-        "dictionaryId": "1334990"
-      },
-      {
         "japanese": "分校",
         "reading": "ぶんこう",
         "meaning": "branch school",
@@ -2611,24 +1525,6 @@
         "reading": "じぶん",
         "meaning": "time; hour; season",
         "dictionaryId": "1316350"
-      },
-      {
-        "japanese": "分会",
-        "reading": "ぶんかい",
-        "meaning": "branch; chapter",
-        "dictionaryId": "1503200"
-      },
-      {
-        "japanese": "子分",
-        "reading": "こぶん",
-        "meaning": "henchman; follower",
-        "dictionaryId": "1308050"
-      },
-      {
-        "japanese": "名分",
-        "reading": "めいぶん",
-        "meaning": "moral duty; moral obligations",
-        "dictionaryId": "1641250"
       }
     ],
     "前": [
@@ -2703,54 +1599,6 @@
         "reading": "いちにんまえ",
         "meaning": "one portion; one serving; one person",
         "dictionaryId": "1163770"
-      },
-      {
-        "japanese": "出前",
-        "reading": "でまえ",
-        "meaning": "home delivery (of food); outside catering",
-        "dictionaryId": "1339530"
-      },
-      {
-        "japanese": "人前",
-        "reading": "ひとまえ",
-        "meaning": "presence of other people; (in) public; (in) front of others",
-        "dictionaryId": "1368490"
-      },
-      {
-        "japanese": "中前",
-        "reading": "ちゅうぜん",
-        "meaning": "front of center field; front of centre field",
-        "dictionaryId": "1424830"
-      },
-      {
-        "japanese": "男前",
-        "reading": "おとこまえ",
-        "meaning": "handsome man; man's looks; good looks",
-        "dictionaryId": "1420180"
-      },
-      {
-        "japanese": "左前",
-        "reading": "ひだりまえ",
-        "meaning": "wearing a kimono with the right side over the left (normally used only for the dead)",
-        "dictionaryId": "1290950"
-      },
-      {
-        "japanese": "前前",
-        "reading": "まえまえ",
-        "meaning": "a long time ago; long before now",
-        "dictionaryId": "1603810"
-      },
-      {
-        "japanese": "前文",
-        "reading": "ぜんぶん",
-        "meaning": "the above sentence; the foregoing remark",
-        "dictionaryId": "1393990"
-      },
-      {
-        "japanese": "目前",
-        "reading": "めさき",
-        "meaning": "before one's eyes; under one's nose",
-        "dictionaryId": "1535530"
       }
     ],
     "力": [
@@ -2825,54 +1673,6 @@
         "reading": "じんりょく",
         "meaning": "human power; human strength; human effort",
         "dictionaryId": "1580770"
-      },
-      {
-        "japanese": "努力",
-        "reading": "どりょく",
-        "meaning": "effort; exertion; endeavour",
-        "dictionaryId": "1445130"
-      },
-      {
-        "japanese": "勢力",
-        "reading": "せいりょく",
-        "meaning": "influence; power; might",
-        "dictionaryId": "1375150"
-      },
-      {
-        "japanese": "協力",
-        "reading": "きょうりょく",
-        "meaning": "cooperation; collaboration; help",
-        "dictionaryId": "1591720"
-      },
-      {
-        "japanese": "力水",
-        "reading": "ちからみず",
-        "meaning": "water offered to wrestlers just prior to a bout",
-        "dictionaryId": "1796040"
-      },
-      {
-        "japanese": "実力",
-        "reading": "じつりょく",
-        "meaning": "(real) ability; true strength; merit",
-        "dictionaryId": "1321530"
-      },
-      {
-        "japanese": "有力",
-        "reading": "ゆうりょく",
-        "meaning": "influential; prominent; leading",
-        "dictionaryId": "1541710"
-      },
-      {
-        "japanese": "権力",
-        "reading": "けんりょく",
-        "meaning": "(political) power; authority; influence",
-        "dictionaryId": "1258220"
-      },
-      {
-        "japanese": "武力",
-        "reading": "ぶりょく",
-        "meaning": "armed might; military power; the sword",
-        "dictionaryId": "1499000"
       }
     ],
     "北": [
@@ -2947,54 +1747,6 @@
         "reading": "とうほくとう",
         "meaning": "east-northeast; ENE",
         "dictionaryId": "1943930"
-      },
-      {
-        "japanese": "西北西",
-        "reading": "せいほくせい",
-        "meaning": "west-northwest",
-        "dictionaryId": "1381080"
-      },
-      {
-        "japanese": "北部",
-        "reading": "ほくぶ",
-        "meaning": "northern part; the north (of a region)",
-        "dictionaryId": "1521260"
-      },
-      {
-        "japanese": "敗北",
-        "reading": "はいぼく",
-        "meaning": "defeat; loss; reverse",
-        "dictionaryId": "1472610"
-      },
-      {
-        "japanese": "北方",
-        "reading": "ほっぽう",
-        "meaning": "the north; northward; northern direction",
-        "dictionaryId": "1521310"
-      },
-      {
-        "japanese": "北極",
-        "reading": "ほっきょく",
-        "meaning": "North Pole",
-        "dictionaryId": "1520890"
-      },
-      {
-        "japanese": "北側",
-        "reading": "きたがわ",
-        "meaning": "north side; north bank",
-        "dictionaryId": "1584180"
-      },
-      {
-        "japanese": "北陸",
-        "reading": "ほくりく",
-        "meaning": "Hokuriku region (of Honshu; incl. Niigata, Toyama, Ishikawa and Fukui prefectures)",
-        "dictionaryId": "1521370"
-      },
-      {
-        "japanese": "北風",
-        "reading": "きたかぜ",
-        "meaning": "north wind; northerly wind",
-        "dictionaryId": "1584210"
       }
     ],
     "十": [
@@ -3005,156 +1757,78 @@
         "dictionaryId": "1335080"
       },
       {
-        "japanese": "十月",
-        "reading": "じゅうがつ",
-        "meaning": "October",
-        "dictionaryId": "1334570"
-      },
-      {
-        "japanese": "十一月",
-        "reading": "じゅういちがつ",
-        "meaning": "November",
-        "dictionaryId": "1334480"
-      },
-      {
-        "japanese": "十二月",
-        "reading": "じゅうにがつ",
-        "meaning": "December",
-        "dictionaryId": "1334910"
-      },
-      {
-        "japanese": "十一",
-        "reading": "じゅういち",
-        "meaning": "eleven; 11",
-        "dictionaryId": "1334470"
-      },
-      {
-        "japanese": "三十日",
-        "reading": "みそか",
-        "meaning": "last day of the month",
-        "dictionaryId": "1604510"
-      },
-      {
-        "japanese": "二十",
-        "reading": "にじゅう",
-        "meaning": "twenty; 20",
-        "dictionaryId": "1462000"
-      },
-      {
-        "japanese": "二十",
-        "reading": "はたち",
-        "meaning": "20 years old",
-        "dictionaryId": "1600790"
-      },
-      {
-        "japanese": "十日",
-        "reading": "とおか",
-        "meaning": "10th day of the month",
-        "dictionaryId": "1335000"
-      },
-      {
         "japanese": "二十日",
         "reading": "はつか",
         "meaning": "20th day of the month",
         "dictionaryId": "1600850"
       },
       {
-        "japanese": "三十日",
-        "reading": "さんじゅうにち",
-        "meaning": "30th day of the month",
-        "dictionaryId": "1300670"
+        "japanese": "何十",
+        "reading": "なんじゅう",
+        "meaning": "(several) tens; dozens; scores (of)",
+        "dictionaryId": "1611010"
       },
       {
-        "japanese": "十一日",
-        "reading": "じゅういちにち",
-        "meaning": "11th day of the month",
-        "dictionaryId": "2723090"
+        "japanese": "十字",
+        "reading": "じゅうじ",
+        "meaning": "cross; cross shape",
+        "dictionaryId": "1334630"
       },
       {
-        "japanese": "十七日",
-        "reading": "じゅうしちにち",
-        "meaning": "17th day of the month",
-        "dictionaryId": "2737800"
+        "japanese": "十文字",
+        "reading": "じゅうもんじ",
+        "meaning": "cross; cruciform",
+        "dictionaryId": "1335110"
       },
       {
-        "japanese": "十三日",
-        "reading": "じゅうさんにち",
-        "meaning": "13th day of the month",
-        "dictionaryId": "2737290"
+        "japanese": "不十分",
+        "reading": "ふじゅうぶん",
+        "meaning": "insufficient; inadequate; imperfect",
+        "dictionaryId": "1492740"
       },
       {
-        "japanese": "十九日",
-        "reading": "じゅうくにち",
-        "meaning": "19th day of the month",
-        "dictionaryId": "2719740"
+        "japanese": "十代",
+        "reading": "じゅうだい",
+        "meaning": "the teens (10-19); teenage",
+        "dictionaryId": "1595380"
       },
       {
-        "japanese": "十二日",
-        "reading": "じゅうににち",
-        "meaning": "12th day of the month",
-        "dictionaryId": "2736890"
+        "japanese": "十字架",
+        "reading": "じゅうじか",
+        "meaning": "cross (for crucifixion); the Cross (of Christ)",
+        "dictionaryId": "1334650"
       },
       {
-        "japanese": "十五日",
-        "reading": "じゅうごにち",
-        "meaning": "15th day of the month",
-        "dictionaryId": "2275300"
+        "japanese": "十両",
+        "reading": "じゅうりょう",
+        "meaning": "second highest division; wrestlers of the second highest division",
+        "dictionaryId": "1335170"
       },
       {
-        "japanese": "十八日",
-        "reading": "じゅうはちにち",
-        "meaning": "18th day of the month",
-        "dictionaryId": "2737900"
+        "japanese": "五十三次",
+        "reading": "ごじゅうさんつぎ",
+        "meaning": "fifty-three stations on the Tōkaidō (Edo-Kyoto highway in Edo-period Japan)",
+        "dictionaryId": "1268320"
       },
       {
-        "japanese": "十六日",
-        "reading": "じゅうろくにち",
-        "meaning": "16th day of the month",
-        "dictionaryId": "2737790"
+        "japanese": "五十音",
+        "reading": "ごじゅうおん",
+        "meaning": "the Japanese syllabary",
+        "dictionaryId": "1268300"
       },
       {
-        "japanese": "十四日",
-        "reading": "じゅうよっか",
-        "meaning": "14th day of the month",
-        "dictionaryId": "1629290"
+        "japanese": "百八十度",
+        "reading": "ひゃくはちじゅうど",
+        "meaning": "180 degrees",
+        "dictionaryId": "1711040"
       }
     ],
     "千": [
-      {
-        "japanese": "三千",
-        "reading": "さんぜん",
-        "meaning": "3000; three thousand",
-        "dictionaryId": "1301110"
-      },
-      {
-        "japanese": "千円",
-        "reading": "せんえん",
-        "meaning": "1000 yen",
-        "dictionaryId": "1388780"
-      },
-      {
-        "japanese": "四千",
-        "reading": "よんせん",
-        "meaning": "four thousand; 4,000",
-        "dictionaryId": "1766960"
-      },
       {
         "japanese": "何千",
         "reading": "なんぜん",
         "meaning": "many thousands",
         "dictionaryId": "1189120"
-      },
-      {
-        "japanese": "一千",
-        "reading": "いっせん",
-        "meaning": "1,000; one thousand",
-        "dictionaryId": "1164250"
-      },
-      {
-        "japanese": "千万",
-        "reading": "せんばん",
-        "meaning": "exceedingly; extremely; very many",
-        "dictionaryId": "1389240"
       },
       {
         "japanese": "千世",
@@ -3221,24 +1895,6 @@
         "reading": "いっかくせんきん",
         "meaning": "getting rich quick; making a killing; making a fortune at a single stroke",
         "dictionaryId": "1587400"
-      },
-      {
-        "japanese": "一獲千金",
-        "reading": "いっかくせんきん",
-        "meaning": "getting rich quick; making a killing; making a fortune at a single stroke",
-        "dictionaryId": "1587400"
-      },
-      {
-        "japanese": "千葉",
-        "reading": "ちば",
-        "meaning": "Chiba (city, prefecture)",
-        "dictionaryId": "2164690"
-      },
-      {
-        "japanese": "千円札",
-        "reading": "せんえんさつ",
-        "meaning": "1,000 yen bill",
-        "dictionaryId": "1388790"
       }
     ],
     "午": [
@@ -3351,54 +2007,6 @@
         "reading": "はんえん",
         "meaning": "semicircle",
         "dictionaryId": "1478870"
-      },
-      {
-        "japanese": "後半生",
-        "reading": "こうはんせい",
-        "meaning": "latter half of one's life",
-        "dictionaryId": "1270050"
-      },
-      {
-        "japanese": "半数",
-        "reading": "はんすう",
-        "meaning": "half the number; half (of an amount)",
-        "dictionaryId": "1479530"
-      },
-      {
-        "japanese": "半面",
-        "reading": "はんめん",
-        "meaning": "while; although; though",
-        "dictionaryId": "1479920"
-      },
-      {
-        "japanese": "半島",
-        "reading": "はんとう",
-        "meaning": "peninsula",
-        "dictionaryId": "1479770"
-      },
-      {
-        "japanese": "半径",
-        "reading": "はんけい",
-        "meaning": "radius",
-        "dictionaryId": "1479230"
-      },
-      {
-        "japanese": "半端",
-        "reading": "はんぱ",
-        "meaning": "remnant; fragment; incomplete set",
-        "dictionaryId": "1479640"
-      },
-      {
-        "japanese": "下半身",
-        "reading": "かはんしん",
-        "meaning": "lower half of the body; nether parts",
-        "dictionaryId": "1576990"
-      },
-      {
-        "japanese": "上半身",
-        "reading": "じょうはんしん",
-        "meaning": "upper half of the body; upper body",
-        "dictionaryId": "1354180"
       }
     ],
     "南": [
@@ -3473,54 +2081,6 @@
         "reading": "なんなんせい",
         "meaning": "south-southwest; south-south-west",
         "dictionaryId": "1599740"
-      },
-      {
-        "japanese": "南部",
-        "reading": "なんぶ",
-        "meaning": "southern part; the south (of a region)",
-        "dictionaryId": "1460530"
-      },
-      {
-        "japanese": "南極",
-        "reading": "なんきょく",
-        "meaning": "South Pole",
-        "dictionaryId": "1460180"
-      },
-      {
-        "japanese": "南米",
-        "reading": "なんべい",
-        "meaning": "South America",
-        "dictionaryId": "1460570"
-      },
-      {
-        "japanese": "中南米",
-        "reading": "ちゅうなんべい",
-        "meaning": "Central and South America",
-        "dictionaryId": "1425170"
-      },
-      {
-        "japanese": "南側",
-        "reading": "みなみがわ",
-        "meaning": "south side",
-        "dictionaryId": "1582610"
-      },
-      {
-        "japanese": "南方",
-        "reading": "なんぽう",
-        "meaning": "the south; southward; southern direction",
-        "dictionaryId": "1460580"
-      },
-      {
-        "japanese": "南海",
-        "reading": "なんかい",
-        "meaning": "southern sea",
-        "dictionaryId": "1460020"
-      },
-      {
-        "japanese": "指南",
-        "reading": "しなん",
-        "meaning": "instruction (in martial arts, performance, etc.); teaching; coaching",
-        "dictionaryId": "1309980"
       }
     ],
     "友": [
@@ -3595,54 +2155,6 @@
         "reading": "きゅうゆう",
         "meaning": "classmate; friend in the same class",
         "dictionaryId": "1230160"
-      },
-      {
-        "japanese": "旧友",
-        "reading": "きゅうゆう",
-        "meaning": "old friend; old pal",
-        "dictionaryId": "1231370"
-      },
-      {
-        "japanese": "僚友",
-        "reading": "りょうゆう",
-        "meaning": "colleague; workmate; comrade",
-        "dictionaryId": "1553400"
-      },
-      {
-        "japanese": "友邦",
-        "reading": "ゆうほう",
-        "meaning": "friendly nation",
-        "dictionaryId": "1540240"
-      },
-      {
-        "japanese": "友宜",
-        "reading": "ゆうぎ",
-        "meaning": "friendship; friendly relations; fellowship",
-        "dictionaryId": "1605650"
-      },
-      {
-        "japanese": "友誼",
-        "reading": "ゆうぎ",
-        "meaning": "friendship; friendly relations; fellowship",
-        "dictionaryId": "1605650"
-      },
-      {
-        "japanese": "友釣",
-        "reading": "ともづり",
-        "meaning": "live decoy fishing (esp. for sweetfish)",
-        "dictionaryId": "1540200"
-      },
-      {
-        "japanese": "朋友",
-        "reading": "ほうゆう",
-        "meaning": "friend; companion",
-        "dictionaryId": "1517140"
-      },
-      {
-        "japanese": "血友病",
-        "reading": "けつゆうびょう",
-        "meaning": "hemophilia; haemophilia",
-        "dictionaryId": "1255400"
       }
     ],
     "口": [
@@ -3717,54 +2229,6 @@
         "reading": "おおぐち",
         "meaning": "big mouth; mouth opened wide",
         "dictionaryId": "1643480"
-      },
-      {
-        "japanese": "口先",
-        "reading": "くちさき",
-        "meaning": "lip service; mere words; professions",
-        "dictionaryId": "1276500"
-      },
-      {
-        "japanese": "手口",
-        "reading": "てぐち",
-        "meaning": "modus operandi; criminal technique; trick",
-        "dictionaryId": "1327590"
-      },
-      {
-        "japanese": "小口",
-        "reading": "こぐち",
-        "meaning": "cut end; edge (of a page, etc.)",
-        "dictionaryId": "1639840"
-      },
-      {
-        "japanese": "口語",
-        "reading": "こうご",
-        "meaning": "spoken language; colloquial speech",
-        "dictionaryId": "1276080"
-      },
-      {
-        "japanese": "口火",
-        "reading": "くちび",
-        "meaning": "fuse; pilot light",
-        "dictionaryId": "1275860"
-      },
-      {
-        "japanese": "口口",
-        "reading": "くちぐち",
-        "meaning": "every person; every mouth",
-        "dictionaryId": "1592190"
-      },
-      {
-        "japanese": "東口",
-        "reading": "ひがしぐち",
-        "meaning": "east entrance; east exit",
-        "dictionaryId": "1447790"
-      },
-      {
-        "japanese": "水口",
-        "reading": "みずぐち",
-        "meaning": "spout",
-        "dictionaryId": "1736740"
       }
     ],
     "右": [
@@ -3839,54 +2303,6 @@
         "reading": "みぎうで",
         "meaning": "right arm",
         "dictionaryId": "1171290"
-      },
-      {
-        "japanese": "右中間",
-        "reading": "うちゅうかん",
-        "meaning": "between right and center fielders (centre)",
-        "dictionaryId": "1613480"
-      },
-      {
-        "japanese": "右岸",
-        "reading": "うがん",
-        "meaning": "right bank (of a river)",
-        "dictionaryId": "1171080"
-      },
-      {
-        "japanese": "右端",
-        "reading": "みぎはし",
-        "meaning": "right end; right edge",
-        "dictionaryId": "1576410"
-      },
-      {
-        "japanese": "右折",
-        "reading": "うせつ",
-        "meaning": "turning to the right; right turn",
-        "dictionaryId": "1171150"
-      },
-      {
-        "japanese": "右辺",
-        "reading": "うへん",
-        "meaning": "right side (of an equation, expression, etc.); RHS",
-        "dictionaryId": "1171220"
-      },
-      {
-        "japanese": "右傾",
-        "reading": "うけい",
-        "meaning": "leaning to the right",
-        "dictionaryId": "1171100"
-      },
-      {
-        "japanese": "座右",
-        "reading": "ざゆう",
-        "meaning": "(by) one's side; place close to one's person; place within arm's reach",
-        "dictionaryId": "1291810"
-      },
-      {
-        "japanese": "右舷",
-        "reading": "うげん",
-        "meaning": "starboard (right side of vessel)",
-        "dictionaryId": "1171110"
       }
     ],
     "名": [
@@ -3961,129 +2377,9 @@
         "reading": "めいしゅ",
         "meaning": "master; expert",
         "dictionaryId": "1531590"
-      },
-      {
-        "japanese": "書名",
-        "reading": "しょめい",
-        "meaning": "book title",
-        "dictionaryId": "1344170"
-      },
-      {
-        "japanese": "学名",
-        "reading": "がくめい",
-        "meaning": "scientific name (of a species); binomial name; Latin name",
-        "dictionaryId": "1207120"
-      },
-      {
-        "japanese": "名月",
-        "reading": "めいげつ",
-        "meaning": "harvest moon (trad. 15th day of the 8th lunar month)",
-        "dictionaryId": "1611960"
-      },
-      {
-        "japanese": "名文",
-        "reading": "めいぶん",
-        "meaning": "famous literary composition",
-        "dictionaryId": "1531820"
-      },
-      {
-        "japanese": "名分",
-        "reading": "めいぶん",
-        "meaning": "moral duty; moral obligations",
-        "dictionaryId": "1641250"
-      },
-      {
-        "japanese": "名木",
-        "reading": "めいぼく",
-        "meaning": "old tree of historical interest",
-        "dictionaryId": "1531840"
-      },
-      {
-        "japanese": "名山",
-        "reading": "めいざん",
-        "meaning": "famous mountain",
-        "dictionaryId": "1752150"
-      },
-      {
-        "japanese": "店名",
-        "reading": "てんめい",
-        "meaning": "store name; shop name; restaurant name",
-        "dictionaryId": "2656450"
       }
     ],
     "四": [
-      {
-        "japanese": "四月",
-        "reading": "しがつ",
-        "meaning": "April",
-        "dictionaryId": "1307180"
-      },
-      {
-        "japanese": "四日",
-        "reading": "よっか",
-        "meaning": "4th day of the month",
-        "dictionaryId": "1307320"
-      },
-      {
-        "japanese": "四人",
-        "reading": "よにん",
-        "meaning": "four people",
-        "dictionaryId": "1985310"
-      },
-      {
-        "japanese": "四時",
-        "reading": "よじ",
-        "meaning": "four o'clock",
-        "dictionaryId": "1307230"
-      },
-      {
-        "japanese": "十四日",
-        "reading": "じゅうよっか",
-        "meaning": "14th day of the month",
-        "dictionaryId": "1629290"
-      },
-      {
-        "japanese": "二十四日",
-        "reading": "にじゅうよっか",
-        "meaning": "24th day of the month",
-        "dictionaryId": "1629300"
-      },
-      {
-        "japanese": "四十",
-        "reading": "よんじゅう",
-        "meaning": "forty; 40",
-        "dictionaryId": "1650220"
-      },
-      {
-        "japanese": "四千",
-        "reading": "よんせん",
-        "meaning": "four thousand; 4,000",
-        "dictionaryId": "1766960"
-      },
-      {
-        "japanese": "一四",
-        "reading": "じゅうし",
-        "meaning": "fourteen; 14",
-        "dictionaryId": "1579860"
-      },
-      {
-        "japanese": "十四",
-        "reading": "じゅうし",
-        "meaning": "fourteen; 14",
-        "dictionaryId": "1579860"
-      },
-      {
-        "japanese": "四百",
-        "reading": "よんひゃく",
-        "meaning": "400; four hundred",
-        "dictionaryId": "1767090"
-      },
-      {
-        "japanese": "四本",
-        "reading": "よんほん",
-        "meaning": "four (long cylindrical things)",
-        "dictionaryId": "2005490"
-      },
       {
         "japanese": "四川",
         "reading": "しせん",
@@ -4095,24 +2391,6 @@
         "reading": "しこく",
         "meaning": "Shikoku (smallest of the four main islands of Japan)",
         "dictionaryId": "1307200"
-      },
-      {
-        "japanese": "四十九日",
-        "reading": "しじゅうくにち",
-        "meaning": "forty-ninth day after a person's death",
-        "dictionaryId": "1766940"
-      },
-      {
-        "japanese": "一四日",
-        "reading": "じゅうよっか",
-        "meaning": "14th day of the month",
-        "dictionaryId": "1629290"
-      },
-      {
-        "japanese": "二四日",
-        "reading": "にじゅうよっか",
-        "meaning": "24th day of the month",
-        "dictionaryId": "1629300"
       },
       {
         "japanese": "四手",
@@ -4131,6 +2409,48 @@
         "reading": "よんじゅう",
         "meaning": "forty; 40",
         "dictionaryId": "1650220"
+      },
+      {
+        "japanese": "四季",
+        "reading": "しき",
+        "meaning": "the four seasons",
+        "dictionaryId": "1307130"
+      },
+      {
+        "japanese": "四方",
+        "reading": "しほう",
+        "meaning": "the four cardinal directions; north, east, south and west; all directions",
+        "dictionaryId": "1307370"
+      },
+      {
+        "japanese": "四球",
+        "reading": "しきゅう",
+        "meaning": "base on balls; walk; pass",
+        "dictionaryId": "1307140"
+      },
+      {
+        "japanese": "四半期",
+        "reading": "しはんき",
+        "meaning": "quarter (of a year)",
+        "dictionaryId": "1307330"
+      },
+      {
+        "japanese": "四角",
+        "reading": "しかく",
+        "meaning": "quadrilateral; square",
+        "dictionaryId": "1307090"
+      },
+      {
+        "japanese": "四輪車",
+        "reading": "よんりんしゃ",
+        "meaning": "automobile; car",
+        "dictionaryId": "1307410"
+      },
+      {
+        "japanese": "四畳半",
+        "reading": "よじょうはん",
+        "meaning": "four and a half tatami mats; four-and-a-half-mat room",
+        "dictionaryId": "1307280"
       }
     ],
     "国": [
@@ -4205,54 +2525,6 @@
         "reading": "こくご",
         "meaning": "national language",
         "dictionaryId": "1286370"
-      },
-      {
-        "japanese": "天国",
-        "reading": "てんごく",
-        "meaning": "paradise; heaven; Kingdom of Heaven",
-        "dictionaryId": "1439080"
-      },
-      {
-        "japanese": "外国語",
-        "reading": "がいこくご",
-        "meaning": "foreign language",
-        "dictionaryId": "1203640"
-      },
-      {
-        "japanese": "出国",
-        "reading": "しゅっこく",
-        "meaning": "departure from a country; leaving a country",
-        "dictionaryId": "1580020"
-      },
-      {
-        "japanese": "国名",
-        "reading": "こくめい",
-        "meaning": "country name",
-        "dictionaryId": "1287160"
-      },
-      {
-        "japanese": "国力",
-        "reading": "こくりょく",
-        "meaning": "national power",
-        "dictionaryId": "1609780"
-      },
-      {
-        "japanese": "中国人",
-        "reading": "ちゅうごくじん",
-        "meaning": "Chinese person",
-        "dictionaryId": "1424300"
-      },
-      {
-        "japanese": "国人",
-        "reading": "こくじん",
-        "meaning": "indigenous person; inhabitant of a country",
-        "dictionaryId": "1657410"
-      },
-      {
-        "japanese": "一国",
-        "reading": "いっこく",
-        "meaning": "one country",
-        "dictionaryId": "1162530"
       }
     ],
     "土": [
@@ -4327,54 +2599,6 @@
         "reading": "とち",
         "meaning": "plot of land; lot; soil",
         "dictionaryId": "1445470"
-      },
-      {
-        "japanese": "領土",
-        "reading": "りょうど",
-        "meaning": "territory; domain; dominion",
-        "dictionaryId": "1554790"
-      },
-      {
-        "japanese": "土台",
-        "reading": "どだい",
-        "meaning": "foundation; base; basis",
-        "dictionaryId": "1445450"
-      },
-      {
-        "japanese": "土産",
-        "reading": "みやげ",
-        "meaning": "local specialty or souvenir bought as a gift while travelling",
-        "dictionaryId": "1445360"
-      },
-      {
-        "japanese": "粘土",
-        "reading": "ねんど",
-        "meaning": "clay",
-        "dictionaryId": "1469760"
-      },
-      {
-        "japanese": "土俵",
-        "reading": "どひょう",
-        "meaning": "(wrestling) ring",
-        "dictionaryId": "1445550"
-      },
-      {
-        "japanese": "全土",
-        "reading": "ぜんど",
-        "meaning": "whole nation; whole land; whole country",
-        "dictionaryId": "1395850"
-      },
-      {
-        "japanese": "土壌",
-        "reading": "どじょう",
-        "meaning": "soil",
-        "dictionaryId": "1445380"
-      },
-      {
-        "japanese": "風土",
-        "reading": "ふうど",
-        "meaning": "natural features; topography; climate",
-        "dictionaryId": "1500020"
       }
     ],
     "外": [
@@ -4449,54 +2673,6 @@
         "reading": "がいき",
         "meaning": "open air",
         "dictionaryId": "1203470"
-      },
-      {
-        "japanese": "社外",
-        "reading": "しゃがい",
-        "meaning": "outside the company",
-        "dictionaryId": "1322830"
-      },
-      {
-        "japanese": "学外",
-        "reading": "がくがい",
-        "meaning": "outside the school; outside the university; unaffiliated with the university",
-        "dictionaryId": "1761120"
-      },
-      {
-        "japanese": "外電",
-        "reading": "がいでん",
-        "meaning": "foreign telegram",
-        "dictionaryId": "1203990"
-      },
-      {
-        "japanese": "校外",
-        "reading": "こうがい",
-        "meaning": "out-of-school; off-campus",
-        "dictionaryId": "1279500"
-      },
-      {
-        "japanese": "外交",
-        "reading": "がいこう",
-        "meaning": "diplomacy",
-        "dictionaryId": "1203540"
-      },
-      {
-        "japanese": "外相",
-        "reading": "がいしょう",
-        "meaning": "Foreign Minister",
-        "dictionaryId": "1203940"
-      },
-      {
-        "japanese": "海外",
-        "reading": "かいがい",
-        "meaning": "foreign; abroad; overseas",
-        "dictionaryId": "1201260"
-      },
-      {
-        "japanese": "外務",
-        "reading": "がいむ",
-        "meaning": "foreign affairs",
-        "dictionaryId": "1204130"
       }
     ],
     "大": [
@@ -4571,54 +2747,6 @@
         "reading": "おおぐち",
         "meaning": "big mouth; mouth opened wide",
         "dictionaryId": "1643480"
-      },
-      {
-        "japanese": "女子大",
-        "reading": "じょしだい",
-        "meaning": "women's college; women's university",
-        "dictionaryId": "1345170"
-      },
-      {
-        "japanese": "大山",
-        "reading": "たいざん",
-        "meaning": "great mountain; large mountain",
-        "dictionaryId": "1785260"
-      },
-      {
-        "japanese": "一大",
-        "reading": "いちだい",
-        "meaning": "one large ...; a great ...",
-        "dictionaryId": "1164620"
-      },
-      {
-        "japanese": "大木",
-        "reading": "たいぼく",
-        "meaning": "large tree",
-        "dictionaryId": "1415090"
-      },
-      {
-        "japanese": "大名",
-        "reading": "だいみょう",
-        "meaning": "daimyo (Japanese feudal lord)",
-        "dictionaryId": "1415080"
-      },
-      {
-        "japanese": "私大",
-        "reading": "しだい",
-        "meaning": "private university",
-        "dictionaryId": "1658290"
-      },
-      {
-        "japanese": "大店",
-        "reading": "おおだな",
-        "meaning": "large store",
-        "dictionaryId": "1862050"
-      },
-      {
-        "japanese": "大火",
-        "reading": "たいか",
-        "meaning": "large fire",
-        "dictionaryId": "1413170"
       }
     ],
     "天": [
@@ -4693,54 +2821,6 @@
         "reading": "てんねん",
         "meaning": "nature; spontaneity",
         "dictionaryId": "1439580"
-      },
-      {
-        "japanese": "天候",
-        "reading": "てんこう",
-        "meaning": "weather",
-        "dictionaryId": "1438970"
-      },
-      {
-        "japanese": "天才",
-        "reading": "てんさい",
-        "meaning": "genius; prodigy; natural gift",
-        "dictionaryId": "1439090"
-      },
-      {
-        "japanese": "天体",
-        "reading": "てんたい",
-        "meaning": "heavenly body; celestial body; astronomical object",
-        "dictionaryId": "1439740"
-      },
-      {
-        "japanese": "晴天",
-        "reading": "せいてん",
-        "meaning": "fine weather (i.e. little or no clouds); fair weather; clear weather",
-        "dictionaryId": "1376550"
-      },
-      {
-        "japanese": "天災",
-        "reading": "てんさい",
-        "meaning": "natural disaster; natural calamity; act of God",
-        "dictionaryId": "1439110"
-      },
-      {
-        "japanese": "天理",
-        "reading": "てんり",
-        "meaning": "natural laws; rule of heaven",
-        "dictionaryId": "1440480"
-      },
-      {
-        "japanese": "天使",
-        "reading": "てんし",
-        "meaning": "angel",
-        "dictionaryId": "1439170"
-      },
-      {
-        "japanese": "天狗",
-        "reading": "てんぐ",
-        "meaning": "tengu; red-faced and long-nosed goblin said to reside deep in the mountains",
-        "dictionaryId": "1438850"
       }
     ],
     "女": [
@@ -4815,54 +2895,6 @@
         "reading": "おんなで",
         "meaning": "female help; female labor; female labour",
         "dictionaryId": "1643690"
-      },
-      {
-        "japanese": "女子高",
-        "reading": "じょしこう",
-        "meaning": "girls' high school",
-        "dictionaryId": "1345150"
-      },
-      {
-        "japanese": "女中",
-        "reading": "じょちゅう",
-        "meaning": "maidservant; housemaid; maid",
-        "dictionaryId": "1345370"
-      },
-      {
-        "japanese": "女子高生",
-        "reading": "じょしこうせい",
-        "meaning": "female high school student",
-        "dictionaryId": "1345160"
-      },
-      {
-        "japanese": "女性",
-        "reading": "じょせい",
-        "meaning": "woman; female",
-        "dictionaryId": "1345250"
-      },
-      {
-        "japanese": "彼女",
-        "reading": "かのじょ",
-        "meaning": "she; her",
-        "dictionaryId": "1483150"
-      },
-      {
-        "japanese": "女優",
-        "reading": "じょゆう",
-        "meaning": "actress; female actor",
-        "dictionaryId": "1345430"
-      },
-      {
-        "japanese": "少女",
-        "reading": "しょうじょ",
-        "meaning": "girl (usu. between 7 and 17); young lady",
-        "dictionaryId": "1580290"
-      },
-      {
-        "japanese": "長女",
-        "reading": "ちょうじょ",
-        "meaning": "eldest daughter; first-born daughter",
-        "dictionaryId": "1430040"
       }
     ],
     "子": [
@@ -4937,54 +2969,6 @@
         "reading": "ふし",
         "meaning": "father and child; father and son; father and daughter",
         "dictionaryId": "1497660"
-      },
-      {
-        "japanese": "子女",
-        "reading": "しじょ",
-        "meaning": "sons and daughters; children",
-        "dictionaryId": "1307970"
-      },
-      {
-        "japanese": "小女子",
-        "reading": "こうなご",
-        "meaning": "young lancefish; young sand lance",
-        "dictionaryId": "1984260"
-      },
-      {
-        "japanese": "子分",
-        "reading": "こぶん",
-        "meaning": "henchman; follower",
-        "dictionaryId": "1308050"
-      },
-      {
-        "japanese": "一子",
-        "reading": "いっし",
-        "meaning": "one child",
-        "dictionaryId": "1576075"
-      },
-      {
-        "japanese": "白子",
-        "reading": "しらこ",
-        "meaning": "soft roe; milt",
-        "dictionaryId": "1475180"
-      },
-      {
-        "japanese": "一人子",
-        "reading": "ひとりご",
-        "meaning": "(an) only child",
-        "dictionaryId": "1576080"
-      },
-      {
-        "japanese": "女子高",
-        "reading": "じょしこう",
-        "meaning": "girls' high school",
-        "dictionaryId": "1345150"
-      },
-      {
-        "japanese": "女子高生",
-        "reading": "じょしこうせい",
-        "meaning": "female high school student",
-        "dictionaryId": "1345160"
       }
     ],
     "字": [
@@ -5059,54 +3043,6 @@
         "reading": "いちもんじ",
         "meaning": "straight line; beeline",
         "dictionaryId": "1166350"
-      },
-      {
-        "japanese": "数字",
-        "reading": "すうじ",
-        "meaning": "numeral; digit; numeric character",
-        "dictionaryId": "1373060"
-      },
-      {
-        "japanese": "赤字",
-        "reading": "あかじ",
-        "meaning": "(being in) the red; deficit",
-        "dictionaryId": "1383440"
-      },
-      {
-        "japanese": "黒字",
-        "reading": "くろじ",
-        "meaning": "(being in) the black; surplus",
-        "dictionaryId": "1287710"
-      },
-      {
-        "japanese": "活字",
-        "reading": "かつじ",
-        "meaning": "(piece of) type; movable type; moveable type",
-        "dictionaryId": "1208300"
-      },
-      {
-        "japanese": "十字架",
-        "reading": "じゅうじか",
-        "meaning": "cross (for crucifixion); the Cross (of Christ)",
-        "dictionaryId": "1334650"
-      },
-      {
-        "japanese": "点字",
-        "reading": "てんじ",
-        "meaning": "braille",
-        "dictionaryId": "1441590"
-      },
-      {
-        "japanese": "苗字",
-        "reading": "みょうじ",
-        "meaning": "surname; family name; last name",
-        "dictionaryId": "1604730"
-      },
-      {
-        "japanese": "英字",
-        "reading": "えいじ",
-        "meaning": "English letter; alphabetic character",
-        "dictionaryId": "1174530"
       }
     ],
     "学": [
@@ -5181,54 +3117,6 @@
         "reading": "しょうがくせい",
         "meaning": "elementary school student; primary school student; grade school student",
         "dictionaryId": "1347880"
-      },
-      {
-        "japanese": "学年",
-        "reading": "がくねん",
-        "meaning": "academic year; school year",
-        "dictionaryId": "1207030"
-      },
-      {
-        "japanese": "語学",
-        "reading": "ごがく",
-        "meaning": "study of foreign languages",
-        "dictionaryId": "1271010"
-      },
-      {
-        "japanese": "学力",
-        "reading": "がくりょく",
-        "meaning": "scholarly ability; scholarship; knowledge",
-        "dictionaryId": "1207180"
-      },
-      {
-        "japanese": "小学",
-        "reading": "しょうがく",
-        "meaning": "elementary school; primary school; grade school",
-        "dictionaryId": "1347850"
-      },
-      {
-        "japanese": "社会学",
-        "reading": "しゃかいがく",
-        "meaning": "sociology",
-        "dictionaryId": "1322730"
-      },
-      {
-        "japanese": "国学",
-        "reading": "こくがく",
-        "meaning": "study of classical Japanese literature and culture",
-        "dictionaryId": "1657310"
-      },
-      {
-        "japanese": "私学",
-        "reading": "しがく",
-        "meaning": "private (non-governmental) school (college, university)",
-        "dictionaryId": "1646540"
-      },
-      {
-        "japanese": "国文学",
-        "reading": "こくぶんがく",
-        "meaning": "Japanese literature",
-        "dictionaryId": "1657470"
       }
     ],
     "安": [
@@ -5303,54 +3191,6 @@
         "reading": "あんぽ",
         "meaning": "security (e.g. national security)",
         "dictionaryId": "1154260"
-      },
-      {
-        "japanese": "慰安",
-        "reading": "いあん",
-        "meaning": "solace; relaxation",
-        "dictionaryId": "1156900"
-      },
-      {
-        "japanese": "安否",
-        "reading": "あんぴ",
-        "meaning": "safety; welfare; well-being",
-        "dictionaryId": "1154230"
-      },
-      {
-        "japanese": "安打",
-        "reading": "あんだ",
-        "meaning": "safe hit",
-        "dictionaryId": "1154060"
-      },
-      {
-        "japanese": "公安",
-        "reading": "こうあん",
-        "meaning": "public peace; public safety; public security",
-        "dictionaryId": "1273180"
-      },
-      {
-        "japanese": "平安",
-        "reading": "へいあん",
-        "meaning": "peace; tranquility; tranquillity",
-        "dictionaryId": "1506970"
-      },
-      {
-        "japanese": "安値",
-        "reading": "やすね",
-        "meaning": "low price",
-        "dictionaryId": "1154080"
-      },
-      {
-        "japanese": "割安",
-        "reading": "わりやす",
-        "meaning": "economical; comparatively cheap",
-        "dictionaryId": "1606990"
-      },
-      {
-        "japanese": "安芸",
-        "reading": "あき",
-        "meaning": "Aki (former province located in the west of present-day Hiroshima Prefecture)",
-        "dictionaryId": "1629210"
       }
     ],
     "小": [
@@ -5425,54 +3265,6 @@
         "reading": "こびと",
         "meaning": "little person (in folklore and fantasy, e.g. fairy, elf, gnome); little people; dwarf",
         "dictionaryId": "2860036"
-      },
-      {
-        "japanese": "小女子",
-        "reading": "こうなご",
-        "meaning": "young lancefish; young sand lance",
-        "dictionaryId": "1984260"
-      },
-      {
-        "japanese": "小文字",
-        "reading": "こもじ",
-        "meaning": "lowercase letter",
-        "dictionaryId": "1348750"
-      },
-      {
-        "japanese": "小人",
-        "reading": "しょうにん",
-        "meaning": "child (esp. one of elementary school age or younger)",
-        "dictionaryId": "1348350"
-      },
-      {
-        "japanese": "小火",
-        "reading": "ぼや",
-        "meaning": "small fire",
-        "dictionaryId": "1611570"
-      },
-      {
-        "japanese": "小食",
-        "reading": "しょうしょく",
-        "meaning": "light eating; spare diet; not eating much",
-        "dictionaryId": "1348310"
-      },
-      {
-        "japanese": "小金",
-        "reading": "こがね",
-        "meaning": "small sum of money",
-        "dictionaryId": "1347950"
-      },
-      {
-        "japanese": "小手",
-        "reading": "こて",
-        "meaning": "forearm",
-        "dictionaryId": "1743460"
-      },
-      {
-        "japanese": "小話",
-        "reading": "こばなし",
-        "meaning": "anecdote",
-        "dictionaryId": "1348830"
       }
     ],
     "山": [
@@ -5547,54 +3339,6 @@
         "reading": "さんすい",
         "meaning": "mountain and water; landscape (containing hills and rivers)",
         "dictionaryId": "1302980"
-      },
-      {
-        "japanese": "山下",
-        "reading": "やまもと",
-        "meaning": "foot of a mountain; base of a mountain",
-        "dictionaryId": "1755110"
-      },
-      {
-        "japanese": "山本",
-        "reading": "やまもと",
-        "meaning": "foot of a mountain; base of a mountain",
-        "dictionaryId": "1755110"
-      },
-      {
-        "japanese": "山車",
-        "reading": "だし",
-        "meaning": "parade float; festival float",
-        "dictionaryId": "1302910"
-      },
-      {
-        "japanese": "金山",
-        "reading": "きんざん",
-        "meaning": "gold mine",
-        "dictionaryId": "1662950"
-      },
-      {
-        "japanese": "山上",
-        "reading": "さんじょう",
-        "meaning": "mountain top",
-        "dictionaryId": "1302960"
-      },
-      {
-        "japanese": "山男",
-        "reading": "やまおとこ",
-        "meaning": "giant; woodsman; alpinist",
-        "dictionaryId": "1628060"
-      },
-      {
-        "japanese": "山人",
-        "reading": "やまびと",
-        "meaning": "mountain folk; hermit",
-        "dictionaryId": "1755100"
-      },
-      {
-        "japanese": "名山",
-        "reading": "めいざん",
-        "meaning": "famous mountain",
-        "dictionaryId": "1752150"
       }
     ],
     "川": [
@@ -5669,54 +3413,6 @@
         "reading": "かわばた",
         "meaning": "riverside; riverbank",
         "dictionaryId": "1390100"
-      },
-      {
-        "japanese": "滝川",
-        "reading": "たきがわ",
-        "meaning": "rapids",
-        "dictionaryId": "1415540"
-      },
-      {
-        "japanese": "堀川",
-        "reading": "ほりかわ",
-        "meaning": "canal",
-        "dictionaryId": "1522090"
-      },
-      {
-        "japanese": "川底",
-        "reading": "かわぞこ",
-        "meaning": "riverbed",
-        "dictionaryId": "1636710"
-      },
-      {
-        "japanese": "川尻",
-        "reading": "かわじり",
-        "meaning": "mouth of a river; lower stream",
-        "dictionaryId": "1811470"
-      },
-      {
-        "japanese": "川辺",
-        "reading": "かわべ",
-        "meaning": "riverside; riverbank; edge of a river",
-        "dictionaryId": "1636650"
-      },
-      {
-        "japanese": "川面",
-        "reading": "かわも",
-        "meaning": "river surface; surface of a river",
-        "dictionaryId": "1581050"
-      },
-      {
-        "japanese": "川瀬",
-        "reading": "かわせ",
-        "meaning": "rapids; shallows of a river",
-        "dictionaryId": "1636670"
-      },
-      {
-        "japanese": "川幅",
-        "reading": "かわはば",
-        "meaning": "width of a river",
-        "dictionaryId": "1811570"
       }
     ],
     "左": [
@@ -5791,54 +3487,6 @@
         "reading": "さき",
         "meaning": "undermentioned (statement); the following; at left",
         "dictionaryId": "1290860"
-      },
-      {
-        "japanese": "左岸",
-        "reading": "さがん",
-        "meaning": "left bank (of a river)",
-        "dictionaryId": "1290850"
-      },
-      {
-        "japanese": "左辺",
-        "reading": "さへん",
-        "meaning": "left side (of an equation, expression, etc.); LHS",
-        "dictionaryId": "1657630"
-      },
-      {
-        "japanese": "左遷",
-        "reading": "させん",
-        "meaning": "demotion; relegation; reduction in rank",
-        "dictionaryId": "1290940"
-      },
-      {
-        "japanese": "極左",
-        "reading": "きょくさ",
-        "meaning": "far left (in politics); extreme left; ultraleft",
-        "dictionaryId": "1760510"
-      },
-      {
-        "japanese": "左官",
-        "reading": "さかん",
-        "meaning": "plasterer",
-        "dictionaryId": "1290840"
-      },
-      {
-        "japanese": "左舷",
-        "reading": "さげん",
-        "meaning": "port (left side of vessel)",
-        "dictionaryId": "1290890"
-      },
-      {
-        "japanese": "左折",
-        "reading": "させつ",
-        "meaning": "turning to the left; left turn",
-        "dictionaryId": "1290930"
-      },
-      {
-        "japanese": "左脚",
-        "reading": "ひだりあし",
-        "meaning": "left foot",
-        "dictionaryId": "1290970"
       }
     ],
     "帰": [
@@ -5913,54 +3561,6 @@
         "reading": "しゃかいふっき",
         "meaning": "rehabilitation (in society)",
         "dictionaryId": "1658830"
-      },
-      {
-        "japanese": "帰結",
-        "reading": "きけつ",
-        "meaning": "consequence; result; conclusion",
-        "dictionaryId": "1221320"
-      },
-      {
-        "japanese": "帰郷",
-        "reading": "ききょう",
-        "meaning": "homecoming; return to one's home",
-        "dictionaryId": "1614510"
-      },
-      {
-        "japanese": "帰路",
-        "reading": "きろ",
-        "meaning": "return journey; one's way home; one's way back",
-        "dictionaryId": "1221500"
-      },
-      {
-        "japanese": "帰着",
-        "reading": "きちゃく",
-        "meaning": "return; arriving home",
-        "dictionaryId": "1221440"
-      },
-      {
-        "japanese": "帰港",
-        "reading": "きこう",
-        "meaning": "returning to port",
-        "dictionaryId": "1668940"
-      },
-      {
-        "japanese": "帰任",
-        "reading": "きにん",
-        "meaning": "return to one's post",
-        "dictionaryId": "1221460"
-      },
-      {
-        "japanese": "帰順",
-        "reading": "きじゅん",
-        "meaning": "submission; return to allegiance",
-        "dictionaryId": "1221380"
-      },
-      {
-        "japanese": "帰依",
-        "reading": "きえ",
-        "meaning": "becoming a devout believer; (religious) conversion",
-        "dictionaryId": "1221280"
       }
     ],
     "年": [
@@ -6035,54 +3635,6 @@
         "reading": "ねんじゅう",
         "meaning": "whole year; all year round; throughout the year",
         "dictionaryId": "1469000"
-      },
-      {
-        "japanese": "年下",
-        "reading": "としした",
-        "meaning": "younger; junior",
-        "dictionaryId": "1468230"
-      },
-      {
-        "japanese": "年月",
-        "reading": "としつき",
-        "meaning": "months and years",
-        "dictionaryId": "1582870"
-      },
-      {
-        "japanese": "年生",
-        "reading": "ねんせい",
-        "meaning": "nth-year student; nth-year pupil",
-        "dictionaryId": "1468900"
-      },
-      {
-        "japanese": "年金",
-        "reading": "ねんきん",
-        "meaning": "annuity; pension",
-        "dictionaryId": "1468540"
-      },
-      {
-        "japanese": "本年",
-        "reading": "ほんねん",
-        "meaning": "this (current) year",
-        "dictionaryId": "1523120"
-      },
-      {
-        "japanese": "年月日",
-        "reading": "ねんがっぴ",
-        "meaning": "date (year, month and day)",
-        "dictionaryId": "1468550"
-      },
-      {
-        "japanese": "一年生",
-        "reading": "いちねんせい",
-        "meaning": "first-year student; first-year pupil",
-        "dictionaryId": "1165580"
-      },
-      {
-        "japanese": "生年月日",
-        "reading": "せいねんがっぴ",
-        "meaning": "birth date; date of birth; DOB",
-        "dictionaryId": "1379410"
       }
     ],
     "店": [
@@ -6157,54 +3709,6 @@
         "reading": "たなこ",
         "meaning": "tenant (esp. in contrast to a landlord); renter",
         "dictionaryId": "1440700"
-      },
-      {
-        "japanese": "支店",
-        "reading": "してん",
-        "meaning": "branch office; branch store",
-        "dictionaryId": "1310230"
-      },
-      {
-        "japanese": "入店",
-        "reading": "にゅうてん",
-        "meaning": "entering a store; entering a restaurant",
-        "dictionaryId": "2822560"
-      },
-      {
-        "japanese": "店舗",
-        "reading": "てんぽ",
-        "meaning": "shop; store; establishment",
-        "dictionaryId": "1440800"
-      },
-      {
-        "japanese": "百貨店",
-        "reading": "ひゃっかてん",
-        "meaning": "department store",
-        "dictionaryId": "1488090"
-      },
-      {
-        "japanese": "商店",
-        "reading": "しょうてん",
-        "meaning": "shop; store; firm",
-        "dictionaryId": "1347180"
-      },
-      {
-        "japanese": "小売店",
-        "reading": "こうりてん",
-        "meaning": "retail store; retail shop",
-        "dictionaryId": "1610670"
-      },
-      {
-        "japanese": "開店",
-        "reading": "かいてん",
-        "meaning": "opening a new shop",
-        "dictionaryId": "1202870"
-      },
-      {
-        "japanese": "売店",
-        "reading": "ばいてん",
-        "meaning": "stand; stall; booth",
-        "dictionaryId": "1474040"
       }
     ],
     "後": [
@@ -6279,54 +3783,6 @@
         "reading": "あとがき",
         "meaning": "afterword; postscript",
         "dictionaryId": "1269770"
-      },
-      {
-        "japanese": "後後",
-        "reading": "あとあと",
-        "meaning": "future; distant future",
-        "dictionaryId": "1578610"
-      },
-      {
-        "japanese": "雨後",
-        "reading": "うご",
-        "meaning": "after rain",
-        "dictionaryId": "1816210"
-      },
-      {
-        "japanese": "年後",
-        "reading": "ねんご",
-        "meaning": "years later",
-        "dictionaryId": "1468570"
-      },
-      {
-        "japanese": "戦後",
-        "reading": "せんご",
-        "meaning": "postwar period; period after Second World War",
-        "dictionaryId": "1607450"
-      },
-      {
-        "japanese": "最後",
-        "reading": "さいご",
-        "meaning": "end; conclusion",
-        "dictionaryId": "1293810"
-      },
-      {
-        "japanese": "後半生",
-        "reading": "こうはんせい",
-        "meaning": "latter half of one's life",
-        "dictionaryId": "1270050"
-      },
-      {
-        "japanese": "直後",
-        "reading": "ちょくご",
-        "meaning": "immediately following",
-        "dictionaryId": "1430930"
-      },
-      {
-        "japanese": "後援",
-        "reading": "こうえん",
-        "meaning": "support; backing",
-        "dictionaryId": "1269470"
       }
     ],
     "手": [
@@ -6401,54 +3857,6 @@
         "reading": "どて",
         "meaning": "embankment; bank",
         "dictionaryId": "1445370"
-      },
-      {
-        "japanese": "手口",
-        "reading": "てぐち",
-        "meaning": "modus operandi; criminal technique; trick",
-        "dictionaryId": "1327590"
-      },
-      {
-        "japanese": "山手",
-        "reading": "やまて",
-        "meaning": "place near the mountains",
-        "dictionaryId": "1658020"
-      },
-      {
-        "japanese": "先手",
-        "reading": "せんて",
-        "meaning": "moving first; person with the first move",
-        "dictionaryId": "1387830"
-      },
-      {
-        "japanese": "一手",
-        "reading": "いって",
-        "meaning": "one move (in go, shogi, etc.)",
-        "dictionaryId": "1163130"
-      },
-      {
-        "japanese": "手話",
-        "reading": "しゅわ",
-        "meaning": "sign language",
-        "dictionaryId": "1328440"
-      },
-      {
-        "japanese": "後手",
-        "reading": "ごて",
-        "meaning": "losing initiative; being forestalled",
-        "dictionaryId": "1269730"
-      },
-      {
-        "japanese": "名手",
-        "reading": "めいしゅ",
-        "meaning": "master; expert",
-        "dictionaryId": "1531590"
-      },
-      {
-        "japanese": "手中",
-        "reading": "しゅちゅう",
-        "meaning": "in one's hands; in one's control",
-        "dictionaryId": "1659070"
       }
     ],
     "文": [
@@ -6523,54 +3931,6 @@
         "reading": "ぶんご",
         "meaning": "written language; literary language",
         "dictionaryId": "1505370"
-      },
-      {
-        "japanese": "大文字",
-        "reading": "おおもじ",
-        "meaning": "uppercase letter; capital letter",
-        "dictionaryId": "1414950"
-      },
-      {
-        "japanese": "文中",
-        "reading": "ぶんちゅう",
-        "meaning": "in the sentence; in the text",
-        "dictionaryId": "1505530"
-      },
-      {
-        "japanese": "国文",
-        "reading": "こくぶん",
-        "meaning": "national literature",
-        "dictionaryId": "1287000"
-      },
-      {
-        "japanese": "文人",
-        "reading": "ぶんじん",
-        "meaning": "person of letters; literary person",
-        "dictionaryId": "1722990"
-      },
-      {
-        "japanese": "三文",
-        "reading": "さんもん",
-        "meaning": "paltry amount of money; cheapness; worthlessness",
-        "dictionaryId": "1301590"
-      },
-      {
-        "japanese": "小文字",
-        "reading": "こもじ",
-        "meaning": "lowercase letter",
-        "dictionaryId": "1348750"
-      },
-      {
-        "japanese": "名文",
-        "reading": "めいぶん",
-        "meaning": "famous literary composition",
-        "dictionaryId": "1531820"
-      },
-      {
-        "japanese": "人文字",
-        "reading": "ひともじ",
-        "meaning": "arranging a group of people so as to form a character or spell out a message",
-        "dictionaryId": "1730680"
       }
     ],
     "新": [
@@ -6579,6 +3939,12 @@
         "reading": "しんぶん",
         "meaning": "newspaper",
         "dictionaryId": "1362360"
+      },
+      {
+        "japanese": "新幹線",
+        "reading": "しんかんせん",
+        "meaning": "Shinkansen; bullet train",
+        "dictionaryId": "1361590"
       },
       {
         "japanese": "新人",
@@ -6639,60 +4005,6 @@
         "reading": "せいしん",
         "meaning": "fresh; new",
         "dictionaryId": "1621220"
-      },
-      {
-        "japanese": "新田",
-        "reading": "しんでん",
-        "meaning": "new rice field; newly developed rice field",
-        "dictionaryId": "1720250"
-      },
-      {
-        "japanese": "新手",
-        "reading": "あらて",
-        "meaning": "fresh troops; fresh players",
-        "dictionaryId": "1361930"
-      },
-      {
-        "japanese": "新語",
-        "reading": "しんご",
-        "meaning": "new word; neologism; newly coined word",
-        "dictionaryId": "1361810"
-      },
-      {
-        "japanese": "新月",
-        "reading": "しんげつ",
-        "meaning": "new moon; first day of the lunar month",
-        "dictionaryId": "1720200"
-      },
-      {
-        "japanese": "新規",
-        "reading": "しんき",
-        "meaning": "new; fresh",
-        "dictionaryId": "1361650"
-      },
-      {
-        "japanese": "革新",
-        "reading": "かくしん",
-        "meaning": "reform; innovation",
-        "dictionaryId": "1206470"
-      },
-      {
-        "japanese": "新鮮",
-        "reading": "しんせん",
-        "meaning": "fresh",
-        "dictionaryId": "1362100"
-      },
-      {
-        "japanese": "新築",
-        "reading": "しんちく",
-        "meaning": "new building; new construction",
-        "dictionaryId": "1362160"
-      },
-      {
-        "japanese": "新興",
-        "reading": "しんこう",
-        "meaning": "rising; developing; emergent",
-        "dictionaryId": "1361750"
       }
     ],
     "日": [
@@ -6733,22 +4045,10 @@
         "dictionaryId": "1464530"
       },
       {
-        "japanese": "三十日",
-        "reading": "みそか",
-        "meaning": "last day of the month",
-        "dictionaryId": "1604510"
-      },
-      {
         "japanese": "日本",
         "reading": "にほん",
         "meaning": "Japan",
         "dictionaryId": "1582710"
-      },
-      {
-        "japanese": "一日",
-        "reading": "いちにち",
-        "meaning": "one day",
-        "dictionaryId": "1576260"
       },
       {
         "japanese": "一日",
@@ -6757,90 +4057,36 @@
         "dictionaryId": "2225040"
       },
       {
-        "japanese": "七日",
-        "reading": "なのか",
-        "meaning": "7th day of the month",
-        "dictionaryId": "1579630"
-      },
-      {
-        "japanese": "三日",
-        "reading": "みっか",
-        "meaning": "3rd day of the month",
-        "dictionaryId": "1301330"
-      },
-      {
-        "japanese": "九日",
-        "reading": "ここのか",
-        "meaning": "9th day of the month",
-        "dictionaryId": "1243850"
-      },
-      {
-        "japanese": "二日",
-        "reading": "ふつか",
-        "meaning": "2nd day of the month",
-        "dictionaryId": "1462900"
-      },
-      {
-        "japanese": "五日",
-        "reading": "いつか",
-        "meaning": "5th day of the month",
-        "dictionaryId": "1268570"
-      },
-      {
-        "japanese": "八日",
-        "reading": "ようか",
-        "meaning": "8th day of the month",
-        "dictionaryId": "1476920"
-      },
-      {
-        "japanese": "六日",
-        "reading": "むいか",
-        "meaning": "6th day of the month",
-        "dictionaryId": "1561470"
-      },
-      {
-        "japanese": "十日",
-        "reading": "とおか",
-        "meaning": "10th day of the month",
-        "dictionaryId": "1335000"
-      },
-      {
-        "japanese": "四日",
-        "reading": "よっか",
-        "meaning": "4th day of the month",
-        "dictionaryId": "1307320"
-      },
-      {
         "japanese": "二十日",
         "reading": "はつか",
         "meaning": "20th day of the month",
         "dictionaryId": "1600850"
+      },
+      {
+        "japanese": "土曜日",
+        "reading": "どようび",
+        "meaning": "Saturday",
+        "dictionaryId": "1445590"
+      },
+      {
+        "japanese": "日曜日",
+        "reading": "にちようび",
+        "meaning": "Sunday",
+        "dictionaryId": "1464900"
+      },
+      {
+        "japanese": "月曜日",
+        "reading": "げつようび",
+        "meaning": "Monday",
+        "dictionaryId": "1255890"
       }
     ],
     "時": [
       {
         "japanese": "一時",
-        "reading": "いちじ",
-        "meaning": "one o'clock",
-        "dictionaryId": "1576100"
-      },
-      {
-        "japanese": "三時",
-        "reading": "さんじ",
-        "meaning": "3 o'clock",
-        "dictionaryId": "1300520"
-      },
-      {
-        "japanese": "一時",
         "reading": "ひととき",
         "meaning": "a (short) time; a while; moment",
         "dictionaryId": "1162920"
-      },
-      {
-        "japanese": "七時",
-        "reading": "しちじ",
-        "meaning": "seven o'clock",
-        "dictionaryId": "2845363"
       },
       {
         "japanese": "何時",
@@ -6849,22 +4095,10 @@
         "dictionaryId": "1188770"
       },
       {
-        "japanese": "四時",
-        "reading": "よじ",
-        "meaning": "four o'clock",
-        "dictionaryId": "1307230"
-      },
-      {
         "japanese": "時間",
         "reading": "じかん",
         "meaning": "time",
         "dictionaryId": "1315920"
-      },
-      {
-        "japanese": "一時間",
-        "reading": "いちじかん",
-        "meaning": "one hour",
-        "dictionaryId": "1162940"
       },
       {
         "japanese": "時時",
@@ -6919,24 +4153,6 @@
         "reading": "どうじ",
         "meaning": "same time",
         "dictionaryId": "1452500"
-      },
-      {
-        "japanese": "当時",
-        "reading": "とうじ",
-        "meaning": "at that time; in those days",
-        "dictionaryId": "1449090"
-      },
-      {
-        "japanese": "時代",
-        "reading": "じだい",
-        "meaning": "period; epoch; era",
-        "dictionaryId": "1316300"
-      },
-      {
-        "japanese": "時期",
-        "reading": "じき",
-        "meaning": "time; season; period",
-        "dictionaryId": "1316040"
       }
     ],
     "曜": [
@@ -7011,36 +4227,6 @@
         "reading": "げつよう",
         "meaning": "Monday",
         "dictionaryId": "1255880"
-      },
-      {
-        "japanese": "水曜",
-        "reading": "すいよう",
-        "meaning": "Wednesday",
-        "dictionaryId": "1372180"
-      },
-      {
-        "japanese": "木曜",
-        "reading": "もくよう",
-        "meaning": "Thursday",
-        "dictionaryId": "1534880"
-      },
-      {
-        "japanese": "火曜",
-        "reading": "かよう",
-        "meaning": "Tuesday",
-        "dictionaryId": "1194280"
-      },
-      {
-        "japanese": "日曜版",
-        "reading": "にちようばん",
-        "meaning": "Sunday edition of a newspaper",
-        "dictionaryId": "1730550"
-      },
-      {
-        "japanese": "黒曜石",
-        "reading": "こくようせき",
-        "meaning": "obsidian",
-        "dictionaryId": "1288210"
       }
     ],
     "書": [
@@ -7115,54 +4301,6 @@
         "reading": "じしょ",
         "meaning": "dictionary of Chinese characters; kanji dictionary",
         "dictionaryId": "1651060"
-      },
-      {
-        "japanese": "書手",
-        "reading": "かきて",
-        "meaning": "writer; painter; drawer",
-        "dictionaryId": "1701600"
-      },
-      {
-        "japanese": "後書",
-        "reading": "あとがき",
-        "meaning": "afterword; postscript",
-        "dictionaryId": "1269770"
-      },
-      {
-        "japanese": "国書",
-        "reading": "こくしょ",
-        "meaning": "diplomatic message sent by a head of state; sovereign letter",
-        "dictionaryId": "1286680"
-      },
-      {
-        "japanese": "書生",
-        "reading": "しょせい",
-        "meaning": "student",
-        "dictionaryId": "1344080"
-      },
-      {
-        "japanese": "一書",
-        "reading": "いっしょ",
-        "meaning": "one letter; one book",
-        "dictionaryId": "1163440"
-      },
-      {
-        "japanese": "書記",
-        "reading": "しょき",
-        "meaning": "clerk; secretary",
-        "dictionaryId": "1344000"
-      },
-      {
-        "japanese": "行書",
-        "reading": "ぎょうしょ",
-        "meaning": "semi-cursive style (of writing Chinese characters); running style",
-        "dictionaryId": "1281960"
-      },
-      {
-        "japanese": "秘書",
-        "reading": "ひしょ",
-        "meaning": "(private) secretary",
-        "dictionaryId": "1484060"
       }
     ],
     "月": [
@@ -7185,88 +4323,10 @@
         "dictionaryId": "1547900"
       },
       {
-        "japanese": "一月",
-        "reading": "いちがつ",
-        "meaning": "January",
-        "dictionaryId": "1162120"
-      },
-      {
-        "japanese": "七月",
-        "reading": "しちがつ",
-        "meaning": "July",
-        "dictionaryId": "1319280"
-      },
-      {
-        "japanese": "三月",
-        "reading": "さんがつ",
-        "meaning": "March",
-        "dictionaryId": "1300250"
-      },
-      {
-        "japanese": "九月",
-        "reading": "くがつ",
-        "meaning": "September",
-        "dictionaryId": "1243660"
-      },
-      {
-        "japanese": "二月",
-        "reading": "にがつ",
-        "meaning": "February",
-        "dictionaryId": "1461560"
-      },
-      {
-        "japanese": "五月",
-        "reading": "ごがつ",
-        "meaning": "May",
-        "dictionaryId": "1268170"
-      },
-      {
-        "japanese": "八月",
-        "reading": "はちがつ",
-        "meaning": "August",
-        "dictionaryId": "1476730"
-      },
-      {
-        "japanese": "六月",
-        "reading": "ろくがつ",
-        "meaning": "June",
-        "dictionaryId": "1561330"
-      },
-      {
-        "japanese": "十月",
-        "reading": "じゅうがつ",
-        "meaning": "October",
-        "dictionaryId": "1334570"
-      },
-      {
-        "japanese": "四月",
-        "reading": "しがつ",
-        "meaning": "April",
-        "dictionaryId": "1307180"
-      },
-      {
-        "japanese": "十一月",
-        "reading": "じゅういちがつ",
-        "meaning": "November",
-        "dictionaryId": "1334480"
-      },
-      {
-        "japanese": "十二月",
-        "reading": "じゅうにがつ",
-        "meaning": "December",
-        "dictionaryId": "1334910"
-      },
-      {
         "japanese": "月曜日",
         "reading": "げつようび",
         "meaning": "Monday",
         "dictionaryId": "1255890"
-      },
-      {
-        "japanese": "一月",
-        "reading": "ひとつき",
-        "meaning": "one month",
-        "dictionaryId": "1162130"
       },
       {
         "japanese": "毎月",
@@ -7275,16 +4335,46 @@
         "dictionaryId": "1584350"
       },
       {
-        "japanese": "一一月",
-        "reading": "じゅういちがつ",
-        "meaning": "November",
-        "dictionaryId": "1334480"
+        "japanese": "月曜",
+        "reading": "げつよう",
+        "meaning": "Monday",
+        "dictionaryId": "1255880"
       },
       {
-        "japanese": "一二月",
-        "reading": "じゅうにがつ",
-        "meaning": "December",
-        "dictionaryId": "1334910"
+        "japanese": "半月",
+        "reading": "はんつき",
+        "meaning": "half a month",
+        "dictionaryId": "1583170"
+      },
+      {
+        "japanese": "年月",
+        "reading": "としつき",
+        "meaning": "months and years",
+        "dictionaryId": "1582870"
+      },
+      {
+        "japanese": "年月日",
+        "reading": "ねんがっぴ",
+        "meaning": "date (year, month and day)",
+        "dictionaryId": "1468550"
+      },
+      {
+        "japanese": "生年月日",
+        "reading": "せいねんがっぴ",
+        "meaning": "birth date; date of birth; DOB",
+        "dictionaryId": "1379410"
+      },
+      {
+        "japanese": "月日",
+        "reading": "つきひ",
+        "meaning": "time; years; days",
+        "dictionaryId": "1255780"
+      },
+      {
+        "japanese": "月見",
+        "reading": "つきみ",
+        "meaning": "moon viewing (esp. during the eight month of the lunar calendar)",
+        "dictionaryId": "1255630"
       }
     ],
     "木": [
@@ -7359,54 +4449,6 @@
         "reading": "もくめ",
         "meaning": "grain (of wood)",
         "dictionaryId": "1584770"
-      },
-      {
-        "japanese": "木本",
-        "reading": "もくほん",
-        "meaning": "tree; woody plant",
-        "dictionaryId": "1807170"
-      },
-      {
-        "japanese": "名木",
-        "reading": "めいぼく",
-        "meaning": "old tree of historical interest",
-        "dictionaryId": "1531840"
-      },
-      {
-        "japanese": "一木",
-        "reading": "いちぼく",
-        "meaning": "one tree",
-        "dictionaryId": "1166940"
-      },
-      {
-        "japanese": "木造",
-        "reading": "もくぞう",
-        "meaning": "wooden; made of wood; wooden construction",
-        "dictionaryId": "1534740"
-      },
-      {
-        "japanese": "木材",
-        "reading": "もくざい",
-        "meaning": "lumber; timber; wood",
-        "dictionaryId": "1534660"
-      },
-      {
-        "japanese": "樹木",
-        "reading": "じゅもく",
-        "meaning": "tree; trees and shrubs",
-        "dictionaryId": "1330400"
-      },
-      {
-        "japanese": "並木",
-        "reading": "なみき",
-        "meaning": "roadside trees; row of trees",
-        "dictionaryId": "1599640"
-      },
-      {
-        "japanese": "植木",
-        "reading": "うえき",
-        "meaning": "garden plant; garden tree",
-        "dictionaryId": "1587970"
       }
     ],
     "本": [
@@ -7415,12 +4457,6 @@
         "reading": "にほんじん",
         "meaning": "Japanese person",
         "dictionaryId": "1464700"
-      },
-      {
-        "japanese": "一本",
-        "reading": "いっぽん",
-        "meaning": "one long cylindrical thing; one film, TV show, etc.; one goal, home run, etc.",
-        "dictionaryId": "1166600"
       },
       {
         "japanese": "日本語",
@@ -7487,48 +4523,6 @@
         "reading": "ほんき",
         "meaning": "seriousness; earnestness; truth",
         "dictionaryId": "1522370"
-      },
-      {
-        "japanese": "手本",
-        "reading": "てほん",
-        "meaning": "model; (good) example; exemplar",
-        "dictionaryId": "1328390"
-      },
-      {
-        "japanese": "本日",
-        "reading": "ほんじつ",
-        "meaning": "today; this day",
-        "dictionaryId": "1523110"
-      },
-      {
-        "japanese": "本年",
-        "reading": "ほんねん",
-        "meaning": "this (current) year",
-        "dictionaryId": "1523120"
-      },
-      {
-        "japanese": "見本",
-        "reading": "みほん",
-        "meaning": "sample; specimen; pattern",
-        "dictionaryId": "1260100"
-      },
-      {
-        "japanese": "日本一",
-        "reading": "にほんいち",
-        "meaning": "Japan's best; number one in Japan",
-        "dictionaryId": "1730040"
-      },
-      {
-        "japanese": "西日本",
-        "reading": "にしにほん",
-        "meaning": "western Japan (usu. Chūbu region and westward)",
-        "dictionaryId": "1766670"
-      },
-      {
-        "japanese": "本書",
-        "reading": "ほんしょ",
-        "meaning": "main text",
-        "dictionaryId": "1522660"
       }
     ],
     "来": [
@@ -7603,54 +4597,6 @@
         "reading": "らいてん",
         "meaning": "coming to a store (restaurant, bar, shop, etc.)",
         "dictionaryId": "1548170"
-      },
-      {
-        "japanese": "入来",
-        "reading": "にゅうらい",
-        "meaning": "august visit; arrival",
-        "dictionaryId": "1466830"
-      },
-      {
-        "japanese": "上出来",
-        "reading": "じょうでき",
-        "meaning": "good performance; good work; great success",
-        "dictionaryId": "1353390"
-      },
-      {
-        "japanese": "生来",
-        "reading": "せいらい",
-        "meaning": "by nature; naturally; by birth",
-        "dictionaryId": "1645640"
-      },
-      {
-        "japanese": "出来",
-        "reading": "でき",
-        "meaning": "workmanship; craftsmanship; execution",
-        "dictionaryId": "1340430"
-      },
-      {
-        "japanese": "以来",
-        "reading": "いらい",
-        "meaning": "since; henceforth",
-        "dictionaryId": "1155210"
-      },
-      {
-        "japanese": "将来",
-        "reading": "しょうらい",
-        "meaning": "future; (future) prospects",
-        "dictionaryId": "1347710"
-      },
-      {
-        "japanese": "従来",
-        "reading": "じゅうらい",
-        "meaning": "up to now; so far",
-        "dictionaryId": "1335400"
-      },
-      {
-        "japanese": "未来",
-        "reading": "みらい",
-        "meaning": "(distant) future",
-        "dictionaryId": "1528060"
       }
     ],
     "東": [
@@ -7725,54 +4671,6 @@
         "reading": "なんなんとう",
         "meaning": "south-southeast; south-south-east",
         "dictionaryId": "1599750"
-      },
-      {
-        "japanese": "東南東",
-        "reading": "とうなんとう",
-        "meaning": "east-southeast; ESE",
-        "dictionaryId": "1943910"
-      },
-      {
-        "japanese": "東欧",
-        "reading": "とうおう",
-        "meaning": "Eastern Europe",
-        "dictionaryId": "1447560"
-      },
-      {
-        "japanese": "東洋",
-        "reading": "とうよう",
-        "meaning": "the East; the Orient; (East) Asia",
-        "dictionaryId": "1448230"
-      },
-      {
-        "japanese": "東部",
-        "reading": "とうぶ",
-        "meaning": "eastern part; the east (of a region)",
-        "dictionaryId": "1448100"
-      },
-      {
-        "japanese": "東海",
-        "reading": "とうかい",
-        "meaning": "Tōkai region (of Honshu; incl. Aichi, Shizuoka, Mie and southern Gifu prefectures)",
-        "dictionaryId": "1447590"
-      },
-      {
-        "japanese": "極東",
-        "reading": "きょくとう",
-        "meaning": "Far East",
-        "dictionaryId": "1240450"
-      },
-      {
-        "japanese": "東側",
-        "reading": "ひがしがわ",
-        "meaning": "east side; east bank",
-        "dictionaryId": "1582270"
-      },
-      {
-        "japanese": "東方",
-        "reading": "とうほう",
-        "meaning": "eastern direction",
-        "dictionaryId": "1448120"
       }
     ],
     "校": [
@@ -7847,54 +4745,6 @@
         "reading": "じょがっこう",
         "meaning": "girls' school",
         "dictionaryId": "1761990"
-      },
-      {
-        "japanese": "下校",
-        "reading": "げこう",
-        "meaning": "leaving school (at the end of the day); getting out of school; coming home from school",
-        "dictionaryId": "1184920"
-      },
-      {
-        "japanese": "入校",
-        "reading": "にゅうこう",
-        "meaning": "admission (to a school); entrance; enrolment",
-        "dictionaryId": "1466090"
-      },
-      {
-        "japanese": "校外",
-        "reading": "こうがい",
-        "meaning": "out-of-school; off-campus",
-        "dictionaryId": "1279500"
-      },
-      {
-        "japanese": "学校名",
-        "reading": "がっこうめい",
-        "meaning": "school name",
-        "dictionaryId": "2140420"
-      },
-      {
-        "japanese": "校友",
-        "reading": "こうゆう",
-        "meaning": "schoolmate; alumnus",
-        "dictionaryId": "1279630"
-      },
-      {
-        "japanese": "校長",
-        "reading": "こうちょう",
-        "meaning": "principal; head teacher; headmaster",
-        "dictionaryId": "1279590"
-      },
-      {
-        "japanese": "登校",
-        "reading": "とうこう",
-        "meaning": "attendance (at school); going to school",
-        "dictionaryId": "1444760"
-      },
-      {
-        "japanese": "校舎",
-        "reading": "こうしゃ",
-        "meaning": "school building; schoolhouse",
-        "dictionaryId": "1279540"
       }
     ],
     "母": [
@@ -7969,54 +4819,6 @@
         "reading": "ぼたい",
         "meaning": "mother's body (esp. when pregnant or after giving birth)",
         "dictionaryId": "1515160"
-      },
-      {
-        "japanese": "空母",
-        "reading": "くうぼ",
-        "meaning": "aircraft carrier",
-        "dictionaryId": "1246020"
-      },
-      {
-        "japanese": "保母",
-        "reading": "ほぼ",
-        "meaning": "(female) childcare worker; nursery school teacher",
-        "dictionaryId": "1603540"
-      },
-      {
-        "japanese": "母乳",
-        "reading": "ぼにゅう",
-        "meaning": "mother's milk",
-        "dictionaryId": "1515190"
-      },
-      {
-        "japanese": "祖父母",
-        "reading": "そふぼ",
-        "meaning": "grandparents",
-        "dictionaryId": "1396850"
-      },
-      {
-        "japanese": "母性",
-        "reading": "ぼせい",
-        "meaning": "motherhood; maternity",
-        "dictionaryId": "1515130"
-      },
-      {
-        "japanese": "養父母",
-        "reading": "ようふぼ",
-        "meaning": "adoptive parents",
-        "dictionaryId": "1794170"
-      },
-      {
-        "japanese": "実母",
-        "reading": "じつぼ",
-        "meaning": "one's real mother; natural mother; birth mother",
-        "dictionaryId": "1321450"
-      },
-      {
-        "japanese": "母港",
-        "reading": "ぼこう",
-        "meaning": "home port",
-        "dictionaryId": "1515050"
       }
     ],
     "毎": [
@@ -8159,54 +4961,6 @@
         "reading": "きまえ",
         "meaning": "generosity",
         "dictionaryId": "1222410"
-      },
-      {
-        "japanese": "水気",
-        "reading": "みずけ",
-        "meaning": "water content; moisture; juiciness",
-        "dictionaryId": "1371390"
-      },
-      {
-        "japanese": "生気",
-        "reading": "せいき",
-        "meaning": "life; vitality; verve",
-        "dictionaryId": "1612400"
-      },
-      {
-        "japanese": "上気",
-        "reading": "じょうき",
-        "meaning": "flushing (of one's cheeks); dizziness; rush of blood to the head",
-        "dictionaryId": "1352870"
-      },
-      {
-        "japanese": "火気",
-        "reading": "かき",
-        "meaning": "fire; trace of fire; heat of fire",
-        "dictionaryId": "1193790"
-      },
-      {
-        "japanese": "景気",
-        "reading": "けいき",
-        "meaning": "business conditions; the market; economic activity",
-        "dictionaryId": "1250830"
-      },
-      {
-        "japanese": "気持",
-        "reading": "きもち",
-        "meaning": "feeling; sensation; mood",
-        "dictionaryId": "1591430"
-      },
-      {
-        "japanese": "病気",
-        "reading": "びょうき",
-        "meaning": "illness (usu. excluding minor ailments, e.g. common cold); disease; sickness",
-        "dictionaryId": "1490230"
-      },
-      {
-        "japanese": "空気",
-        "reading": "くうき",
-        "meaning": "air; atmosphere",
-        "dictionaryId": "1245470"
       }
     ],
     "水": [
@@ -8281,57 +5035,15 @@
         "reading": "みずぐち",
         "meaning": "spout",
         "dictionaryId": "1736740"
-      },
-      {
-        "japanese": "水気",
-        "reading": "みずけ",
-        "meaning": "water content; moisture; juiciness",
-        "dictionaryId": "1371390"
-      },
-      {
-        "japanese": "水車",
-        "reading": "すいしゃ",
-        "meaning": "water wheel",
-        "dictionaryId": "1371600"
-      },
-      {
-        "japanese": "白水",
-        "reading": "しろみず",
-        "meaning": "color of water after washing rice (colour)",
-        "dictionaryId": "1841140"
-      },
-      {
-        "japanese": "出水",
-        "reading": "しゅっすい",
-        "meaning": "flood; freshet; inundation",
-        "dictionaryId": "1580040"
-      },
-      {
-        "japanese": "水木",
-        "reading": "みずき",
-        "meaning": "dogwood (Cornus controversa)",
-        "dictionaryId": "1736790"
-      },
-      {
-        "japanese": "山水",
-        "reading": "さんすい",
-        "meaning": "mountain and water; landscape (containing hills and rivers)",
-        "dictionaryId": "1302980"
-      },
-      {
-        "japanese": "上水",
-        "reading": "じょうすい",
-        "meaning": "water supply; tap water",
-        "dictionaryId": "1353560"
-      },
-      {
-        "japanese": "水生",
-        "reading": "すいせい",
-        "meaning": "aquatic (life); living in the water",
-        "dictionaryId": "1371740"
       }
     ],
     "火": [
+      {
+        "japanese": "火傷",
+        "reading": "やけど",
+        "meaning": "burn; scald",
+        "dictionaryId": "1577310"
+      },
       {
         "japanese": "火曜日",
         "reading": "かようび",
@@ -8369,16 +5081,16 @@
         "dictionaryId": "1193880"
       },
       {
-        "japanese": "火口",
-        "reading": "かこう",
-        "meaning": "(volcanic) crater; caldera",
-        "dictionaryId": "1193860"
-      },
-      {
         "japanese": "火事",
         "reading": "かじ",
         "meaning": "fire; conflagration",
         "dictionaryId": "1193950"
+      },
+      {
+        "japanese": "火口",
+        "reading": "かこう",
+        "meaning": "(volcanic) crater; caldera",
+        "dictionaryId": "1193860"
       },
       {
         "japanese": "花火",
@@ -8397,60 +5109,6 @@
         "reading": "ぼうか",
         "meaning": "fire prevention; fire control; fireproofing",
         "dictionaryId": "1520260"
-      },
-      {
-        "japanese": "火花",
-        "reading": "ひばな",
-        "meaning": "spark",
-        "dictionaryId": "1193760"
-      },
-      {
-        "japanese": "発火",
-        "reading": "はっか",
-        "meaning": "ignition; combustion; catching fire",
-        "dictionaryId": "1477180"
-      },
-      {
-        "japanese": "点火",
-        "reading": "てんか",
-        "meaning": "ignition; lighting; firing",
-        "dictionaryId": "1441440"
-      },
-      {
-        "japanese": "火傷",
-        "reading": "やけど",
-        "meaning": "burn; scald",
-        "dictionaryId": "1577310"
-      },
-      {
-        "japanese": "引火",
-        "reading": "いんか",
-        "meaning": "ignition; catching fire",
-        "dictionaryId": "1169480"
-      },
-      {
-        "japanese": "火曜",
-        "reading": "かよう",
-        "meaning": "Tuesday",
-        "dictionaryId": "1194280"
-      },
-      {
-        "japanese": "口火",
-        "reading": "くちび",
-        "meaning": "fuse; pilot light",
-        "dictionaryId": "1275860"
-      },
-      {
-        "japanese": "大火",
-        "reading": "たいか",
-        "meaning": "large fire",
-        "dictionaryId": "1413170"
-      },
-      {
-        "japanese": "下火",
-        "reading": "したび",
-        "meaning": "dying down (of a fire); waning",
-        "dictionaryId": "1184580"
       }
     ],
     "父": [
@@ -8525,42 +5183,6 @@
         "reading": "ようふぼ",
         "meaning": "adoptive parents",
         "dictionaryId": "1794170"
-      },
-      {
-        "japanese": "実父",
-        "reading": "じっぷ",
-        "meaning": "one's real father; natural father; biological father",
-        "dictionaryId": "1321420"
-      },
-      {
-        "japanese": "亡父",
-        "reading": "ぼうふ",
-        "meaning": "deceased father; late father",
-        "dictionaryId": "1607270"
-      },
-      {
-        "japanese": "父兄",
-        "reading": "ふけい",
-        "meaning": "guardians; parents",
-        "dictionaryId": "1497630"
-      },
-      {
-        "japanese": "家父",
-        "reading": "かふ",
-        "meaning": "one's father",
-        "dictionaryId": "1718340"
-      },
-      {
-        "japanese": "父方",
-        "reading": "ちちかた",
-        "meaning": "father's side of family",
-        "dictionaryId": "1497700"
-      },
-      {
-        "japanese": "父祖",
-        "reading": "ふそ",
-        "meaning": "ancestors",
-        "dictionaryId": "1690760"
       }
     ],
     "生": [
@@ -8635,54 +5257,6 @@
         "reading": "しんせい",
         "meaning": "rebirth; new birth; nascent",
         "dictionaryId": "1362010"
-      },
-      {
-        "japanese": "一年生",
-        "reading": "いちねんせい",
-        "meaning": "first-year student; first-year pupil",
-        "dictionaryId": "1165580"
-      },
-      {
-        "japanese": "生年月日",
-        "reading": "せいねんがっぴ",
-        "meaning": "birth date; date of birth; DOB",
-        "dictionaryId": "1379410"
-      },
-      {
-        "japanese": "生後",
-        "reading": "せいご",
-        "meaning": "post-natal; since birth",
-        "dictionaryId": "1378950"
-      },
-      {
-        "japanese": "半生",
-        "reading": "はんせい",
-        "meaning": "half a lifetime; half one's life; one's life so far",
-        "dictionaryId": "1479560"
-      },
-      {
-        "japanese": "生新",
-        "reading": "せいしん",
-        "meaning": "fresh; new",
-        "dictionaryId": "1621220"
-      },
-      {
-        "japanese": "女学生",
-        "reading": "じょがくせい",
-        "meaning": "schoolgirl; female student",
-        "dictionaryId": "1345050"
-      },
-      {
-        "japanese": "生来",
-        "reading": "せいらい",
-        "meaning": "by nature; naturally; by birth",
-        "dictionaryId": "1645640"
-      },
-      {
-        "japanese": "生気",
-        "reading": "せいき",
-        "meaning": "life; vitality; verve",
-        "dictionaryId": "1612400"
       }
     ],
     "田": [
@@ -8757,54 +5331,6 @@
         "reading": "そうでん",
         "meaning": "mulberry plantation",
         "dictionaryId": "1247120"
-      },
-      {
-        "japanese": "票田",
-        "reading": "ひょうでん",
-        "meaning": "(reliable) source of votes; area of strong electoral support; stronghold",
-        "dictionaryId": "1627620"
-      },
-      {
-        "japanese": "稲田",
-        "reading": "いなだ",
-        "meaning": "paddy field; rice field",
-        "dictionaryId": "1613370"
-      },
-      {
-        "japanese": "塩田",
-        "reading": "えんでん",
-        "meaning": "saltpan; field for drying salt",
-        "dictionaryId": "1178790"
-      },
-      {
-        "japanese": "炭田",
-        "reading": "たんでん",
-        "meaning": "coalfield; coal field",
-        "dictionaryId": "1661270"
-      },
-      {
-        "japanese": "沼田",
-        "reading": "ぬまた",
-        "meaning": "deep-mud paddy",
-        "dictionaryId": "1628100"
-      },
-      {
-        "japanese": "真田",
-        "reading": "さなだ",
-        "meaning": "plait; braid",
-        "dictionaryId": "1364170"
-      },
-      {
-        "japanese": "田楽",
-        "reading": "でんがく",
-        "meaning": "ritual music and dancing in shrines and temples",
-        "dictionaryId": "1629880"
-      },
-      {
-        "japanese": "青田",
-        "reading": "あおた",
-        "meaning": "green paddy",
-        "dictionaryId": "1750070"
       }
     ],
     "男": [
@@ -8879,54 +5405,6 @@
         "reading": "ちょうなん",
         "meaning": "eldest son (may be the only son); first-born son",
         "dictionaryId": "1430080"
-      },
-      {
-        "japanese": "男児",
-        "reading": "だんじ",
-        "meaning": "boy; son",
-        "dictionaryId": "1623610"
-      },
-      {
-        "japanese": "男優",
-        "reading": "だんゆう",
-        "meaning": "(male) actor",
-        "dictionaryId": "1420230"
-      },
-      {
-        "japanese": "次男",
-        "reading": "じなん",
-        "meaning": "second son",
-        "dictionaryId": "1316710"
-      },
-      {
-        "japanese": "美男",
-        "reading": "びなん",
-        "meaning": "handsome man",
-        "dictionaryId": "1486560"
-      },
-      {
-        "japanese": "男爵",
-        "reading": "だんしゃく",
-        "meaning": "baron",
-        "dictionaryId": "1420100"
-      },
-      {
-        "japanese": "貴男",
-        "reading": "あなた",
-        "meaning": "you",
-        "dictionaryId": "1223615"
-      },
-      {
-        "japanese": "男声",
-        "reading": "だんせい",
-        "meaning": "male voice",
-        "dictionaryId": "1792600"
-      },
-      {
-        "japanese": "男達",
-        "reading": "おとこたち",
-        "meaning": "men; males",
-        "dictionaryId": "2854195"
       }
     ],
     "白": [
@@ -9001,104 +5479,14 @@
         "reading": "こうはく",
         "meaning": "red and white; colours for festive or auspicious occasions (colors)",
         "dictionaryId": "1280790"
-      },
-      {
-        "japanese": "白鳥",
-        "reading": "はくちょう",
-        "meaning": "swan (Cygnus spp.)",
-        "dictionaryId": "1475330"
-      },
-      {
-        "japanese": "真白",
-        "reading": "まっしろ",
-        "meaning": "pure white",
-        "dictionaryId": "1580620"
-      },
-      {
-        "japanese": "白髪",
-        "reading": "しらが",
-        "meaning": "white hair; grey hair; gray hair",
-        "dictionaryId": "1583050"
-      },
-      {
-        "japanese": "告白",
-        "reading": "こくはく",
-        "meaning": "confession (to a crime, wrongdoing, etc.); admission",
-        "dictionaryId": "1286060"
-      },
-      {
-        "japanese": "潔白",
-        "reading": "けっぱく",
-        "meaning": "innocence; guiltlessness; purity",
-        "dictionaryId": "1254460"
-      },
-      {
-        "japanese": "白衣",
-        "reading": "はくい",
-        "meaning": "white clothes; white robe",
-        "dictionaryId": "1474990"
-      },
-      {
-        "japanese": "白熱",
-        "reading": "はくねつ",
-        "meaning": "white heat; incandescence; (emitting) white light",
-        "dictionaryId": "1475360"
-      },
-      {
-        "japanese": "面白",
-        "reading": "おもしろ",
-        "meaning": "amusing; funny; interesting",
-        "dictionaryId": "1533570"
       }
     ],
     "百": [
-      {
-        "japanese": "三百",
-        "reading": "さんびゃく",
-        "meaning": "300; three hundred",
-        "dictionaryId": "1301490"
-      },
-      {
-        "japanese": "二百",
-        "reading": "にひゃく",
-        "meaning": "200; two hundred",
-        "dictionaryId": "1656380"
-      },
-      {
-        "japanese": "百万",
-        "reading": "ひゃくまん",
-        "meaning": "1,000,000; one million; million",
-        "dictionaryId": "1488500"
-      },
       {
         "japanese": "何百",
         "reading": "なんびゃく",
         "meaning": "hundreds",
         "dictionaryId": "1189290"
-      },
-      {
-        "japanese": "四百",
-        "reading": "よんひゃく",
-        "meaning": "400; four hundred",
-        "dictionaryId": "1767090"
-      },
-      {
-        "japanese": "二百二十日",
-        "reading": "にひゃくはつか",
-        "meaning": "220th day; end of the storm period",
-        "dictionaryId": "1463040"
-      },
-      {
-        "japanese": "二百十日",
-        "reading": "にひゃくとおか",
-        "meaning": "210th day (from the first day of spring according to the lunar calendar); the storm day",
-        "dictionaryId": "1463030"
-      },
-      {
-        "japanese": "八百万",
-        "reading": "やおよろず",
-        "meaning": "myriad; countless things",
-        "dictionaryId": "1476980"
       },
       {
         "japanese": "百聞",
@@ -9111,12 +5499,6 @@
         "reading": "ひゃっかてん",
         "meaning": "department store",
         "dictionaryId": "1488090"
-      },
-      {
-        "japanese": "百億",
-        "reading": "ひゃくおく",
-        "meaning": "10,000,000,000; ten billion",
-        "dictionaryId": "1488010"
       },
       {
         "japanese": "数百",
@@ -9245,54 +5627,6 @@
         "reading": "もくめ",
         "meaning": "grain (of wood)",
         "dictionaryId": "1584770"
-      },
-      {
-        "japanese": "耳目",
-        "reading": "じもく",
-        "meaning": "eyes and ears; seeing and hearing",
-        "dictionaryId": "1317320"
-      },
-      {
-        "japanese": "金目",
-        "reading": "かねめ",
-        "meaning": "valuable; high-priced; precious",
-        "dictionaryId": "1243260"
-      },
-      {
-        "japanese": "大目",
-        "reading": "おおめ",
-        "meaning": "magnanimity; tolerance",
-        "dictionaryId": "1785500"
-      },
-      {
-        "japanese": "目下",
-        "reading": "もっか",
-        "meaning": "at present; now",
-        "dictionaryId": "1535330"
-      },
-      {
-        "japanese": "五目",
-        "reading": "ごもく",
-        "meaning": "mixture of ingredients (originally five)",
-        "dictionaryId": "1268640"
-      },
-      {
-        "japanese": "二目",
-        "reading": "ふため",
-        "meaning": "for a second time",
-        "dictionaryId": "1463230"
-      },
-      {
-        "japanese": "目標",
-        "reading": "もくひょう",
-        "meaning": "goal; target; aim",
-        "dictionaryId": "1535650"
-      },
-      {
-        "japanese": "目的",
-        "reading": "もくてき",
-        "meaning": "purpose; goal; aim",
-        "dictionaryId": "1535560"
       }
     ],
     "社": [
@@ -9367,54 +5701,6 @@
         "reading": "しゅっしゃ",
         "meaning": "going to work (e.g. in the morning); coming to work",
         "dictionaryId": "1339150"
-      },
-      {
-        "japanese": "大社",
-        "reading": "たいしゃ",
-        "meaning": "grand shrine; famous shrine",
-        "dictionaryId": "1413980"
-      },
-      {
-        "japanese": "社中",
-        "reading": "しゃちゅう",
-        "meaning": "in a company; troupe",
-        "dictionaryId": "1702530"
-      },
-      {
-        "japanese": "日本社会",
-        "reading": "にほんしゃかい",
-        "meaning": "Japanese society",
-        "dictionaryId": "2132420"
-      },
-      {
-        "japanese": "社長",
-        "reading": "しゃちょう",
-        "meaning": "company president; manager; director",
-        "dictionaryId": "1322920"
-      },
-      {
-        "japanese": "社員",
-        "reading": "しゃいん",
-        "meaning": "company employee",
-        "dictionaryId": "1322670"
-      },
-      {
-        "japanese": "商社",
-        "reading": "しょうしゃ",
-        "meaning": "trading company",
-        "dictionaryId": "1347080"
-      },
-      {
-        "japanese": "神社",
-        "reading": "じんじゃ",
-        "meaning": "Shinto shrine",
-        "dictionaryId": "1364670"
-      },
-      {
-        "japanese": "出版社",
-        "reading": "しゅっぱんしゃ",
-        "meaning": "publisher; publishing house; publishing company",
-        "dictionaryId": "1594870"
       }
     ],
     "私": [
@@ -9489,54 +5775,6 @@
         "reading": "しひ",
         "meaning": "private expense",
         "dictionaryId": "1311350"
-      },
-      {
-        "japanese": "私有",
-        "reading": "しゆう",
-        "meaning": "private ownership",
-        "dictionaryId": "1311390"
-      },
-      {
-        "japanese": "私設",
-        "reading": "しせつ",
-        "meaning": "private",
-        "dictionaryId": "1311290"
-      },
-      {
-        "japanese": "私生活",
-        "reading": "しせいかつ",
-        "meaning": "private life",
-        "dictionaryId": "1311260"
-      },
-      {
-        "japanese": "私案",
-        "reading": "しあん",
-        "meaning": "private plan; one's own plan",
-        "dictionaryId": "1658270"
-      },
-      {
-        "japanese": "私服",
-        "reading": "しふく",
-        "meaning": "ordinary clothes (i.e. non-uniform); plain clothes; civilian clothes",
-        "dictionaryId": "1658300"
-      },
-      {
-        "japanese": "私書箱",
-        "reading": "ししょばこ",
-        "meaning": "post office box",
-        "dictionaryId": "1311240"
-      },
-      {
-        "japanese": "私用",
-        "reading": "しよう",
-        "meaning": "personal use; private use",
-        "dictionaryId": "1311410"
-      },
-      {
-        "japanese": "私達",
-        "reading": "わたしたち",
-        "meaning": "we; us",
-        "dictionaryId": "1311300"
       }
     ],
     "立": [
@@ -9611,54 +5849,6 @@
         "reading": "たちみ",
         "meaning": "watching while standing (e.g. a play)",
         "dictionaryId": "1837950"
-      },
-      {
-        "japanese": "木立",
-        "reading": "こだち",
-        "meaning": "cluster of trees; grove; thicket",
-        "dictionaryId": "1593260"
-      },
-      {
-        "japanese": "立会人",
-        "reading": "たちあいにん",
-        "meaning": "witness; observer",
-        "dictionaryId": "1837720"
-      },
-      {
-        "japanese": "立食",
-        "reading": "りっしょく",
-        "meaning": "stand-up meal; buffet",
-        "dictionaryId": "1838170"
-      },
-      {
-        "japanese": "立場",
-        "reading": "たちば",
-        "meaning": "position; situation",
-        "dictionaryId": "1551710"
-      },
-      {
-        "japanese": "対立",
-        "reading": "たいりつ",
-        "meaning": "confrontation; opposition; antagonism",
-        "dictionaryId": "1410290"
-      },
-      {
-        "japanese": "成立",
-        "reading": "せいりつ",
-        "meaning": "formation; establishment; materialization",
-        "dictionaryId": "1375880"
-      },
-      {
-        "japanese": "独立",
-        "reading": "どくりつ",
-        "meaning": "independence; self-reliance; supporting oneself",
-        "dictionaryId": "1456040"
-      },
-      {
-        "japanese": "設立",
-        "reading": "せつりつ",
-        "meaning": "establishment; founding",
-        "dictionaryId": "1386090"
       }
     ],
     "耳": [
@@ -9789,24 +5979,6 @@
         "reading": "ききざけ",
         "meaning": "sake tasting; wine tasting",
         "dictionaryId": "1664890"
-      },
-      {
-        "japanese": "壁新聞",
-        "reading": "かべしんぶん",
-        "meaning": "wall newspaper; wall poster",
-        "dictionaryId": "1635980"
-      },
-      {
-        "japanese": "前代未聞",
-        "reading": "ぜんだいみもん",
-        "meaning": "unheard-of; unprecedented; unparalleled in history (unparallelled)",
-        "dictionaryId": "1393580"
-      },
-      {
-        "japanese": "新聞記事",
-        "reading": "しんぶんきじ",
-        "meaning": "newspaper story (article, account)",
-        "dictionaryId": "1939070"
       }
     ],
     "行": [
@@ -9815,6 +5987,12 @@
         "reading": "ぎんこう",
         "meaning": "bank; banking institution",
         "dictionaryId": "1243490"
+      },
+      {
+        "japanese": "飛行機",
+        "reading": "ひこうき",
+        "meaning": "airplane; aeroplane; plane",
+        "dictionaryId": "1485470"
       },
       {
         "japanese": "先行",
@@ -9875,60 +6053,6 @@
         "reading": "りょこう",
         "meaning": "travel; trip; journey",
         "dictionaryId": "1553170"
-      },
-      {
-        "japanese": "発行",
-        "reading": "はっこう",
-        "meaning": "publication (of a newspaper, magazine, book, etc.); issue",
-        "dictionaryId": "1477390"
-      },
-      {
-        "japanese": "行方",
-        "reading": "ゆくえ",
-        "meaning": "(one's) whereabouts",
-        "dictionaryId": "1282180"
-      },
-      {
-        "japanese": "行為",
-        "reading": "こうい",
-        "meaning": "act; deed; conduct",
-        "dictionaryId": "1281830"
-      },
-      {
-        "japanese": "実行",
-        "reading": "じっこう",
-        "meaning": "execution (e.g. of a plan); carrying out; (putting into) practice",
-        "dictionaryId": "1321040"
-      },
-      {
-        "japanese": "行使",
-        "reading": "こうし",
-        "meaning": "use; exercise (of one's right, authority, power, etc.)",
-        "dictionaryId": "1281910"
-      },
-      {
-        "japanese": "代行",
-        "reading": "だいこう",
-        "meaning": "acting as agent; acting on (someone's) behalf; executing business for",
-        "dictionaryId": "1411850"
-      },
-      {
-        "japanese": "犯行",
-        "reading": "はんこう",
-        "meaning": "crime; criminal act; offence",
-        "dictionaryId": "1481570"
-      },
-      {
-        "japanese": "飛行",
-        "reading": "ひこう",
-        "meaning": "flight; flying; aviation",
-        "dictionaryId": "1485450"
-      },
-      {
-        "japanese": "執行",
-        "reading": "しっこう",
-        "meaning": "execution; carrying out; performance",
-        "dictionaryId": "1319630"
       }
     ],
     "西": [
@@ -10003,54 +6127,6 @@
         "reading": "なんなんせい",
         "meaning": "south-southwest; south-south-west",
         "dictionaryId": "1599740"
-      },
-      {
-        "japanese": "西欧",
-        "reading": "せいおう",
-        "meaning": "Western Europe",
-        "dictionaryId": "1380900"
-      },
-      {
-        "japanese": "西部",
-        "reading": "せいぶ",
-        "meaning": "western part; the west (of a region)",
-        "dictionaryId": "1381040"
-      },
-      {
-        "japanese": "西洋",
-        "reading": "せいよう",
-        "meaning": "the West; the Occident; Western countries",
-        "dictionaryId": "1381100"
-      },
-      {
-        "japanese": "西暦",
-        "reading": "せいれき",
-        "meaning": "Common Era; CE; Christian Era",
-        "dictionaryId": "1381140"
-      },
-      {
-        "japanese": "西側",
-        "reading": "にしがわ",
-        "meaning": "west side; west bank",
-        "dictionaryId": "1380980"
-      },
-      {
-        "japanese": "関西",
-        "reading": "かんさい",
-        "meaning": "Kansai (region comprising Kyoto, Osaka, Kobe and surrounding prefectures)",
-        "dictionaryId": "1215910"
-      },
-      {
-        "japanese": "大西洋",
-        "reading": "たいせいよう",
-        "meaning": "Atlantic Ocean",
-        "dictionaryId": "1414310"
-      },
-      {
-        "japanese": "西独",
-        "reading": "せいどく",
-        "meaning": "West Germany (1949-1990)",
-        "dictionaryId": "1645370"
       }
     ],
     "見": [
@@ -10125,54 +6201,6 @@
         "reading": "しけん",
         "meaning": "personal opinion",
         "dictionaryId": "1311180"
-      },
-      {
-        "japanese": "立見",
-        "reading": "たちみ",
-        "meaning": "watching while standing (e.g. a play)",
-        "dictionaryId": "1837950"
-      },
-      {
-        "japanese": "見分",
-        "reading": "けんぶん",
-        "meaning": "inspection; examination; survey",
-        "dictionaryId": "1617840"
-      },
-      {
-        "japanese": "意見",
-        "reading": "いけん",
-        "meaning": "opinion; view; comment",
-        "dictionaryId": "1156530"
-      },
-      {
-        "japanese": "見方",
-        "reading": "みかた",
-        "meaning": "viewpoint; point of view; way of looking (at something)",
-        "dictionaryId": "1260070"
-      },
-      {
-        "japanese": "見解",
-        "reading": "けんかい",
-        "meaning": "opinion; point of view",
-        "dictionaryId": "1259390"
-      },
-      {
-        "japanese": "発見",
-        "reading": "はっけん",
-        "meaning": "discovery; detection; finding",
-        "dictionaryId": "1477310"
-      },
-      {
-        "japanese": "見事",
-        "reading": "みごと",
-        "meaning": "splendid; magnificent; excellent",
-        "dictionaryId": "1259620"
-      },
-      {
-        "japanese": "偏見",
-        "reading": "へんけん",
-        "meaning": "prejudice; bias; distorted view",
-        "dictionaryId": "1510380"
       }
     ],
     "話": [
@@ -10247,54 +6275,6 @@
         "reading": "だんわ",
         "meaning": "talk; conversation; dialogue",
         "dictionaryId": "1420280"
-      },
-      {
-        "japanese": "通話",
-        "reading": "つうわ",
-        "meaning": "telephone call; speaking over the telephone; (Internet) voice call",
-        "dictionaryId": "1433610"
-      },
-      {
-        "japanese": "神話",
-        "reading": "しんわ",
-        "meaning": "myth; mythology",
-        "dictionaryId": "1364940"
-      },
-      {
-        "japanese": "童話",
-        "reading": "どうわ",
-        "meaning": "children's story; fairy tale",
-        "dictionaryId": "1454000"
-      },
-      {
-        "japanese": "民話",
-        "reading": "みんわ",
-        "meaning": "folk tale; folktale; folk story",
-        "dictionaryId": "1529310"
-      },
-      {
-        "japanese": "昔話",
-        "reading": "むかしばなし",
-        "meaning": "old tale; folk tale; legend",
-        "dictionaryId": "1382430"
-      },
-      {
-        "japanese": "世話人",
-        "reading": "せわにん",
-        "meaning": "sponsor; manager; caretaker",
-        "dictionaryId": "1374340"
-      },
-      {
-        "japanese": "実話",
-        "reading": "じつわ",
-        "meaning": "true story",
-        "dictionaryId": "1321580"
-      },
-      {
-        "japanese": "電話機",
-        "reading": "でんわき",
-        "meaning": "telephone (device)",
-        "dictionaryId": "1443870"
       }
     ],
     "語": [
@@ -10369,54 +6349,6 @@
         "reading": "こくごがく",
         "meaning": "Japanese philology; Japanese linguistics",
         "dictionaryId": "1935530"
-      },
-      {
-        "japanese": "語学力",
-        "reading": "ごがくりょく",
-        "meaning": "language learning ability; foreign language skills; linguistic ability",
-        "dictionaryId": "1934820"
-      },
-      {
-        "japanese": "母国語",
-        "reading": "ぼこくご",
-        "meaning": "language of one's country; mother tongue; native language",
-        "dictionaryId": "1515070"
-      },
-      {
-        "japanese": "中国語",
-        "reading": "ちゅうごくご",
-        "meaning": "Chinese (language)",
-        "dictionaryId": "1424290"
-      },
-      {
-        "japanese": "英語",
-        "reading": "えいご",
-        "meaning": "English (language)",
-        "dictionaryId": "1174420"
-      },
-      {
-        "japanese": "物語",
-        "reading": "ものがたり",
-        "meaning": "story; tale; narrative",
-        "dictionaryId": "1502480"
-      },
-      {
-        "japanese": "言語",
-        "reading": "げんご",
-        "meaning": "language",
-        "dictionaryId": "1264420"
-      },
-      {
-        "japanese": "用語",
-        "reading": "ようご",
-        "meaning": "term; terminology",
-        "dictionaryId": "1546270"
-      },
-      {
-        "japanese": "落語",
-        "reading": "らくご",
-        "meaning": "rakugo; traditional Japanese comic storytelling; comic story (told by a professional storyteller)",
-        "dictionaryId": "1548720"
       }
     ],
     "読": [
@@ -10491,54 +6423,6 @@
         "reading": "かいどく",
         "meaning": "deciphering; decoding",
         "dictionaryId": "1199200"
-      },
-      {
-        "japanese": "読経",
-        "reading": "どきょう",
-        "meaning": "sutra chanting",
-        "dictionaryId": "1456390"
-      },
-      {
-        "japanese": "必読",
-        "reading": "ひつどく",
-        "meaning": "must-read; required reading",
-        "dictionaryId": "1487630"
-      },
-      {
-        "japanese": "音読",
-        "reading": "おんどく",
-        "meaning": "reading aloud",
-        "dictionaryId": "1183990"
-      },
-      {
-        "japanese": "副読本",
-        "reading": "ふくとくほん",
-        "meaning": "supplementary reader",
-        "dictionaryId": "1583750"
-      },
-      {
-        "japanese": "代読",
-        "reading": "だいどく",
-        "meaning": "reading for another",
-        "dictionaryId": "1412110"
-      },
-      {
-        "japanese": "読解",
-        "reading": "どっかい",
-        "meaning": "reading comprehension",
-        "dictionaryId": "1456370"
-      },
-      {
-        "japanese": "速読",
-        "reading": "そくどく",
-        "meaning": "speed reading",
-        "dictionaryId": "1709180"
-      },
-      {
-        "japanese": "読破",
-        "reading": "どくは",
-        "meaning": "reading through (a book); finishing (a book)",
-        "dictionaryId": "1456460"
       }
     ],
     "買": [
@@ -10613,30 +6497,6 @@
         "reading": "かいかた",
         "meaning": "buyer; purchaser",
         "dictionaryId": "1752880"
-      },
-      {
-        "japanese": "仲買人",
-        "reading": "なかがいにん",
-        "meaning": "broker; jobber",
-        "dictionaryId": "1426040"
-      },
-      {
-        "japanese": "買得",
-        "reading": "かいどく",
-        "meaning": "bargain; good buy",
-        "dictionaryId": "1752990"
-      },
-      {
-        "japanese": "買主",
-        "reading": "かいぬし",
-        "meaning": "buyer; purchaser",
-        "dictionaryId": "1589710"
-      },
-      {
-        "japanese": "人身売買",
-        "reading": "じんしんばいばい",
-        "meaning": "human trafficking; slave trade",
-        "dictionaryId": "1368320"
       }
     ],
     "足": [
@@ -10711,54 +6571,6 @@
         "reading": "あまあし",
         "meaning": "rain intensity",
         "dictionaryId": "1576430"
-      },
-      {
-        "japanese": "不足",
-        "reading": "ふそく",
-        "meaning": "insufficiency; deficiency; shortage",
-        "dictionaryId": "1493700"
-      },
-      {
-        "japanese": "発足",
-        "reading": "ほっそく",
-        "meaning": "starting; inauguration; launch",
-        "dictionaryId": "1583130"
-      },
-      {
-        "japanese": "満足",
-        "reading": "まんぞく",
-        "meaning": "satisfaction; contentment; gratification",
-        "dictionaryId": "1526860"
-      },
-      {
-        "japanese": "足元",
-        "reading": "あしもと",
-        "meaning": "at one's feet; underfoot; one's step (as in \"watch your step\")",
-        "dictionaryId": "1586390"
-      },
-      {
-        "japanese": "足跡",
-        "reading": "あしあと",
-        "meaning": "footprints",
-        "dictionaryId": "1581330"
-      },
-      {
-        "japanese": "足首",
-        "reading": "あしくび",
-        "meaning": "ankle",
-        "dictionaryId": "1404840"
-      },
-      {
-        "japanese": "補足",
-        "reading": "ほそく",
-        "meaning": "supplement; complement",
-        "dictionaryId": "1514700"
-      },
-      {
-        "japanese": "遠足",
-        "reading": "えんそく",
-        "meaning": "school trip; field trip; excursion",
-        "dictionaryId": "1178260"
       }
     ],
     "車": [
@@ -10833,54 +6645,6 @@
         "reading": "れっしゃ",
         "meaning": "train; railway train",
         "dictionaryId": "1558370"
-      },
-      {
-        "japanese": "車両",
-        "reading": "しゃりょう",
-        "meaning": "(wheeled) vehicle; car; (railroad) car",
-        "dictionaryId": "1323250"
-      },
-      {
-        "japanese": "車輌",
-        "reading": "しゃりょう",
-        "meaning": "(wheeled) vehicle; car; (railroad) car",
-        "dictionaryId": "1323250"
-      },
-      {
-        "japanese": "戦車",
-        "reading": "せんしゃ",
-        "meaning": "tank (military vehicle)",
-        "dictionaryId": "1390270"
-      },
-      {
-        "japanese": "車内",
-        "reading": "しゃない",
-        "meaning": "inside a car (train, bus, etc.)",
-        "dictionaryId": "1323220"
-      },
-      {
-        "japanese": "車庫",
-        "reading": "しゃこ",
-        "meaning": "garage; carport; depot (for trains, buses, etc.)",
-        "dictionaryId": "1323120"
-      },
-      {
-        "japanese": "駐車",
-        "reading": "ちゅうしゃ",
-        "meaning": "parking (a vehicle)",
-        "dictionaryId": "1426910"
-      },
-      {
-        "japanese": "乗車",
-        "reading": "じょうしゃ",
-        "meaning": "boarding (a train, bus, etc.); getting into (e.g. a taxi)",
-        "dictionaryId": "1355270"
-      },
-      {
-        "japanese": "停車",
-        "reading": "ていしゃ",
-        "meaning": "stopping (of a train, car, etc.); stop",
-        "dictionaryId": "1434960"
       }
     ],
     "週": [
@@ -10907,12 +6671,6 @@
         "reading": "しゅうまつ",
         "meaning": "weekend",
         "dictionaryId": "1333520"
-      },
-      {
-        "japanese": "一週間",
-        "reading": "いっしゅうかん",
-        "meaning": "one week",
-        "dictionaryId": "1163270"
       },
       {
         "japanese": "毎週",
@@ -10961,36 +6719,6 @@
         "reading": "かくしゅう",
         "meaning": "every other week; every two weeks",
         "dictionaryId": "1607110"
-      },
-      {
-        "japanese": "次週",
-        "reading": "じしゅう",
-        "meaning": "next week",
-        "dictionaryId": "1635230"
-      },
-      {
-        "japanese": "翌週",
-        "reading": "よくしゅう",
-        "meaning": "the following week; the next week",
-        "dictionaryId": "1547500"
-      },
-      {
-        "japanese": "再来週",
-        "reading": "さらいしゅう",
-        "meaning": "week after next",
-        "dictionaryId": "1293650"
-      },
-      {
-        "japanese": "今週末",
-        "reading": "こんしゅうまつ",
-        "meaning": "this weekend",
-        "dictionaryId": "2100500"
-      },
-      {
-        "japanese": "週刊誌",
-        "reading": "しゅうかんし",
-        "meaning": "weekly (publication); weekly magazine; weekly journal",
-        "dictionaryId": "1333490"
       }
     ],
     "金": [
@@ -11065,54 +6793,6 @@
         "reading": "きんり",
         "meaning": "interest rate; interest",
         "dictionaryId": "1243330"
-      },
-      {
-        "japanese": "金融",
-        "reading": "きんゆう",
-        "meaning": "finance; financing; credit transacting",
-        "dictionaryId": "1243290"
-      },
-      {
-        "japanese": "口金",
-        "reading": "くちがね",
-        "meaning": "(metal) cap",
-        "dictionaryId": "1276000"
-      },
-      {
-        "japanese": "料金",
-        "reading": "りょうきん",
-        "meaning": "fee; charge; fare",
-        "dictionaryId": "1554280"
-      },
-      {
-        "japanese": "現金",
-        "reading": "げんきん",
-        "meaning": "cash; ready money; money on hand",
-        "dictionaryId": "1263550"
-      },
-      {
-        "japanese": "金額",
-        "reading": "きんがく",
-        "meaning": "amount of money; sum",
-        "dictionaryId": "1242700"
-      },
-      {
-        "japanese": "預金",
-        "reading": "よきん",
-        "meaning": "deposit; bank account",
-        "dictionaryId": "1545020"
-      },
-      {
-        "japanese": "御金",
-        "reading": "おかね",
-        "meaning": "money",
-        "dictionaryId": "1001820"
-      },
-      {
-        "japanese": "貯金",
-        "reading": "ちょきん",
-        "meaning": "putting money aside; savings; deposit (e.g. in a bank)",
-        "dictionaryId": "1427170"
       }
     ],
     "雨": [
@@ -11187,54 +6867,6 @@
         "reading": "うき",
         "meaning": "rainy season",
         "dictionaryId": "1588010"
-      },
-      {
-        "japanese": "雨量",
-        "reading": "うりょう",
-        "meaning": "(amount of) rainfall",
-        "dictionaryId": "1172140"
-      },
-      {
-        "japanese": "豪雨",
-        "reading": "ごうう",
-        "meaning": "torrential rain; heavy rain; cloudburst",
-        "dictionaryId": "1285490"
-      },
-      {
-        "japanese": "降雨",
-        "reading": "こうう",
-        "meaning": "rainfall; rain",
-        "dictionaryId": "1282810"
-      },
-      {
-        "japanese": "長雨",
-        "reading": "ながあめ",
-        "meaning": "long spell of rain",
-        "dictionaryId": "1797640"
-      },
-      {
-        "japanese": "雨戸",
-        "reading": "あまど",
-        "meaning": "sliding storm shutter",
-        "dictionaryId": "1171970"
-      },
-      {
-        "japanese": "雷雨",
-        "reading": "らいう",
-        "meaning": "thunderstorm; thundershower",
-        "dictionaryId": "1548420"
-      },
-      {
-        "japanese": "風雨",
-        "reading": "ふうう",
-        "meaning": "wind and rain",
-        "dictionaryId": "1499740"
-      },
-      {
-        "japanese": "雨具",
-        "reading": "あまぐ",
-        "meaning": "rain gear",
-        "dictionaryId": "1171940"
       }
     ],
     "電": [
@@ -11309,54 +6941,6 @@
         "reading": "でんぱ",
         "meaning": "radio wave; reception; signal",
         "dictionaryId": "1443720"
-      },
-      {
-        "japanese": "電池",
-        "reading": "でんち",
-        "meaning": "battery; cell",
-        "dictionaryId": "1443620"
-      },
-      {
-        "japanese": "電源",
-        "reading": "でんげん",
-        "meaning": "source of electricity; electrical power",
-        "dictionaryId": "1443220"
-      },
-      {
-        "japanese": "停電",
-        "reading": "ていでん",
-        "meaning": "power outage; power failure; power cut",
-        "dictionaryId": "1435020"
-      },
-      {
-        "japanese": "電報",
-        "reading": "でんぽう",
-        "meaning": "telegram",
-        "dictionaryId": "1443760"
-      },
-      {
-        "japanese": "電流",
-        "reading": "でんりゅう",
-        "meaning": "electric current",
-        "dictionaryId": "1443790"
-      },
-      {
-        "japanese": "電線",
-        "reading": "でんせん",
-        "meaning": "electric line; electric cable; power cable",
-        "dictionaryId": "1443570"
-      },
-      {
-        "japanese": "家電",
-        "reading": "かでん",
-        "meaning": "household (electrical) appliances; home appliances; consumer electronics",
-        "dictionaryId": "1192380"
-      },
-      {
-        "japanese": "電柱",
-        "reading": "でんちゅう",
-        "meaning": "utility pole; power pole; telephone pole",
-        "dictionaryId": "1443630"
       }
     ],
     "食": [
@@ -11431,54 +7015,6 @@
         "reading": "にしょく",
         "meaning": "two meals; (eating) two meals a day",
         "dictionaryId": "1582660"
-      },
-      {
-        "japanese": "飲食店",
-        "reading": "いんしょくてん",
-        "meaning": "restaurant",
-        "dictionaryId": "1169950"
-      },
-      {
-        "japanese": "食前",
-        "reading": "しょくぜん",
-        "meaning": "before meals",
-        "dictionaryId": "1358520"
-      },
-      {
-        "japanese": "立食",
-        "reading": "りっしょく",
-        "meaning": "stand-up meal; buffet",
-        "dictionaryId": "1838170"
-      },
-      {
-        "japanese": "食品",
-        "reading": "しょくひん",
-        "meaning": "food; food products; foodstuffs",
-        "dictionaryId": "1358600"
-      },
-      {
-        "japanese": "食料",
-        "reading": "しょくりょう",
-        "meaning": "food",
-        "dictionaryId": "1358670"
-      },
-      {
-        "japanese": "昼食",
-        "reading": "ちゅうしょく",
-        "meaning": "lunch; midday meal",
-        "dictionaryId": "1602330"
-      },
-      {
-        "japanese": "夕食",
-        "reading": "ゆうしょく",
-        "meaning": "evening meal; dinner",
-        "dictionaryId": "1542730"
-      },
-      {
-        "japanese": "給食",
-        "reading": "きゅうしょく",
-        "meaning": "provision of lunch (e.g. at office, school, etc.); providing a meal; lunch service",
-        "dictionaryId": "1230250"
       }
     ],
     "飲": [
@@ -11553,18 +7089,6 @@
         "reading": "のみぐすり",
         "meaning": "oral medicine; internal medicine",
         "dictionaryId": "1169860"
-      },
-      {
-        "japanese": "清涼飲料水",
-        "reading": "せいりょういんりょうすい",
-        "meaning": "soft drink",
-        "dictionaryId": "1378410"
-      },
-      {
-        "japanese": "飲酒運転",
-        "reading": "いんしゅうんてん",
-        "meaning": "drunk driving; drink-driving; driving while intoxicated",
-        "dictionaryId": "1169910"
       }
     ],
     "駅": [
@@ -11695,54 +7219,6 @@
         "reading": "さきだか",
         "meaning": "higher future quotations",
         "dictionaryId": "1387660"
-      },
-      {
-        "japanese": "高年",
-        "reading": "こうねん",
-        "meaning": "old age",
-        "dictionaryId": "1808830"
-      },
-      {
-        "japanese": "女子高",
-        "reading": "じょしこう",
-        "meaning": "girls' high school",
-        "dictionaryId": "1345150"
-      },
-      {
-        "japanese": "女子高生",
-        "reading": "じょしこうせい",
-        "meaning": "female high school student",
-        "dictionaryId": "1345160"
-      },
-      {
-        "japanese": "最高",
-        "reading": "さいこう",
-        "meaning": "best; supreme; wonderful",
-        "dictionaryId": "1293850"
-      },
-      {
-        "japanese": "高齢",
-        "reading": "こうれい",
-        "meaning": "advanced age; old age",
-        "dictionaryId": "1284030"
-      },
-      {
-        "japanese": "高級",
-        "reading": "こうきゅう",
-        "meaning": "high-class; high-grade; high-quality",
-        "dictionaryId": "1283400"
-      },
-      {
-        "japanese": "残高",
-        "reading": "ざんだか",
-        "meaning": "(bank) balance; remainder",
-        "dictionaryId": "1304590"
-      },
-      {
-        "japanese": "高層",
-        "reading": "こうそう",
-        "meaning": "high-rise (building); multistory; multistoried",
-        "dictionaryId": "1283690"
       }
     ]
   }

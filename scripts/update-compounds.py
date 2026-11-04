@@ -25,8 +25,16 @@ characters = {line.split('|')[0] for line in kanji_section.splitlines() if line}
 # Prefer words already introduced in the notebook, then general-use dictionary words.
 introduced = set(re.findall(r'(?:^|\|)([一-龯々ヶ]{2,8})(?:\||$)', content, re.M))
 # These everyday fire words make a useful range of native and Sino-Japanese readings.
-fire_basics = ['火曜日', '火山', '火事', '花火', '火災', '消火', '火力', '火口', '防火', '出火', '引火', '点火', '発火', '火花', '火傷']
+fire_basics = ['火曜日', '火山', '火事', '花火', '火災', '消火', '火傷', '火力', '火口', '防火', '出火', '引火', '点火', '発火', '火花']
 by_kanji = {c: {} for c in characters}
+
+
+# Keep lexical words and a few useful irregular readings; charts teach routine counting.
+def useful_compound(word, reading):
+    exceptions = {('一人','ひとり'),('二人','ふたり'),('一日','ついたち'),('二十日','はつか'),('十分','じゅうぶん'),('一時','ひととき')}
+    if (word, reading) in exceptions:
+        return True
+    return not re.fullmatch(r'[〇零一二三四五六七八九十百千万億兆]+(?:日|月|年|時|分|秒|時間|週間|年間|人|本|枚|匹|個|円|歳|才|回|台|階|番|号)?', word)
 
 
 def frequency(priorities):
@@ -53,6 +61,8 @@ with gzip.open(source, 'rb') as stream:
             readings.sort(key=lambda r: frequency([x.text for x in r.findall('re_pri')]))
             for reading in readings:
                 kana = reading.findtext('reb', '')
+                if not useful_compound(word, kana):
+                    continue
                 if not kana or not re.fullmatch('[ぁ-ゖー・]+', kana):
                     continue
                 priorities = [x.text for x in spelling.findall('ke_pri') + reading.findall('re_pri')]
@@ -80,6 +90,8 @@ with gzip.open(source, 'rb') as stream:
                     score -= 10000
                 if word in fire_basics:
                     score -= 20000 - fire_basics.index(word) * 20
+                if (word, kana) == ('火傷', 'やけど'):
+                    score -= 40000
                 for c in targets:
                     key = word + ':' + kana
                     old = by_kanji[c].get(key)
@@ -88,11 +100,11 @@ with gzip.open(source, 'rb') as stream:
                 break
         entry.clear()
 
-selection = {c: [item for _, item in sorted(words.values(), key=lambda x: (x[0], x[1]['japanese']))[:20]] for c, words in sorted(by_kanji.items())}
+selection = {c: [item for _, item in sorted(words.values(), key=lambda x: (x[0], x[1]['japanese']))[:12]] for c, words in sorted(by_kanji.items())}
 missing = [c for c, words in selection.items() if not words]
 if missing:
     raise SystemExit('No compounds found for: ' + ''.join(missing))
-bundle = {'attribution': 'JMdict © James William Breen and the Electronic Dictionary Research and Development Group', 'license': 'CC BY-SA 4.0', 'licenseUrl': 'https://www.edrdg.org/edrdg/licence.html', 'source': URL, 'sourceSha256': hashlib.sha256(source.read_bytes()).hexdigest(), 'updatedAt': datetime.datetime.now(datetime.timezone.utc).date().isoformat(), 'modifications': 'Selected common multi-kanji spellings for the notebook’s 100 kanji; paired reading/spelling and sense restrictions respected; first applicable English sense retained. At most 20 per character, prioritizing introduced words. Not an exhaustive dictionary or JLPT list.', 'characters': selection}
+bundle = {'attribution': 'JMdict © James William Breen and the Electronic Dictionary Research and Development Group', 'license': 'CC BY-SA 4.0', 'licenseUrl': 'https://www.edrdg.org/edrdg/licence.html', 'source': URL, 'sourceSha256': hashlib.sha256(source.read_bytes()).hexdigest(), 'updatedAt': datetime.datetime.now(datetime.timezone.utc).date().isoformat(), 'modifications': 'Selected common multi-kanji spellings for the notebook’s 100 kanji; paired reading/spelling and sense restrictions respected; first applicable English sense retained. At most 12 per character, prioritizing introduced words; routine numeric, date, time and counter combinations excluded except selected irregular or lexical readings. Not an exhaustive dictionary or JLPT list.', 'characters': selection}
 serialized = json.dumps(bundle, ensure_ascii=False, indent=2) + '\n'
 (ROOT / 'app/lib/compounds.json').write_text(serialized)
 (ROOT / 'public/compound-data.json').write_text(serialized)
