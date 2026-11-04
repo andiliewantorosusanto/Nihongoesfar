@@ -26,6 +26,7 @@ import { GrammarLessons } from './GrammarLessons';
 import EntryDetail from './EntryDetail';
 import NumbersGuide from './NumbersGuide';
 import NumberTools, { NumberRangePractice } from './NumberTools';
+import type { NumberPracticeMode } from '../lib/guides/number-practice';
 import { topicBooks, topicBookFor, topicBookEntries } from '../lib/guides/topic-books';
 const books = [
   {
@@ -223,7 +224,7 @@ export default function Notebook() {
     setPage(p);
     setTopicEntryId('');
     setGrammarDetailed(false);
-    setMode(p === 'numbers' ? 'range' : 'mixed');
+    setMode('mixed');
     setSearch('');
     setTopic('all');
     setLevel('all');
@@ -409,7 +410,6 @@ export default function Notebook() {
                   value={mode}
                   onChange={(e) => setMode(e.target.value)}
                 >
-                  {page === 'numbers' && <option value="range">Range practice</option>}
                   <option value="mixed">Mixed practice</option>
                   {availableModes.map((s) => (
                     <option value={s} key={s}>
@@ -421,7 +421,7 @@ export default function Notebook() {
                   className="primary"
                   disabled={busy || !availableModes.length}
                   onClick={() =>
-                    page === 'numbers' && mode === 'range'
+                    page === 'numbers'
                       ? setNumberTool('range')
                       : startPractice(page === 'notes' ? 'notes' : current?.id)
                   }
@@ -718,10 +718,14 @@ export default function Notebook() {
 
       {numberTool && (
         <Modal
-          label={numberTool === 'converter' ? 'Number converter' : 'Range practice'}
+          label={numberTool === 'converter' ? 'Number converter' : 'Number practice'}
           onClose={() => setNumberTool(null)}
         >
-          {numberTool === 'converter' ? <NumberTools /> : <NumberRangePractice />}
+          {numberTool === 'converter' ? (
+            <NumberTools />
+          ) : (
+            <NumberRangePractice mode={mode as NumberPracticeMode} />
+          )}
         </Modal>
       )}
       {settings && data && (

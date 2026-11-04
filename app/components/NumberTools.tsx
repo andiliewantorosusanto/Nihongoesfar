@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { convertNumber, numberInRange, parseNumberInput } from '../lib/guides/number-converter';
+import { convertNumber, parseNumberInput } from '../lib/guides/number-converter';
+import { numberPracticeQuestion, type NumberPracticeMode } from '../lib/guides/number-practice';
 import { normalize } from '../lib/practice/learning';
 
 export default function NumberTools() {
@@ -45,10 +46,14 @@ export default function NumberTools() {
   );
 }
 
-export function NumberRangePractice() {
+export function NumberRangePractice({ mode }: { mode: NumberPracticeMode }) {
   const [min, setMin] = useState('0');
   const [max, setMax] = useState('100');
-  const [session, setSession] = useState<{ min: number; max: number; value: number } | null>(null);
+  const [session, setSession] = useState<{
+    min: number;
+    max: number;
+    question: ReturnType<typeof numberPracticeQuestion>;
+  } | null>(null);
   const [answer, setAnswer] = useState('');
   const [feedback, setFeedback] = useState('');
   const [error, setError] = useState('');
@@ -57,7 +62,7 @@ export function NumberRangePractice() {
     try {
       const lower = parseNumberInput(min);
       const upper = parseNumberInput(max);
-      setSession({ min: lower, max: upper, value: numberInRange(lower, upper) });
+      setSession({ min: lower, max: upper, question: numberPracticeQuestion(lower, upper, mode) });
       setAnswer('');
       setFeedback('');
       setError('');
@@ -68,7 +73,7 @@ export function NumberRangePractice() {
 
   return (
     <section className="number-tools number-range-practice">
-      <h3>Range practice</h3>
+      <h3>{mode === 'mixed' ? 'Mixed' : mode[0].toUpperCase() + mode.slice(1)} practice</h3>
       <form
         className="number-range-form"
         onSubmit={(event) => {
@@ -100,14 +105,11 @@ export function NumberRangePractice() {
           <p>
             Range: {session.min.toLocaleString('en')}–{session.max.toLocaleString('en')}
           </p>
-          <p>
-            Write <strong>{session.value.toLocaleString('en')}</strong> in kanji or hiragana.
-          </p>
+          <p lang="ja">{session.question.prompt}</p>
           <form
             onSubmit={(event) => {
               event.preventDefault();
-              const expected = convertNumber(session.value);
-              const correct = [expected.kanji, expected.hiragana].some(
+              const correct = session.question.answers.some(
                 (text) => normalize(text) === normalize(answer),
               );
               setFeedback(correct ? 'Correct!' : 'Try again, or reveal the answer.');
@@ -131,8 +133,7 @@ export function NumberRangePractice() {
               type="button"
               className="secondary"
               onClick={() => {
-                const result = convertNumber(session.value);
-                setFeedback(`${result.kanji} · ${result.hiragana}`);
+                setFeedback(session.question.answers.join(' · '));
               }}
             >
               Show answer
@@ -141,7 +142,10 @@ export function NumberRangePractice() {
               type="button"
               className="secondary"
               onClick={() => {
-                setSession({ ...session, value: numberInRange(session.min, session.max) });
+                setSession({
+                  ...session,
+                  question: numberPracticeQuestion(session.min, session.max, mode),
+                });
                 setAnswer('');
                 setFeedback('');
               }}
