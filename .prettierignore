@@ -1,0 +1,11 @@
+node_modules/
+dist/
+data/
+work/
+.sites-runtime/
+.agents/
+.codex/
+package-lock.json
+app/lib/compounds.json
+app/lib/strokes.json
+public/*.json

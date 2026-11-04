@@ -1,0 +1,16 @@
+{
+  "version": 4,
+  "exportedAt": "2026-11-04T08:32:51.191Z",
+  "preferences": {
+    "furigana": true,
+    "romaji": false
+  },
+  "files": [
+    "/kana.json",
+    "/kanji.json",
+    "/grammar.json",
+    "/vocabulary.json",
+    "/numbers.json",
+    "/adjectives.json"
+  ]
+}

@@ -1,0 +1,59 @@
+name: Test and deploy website
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run format:check
+      - run: npm run build:static
+      - run: npm run test:static
+      - uses: actions/upload-artifact@v4
+        with:
+          name: website
+          path: dist/
+          retention-days: 1
+
+  deploy:
+    if: github.event_name == 'push' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    needs: test
+    runs-on: ubuntu-latest
+    concurrency:
+      group: production-deploy
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      AWS_REGION: ${{ vars.AWS_DEFAULT_REGION }}
+      S3_BUCKET: ${{ vars.S3_BUCKET }}
+      CLOUDFRONT_DISTRIBUTION_ID: ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: website
+          path: dist/
+      - name: Check configuration
+        run: test -n "$AWS_REGION" && test -n "$S3_BUCKET" && test -n "$CLOUDFRONT_DISTRIBUTION_ID"
+      - uses: aws-actions/configure-aws-credentials@e3dd6a429d7300a6a4c196c26e071d42e0343502
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+      - name: Publish website
+        run: |
+          aws s3 sync dist/assets/ "s3://${S3_BUCKET}/assets/" --cache-control 'public,max-age=31536000,immutable'
+          aws s3 sync dist/ "s3://${S3_BUCKET}/" --exclude 'assets/*' --exclude index.html --cache-control 'public,max-age=0,must-revalidate'
+          aws s3 cp dist/index.html "s3://${S3_BUCKET}/index.html" --content-type text/html --cache-control 'public,max-age=0,must-revalidate'
+          aws cloudfront create-invalidation --distribution-id "$CLOUDFRONT_DISTRIBUTION_ID" --paths '/' '/index.html' '/*.json'

@@ -1,0 +1,2377 @@
+[
+  {
+    "id": "adjectives-304a-3044-3057-3044",
+    "kind": "adjectives",
+    "note": "い-adjective. Before a noun, keep the final い: おいしい + noun. Negative: おいしくないです. Past: おいしかったです. Negative past: おいしくなかったです.",
+    "tags": [
+      "い-adjective"
+    ],
+    "level": "N5",
+    "title": "おいしい",
+    "topic": "い-adjectives",
+    "meaning": "delicious",
+    "reading": "おいしい",
+    "examples": [
+      {
+        "meaning": "This bread is delicious.",
+        "reading": "このぱんはおいしいです。",
+        "japanese": "このパンはおいしいです。"
+      },
+      {
+        "meaning": "not delicious",
+        "reading": "おいしくないです",
+        "japanese": "おいしくないです"
+      },
+      {
+        "meaning": "was delicious",
+        "reading": "おいしかったです",
+        "japanese": "おいしかったです"
+      },
+      {
+        "meaning": "was not delicious",
+        "reading": "おいしくなかったです",
+        "japanese": "おいしくなかったです"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make おいしいです negative in polite Japanese.",
+      "answers": [
+        "おいしくないです",
+        "おいしくありません",
+        "おいしくないです",
+        "おいしくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: おいしい + noun. Negative: おいしくないです. Past: おいしかったです. Negative past: おいしくなかったです."
+    },
+    "japanese": "おいしい"
+  },
+  {
+    "id": "adjectives-5927-304d-3044",
+    "kind": "adjectives",
+    "note": "い-adjective. Before a noun, keep the final い: 大きい + noun. Negative: 大きくないです. Past: 大きかったです. Negative past: 大きくなかったです.",
+    "tags": [
+      "い-adjective"
+    ],
+    "level": "N5",
+    "title": "大きい",
+    "topic": "い-adjectives",
+    "meaning": "big",
+    "reading": "おおきい",
+    "examples": [
+      {
+        "meaning": "It is a big house.",
+        "reading": "おおきいいえです。",
+        "japanese": "大きい家です。"
+      },
+      {
+        "meaning": "not big",
+        "reading": "おおきくないです",
+        "japanese": "大きくないです"
+      },
+      {
+        "meaning": "was big",
+        "reading": "おおきかったです",
+        "japanese": "大きかったです"
+      },
+      {
+        "meaning": "was not big",
+        "reading": "おおきくなかったです",
+        "japanese": "大きくなかったです"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 大きいです negative in polite Japanese.",
+      "answers": [
+        "大きくないです",
+        "大きくありません",
+        "おおきくないです",
+        "おおきくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 大きい + noun. Negative: 大きくないです. Past: 大きかったです. Negative past: 大きくなかったです."
+    },
+    "japanese": "大きい"
+  },
+  {
+    "id": "adjectives-5c0f-3055-3044",
+    "kind": "adjectives",
+    "note": "い-adjective. Before a noun, keep the final い: 小さい + noun. Negative: 小さくないです. Past: 小さかったです. Negative past: 小さくなかったです.",
+    "tags": [
+      "い-adjective"
+    ],
+    "level": "N5",
+    "title": "小さい",
+    "topic": "い-adjectives",
+    "meaning": "small",
+    "reading": "ちいさい",
+    "examples": [
+      {
+        "meaning": "It is a small cat.",
+        "reading": "ちいさいねこです。",
+        "japanese": "小さい猫です。"
+      },
+      {
+        "meaning": "not small",
+        "reading": "ちいさくないです",
+        "japanese": "小さくないです"
+      },
+      {
+        "meaning": "was small",
+        "reading": "ちいさかったです",
+        "japanese": "小さかったです"
+      },
+      {
+        "meaning": "was not small",
+        "reading": "ちいさくなかったです",
+        "japanese": "小さくなかったです"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 小さいです negative in polite Japanese.",
+      "answers": [
+        "小さくないです",
+        "小さくありません",
+        "ちいさくないです",
+        "ちいさくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 小さい + noun. Negative: 小さくないです. Past: 小さかったです. Negative past: 小さくなかったです."
+    },
+    "japanese": "小さい"
+  },
+  {
+    "id": "adjectives-9ad8-3044",
+    "kind": "adjectives",
+    "note": "い-adjective. Before a noun, keep the final い: 高い + noun. Negative: 高くないです. Past: 高かったです. Negative past: 高くなかったです.",
+    "tags": [
+      "い-adjective"
+    ],
+    "level": "N5",
+    "title": "高い",
+    "topic": "い-adjectives",
+    "meaning": "high; expensive",
+    "reading": "たかい",
+    "examples": [
+      {
+        "meaning": "This book is expensive.",
+        "reading": "このほんはたかいです。",
+        "japanese": "この本は高いです。"
+      },
+      {
+        "meaning": "not high",
+        "reading": "たかくないです",
+        "japanese": "高くないです"
+      },
+      {
+        "meaning": "was high",
+        "reading": "たかかったです",
+        "japanese": "高かったです"
+      },
+      {
+        "meaning": "was not high",
+        "reading": "たかくなかったです",
+        "japanese": "高くなかったです"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 高いです negative in polite Japanese.",
+      "answers": [
+        "高くないです",
+        "高くありません",
+        "たかくないです",
+        "たかくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 高い + noun. Negative: 高くないです. Past: 高かったです. Negative past: 高くなかったです."
+    },
+    "japanese": "高い"
+  },
+  {
+    "id": "adjectives-5b89-3044",
+    "kind": "adjectives",
+    "note": "い-adjective. Before a noun, keep the final い: 安い + noun. Negative: 安くないです. Past: 安かったです. Negative past: 安くなかったです.",
+    "tags": [
+      "い-adjective"
+    ],
+    "level": "N5",
+    "title": "安い",
+    "topic": "い-adjectives",
+    "meaning": "inexpensive",
+    "reading": "やすい",
+    "examples": [
+      {
+        "meaning": "This book is inexpensive.",
+        "reading": "このほんはやすいです。",
+        "japanese": "この本は安いです。"
+      },
+      {
+        "meaning": "not inexpensive",
+        "reading": "やすくないです",
+        "japanese": "安くないです"
+      },
+      {
+        "meaning": "was inexpensive",
+        "reading": "やすかったです",
+        "japanese": "安かったです"
+      },
+      {
+        "meaning": "was not inexpensive",
+        "reading": "やすくなかったです",
+        "japanese": "安くなかったです"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 安いです negative in polite Japanese.",
+      "answers": [
+        "安くないです",
+        "安くありません",
+        "やすくないです",
+        "やすくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 安い + noun. Negative: 安くないです. Past: 安かったです. Negative past: 安くなかったです."
+    },
+    "japanese": "安い"
+  },
+  {
+    "id": "adjectives-65b0-3057-3044",
+    "kind": "adjectives",
+    "note": "い-adjective. Before a noun, keep the final い: 新しい + noun. Negative: 新しくないです. Past: 新しかったです. Negative past: 新しくなかったです.",
+    "tags": [
+      "い-adjective"
+    ],
+    "level": "N5",
+    "title": "新しい",
+    "topic": "い-adjectives",
+    "meaning": "new",
+    "reading": "あたらしい",
+    "examples": [
+      {
+        "meaning": "It is a new book.",
+        "reading": "あたらしいほんです。",
+        "japanese": "新しい本です。"
+      },
+      {
+        "meaning": "not new",
+        "reading": "あたらしくないです",
+        "japanese": "新しくないです"
+      },
+      {
+        "meaning": "was new",
+        "reading": "あたらしかったです",
+        "japanese": "新しかったです"
+      },
+      {
+        "meaning": "was not new",
+        "reading": "あたらしくなかったです",
+        "japanese": "新しくなかったです"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 新しいです negative in polite Japanese.",
+      "answers": [
+        "新しくないです",
+        "新しくありません",
+        "あたらしくないです",
+        "あたらしくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 新しい + noun. Negative: 新しくないです. Past: 新しかったです. Negative past: 新しくなかったです."
+    },
+    "japanese": "新しい"
+  },
+  {
+    "id": "adjectives-53e4-3044",
+    "kind": "adjectives",
+    "note": "い-adjective. Before a noun, keep the final い: 古い + noun. Negative: 古くないです. Past: 古かったです. Negative past: 古くなかったです.",
+    "tags": [
+      "い-adjective"
+    ],
+    "level": "N5",
+    "title": "古い",
+    "topic": "い-adjectives",
+    "meaning": "old (things)",
+    "reading": "ふるい",
+    "examples": [
+      {
+        "meaning": "It is an old house.",
+        "reading": "ふるいいえです。",
+        "japanese": "古い家です。"
+      },
+      {
+        "meaning": "not old (things)",
+        "reading": "ふるくないです",
+        "japanese": "古くないです"
+      },
+      {
+        "meaning": "was old (things)",
+        "reading": "ふるかったです",
+        "japanese": "古かったです"
+      },
+      {
+        "meaning": "was not old (things)",
+        "reading": "ふるくなかったです",
+        "japanese": "古くなかったです"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 古いです negative in polite Japanese.",
+      "answers": [
+        "古くないです",
+        "古くありません",
+        "ふるくないです",
+        "ふるくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 古い + noun. Negative: 古くないです. Past: 古かったです. Negative past: 古くなかったです."
+    },
+    "japanese": "古い"
+  },
+  {
+    "id": "adjectives-9762-767d-3044",
+    "kind": "adjectives",
+    "note": "い-adjective. Before a noun, keep the final い: 面白い + noun. Negative: 面白くないです. Past: 面白かったです. Negative past: 面白くなかったです.",
+    "tags": [
+      "い-adjective"
+    ],
+    "level": "N5",
+    "title": "面白い",
+    "topic": "い-adjectives",
+    "meaning": "interesting; amusing",
+    "reading": "おもしろい",
+    "examples": [
+      {
+        "meaning": "This book is interesting.",
+        "reading": "このほんはおもしろいです。",
+        "japanese": "この本は面白いです。"
+      },
+      {
+        "meaning": "not interesting",
+        "reading": "おもしろくないです",
+        "japanese": "面白くないです"
+      },
+      {
+        "meaning": "was interesting",
+        "reading": "おもしろかったです",
+        "japanese": "面白かったです"
+      },
+      {
+        "meaning": "was not interesting",
+        "reading": "おもしろくなかったです",
+        "japanese": "面白くなかったです"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 面白いです negative in polite Japanese.",
+      "answers": [
+        "面白くないです",
+        "面白くありません",
+        "おもしろくないです",
+        "おもしろくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 面白い + noun. Negative: 面白くないです. Past: 面白かったです. Negative past: 面白くなかったです."
+    },
+    "japanese": "面白い"
+  },
+  {
+    "id": "adjectives-5fd9-3057-3044",
+    "kind": "adjectives",
+    "note": "い-adjective. Before a noun, keep the final い: 忙しい + noun. Negative: 忙しくないです. Past: 忙しかったです. Negative past: 忙しくなかったです.",
+    "tags": [
+      "い-adjective"
+    ],
+    "level": "N5",
+    "title": "忙しい",
+    "topic": "い-adjectives",
+    "meaning": "busy",
+    "reading": "いそがしい",
+    "examples": [
+      {
+        "meaning": "I am busy today.",
+        "reading": "きょうはいそがしいです。",
+        "japanese": "今日は忙しいです。"
+      },
+      {
+        "meaning": "not busy",
+        "reading": "いそがしくないです",
+        "japanese": "忙しくないです"
+      },
+      {
+        "meaning": "was busy",
+        "reading": "いそがしかったです",
+        "japanese": "忙しかったです"
+      },
+      {
+        "meaning": "was not busy",
+        "reading": "いそがしくなかったです",
+        "japanese": "忙しくなかったです"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 忙しいです negative in polite Japanese.",
+      "answers": [
+        "忙しくないです",
+        "忙しくありません",
+        "いそがしくないです",
+        "いそがしくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 忙しい + noun. Negative: 忙しくないです. Past: 忙しかったです. Negative past: 忙しくなかったです."
+    },
+    "japanese": "忙しい"
+  },
+  {
+    "id": "adjectives-6691-3044",
+    "kind": "adjectives",
+    "note": "い-adjective. Before a noun, keep the final い: 暑い + noun. Negative: 暑くないです. Past: 暑かったです. Negative past: 暑くなかったです.",
+    "tags": [
+      "い-adjective"
+    ],
+    "level": "N5",
+    "title": "暑い",
+    "topic": "い-adjectives",
+    "meaning": "hot (weather)",
+    "reading": "あつい",
+    "examples": [
+      {
+        "meaning": "It is hot today.",
+        "reading": "きょうはあついです。",
+        "japanese": "今日は暑いです。"
+      },
+      {
+        "meaning": "not hot (weather)",
+        "reading": "あつくないです",
+        "japanese": "暑くないです"
+      },
+      {
+        "meaning": "was hot (weather)",
+        "reading": "あつかったです",
+        "japanese": "暑かったです"
+      },
+      {
+        "meaning": "was not hot (weather)",
+        "reading": "あつくなかったです",
+        "japanese": "暑くなかったです"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 暑いです negative in polite Japanese.",
+      "answers": [
+        "暑くないです",
+        "暑くありません",
+        "あつくないです",
+        "あつくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 暑い + noun. Negative: 暑くないです. Past: 暑かったです. Negative past: 暑くなかったです."
+    },
+    "japanese": "暑い"
+  },
+  {
+    "id": "adjectives-5bd2-3044",
+    "kind": "adjectives",
+    "note": "い-adjective. Before a noun, keep the final い: 寒い + noun. Negative: 寒くないです. Past: 寒かったです. Negative past: 寒くなかったです.",
+    "tags": [
+      "い-adjective"
+    ],
+    "level": "N5",
+    "title": "寒い",
+    "topic": "い-adjectives",
+    "meaning": "cold (weather)",
+    "reading": "さむい",
+    "examples": [
+      {
+        "meaning": "It is cold today.",
+        "reading": "きょうはさむいです。",
+        "japanese": "今日は寒いです。"
+      },
+      {
+        "meaning": "not cold (weather)",
+        "reading": "さむくないです",
+        "japanese": "寒くないです"
+      },
+      {
+        "meaning": "was cold (weather)",
+        "reading": "さむかったです",
+        "japanese": "寒かったです"
+      },
+      {
+        "meaning": "was not cold (weather)",
+        "reading": "さむくなかったです",
+        "japanese": "寒くなかったです"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 寒いです negative in polite Japanese.",
+      "answers": [
+        "寒くないです",
+        "寒くありません",
+        "さむくないです",
+        "さむくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 寒い + noun. Negative: 寒くないです. Past: 寒かったです. Negative past: 寒くなかったです."
+    },
+    "japanese": "寒い"
+  },
+  {
+    "id": "adjectives-697d-3057-3044",
+    "kind": "adjectives",
+    "note": "い-adjective. Before a noun, keep the final い: 楽しい + noun. Negative: 楽しくないです. Past: 楽しかったです. Negative past: 楽しくなかったです.",
+    "tags": [
+      "い-adjective"
+    ],
+    "level": "N5",
+    "title": "楽しい",
+    "topic": "い-adjectives",
+    "meaning": "enjoyable",
+    "reading": "たのしい",
+    "examples": [
+      {
+        "meaning": "Studying Japanese is enjoyable.",
+        "reading": "にほんごのべんきょうはたのしいです。",
+        "japanese": "日本語の勉強は楽しいです。"
+      },
+      {
+        "meaning": "not enjoyable",
+        "reading": "たのしくないです",
+        "japanese": "楽しくないです"
+      },
+      {
+        "meaning": "was enjoyable",
+        "reading": "たのしかったです",
+        "japanese": "楽しかったです"
+      },
+      {
+        "meaning": "was not enjoyable",
+        "reading": "たのしくなかったです",
+        "japanese": "楽しくなかったです"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 楽しいです negative in polite Japanese.",
+      "answers": [
+        "楽しくないです",
+        "楽しくありません",
+        "たのしくないです",
+        "たのしくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 楽しい + noun. Negative: 楽しくないです. Past: 楽しかったです. Negative past: 楽しくなかったです."
+    },
+    "japanese": "楽しい"
+  },
+  {
+    "id": "adjectives-9759-304b",
+    "kind": "adjectives",
+    "note": "な-adjective. Before a noun: 静かな + noun. Polite statement: 静かです. Negative: 静かじゃありません. Past: 静かでした. Negative past: 静かじゃありませんでした.",
+    "tags": [
+      "な-adjective"
+    ],
+    "level": "N5",
+    "title": "静か",
+    "topic": "な-adjectives",
+    "meaning": "quiet",
+    "reading": "しずか",
+    "examples": [
+      {
+        "meaning": "It is a quiet room.",
+        "reading": "しずかなへやです。",
+        "japanese": "静かな部屋です。"
+      },
+      {
+        "meaning": "not quiet",
+        "reading": "しずかじゃありません",
+        "japanese": "静かじゃありません"
+      },
+      {
+        "meaning": "was quiet",
+        "reading": "しずかでした",
+        "japanese": "静かでした"
+      },
+      {
+        "meaning": "was not quiet",
+        "reading": "しずかじゃありませんでした",
+        "japanese": "静かじゃありませんでした"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 静かです negative in polite Japanese.",
+      "answers": [
+        "静かじゃありません",
+        "静かではありません",
+        "静かじゃないです",
+        "しずかじゃありません",
+        "しずかではありません",
+        "しずかじゃないです"
+      ],
+      "explanation": "な-adjective. Before a noun: 静かな + noun. Polite statement: 静かです. Negative: 静かじゃありません. Past: 静かでした. Negative past: 静かじゃありませんでした."
+    },
+    "japanese": "静か"
+  },
+  {
+    "id": "adjectives-306b-304e-3084-304b",
+    "kind": "adjectives",
+    "note": "な-adjective. Before a noun: にぎやかな + noun. Polite statement: にぎやかです. Negative: にぎやかじゃありません. Past: にぎやかでした. Negative past: にぎやかじゃありませんでした.",
+    "tags": [
+      "な-adjective"
+    ],
+    "level": "N5",
+    "title": "にぎやか",
+    "topic": "な-adjectives",
+    "meaning": "lively",
+    "reading": "にぎやか",
+    "examples": [
+      {
+        "meaning": "It is a lively town.",
+        "reading": "にぎやかなまちです。",
+        "japanese": "にぎやかな町です。"
+      },
+      {
+        "meaning": "not lively",
+        "reading": "にぎやかじゃありません",
+        "japanese": "にぎやかじゃありません"
+      },
+      {
+        "meaning": "was lively",
+        "reading": "にぎやかでした",
+        "japanese": "にぎやかでした"
+      },
+      {
+        "meaning": "was not lively",
+        "reading": "にぎやかじゃありませんでした",
+        "japanese": "にぎやかじゃありませんでした"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make にぎやかです negative in polite Japanese.",
+      "answers": [
+        "にぎやかじゃありません",
+        "にぎやかではありません",
+        "にぎやかじゃないです",
+        "にぎやかじゃありません",
+        "にぎやかではありません",
+        "にぎやかじゃないです"
+      ],
+      "explanation": "な-adjective. Before a noun: にぎやかな + noun. Polite statement: にぎやかです. Negative: にぎやかじゃありません. Past: にぎやかでした. Negative past: にぎやかじゃありませんでした."
+    },
+    "japanese": "にぎやか"
+  },
+  {
+    "id": "adjectives-4fbf-5229",
+    "kind": "adjectives",
+    "note": "な-adjective. Before a noun: 便利な + noun. Polite statement: 便利です. Negative: 便利じゃありません. Past: 便利でした. Negative past: 便利じゃありませんでした.",
+    "tags": [
+      "な-adjective"
+    ],
+    "level": "N5",
+    "title": "便利",
+    "topic": "な-adjectives",
+    "meaning": "convenient",
+    "reading": "べんり",
+    "examples": [
+      {
+        "meaning": "This shop is convenient.",
+        "reading": "このみせはべんりです。",
+        "japanese": "この店は便利です。"
+      },
+      {
+        "meaning": "not convenient",
+        "reading": "べんりじゃありません",
+        "japanese": "便利じゃありません"
+      },
+      {
+        "meaning": "was convenient",
+        "reading": "べんりでした",
+        "japanese": "便利でした"
+      },
+      {
+        "meaning": "was not convenient",
+        "reading": "べんりじゃありませんでした",
+        "japanese": "便利じゃありませんでした"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 便利です negative in polite Japanese.",
+      "answers": [
+        "便利じゃありません",
+        "便利ではありません",
+        "便利じゃないです",
+        "べんりじゃありません",
+        "べんりではありません",
+        "べんりじゃないです"
+      ],
+      "explanation": "な-adjective. Before a noun: 便利な + noun. Polite statement: 便利です. Negative: 便利じゃありません. Past: 便利でした. Negative past: 便利じゃありませんでした."
+    },
+    "japanese": "便利"
+  },
+  {
+    "id": "adjectives-5143-6c17",
+    "kind": "adjectives",
+    "note": "な-adjective. Before a noun: 元気な + noun. Polite statement: 元気です. Negative: 元気じゃありません. Past: 元気でした. Negative past: 元気じゃありませんでした.",
+    "tags": [
+      "な-adjective"
+    ],
+    "level": "N5",
+    "title": "元気",
+    "topic": "な-adjectives",
+    "meaning": "healthy; energetic",
+    "reading": "げんき",
+    "examples": [
+      {
+        "meaning": "My mother is well.",
+        "reading": "はははげんきです。",
+        "japanese": "母は元気です。"
+      },
+      {
+        "meaning": "not healthy",
+        "reading": "げんきじゃありません",
+        "japanese": "元気じゃありません"
+      },
+      {
+        "meaning": "was healthy",
+        "reading": "げんきでした",
+        "japanese": "元気でした"
+      },
+      {
+        "meaning": "was not healthy",
+        "reading": "げんきじゃありませんでした",
+        "japanese": "元気じゃありませんでした"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 元気です negative in polite Japanese.",
+      "answers": [
+        "元気じゃありません",
+        "元気ではありません",
+        "元気じゃないです",
+        "げんきじゃありません",
+        "げんきではありません",
+        "げんきじゃないです"
+      ],
+      "explanation": "な-adjective. Before a noun: 元気な + noun. Polite statement: 元気です. Negative: 元気じゃありません. Past: 元気でした. Negative past: 元気じゃありませんでした."
+    },
+    "japanese": "元気"
+  },
+  {
+    "id": "adjectives-89aa-5207",
+    "kind": "adjectives",
+    "note": "な-adjective. Before a noun: 親切な + noun. Polite statement: 親切です. Negative: 親切じゃありません. Past: 親切でした. Negative past: 親切じゃありませんでした.",
+    "tags": [
+      "な-adjective"
+    ],
+    "level": "N5",
+    "title": "親切",
+    "topic": "な-adjectives",
+    "meaning": "kind",
+    "reading": "しんせつ",
+    "examples": [
+      {
+        "meaning": "They are a kind person.",
+        "reading": "しんせつなひとです。",
+        "japanese": "親切な人です。"
+      },
+      {
+        "meaning": "not kind",
+        "reading": "しんせつじゃありません",
+        "japanese": "親切じゃありません"
+      },
+      {
+        "meaning": "was kind",
+        "reading": "しんせつでした",
+        "japanese": "親切でした"
+      },
+      {
+        "meaning": "was not kind",
+        "reading": "しんせつじゃありませんでした",
+        "japanese": "親切じゃありませんでした"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 親切です negative in polite Japanese.",
+      "answers": [
+        "親切じゃありません",
+        "親切ではありません",
+        "親切じゃないです",
+        "しんせつじゃありません",
+        "しんせつではありません",
+        "しんせつじゃないです"
+      ],
+      "explanation": "な-adjective. Before a noun: 親切な + noun. Polite statement: 親切です. Negative: 親切じゃありません. Past: 親切でした. Negative past: 親切じゃありませんでした."
+    },
+    "japanese": "親切"
+  },
+  {
+    "id": "adjectives-6709-540d",
+    "kind": "adjectives",
+    "note": "な-adjective. Before a noun: 有名な + noun. Polite statement: 有名です. Negative: 有名じゃありません. Past: 有名でした. Negative past: 有名じゃありませんでした.",
+    "tags": [
+      "な-adjective"
+    ],
+    "level": "N5",
+    "title": "有名",
+    "topic": "な-adjectives",
+    "meaning": "famous",
+    "reading": "ゆうめい",
+    "examples": [
+      {
+        "meaning": "It is a famous shop.",
+        "reading": "ゆうめいなみせです。",
+        "japanese": "有名な店です。"
+      },
+      {
+        "meaning": "not famous",
+        "reading": "ゆうめいじゃありません",
+        "japanese": "有名じゃありません"
+      },
+      {
+        "meaning": "was famous",
+        "reading": "ゆうめいでした",
+        "japanese": "有名でした"
+      },
+      {
+        "meaning": "was not famous",
+        "reading": "ゆうめいじゃありませんでした",
+        "japanese": "有名じゃありませんでした"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 有名です negative in polite Japanese.",
+      "answers": [
+        "有名じゃありません",
+        "有名ではありません",
+        "有名じゃないです",
+        "ゆうめいじゃありません",
+        "ゆうめいではありません",
+        "ゆうめいじゃないです"
+      ],
+      "explanation": "な-adjective. Before a noun: 有名な + noun. Polite statement: 有名です. Negative: 有名じゃありません. Past: 有名でした. Negative past: 有名じゃありませんでした."
+    },
+    "japanese": "有名"
+  },
+  {
+    "id": "adjectives-304d-308c-3044",
+    "kind": "adjectives",
+    "note": "な-adjective. Before a noun: きれいな + noun. Polite statement: きれいです. Negative: きれいじゃありません. Past: きれいでした. Negative past: きれいじゃありませんでした. Although this word ends in the sound い, it is a な-adjective.",
+    "tags": [
+      "な-adjective",
+      "Exception"
+    ],
+    "level": "N5",
+    "title": "きれい",
+    "topic": "Exceptions",
+    "meaning": "beautiful; clean",
+    "reading": "きれい",
+    "examples": [
+      {
+        "meaning": "It is a beautiful flower.",
+        "reading": "きれいなはなです。",
+        "japanese": "きれいな花です。"
+      },
+      {
+        "meaning": "not beautiful",
+        "reading": "きれいじゃありません",
+        "japanese": "きれいじゃありません"
+      },
+      {
+        "meaning": "was beautiful",
+        "reading": "きれいでした",
+        "japanese": "きれいでした"
+      },
+      {
+        "meaning": "was not beautiful",
+        "reading": "きれいじゃありませんでした",
+        "japanese": "きれいじゃありませんでした"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make きれいです negative in polite Japanese.",
+      "answers": [
+        "きれいじゃありません",
+        "きれいではありません",
+        "きれいじゃないです",
+        "きれいじゃありません",
+        "きれいではありません",
+        "きれいじゃないです",
+        "綺麗じゃありません",
+        "綺麗ではありません",
+        "綺麗じゃないです"
+      ],
+      "explanation": "な-adjective. Before a noun: きれいな + noun. Polite statement: きれいです. Negative: きれいじゃありません. Past: きれいでした. Negative past: きれいじゃありませんでした. Although this word ends in the sound い, it is a な-adjective."
+    },
+    "japanese": "きれい"
+  },
+  {
+    "id": "adjectives-5acc-3044",
+    "kind": "adjectives",
+    "note": "な-adjective. Before a noun: 嫌いな + noun. Polite statement: 嫌いです. Negative: 嫌いじゃありません. Past: 嫌いでした. Negative past: 嫌いじゃありませんでした. Although this word ends in the sound い, it is a な-adjective.",
+    "tags": [
+      "な-adjective",
+      "Exception"
+    ],
+    "level": "N5",
+    "title": "嫌い",
+    "topic": "Exceptions",
+    "meaning": "disliked",
+    "reading": "きらい",
+    "examples": [
+      {
+        "meaning": "I dislike fish.",
+        "reading": "さかながきらいです。",
+        "japanese": "魚が嫌いです。"
+      },
+      {
+        "meaning": "not disliked",
+        "reading": "きらいじゃありません",
+        "japanese": "嫌いじゃありません"
+      },
+      {
+        "meaning": "was disliked",
+        "reading": "きらいでした",
+        "japanese": "嫌いでした"
+      },
+      {
+        "meaning": "was not disliked",
+        "reading": "きらいじゃありませんでした",
+        "japanese": "嫌いじゃありませんでした"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 嫌いです negative in polite Japanese.",
+      "answers": [
+        "嫌いじゃありません",
+        "嫌いではありません",
+        "嫌いじゃないです",
+        "きらいじゃありません",
+        "きらいではありません",
+        "きらいじゃないです"
+      ],
+      "explanation": "な-adjective. Before a noun: 嫌いな + noun. Polite statement: 嫌いです. Negative: 嫌いじゃありません. Past: 嫌いでした. Negative past: 嫌いじゃありませんでした. Although this word ends in the sound い, it is a な-adjective."
+    },
+    "japanese": "嫌い"
+  },
+  {
+    "id": "adjectives-597d-304d",
+    "kind": "adjectives",
+    "note": "な-adjective. Before a noun: 好きな + noun. Polite statement: 好きです. Negative: 好きじゃありません. Past: 好きでした. Negative past: 好きじゃありませんでした.",
+    "tags": [
+      "な-adjective"
+    ],
+    "level": "N5",
+    "title": "好き",
+    "topic": "な-adjectives",
+    "meaning": "liked; favorite",
+    "reading": "すき",
+    "examples": [
+      {
+        "meaning": "What is your favorite food?",
+        "reading": "すきなたべものはなんですか。",
+        "japanese": "好きな食べ物は何ですか。"
+      },
+      {
+        "meaning": "not liked",
+        "reading": "すきじゃありません",
+        "japanese": "好きじゃありません"
+      },
+      {
+        "meaning": "was liked",
+        "reading": "すきでした",
+        "japanese": "好きでした"
+      },
+      {
+        "meaning": "was not liked",
+        "reading": "すきじゃありませんでした",
+        "japanese": "好きじゃありませんでした"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 好きです negative in polite Japanese.",
+      "answers": [
+        "好きじゃありません",
+        "好きではありません",
+        "好きじゃないです",
+        "すきじゃありません",
+        "すきではありません",
+        "すきじゃないです"
+      ],
+      "explanation": "な-adjective. Before a noun: 好きな + noun. Polite statement: 好きです. Negative: 好きじゃありません. Past: 好きでした. Negative past: 好きじゃありませんでした."
+    },
+    "japanese": "好き"
+  },
+  {
+    "id": "adjectives-3044-3044",
+    "kind": "adjectives",
+    "note": "い-adjective. Before a noun, keep the final い: いい + noun. Negative: よくないです. Past: よかったです. Negative past: よくなかったです. いい uses the よい stem in inflected forms: よくない, よかった, よくなかった.",
+    "tags": [
+      "い-adjective",
+      "Exception"
+    ],
+    "level": "N5",
+    "title": "いい",
+    "topic": "Exceptions",
+    "meaning": "good",
+    "reading": "いい",
+    "examples": [
+      {
+        "meaning": "It is a good book.",
+        "reading": "いいほんです。",
+        "japanese": "いい本です。"
+      },
+      {
+        "meaning": "not good",
+        "reading": "よくないです",
+        "japanese": "よくないです"
+      },
+      {
+        "meaning": "was good",
+        "reading": "よかったです",
+        "japanese": "よかったです"
+      },
+      {
+        "meaning": "was not good",
+        "reading": "よくなかったです",
+        "japanese": "よくなかったです"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make いいです negative in polite Japanese.",
+      "answers": [
+        "よくないです",
+        "よくありません",
+        "よくないです",
+        "よくありません",
+        "良くないです",
+        "良くありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: いい + noun. Negative: よくないです. Past: よかったです. Negative past: よくなかったです. いい uses the よい stem in inflected forms: よくない, よかった, よくなかった."
+    },
+    "japanese": "いい"
+  },
+  {
+    "id": "adjectives-307b-3057-3044",
+    "kind": "adjectives",
+    "note": "い-adjective. Before a noun, keep the final い: ほしい + noun. Negative: ほしくないです. Past: ほしかったです. Negative past: ほしくなかったです. ほしい expresses wanting a thing; it is an adjective, not a verb. Usually use noun がほしいです for your own desire.",
+    "tags": [
+      "い-adjective",
+      "Exception"
+    ],
+    "level": "N5",
+    "title": "ほしい",
+    "topic": "Exceptions",
+    "meaning": "wanted; desirable",
+    "reading": "ほしい",
+    "examples": [
+      {
+        "meaning": "I want a book.",
+        "reading": "ほんがほしいです。",
+        "japanese": "本がほしいです。"
+      },
+      {
+        "meaning": "not wanted",
+        "reading": "ほしくないです",
+        "japanese": "ほしくないです"
+      },
+      {
+        "meaning": "was wanted",
+        "reading": "ほしかったです",
+        "japanese": "ほしかったです"
+      },
+      {
+        "meaning": "was not wanted",
+        "reading": "ほしくなかったです",
+        "japanese": "ほしくなかったです"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make ほしいです negative in polite Japanese.",
+      "answers": [
+        "ほしくないです",
+        "ほしくありません",
+        "ほしくないです",
+        "ほしくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: ほしい + noun. Negative: ほしくないです. Past: ほしかったです. Negative past: ほしくなかったです. ほしい expresses wanting a thing; it is an adjective, not a verb. Usually use noun がほしいです for your own desire."
+    },
+    "japanese": "ほしい"
+  },
+  {
+    "id": "adjectives-71b1-3044",
+    "kind": "adjectives",
+    "title": "熱い",
+    "japanese": "熱い",
+    "reading": "あつい",
+    "meaning": "hot (objects; liquids)",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 熱い + noun. Negative: 熱くないです. Past: 熱かったです. Negative past: 熱くなかったです.",
+    "examples": [
+      {
+        "japanese": "このお茶は熱いです。",
+        "reading": "このおちゃはあついです。",
+        "meaning": "This tea is hot."
+      },
+      {
+        "japanese": "熱くないです",
+        "reading": "あつくないです",
+        "meaning": "not hot (objects"
+      },
+      {
+        "japanese": "熱かったです",
+        "reading": "あつかったです",
+        "meaning": "was hot (objects"
+      },
+      {
+        "japanese": "熱くなかったです",
+        "reading": "あつくなかったです",
+        "meaning": "was not hot (objects"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 熱いです negative in polite Japanese.",
+      "answers": [
+        "熱くないです",
+        "熱くありません",
+        "あつくないです",
+        "あつくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 熱い + noun. Negative: 熱くないです. Past: 熱かったです. Negative past: 熱くなかったです."
+    }
+  },
+  {
+    "id": "adjectives-51b7-305f-3044",
+    "kind": "adjectives",
+    "title": "冷たい",
+    "japanese": "冷たい",
+    "reading": "つめたい",
+    "meaning": "cold (to the touch)",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 冷たい + noun. Negative: 冷たくないです. Past: 冷たかったです. Negative past: 冷たくなかったです.",
+    "examples": [
+      {
+        "japanese": "水が冷たいです。",
+        "reading": "みずがつめたいです。",
+        "meaning": "The water is cold."
+      },
+      {
+        "japanese": "冷たくないです",
+        "reading": "つめたくないです",
+        "meaning": "not cold (to the touch)"
+      },
+      {
+        "japanese": "冷たかったです",
+        "reading": "つめたかったです",
+        "meaning": "was cold (to the touch)"
+      },
+      {
+        "japanese": "冷たくなかったです",
+        "reading": "つめたくなかったです",
+        "meaning": "was not cold (to the touch)"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 冷たいです negative in polite Japanese.",
+      "answers": [
+        "冷たくないです",
+        "冷たくありません",
+        "つめたくないです",
+        "つめたくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 冷たい + noun. Negative: 冷たくないです. Past: 冷たかったです. Negative past: 冷たくなかったです."
+    }
+  },
+  {
+    "id": "adjectives-9577-3044",
+    "kind": "adjectives",
+    "title": "長い",
+    "japanese": "長い",
+    "reading": "ながい",
+    "meaning": "long",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 長い + noun. Negative: 長くないです. Past: 長かったです. Negative past: 長くなかったです.",
+    "examples": [
+      {
+        "japanese": "この道は長いです。",
+        "reading": "このみちはながいです。",
+        "meaning": "This road is long."
+      },
+      {
+        "japanese": "長くないです",
+        "reading": "ながくないです",
+        "meaning": "not long"
+      },
+      {
+        "japanese": "長かったです",
+        "reading": "ながかったです",
+        "meaning": "was long"
+      },
+      {
+        "japanese": "長くなかったです",
+        "reading": "ながくなかったです",
+        "meaning": "was not long"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 長いです negative in polite Japanese.",
+      "answers": [
+        "長くないです",
+        "長くありません",
+        "ながくないです",
+        "ながくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 長い + noun. Negative: 長くないです. Past: 長かったです. Negative past: 長くなかったです."
+    }
+  },
+  {
+    "id": "adjectives-77ed-3044",
+    "kind": "adjectives",
+    "title": "短い",
+    "japanese": "短い",
+    "reading": "みじかい",
+    "meaning": "short (length; duration)",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 短い + noun. Negative: 短くないです. Past: 短かったです. Negative past: 短くなかったです.",
+    "examples": [
+      {
+        "japanese": "この鉛筆は短いです。",
+        "reading": "このえんぴつはみじかいです。",
+        "meaning": "This pencil is short."
+      },
+      {
+        "japanese": "短くないです",
+        "reading": "みじかくないです",
+        "meaning": "not short (length"
+      },
+      {
+        "japanese": "短かったです",
+        "reading": "みじかかったです",
+        "meaning": "was short (length"
+      },
+      {
+        "japanese": "短くなかったです",
+        "reading": "みじかくなかったです",
+        "meaning": "was not short (length"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 短いです negative in polite Japanese.",
+      "answers": [
+        "短くないです",
+        "短くありません",
+        "みじかくないです",
+        "みじかくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 短い + noun. Negative: 短くないです. Past: 短かったです. Negative past: 短くなかったです."
+    }
+  },
+  {
+    "id": "adjectives-91cd-3044",
+    "kind": "adjectives",
+    "title": "重い",
+    "japanese": "重い",
+    "reading": "おもい",
+    "meaning": "heavy",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 重い + noun. Negative: 重くないです. Past: 重かったです. Negative past: 重くなかったです.",
+    "examples": [
+      {
+        "japanese": "このかばんは重いです。",
+        "reading": "このかばんはおもいです。",
+        "meaning": "This bag is heavy."
+      },
+      {
+        "japanese": "重くないです",
+        "reading": "おもくないです",
+        "meaning": "not heavy"
+      },
+      {
+        "japanese": "重かったです",
+        "reading": "おもかったです",
+        "meaning": "was heavy"
+      },
+      {
+        "japanese": "重くなかったです",
+        "reading": "おもくなかったです",
+        "meaning": "was not heavy"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 重いです negative in polite Japanese.",
+      "answers": [
+        "重くないです",
+        "重くありません",
+        "おもくないです",
+        "おもくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 重い + noun. Negative: 重くないです. Past: 重かったです. Negative past: 重くなかったです."
+    }
+  },
+  {
+    "id": "adjectives-8efd-3044",
+    "kind": "adjectives",
+    "title": "軽い",
+    "japanese": "軽い",
+    "reading": "かるい",
+    "meaning": "light (weight)",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 軽い + noun. Negative: 軽くないです. Past: 軽かったです. Negative past: 軽くなかったです.",
+    "examples": [
+      {
+        "japanese": "この箱は軽いです。",
+        "reading": "このはこはかるいです。",
+        "meaning": "This box is light."
+      },
+      {
+        "japanese": "軽くないです",
+        "reading": "かるくないです",
+        "meaning": "not light (weight)"
+      },
+      {
+        "japanese": "軽かったです",
+        "reading": "かるかったです",
+        "meaning": "was light (weight)"
+      },
+      {
+        "japanese": "軽くなかったです",
+        "reading": "かるくなかったです",
+        "meaning": "was not light (weight)"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 軽いです negative in polite Japanese.",
+      "answers": [
+        "軽くないです",
+        "軽くありません",
+        "かるくないです",
+        "かるくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 軽い + noun. Negative: 軽くないです. Past: 軽かったです. Negative past: 軽くなかったです."
+    }
+  },
+  {
+    "id": "adjectives-6696-304b-3044",
+    "kind": "adjectives",
+    "title": "暖かい",
+    "japanese": "暖かい",
+    "reading": "あたたかい",
+    "meaning": "warm (weather; surroundings)",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 暖かい + noun. Negative: 暖かくないです. Past: 暖かかったです. Negative past: 暖かくなかったです.",
+    "examples": [
+      {
+        "japanese": "今日は暖かいです。",
+        "reading": "きょうはあたたかいです。",
+        "meaning": "It is warm today."
+      },
+      {
+        "japanese": "暖かくないです",
+        "reading": "あたたかくないです",
+        "meaning": "not warm (weather"
+      },
+      {
+        "japanese": "暖かかったです",
+        "reading": "あたたかかったです",
+        "meaning": "was warm (weather"
+      },
+      {
+        "japanese": "暖かくなかったです",
+        "reading": "あたたかくなかったです",
+        "meaning": "was not warm (weather"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 暖かいです negative in polite Japanese.",
+      "answers": [
+        "暖かくないです",
+        "暖かくありません",
+        "あたたかくないです",
+        "あたたかくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 暖かい + noun. Negative: 暖かくないです. Past: 暖かかったです. Negative past: 暖かくなかったです."
+    }
+  },
+  {
+    "id": "adjectives-6e29-304b-3044",
+    "kind": "adjectives",
+    "title": "温かい",
+    "japanese": "温かい",
+    "reading": "あたたかい",
+    "meaning": "warm (objects; food; feelings)",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 温かい + noun. Negative: 温かくないです. Past: 温かかったです. Negative past: 温かくなかったです.",
+    "examples": [
+      {
+        "japanese": "温かいスープを飲みます。",
+        "reading": "あたたかいすーぷをのみます。",
+        "meaning": "I drink warm soup."
+      },
+      {
+        "japanese": "温かくないです",
+        "reading": "あたたかくないです",
+        "meaning": "not warm (objects"
+      },
+      {
+        "japanese": "温かかったです",
+        "reading": "あたたかかったです",
+        "meaning": "was warm (objects"
+      },
+      {
+        "japanese": "温かくなかったです",
+        "reading": "あたたかくなかったです",
+        "meaning": "was not warm (objects"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 温かいです negative in polite Japanese.",
+      "answers": [
+        "温かくないです",
+        "温かくありません",
+        "あたたかくないです",
+        "あたたかくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 温かい + noun. Negative: 温かくないです. Past: 温かかったです. Negative past: 温かくなかったです."
+    }
+  },
+  {
+    "id": "adjectives-6dbc-3057-3044",
+    "kind": "adjectives",
+    "title": "涼しい",
+    "japanese": "涼しい",
+    "reading": "すずしい",
+    "meaning": "cool (pleasant weather)",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 涼しい + noun. Negative: 涼しくないです. Past: 涼しかったです. Negative past: 涼しくなかったです.",
+    "examples": [
+      {
+        "japanese": "今日は涼しいです。",
+        "reading": "きょうはすずしいです。",
+        "meaning": "It is cool today."
+      },
+      {
+        "japanese": "涼しくないです",
+        "reading": "すずしくないです",
+        "meaning": "not cool (pleasant weather)"
+      },
+      {
+        "japanese": "涼しかったです",
+        "reading": "すずしかったです",
+        "meaning": "was cool (pleasant weather)"
+      },
+      {
+        "japanese": "涼しくなかったです",
+        "reading": "すずしくなかったです",
+        "meaning": "was not cool (pleasant weather)"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 涼しいです negative in polite Japanese.",
+      "answers": [
+        "涼しくないです",
+        "涼しくありません",
+        "すずしくないです",
+        "すずしくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 涼しい + noun. Negative: 涼しくないです. Past: 涼しかったです. Negative past: 涼しくなかったです."
+    }
+  },
+  {
+    "id": "adjectives-5e83-3044",
+    "kind": "adjectives",
+    "title": "広い",
+    "japanese": "広い",
+    "reading": "ひろい",
+    "meaning": "wide; spacious",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 広い + noun. Negative: 広くないです. Past: 広かったです. Negative past: 広くなかったです.",
+    "examples": [
+      {
+        "japanese": "この部屋は広いです。",
+        "reading": "このへやはひろいです。",
+        "meaning": "This room is spacious."
+      },
+      {
+        "japanese": "広くないです",
+        "reading": "ひろくないです",
+        "meaning": "not wide"
+      },
+      {
+        "japanese": "広かったです",
+        "reading": "ひろかったです",
+        "meaning": "was wide"
+      },
+      {
+        "japanese": "広くなかったです",
+        "reading": "ひろくなかったです",
+        "meaning": "was not wide"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 広いです negative in polite Japanese.",
+      "answers": [
+        "広くないです",
+        "広くありません",
+        "ひろくないです",
+        "ひろくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 広い + noun. Negative: 広くないです. Past: 広かったです. Negative past: 広くなかったです."
+    }
+  },
+  {
+    "id": "adjectives-72ed-3044",
+    "kind": "adjectives",
+    "title": "狭い",
+    "japanese": "狭い",
+    "reading": "せまい",
+    "meaning": "narrow; cramped",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 狭い + noun. Negative: 狭くないです. Past: 狭かったです. Negative past: 狭くなかったです.",
+    "examples": [
+      {
+        "japanese": "この道は狭いです。",
+        "reading": "このみちはせまいです。",
+        "meaning": "This road is narrow."
+      },
+      {
+        "japanese": "狭くないです",
+        "reading": "せまくないです",
+        "meaning": "not narrow"
+      },
+      {
+        "japanese": "狭かったです",
+        "reading": "せまかったです",
+        "meaning": "was narrow"
+      },
+      {
+        "japanese": "狭くなかったです",
+        "reading": "せまくなかったです",
+        "meaning": "was not narrow"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 狭いです negative in polite Japanese.",
+      "answers": [
+        "狭くないです",
+        "狭くありません",
+        "せまくないです",
+        "せまくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 狭い + noun. Negative: 狭くないです. Past: 狭かったです. Negative past: 狭くなかったです."
+    }
+  },
+  {
+    "id": "adjectives-9060-3044",
+    "kind": "adjectives",
+    "title": "遠い",
+    "japanese": "遠い",
+    "reading": "とおい",
+    "meaning": "far",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 遠い + noun. Negative: 遠くないです. Past: 遠かったです. Negative past: 遠くなかったです.",
+    "examples": [
+      {
+        "japanese": "駅は遠いです。",
+        "reading": "えきはとおいです。",
+        "meaning": "The station is far away."
+      },
+      {
+        "japanese": "遠くないです",
+        "reading": "とおくないです",
+        "meaning": "not far"
+      },
+      {
+        "japanese": "遠かったです",
+        "reading": "とおかったです",
+        "meaning": "was far"
+      },
+      {
+        "japanese": "遠くなかったです",
+        "reading": "とおくなかったです",
+        "meaning": "was not far"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 遠いです negative in polite Japanese.",
+      "answers": [
+        "遠くないです",
+        "遠くありません",
+        "とおくないです",
+        "とおくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 遠い + noun. Negative: 遠くないです. Past: 遠かったです. Negative past: 遠くなかったです."
+    }
+  },
+  {
+    "id": "adjectives-8fd1-3044",
+    "kind": "adjectives",
+    "title": "近い",
+    "japanese": "近い",
+    "reading": "ちかい",
+    "meaning": "near",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 近い + noun. Negative: 近くないです. Past: 近かったです. Negative past: 近くなかったです.",
+    "examples": [
+      {
+        "japanese": "学校は近いです。",
+        "reading": "がっこうはちかいです。",
+        "meaning": "The school is nearby."
+      },
+      {
+        "japanese": "近くないです",
+        "reading": "ちかくないです",
+        "meaning": "not near"
+      },
+      {
+        "japanese": "近かったです",
+        "reading": "ちかかったです",
+        "meaning": "was near"
+      },
+      {
+        "japanese": "近くなかったです",
+        "reading": "ちかくなかったです",
+        "meaning": "was not near"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 近いです negative in polite Japanese.",
+      "answers": [
+        "近くないです",
+        "近くありません",
+        "ちかくないです",
+        "ちかくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 近い + noun. Negative: 近くないです. Past: 近かったです. Negative past: 近くなかったです."
+    }
+  },
+  {
+    "id": "adjectives-7518-3044",
+    "kind": "adjectives",
+    "title": "甘い",
+    "japanese": "甘い",
+    "reading": "あまい",
+    "meaning": "sweet",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 甘い + noun. Negative: 甘くないです. Past: 甘かったです. Negative past: 甘くなかったです.",
+    "examples": [
+      {
+        "japanese": "このお菓子は甘いです。",
+        "reading": "このおかしはあまいです。",
+        "meaning": "This sweet is sweet-tasting."
+      },
+      {
+        "japanese": "甘くないです",
+        "reading": "あまくないです",
+        "meaning": "not sweet"
+      },
+      {
+        "japanese": "甘かったです",
+        "reading": "あまかったです",
+        "meaning": "was sweet"
+      },
+      {
+        "japanese": "甘くなかったです",
+        "reading": "あまくなかったです",
+        "meaning": "was not sweet"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 甘いです negative in polite Japanese.",
+      "answers": [
+        "甘くないです",
+        "甘くありません",
+        "あまくないです",
+        "あまくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 甘い + noun. Negative: 甘くないです. Past: 甘かったです. Negative past: 甘くなかったです."
+    }
+  },
+  {
+    "id": "adjectives-8f9b-3044",
+    "kind": "adjectives",
+    "title": "辛い",
+    "japanese": "辛い",
+    "reading": "からい",
+    "meaning": "spicy; hot (taste)",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 辛い + noun. Negative: 辛くないです. Past: 辛かったです. Negative past: 辛くなかったです.",
+    "examples": [
+      {
+        "japanese": "このカレーは辛いです。",
+        "reading": "このかれーはからいです。",
+        "meaning": "This curry is spicy."
+      },
+      {
+        "japanese": "辛くないです",
+        "reading": "からくないです",
+        "meaning": "not spicy"
+      },
+      {
+        "japanese": "辛かったです",
+        "reading": "からかったです",
+        "meaning": "was spicy"
+      },
+      {
+        "japanese": "辛くなかったです",
+        "reading": "からくなかったです",
+        "meaning": "was not spicy"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 辛いです negative in polite Japanese.",
+      "answers": [
+        "辛くないです",
+        "辛くありません",
+        "からくないです",
+        "からくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 辛い + noun. Negative: 辛くないです. Past: 辛かったです. Negative past: 辛くなかったです."
+    }
+  },
+  {
+    "id": "adjectives-82e6-3044",
+    "kind": "adjectives",
+    "title": "苦い",
+    "japanese": "苦い",
+    "reading": "にがい",
+    "meaning": "bitter",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 苦い + noun. Negative: 苦くないです. Past: 苦かったです. Negative past: 苦くなかったです.",
+    "examples": [
+      {
+        "japanese": "この薬は苦いです。",
+        "reading": "このくすりはにがいです。",
+        "meaning": "This medicine is bitter."
+      },
+      {
+        "japanese": "苦くないです",
+        "reading": "にがくないです",
+        "meaning": "not bitter"
+      },
+      {
+        "japanese": "苦かったです",
+        "reading": "にがかったです",
+        "meaning": "was bitter"
+      },
+      {
+        "japanese": "苦くなかったです",
+        "reading": "にがくなかったです",
+        "meaning": "was not bitter"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 苦いです negative in polite Japanese.",
+      "answers": [
+        "苦くないです",
+        "苦くありません",
+        "にがくないです",
+        "にがくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 苦い + noun. Negative: 苦くないです. Past: 苦かったです. Negative past: 苦くなかったです."
+    }
+  },
+  {
+    "id": "adjectives-6613-3057-3044",
+    "kind": "adjectives",
+    "title": "易しい",
+    "japanese": "易しい",
+    "reading": "やさしい",
+    "meaning": "easy",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 易しい + noun. Negative: 易しくないです. Past: 易しかったです. Negative past: 易しくなかったです.",
+    "examples": [
+      {
+        "japanese": "この問題は易しいです。",
+        "reading": "このもんだいはやさしいです。",
+        "meaning": "This question is easy."
+      },
+      {
+        "japanese": "易しくないです",
+        "reading": "やさしくないです",
+        "meaning": "not easy"
+      },
+      {
+        "japanese": "易しかったです",
+        "reading": "やさしかったです",
+        "meaning": "was easy"
+      },
+      {
+        "japanese": "易しくなかったです",
+        "reading": "やさしくなかったです",
+        "meaning": "was not easy"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 易しいです negative in polite Japanese.",
+      "answers": [
+        "易しくないです",
+        "易しくありません",
+        "やさしくないです",
+        "やさしくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 易しい + noun. Negative: 易しくないです. Past: 易しかったです. Negative past: 易しくなかったです."
+    }
+  },
+  {
+    "id": "adjectives-96e3-3057-3044",
+    "kind": "adjectives",
+    "title": "難しい",
+    "japanese": "難しい",
+    "reading": "むずかしい",
+    "meaning": "difficult",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 難しい + noun. Negative: 難しくないです. Past: 難しかったです. Negative past: 難しくなかったです.",
+    "examples": [
+      {
+        "japanese": "この漢字は難しいです。",
+        "reading": "このかんじはむずかしいです。",
+        "meaning": "This kanji is difficult."
+      },
+      {
+        "japanese": "難しくないです",
+        "reading": "むずかしくないです",
+        "meaning": "not difficult"
+      },
+      {
+        "japanese": "難しかったです",
+        "reading": "むずかしかったです",
+        "meaning": "was difficult"
+      },
+      {
+        "japanese": "難しくなかったです",
+        "reading": "むずかしくなかったです",
+        "meaning": "was not difficult"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 難しいです negative in polite Japanese.",
+      "answers": [
+        "難しくないです",
+        "難しくありません",
+        "むずかしくないです",
+        "むずかしくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 難しい + noun. Negative: 難しくないです. Past: 難しかったです. Negative past: 難しくなかったです."
+    }
+  },
+  {
+    "id": "adjectives-3064-307e-3089-306a-3044",
+    "kind": "adjectives",
+    "title": "つまらない",
+    "japanese": "つまらない",
+    "reading": "つまらない",
+    "meaning": "boring; uninteresting",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: つまらない + noun. Negative: つまらなくないです. Past: つまらなかったです. Negative past: つまらなくなかったです.",
+    "examples": [
+      {
+        "japanese": "この映画はつまらないです。",
+        "reading": "このえいがはつまらないです。",
+        "meaning": "This movie is boring."
+      },
+      {
+        "japanese": "つまらなくないです",
+        "reading": "つまらなくないです",
+        "meaning": "not boring"
+      },
+      {
+        "japanese": "つまらなかったです",
+        "reading": "つまらなかったです",
+        "meaning": "was boring"
+      },
+      {
+        "japanese": "つまらなくなかったです",
+        "reading": "つまらなくなかったです",
+        "meaning": "was not boring"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make つまらないです negative in polite Japanese.",
+      "answers": [
+        "つまらなくないです",
+        "つまらなくありません",
+        "つまらなくないです",
+        "つまらなくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: つまらない + noun. Negative: つまらなくないです. Past: つまらなかったです. Negative past: つまらなくなかったです."
+    }
+  },
+  {
+    "id": "adjectives-6687",
+    "kind": "adjectives",
+    "title": "暇",
+    "japanese": "暇",
+    "reading": "ひま",
+    "meaning": "free; not busy",
+    "level": "N5",
+    "topic": "な-adjectives",
+    "tags": [
+      "な-adjective"
+    ],
+    "note": "な-adjective. Before a noun: 暇な + noun. Polite statement: 暇です. Negative: 暇じゃありません. Past: 暇でした. Negative past: 暇じゃありませんでした.",
+    "examples": [
+      {
+        "japanese": "今日は暇です。",
+        "reading": "きょうはひまです。",
+        "meaning": "I am free today."
+      },
+      {
+        "japanese": "暇じゃありません",
+        "reading": "ひまじゃありません",
+        "meaning": "not free"
+      },
+      {
+        "japanese": "暇でした",
+        "reading": "ひまでした",
+        "meaning": "was free"
+      },
+      {
+        "japanese": "暇じゃありませんでした",
+        "reading": "ひまじゃありませんでした",
+        "meaning": "was not free"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 暇です negative in polite Japanese.",
+      "answers": [
+        "暇じゃありません",
+        "暇ではありません",
+        "暇じゃないです",
+        "ひまじゃありません",
+        "ひまではありません",
+        "ひまじゃないです"
+      ],
+      "explanation": "な-adjective. Before a noun: 暇な + noun. Polite statement: 暇です. Negative: 暇じゃありません. Past: 暇でした. Negative past: 暇じゃありませんでした."
+    }
+  },
+  {
+    "id": "adjectives-60aa-3044",
+    "kind": "adjectives",
+    "title": "悪い",
+    "japanese": "悪い",
+    "reading": "わるい",
+    "meaning": "bad",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 悪い + noun. Negative: 悪くないです. Past: 悪かったです. Negative past: 悪くなかったです.",
+    "examples": [
+      {
+        "japanese": "天気が悪いです。",
+        "reading": "てんきがわるいです。",
+        "meaning": "The weather is bad."
+      },
+      {
+        "japanese": "悪くないです",
+        "reading": "わるくないです",
+        "meaning": "not bad"
+      },
+      {
+        "japanese": "悪かったです",
+        "reading": "わるかったです",
+        "meaning": "was bad"
+      },
+      {
+        "japanese": "悪くなかったです",
+        "reading": "わるくなかったです",
+        "meaning": "was not bad"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 悪いです negative in polite Japanese.",
+      "answers": [
+        "悪くないです",
+        "悪くありません",
+        "わるくないです",
+        "わるくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 悪い + noun. Negative: 悪くないです. Past: 悪かったです. Negative past: 悪くなかったです."
+    }
+  },
+  {
+    "id": "adjectives-4f4e-3044",
+    "kind": "adjectives",
+    "title": "低い",
+    "japanese": "低い",
+    "reading": "ひくい",
+    "meaning": "low; short (height)",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 低い + noun. Negative: 低くないです. Past: 低かったです. Negative past: 低くなかったです.",
+    "examples": [
+      {
+        "japanese": "この机は低いです。",
+        "reading": "このつくえはひくいです。",
+        "meaning": "This desk is low."
+      },
+      {
+        "japanese": "低くないです",
+        "reading": "ひくくないです",
+        "meaning": "not low"
+      },
+      {
+        "japanese": "低かったです",
+        "reading": "ひくかったです",
+        "meaning": "was low"
+      },
+      {
+        "japanese": "低くなかったです",
+        "reading": "ひくくなかったです",
+        "meaning": "was not low"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 低いです negative in polite Japanese.",
+      "answers": [
+        "低くないです",
+        "低くありません",
+        "ひくくないです",
+        "ひくくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 低い + noun. Negative: 低くないです. Past: 低かったです. Negative past: 低くなかったです."
+    }
+  },
+  {
+    "id": "adjectives-539a-3044",
+    "kind": "adjectives",
+    "title": "厚い",
+    "japanese": "厚い",
+    "reading": "あつい",
+    "meaning": "thick",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 厚い + noun. Negative: 厚くないです. Past: 厚かったです. Negative past: 厚くなかったです.",
+    "examples": [
+      {
+        "japanese": "この本は厚いです。",
+        "reading": "このほんはあついです。",
+        "meaning": "This book is thick."
+      },
+      {
+        "japanese": "厚くないです",
+        "reading": "あつくないです",
+        "meaning": "not thick"
+      },
+      {
+        "japanese": "厚かったです",
+        "reading": "あつかったです",
+        "meaning": "was thick"
+      },
+      {
+        "japanese": "厚くなかったです",
+        "reading": "あつくなかったです",
+        "meaning": "was not thick"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 厚いです negative in polite Japanese.",
+      "answers": [
+        "厚くないです",
+        "厚くありません",
+        "あつくないです",
+        "あつくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 厚い + noun. Negative: 厚くないです. Past: 厚かったです. Negative past: 厚くなかったです."
+    }
+  },
+  {
+    "id": "adjectives-8584-3044",
+    "kind": "adjectives",
+    "title": "薄い",
+    "japanese": "薄い",
+    "reading": "うすい",
+    "meaning": "thin; weak (flavor)",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 薄い + noun. Negative: 薄くないです. Past: 薄かったです. Negative past: 薄くなかったです.",
+    "examples": [
+      {
+        "japanese": "この本は薄いです。",
+        "reading": "このほんはうすいです。",
+        "meaning": "This book is thin."
+      },
+      {
+        "japanese": "薄くないです",
+        "reading": "うすくないです",
+        "meaning": "not thin"
+      },
+      {
+        "japanese": "薄かったです",
+        "reading": "うすかったです",
+        "meaning": "was thin"
+      },
+      {
+        "japanese": "薄くなかったです",
+        "reading": "うすくなかったです",
+        "meaning": "was not thin"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 薄いです negative in polite Japanese.",
+      "answers": [
+        "薄くないです",
+        "薄くありません",
+        "うすくないです",
+        "うすくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 薄い + noun. Negative: 薄くないです. Past: 薄かったです. Negative past: 薄くなかったです."
+    }
+  },
+  {
+    "id": "adjectives-660e-308b-3044",
+    "kind": "adjectives",
+    "title": "明るい",
+    "japanese": "明るい",
+    "reading": "あかるい",
+    "meaning": "bright; cheerful",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 明るい + noun. Negative: 明るくないです. Past: 明るかったです. Negative past: 明るくなかったです.",
+    "examples": [
+      {
+        "japanese": "この部屋は明るいです。",
+        "reading": "このへやはあかるいです。",
+        "meaning": "This room is bright."
+      },
+      {
+        "japanese": "明るくないです",
+        "reading": "あかるくないです",
+        "meaning": "not bright"
+      },
+      {
+        "japanese": "明るかったです",
+        "reading": "あかるかったです",
+        "meaning": "was bright"
+      },
+      {
+        "japanese": "明るくなかったです",
+        "reading": "あかるくなかったです",
+        "meaning": "was not bright"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 明るいです negative in polite Japanese.",
+      "answers": [
+        "明るくないです",
+        "明るくありません",
+        "あかるくないです",
+        "あかるくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 明るい + noun. Negative: 明るくないです. Past: 明るかったです. Negative past: 明るくなかったです."
+    }
+  },
+  {
+    "id": "adjectives-6697-3044",
+    "kind": "adjectives",
+    "title": "暗い",
+    "japanese": "暗い",
+    "reading": "くらい",
+    "meaning": "dark",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 暗い + noun. Negative: 暗くないです. Past: 暗かったです. Negative past: 暗くなかったです.",
+    "examples": [
+      {
+        "japanese": "この部屋は暗いです。",
+        "reading": "このへやはくらいです。",
+        "meaning": "This room is dark."
+      },
+      {
+        "japanese": "暗くないです",
+        "reading": "くらくないです",
+        "meaning": "not dark"
+      },
+      {
+        "japanese": "暗かったです",
+        "reading": "くらかったです",
+        "meaning": "was dark"
+      },
+      {
+        "japanese": "暗くなかったです",
+        "reading": "くらくなかったです",
+        "meaning": "was not dark"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 暗いです negative in polite Japanese.",
+      "answers": [
+        "暗くないです",
+        "暗くありません",
+        "くらくないです",
+        "くらくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 暗い + noun. Negative: 暗くないです. Past: 暗かったです. Negative past: 暗くなかったです."
+    }
+  },
+  {
+    "id": "adjectives-901f-3044",
+    "kind": "adjectives",
+    "title": "速い",
+    "japanese": "速い",
+    "reading": "はやい",
+    "meaning": "fast",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 速い + noun. Negative: 速くないです. Past: 速かったです. Negative past: 速くなかったです.",
+    "examples": [
+      {
+        "japanese": "この電車は速いです。",
+        "reading": "このでんしゃははやいです。",
+        "meaning": "This train is fast."
+      },
+      {
+        "japanese": "速くないです",
+        "reading": "はやくないです",
+        "meaning": "not fast"
+      },
+      {
+        "japanese": "速かったです",
+        "reading": "はやかったです",
+        "meaning": "was fast"
+      },
+      {
+        "japanese": "速くなかったです",
+        "reading": "はやくなかったです",
+        "meaning": "was not fast"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 速いです negative in polite Japanese.",
+      "answers": [
+        "速くないです",
+        "速くありません",
+        "はやくないです",
+        "はやくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 速い + noun. Negative: 速くないです. Past: 速かったです. Negative past: 速くなかったです."
+    }
+  },
+  {
+    "id": "adjectives-9045-3044",
+    "kind": "adjectives",
+    "title": "遅い",
+    "japanese": "遅い",
+    "reading": "おそい",
+    "meaning": "slow; late",
+    "level": "N5",
+    "topic": "い-adjectives",
+    "tags": [
+      "い-adjective"
+    ],
+    "note": "い-adjective. Before a noun, keep the final い: 遅い + noun. Negative: 遅くないです. Past: 遅かったです. Negative past: 遅くなかったです.",
+    "examples": [
+      {
+        "japanese": "このバスは遅いです。",
+        "reading": "このばすはおそいです。",
+        "meaning": "This bus is slow."
+      },
+      {
+        "japanese": "遅くないです",
+        "reading": "おそくないです",
+        "meaning": "not slow"
+      },
+      {
+        "japanese": "遅かったです",
+        "reading": "おそかったです",
+        "meaning": "was slow"
+      },
+      {
+        "japanese": "遅くなかったです",
+        "reading": "おそくなかったです",
+        "meaning": "was not slow"
+      }
+    ],
+    "exercise": {
+      "prompt": "Make 遅いです negative in polite Japanese.",
+      "answers": [
+        "遅くないです",
+        "遅くありません",
+        "おそくないです",
+        "おそくありません"
+      ],
+      "explanation": "い-adjective. Before a noun, keep the final い: 遅い + noun. Negative: 遅くないです. Past: 遅かったです. Negative past: 遅くなかったです."
+    }
+  }
+]

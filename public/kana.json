@@ -1,0 +1,5736 @@
+[
+  {
+    "id": "kana-3042",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “a”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "あ",
+    "topic": "Hiragana",
+    "romaji": "a",
+    "meaning": "a sound",
+    "reading": "あ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: a",
+        "reading": "あ",
+        "japanese": "あ"
+      }
+    ],
+    "japanese": "あ"
+  },
+  {
+    "id": "kana-3044",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “i”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "い",
+    "topic": "Hiragana",
+    "romaji": "i",
+    "meaning": "i sound",
+    "reading": "い",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: i",
+        "reading": "い",
+        "japanese": "い"
+      }
+    ],
+    "japanese": "い"
+  },
+  {
+    "id": "kana-3046",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “u”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "う",
+    "topic": "Hiragana",
+    "romaji": "u",
+    "meaning": "u sound",
+    "reading": "う",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: u",
+        "reading": "う",
+        "japanese": "う"
+      }
+    ],
+    "japanese": "う"
+  },
+  {
+    "id": "kana-3048",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “e”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "え",
+    "topic": "Hiragana",
+    "romaji": "e",
+    "meaning": "e sound",
+    "reading": "え",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: e",
+        "reading": "え",
+        "japanese": "え"
+      }
+    ],
+    "japanese": "え"
+  },
+  {
+    "id": "kana-304a",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “o”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "お",
+    "topic": "Hiragana",
+    "romaji": "o",
+    "meaning": "o sound",
+    "reading": "お",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: o",
+        "reading": "お",
+        "japanese": "お"
+      }
+    ],
+    "japanese": "お"
+  },
+  {
+    "id": "kana-304b",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ka”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "か",
+    "topic": "Hiragana",
+    "romaji": "ka",
+    "meaning": "ka sound",
+    "reading": "か",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ka",
+        "reading": "か",
+        "japanese": "か"
+      }
+    ],
+    "japanese": "か"
+  },
+  {
+    "id": "kana-304d",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ki”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "き",
+    "topic": "Hiragana",
+    "romaji": "ki",
+    "meaning": "ki sound",
+    "reading": "き",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ki",
+        "reading": "き",
+        "japanese": "き"
+      }
+    ],
+    "japanese": "き"
+  },
+  {
+    "id": "kana-304f",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ku”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "く",
+    "topic": "Hiragana",
+    "romaji": "ku",
+    "meaning": "ku sound",
+    "reading": "く",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ku",
+        "reading": "く",
+        "japanese": "く"
+      }
+    ],
+    "japanese": "く"
+  },
+  {
+    "id": "kana-3051",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ke”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "け",
+    "topic": "Hiragana",
+    "romaji": "ke",
+    "meaning": "ke sound",
+    "reading": "け",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ke",
+        "reading": "け",
+        "japanese": "け"
+      }
+    ],
+    "japanese": "け"
+  },
+  {
+    "id": "kana-3053",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ko”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "こ",
+    "topic": "Hiragana",
+    "romaji": "ko",
+    "meaning": "ko sound",
+    "reading": "こ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ko",
+        "reading": "こ",
+        "japanese": "こ"
+      }
+    ],
+    "japanese": "こ"
+  },
+  {
+    "id": "kana-3055",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “sa”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "さ",
+    "topic": "Hiragana",
+    "romaji": "sa",
+    "meaning": "sa sound",
+    "reading": "さ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: sa",
+        "reading": "さ",
+        "japanese": "さ"
+      }
+    ],
+    "japanese": "さ"
+  },
+  {
+    "id": "kana-3057",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “shi”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "し",
+    "topic": "Hiragana",
+    "romaji": "shi",
+    "meaning": "shi sound",
+    "reading": "し",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: shi",
+        "reading": "し",
+        "japanese": "し"
+      }
+    ],
+    "japanese": "し"
+  },
+  {
+    "id": "kana-3059",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “su”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "す",
+    "topic": "Hiragana",
+    "romaji": "su",
+    "meaning": "su sound",
+    "reading": "す",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: su",
+        "reading": "す",
+        "japanese": "す"
+      }
+    ],
+    "japanese": "す"
+  },
+  {
+    "id": "kana-305b",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “se”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "せ",
+    "topic": "Hiragana",
+    "romaji": "se",
+    "meaning": "se sound",
+    "reading": "せ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: se",
+        "reading": "せ",
+        "japanese": "せ"
+      }
+    ],
+    "japanese": "せ"
+  },
+  {
+    "id": "kana-305d",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “so”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "そ",
+    "topic": "Hiragana",
+    "romaji": "so",
+    "meaning": "so sound",
+    "reading": "そ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: so",
+        "reading": "そ",
+        "japanese": "そ"
+      }
+    ],
+    "japanese": "そ"
+  },
+  {
+    "id": "kana-305f",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ta”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "た",
+    "topic": "Hiragana",
+    "romaji": "ta",
+    "meaning": "ta sound",
+    "reading": "た",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ta",
+        "reading": "た",
+        "japanese": "た"
+      }
+    ],
+    "japanese": "た"
+  },
+  {
+    "id": "kana-3061",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “chi”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ち",
+    "topic": "Hiragana",
+    "romaji": "chi",
+    "meaning": "chi sound",
+    "reading": "ち",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: chi",
+        "reading": "ち",
+        "japanese": "ち"
+      }
+    ],
+    "japanese": "ち"
+  },
+  {
+    "id": "kana-3064",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “tsu”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "つ",
+    "topic": "Hiragana",
+    "romaji": "tsu",
+    "meaning": "tsu sound",
+    "reading": "つ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: tsu",
+        "reading": "つ",
+        "japanese": "つ"
+      }
+    ],
+    "japanese": "つ"
+  },
+  {
+    "id": "kana-3066",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “te”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "て",
+    "topic": "Hiragana",
+    "romaji": "te",
+    "meaning": "te sound",
+    "reading": "て",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: te",
+        "reading": "て",
+        "japanese": "て"
+      }
+    ],
+    "japanese": "て"
+  },
+  {
+    "id": "kana-3068",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “to”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "と",
+    "topic": "Hiragana",
+    "romaji": "to",
+    "meaning": "to sound",
+    "reading": "と",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: to",
+        "reading": "と",
+        "japanese": "と"
+      }
+    ],
+    "japanese": "と"
+  },
+  {
+    "id": "kana-306a",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “na”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "な",
+    "topic": "Hiragana",
+    "romaji": "na",
+    "meaning": "na sound",
+    "reading": "な",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: na",
+        "reading": "な",
+        "japanese": "な"
+      }
+    ],
+    "japanese": "な"
+  },
+  {
+    "id": "kana-306b",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ni”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "に",
+    "topic": "Hiragana",
+    "romaji": "ni",
+    "meaning": "ni sound",
+    "reading": "に",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ni",
+        "reading": "に",
+        "japanese": "に"
+      }
+    ],
+    "japanese": "に"
+  },
+  {
+    "id": "kana-306c",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “nu”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ぬ",
+    "topic": "Hiragana",
+    "romaji": "nu",
+    "meaning": "nu sound",
+    "reading": "ぬ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: nu",
+        "reading": "ぬ",
+        "japanese": "ぬ"
+      }
+    ],
+    "japanese": "ぬ"
+  },
+  {
+    "id": "kana-306d",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ne”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ね",
+    "topic": "Hiragana",
+    "romaji": "ne",
+    "meaning": "ne sound",
+    "reading": "ね",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ne",
+        "reading": "ね",
+        "japanese": "ね"
+      }
+    ],
+    "japanese": "ね"
+  },
+  {
+    "id": "kana-306e",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “no”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "の",
+    "topic": "Hiragana",
+    "romaji": "no",
+    "meaning": "no sound",
+    "reading": "の",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: no",
+        "reading": "の",
+        "japanese": "の"
+      }
+    ],
+    "japanese": "の"
+  },
+  {
+    "id": "kana-306f",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ha”. As the topic particle, は is pronounced wa.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "は",
+    "topic": "Hiragana",
+    "romaji": "ha",
+    "meaning": "ha sound",
+    "reading": "は",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ha",
+        "reading": "は",
+        "japanese": "は"
+      }
+    ],
+    "japanese": "は"
+  },
+  {
+    "id": "kana-3072",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “hi”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ひ",
+    "topic": "Hiragana",
+    "romaji": "hi",
+    "meaning": "hi sound",
+    "reading": "ひ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: hi",
+        "reading": "ひ",
+        "japanese": "ひ"
+      }
+    ],
+    "japanese": "ひ"
+  },
+  {
+    "id": "kana-3075",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “fu”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ふ",
+    "topic": "Hiragana",
+    "romaji": "fu",
+    "meaning": "fu sound",
+    "reading": "ふ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: fu",
+        "reading": "ふ",
+        "japanese": "ふ"
+      }
+    ],
+    "japanese": "ふ"
+  },
+  {
+    "id": "kana-3078",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “he”. As the direction particle, へ is pronounced e.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "へ",
+    "topic": "Hiragana",
+    "romaji": "he",
+    "meaning": "he sound",
+    "reading": "へ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: he",
+        "reading": "へ",
+        "japanese": "へ"
+      }
+    ],
+    "japanese": "へ"
+  },
+  {
+    "id": "kana-307b",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ho”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ほ",
+    "topic": "Hiragana",
+    "romaji": "ho",
+    "meaning": "ho sound",
+    "reading": "ほ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ho",
+        "reading": "ほ",
+        "japanese": "ほ"
+      }
+    ],
+    "japanese": "ほ"
+  },
+  {
+    "id": "kana-307e",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ma”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ま",
+    "topic": "Hiragana",
+    "romaji": "ma",
+    "meaning": "ma sound",
+    "reading": "ま",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ma",
+        "reading": "ま",
+        "japanese": "ま"
+      }
+    ],
+    "japanese": "ま"
+  },
+  {
+    "id": "kana-307f",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “mi”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "み",
+    "topic": "Hiragana",
+    "romaji": "mi",
+    "meaning": "mi sound",
+    "reading": "み",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: mi",
+        "reading": "み",
+        "japanese": "み"
+      }
+    ],
+    "japanese": "み"
+  },
+  {
+    "id": "kana-3080",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “mu”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "む",
+    "topic": "Hiragana",
+    "romaji": "mu",
+    "meaning": "mu sound",
+    "reading": "む",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: mu",
+        "reading": "む",
+        "japanese": "む"
+      }
+    ],
+    "japanese": "む"
+  },
+  {
+    "id": "kana-3081",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “me”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "め",
+    "topic": "Hiragana",
+    "romaji": "me",
+    "meaning": "me sound",
+    "reading": "め",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: me",
+        "reading": "め",
+        "japanese": "め"
+      }
+    ],
+    "japanese": "め"
+  },
+  {
+    "id": "kana-3082",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “mo”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "も",
+    "topic": "Hiragana",
+    "romaji": "mo",
+    "meaning": "mo sound",
+    "reading": "も",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: mo",
+        "reading": "も",
+        "japanese": "も"
+      }
+    ],
+    "japanese": "も"
+  },
+  {
+    "id": "kana-3084",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ya”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "や",
+    "topic": "Hiragana",
+    "romaji": "ya",
+    "meaning": "ya sound",
+    "reading": "や",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ya",
+        "reading": "や",
+        "japanese": "や"
+      }
+    ],
+    "japanese": "や"
+  },
+  {
+    "id": "kana-3086",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “yu”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ゆ",
+    "topic": "Hiragana",
+    "romaji": "yu",
+    "meaning": "yu sound",
+    "reading": "ゆ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: yu",
+        "reading": "ゆ",
+        "japanese": "ゆ"
+      }
+    ],
+    "japanese": "ゆ"
+  },
+  {
+    "id": "kana-3088",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “yo”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "よ",
+    "topic": "Hiragana",
+    "romaji": "yo",
+    "meaning": "yo sound",
+    "reading": "よ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: yo",
+        "reading": "よ",
+        "japanese": "よ"
+      }
+    ],
+    "japanese": "よ"
+  },
+  {
+    "id": "kana-3089",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ra”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ら",
+    "topic": "Hiragana",
+    "romaji": "ra",
+    "meaning": "ra sound",
+    "reading": "ら",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ra",
+        "reading": "ら",
+        "japanese": "ら"
+      }
+    ],
+    "japanese": "ら"
+  },
+  {
+    "id": "kana-308a",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ri”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "り",
+    "topic": "Hiragana",
+    "romaji": "ri",
+    "meaning": "ri sound",
+    "reading": "り",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ri",
+        "reading": "り",
+        "japanese": "り"
+      }
+    ],
+    "japanese": "り"
+  },
+  {
+    "id": "kana-308b",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ru”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "る",
+    "topic": "Hiragana",
+    "romaji": "ru",
+    "meaning": "ru sound",
+    "reading": "る",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ru",
+        "reading": "る",
+        "japanese": "る"
+      }
+    ],
+    "japanese": "る"
+  },
+  {
+    "id": "kana-308c",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “re”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "れ",
+    "topic": "Hiragana",
+    "romaji": "re",
+    "meaning": "re sound",
+    "reading": "れ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: re",
+        "reading": "れ",
+        "japanese": "れ"
+      }
+    ],
+    "japanese": "れ"
+  },
+  {
+    "id": "kana-308d",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ro”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ろ",
+    "topic": "Hiragana",
+    "romaji": "ro",
+    "meaning": "ro sound",
+    "reading": "ろ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ro",
+        "reading": "ろ",
+        "japanese": "ろ"
+      }
+    ],
+    "japanese": "ろ"
+  },
+  {
+    "id": "kana-308f",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “wa”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "わ",
+    "topic": "Hiragana",
+    "romaji": "wa",
+    "meaning": "wa sound",
+    "reading": "わ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: wa",
+        "reading": "わ",
+        "japanese": "わ"
+      }
+    ],
+    "japanese": "わ"
+  },
+  {
+    "id": "kana-3092",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “wo”. Usually used as the direct-object particle and pronounced o in modern Japanese.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "を",
+    "topic": "Hiragana",
+    "romaji": "wo",
+    "meaning": "wo sound",
+    "reading": "を",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: wo",
+        "reading": "を",
+        "japanese": "を"
+      }
+    ],
+    "japanese": "を"
+  },
+  {
+    "id": "kana-3093",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “n”. This is one mora. Its exact sound changes with the next sound; before a vowel, romaji may use an apostrophe.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ん",
+    "topic": "Hiragana",
+    "romaji": "n",
+    "meaning": "n sound",
+    "reading": "ん",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: n",
+        "reading": "ん",
+        "japanese": "ん"
+      }
+    ],
+    "japanese": "ん"
+  },
+  {
+    "id": "kana-304c",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ga”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "が",
+    "topic": "Hiragana",
+    "romaji": "ga",
+    "meaning": "ga sound",
+    "reading": "が",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ga",
+        "reading": "が",
+        "japanese": "が"
+      }
+    ],
+    "japanese": "が"
+  },
+  {
+    "id": "kana-304e",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “gi”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ぎ",
+    "topic": "Hiragana",
+    "romaji": "gi",
+    "meaning": "gi sound",
+    "reading": "ぎ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: gi",
+        "reading": "ぎ",
+        "japanese": "ぎ"
+      }
+    ],
+    "japanese": "ぎ"
+  },
+  {
+    "id": "kana-3050",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “gu”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ぐ",
+    "topic": "Hiragana",
+    "romaji": "gu",
+    "meaning": "gu sound",
+    "reading": "ぐ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: gu",
+        "reading": "ぐ",
+        "japanese": "ぐ"
+      }
+    ],
+    "japanese": "ぐ"
+  },
+  {
+    "id": "kana-3052",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ge”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "げ",
+    "topic": "Hiragana",
+    "romaji": "ge",
+    "meaning": "ge sound",
+    "reading": "げ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ge",
+        "reading": "げ",
+        "japanese": "げ"
+      }
+    ],
+    "japanese": "げ"
+  },
+  {
+    "id": "kana-3054",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “go”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ご",
+    "topic": "Hiragana",
+    "romaji": "go",
+    "meaning": "go sound",
+    "reading": "ご",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: go",
+        "reading": "ご",
+        "japanese": "ご"
+      }
+    ],
+    "japanese": "ご"
+  },
+  {
+    "id": "kana-3056",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “za”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ざ",
+    "topic": "Hiragana",
+    "romaji": "za",
+    "meaning": "za sound",
+    "reading": "ざ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: za",
+        "reading": "ざ",
+        "japanese": "ざ"
+      }
+    ],
+    "japanese": "ざ"
+  },
+  {
+    "id": "kana-3058",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ji”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "じ",
+    "topic": "Hiragana",
+    "romaji": "ji",
+    "meaning": "ji sound",
+    "reading": "じ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ji",
+        "reading": "じ",
+        "japanese": "じ"
+      }
+    ],
+    "japanese": "じ"
+  },
+  {
+    "id": "kana-305a",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “zu”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ず",
+    "topic": "Hiragana",
+    "romaji": "zu",
+    "meaning": "zu sound",
+    "reading": "ず",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: zu",
+        "reading": "ず",
+        "japanese": "ず"
+      }
+    ],
+    "japanese": "ず"
+  },
+  {
+    "id": "kana-305c",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ze”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ぜ",
+    "topic": "Hiragana",
+    "romaji": "ze",
+    "meaning": "ze sound",
+    "reading": "ぜ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ze",
+        "reading": "ぜ",
+        "japanese": "ぜ"
+      }
+    ],
+    "japanese": "ぜ"
+  },
+  {
+    "id": "kana-305e",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “zo”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ぞ",
+    "topic": "Hiragana",
+    "romaji": "zo",
+    "meaning": "zo sound",
+    "reading": "ぞ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: zo",
+        "reading": "ぞ",
+        "japanese": "ぞ"
+      }
+    ],
+    "japanese": "ぞ"
+  },
+  {
+    "id": "kana-3060",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “da”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "だ",
+    "topic": "Hiragana",
+    "romaji": "da",
+    "meaning": "da sound",
+    "reading": "だ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: da",
+        "reading": "だ",
+        "japanese": "だ"
+      }
+    ],
+    "japanese": "だ"
+  },
+  {
+    "id": "kana-3062",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ji”. Usually sounds like じ / ず; spelling depends on the word, as in はなぢ and つづく.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ぢ",
+    "topic": "Hiragana",
+    "romaji": "ji",
+    "meaning": "ji sound",
+    "reading": "ぢ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ji",
+        "reading": "ぢ",
+        "japanese": "ぢ"
+      }
+    ],
+    "japanese": "ぢ"
+  },
+  {
+    "id": "kana-3065",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “zu”. Usually sounds like じ / ず; spelling depends on the word, as in はなぢ and つづく.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "づ",
+    "topic": "Hiragana",
+    "romaji": "zu",
+    "meaning": "zu sound",
+    "reading": "づ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: zu",
+        "reading": "づ",
+        "japanese": "づ"
+      }
+    ],
+    "japanese": "づ"
+  },
+  {
+    "id": "kana-3067",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “de”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "で",
+    "topic": "Hiragana",
+    "romaji": "de",
+    "meaning": "de sound",
+    "reading": "で",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: de",
+        "reading": "で",
+        "japanese": "で"
+      }
+    ],
+    "japanese": "で"
+  },
+  {
+    "id": "kana-3069",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “do”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ど",
+    "topic": "Hiragana",
+    "romaji": "do",
+    "meaning": "do sound",
+    "reading": "ど",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: do",
+        "reading": "ど",
+        "japanese": "ど"
+      }
+    ],
+    "japanese": "ど"
+  },
+  {
+    "id": "kana-3070",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “ba”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ば",
+    "topic": "Hiragana",
+    "romaji": "ba",
+    "meaning": "ba sound",
+    "reading": "ば",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ba",
+        "reading": "ば",
+        "japanese": "ば"
+      }
+    ],
+    "japanese": "ば"
+  },
+  {
+    "id": "kana-3073",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “bi”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "び",
+    "topic": "Hiragana",
+    "romaji": "bi",
+    "meaning": "bi sound",
+    "reading": "び",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: bi",
+        "reading": "び",
+        "japanese": "び"
+      }
+    ],
+    "japanese": "び"
+  },
+  {
+    "id": "kana-3076",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “bu”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ぶ",
+    "topic": "Hiragana",
+    "romaji": "bu",
+    "meaning": "bu sound",
+    "reading": "ぶ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: bu",
+        "reading": "ぶ",
+        "japanese": "ぶ"
+      }
+    ],
+    "japanese": "ぶ"
+  },
+  {
+    "id": "kana-3079",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “be”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "べ",
+    "topic": "Hiragana",
+    "romaji": "be",
+    "meaning": "be sound",
+    "reading": "べ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: be",
+        "reading": "べ",
+        "japanese": "べ"
+      }
+    ],
+    "japanese": "べ"
+  },
+  {
+    "id": "kana-307c",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “bo”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ぼ",
+    "topic": "Hiragana",
+    "romaji": "bo",
+    "meaning": "bo sound",
+    "reading": "ぼ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: bo",
+        "reading": "ぼ",
+        "japanese": "ぼ"
+      }
+    ],
+    "japanese": "ぼ"
+  },
+  {
+    "id": "kana-3071",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “pa”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ぱ",
+    "topic": "Hiragana",
+    "romaji": "pa",
+    "meaning": "pa sound",
+    "reading": "ぱ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: pa",
+        "reading": "ぱ",
+        "japanese": "ぱ"
+      }
+    ],
+    "japanese": "ぱ"
+  },
+  {
+    "id": "kana-3074",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “pi”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ぴ",
+    "topic": "Hiragana",
+    "romaji": "pi",
+    "meaning": "pi sound",
+    "reading": "ぴ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: pi",
+        "reading": "ぴ",
+        "japanese": "ぴ"
+      }
+    ],
+    "japanese": "ぴ"
+  },
+  {
+    "id": "kana-3077",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “pu”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ぷ",
+    "topic": "Hiragana",
+    "romaji": "pu",
+    "meaning": "pu sound",
+    "reading": "ぷ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: pu",
+        "reading": "ぷ",
+        "japanese": "ぷ"
+      }
+    ],
+    "japanese": "ぷ"
+  },
+  {
+    "id": "kana-307a",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “pe”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ぺ",
+    "topic": "Hiragana",
+    "romaji": "pe",
+    "meaning": "pe sound",
+    "reading": "ぺ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: pe",
+        "reading": "ぺ",
+        "japanese": "ぺ"
+      }
+    ],
+    "japanese": "ぺ"
+  },
+  {
+    "id": "kana-307d",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “po”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ぽ",
+    "topic": "Hiragana",
+    "romaji": "po",
+    "meaning": "po sound",
+    "reading": "ぽ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: po",
+        "reading": "ぽ",
+        "japanese": "ぽ"
+      }
+    ],
+    "japanese": "ぽ"
+  },
+  {
+    "id": "kana-3041",
+    "kind": "kana",
+    "note": "This is a small kana. Size changes how it joins neighboring sounds; compare with the full-size form. Small vowels are especially useful in katakana loanwords.",
+    "tags": [
+      "Small kana"
+    ],
+    "level": "Foundation",
+    "title": "ぁ",
+    "topic": "Hiragana",
+    "romaji": "a",
+    "meaning": "Small a",
+    "reading": "ぁ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: a",
+        "reading": "ぁ",
+        "japanese": "ぁ"
+      }
+    ],
+    "japanese": "ぁ"
+  },
+  {
+    "id": "kana-3043",
+    "kind": "kana",
+    "note": "This is a small kana. Size changes how it joins neighboring sounds; compare with the full-size form. Small vowels are especially useful in katakana loanwords.",
+    "tags": [
+      "Small kana"
+    ],
+    "level": "Foundation",
+    "title": "ぃ",
+    "topic": "Hiragana",
+    "romaji": "i",
+    "meaning": "Small i",
+    "reading": "ぃ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: i",
+        "reading": "ぃ",
+        "japanese": "ぃ"
+      }
+    ],
+    "japanese": "ぃ"
+  },
+  {
+    "id": "kana-3045",
+    "kind": "kana",
+    "note": "This is a small kana. Size changes how it joins neighboring sounds; compare with the full-size form. Small vowels are especially useful in katakana loanwords.",
+    "tags": [
+      "Small kana"
+    ],
+    "level": "Foundation",
+    "title": "ぅ",
+    "topic": "Hiragana",
+    "romaji": "u",
+    "meaning": "Small u",
+    "reading": "ぅ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: u",
+        "reading": "ぅ",
+        "japanese": "ぅ"
+      }
+    ],
+    "japanese": "ぅ"
+  },
+  {
+    "id": "kana-3047",
+    "kind": "kana",
+    "note": "This is a small kana. Size changes how it joins neighboring sounds; compare with the full-size form. Small vowels are especially useful in katakana loanwords.",
+    "tags": [
+      "Small kana"
+    ],
+    "level": "Foundation",
+    "title": "ぇ",
+    "topic": "Hiragana",
+    "romaji": "e",
+    "meaning": "Small e",
+    "reading": "ぇ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: e",
+        "reading": "ぇ",
+        "japanese": "ぇ"
+      }
+    ],
+    "japanese": "ぇ"
+  },
+  {
+    "id": "kana-3049",
+    "kind": "kana",
+    "note": "This is a small kana. Size changes how it joins neighboring sounds; compare with the full-size form. Small vowels are especially useful in katakana loanwords.",
+    "tags": [
+      "Small kana"
+    ],
+    "level": "Foundation",
+    "title": "ぉ",
+    "topic": "Hiragana",
+    "romaji": "o",
+    "meaning": "Small o",
+    "reading": "ぉ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: o",
+        "reading": "ぉ",
+        "japanese": "ぉ"
+      }
+    ],
+    "japanese": "ぉ"
+  },
+  {
+    "id": "kana-3083",
+    "kind": "kana",
+    "note": "This is a small kana. Size changes how it joins neighboring sounds; compare with the full-size form. Small vowels are especially useful in katakana loanwords.",
+    "tags": [
+      "Small kana"
+    ],
+    "level": "Foundation",
+    "title": "ゃ",
+    "topic": "Hiragana",
+    "romaji": "ya",
+    "meaning": "Small ya",
+    "reading": "ゃ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ya",
+        "reading": "ゃ",
+        "japanese": "ゃ"
+      }
+    ],
+    "japanese": "ゃ"
+  },
+  {
+    "id": "kana-3085",
+    "kind": "kana",
+    "note": "This is a small kana. Size changes how it joins neighboring sounds; compare with the full-size form. Small vowels are especially useful in katakana loanwords.",
+    "tags": [
+      "Small kana"
+    ],
+    "level": "Foundation",
+    "title": "ゅ",
+    "topic": "Hiragana",
+    "romaji": "yu",
+    "meaning": "Small yu",
+    "reading": "ゅ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: yu",
+        "reading": "ゅ",
+        "japanese": "ゅ"
+      }
+    ],
+    "japanese": "ゅ"
+  },
+  {
+    "id": "kana-3087",
+    "kind": "kana",
+    "note": "This is a small kana. Size changes how it joins neighboring sounds; compare with the full-size form. Small vowels are especially useful in katakana loanwords.",
+    "tags": [
+      "Small kana"
+    ],
+    "level": "Foundation",
+    "title": "ょ",
+    "topic": "Hiragana",
+    "romaji": "yo",
+    "meaning": "Small yo",
+    "reading": "ょ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: yo",
+        "reading": "ょ",
+        "japanese": "ょ"
+      }
+    ],
+    "japanese": "ょ"
+  },
+  {
+    "id": "kana-3063",
+    "kind": "kana",
+    "note": "Small tsu marks a held consonant: きって (kitte, stamp) differs from きて (kite, come). It is not pronounced “tsu” here.",
+    "tags": [
+      "Small kana"
+    ],
+    "level": "Foundation",
+    "title": "っ",
+    "topic": "Hiragana",
+    "romaji": "small tsu",
+    "meaning": "Small tsu",
+    "reading": "っ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: small tsu",
+        "reading": "っ",
+        "japanese": "っ"
+      }
+    ],
+    "japanese": "っ"
+  },
+  {
+    "id": "kana-308e",
+    "kind": "kana",
+    "note": "This is a small kana. Size changes how it joins neighboring sounds; compare with the full-size form. Small vowels are especially useful in katakana loanwords.",
+    "tags": [
+      "Small kana"
+    ],
+    "level": "Foundation",
+    "title": "ゎ",
+    "topic": "Hiragana",
+    "romaji": "small wa",
+    "meaning": "Small wa",
+    "reading": "ゎ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: small wa",
+        "reading": "ゎ",
+        "japanese": "ゎ"
+      }
+    ],
+    "japanese": "ゎ"
+  },
+  {
+    "id": "kana-3094",
+    "kind": "kana",
+    "note": "Hiragana represents a sound, rather than a meaning. Read this as “vu”. An extension for foreign sounds; katakana ヴ is more usual than hiragana ゔ.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ゔ",
+    "topic": "Hiragana",
+    "romaji": "vu",
+    "meaning": "vu sound",
+    "reading": "ゔ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: vu",
+        "reading": "ゔ",
+        "japanese": "ゔ"
+      }
+    ],
+    "japanese": "ゔ"
+  },
+  {
+    "id": "kana-304d-3083",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). きゃ is “kya”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "きゃ",
+    "topic": "Hiragana",
+    "romaji": "kya",
+    "meaning": "kya sound",
+    "reading": "きゃ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: kya",
+        "reading": "きゃ",
+        "japanese": "きゃ"
+      }
+    ],
+    "japanese": "きゃ"
+  },
+  {
+    "id": "kana-304d-3085",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). きゅ is “kyu”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "きゅ",
+    "topic": "Hiragana",
+    "romaji": "kyu",
+    "meaning": "kyu sound",
+    "reading": "きゅ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: kyu",
+        "reading": "きゅ",
+        "japanese": "きゅ"
+      }
+    ],
+    "japanese": "きゅ"
+  },
+  {
+    "id": "kana-304d-3087",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). きょ is “kyo”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "きょ",
+    "topic": "Hiragana",
+    "romaji": "kyo",
+    "meaning": "kyo sound",
+    "reading": "きょ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: kyo",
+        "reading": "きょ",
+        "japanese": "きょ"
+      }
+    ],
+    "japanese": "きょ"
+  },
+  {
+    "id": "kana-3057-3083",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). しゃ is “sha”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "しゃ",
+    "topic": "Hiragana",
+    "romaji": "sha",
+    "meaning": "sha sound",
+    "reading": "しゃ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: sha",
+        "reading": "しゃ",
+        "japanese": "しゃ"
+      }
+    ],
+    "japanese": "しゃ"
+  },
+  {
+    "id": "kana-3057-3085",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). しゅ is “shu”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "しゅ",
+    "topic": "Hiragana",
+    "romaji": "shu",
+    "meaning": "shu sound",
+    "reading": "しゅ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: shu",
+        "reading": "しゅ",
+        "japanese": "しゅ"
+      }
+    ],
+    "japanese": "しゅ"
+  },
+  {
+    "id": "kana-3057-3087",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). しょ is “sho”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "しょ",
+    "topic": "Hiragana",
+    "romaji": "sho",
+    "meaning": "sho sound",
+    "reading": "しょ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: sho",
+        "reading": "しょ",
+        "japanese": "しょ"
+      }
+    ],
+    "japanese": "しょ"
+  },
+  {
+    "id": "kana-3061-3083",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). ちゃ is “cha”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ちゃ",
+    "topic": "Hiragana",
+    "romaji": "cha",
+    "meaning": "cha sound",
+    "reading": "ちゃ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: cha",
+        "reading": "ちゃ",
+        "japanese": "ちゃ"
+      }
+    ],
+    "japanese": "ちゃ"
+  },
+  {
+    "id": "kana-3061-3085",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). ちゅ is “chu”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ちゅ",
+    "topic": "Hiragana",
+    "romaji": "chu",
+    "meaning": "chu sound",
+    "reading": "ちゅ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: chu",
+        "reading": "ちゅ",
+        "japanese": "ちゅ"
+      }
+    ],
+    "japanese": "ちゅ"
+  },
+  {
+    "id": "kana-3061-3087",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). ちょ is “cho”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ちょ",
+    "topic": "Hiragana",
+    "romaji": "cho",
+    "meaning": "cho sound",
+    "reading": "ちょ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: cho",
+        "reading": "ちょ",
+        "japanese": "ちょ"
+      }
+    ],
+    "japanese": "ちょ"
+  },
+  {
+    "id": "kana-306b-3083",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). にゃ is “nya”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "にゃ",
+    "topic": "Hiragana",
+    "romaji": "nya",
+    "meaning": "nya sound",
+    "reading": "にゃ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: nya",
+        "reading": "にゃ",
+        "japanese": "にゃ"
+      }
+    ],
+    "japanese": "にゃ"
+  },
+  {
+    "id": "kana-306b-3085",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). にゅ is “nyu”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "にゅ",
+    "topic": "Hiragana",
+    "romaji": "nyu",
+    "meaning": "nyu sound",
+    "reading": "にゅ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: nyu",
+        "reading": "にゅ",
+        "japanese": "にゅ"
+      }
+    ],
+    "japanese": "にゅ"
+  },
+  {
+    "id": "kana-306b-3087",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). にょ is “nyo”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "にょ",
+    "topic": "Hiragana",
+    "romaji": "nyo",
+    "meaning": "nyo sound",
+    "reading": "にょ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: nyo",
+        "reading": "にょ",
+        "japanese": "にょ"
+      }
+    ],
+    "japanese": "にょ"
+  },
+  {
+    "id": "kana-3072-3083",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). ひゃ is “hya”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ひゃ",
+    "topic": "Hiragana",
+    "romaji": "hya",
+    "meaning": "hya sound",
+    "reading": "ひゃ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: hya",
+        "reading": "ひゃ",
+        "japanese": "ひゃ"
+      }
+    ],
+    "japanese": "ひゃ"
+  },
+  {
+    "id": "kana-3072-3085",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). ひゅ is “hyu”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ひゅ",
+    "topic": "Hiragana",
+    "romaji": "hyu",
+    "meaning": "hyu sound",
+    "reading": "ひゅ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: hyu",
+        "reading": "ひゅ",
+        "japanese": "ひゅ"
+      }
+    ],
+    "japanese": "ひゅ"
+  },
+  {
+    "id": "kana-3072-3087",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). ひょ is “hyo”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ひょ",
+    "topic": "Hiragana",
+    "romaji": "hyo",
+    "meaning": "hyo sound",
+    "reading": "ひょ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: hyo",
+        "reading": "ひょ",
+        "japanese": "ひょ"
+      }
+    ],
+    "japanese": "ひょ"
+  },
+  {
+    "id": "kana-307f-3083",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). みゃ is “mya”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "みゃ",
+    "topic": "Hiragana",
+    "romaji": "mya",
+    "meaning": "mya sound",
+    "reading": "みゃ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: mya",
+        "reading": "みゃ",
+        "japanese": "みゃ"
+      }
+    ],
+    "japanese": "みゃ"
+  },
+  {
+    "id": "kana-307f-3085",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). みゅ is “myu”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "みゅ",
+    "topic": "Hiragana",
+    "romaji": "myu",
+    "meaning": "myu sound",
+    "reading": "みゅ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: myu",
+        "reading": "みゅ",
+        "japanese": "みゅ"
+      }
+    ],
+    "japanese": "みゅ"
+  },
+  {
+    "id": "kana-307f-3087",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). みょ is “myo”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "みょ",
+    "topic": "Hiragana",
+    "romaji": "myo",
+    "meaning": "myo sound",
+    "reading": "みょ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: myo",
+        "reading": "みょ",
+        "japanese": "みょ"
+      }
+    ],
+    "japanese": "みょ"
+  },
+  {
+    "id": "kana-308a-3083",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). りゃ is “rya”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "りゃ",
+    "topic": "Hiragana",
+    "romaji": "rya",
+    "meaning": "rya sound",
+    "reading": "りゃ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: rya",
+        "reading": "りゃ",
+        "japanese": "りゃ"
+      }
+    ],
+    "japanese": "りゃ"
+  },
+  {
+    "id": "kana-308a-3085",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). りゅ is “ryu”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "りゅ",
+    "topic": "Hiragana",
+    "romaji": "ryu",
+    "meaning": "ryu sound",
+    "reading": "りゅ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ryu",
+        "reading": "りゅ",
+        "japanese": "りゅ"
+      }
+    ],
+    "japanese": "りゅ"
+  },
+  {
+    "id": "kana-308a-3087",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). りょ is “ryo”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "りょ",
+    "topic": "Hiragana",
+    "romaji": "ryo",
+    "meaning": "ryo sound",
+    "reading": "りょ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ryo",
+        "reading": "りょ",
+        "japanese": "りょ"
+      }
+    ],
+    "japanese": "りょ"
+  },
+  {
+    "id": "kana-304e-3083",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). ぎゃ is “gya”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ぎゃ",
+    "topic": "Hiragana",
+    "romaji": "gya",
+    "meaning": "gya sound",
+    "reading": "ぎゃ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: gya",
+        "reading": "ぎゃ",
+        "japanese": "ぎゃ"
+      }
+    ],
+    "japanese": "ぎゃ"
+  },
+  {
+    "id": "kana-304e-3085",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). ぎゅ is “gyu”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ぎゅ",
+    "topic": "Hiragana",
+    "romaji": "gyu",
+    "meaning": "gyu sound",
+    "reading": "ぎゅ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: gyu",
+        "reading": "ぎゅ",
+        "japanese": "ぎゅ"
+      }
+    ],
+    "japanese": "ぎゅ"
+  },
+  {
+    "id": "kana-304e-3087",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). ぎょ is “gyo”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ぎょ",
+    "topic": "Hiragana",
+    "romaji": "gyo",
+    "meaning": "gyo sound",
+    "reading": "ぎょ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: gyo",
+        "reading": "ぎょ",
+        "japanese": "ぎょ"
+      }
+    ],
+    "japanese": "ぎょ"
+  },
+  {
+    "id": "kana-3058-3083",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). じゃ is “ja”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "じゃ",
+    "topic": "Hiragana",
+    "romaji": "ja",
+    "meaning": "ja sound",
+    "reading": "じゃ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ja",
+        "reading": "じゃ",
+        "japanese": "じゃ"
+      }
+    ],
+    "japanese": "じゃ"
+  },
+  {
+    "id": "kana-3058-3085",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). じゅ is “ju”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "じゅ",
+    "topic": "Hiragana",
+    "romaji": "ju",
+    "meaning": "ju sound",
+    "reading": "じゅ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: ju",
+        "reading": "じゅ",
+        "japanese": "じゅ"
+      }
+    ],
+    "japanese": "じゅ"
+  },
+  {
+    "id": "kana-3058-3087",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). じょ is “jo”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "じょ",
+    "topic": "Hiragana",
+    "romaji": "jo",
+    "meaning": "jo sound",
+    "reading": "じょ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: jo",
+        "reading": "じょ",
+        "japanese": "じょ"
+      }
+    ],
+    "japanese": "じょ"
+  },
+  {
+    "id": "kana-3073-3083",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). びゃ is “bya”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "びゃ",
+    "topic": "Hiragana",
+    "romaji": "bya",
+    "meaning": "bya sound",
+    "reading": "びゃ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: bya",
+        "reading": "びゃ",
+        "japanese": "びゃ"
+      }
+    ],
+    "japanese": "びゃ"
+  },
+  {
+    "id": "kana-3073-3085",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). びゅ is “byu”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "びゅ",
+    "topic": "Hiragana",
+    "romaji": "byu",
+    "meaning": "byu sound",
+    "reading": "びゅ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: byu",
+        "reading": "びゅ",
+        "japanese": "びゅ"
+      }
+    ],
+    "japanese": "びゅ"
+  },
+  {
+    "id": "kana-3073-3087",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). びょ is “byo”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "びょ",
+    "topic": "Hiragana",
+    "romaji": "byo",
+    "meaning": "byo sound",
+    "reading": "びょ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: byo",
+        "reading": "びょ",
+        "japanese": "びょ"
+      }
+    ],
+    "japanese": "びょ"
+  },
+  {
+    "id": "kana-3074-3083",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). ぴゃ is “pya”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ぴゃ",
+    "topic": "Hiragana",
+    "romaji": "pya",
+    "meaning": "pya sound",
+    "reading": "ぴゃ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: pya",
+        "reading": "ぴゃ",
+        "japanese": "ぴゃ"
+      }
+    ],
+    "japanese": "ぴゃ"
+  },
+  {
+    "id": "kana-3074-3085",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). ぴゅ is “pyu”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ぴゅ",
+    "topic": "Hiragana",
+    "romaji": "pyu",
+    "meaning": "pyu sound",
+    "reading": "ぴゅ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: pyu",
+        "reading": "ぴゅ",
+        "japanese": "ぴゅ"
+      }
+    ],
+    "japanese": "ぴゅ"
+  },
+  {
+    "id": "kana-3074-3087",
+    "kind": "kana",
+    "note": "A full-size kana plus small ゃ, ゅ or ょ makes one combined sound (one mora). ぴょ is “pyo”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ぴょ",
+    "topic": "Hiragana",
+    "romaji": "pyo",
+    "meaning": "pyo sound",
+    "reading": "ぴょ",
+    "examples": [
+      {
+        "meaning": "Hiragana reading: pyo",
+        "reading": "ぴょ",
+        "japanese": "ぴょ"
+      }
+    ],
+    "japanese": "ぴょ"
+  },
+  {
+    "id": "kana-30a2",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “a”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ア",
+    "topic": "Katakana",
+    "romaji": "a",
+    "meaning": "a sound",
+    "reading": "あ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: a",
+        "reading": "あ",
+        "japanese": "ア"
+      }
+    ],
+    "japanese": "ア"
+  },
+  {
+    "id": "kana-30a4",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “i”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "イ",
+    "topic": "Katakana",
+    "romaji": "i",
+    "meaning": "i sound",
+    "reading": "い",
+    "examples": [
+      {
+        "meaning": "Katakana reading: i",
+        "reading": "い",
+        "japanese": "イ"
+      }
+    ],
+    "japanese": "イ"
+  },
+  {
+    "id": "kana-30a6",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “u”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ウ",
+    "topic": "Katakana",
+    "romaji": "u",
+    "meaning": "u sound",
+    "reading": "う",
+    "examples": [
+      {
+        "meaning": "Katakana reading: u",
+        "reading": "う",
+        "japanese": "ウ"
+      }
+    ],
+    "japanese": "ウ"
+  },
+  {
+    "id": "kana-30a8",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “e”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "エ",
+    "topic": "Katakana",
+    "romaji": "e",
+    "meaning": "e sound",
+    "reading": "え",
+    "examples": [
+      {
+        "meaning": "Katakana reading: e",
+        "reading": "え",
+        "japanese": "エ"
+      }
+    ],
+    "japanese": "エ"
+  },
+  {
+    "id": "kana-30aa",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “o”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "オ",
+    "topic": "Katakana",
+    "romaji": "o",
+    "meaning": "o sound",
+    "reading": "お",
+    "examples": [
+      {
+        "meaning": "Katakana reading: o",
+        "reading": "お",
+        "japanese": "オ"
+      }
+    ],
+    "japanese": "オ"
+  },
+  {
+    "id": "kana-30ab",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ka”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "カ",
+    "topic": "Katakana",
+    "romaji": "ka",
+    "meaning": "ka sound",
+    "reading": "か",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ka",
+        "reading": "か",
+        "japanese": "カ"
+      }
+    ],
+    "japanese": "カ"
+  },
+  {
+    "id": "kana-30ad",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ki”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "キ",
+    "topic": "Katakana",
+    "romaji": "ki",
+    "meaning": "ki sound",
+    "reading": "き",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ki",
+        "reading": "き",
+        "japanese": "キ"
+      }
+    ],
+    "japanese": "キ"
+  },
+  {
+    "id": "kana-30af",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ku”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ク",
+    "topic": "Katakana",
+    "romaji": "ku",
+    "meaning": "ku sound",
+    "reading": "く",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ku",
+        "reading": "く",
+        "japanese": "ク"
+      }
+    ],
+    "japanese": "ク"
+  },
+  {
+    "id": "kana-30b1",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ke”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ケ",
+    "topic": "Katakana",
+    "romaji": "ke",
+    "meaning": "ke sound",
+    "reading": "け",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ke",
+        "reading": "け",
+        "japanese": "ケ"
+      }
+    ],
+    "japanese": "ケ"
+  },
+  {
+    "id": "kana-30b3",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ko”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "コ",
+    "topic": "Katakana",
+    "romaji": "ko",
+    "meaning": "ko sound",
+    "reading": "こ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ko",
+        "reading": "こ",
+        "japanese": "コ"
+      }
+    ],
+    "japanese": "コ"
+  },
+  {
+    "id": "kana-30b5",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “sa”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "サ",
+    "topic": "Katakana",
+    "romaji": "sa",
+    "meaning": "sa sound",
+    "reading": "さ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: sa",
+        "reading": "さ",
+        "japanese": "サ"
+      }
+    ],
+    "japanese": "サ"
+  },
+  {
+    "id": "kana-30b7",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “shi”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "シ",
+    "topic": "Katakana",
+    "romaji": "shi",
+    "meaning": "shi sound",
+    "reading": "し",
+    "examples": [
+      {
+        "meaning": "Katakana reading: shi",
+        "reading": "し",
+        "japanese": "シ"
+      }
+    ],
+    "japanese": "シ"
+  },
+  {
+    "id": "kana-30b9",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “su”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ス",
+    "topic": "Katakana",
+    "romaji": "su",
+    "meaning": "su sound",
+    "reading": "す",
+    "examples": [
+      {
+        "meaning": "Katakana reading: su",
+        "reading": "す",
+        "japanese": "ス"
+      }
+    ],
+    "japanese": "ス"
+  },
+  {
+    "id": "kana-30bb",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “se”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "セ",
+    "topic": "Katakana",
+    "romaji": "se",
+    "meaning": "se sound",
+    "reading": "せ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: se",
+        "reading": "せ",
+        "japanese": "セ"
+      }
+    ],
+    "japanese": "セ"
+  },
+  {
+    "id": "kana-30bd",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “so”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ソ",
+    "topic": "Katakana",
+    "romaji": "so",
+    "meaning": "so sound",
+    "reading": "そ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: so",
+        "reading": "そ",
+        "japanese": "ソ"
+      }
+    ],
+    "japanese": "ソ"
+  },
+  {
+    "id": "kana-30bf",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ta”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "タ",
+    "topic": "Katakana",
+    "romaji": "ta",
+    "meaning": "ta sound",
+    "reading": "た",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ta",
+        "reading": "た",
+        "japanese": "タ"
+      }
+    ],
+    "japanese": "タ"
+  },
+  {
+    "id": "kana-30c1",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “chi”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "チ",
+    "topic": "Katakana",
+    "romaji": "chi",
+    "meaning": "chi sound",
+    "reading": "ち",
+    "examples": [
+      {
+        "meaning": "Katakana reading: chi",
+        "reading": "ち",
+        "japanese": "チ"
+      }
+    ],
+    "japanese": "チ"
+  },
+  {
+    "id": "kana-30c4",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “tsu”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ツ",
+    "topic": "Katakana",
+    "romaji": "tsu",
+    "meaning": "tsu sound",
+    "reading": "つ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: tsu",
+        "reading": "つ",
+        "japanese": "ツ"
+      }
+    ],
+    "japanese": "ツ"
+  },
+  {
+    "id": "kana-30c6",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “te”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "テ",
+    "topic": "Katakana",
+    "romaji": "te",
+    "meaning": "te sound",
+    "reading": "て",
+    "examples": [
+      {
+        "meaning": "Katakana reading: te",
+        "reading": "て",
+        "japanese": "テ"
+      }
+    ],
+    "japanese": "テ"
+  },
+  {
+    "id": "kana-30c8",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “to”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ト",
+    "topic": "Katakana",
+    "romaji": "to",
+    "meaning": "to sound",
+    "reading": "と",
+    "examples": [
+      {
+        "meaning": "Katakana reading: to",
+        "reading": "と",
+        "japanese": "ト"
+      }
+    ],
+    "japanese": "ト"
+  },
+  {
+    "id": "kana-30ca",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “na”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ナ",
+    "topic": "Katakana",
+    "romaji": "na",
+    "meaning": "na sound",
+    "reading": "な",
+    "examples": [
+      {
+        "meaning": "Katakana reading: na",
+        "reading": "な",
+        "japanese": "ナ"
+      }
+    ],
+    "japanese": "ナ"
+  },
+  {
+    "id": "kana-30cb",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ni”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ニ",
+    "topic": "Katakana",
+    "romaji": "ni",
+    "meaning": "ni sound",
+    "reading": "に",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ni",
+        "reading": "に",
+        "japanese": "ニ"
+      }
+    ],
+    "japanese": "ニ"
+  },
+  {
+    "id": "kana-30cc",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “nu”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ヌ",
+    "topic": "Katakana",
+    "romaji": "nu",
+    "meaning": "nu sound",
+    "reading": "ぬ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: nu",
+        "reading": "ぬ",
+        "japanese": "ヌ"
+      }
+    ],
+    "japanese": "ヌ"
+  },
+  {
+    "id": "kana-30cd",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ne”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ネ",
+    "topic": "Katakana",
+    "romaji": "ne",
+    "meaning": "ne sound",
+    "reading": "ね",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ne",
+        "reading": "ね",
+        "japanese": "ネ"
+      }
+    ],
+    "japanese": "ネ"
+  },
+  {
+    "id": "kana-30ce",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “no”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ノ",
+    "topic": "Katakana",
+    "romaji": "no",
+    "meaning": "no sound",
+    "reading": "の",
+    "examples": [
+      {
+        "meaning": "Katakana reading: no",
+        "reading": "の",
+        "japanese": "ノ"
+      }
+    ],
+    "japanese": "ノ"
+  },
+  {
+    "id": "kana-30cf",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ha”. As the topic particle, は is pronounced wa.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ハ",
+    "topic": "Katakana",
+    "romaji": "ha",
+    "meaning": "ha sound",
+    "reading": "は",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ha",
+        "reading": "は",
+        "japanese": "ハ"
+      }
+    ],
+    "japanese": "ハ"
+  },
+  {
+    "id": "kana-30d2",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “hi”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ヒ",
+    "topic": "Katakana",
+    "romaji": "hi",
+    "meaning": "hi sound",
+    "reading": "ひ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: hi",
+        "reading": "ひ",
+        "japanese": "ヒ"
+      }
+    ],
+    "japanese": "ヒ"
+  },
+  {
+    "id": "kana-30d5",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “fu”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "フ",
+    "topic": "Katakana",
+    "romaji": "fu",
+    "meaning": "fu sound",
+    "reading": "ふ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: fu",
+        "reading": "ふ",
+        "japanese": "フ"
+      }
+    ],
+    "japanese": "フ"
+  },
+  {
+    "id": "kana-30d8",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “he”. As the direction particle, へ is pronounced e.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ヘ",
+    "topic": "Katakana",
+    "romaji": "he",
+    "meaning": "he sound",
+    "reading": "へ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: he",
+        "reading": "へ",
+        "japanese": "ヘ"
+      }
+    ],
+    "japanese": "ヘ"
+  },
+  {
+    "id": "kana-30db",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ho”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ホ",
+    "topic": "Katakana",
+    "romaji": "ho",
+    "meaning": "ho sound",
+    "reading": "ほ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ho",
+        "reading": "ほ",
+        "japanese": "ホ"
+      }
+    ],
+    "japanese": "ホ"
+  },
+  {
+    "id": "kana-30de",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ma”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "マ",
+    "topic": "Katakana",
+    "romaji": "ma",
+    "meaning": "ma sound",
+    "reading": "ま",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ma",
+        "reading": "ま",
+        "japanese": "マ"
+      }
+    ],
+    "japanese": "マ"
+  },
+  {
+    "id": "kana-30df",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “mi”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ミ",
+    "topic": "Katakana",
+    "romaji": "mi",
+    "meaning": "mi sound",
+    "reading": "み",
+    "examples": [
+      {
+        "meaning": "Katakana reading: mi",
+        "reading": "み",
+        "japanese": "ミ"
+      }
+    ],
+    "japanese": "ミ"
+  },
+  {
+    "id": "kana-30e0",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “mu”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ム",
+    "topic": "Katakana",
+    "romaji": "mu",
+    "meaning": "mu sound",
+    "reading": "む",
+    "examples": [
+      {
+        "meaning": "Katakana reading: mu",
+        "reading": "む",
+        "japanese": "ム"
+      }
+    ],
+    "japanese": "ム"
+  },
+  {
+    "id": "kana-30e1",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “me”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "メ",
+    "topic": "Katakana",
+    "romaji": "me",
+    "meaning": "me sound",
+    "reading": "め",
+    "examples": [
+      {
+        "meaning": "Katakana reading: me",
+        "reading": "め",
+        "japanese": "メ"
+      }
+    ],
+    "japanese": "メ"
+  },
+  {
+    "id": "kana-30e2",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “mo”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "モ",
+    "topic": "Katakana",
+    "romaji": "mo",
+    "meaning": "mo sound",
+    "reading": "も",
+    "examples": [
+      {
+        "meaning": "Katakana reading: mo",
+        "reading": "も",
+        "japanese": "モ"
+      }
+    ],
+    "japanese": "モ"
+  },
+  {
+    "id": "kana-30e4",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ya”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ヤ",
+    "topic": "Katakana",
+    "romaji": "ya",
+    "meaning": "ya sound",
+    "reading": "や",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ya",
+        "reading": "や",
+        "japanese": "ヤ"
+      }
+    ],
+    "japanese": "ヤ"
+  },
+  {
+    "id": "kana-30e6",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “yu”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ユ",
+    "topic": "Katakana",
+    "romaji": "yu",
+    "meaning": "yu sound",
+    "reading": "ゆ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: yu",
+        "reading": "ゆ",
+        "japanese": "ユ"
+      }
+    ],
+    "japanese": "ユ"
+  },
+  {
+    "id": "kana-30e8",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “yo”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ヨ",
+    "topic": "Katakana",
+    "romaji": "yo",
+    "meaning": "yo sound",
+    "reading": "よ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: yo",
+        "reading": "よ",
+        "japanese": "ヨ"
+      }
+    ],
+    "japanese": "ヨ"
+  },
+  {
+    "id": "kana-30e9",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ra”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ラ",
+    "topic": "Katakana",
+    "romaji": "ra",
+    "meaning": "ra sound",
+    "reading": "ら",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ra",
+        "reading": "ら",
+        "japanese": "ラ"
+      }
+    ],
+    "japanese": "ラ"
+  },
+  {
+    "id": "kana-30ea",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ri”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "リ",
+    "topic": "Katakana",
+    "romaji": "ri",
+    "meaning": "ri sound",
+    "reading": "り",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ri",
+        "reading": "り",
+        "japanese": "リ"
+      }
+    ],
+    "japanese": "リ"
+  },
+  {
+    "id": "kana-30eb",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ru”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ル",
+    "topic": "Katakana",
+    "romaji": "ru",
+    "meaning": "ru sound",
+    "reading": "る",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ru",
+        "reading": "る",
+        "japanese": "ル"
+      }
+    ],
+    "japanese": "ル"
+  },
+  {
+    "id": "kana-30ec",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “re”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "レ",
+    "topic": "Katakana",
+    "romaji": "re",
+    "meaning": "re sound",
+    "reading": "れ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: re",
+        "reading": "れ",
+        "japanese": "レ"
+      }
+    ],
+    "japanese": "レ"
+  },
+  {
+    "id": "kana-30ed",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ro”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ロ",
+    "topic": "Katakana",
+    "romaji": "ro",
+    "meaning": "ro sound",
+    "reading": "ろ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ro",
+        "reading": "ろ",
+        "japanese": "ロ"
+      }
+    ],
+    "japanese": "ロ"
+  },
+  {
+    "id": "kana-30ef",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “wa”.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ワ",
+    "topic": "Katakana",
+    "romaji": "wa",
+    "meaning": "wa sound",
+    "reading": "わ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: wa",
+        "reading": "わ",
+        "japanese": "ワ"
+      }
+    ],
+    "japanese": "ワ"
+  },
+  {
+    "id": "kana-30f2",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “wo”. Usually used as the direct-object particle and pronounced o in modern Japanese.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ヲ",
+    "topic": "Katakana",
+    "romaji": "wo",
+    "meaning": "wo sound",
+    "reading": "を",
+    "examples": [
+      {
+        "meaning": "Katakana reading: wo",
+        "reading": "を",
+        "japanese": "ヲ"
+      }
+    ],
+    "japanese": "ヲ"
+  },
+  {
+    "id": "kana-30f3",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “n”. This is one mora. Its exact sound changes with the next sound; before a vowel, romaji may use an apostrophe.",
+    "tags": [
+      "Basic kana"
+    ],
+    "level": "Foundation",
+    "title": "ン",
+    "topic": "Katakana",
+    "romaji": "n",
+    "meaning": "n sound",
+    "reading": "ん",
+    "examples": [
+      {
+        "meaning": "Katakana reading: n",
+        "reading": "ん",
+        "japanese": "ン"
+      }
+    ],
+    "japanese": "ン"
+  },
+  {
+    "id": "kana-30ac",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ga”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ガ",
+    "topic": "Katakana",
+    "romaji": "ga",
+    "meaning": "ga sound",
+    "reading": "が",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ga",
+        "reading": "が",
+        "japanese": "ガ"
+      }
+    ],
+    "japanese": "ガ"
+  },
+  {
+    "id": "kana-30ae",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “gi”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ギ",
+    "topic": "Katakana",
+    "romaji": "gi",
+    "meaning": "gi sound",
+    "reading": "ぎ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: gi",
+        "reading": "ぎ",
+        "japanese": "ギ"
+      }
+    ],
+    "japanese": "ギ"
+  },
+  {
+    "id": "kana-30b0",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “gu”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "グ",
+    "topic": "Katakana",
+    "romaji": "gu",
+    "meaning": "gu sound",
+    "reading": "ぐ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: gu",
+        "reading": "ぐ",
+        "japanese": "グ"
+      }
+    ],
+    "japanese": "グ"
+  },
+  {
+    "id": "kana-30b2",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ge”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ゲ",
+    "topic": "Katakana",
+    "romaji": "ge",
+    "meaning": "ge sound",
+    "reading": "げ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ge",
+        "reading": "げ",
+        "japanese": "ゲ"
+      }
+    ],
+    "japanese": "ゲ"
+  },
+  {
+    "id": "kana-30b4",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “go”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ゴ",
+    "topic": "Katakana",
+    "romaji": "go",
+    "meaning": "go sound",
+    "reading": "ご",
+    "examples": [
+      {
+        "meaning": "Katakana reading: go",
+        "reading": "ご",
+        "japanese": "ゴ"
+      }
+    ],
+    "japanese": "ゴ"
+  },
+  {
+    "id": "kana-30b6",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “za”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ザ",
+    "topic": "Katakana",
+    "romaji": "za",
+    "meaning": "za sound",
+    "reading": "ざ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: za",
+        "reading": "ざ",
+        "japanese": "ザ"
+      }
+    ],
+    "japanese": "ザ"
+  },
+  {
+    "id": "kana-30b8",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ji”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ジ",
+    "topic": "Katakana",
+    "romaji": "ji",
+    "meaning": "ji sound",
+    "reading": "じ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ji",
+        "reading": "じ",
+        "japanese": "ジ"
+      }
+    ],
+    "japanese": "ジ"
+  },
+  {
+    "id": "kana-30ba",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “zu”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ズ",
+    "topic": "Katakana",
+    "romaji": "zu",
+    "meaning": "zu sound",
+    "reading": "ず",
+    "examples": [
+      {
+        "meaning": "Katakana reading: zu",
+        "reading": "ず",
+        "japanese": "ズ"
+      }
+    ],
+    "japanese": "ズ"
+  },
+  {
+    "id": "kana-30bc",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ze”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ゼ",
+    "topic": "Katakana",
+    "romaji": "ze",
+    "meaning": "ze sound",
+    "reading": "ぜ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ze",
+        "reading": "ぜ",
+        "japanese": "ゼ"
+      }
+    ],
+    "japanese": "ゼ"
+  },
+  {
+    "id": "kana-30be",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “zo”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ゾ",
+    "topic": "Katakana",
+    "romaji": "zo",
+    "meaning": "zo sound",
+    "reading": "ぞ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: zo",
+        "reading": "ぞ",
+        "japanese": "ゾ"
+      }
+    ],
+    "japanese": "ゾ"
+  },
+  {
+    "id": "kana-30c0",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “da”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ダ",
+    "topic": "Katakana",
+    "romaji": "da",
+    "meaning": "da sound",
+    "reading": "だ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: da",
+        "reading": "だ",
+        "japanese": "ダ"
+      }
+    ],
+    "japanese": "ダ"
+  },
+  {
+    "id": "kana-30c2",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ji”. Usually sounds like じ / ず; spelling depends on the word, as in はなぢ and つづく.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ヂ",
+    "topic": "Katakana",
+    "romaji": "ji",
+    "meaning": "ji sound",
+    "reading": "ぢ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ji",
+        "reading": "ぢ",
+        "japanese": "ヂ"
+      }
+    ],
+    "japanese": "ヂ"
+  },
+  {
+    "id": "kana-30c5",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “zu”. Usually sounds like じ / ず; spelling depends on the word, as in はなぢ and つづく.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ヅ",
+    "topic": "Katakana",
+    "romaji": "zu",
+    "meaning": "zu sound",
+    "reading": "づ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: zu",
+        "reading": "づ",
+        "japanese": "ヅ"
+      }
+    ],
+    "japanese": "ヅ"
+  },
+  {
+    "id": "kana-30c7",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “de”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "デ",
+    "topic": "Katakana",
+    "romaji": "de",
+    "meaning": "de sound",
+    "reading": "で",
+    "examples": [
+      {
+        "meaning": "Katakana reading: de",
+        "reading": "で",
+        "japanese": "デ"
+      }
+    ],
+    "japanese": "デ"
+  },
+  {
+    "id": "kana-30c9",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “do”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ド",
+    "topic": "Katakana",
+    "romaji": "do",
+    "meaning": "do sound",
+    "reading": "ど",
+    "examples": [
+      {
+        "meaning": "Katakana reading: do",
+        "reading": "ど",
+        "japanese": "ド"
+      }
+    ],
+    "japanese": "ド"
+  },
+  {
+    "id": "kana-30d0",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “ba”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "バ",
+    "topic": "Katakana",
+    "romaji": "ba",
+    "meaning": "ba sound",
+    "reading": "ば",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ba",
+        "reading": "ば",
+        "japanese": "バ"
+      }
+    ],
+    "japanese": "バ"
+  },
+  {
+    "id": "kana-30d3",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “bi”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ビ",
+    "topic": "Katakana",
+    "romaji": "bi",
+    "meaning": "bi sound",
+    "reading": "び",
+    "examples": [
+      {
+        "meaning": "Katakana reading: bi",
+        "reading": "び",
+        "japanese": "ビ"
+      }
+    ],
+    "japanese": "ビ"
+  },
+  {
+    "id": "kana-30d6",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “bu”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ブ",
+    "topic": "Katakana",
+    "romaji": "bu",
+    "meaning": "bu sound",
+    "reading": "ぶ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: bu",
+        "reading": "ぶ",
+        "japanese": "ブ"
+      }
+    ],
+    "japanese": "ブ"
+  },
+  {
+    "id": "kana-30d9",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “be”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ベ",
+    "topic": "Katakana",
+    "romaji": "be",
+    "meaning": "be sound",
+    "reading": "べ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: be",
+        "reading": "べ",
+        "japanese": "ベ"
+      }
+    ],
+    "japanese": "ベ"
+  },
+  {
+    "id": "kana-30dc",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “bo”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ボ",
+    "topic": "Katakana",
+    "romaji": "bo",
+    "meaning": "bo sound",
+    "reading": "ぼ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: bo",
+        "reading": "ぼ",
+        "japanese": "ボ"
+      }
+    ],
+    "japanese": "ボ"
+  },
+  {
+    "id": "kana-30d1",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “pa”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "パ",
+    "topic": "Katakana",
+    "romaji": "pa",
+    "meaning": "pa sound",
+    "reading": "ぱ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: pa",
+        "reading": "ぱ",
+        "japanese": "パ"
+      }
+    ],
+    "japanese": "パ"
+  },
+  {
+    "id": "kana-30d4",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “pi”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ピ",
+    "topic": "Katakana",
+    "romaji": "pi",
+    "meaning": "pi sound",
+    "reading": "ぴ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: pi",
+        "reading": "ぴ",
+        "japanese": "ピ"
+      }
+    ],
+    "japanese": "ピ"
+  },
+  {
+    "id": "kana-30d7",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “pu”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "プ",
+    "topic": "Katakana",
+    "romaji": "pu",
+    "meaning": "pu sound",
+    "reading": "ぷ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: pu",
+        "reading": "ぷ",
+        "japanese": "プ"
+      }
+    ],
+    "japanese": "プ"
+  },
+  {
+    "id": "kana-30da",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “pe”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ペ",
+    "topic": "Katakana",
+    "romaji": "pe",
+    "meaning": "pe sound",
+    "reading": "ぺ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: pe",
+        "reading": "ぺ",
+        "japanese": "ペ"
+      }
+    ],
+    "japanese": "ペ"
+  },
+  {
+    "id": "kana-30dd",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “po”.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ポ",
+    "topic": "Katakana",
+    "romaji": "po",
+    "meaning": "po sound",
+    "reading": "ぽ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: po",
+        "reading": "ぽ",
+        "japanese": "ポ"
+      }
+    ],
+    "japanese": "ポ"
+  },
+  {
+    "id": "kana-30a1",
+    "kind": "kana",
+    "note": "This is a small kana. Size changes how it joins neighboring sounds; compare with the full-size form. Small vowels are especially useful in katakana loanwords.",
+    "tags": [
+      "Small kana"
+    ],
+    "level": "Foundation",
+    "title": "ァ",
+    "topic": "Katakana",
+    "romaji": "a",
+    "meaning": "Small a",
+    "reading": "ぁ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: a",
+        "reading": "ぁ",
+        "japanese": "ァ"
+      }
+    ],
+    "japanese": "ァ"
+  },
+  {
+    "id": "kana-30a3",
+    "kind": "kana",
+    "note": "This is a small kana. Size changes how it joins neighboring sounds; compare with the full-size form. Small vowels are especially useful in katakana loanwords.",
+    "tags": [
+      "Small kana"
+    ],
+    "level": "Foundation",
+    "title": "ィ",
+    "topic": "Katakana",
+    "romaji": "i",
+    "meaning": "Small i",
+    "reading": "ぃ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: i",
+        "reading": "ぃ",
+        "japanese": "ィ"
+      }
+    ],
+    "japanese": "ィ"
+  },
+  {
+    "id": "kana-30a5",
+    "kind": "kana",
+    "note": "This is a small kana. Size changes how it joins neighboring sounds; compare with the full-size form. Small vowels are especially useful in katakana loanwords.",
+    "tags": [
+      "Small kana"
+    ],
+    "level": "Foundation",
+    "title": "ゥ",
+    "topic": "Katakana",
+    "romaji": "u",
+    "meaning": "Small u",
+    "reading": "ぅ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: u",
+        "reading": "ぅ",
+        "japanese": "ゥ"
+      }
+    ],
+    "japanese": "ゥ"
+  },
+  {
+    "id": "kana-30a7",
+    "kind": "kana",
+    "note": "This is a small kana. Size changes how it joins neighboring sounds; compare with the full-size form. Small vowels are especially useful in katakana loanwords.",
+    "tags": [
+      "Small kana"
+    ],
+    "level": "Foundation",
+    "title": "ェ",
+    "topic": "Katakana",
+    "romaji": "e",
+    "meaning": "Small e",
+    "reading": "ぇ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: e",
+        "reading": "ぇ",
+        "japanese": "ェ"
+      }
+    ],
+    "japanese": "ェ"
+  },
+  {
+    "id": "kana-30a9",
+    "kind": "kana",
+    "note": "This is a small kana. Size changes how it joins neighboring sounds; compare with the full-size form. Small vowels are especially useful in katakana loanwords.",
+    "tags": [
+      "Small kana"
+    ],
+    "level": "Foundation",
+    "title": "ォ",
+    "topic": "Katakana",
+    "romaji": "o",
+    "meaning": "Small o",
+    "reading": "ぉ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: o",
+        "reading": "ぉ",
+        "japanese": "ォ"
+      }
+    ],
+    "japanese": "ォ"
+  },
+  {
+    "id": "kana-30e3",
+    "kind": "kana",
+    "note": "This is a small kana. Size changes how it joins neighboring sounds; compare with the full-size form. Small vowels are especially useful in katakana loanwords.",
+    "tags": [
+      "Small kana"
+    ],
+    "level": "Foundation",
+    "title": "ャ",
+    "topic": "Katakana",
+    "romaji": "ya",
+    "meaning": "Small ya",
+    "reading": "ゃ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ya",
+        "reading": "ゃ",
+        "japanese": "ャ"
+      }
+    ],
+    "japanese": "ャ"
+  },
+  {
+    "id": "kana-30e5",
+    "kind": "kana",
+    "note": "This is a small kana. Size changes how it joins neighboring sounds; compare with the full-size form. Small vowels are especially useful in katakana loanwords.",
+    "tags": [
+      "Small kana"
+    ],
+    "level": "Foundation",
+    "title": "ュ",
+    "topic": "Katakana",
+    "romaji": "yu",
+    "meaning": "Small yu",
+    "reading": "ゅ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: yu",
+        "reading": "ゅ",
+        "japanese": "ュ"
+      }
+    ],
+    "japanese": "ュ"
+  },
+  {
+    "id": "kana-30e7",
+    "kind": "kana",
+    "note": "This is a small kana. Size changes how it joins neighboring sounds; compare with the full-size form. Small vowels are especially useful in katakana loanwords.",
+    "tags": [
+      "Small kana"
+    ],
+    "level": "Foundation",
+    "title": "ョ",
+    "topic": "Katakana",
+    "romaji": "yo",
+    "meaning": "Small yo",
+    "reading": "ょ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: yo",
+        "reading": "ょ",
+        "japanese": "ョ"
+      }
+    ],
+    "japanese": "ョ"
+  },
+  {
+    "id": "kana-30c3",
+    "kind": "kana",
+    "note": "Small tsu marks a held consonant: きって (kitte, stamp) differs from きて (kite, come). It is not pronounced “tsu” here.",
+    "tags": [
+      "Small kana"
+    ],
+    "level": "Foundation",
+    "title": "ッ",
+    "topic": "Katakana",
+    "romaji": "small tsu",
+    "meaning": "Small tsu",
+    "reading": "っ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: small tsu",
+        "reading": "っ",
+        "japanese": "ッ"
+      }
+    ],
+    "japanese": "ッ"
+  },
+  {
+    "id": "kana-30ee",
+    "kind": "kana",
+    "note": "This is a small kana. Size changes how it joins neighboring sounds; compare with the full-size form. Small vowels are especially useful in katakana loanwords.",
+    "tags": [
+      "Small kana"
+    ],
+    "level": "Foundation",
+    "title": "ヮ",
+    "topic": "Katakana",
+    "romaji": "small wa",
+    "meaning": "Small wa",
+    "reading": "ゎ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: small wa",
+        "reading": "ゎ",
+        "japanese": "ヮ"
+      }
+    ],
+    "japanese": "ヮ"
+  },
+  {
+    "id": "kana-30f4",
+    "kind": "kana",
+    "note": "Katakana represents a sound, rather than a meaning. Read this as “vu”. An extension for foreign sounds; katakana ヴ is more usual than hiragana ゔ.",
+    "tags": [
+      "Voiced sounds"
+    ],
+    "level": "Foundation",
+    "title": "ヴ",
+    "topic": "Katakana",
+    "romaji": "vu",
+    "meaning": "vu sound",
+    "reading": "ゔ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: vu",
+        "reading": "ゔ",
+        "japanese": "ヴ"
+      }
+    ],
+    "japanese": "ヴ"
+  },
+  {
+    "id": "kana-30ad-30e3",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). キャ is “kya”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "キャ",
+    "topic": "Katakana",
+    "romaji": "kya",
+    "meaning": "kya sound",
+    "reading": "きゃ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: kya",
+        "reading": "きゃ",
+        "japanese": "キャ"
+      }
+    ],
+    "japanese": "キャ"
+  },
+  {
+    "id": "kana-30ad-30e5",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). キュ is “kyu”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "キュ",
+    "topic": "Katakana",
+    "romaji": "kyu",
+    "meaning": "kyu sound",
+    "reading": "きゅ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: kyu",
+        "reading": "きゅ",
+        "japanese": "キュ"
+      }
+    ],
+    "japanese": "キュ"
+  },
+  {
+    "id": "kana-30ad-30e7",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). キョ is “kyo”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "キョ",
+    "topic": "Katakana",
+    "romaji": "kyo",
+    "meaning": "kyo sound",
+    "reading": "きょ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: kyo",
+        "reading": "きょ",
+        "japanese": "キョ"
+      }
+    ],
+    "japanese": "キョ"
+  },
+  {
+    "id": "kana-30b7-30e3",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). シャ is “sha”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "シャ",
+    "topic": "Katakana",
+    "romaji": "sha",
+    "meaning": "sha sound",
+    "reading": "しゃ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: sha",
+        "reading": "しゃ",
+        "japanese": "シャ"
+      }
+    ],
+    "japanese": "シャ"
+  },
+  {
+    "id": "kana-30b7-30e5",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). シュ is “shu”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "シュ",
+    "topic": "Katakana",
+    "romaji": "shu",
+    "meaning": "shu sound",
+    "reading": "しゅ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: shu",
+        "reading": "しゅ",
+        "japanese": "シュ"
+      }
+    ],
+    "japanese": "シュ"
+  },
+  {
+    "id": "kana-30b7-30e7",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ショ is “sho”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ショ",
+    "topic": "Katakana",
+    "romaji": "sho",
+    "meaning": "sho sound",
+    "reading": "しょ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: sho",
+        "reading": "しょ",
+        "japanese": "ショ"
+      }
+    ],
+    "japanese": "ショ"
+  },
+  {
+    "id": "kana-30c1-30e3",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). チャ is “cha”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "チャ",
+    "topic": "Katakana",
+    "romaji": "cha",
+    "meaning": "cha sound",
+    "reading": "ちゃ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: cha",
+        "reading": "ちゃ",
+        "japanese": "チャ"
+      }
+    ],
+    "japanese": "チャ"
+  },
+  {
+    "id": "kana-30c1-30e5",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). チュ is “chu”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "チュ",
+    "topic": "Katakana",
+    "romaji": "chu",
+    "meaning": "chu sound",
+    "reading": "ちゅ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: chu",
+        "reading": "ちゅ",
+        "japanese": "チュ"
+      }
+    ],
+    "japanese": "チュ"
+  },
+  {
+    "id": "kana-30c1-30e7",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). チョ is “cho”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "チョ",
+    "topic": "Katakana",
+    "romaji": "cho",
+    "meaning": "cho sound",
+    "reading": "ちょ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: cho",
+        "reading": "ちょ",
+        "japanese": "チョ"
+      }
+    ],
+    "japanese": "チョ"
+  },
+  {
+    "id": "kana-30cb-30e3",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ニャ is “nya”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ニャ",
+    "topic": "Katakana",
+    "romaji": "nya",
+    "meaning": "nya sound",
+    "reading": "にゃ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: nya",
+        "reading": "にゃ",
+        "japanese": "ニャ"
+      }
+    ],
+    "japanese": "ニャ"
+  },
+  {
+    "id": "kana-30cb-30e5",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ニュ is “nyu”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ニュ",
+    "topic": "Katakana",
+    "romaji": "nyu",
+    "meaning": "nyu sound",
+    "reading": "にゅ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: nyu",
+        "reading": "にゅ",
+        "japanese": "ニュ"
+      }
+    ],
+    "japanese": "ニュ"
+  },
+  {
+    "id": "kana-30cb-30e7",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ニョ is “nyo”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ニョ",
+    "topic": "Katakana",
+    "romaji": "nyo",
+    "meaning": "nyo sound",
+    "reading": "にょ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: nyo",
+        "reading": "にょ",
+        "japanese": "ニョ"
+      }
+    ],
+    "japanese": "ニョ"
+  },
+  {
+    "id": "kana-30d2-30e3",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ヒャ is “hya”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ヒャ",
+    "topic": "Katakana",
+    "romaji": "hya",
+    "meaning": "hya sound",
+    "reading": "ひゃ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: hya",
+        "reading": "ひゃ",
+        "japanese": "ヒャ"
+      }
+    ],
+    "japanese": "ヒャ"
+  },
+  {
+    "id": "kana-30d2-30e5",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ヒュ is “hyu”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ヒュ",
+    "topic": "Katakana",
+    "romaji": "hyu",
+    "meaning": "hyu sound",
+    "reading": "ひゅ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: hyu",
+        "reading": "ひゅ",
+        "japanese": "ヒュ"
+      }
+    ],
+    "japanese": "ヒュ"
+  },
+  {
+    "id": "kana-30d2-30e7",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ヒョ is “hyo”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ヒョ",
+    "topic": "Katakana",
+    "romaji": "hyo",
+    "meaning": "hyo sound",
+    "reading": "ひょ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: hyo",
+        "reading": "ひょ",
+        "japanese": "ヒョ"
+      }
+    ],
+    "japanese": "ヒョ"
+  },
+  {
+    "id": "kana-30df-30e3",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ミャ is “mya”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ミャ",
+    "topic": "Katakana",
+    "romaji": "mya",
+    "meaning": "mya sound",
+    "reading": "みゃ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: mya",
+        "reading": "みゃ",
+        "japanese": "ミャ"
+      }
+    ],
+    "japanese": "ミャ"
+  },
+  {
+    "id": "kana-30df-30e5",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ミュ is “myu”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ミュ",
+    "topic": "Katakana",
+    "romaji": "myu",
+    "meaning": "myu sound",
+    "reading": "みゅ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: myu",
+        "reading": "みゅ",
+        "japanese": "ミュ"
+      }
+    ],
+    "japanese": "ミュ"
+  },
+  {
+    "id": "kana-30df-30e7",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ミョ is “myo”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ミョ",
+    "topic": "Katakana",
+    "romaji": "myo",
+    "meaning": "myo sound",
+    "reading": "みょ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: myo",
+        "reading": "みょ",
+        "japanese": "ミョ"
+      }
+    ],
+    "japanese": "ミョ"
+  },
+  {
+    "id": "kana-30ea-30e3",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). リャ is “rya”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "リャ",
+    "topic": "Katakana",
+    "romaji": "rya",
+    "meaning": "rya sound",
+    "reading": "りゃ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: rya",
+        "reading": "りゃ",
+        "japanese": "リャ"
+      }
+    ],
+    "japanese": "リャ"
+  },
+  {
+    "id": "kana-30ea-30e5",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). リュ is “ryu”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "リュ",
+    "topic": "Katakana",
+    "romaji": "ryu",
+    "meaning": "ryu sound",
+    "reading": "りゅ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ryu",
+        "reading": "りゅ",
+        "japanese": "リュ"
+      }
+    ],
+    "japanese": "リュ"
+  },
+  {
+    "id": "kana-30ea-30e7",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). リョ is “ryo”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "リョ",
+    "topic": "Katakana",
+    "romaji": "ryo",
+    "meaning": "ryo sound",
+    "reading": "りょ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ryo",
+        "reading": "りょ",
+        "japanese": "リョ"
+      }
+    ],
+    "japanese": "リョ"
+  },
+  {
+    "id": "kana-30ae-30e3",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ギャ is “gya”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ギャ",
+    "topic": "Katakana",
+    "romaji": "gya",
+    "meaning": "gya sound",
+    "reading": "ぎゃ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: gya",
+        "reading": "ぎゃ",
+        "japanese": "ギャ"
+      }
+    ],
+    "japanese": "ギャ"
+  },
+  {
+    "id": "kana-30ae-30e5",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ギュ is “gyu”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ギュ",
+    "topic": "Katakana",
+    "romaji": "gyu",
+    "meaning": "gyu sound",
+    "reading": "ぎゅ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: gyu",
+        "reading": "ぎゅ",
+        "japanese": "ギュ"
+      }
+    ],
+    "japanese": "ギュ"
+  },
+  {
+    "id": "kana-30ae-30e7",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ギョ is “gyo”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ギョ",
+    "topic": "Katakana",
+    "romaji": "gyo",
+    "meaning": "gyo sound",
+    "reading": "ぎょ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: gyo",
+        "reading": "ぎょ",
+        "japanese": "ギョ"
+      }
+    ],
+    "japanese": "ギョ"
+  },
+  {
+    "id": "kana-30b8-30e3",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ジャ is “ja”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ジャ",
+    "topic": "Katakana",
+    "romaji": "ja",
+    "meaning": "ja sound",
+    "reading": "じゃ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ja",
+        "reading": "じゃ",
+        "japanese": "ジャ"
+      }
+    ],
+    "japanese": "ジャ"
+  },
+  {
+    "id": "kana-30b8-30e5",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ジュ is “ju”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ジュ",
+    "topic": "Katakana",
+    "romaji": "ju",
+    "meaning": "ju sound",
+    "reading": "じゅ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ju",
+        "reading": "じゅ",
+        "japanese": "ジュ"
+      }
+    ],
+    "japanese": "ジュ"
+  },
+  {
+    "id": "kana-30b8-30e7",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ジョ is “jo”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ジョ",
+    "topic": "Katakana",
+    "romaji": "jo",
+    "meaning": "jo sound",
+    "reading": "じょ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: jo",
+        "reading": "じょ",
+        "japanese": "ジョ"
+      }
+    ],
+    "japanese": "ジョ"
+  },
+  {
+    "id": "kana-30d3-30e3",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ビャ is “bya”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ビャ",
+    "topic": "Katakana",
+    "romaji": "bya",
+    "meaning": "bya sound",
+    "reading": "びゃ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: bya",
+        "reading": "びゃ",
+        "japanese": "ビャ"
+      }
+    ],
+    "japanese": "ビャ"
+  },
+  {
+    "id": "kana-30d3-30e5",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ビュ is “byu”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ビュ",
+    "topic": "Katakana",
+    "romaji": "byu",
+    "meaning": "byu sound",
+    "reading": "びゅ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: byu",
+        "reading": "びゅ",
+        "japanese": "ビュ"
+      }
+    ],
+    "japanese": "ビュ"
+  },
+  {
+    "id": "kana-30d3-30e7",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ビョ is “byo”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ビョ",
+    "topic": "Katakana",
+    "romaji": "byo",
+    "meaning": "byo sound",
+    "reading": "びょ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: byo",
+        "reading": "びょ",
+        "japanese": "ビョ"
+      }
+    ],
+    "japanese": "ビョ"
+  },
+  {
+    "id": "kana-30d4-30e3",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ピャ is “pya”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ピャ",
+    "topic": "Katakana",
+    "romaji": "pya",
+    "meaning": "pya sound",
+    "reading": "ぴゃ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: pya",
+        "reading": "ぴゃ",
+        "japanese": "ピャ"
+      }
+    ],
+    "japanese": "ピャ"
+  },
+  {
+    "id": "kana-30d4-30e5",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ピュ is “pyu”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ピュ",
+    "topic": "Katakana",
+    "romaji": "pyu",
+    "meaning": "pyu sound",
+    "reading": "ぴゅ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: pyu",
+        "reading": "ぴゅ",
+        "japanese": "ピュ"
+      }
+    ],
+    "japanese": "ピュ"
+  },
+  {
+    "id": "kana-30d4-30e7",
+    "kind": "kana",
+    "note": "A full-size kana plus small ャ, ュ or ョ makes one combined sound (one mora). ピョ is “pyo”, not two separate full-size sounds.",
+    "tags": [
+      "Combinations"
+    ],
+    "level": "Foundation",
+    "title": "ピョ",
+    "topic": "Katakana",
+    "romaji": "pyo",
+    "meaning": "pyo sound",
+    "reading": "ぴょ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: pyo",
+        "reading": "ぴょ",
+        "japanese": "ピョ"
+      }
+    ],
+    "japanese": "ピョ"
+  },
+  {
+    "id": "kana-30c6-30a3",
+    "kind": "kana",
+    "note": "Katakana uses small vowels to represent additional sounds in loanwords. Read the combination as one sound unit rather than separate full-size kana.",
+    "tags": [
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "ティ",
+    "topic": "Katakana",
+    "romaji": "ti",
+    "meaning": "ti sound",
+    "reading": "てぃ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ti",
+        "reading": "てぃ",
+        "japanese": "ティ"
+      }
+    ],
+    "japanese": "ティ"
+  },
+  {
+    "id": "kana-30c7-30a3",
+    "kind": "kana",
+    "note": "Katakana uses small vowels to represent additional sounds in loanwords. Read the combination as one sound unit rather than separate full-size kana.",
+    "tags": [
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "ディ",
+    "topic": "Katakana",
+    "romaji": "di",
+    "meaning": "di sound",
+    "reading": "でぃ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: di",
+        "reading": "でぃ",
+        "japanese": "ディ"
+      }
+    ],
+    "japanese": "ディ"
+  },
+  {
+    "id": "kana-30c8-30a5",
+    "kind": "kana",
+    "note": "Katakana uses small vowels to represent additional sounds in loanwords. Read the combination as one sound unit rather than separate full-size kana.",
+    "tags": [
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "トゥ",
+    "topic": "Katakana",
+    "romaji": "tu",
+    "meaning": "tu sound",
+    "reading": "とぅ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: tu",
+        "reading": "とぅ",
+        "japanese": "トゥ"
+      }
+    ],
+    "japanese": "トゥ"
+  },
+  {
+    "id": "kana-30c9-30a5",
+    "kind": "kana",
+    "note": "Katakana uses small vowels to represent additional sounds in loanwords. Read the combination as one sound unit rather than separate full-size kana.",
+    "tags": [
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "ドゥ",
+    "topic": "Katakana",
+    "romaji": "du",
+    "meaning": "du sound",
+    "reading": "どぅ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: du",
+        "reading": "どぅ",
+        "japanese": "ドゥ"
+      }
+    ],
+    "japanese": "ドゥ"
+  },
+  {
+    "id": "kana-30d5-30a1",
+    "kind": "kana",
+    "note": "Katakana uses small vowels to represent additional sounds in loanwords. Read the combination as one sound unit rather than separate full-size kana.",
+    "tags": [
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "ファ",
+    "topic": "Katakana",
+    "romaji": "fa",
+    "meaning": "fa sound",
+    "reading": "ふぁ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: fa",
+        "reading": "ふぁ",
+        "japanese": "ファ"
+      }
+    ],
+    "japanese": "ファ"
+  },
+  {
+    "id": "kana-30d5-30a3",
+    "kind": "kana",
+    "note": "Katakana uses small vowels to represent additional sounds in loanwords. Read the combination as one sound unit rather than separate full-size kana.",
+    "tags": [
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "フィ",
+    "topic": "Katakana",
+    "romaji": "fi",
+    "meaning": "fi sound",
+    "reading": "ふぃ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: fi",
+        "reading": "ふぃ",
+        "japanese": "フィ"
+      }
+    ],
+    "japanese": "フィ"
+  },
+  {
+    "id": "kana-30d5-30a7",
+    "kind": "kana",
+    "note": "Katakana uses small vowels to represent additional sounds in loanwords. Read the combination as one sound unit rather than separate full-size kana.",
+    "tags": [
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "フェ",
+    "topic": "Katakana",
+    "romaji": "fe",
+    "meaning": "fe sound",
+    "reading": "ふぇ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: fe",
+        "reading": "ふぇ",
+        "japanese": "フェ"
+      }
+    ],
+    "japanese": "フェ"
+  },
+  {
+    "id": "kana-30d5-30a9",
+    "kind": "kana",
+    "note": "Katakana uses small vowels to represent additional sounds in loanwords. Read the combination as one sound unit rather than separate full-size kana.",
+    "tags": [
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "フォ",
+    "topic": "Katakana",
+    "romaji": "fo",
+    "meaning": "fo sound",
+    "reading": "ふぉ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: fo",
+        "reading": "ふぉ",
+        "japanese": "フォ"
+      }
+    ],
+    "japanese": "フォ"
+  },
+  {
+    "id": "kana-30a6-30a3",
+    "kind": "kana",
+    "note": "Katakana uses small vowels to represent additional sounds in loanwords. Read the combination as one sound unit rather than separate full-size kana.",
+    "tags": [
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "ウィ",
+    "topic": "Katakana",
+    "romaji": "wi",
+    "meaning": "wi sound",
+    "reading": "うぃ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: wi",
+        "reading": "うぃ",
+        "japanese": "ウィ"
+      }
+    ],
+    "japanese": "ウィ"
+  },
+  {
+    "id": "kana-30a6-30a7",
+    "kind": "kana",
+    "note": "Katakana uses small vowels to represent additional sounds in loanwords. Read the combination as one sound unit rather than separate full-size kana.",
+    "tags": [
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "ウェ",
+    "topic": "Katakana",
+    "romaji": "we",
+    "meaning": "we sound",
+    "reading": "うぇ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: we",
+        "reading": "うぇ",
+        "japanese": "ウェ"
+      }
+    ],
+    "japanese": "ウェ"
+  },
+  {
+    "id": "kana-30a6-30a9",
+    "kind": "kana",
+    "note": "Katakana uses small vowels to represent additional sounds in loanwords. Read the combination as one sound unit rather than separate full-size kana.",
+    "tags": [
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "ウォ",
+    "topic": "Katakana",
+    "romaji": "wo",
+    "meaning": "wo sound",
+    "reading": "うぉ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: wo",
+        "reading": "うぉ",
+        "japanese": "ウォ"
+      }
+    ],
+    "japanese": "ウォ"
+  },
+  {
+    "id": "kana-30f4-30a1",
+    "kind": "kana",
+    "note": "Katakana uses small vowels to represent additional sounds in loanwords. Read the combination as one sound unit rather than separate full-size kana.",
+    "tags": [
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "ヴァ",
+    "topic": "Katakana",
+    "romaji": "va",
+    "meaning": "va sound",
+    "reading": "ゔぁ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: va",
+        "reading": "ゔぁ",
+        "japanese": "ヴァ"
+      }
+    ],
+    "japanese": "ヴァ"
+  },
+  {
+    "id": "kana-30f4-30a3",
+    "kind": "kana",
+    "note": "Katakana uses small vowels to represent additional sounds in loanwords. Read the combination as one sound unit rather than separate full-size kana.",
+    "tags": [
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "ヴィ",
+    "topic": "Katakana",
+    "romaji": "vi",
+    "meaning": "vi sound",
+    "reading": "ゔぃ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: vi",
+        "reading": "ゔぃ",
+        "japanese": "ヴィ"
+      }
+    ],
+    "japanese": "ヴィ"
+  },
+  {
+    "id": "kana-30f4-30a7",
+    "kind": "kana",
+    "note": "Katakana uses small vowels to represent additional sounds in loanwords. Read the combination as one sound unit rather than separate full-size kana.",
+    "tags": [
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "ヴェ",
+    "topic": "Katakana",
+    "romaji": "ve",
+    "meaning": "ve sound",
+    "reading": "ゔぇ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: ve",
+        "reading": "ゔぇ",
+        "japanese": "ヴェ"
+      }
+    ],
+    "japanese": "ヴェ"
+  },
+  {
+    "id": "kana-30f4-30a9",
+    "kind": "kana",
+    "note": "Katakana uses small vowels to represent additional sounds in loanwords. Read the combination as one sound unit rather than separate full-size kana.",
+    "tags": [
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "ヴォ",
+    "topic": "Katakana",
+    "romaji": "vo",
+    "meaning": "vo sound",
+    "reading": "ゔぉ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: vo",
+        "reading": "ゔぉ",
+        "japanese": "ヴォ"
+      }
+    ],
+    "japanese": "ヴォ"
+  },
+  {
+    "id": "kana-30b7-30a7",
+    "kind": "kana",
+    "note": "Katakana uses small vowels to represent additional sounds in loanwords. Read the combination as one sound unit rather than separate full-size kana.",
+    "tags": [
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "シェ",
+    "topic": "Katakana",
+    "romaji": "she",
+    "meaning": "she sound",
+    "reading": "しぇ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: she",
+        "reading": "しぇ",
+        "japanese": "シェ"
+      }
+    ],
+    "japanese": "シェ"
+  },
+  {
+    "id": "kana-30c1-30a7",
+    "kind": "kana",
+    "note": "Katakana uses small vowels to represent additional sounds in loanwords. Read the combination as one sound unit rather than separate full-size kana.",
+    "tags": [
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "チェ",
+    "topic": "Katakana",
+    "romaji": "che",
+    "meaning": "che sound",
+    "reading": "ちぇ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: che",
+        "reading": "ちぇ",
+        "japanese": "チェ"
+      }
+    ],
+    "japanese": "チェ"
+  },
+  {
+    "id": "kana-30b8-30a7",
+    "kind": "kana",
+    "note": "Katakana uses small vowels to represent additional sounds in loanwords. Read the combination as one sound unit rather than separate full-size kana.",
+    "tags": [
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "ジェ",
+    "topic": "Katakana",
+    "romaji": "je",
+    "meaning": "je sound",
+    "reading": "じぇ",
+    "examples": [
+      {
+        "meaning": "Katakana reading: je",
+        "reading": "じぇ",
+        "japanese": "ジェ"
+      }
+    ],
+    "japanese": "ジェ"
+  },
+  {
+    "id": "kana-30f5",
+    "kind": "kana",
+    "note": "Small ヵ is used in spellings such as 一ヵ月 (いっかげつ). It is not the same size as full カ.",
+    "tags": [
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "ヵ",
+    "topic": "Katakana",
+    "romaji": "small ka",
+    "meaning": "small ka sound",
+    "reading": "か",
+    "examples": [
+      {
+        "meaning": "Katakana reading: small ka",
+        "reading": "か",
+        "japanese": "ヵ"
+      }
+    ],
+    "japanese": "ヵ"
+  },
+  {
+    "id": "kana-30f6",
+    "kind": "kana",
+    "note": "Small ヶ appears in counters and place names; 一ヶ月 is read いっかげつ. Its shape resembles ケ but does not always represent the ke sound. Learn its reading in the whole word.",
+    "tags": [
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "ヶ",
+    "topic": "Katakana",
+    "romaji": "small ke",
+    "meaning": "small ke sound",
+    "reading": "け",
+    "examples": [
+      {
+        "meaning": "Katakana reading: small ke",
+        "reading": "け",
+        "japanese": "ヶ"
+      }
+    ],
+    "japanese": "ヶ"
+  },
+  {
+    "id": "kana-long-vowels",
+    "kind": "kana",
+    "note": "Vowel length can change meaning. Hiragana often repeats あ, い or う; おう is usually a long o sound and えい often a long e sound. Learn each word’s spelling. Katakana usually uses ー: コーヒー. Compare おばさん (aunt) and おばあさん (grandmother).",
+    "tags": [
+      "Long vowels"
+    ],
+    "level": "Foundation",
+    "title": "Long vowels",
+    "topic": "Reading rules",
+    "romaji": "obaasan / kōhī",
+    "meaning": "Hold the vowel for an extra beat",
+    "reading": "おばあさん・こーひー",
+    "examples": [
+      {
+        "meaning": "grandmother",
+        "reading": "おばあさん",
+        "japanese": "おばあさん"
+      },
+      {
+        "meaning": "coffee",
+        "reading": "こーひー",
+        "japanese": "コーヒー"
+      }
+    ],
+    "japanese": "おばあさん・コーヒー"
+  },
+  {
+    "id": "study-kana-30f4-30e5",
+    "kind": "kana",
+    "note": "Read this combination as one sound unit. The second character is small. See the special katakana comparison guide.",
+    "tags": [
+      "Study guide",
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "ヴュ",
+    "topic": "Katakana",
+    "romaji": "vyu",
+    "meaning": "vyu sound",
+    "reading": "ゔゅ",
+    "examples": [
+      {
+        "meaning": "vyu sound",
+        "reading": "ゔゅ",
+        "japanese": "ヴュ"
+      }
+    ],
+    "japanese": "ヴュ"
+  },
+  {
+    "id": "study-kana-30d5-30e5",
+    "kind": "kana",
+    "note": "Read this combination as one sound unit. The second character is small. See the special katakana comparison guide.",
+    "tags": [
+      "Study guide",
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "フュ",
+    "topic": "Katakana",
+    "romaji": "fyu",
+    "meaning": "fyu sound",
+    "reading": "ふゅ",
+    "examples": [
+      {
+        "meaning": "fyu sound",
+        "reading": "ふゅ",
+        "japanese": "フュ"
+      }
+    ],
+    "japanese": "フュ"
+  },
+  {
+    "id": "study-kana-30c6-30e5",
+    "kind": "kana",
+    "note": "Read this combination as one sound unit. The second character is small. See the special katakana comparison guide.",
+    "tags": [
+      "Study guide",
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "テュ",
+    "topic": "Katakana",
+    "romaji": "tyu",
+    "meaning": "tyu sound",
+    "reading": "てゅ",
+    "examples": [
+      {
+        "meaning": "tyu sound",
+        "reading": "てゅ",
+        "japanese": "テュ"
+      }
+    ],
+    "japanese": "テュ"
+  },
+  {
+    "id": "study-kana-30c7-30e5",
+    "kind": "kana",
+    "note": "Read this combination as one sound unit. The second character is small. See the special katakana comparison guide.",
+    "tags": [
+      "Study guide",
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "デュ",
+    "topic": "Katakana",
+    "romaji": "dyu",
+    "meaning": "dyu sound",
+    "reading": "でゅ",
+    "examples": [
+      {
+        "meaning": "dyu sound",
+        "reading": "でゅ",
+        "japanese": "デュ"
+      }
+    ],
+    "japanese": "デュ"
+  },
+  {
+    "id": "study-kana-30a4-30a7",
+    "kind": "kana",
+    "note": "Read this combination as one sound unit. The second character is small. See the special katakana comparison guide.",
+    "tags": [
+      "Study guide",
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "イェ",
+    "topic": "Katakana",
+    "romaji": "ye",
+    "meaning": "ye sound",
+    "reading": "いぇ",
+    "examples": [
+      {
+        "meaning": "ye sound",
+        "reading": "いぇ",
+        "japanese": "イェ"
+      }
+    ],
+    "japanese": "イェ"
+  },
+  {
+    "id": "study-kana-30c4-30a1",
+    "kind": "kana",
+    "note": "Read this combination as one sound unit. The second character is small. See the special katakana comparison guide.",
+    "tags": [
+      "Study guide",
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "ツァ",
+    "topic": "Katakana",
+    "romaji": "tsa",
+    "meaning": "tsa sound",
+    "reading": "つぁ",
+    "examples": [
+      {
+        "meaning": "tsa sound",
+        "reading": "つぁ",
+        "japanese": "ツァ"
+      }
+    ],
+    "japanese": "ツァ"
+  },
+  {
+    "id": "study-kana-30c4-30a3",
+    "kind": "kana",
+    "note": "Read this combination as one sound unit. The second character is small. See the special katakana comparison guide.",
+    "tags": [
+      "Study guide",
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "ツィ",
+    "topic": "Katakana",
+    "romaji": "tsi",
+    "meaning": "tsi sound",
+    "reading": "つぃ",
+    "examples": [
+      {
+        "meaning": "tsi sound",
+        "reading": "つぃ",
+        "japanese": "ツィ"
+      }
+    ],
+    "japanese": "ツィ"
+  },
+  {
+    "id": "study-kana-30c4-30a7",
+    "kind": "kana",
+    "note": "Read this combination as one sound unit. The second character is small. See the special katakana comparison guide.",
+    "tags": [
+      "Study guide",
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "ツェ",
+    "topic": "Katakana",
+    "romaji": "tse",
+    "meaning": "tse sound",
+    "reading": "つぇ",
+    "examples": [
+      {
+        "meaning": "tse sound",
+        "reading": "つぇ",
+        "japanese": "ツェ"
+      }
+    ],
+    "japanese": "ツェ"
+  },
+  {
+    "id": "study-kana-30c4-30a9",
+    "kind": "kana",
+    "note": "Read this combination as one sound unit. The second character is small. See the special katakana comparison guide.",
+    "tags": [
+      "Study guide",
+      "Loanword sounds"
+    ],
+    "level": "Foundation",
+    "title": "ツォ",
+    "topic": "Katakana",
+    "romaji": "tso",
+    "meaning": "tso sound",
+    "reading": "つぉ",
+    "examples": [
+      {
+        "meaning": "tso sound",
+        "reading": "つぉ",
+        "japanese": "ツォ"
+      }
+    ],
+    "japanese": "ツォ"
+  }
+]
