@@ -5,6 +5,7 @@ import { promptFor, normalize, isReadingQuestion, type Question } from '../lib/p
 import { keyed } from '../lib/ui/list-keys';
 import { Furigana, JapaneseProse, RoleText, RoleReading, AlignedTranslation } from './Reading';
 import Writing from './Writing';
+import { vocabularyHints } from '../lib/practice/vocabulary-hints';
 
 export type Result = { correct: boolean; answers: string[]; explanation?: string };
 export type Tile = ReadingText & { i: number };
@@ -363,6 +364,27 @@ type AnswerProps = Readonly<{
   onAnswer: (answer: string) => void;
   onSubmit: (writingCorrect?: boolean) => void;
 }>;
+function VocabularyHint({ exercise }: { exercise?: GuidedExercise }) {
+  const hints = vocabularyHints(exercise);
+  if (!hints.length) return null;
+  return (
+    <details className="vocabulary-hint">
+      <summary>Need help with vocabulary?</summary>
+      <ul>
+        {hints.map((hint) => (
+          <li key={hint.text}>
+            {hint.meaning && <span>{hint.meaning} → </span>}
+            <span lang="ja">
+              {hint.text}
+              {hint.reading && hint.reading !== hint.text ? `（${hint.reading}）` : ''}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </details>
+  );
+}
+
 function AnswerForm(props: AnswerProps) {
   const {
     entries,
@@ -437,6 +459,10 @@ function AnswerForm(props: AnswerProps) {
           )}
         </>
       )}
+      <VocabularyHint
+        key={question.id}
+        exercise={entry.exercises?.find((item) => item.id === question.exerciseId)}
+      />
       {(choices.length > 0 || question.skill === 'recognition') && (
         <div className="practice-actions">
           <button className="primary" disabled={busy || !answer.trim()} type="submit">

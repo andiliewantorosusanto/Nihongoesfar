@@ -156,3 +156,18 @@ rt {
   letter-spacing: 0;
   line-height: 1.3;
 }
+
+.vocabulary-hint {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.vocabulary-hint summary {
+  cursor: pointer;
+  width: fit-content;
+}
+.vocabulary-hint ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  color: var(--ink);
+}

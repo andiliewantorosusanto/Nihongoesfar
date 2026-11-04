@@ -17,6 +17,8 @@ The material focuses on beginner Japanese, with level labels to help you browse.
 
 ## How to use it
 
+Typing exercises offer **Need help with vocabulary?** to reveal supporting words and their kana when needed.
+
 Open a book and browse, or search for the word or topic you need. Read an explanation, compare examples, then start practice from that entry or the whole book.
 
 Guided grammar rounds sample five questions, moving from recognizing a meaning or pattern to filling gaps, arranging a sentence, and typing an answer. Repeating a round draws fresh examples where available; Present and Past also use their related grammar lessons. Hints and explanations help you work through mistakes. Writing practice offers stroke animation, tracing, and feedback on stroke order, direction, and approximate shape.
