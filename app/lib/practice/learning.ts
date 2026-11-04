@@ -272,3 +272,36 @@ export function isReadingQuestion(entry: Entry, skill: Skill) {
     (skill === 'grammar' && entry.kind === 'numbers' && !entry.exercises?.length)
   );
 }
+
+export function practiceRound(
+  entries: Entry[],
+  questions: Question[],
+  type: string,
+  previous = '',
+  random = Math.random,
+): Question[] {
+  const lessonId = questions[0]?.lessonId;
+  const sourceIds = lessonId ? (practiceSources as Record<string, string[]>)[lessonId] || [] : [];
+  const ids = new Set([
+    ...questions.map((q) => q.entryId),
+    ...sourceIds,
+    ...(lessonId ? [lessonId] : []),
+  ]);
+  const pool = entries
+    .filter((e) => ids.has(e.id))
+    .map((e) => ({
+      ...e,
+      exercises: e.exercises?.filter((ex) => type === 'all' || ex.type === type),
+    }));
+  const generated = makePractice(pool, [], {}, random);
+  const filtered = generated.filter(
+    (q) =>
+      (type === 'all' && questions.some((original) => original.skill === q.skill)) ||
+      pool
+        .find((e) => e.id === q.entryId)
+        ?.exercises?.some((ex) => ex.id === q.exerciseId && ex.type === type),
+  );
+  // Avoid repeating the last question immediately when another is available.
+  if (filtered.length > 1 && filtered[0].id === previous) filtered.push(filtered.shift()!);
+  return filtered;
+}

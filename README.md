@@ -64,3 +64,7 @@ npm run test:static
 Explanations and examples are authored for this notebook, with reference to Japan Foundation IRODORI/MARUGOTO and Tokyo University of Foreign Studies language modules.
 
 Kanji stroke paths come from KanjiVG © Ulrich Apel and contributors, CC BY-SA 3.0. Compound words come from JMdict © James William Breen and the Electronic Dictionary Research and Development Group, CC BY-SA 4.0. See [the full credits](public/credits.html) for attribution and source details.
+
+Practice controls let you choose all question types or focus on meaning choices, Japanese choices, gaps, sentence tiles, or writing. Enable **Endless practice** to keep receiving shuffled rounds from the current lesson and its linked topics until you close practice. Sentences can repeat after the available pool is exhausted.
+
+The smaller grammar topics include additional sentence variants with matching readings, answer choices, gap exercises, tiles, and writing prompts.

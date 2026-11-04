@@ -195,3 +195,20 @@ rt {
 .vocabulary-word.hint-open .vocabulary-tooltip {
   display: block;
 }
+
+.practice-modifiers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.practice-modifiers label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.practice-modifiers select {
+  padding: 6px;
+  font: inherit;
+}

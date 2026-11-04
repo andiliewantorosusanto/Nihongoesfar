@@ -618,7 +618,7 @@ export function PracticeQuestion(props: Omit<PracticeQuestionProps, 'testsReadin
           {questionLabel(question, exercise)} / {entry.lesson?.group || entry.topic}
         </span>
         <span className="practice-progress">
-          {index + 1} of {count}
+          {count ? `${index + 1} of ${count}` : 'Endless practice'}
           {!result && (
             <button
               type="button"
