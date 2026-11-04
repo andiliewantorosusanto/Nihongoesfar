@@ -1,0 +1,371 @@
+.intro {
+  padding: 65px 0 48px;
+  position: relative;
+}
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 1.3px;
+  color: #858585;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+.intro h1 {
+  font-size: 39px;
+  letter-spacing: -1.7px;
+  margin-bottom: 13px;
+  font-weight: 450;
+}
+.intro > p:not(.eyebrow) {
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+.intro-actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.intro-japanese {
+  position: absolute;
+  right: 25px;
+  top: 55px;
+  font-size: 75px;
+  font-weight: 300;
+  color: #f0f0f0;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.18em;
+  pointer-events: none;
+}
+.primary,
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  padding: 11px 16px;
+  min-height: 41px;
+  font-size: 11px;
+  border: 1px solid #252525;
+  background: #252525;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 450;
+  letter-spacing: 0.1px;
+}
+.primary:hover {
+  background: #000;
+}
+.secondary {
+  background: white;
+  border: 1px solid #dedede;
+  color: #444;
+}
+.secondary:hover {
+  background: #fafafa;
+  border-color: #bbb;
+}
+.text-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 0;
+  background: none;
+  padding: 5px 0;
+  font-size: 11px;
+  color: #747474;
+  text-decoration: none;
+}
+.text-button:hover {
+  color: #111;
+}
+.full {
+  width: 100%;
+}
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--line);
+  padding-top: 25px;
+  margin-bottom: 21px;
+}
+.section-heading h2 {
+  font-size: 14px;
+  letter-spacing: -0.1px;
+  margin: 0;
+}
+.section-heading > span {
+  font-size: 10px;
+  color: #999;
+}
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.book-card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  text-align: left;
+  padding: 21px 22px 22px;
+  min-height: 225px;
+  position: relative;
+  transition:
+    border-color 0.15s,
+    background 0.15s;
+}
+.book-card:hover {
+  border-color: #999;
+  background: #fdfdfd;
+}
+.book-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #aaa;
+  margin-bottom: 25px;
+}
+.book-number {
+  font-size: 9px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 1px;
+}
+.book-jp {
+  font-size: 37px;
+  font-weight: 300;
+  display: block;
+  line-height: 1.2;
+  margin-bottom: 23px;
+  color: #333;
+}
+.book-card h3 {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  margin-bottom: 7px;
+}
+.book-card p {
+  font-size: 10px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #888;
+}
+.book-card-body > span {
+  font-size: 9px;
+  color: #9a9a9a;
+}
+.notebook-note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-top: 1px solid var(--line);
+  margin-top: 34px;
+  padding: 27px 0 4px;
+}
+.notebook-note h2 {
+  font-size: 16px;
+  margin-bottom: 7px;
+  letter-spacing: -0.25px;
+}
+.notebook-note p {
+  font-size: 11px;
+  margin: 0;
+  color: #888;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid var(--line);
+  margin-top: 40px;
+  padding: 22px 0;
+  color: #999;
+  font-size: 9px;
+}
+footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+.page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  padding: 46px 0 26px;
+}
+.page-heading h1 {
+  font-size: 32px;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+}
+.page-heading .eyebrow {
+  font-size: 9px;
+  margin-bottom: 10px;
+}
+.page-heading p:not(.eyebrow) {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.practice-controls {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.practice-controls select {
+  min-height: 40px;
+  font-size: 11px;
+  max-width: 140px;
+}
+.book-note {
+  border-left: 2px solid #ddd;
+  padding-left: 14px;
+  font-size: 11px;
+  margin: 0 0 24px;
+  max-width: 650px;
+}
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0 0 22px;
+}
+.search-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 260px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 0 12px;
+  color: #999;
+}
+.search-field input {
+  border: 0;
+  outline: none !important;
+  background: none;
+  color: #333;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 11px;
+}
+.search-field:focus-within {
+  outline: 1px solid #888;
+}
+.filter-bar select,
+select {
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  padding: 9px 10px;
+  font-size: 10px;
+  color: #777;
+  background: white;
+  max-width: 190px;
+}
+.results-heading {
+  font-size: 10px;
+  color: #999;
+  margin-bottom: 17px;
+}
+.entry-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 13px;
+}
+.entry-card {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  text-align: left;
+  padding: 21px;
+  min-width: 0;
+}
+.entry-card:hover {
+  border-color: #b9b9b9;
+}
+.entry-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: 9px;
+  color: #999;
+  margin-bottom: 18px;
+}
+.entry-meta > span:first-child {
+  border: 1px solid #e9e9e9;
+  border-radius: 3px;
+  padding: 2px 5px;
+}
+.entry-card h3 {
+  font-size: 21px;
+  letter-spacing: -0.4px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.entry-card h3.jp {
+  font-size: 26px;
+  font-weight: 400;
+}
+.entry-card > p {
+  font-size: 11px;
+  margin-bottom: 10px;
+  color: #737373;
+}
+.entry-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+.entry-tags span {
+  font-size: 8px;
+  color: #999;
+  background: #f8f8f8;
+  border-radius: 3px;
+  padding: 3px 6px;
+}
+.reading {
+  font-size: 12px;
+  color: #888;
+  line-height: 1.7;
+}
+
+.kana-card .reading {
+  margin-top: 8px;
+  font-size: 11px;
+}
+.empty {
+  text-align: center;
+  padding: 70px 15px;
+}
+.empty h1,
+.empty h2 {
+  font-size: 27px;
+}
+.empty p {
+  font-size: 13px;
+}
+.empty .primary,
+.empty .secondary {
+  margin-top: 10px;
+}
+.error {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  background: #fff8f7;
+  border: 1px solid #e5c2bc;
+  color: #9b493c;
+  border-radius: 4px;
+  padding: 13px 16px;
+  font-size: 12px;
+  margin: 20px 0;
+}

@@ -1,0 +1,503 @@
+@media (min-width: 1550px) {
+  main {
+    padding-top: 8px;
+  }
+  .intro {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+  .book-card {
+    min-height: 245px;
+    padding: 25px;
+  }
+  .book-jp {
+    font-size: 42px;
+  }
+  .book-card h3 {
+    font-size: 17px;
+  }
+  .book-card p {
+    font-size: 11px;
+  }
+}
+@media (max-width: 1100px) {
+  .sidebar {
+    width: 205px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .main-shell {
+    margin-left: 205px;
+  }
+  .topbar {
+    padding: 0 30px;
+  }
+  main {
+    padding: 0 30px;
+  }
+  .brand {
+    font-size: 14px;
+    gap: 9px;
+  }
+  .book-grid {
+    gap: 12px;
+  }
+  .book-card {
+    padding: 18px 17px;
+    min-height: 220px;
+  }
+  .book-card p {
+    min-height: 34px;
+  }
+  .entry-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .practice-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .practice-controls select {
+    max-width: none;
+  }
+  .page-heading {
+    align-items: flex-start;
+  }
+  .intro-japanese {
+    right: 5px;
+  }
+}
+@media (max-width: 850px) {
+  .sidebar {
+    width: 180px;
+    padding: 25px 10px 18px;
+  }
+  .main-shell {
+    margin-left: 180px;
+  }
+  .brand {
+    padding: 0 5px;
+    font-size: 13px;
+    gap: 8px;
+  }
+
+  .sidebar nav button,
+  .sidebar-preferences {
+    font-size: 11px;
+    padding: 11px;
+    gap: 9px;
+  }
+  .intro h1 {
+    font-size: 32px;
+    max-width: 330px;
+  }
+  .intro-japanese {
+    font-size: 63px;
+  }
+  .book-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .book-card {
+    min-height: 200px;
+  }
+  .book-card-top {
+    margin-bottom: 16px;
+  }
+  .book-jp {
+    margin-bottom: 18px;
+  }
+  .book-card p {
+    min-height: 0;
+  }
+  .entry-grid {
+    gap: 10px;
+  }
+  .entry-card {
+    padding: 18px;
+  }
+  .entry-card h3 {
+    font-size: 19px;
+  }
+
+  .filter-bar select {
+    flex: 1;
+  }
+  .search-field {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .sidebar {
+    visibility: hidden;
+    transform: translateX(-100%);
+    width: 225px;
+    padding: 30px 18px 20px;
+  }
+  .sidebar.is-open {
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .brand {
+    font-size: 16px;
+    gap: 11px;
+    padding: 0 8px;
+  }
+
+  .sidebar nav button,
+  .sidebar-preferences {
+    font-size: 12px;
+    padding: 11px 13px;
+    gap: 11px;
+  }
+  .menu-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 25;
+    background: #0004;
+    border: 0;
+  }
+  .main-shell {
+    margin-left: 0;
+  }
+  .topbar {
+    height: 63px;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 15;
+  }
+  .breadcrumb {
+    font-size: 10px;
+    gap: 10px;
+  }
+  .mobile-menu {
+    display: inline-flex;
+    margin-left: -7px;
+  }
+  .icon-button {
+    min-height: 40px;
+    min-width: 40px;
+  }
+  .topbar > .text-button {
+    font-size: 10px;
+  }
+  .breadcrumb strong {
+    max-width: 130px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .slash {
+    padding: 0 2px;
+  }
+  main {
+    padding: 0 21px;
+  }
+  .intro {
+    padding: 42px 0 36px;
+  }
+  .intro h1 {
+    font-size: 30px;
+    letter-spacing: -1.2px;
+    max-width: 280px;
+    line-height: 1.35;
+  }
+  .intro > .eyebrow {
+    font-size: 9px;
+    margin-bottom: 16px;
+  }
+  .intro > p:not(.eyebrow) {
+    font-size: 12px;
+    max-width: 245px;
+    line-height: 1.9;
+    margin-bottom: 23px;
+  }
+  .intro-japanese {
+    font-size: 44px;
+    right: 2px;
+    top: 55px;
+    color: #f3f3f3;
+    z-index: -1;
+  }
+  .intro-actions {
+    gap: 20px;
+  }
+  .primary,
+  .secondary {
+    font-size: 10px;
+    padding: 11px 14px;
+    min-height: 42px;
+  }
+  .text-button {
+    font-size: 10px;
+  }
+  .section-heading {
+    padding-top: 21px;
+    margin-bottom: 18px;
+  }
+  .section-heading h2 {
+    font-size: 13px;
+  }
+  .section-heading > span {
+    font-size: 9px;
+  }
+  .book-grid {
+    gap: 11px;
+  }
+  .book-card {
+    padding: 17px 15px 18px;
+    min-height: 220px;
+  }
+  .book-card-top {
+    margin-bottom: 23px;
+  }
+  .book-card-top svg {
+    height: 16px;
+  }
+  .book-jp {
+    font-size: 34px;
+    margin-bottom: 22px;
+  }
+  .book-card h3 {
+    font-size: 14px;
+  }
+  .book-card p {
+    font-size: 10px;
+    min-height: 36px;
+    margin-bottom: 14px;
+  }
+  .book-card-body > span {
+    font-size: 9px;
+  }
+  .notebook-note {
+    margin-top: 27px;
+    padding-top: 23px;
+    gap: 15px;
+  }
+  .notebook-note h2 {
+    font-size: 14px;
+    max-width: 185px;
+  }
+  .notebook-note p {
+    font-size: 10px;
+    max-width: 195px;
+  }
+  .notebook-note .secondary {
+    flex-shrink: 0;
+    font-size: 9px;
+    padding: 10px;
+  }
+  footer {
+    font-size: 8px;
+    align-items: flex-start;
+    gap: 13px;
+    margin-top: 30px;
+    padding: 20px 0;
+  }
+  .page-heading {
+    padding: 32px 0 25px;
+    gap: 17px;
+  }
+  .page-heading h1 {
+    font-size: 29px;
+  }
+  .page-heading p:not(.eyebrow) {
+    font-size: 11px;
+  }
+  .page-heading .eyebrow {
+    font-size: 8px;
+    letter-spacing: 0.8px;
+  }
+  .practice-controls {
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .practice-controls select {
+    font-size: 9px;
+    padding: 8px;
+    min-height: 33px;
+    max-width: 124px;
+  }
+  .practice-controls .primary {
+    min-height: 36px;
+    padding: 9px 11px;
+  }
+  .book-note {
+    font-size: 10px;
+  }
+  .filter-bar {
+    gap: 7px;
+    margin-bottom: 18px;
+  }
+  .filter-bar select {
+    padding: 9px 7px;
+    font-size: 9px;
+    max-width: calc(33.333% - 4px);
+    min-width: 0;
+  }
+  .search-field {
+    min-width: 0;
+  }
+  .search-field input {
+    font-size: 11px;
+    padding: 12px 0;
+  }
+  .entry-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .entry-card {
+    padding: 15px;
+  }
+  .entry-meta {
+    font-size: 8px;
+    gap: 5px;
+    margin-bottom: 14px;
+  }
+  .entry-card h3 {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  .entry-card h3.jp {
+    font-size: 24px;
+  }
+  .entry-card > p {
+    font-size: 10px;
+  }
+  .entry-tags {
+    gap: 4px;
+    margin-top: 12px;
+  }
+  .entry-tags span {
+    font-size: 7px;
+    padding: 3px 5px;
+  }
+
+  .modal {
+    width: calc(100% - 16px);
+    max-height: 95dvh;
+    border-radius: 6px;
+  }
+  .modal-inner {
+    padding: 30px 22px;
+  }
+  .modal-close {
+    top: 9px;
+    right: 9px;
+  }
+  .modal h2 {
+    font-size: 24px;
+  }
+  .modal .eyebrow {
+    font-size: 8px;
+  }
+  .modal p {
+    font-size: 12px;
+  }
+  .detail-title .jp {
+    font-size: 48px;
+  }
+  .detail-actions {
+    gap: 17px;
+    margin: 23px 0;
+  }
+  .tabs {
+    gap: 21px;
+    overflow: auto;
+    margin-bottom: 24px;
+  }
+  .tabs button {
+    font-size: 10px;
+  }
+  .sentence-token b {
+    font-size: 22px;
+  }
+  .sentence-token small {
+    font-size: 8px;
+  }
+  .sentence-token em {
+    font-size: 7px;
+  }
+  .compound {
+    font-size: 10px;
+    gap: 10px;
+  }
+  .compound .jp {
+    font-size: 19px;
+  }
+  .form-grid {
+    gap: 0 12px;
+  }
+  .field {
+    font-size: 10px;
+  }
+  .field input,
+  .field select,
+  .field textarea {
+    font-size: 16px;
+  }
+  .writing-meta {
+    font-size: 9px;
+  }
+  .writing-tools {
+    gap: 6px;
+  }
+  .writing-tools .soft-button {
+    padding: 9px;
+    font-size: 9px;
+  }
+  .writing small {
+    font-size: 9px;
+  }
+  .practice-top {
+    font-size: 10px;
+    margin-top: 3px;
+    gap: 12px;
+  }
+  .practice h2 {
+    font-size: 22px;
+  }
+  .practice-character {
+    font-size: 47px;
+    padding: 23px 10px;
+  }
+  .tile {
+    font-size: 17px;
+    padding: 9px 12px;
+  }
+  .answer-result {
+    padding: 19px;
+  }
+  .answer-result > div {
+    gap: 14px;
+  }
+  .practice-finished {
+    padding: 30px 5px;
+  }
+  .practice-finished > span {
+    font-size: 26px;
+  }
+  .recognition-options {
+    gap: 9px;
+  }
+  .recognition-options button {
+    font-size: 30px;
+    padding: 15px 6px;
+  }
+  .practice-footer {
+    font-size: 9px !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .animated-stroke {
+    stroke-dashoffset: 0;
+  }
+}

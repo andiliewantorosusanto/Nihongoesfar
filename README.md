@@ -75,6 +75,10 @@ npm run dev
 
 Open **http://127.0.0.1:5173**. To preview production output, run `npm run build` and `npm start`, then open **http://127.0.0.1:4173**.
 
+## Styles
+
+`app/globals.css` is the ordered stylesheet entry point. Feature styles live in `app/styles/` (layout, notebook, entry details, writing, practice, guides, reading, grammar, references, family tree, and topic books). Shared base and responsive rules remain separate. Keep import order stable because later rules refine earlier styles.
+
 ## Code style
 
 Run `npm run format` to apply consistent spacing and line wrapping to source, tests, styles, and configuration. `npm run format:check` checks formatting without changing files and runs in GitHub Actions. Generated datasets and local data are excluded. Type checking also flags unused imports and variables.

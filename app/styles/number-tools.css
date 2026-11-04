@@ -1,0 +1,33 @@
+.number-tools {
+  margin-bottom: 24px;
+}
+.number-tools label {
+  display: block;
+  margin-top: 12px;
+}
+.number-tools input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin: 6px 0 12px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+}
+.number-tools dd {
+  margin: 4px 0 12px;
+  overflow-wrap: anywhere;
+}
+.number-tools button {
+  margin: 4px 8px 4px 0;
+}
+.guide-reference summary {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 16px 0;
+}
+.guide-reference select {
+  margin: 8px 0 16px 12px;
+  padding: 6px;
+}

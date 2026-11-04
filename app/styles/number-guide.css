@@ -1,0 +1,396 @@
+.number-view-switch {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 23px;
+}
+.number-view-switch button {
+  padding: 11px 0;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  font-size: 11px;
+  color: #888;
+}
+.number-view-switch button.selected {
+  border-bottom-color: #333;
+  color: #333;
+}
+.guide-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.guide-tabs {
+  display: inline-flex;
+  gap: 3px;
+  padding: 3px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  background: #fafafa;
+}
+.guide-tabs button {
+  border: 1px solid transparent;
+  background: none;
+  border-radius: 3px;
+  padding: 8px 13px;
+  font-size: 11px;
+  color: #888;
+}
+.guide-tabs button[aria-pressed='true'] {
+  background: white;
+  border-color: #e6e6e6;
+  color: #333;
+}
+.guide-romaji {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 10px;
+  color: #777;
+  cursor: pointer;
+}
+.guide-romaji input {
+  accent-color: #333;
+}
+.guide-intro {
+  margin-bottom: 22px;
+}
+.guide-intro h2 {
+  font-size: 21px;
+  margin-bottom: 8px;
+  letter-spacing: -0.6px;
+}
+.guide-intro p {
+  font-size: 12px;
+  max-width: 660px;
+  margin: 0;
+}
+.quick-table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  table-layout: fixed;
+}
+.quick-table thead th {
+  font-size: 10px;
+  font-weight: 400;
+  color: #8a8a8a;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 12px 12px;
+}
+.quick-table thead th > span {
+  margin-left: 4px;
+  color: #666;
+}
+.quick-table tbody td,
+.quick-table tbody th {
+  border-bottom: 1px solid #ededed;
+  padding: 11px 12px;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: 400;
+}
+.quick-table th:first-child,
+.quick-table td:first-child {
+  padding-left: 0;
+}
+.quick-table th:last-child,
+.quick-table td:last-child {
+  padding-right: 0;
+}
+.guide-value {
+  display: inline-block;
+  min-width: 55px;
+  margin-right: 10px;
+  color: #8b8b8b;
+  font-size: 11px;
+  vertical-align: top;
+  padding-top: 3px;
+  font-variant-numeric: tabular-nums;
+}
+.guide-reading {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+.guide-reading .jp {
+  font-size: 15px;
+  color: #444;
+  overflow-wrap: anywhere;
+}
+.guide-reading > small {
+  font-size: 10px;
+  letter-spacing: 0;
+  color: #999;
+  font-weight: 400;
+}
+.sound-change .jp {
+  text-decoration: underline;
+  text-decoration-color: #b58c75;
+  text-underline-offset: 4px;
+  font-weight: 550;
+  color: #84573e;
+}
+.guide-key-changes {
+  padding: 18px 0 12px;
+  border-bottom: 1px solid var(--line);
+  margin: 13px 0 28px;
+}
+.guide-key-changes > strong {
+  font-size: 11px;
+  font-weight: 500;
+  color: #555;
+}
+.guide-key-changes > p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px 24px;
+  margin: 12px 0 0;
+  font-size: 11px;
+  color: #999;
+}
+.guide-key-changes p > span {
+  display: inline-flex;
+  gap: 8px;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.guide-key-changes b {
+  font-weight: 500;
+  color: #66513e;
+  font-size: 13px;
+}
+.guide-key-changes small {
+  font-size: 10px;
+  color: #999;
+}
+.guide-notes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.guide-notes-grid h3 {
+  font-size: 13px;
+  letter-spacing: -0.2px;
+  margin-bottom: 10px;
+}
+.guide-notes-grid p {
+  font-size: 11px;
+  line-height: 1.9;
+}
+.guide-examples {
+  margin: 0;
+}
+.guide-examples > div {
+  display: flex;
+  gap: 17px;
+  padding: 11px 0;
+  font-size: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.guide-examples dt {
+  min-width: 55px;
+  color: #999;
+  font-size: 11px;
+  padding-top: 3px;
+}
+.guide-examples dd {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.guide-examples dd > small {
+  font-size: 10px;
+  color: #aaa;
+}
+.guide-examples dd > .jp {
+  font-size: 14px;
+  color: #555;
+}
+.time-guide-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 35px;
+}
+.time-guide-grid h3 {
+  font-size: 13px;
+  letter-spacing: 0;
+  margin-bottom: 13px;
+}
+.hour-patterns th:first-child {
+  width: 18%;
+}
+.hour-patterns td:nth-child(2) {
+  width: 37%;
+}
+.hour-patterns .guide-reading .jp {
+  font-size: 13px;
+}
+.hour-patterns tbody td,
+.hour-patterns tbody th {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.guide-half-time {
+  font-size: 9px;
+  color: #aaa;
+  display: block;
+  margin-bottom: 3px;
+}
+.special-label {
+  font-size: 8px;
+  font-weight: 400;
+  display: block;
+  color: #90674b;
+  margin-top: 5px;
+}
+.minute-patterns th:first-child {
+  width: 22%;
+}
+.minute-patterns th:last-child {
+  width: 21%;
+}
+.minute-ending {
+  color: #999;
+  font-size: 11px !important;
+}
+.guide-footnote {
+  font-size: 10px;
+  line-height: 1.9;
+  margin: 16px 0 0;
+  color: #888;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+@media (max-width: 1150px) {
+  .time-guide-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .hour-patterns .guide-reading .jp {
+    font-size: 15px;
+  }
+  .guide-value {
+    display: block;
+    margin-bottom: 6px;
+  }
+  .quick-table tbody td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .minute-patterns th:first-child {
+    width: 18%;
+  }
+  .minute-patterns th:last-child {
+    width: 25%;
+  }
+}
+@media (max-width: 650px) {
+  .number-view-switch {
+    margin-bottom: 19px;
+  }
+  .number-view-switch button {
+    font-size: 10px;
+  }
+  .guide-toolbar {
+    margin-bottom: 21px;
+  }
+  .guide-tabs button {
+    font-size: 10px;
+    padding: 8px 11px;
+  }
+  .guide-romaji {
+    font-size: 10px;
+  }
+  .guide-intro h2 {
+    font-size: 19px;
+    line-height: 1.5;
+  }
+  .guide-intro p {
+    font-size: 11px;
+  }
+  .quick-table thead th {
+    font-size: 9px;
+    padding: 8px 8px 11px;
+  }
+  .quick-table thead th > span {
+    margin-left: 2px;
+  }
+  .quick-table tbody td,
+  .quick-table tbody th {
+    padding: 10px 8px;
+  }
+  .guide-value {
+    font-size: 10px;
+    min-width: 0;
+    margin-bottom: 7px;
+  }
+  .guide-reading .jp {
+    font-size: 13px;
+  }
+  .guide-reading > small {
+    font-size: 9px;
+    overflow-wrap: anywhere;
+  }
+  .guide-key-changes {
+    margin: 10px 0 24px;
+    padding-top: 15px;
+  }
+  .guide-key-changes > p {
+    gap: 11px 19px;
+  }
+  .guide-key-changes p > span {
+    font-size: 10px;
+  }
+  .guide-key-changes b {
+    font-size: 12px;
+  }
+  .guide-notes-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .time-guide-grid {
+    gap: 28px;
+  }
+  .hour-patterns .guide-reading .jp {
+    font-size: 13px;
+  }
+  .hour-patterns tbody th {
+    font-size: 11px;
+  }
+  .guide-half-time {
+    font-size: 8px;
+  }
+  .special-label {
+    font-size: 7px;
+  }
+  .guide-notes-grid h3 {
+    font-size: 13px;
+  }
+  .guide-examples dt {
+    font-size: 10px;
+    min-width: 45px;
+  }
+  .guide-examples > div {
+    gap: 12px;
+  }
+  .guide-examples dd > .jp {
+    font-size: 13px;
+  }
+}

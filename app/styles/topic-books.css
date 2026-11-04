@@ -1,0 +1,72 @@
+.topic-book-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+.topic-book-tabs button {
+  border: 1px solid var(--border, #ddd);
+  border-radius: 6px;
+  background: transparent;
+  padding: 10px 14px;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+.topic-book-tabs button[aria-pressed='true'] {
+  background: #252725;
+  color: white;
+  border-color: #252725;
+}
+.topic-book-tabs button:focus-visible {
+  outline: 2px solid #596e8a;
+  outline-offset: 3px;
+}
+
+.kana-chart section {
+  margin: 32px 0;
+}
+.kana-sound-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 16px;
+  border-top: 1px solid var(--line);
+  padding: 18px 0;
+}
+.kana-sound-row h3 {
+  color: var(--muted);
+  padding-top: 12px;
+}
+.kana-sounds {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+.kana-sound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 4px;
+  color: var(--muted);
+}
+.kana-sound .jp {
+  font-size: 36px;
+  color: var(--ink);
+}
+@media (max-width: 600px) {
+  .kana-sound-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .kana-sound-row h3 {
+    margin-bottom: 8px;
+  }
+  .kana-sounds {
+    gap: 4px;
+  }
+  .kana-sound .jp {
+    font-size: 28px;
+  }
+}

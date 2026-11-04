@@ -1,0 +1,312 @@
+/* A relationship map with the saved own-family and polite-family vocabulary. */
+.modal:has(.family-tree) {
+  max-width: 1100px;
+}
+.family-tree {
+  margin: 28px 0 34px;
+}
+.family-tree-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.family-tree-heading h3 {
+  font-size: 24px;
+  margin: 0 0 9px;
+}
+.family-tree-heading p,
+.family-context {
+  font-size: 12px;
+  line-height: 1.9;
+}
+.family-mode {
+  margin: 0;
+  flex-wrap: wrap;
+}
+.family-mode button {
+  font-size: 12px;
+  min-height: 42px;
+}
+.family-context {
+  margin: 16px 0 24px;
+  color: #777;
+}
+.family-tree-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 6px 2px 20px;
+  outline-offset: 3px;
+}
+.family-tree-canvas {
+  min-width: 850px;
+  padding: 0 10px;
+}
+.family-ancestors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+}
+.family-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.family-side h4 {
+  font-size: 11px;
+  font-weight: 500;
+  color: #888;
+  margin: 0 0 15px;
+}
+.family-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+  position: relative;
+}
+.family-pair:after {
+  content: '';
+  position: absolute;
+  border-top: 1px solid #c8c8c0;
+  left: 25%;
+  right: 25%;
+  bottom: -12px;
+}
+.family-pair > .family-node:after {
+  content: '';
+  position: absolute;
+  height: 12px;
+  border-left: 1px solid #c8c8c0;
+  bottom: -13px;
+  left: 50%;
+}
+.family-node {
+  border: 1px solid #e0e4dc;
+  border-radius: 7px;
+  background: #fcfdfb;
+  padding: 16px 9px;
+  text-align: center;
+  position: relative;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.family-side > .family-node {
+  min-width: 160px;
+}
+.family-side:after {
+  content: '';
+  display: block;
+  height: 20px;
+  border-left: 1px solid #c8c8c0;
+}
+.family-relationship {
+  font-size: 10px;
+  text-transform: capitalize;
+  line-height: 1.6;
+  color: #777;
+  display: block;
+  margin-bottom: 12px;
+}
+.family-word {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.family-word strong,
+.family-you > strong {
+  font-size: 25px;
+  font-weight: 450;
+  line-height: 1.6;
+  color: #34442c;
+  white-space: nowrap;
+}
+.family-kana {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #555;
+  display: block;
+}
+.family-romaji {
+  font-size: 11px;
+  color: #888;
+  line-height: 1.6;
+  display: block;
+}
+.family-stem {
+  height: 27px;
+  border-left: 1px solid #c8c8c0;
+  margin: 0 auto;
+  width: 0;
+}
+.family-side > .family-stem {
+  height: 30px;
+}
+.family-parent-union {
+  height: 27px;
+  width: calc(50% + 35px);
+  border-top: 1px solid #c8c8c0;
+  position: relative;
+  margin: 0 auto;
+}
+.family-parent-union:after {
+  content: '';
+  position: absolute;
+  height: 27px;
+  border-left: 1px solid #c8c8c0;
+  left: 50%;
+  top: 0;
+}
+.family-siblings {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+  position: relative;
+  align-items: stretch;
+}
+.family-siblings:before {
+  content: '';
+  position: absolute;
+  left: calc(100% / 12);
+  right: calc(100% / 12);
+  border-top: 1px solid #c8c8c0;
+  top: 0;
+}
+.family-child-branch {
+  padding-top: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.family-child-branch:before {
+  content: '';
+  height: 20px;
+  border-left: 1px solid #c8c8c0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+.family-child-branch > .family-node {
+  flex: 1;
+}
+.family-spouse-branch {
+  padding-top: 20px;
+  display: flex;
+  position: relative;
+}
+.family-spouse {
+  background: #faf7fb;
+  border-color: #e5dce9;
+  flex: 1;
+}
+.family-spouse .family-word strong {
+  color: #795489;
+}
+.family-you {
+  background: #f0f5f8;
+  border-color: #cadbe7;
+}
+.family-you > strong {
+  color: #436b87;
+}
+.family-you small {
+  font-size: 9px;
+  color: #7a8894;
+  line-height: 1.8;
+  margin-top: 18px;
+}
+.family-or {
+  font-size: 9px;
+  color: #aaa;
+  margin: 7px 0;
+}
+.family-you-branch:after {
+  content: '+';
+  position: absolute;
+  right: -11px;
+  top: 65px;
+  background: white;
+  z-index: 1;
+  font-size: 12px;
+  color: #888;
+}
+.family-couple-union {
+  height: 16px;
+  width: calc(100% / 6 + 2px);
+  border: 1px solid #c8c8c0;
+  border-top: 0;
+  margin: 0 auto;
+}
+.family-children {
+  width: 45%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  position: relative;
+}
+.family-children:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 25%;
+  right: 25%;
+  border-top: 1px solid #c8c8c0;
+}
+.family-collective {
+  margin: 25px 0;
+}
+.family-collective h4 {
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+.family-collective > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  max-width: 420px;
+}
+.family-pronunciation-note {
+  font-size: 11px !important;
+  line-height: 1.9;
+  color: #888;
+}
+.family-scroll-help {
+  display: none;
+  font-size: 11px !important;
+  color: #999;
+}
+@media (max-width: 650px) {
+  .family-tree-heading h3 {
+    font-size: 22px;
+  }
+  .family-tree-heading {
+    gap: 10px;
+  }
+  .family-mode {
+    width: 100%;
+  }
+  .family-mode button {
+    font-size: 11px;
+  }
+  .family-scroll-help {
+    display: block;
+  }
+  .family-tree-scroll {
+    margin-right: -10px;
+  }
+  .family-tree-canvas {
+    min-width: 850px;
+  }
+  .family-collective > div {
+    max-width: none;
+  }
+  .family-pronunciation-note {
+    font-size: 11px !important;
+  }
+}

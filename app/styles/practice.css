@@ -1,0 +1,158 @@
+.practice-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 11px;
+  color: #888;
+  text-transform: capitalize;
+  margin: 0 20px 28px 0;
+}
+.practice h2 {
+  font-size: 25px;
+  font-weight: 450;
+  line-height: 1.6;
+  letter-spacing: -0.5px;
+}
+.practice-character {
+  font-size: 42px;
+  text-align: center;
+  color: #333;
+  padding: 12px 10px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  margin: 12px 0 16px;
+}
+.answer-tiles {
+  min-height: 85px;
+  border: 1px dashed #d5d5d5;
+  border-radius: 4px;
+  background: #fcfcfc;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 14px;
+  color: #999;
+  font-size: 12px;
+}
+.tiles {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.tile {
+  font-size: 19px;
+  padding: 10px 14px;
+  background: white;
+  border: 1px solid #ddd;
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  color: #444;
+}
+.tile:hover {
+  border-color: #999;
+}
+.selected-tile {
+  background: #f3f3f3;
+}
+.practice-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 24px;
+}
+.practice-footer {
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  margin: 29px 0 0;
+  color: #888 !important;
+  font-size: 10px !important;
+  text-align: center;
+}
+.hint {
+  padding: 17px 20px;
+  border: 1px solid #e8e8e8;
+  background: #fafafa;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+.hint p:last-child {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+.answer-result {
+  padding: 16px;
+  border: 1px solid #dbe5d6;
+  border-radius: 4px;
+  background: #fafcf9;
+  margin-top: 23px;
+}
+.answer-result.incorrect {
+  border-color: #e7d5ca;
+  background: #fdfaf8;
+}
+.answer-result h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+.answer-result > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 17px;
+  margin-top: 12px;
+}
+.answer-result > p {
+  margin: 8px 0;
+}
+.answer-result .jp {
+  font-size: 22px;
+  color: #444;
+}
+.practice-finished {
+  text-align: center;
+  padding: 45px 10px;
+}
+.practice-finished > span {
+  display: block;
+  font-size: 30px;
+  color: #bbb;
+  margin-bottom: 28px;
+}
+.practice-finished h2 {
+  font-size: 29px;
+}
+.practice-finished p {
+  font-size: 13px;
+  margin-bottom: 26px;
+}
+.recognition-options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 28px 0;
+}
+.recognition-options button {
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  font-size: 37px;
+  padding: 18px 8px;
+}
+.recognition-options button.chosen {
+  border: 2px solid #333;
+  background: #f6f6f6;
+}
+ruby {
+  ruby-position: over;
+  line-height: 2;
+}
+rt {
+  color: #777;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.3;
+}
