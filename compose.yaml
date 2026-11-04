@@ -2,7 +2,7 @@ services:
   database:
     image: postgres:17-bookworm
     ports:
-      - "127.0.0.1:5433:5432"
+      - '127.0.0.1:5433:5432'
     environment:
       POSTGRES_USER: notebook
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-notebook}
@@ -10,7 +10,7 @@ services:
     volumes:
       - postgres-data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U notebook -d notebook"]
+      test: ['CMD-SHELL', 'pg_isready -U notebook -d notebook']
       interval: 2s
       timeout: 3s
       retries: 30
@@ -18,7 +18,7 @@ services:
   notebook:
     build: .
     ports:
-      - "127.0.0.1:3001:3001"
+      - '127.0.0.1:3001:3001'
     environment:
       PUBLIC_ORIGIN: ${PUBLIC_ORIGIN:-http://localhost:3001}
       DATABASE_URL: postgresql://notebook:${POSTGRES_PASSWORD:-notebook}@database:5432/notebook
