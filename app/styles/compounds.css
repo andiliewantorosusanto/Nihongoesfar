@@ -63,6 +63,13 @@
   padding: 15px 0;
   color: #888;
 }
+.compound-show-more {
+  width: 100%;
+  min-height: 40px;
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--ink);
+}
 @media (max-width: 650px) {
   .compound-labels,
   .compound {

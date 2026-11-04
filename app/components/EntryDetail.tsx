@@ -1,6 +1,6 @@
 import { wordForms } from '../lib/japanese/word-forms';
 import { useState } from 'react';
-import { ArrowRight, Search } from 'lucide-react';
+import { ArrowRight, ChevronDown, Search } from 'lucide-react';
 import type { Entry } from '../lib/content/content';
 import { skillsFor } from '../lib/practice/learning';
 import { toRomaji } from '../lib/japanese/romaji';
@@ -180,8 +180,12 @@ function EntryReferences({
             </div>
           ))}
           {compounds.length > compoundLimit && (
-            <button className="button" onClick={() => setCompoundLimit(compoundLimit + 12)}>
+            <button
+              className="soft-button compound-show-more"
+              onClick={() => setCompoundLimit(compoundLimit + 12)}
+            >
               Show more ({compounds.length - compoundLimit} remaining)
+              <ChevronDown size={14} aria-hidden="true" />
             </button>
           )}
           {!compounds.length && <p className="no-compounds">No compounds match your search.</p>}
