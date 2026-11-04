@@ -39,31 +39,41 @@ export default function NumbersGuide({
     >
       {view === 'numbers' ? (
         <>
-          <GuideTable
-            title="Numbers"
-            showTitle={false}
-            combineReading
-            rows={numberRows}
-            romaji={romaji}
-          >
-            <div className="number-place-control">
-              <label htmlFor="number-place">Place value</label>
-              <select
-                id="number-place"
-                value={place}
-                onChange={(event) => setPlace(Number(event.target.value))}
-              >
-                {Array.from(
-                  { length: String(maximumNumber).length },
-                  (_, exponent) => 10 ** exponent,
-                ).map((value) => (
-                  <option key={value} value={value}>
-                    {value.toLocaleString('en')} · {convertNumber(value).kanji}
-                  </option>
-                ))}
-              </select>
-            </div>
-          </GuideTable>
+          <div className="number-place-control">
+            <label htmlFor="number-place">Place value</label>
+            <select
+              id="number-place"
+              value={place}
+              onChange={(event) => setPlace(Number(event.target.value))}
+            >
+              {Array.from(
+                { length: String(maximumNumber).length },
+                (_, exponent) => 10 ** exponent,
+              ).map((value) => (
+                <option key={value} value={value}>
+                  {value.toLocaleString('en')} · {convertNumber(value).kanji}
+                </option>
+              ))}
+            </select>
+          </div>
+          <dl className="number-reference-grid" aria-label="Number readings">
+            {numberRows.map((row) => (
+              <div className="number-reference-item" key={row.value}>
+                <dt>{row.value}</dt>
+                <dd>
+                  <span className="number-reference-kanji jp" lang="ja">
+                    {row.japanese}
+                  </span>
+                  <span className={'guide-reading' + (row.special ? ' sound-change' : '')}>
+                    <span className="jp" lang="ja">
+                      {row.kana}
+                    </span>
+                    {romaji && <small>{row.romaji}</small>}
+                  </span>
+                </dd>
+              </div>
+            ))}
+          </dl>
         </>
       ) : (
         <>

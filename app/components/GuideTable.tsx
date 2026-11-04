@@ -13,27 +13,23 @@ export default function GuideTable({
   rows,
   romaji,
   children,
-  showTitle = true,
-  combineReading = false,
 }: Readonly<{
   title: string;
   rows: GuideRow[];
   romaji: boolean;
   children?: ReactNode;
-  showTitle?: boolean;
-  combineReading?: boolean;
 }>) {
   return (
     <section className="large-number-guide guide-reference">
-      {showTitle && <h3>{title}</h3>}
+      <h3>{title}</h3>
       {children}
       <table className="quick-table">
         <caption className="sr-only">{title}</caption>
         <thead>
           <tr>
             <th scope="col">Value</th>
-            <th scope="col">{combineReading ? 'Japanese & reading' : 'Japanese'}</th>
-            {!combineReading && <th scope="col">Reading</th>}
+            <th scope="col">Japanese</th>
+            <th scope="col">Reading</th>
           </tr>
         </thead>
         <tbody>
@@ -49,13 +45,8 @@ export default function GuideTable({
             return (
               <tr key={row.value}>
                 <th scope="row">{row.value}</th>
-                <td>
-                  <span lang="ja" className={combineReading ? 'guide-kanji jp' : undefined}>
-                    {row.japanese}
-                  </span>
-                  {combineReading && reading}
-                </td>
-                {!combineReading && <td>{reading}</td>}
+                <td lang="ja">{row.japanese}</td>
+                <td>{reading}</td>
               </tr>
             );
           })}

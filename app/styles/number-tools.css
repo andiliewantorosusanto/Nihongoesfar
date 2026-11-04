@@ -24,38 +24,54 @@
 .number-tools button {
   margin: 4px 8px 4px 0;
 }
-.numbers-reference > .guide-reference {
-  margin-top: 0;
+.numbers-page-heading {
+  padding-top: 24px;
+  padding-bottom: 16px;
 }
-.numbers-reference {
-  max-width: 680px;
+.number-reference-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 4px 0 24px;
 }
-.numbers-reference .quick-table {
-  table-layout: auto;
+.number-reference-item {
+  min-width: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
 }
-.numbers-reference .quick-table th:first-child {
-  width: 1%;
-  text-align: right;
-  padding-right: 24px;
+.number-reference-item dt {
+  margin-bottom: 6px;
+  font-size: 11px;
+  color: var(--muted);
   font-variant-numeric: tabular-nums;
-  white-space: nowrap;
-}
-.numbers-reference .quick-table tbody th,
-.numbers-reference .quick-table tbody td {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-.numbers-reference .quick-table tbody tr:hover {
-  background: #fafafa;
-}
-.numbers-reference .guide-kanji {
-  display: block;
-  font-size: 16px;
-  line-height: 1.5;
   overflow-wrap: anywhere;
 }
-.numbers-reference .guide-reading .jp {
+.number-reference-item dd {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.number-reference-kanji {
+  font-size: 21px;
+  line-height: 1.5;
+}
+.number-reference-item .guide-reading .jp {
   font-size: 12px;
+}
+@media (max-width: 700px) {
+  .number-reference-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 420px) {
+  .number-reference-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 6px;
+  }
 }
 .number-place-control {
   display: inline-flex;

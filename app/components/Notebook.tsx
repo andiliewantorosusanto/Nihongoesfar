@@ -344,7 +344,7 @@ export default function Notebook() {
   function renderBookPage() {
     return (
       <>
-        <div className="page-heading">
+        <div className={'page-heading' + (page === 'numbers' ? ' numbers-page-heading' : '')}>
           <div>
             <p className="eyebrow">{current?.subtitle || 'YOUR NOTEBOOK'}</p>
             <h1>{title}</h1>
