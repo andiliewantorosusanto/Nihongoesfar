@@ -13,15 +13,19 @@ export default function GuideTable({
   rows,
   romaji,
   children,
+  collapsible = true,
 }: Readonly<{
   title: string;
   rows: GuideRow[];
   romaji: boolean;
   children?: ReactNode;
+  collapsible?: boolean;
 }>) {
+  const Container = collapsible ? 'details' : 'section';
+  const Heading = collapsible ? 'summary' : 'h3';
   return (
-    <details className="large-number-guide guide-reference">
-      <summary>{title}</summary>
+    <Container className="large-number-guide guide-reference">
+      <Heading>{title}</Heading>
       {children}
       <table className="quick-table">
         <caption className="sr-only">{title}</caption>
@@ -47,6 +51,6 @@ export default function GuideTable({
           ))}
         </tbody>
       </table>
-    </details>
+    </Container>
   );
 }

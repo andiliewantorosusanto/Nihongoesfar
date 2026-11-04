@@ -66,6 +66,7 @@ export default function NumbersGuide({
           </p>
           <GuideTable
             title="Hours and half past"
+            collapsible={false}
             romaji={romaji}
             rows={hourGuide.map((row) => ({
               value: `${row.value}:00`,
@@ -82,6 +83,7 @@ export default function NumbersGuide({
           </GuideTable>
           <GuideTable
             title="Minutes"
+            collapsible={false}
             romaji={romaji}
             rows={minuteGuide.map((row) => ({
               value: String(row.value),
