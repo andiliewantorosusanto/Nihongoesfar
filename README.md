@@ -16,7 +16,7 @@ For AWS hosting:
 2. Put CloudFront in front using its S3 REST origin and Origin Access Control. Set the default root object to `index.html` and redirect HTTP to HTTPS.
 3. Request an ACM certificate in `us-east-1` for your domain, validate it through DNS, and attach it to CloudFront along with the custom domain name.
 4. Point DNS to CloudFront (Route 53 alias records, or a subdomain CNAME at another DNS provider).
-5. Give `index.html` and the JSON files a short cache lifetime; hashed `assets/` files can be cached for a year. Invalidate `/index.html`, `/`, and `/*.json` after publishing.
+5. Give `index.html` and the JSON files a short cache lifetime; hashed `assets/` files can be cached for a year. Invalidate `/*` after publishing to refresh the page, library, and guide files.
 
 Navigation is currently in-page, so no SPA path rewrite is required. Keep the S3 bucket: deleting it deletes the published content. Domain registration and AWS usage are billed separately. The existing server build remains available for local development.
 
@@ -83,8 +83,10 @@ Open **http://127.0.0.1:5173**. To preview production output, run `npm run build
 - `content/`: shared entry types and a loader for the public subject JSON files.
 - `japanese/`: readings, sentence annotations, romanization, and word forms.
 - `practice/`: question generation, grading, and stroke checking.
-- `guides/`: number conversion, reference readings, family and topic helpers.
+- `guides/`: number conversion and lookup functions for public guide data.
 - `ui/`: shared rendering helpers such as duplicate-safe list keys.
+
+Guide data lives in `public/guides/`: `numbers.json` contains number/hour/minute pronunciation tables, `family.json` contains pronunciation help and diagram positions, `topic-books.json` groups existing entry IDs into books, and `tense-topics.json` maps older links to combined lessons. Edit these files, then build, commit, and push to publish changes. Converter and lookup behavior remains in TypeScript. Guide JSON is bundled during the build, so deploy a fresh build after editing it.
 
 The editable subject files and attributed stroke/compound datasets live in `public/`. Stroke and compound code imports those same datasets, avoiding duplicate JSON copies. All lesson material lives in the public subject files; there is no separate TypeScript seed library.
 

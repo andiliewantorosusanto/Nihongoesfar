@@ -1,0 +1,18 @@
+{
+  "family": ["study-family"],
+  "calendar": [
+    "study-weekdays",
+    "study-months",
+    "study-dates",
+    "study-relative-time",
+    "study-durations",
+    "study-every"
+  ],
+  "introductions": [
+    "study-ask-name",
+    "study-ask-job",
+    "study-ask-hobby",
+    "study-ages",
+    "study-daily-routine"
+  ]
+}

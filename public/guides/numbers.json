@@ -1,0 +1,395 @@
+{
+  "numberGuide": [
+    {
+      "value": 1,
+      "unit": {
+        "kana": "いち",
+        "romaji": "ichi"
+      },
+      "hundred": {
+        "kana": "ひゃく",
+        "romaji": "hyaku",
+        "special": false
+      },
+      "thousand": {
+        "kana": "せん",
+        "romaji": "sen",
+        "special": false
+      }
+    },
+    {
+      "value": 2,
+      "unit": {
+        "kana": "に",
+        "romaji": "ni"
+      },
+      "hundred": {
+        "kana": "にひゃく",
+        "romaji": "ni-hyaku",
+        "special": false
+      },
+      "thousand": {
+        "kana": "にせん",
+        "romaji": "ni-sen",
+        "special": false
+      }
+    },
+    {
+      "value": 3,
+      "unit": {
+        "kana": "さん",
+        "romaji": "san"
+      },
+      "hundred": {
+        "kana": "さんびゃく",
+        "romaji": "sanbyaku",
+        "special": true
+      },
+      "thousand": {
+        "kana": "さんぜん",
+        "romaji": "sanzen",
+        "special": true
+      }
+    },
+    {
+      "value": 4,
+      "unit": {
+        "kana": "よん",
+        "romaji": "yon"
+      },
+      "hundred": {
+        "kana": "よんひゃく",
+        "romaji": "yon-hyaku",
+        "special": false
+      },
+      "thousand": {
+        "kana": "よんせん",
+        "romaji": "yon-sen",
+        "special": false
+      }
+    },
+    {
+      "value": 5,
+      "unit": {
+        "kana": "ご",
+        "romaji": "go"
+      },
+      "hundred": {
+        "kana": "ごひゃく",
+        "romaji": "go-hyaku",
+        "special": false
+      },
+      "thousand": {
+        "kana": "ごせん",
+        "romaji": "go-sen",
+        "special": false
+      }
+    },
+    {
+      "value": 6,
+      "unit": {
+        "kana": "ろく",
+        "romaji": "roku"
+      },
+      "hundred": {
+        "kana": "ろっぴゃく",
+        "romaji": "roppyaku",
+        "special": true
+      },
+      "thousand": {
+        "kana": "ろくせん",
+        "romaji": "roku-sen",
+        "special": false
+      }
+    },
+    {
+      "value": 7,
+      "unit": {
+        "kana": "なな",
+        "romaji": "nana"
+      },
+      "hundred": {
+        "kana": "ななひゃく",
+        "romaji": "nana-hyaku",
+        "special": false
+      },
+      "thousand": {
+        "kana": "ななせん",
+        "romaji": "nana-sen",
+        "special": false
+      }
+    },
+    {
+      "value": 8,
+      "unit": {
+        "kana": "はち",
+        "romaji": "hachi"
+      },
+      "hundred": {
+        "kana": "はっぴゃく",
+        "romaji": "happyaku",
+        "special": true
+      },
+      "thousand": {
+        "kana": "はっせん",
+        "romaji": "hassen",
+        "special": true
+      }
+    },
+    {
+      "value": 9,
+      "unit": {
+        "kana": "きゅう",
+        "romaji": "kyuu"
+      },
+      "hundred": {
+        "kana": "きゅうひゃく",
+        "romaji": "kyuu-hyaku",
+        "special": false
+      },
+      "thousand": {
+        "kana": "きゅうせん",
+        "romaji": "kyuu-sen",
+        "special": false
+      }
+    }
+  ],
+  "hourGuide": [
+    {
+      "value": 1,
+      "reading": {
+        "kana": "いちじ",
+        "romaji": "ichi-ji",
+        "special": false
+      },
+      "half": {
+        "kana": "いちじはん",
+        "romaji": "ichi-ji han"
+      }
+    },
+    {
+      "value": 2,
+      "reading": {
+        "kana": "にじ",
+        "romaji": "ni-ji",
+        "special": false
+      },
+      "half": {
+        "kana": "にじはん",
+        "romaji": "ni-ji han"
+      }
+    },
+    {
+      "value": 3,
+      "reading": {
+        "kana": "さんじ",
+        "romaji": "san-ji",
+        "special": false
+      },
+      "half": {
+        "kana": "さんじはん",
+        "romaji": "san-ji han"
+      }
+    },
+    {
+      "value": 4,
+      "reading": {
+        "kana": "よじ",
+        "romaji": "yo-ji",
+        "special": true
+      },
+      "half": {
+        "kana": "よじはん",
+        "romaji": "yo-ji han"
+      }
+    },
+    {
+      "value": 5,
+      "reading": {
+        "kana": "ごじ",
+        "romaji": "go-ji",
+        "special": false
+      },
+      "half": {
+        "kana": "ごじはん",
+        "romaji": "go-ji han"
+      }
+    },
+    {
+      "value": 6,
+      "reading": {
+        "kana": "ろくじ",
+        "romaji": "roku-ji",
+        "special": false
+      },
+      "half": {
+        "kana": "ろくじはん",
+        "romaji": "roku-ji han"
+      }
+    },
+    {
+      "value": 7,
+      "reading": {
+        "kana": "しちじ",
+        "romaji": "shichi-ji",
+        "special": true
+      },
+      "half": {
+        "kana": "しちじはん",
+        "romaji": "shichi-ji han"
+      }
+    },
+    {
+      "value": 8,
+      "reading": {
+        "kana": "はちじ",
+        "romaji": "hachi-ji",
+        "special": false
+      },
+      "half": {
+        "kana": "はちじはん",
+        "romaji": "hachi-ji han"
+      }
+    },
+    {
+      "value": 9,
+      "reading": {
+        "kana": "くじ",
+        "romaji": "ku-ji",
+        "special": true
+      },
+      "half": {
+        "kana": "くじはん",
+        "romaji": "ku-ji han"
+      }
+    },
+    {
+      "value": 10,
+      "reading": {
+        "kana": "じゅうじ",
+        "romaji": "juu-ji",
+        "special": false
+      },
+      "half": {
+        "kana": "じゅうじはん",
+        "romaji": "juu-ji han"
+      }
+    },
+    {
+      "value": 11,
+      "reading": {
+        "kana": "じゅういちじ",
+        "romaji": "juuichi-ji",
+        "special": false
+      },
+      "half": {
+        "kana": "じゅういちじはん",
+        "romaji": "juuichi-ji han"
+      }
+    },
+    {
+      "value": 12,
+      "reading": {
+        "kana": "じゅうにじ",
+        "romaji": "juuni-ji",
+        "special": false
+      },
+      "half": {
+        "kana": "じゅうにじはん",
+        "romaji": "juuni-ji han"
+      }
+    }
+  ],
+  "minuteGuide": [
+    {
+      "value": 1,
+      "reading": {
+        "kana": "いっぷん",
+        "romaji": "ippun",
+        "special": true
+      },
+      "ending": "ぷん"
+    },
+    {
+      "value": 2,
+      "reading": {
+        "kana": "にふん",
+        "romaji": "ni-fun",
+        "special": false
+      },
+      "ending": "ふん"
+    },
+    {
+      "value": 3,
+      "reading": {
+        "kana": "さんぷん",
+        "romaji": "san-pun",
+        "special": true
+      },
+      "ending": "ぷん"
+    },
+    {
+      "value": 4,
+      "reading": {
+        "kana": "よんぷん",
+        "romaji": "yon-pun",
+        "special": true
+      },
+      "ending": "ぷん"
+    },
+    {
+      "value": 5,
+      "reading": {
+        "kana": "ごふん",
+        "romaji": "go-fun",
+        "special": false
+      },
+      "ending": "ふん"
+    },
+    {
+      "value": 6,
+      "reading": {
+        "kana": "ろっぷん",
+        "romaji": "roppun",
+        "special": true
+      },
+      "ending": "ぷん"
+    },
+    {
+      "value": 7,
+      "reading": {
+        "kana": "ななふん",
+        "romaji": "nana-fun",
+        "special": false
+      },
+      "ending": "ふん"
+    },
+    {
+      "value": 8,
+      "reading": {
+        "kana": "はっぷん",
+        "romaji": "happun",
+        "special": true
+      },
+      "ending": "ぷん"
+    },
+    {
+      "value": 9,
+      "reading": {
+        "kana": "きゅうふん",
+        "romaji": "kyuu-fun",
+        "special": false
+      },
+      "ending": "ふん"
+    },
+    {
+      "value": 10,
+      "reading": {
+        "kana": "じゅっぷん",
+        "romaji": "juppun",
+        "special": true
+      },
+      "ending": "ぷん"
+    }
+  ]
+}

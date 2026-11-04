@@ -15,7 +15,8 @@
 ## Learning content and deployment
 
 - Edit learning entries in `public/kana.json`, `public/kanji.json`, `public/grammar.json`, `public/vocabulary.json`, `public/numbers.json`, or `public/adjectives.json`.
-- `public/notebook.json` lists those files. Keep entry IDs unique and stable.
+- Edit guide reference tables and topic mappings in `public/guides/`; keep conversion and lookup functions in TypeScript.
+- `public/notebook.json` lists the subject files. Keep entry IDs unique and stable.
 - Verify static-site changes with `npm run build:static` and `npm run test:static`; run `npm run format:check` for formatting.
 - GitHub Actions publishes the static site to S3 and CloudFront after a successful default-branch push.
 

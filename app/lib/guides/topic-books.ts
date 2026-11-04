@@ -1,23 +1,7 @@
+import topicBookData from '../../../public/guides/topic-books.json' with { type: 'json' };
 import type { Entry } from '../content/content.ts';
 
-export const topicBooks: Record<string, readonly string[]> = {
-  family: ['study-family'],
-  calendar: [
-    'study-weekdays',
-    'study-months',
-    'study-dates',
-    'study-relative-time',
-    'study-durations',
-    'study-every',
-  ],
-  introductions: [
-    'study-ask-name',
-    'study-ask-job',
-    'study-ask-hobby',
-    'study-ages',
-    'study-daily-routine',
-  ],
-};
+export const topicBooks: Record<string, readonly string[]> = topicBookData;
 export function topicBookFor(entryId: string) {
   return Object.keys(topicBooks).find((book) => topicBooks[book].includes(entryId));
 }

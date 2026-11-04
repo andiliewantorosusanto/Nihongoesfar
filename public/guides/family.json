@@ -1,0 +1,40 @@
+{
+  "pronunciation": {
+    "ちち": "chichi",
+    "はは": "haha",
+    "あに": "ani",
+    "あね": "ane",
+    "おとうと": "otouto",
+    "いもうと": "imouto",
+    "そふ": "sofu",
+    "そぼ": "sobo",
+    "おっと": "otto",
+    "つま": "tsuma",
+    "むすこ": "musuko",
+    "むすめ": "musume",
+    "りょうしん": "ryoushin",
+    "かぞく": "kazoku",
+    "おとうさん": "otousan",
+    "おかあさん": "okaasan",
+    "おにいさん": "oniisan",
+    "おねえさん": "oneesan",
+    "おとうとさん": "otouto-san",
+    "いもうとさん": "imouto-san",
+    "おじいさん": "ojiisan",
+    "おばあさん": "obaasan",
+    "ごしゅじん": "goshujin",
+    "おくさん": "okusan",
+    "むすこさん": "musuko-san",
+    "むすめさん": "musume-san",
+    "ごりょうしん": "goryoushin",
+    "ごかぞく": "gokazoku"
+  },
+  "siblingPositions": [
+    "older brother",
+    "older sister",
+    "you",
+    "spouse",
+    "younger brother",
+    "younger sister"
+  ]
+}
