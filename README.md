@@ -81,6 +81,8 @@ Run `npm run format` to apply consistent spacing and line wrapping to source, te
 
 ## Read and practice
 
+The Numbers quick guide includes a live number-to-kanji/hiragana converter and random practice with an inclusive minimum and maximum. Both support whole numbers from 0 to 999,999,999,999. Range practice accepts kanji or the displayed hiragana reading and offers answer reveal and a next-number action.
+
 - Open any knowledge book: Kana, Grammar, Kanji, Vocabulary, Numbers & time, or Adjectives.
 - Numbers & time opens a compact quick guide: basic numbers/hundreds/thousands with sound changes marked, plus hours, half past, and minute readings. Switch to All entries for the full date, month, duration, and counter reference.
 - Search and filter by topic, level, and tag. Levels are labels, so the notebook can grow beyond N5.
