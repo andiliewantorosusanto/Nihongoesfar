@@ -36,8 +36,7 @@ export function entryInBook(e: Entry, book: string) {
       e.id !== 'study-ask-time' &&
       !tenseTopicFor[e.id]
     );
-  if (book === 'adjectives')
-    return !tenseTopicFor[e.id] && (e.kind === 'adjectives' || e.tags.includes('Adjective guide'));
+  if (book === 'adjectives') return e.kind === 'adjectives';
   if (book === 'time') return e.kind === 'numbers' && ['Clock time', 'Minutes'].includes(e.topic);
   if (book === 'numbers')
     return (

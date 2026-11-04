@@ -72,13 +72,13 @@ test('noun sentence class notes cover all four forms, pointing words and polite 
   assert.equal(grade(entry, 'grammar', 'でした', undefined, 'gap'), false);
   assert.ok(grade(entry, 'grammar', 'この建物は病院でした', undefined, 'typing'));
 });
-test('adjective class guides cover forms, connectors, and noun modifiers in both books', () => {
+test('adjective grammar guides stay in grammar rather than the adjective word book', () => {
   const forms = get('adjective-forms');
   const joining = get('adjective-joining');
   const nouns = get('noun-descriptions');
   for (const entry of [forms, joining, nouns]) {
     // The old all-tense form guide is now reached through the combined tense topics.
-    assert.equal(entryInBook(entry, 'adjectives'), entry !== forms);
+    assert.equal(entryInBook(entry, 'adjectives'), false);
     assert.equal(entryInBook(entry, 'grammar'), entry !== forms);
     assert.equal(makePractice(entries, [], { entryId: entry.id, mode: 'guided' }).length, 5);
   }
@@ -93,6 +93,11 @@ test('adjective class guides cover forms, connectors, and noun modifiers in both
       cells.some((cell) => cell.text === text),
       text,
     );
+  }
+  const adjectivePractice = makePractice(entries, [], { kind: 'adjectives' });
+  assert.ok(adjectivePractice.length);
+  for (const question of adjectivePractice) {
+    assert.equal(entries.find((entry) => entry.id === question.entryId)!.kind, 'adjectives');
   }
   const adjectiveWords = new Set(
     entries.filter((entry) => entry.kind === 'adjectives').map((entry) => entry.japanese),
@@ -122,7 +127,7 @@ test('tense topics keep positive, negative and question forms together', () => {
       headings,
     );
     assert.ok(entryInBook(entry, 'grammar'));
-    assert.ok(entryInBook(entry, 'adjectives'));
+    assert.equal(entryInBook(entry, 'adjectives'), false);
   }
   const past = get('past-tense');
   const cells = past.references!.flatMap((reference) => reference.rows.flat());

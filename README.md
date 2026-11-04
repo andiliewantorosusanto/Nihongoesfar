@@ -9,7 +9,7 @@ It is useful alongside classes or self-study: review a confusing particle, check
 - **Kana:** learn hiragana and katakana sounds, combinations, and stroke order.
 - **Grammar:** revisit sentence patterns through explanations, worked examples, and guided practice. Sentence colors help connect Japanese phrases with their readings and English meanings.
 - **Kanji:** check readings, explore compound words, and practice writing.
-- **Vocabulary and adjectives:** look up meanings, readings, example sentences, and useful word forms.
+- **Vocabulary and adjectives:** look up words, meanings, readings, example sentences, and useful word forms. Guides to adjective sentence patterns and tenses live in Grammar.
 - **Numbers and time:** make sense of pronunciation changes, dates, ages, counters, and clock readings. Try the number converter or practice a number range.
 - **Family terms:** use a relationship tree to compare words for your own family and someone else’s.
 
