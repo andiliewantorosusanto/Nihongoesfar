@@ -27,7 +27,7 @@ export default function NumbersGuide({
       romaji: toRomaji(result.hiragana),
       special: numberGuide.some((row) =>
         [row.hundred, row.thousand].some(
-          (reading) => reading.special && reading.kana === result.hiragana,
+          (reading) => reading.special && result.hiragana.includes(reading.kana),
         ),
       ),
     };
@@ -39,7 +39,13 @@ export default function NumbersGuide({
     >
       {view === 'numbers' ? (
         <>
-          <GuideTable title="Numbers" showTitle={false} rows={numberRows} romaji={romaji}>
+          <GuideTable
+            title="Numbers"
+            showTitle={false}
+            combineReading
+            rows={numberRows}
+            romaji={romaji}
+          >
             <div className="number-place-control">
               <label htmlFor="number-place">Place value</label>
               <select
@@ -52,7 +58,7 @@ export default function NumbersGuide({
                   (_, exponent) => 10 ** exponent,
                 ).map((value) => (
                   <option key={value} value={value}>
-                    {value.toLocaleString('en')}
+                    {value.toLocaleString('en')} · {convertNumber(value).kanji}
                   </option>
                 ))}
               </select>
