@@ -25,6 +25,7 @@ import Practice from './Practice';
 import { GrammarLessons } from './GrammarLessons';
 import EntryDetail from './EntryDetail';
 import NumbersGuide from './NumbersGuide';
+import { NumberRangePractice } from './NumberTools';
 import { topicBooks, topicBookFor, topicBookEntries } from '../lib/guides/topic-books';
 const books = [
   {
@@ -363,51 +364,54 @@ export default function Notebook() {
                 ))}
           </div>
           {!topicBooks[page] && (
-            <div className="practice-controls">
-              {page === 'vocabulary' && (
-                <>
-                  <select
-                    aria-label="Practice category"
-                    value={topic}
-                    onChange={(e) => setTopic(e.target.value)}
-                  >
-                    <option value="all">All categories</option>
-                    {[...new Set(inBook.map((e) => e.topic))].map((t) => (
-                      <option key={t}>{t}</option>
-                    ))}
-                  </select>
-                  <select
-                    aria-label="Practice level"
-                    value={level}
-                    onChange={(e) => setLevel(e.target.value)}
-                  >
-                    <option value="all">All levels</option>
-                    {[...new Set(inBook.map((e) => e.level))].map((t) => (
-                      <option key={t}>{t}</option>
-                    ))}
-                  </select>
-                </>
-              )}
-              <select
-                aria-label="Practice type"
-                value={mode}
-                onChange={(e) => setMode(e.target.value)}
-              >
-                <option value="mixed">Mixed practice</option>
-                {availableModes.map((s) => (
-                  <option value={s} key={s}>
-                    {s[0].toUpperCase() + s.slice(1)}
-                  </option>
-                ))}
-              </select>
-              <button
-                className="primary"
-                disabled={busy || !availableModes.length}
-                onClick={() => startPractice(page === 'notes' ? 'notes' : current?.id)}
-              >
-                {page === 'grammar' ? 'Mixed grammar practice' : 'Practice'}{' '}
-                <ArrowRight size={16} />
-              </button>
+            <div className="book-practice-actions">
+              <div className="practice-controls">
+                {page === 'vocabulary' && (
+                  <>
+                    <select
+                      aria-label="Practice category"
+                      value={topic}
+                      onChange={(e) => setTopic(e.target.value)}
+                    >
+                      <option value="all">All categories</option>
+                      {[...new Set(inBook.map((e) => e.topic))].map((t) => (
+                        <option key={t}>{t}</option>
+                      ))}
+                    </select>
+                    <select
+                      aria-label="Practice level"
+                      value={level}
+                      onChange={(e) => setLevel(e.target.value)}
+                    >
+                      <option value="all">All levels</option>
+                      {[...new Set(inBook.map((e) => e.level))].map((t) => (
+                        <option key={t}>{t}</option>
+                      ))}
+                    </select>
+                  </>
+                )}
+                <select
+                  aria-label="Practice type"
+                  value={mode}
+                  onChange={(e) => setMode(e.target.value)}
+                >
+                  <option value="mixed">Mixed practice</option>
+                  {availableModes.map((s) => (
+                    <option value={s} key={s}>
+                      {s[0].toUpperCase() + s.slice(1)}
+                    </option>
+                  ))}
+                </select>
+                <button
+                  className="primary"
+                  disabled={busy || !availableModes.length}
+                  onClick={() => startPractice(page === 'notes' ? 'notes' : current?.id)}
+                >
+                  {page === 'grammar' ? 'Mixed grammar practice' : 'Practice'}{' '}
+                  <ArrowRight size={16} />
+                </button>
+              </div>
+              {page === 'numbers' && <NumberRangePractice />}
             </div>
           )}
         </div>
