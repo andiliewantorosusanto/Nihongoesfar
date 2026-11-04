@@ -8,10 +8,10 @@ import NumberTools from './NumberTools';
 export default function NumbersGuide({
   view,
   romaji,
-}: {
+}: Readonly<{
   view: 'numbers' | 'time';
   romaji: boolean;
-}) {
+}>) {
   const [place, setPlace] = useState(1);
   const numberRows = numberGuide.map(({ value }) => {
     const number = value * place;

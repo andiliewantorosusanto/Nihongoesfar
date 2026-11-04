@@ -10,12 +10,12 @@ export default function Writing({
   review = false,
   onDone,
   onAssist,
-}: {
+}: Readonly<{
   character: string;
   review?: boolean;
   onDone?: (correct: boolean) => void;
   onAssist?: () => void;
-}) {
+}>) {
   const data = allStrokes[character];
   const svg = useRef<SVGSVGElement>(null);
   const drawing = useRef<Point[]>([]);

@@ -3,10 +3,10 @@ import { Sentence, Furigana, JapaneseProse } from './Reading';
 export function GrammarLessons({
   entries,
   onOpen,
-}: {
+}: Readonly<{
   entries: Entry[];
   onOpen: (e: Entry) => void;
-}) {
+}>) {
   const lessonOrder = (entry: Entry) =>
     entry.id === 'study-present-tense'
       ? -2
@@ -69,13 +69,13 @@ export function LessonIntro({
   furigana,
   onOpen,
   romaji = false,
-}: {
+}: Readonly<{
   romaji?: boolean;
   entry: Entry;
   entries: Entry[];
   furigana: boolean;
   onOpen?: (e: Entry) => void;
-}) {
+}>) {
   const l = entry.lesson;
   if (!l) return null;
   return (

@@ -13,12 +13,12 @@ export default function GuideTable({
   rows,
   romaji,
   children,
-}: {
+}: Readonly<{
   title: string;
   rows: GuideRow[];
   romaji: boolean;
   children?: ReactNode;
-}) {
+}>) {
   return (
     <details className="large-number-guide guide-reference">
       <summary>{title}</summary>
