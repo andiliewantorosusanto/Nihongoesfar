@@ -1,3 +1,4 @@
+import { keyed } from '../lib/ui/list-keys';
 import { toRomaji } from '../lib/japanese/romaji';
 import type { ReadingText } from '../lib/content/grammar-course';
 import type { Entry } from '../lib/content/content';
@@ -6,43 +7,49 @@ export function Furigana({
   text,
   reading,
   show,
-}: {
+}: Readonly<{
   text: string;
   reading: string;
   show: boolean;
-}) {
+}>) {
   return (
     <>
-      {(show ? rubyParts(text, reading) : [{ text }]).map((p, i) =>
+      {keyed(show ? rubyParts(text, reading) : [{ text }]).map(({ value: p, key }) =>
         p.reading ? (
-          <ruby key={i}>
+          <ruby key={key}>
             {p.text}
             <rt>{p.reading}</rt>
           </ruby>
         ) : (
-          <span key={i}>{p.text}</span>
+          <span key={key}>{p.text}</span>
         ),
       )}
     </>
   );
 }
+function tokenRomaji(token: NonNullable<Entry['examples'][number]['tokens']>[number]) {
+  if (token.role === 'particle' && token.text === 'は') return 'wa';
+  if (token.role === 'particle' && token.text === 'へ') return 'e';
+  return toRomaji(token.reading || token.text);
+}
+
 export function Sentence({
   example,
   furigana,
   romaji = false,
-}: {
+}: Readonly<{
   romaji?: boolean;
   example: Entry['examples'][number];
   furigana: boolean;
-}) {
+}>) {
   const tokens = example.tokens;
   const aligned = !!tokens?.length && tokens.every((t) => t.reading);
   return (
     <div className="sentence">
       {tokens?.length ? (
         <div className="sentence-tokens" lang="ja">
-          {tokens.map((t, i) => (
-            <span className={'sentence-token role-' + t.role} key={i}>
+          {keyed(tokens).map(({ value: t, key }) => (
+            <span className={'sentence-token role-' + t.role} key={key}>
               <small>{t.role}</small>
               <b title={t.wordClass}>
                 <Furigana text={t.text} reading={t.reading || ''} show={furigana && !!t.reading} />
@@ -60,8 +67,8 @@ export function Sentence({
         <p className="reading aligned-reading" lang="ja">
           {aligned ? (
             <>
-              {tokens!.map((t, i) => (
-                <span key={i} className={'aligned-word role-' + t.role} title={t.role}>
+              {keyed(tokens!).map(({ value: t, key }) => (
+                <span key={key} className={'aligned-word role-' + t.role} title={t.role}>
                   {t.reading}
                 </span>
               ))}
@@ -75,23 +82,15 @@ export function Sentence({
       {romaji && (
         <p className="reading">
           {example.tokens?.length
-            ? example.tokens
-                .map((t) =>
-                  t.role === 'particle' && t.text === 'は'
-                    ? 'wa'
-                    : t.role === 'particle' && t.text === 'へ'
-                      ? 'e'
-                      : toRomaji(t.reading || t.text),
-                )
-                .join(' ')
+            ? example.tokens.map(tokenRomaji).join(' ')
             : toRomaji(example.reading)}
         </p>
       )}
       <p className="aligned-english" lang="en">
         {example.translationTokens?.length
-          ? example.translationTokens.map((t, i) => (
+          ? keyed(example.translationTokens).map(({ value: t, key }) => (
               <span
-                key={i}
+                key={key}
                 className={t.implicit ? 'implicit-word' : 'aligned-word role-' + t.role}
                 title={
                   t.implicit
@@ -108,17 +107,17 @@ export function Sentence({
   );
 }
 
-export function JapaneseProse({ text, show }: { text: string; show: boolean }) {
+export function JapaneseProse({ text, show }: Readonly<{ text: string; show: boolean }>) {
   return (
     <>
-      {proseReadings(text).map((p, i) => (
-        <Furigana key={i} text={p.text} reading={p.reading} show={show} />
+      {keyed(proseReadings(text)).map(({ value: p, key }) => (
+        <Furigana key={key} text={p.text} reading={p.reading} show={show} />
       ))}
     </>
   );
 }
 
-export function RoleText({ value, show }: { value: ReadingText; show: boolean }) {
+export function RoleText({ value, show }: Readonly<{ value: ReadingText; show: boolean }>) {
   if (!value.tokens?.length)
     return (
       <span
@@ -131,8 +130,8 @@ export function RoleText({ value, show }: { value: ReadingText; show: boolean })
   const covered = value.tokens.map((t) => t.text).join('');
   return (
     <span className="sentence-inline">
-      {value.tokens.map((t, i) => (
-        <span key={i} className={'aligned-word role-' + t.role} title={t.role}>
+      {keyed(value.tokens).map(({ value: t, key }) => (
+        <span key={key} className={'aligned-word role-' + t.role} title={t.role}>
           <Furigana text={t.text} reading={t.reading || ''} show={show} />
         </span>
       ))}
@@ -143,16 +142,16 @@ export function RoleText({ value, show }: { value: ReadingText; show: boolean })
 export function AlignedTranslation({
   tokens,
   meaning,
-}: {
-  tokens?: Entry['examples'][number]['translationTokens'];
+}: Readonly<{
+  tokens?: NonNullable<Entry['examples'][number]['translationTokens']>;
   meaning: string;
-}) {
+}>) {
   return (
     <>
       {tokens?.length
-        ? tokens.map((t, i) => (
+        ? keyed(tokens).map(({ value: t, key }) => (
             <span
-              key={i}
+              key={key}
               className={t.implicit ? 'implicit-word' : 'aligned-word role-' + t.role}
               title={t.implicit ? 'Understood from context; not written in Japanese' : t.role}
             >
@@ -164,13 +163,13 @@ export function AlignedTranslation({
   );
 }
 
-export function RoleReading({ value }: { value: ReadingText }) {
+export function RoleReading({ value }: Readonly<{ value: ReadingText }>) {
   return (
     <>
       {value.tokens?.length ? (
         <>
-          {value.tokens.map((t, i) => (
-            <span className={'aligned-word role-' + t.role} key={i} title={t.role}>
+          {keyed(value.tokens).map(({ value: t, key }) => (
+            <span className={'aligned-word role-' + t.role} key={key} title={t.role}>
               {t.reading}
             </span>
           ))}
@@ -187,32 +186,33 @@ export function ReferenceTables({
   tables,
   furigana,
   romaji = false,
-}: {
+}: Readonly<{
   romaji?: boolean;
   tables: NonNullable<Entry['references']>;
   furigana: boolean;
-}) {
+}>) {
   return (
     <>
-      {tables.map((table, i) => (
-        <section className="study-reference" key={i}>
+      {keyed(tables).map(({ value: table, key }) => (
+        <section className="study-reference" key={key}>
           <h3>{table.heading}</h3>
-          <div className="reference-scroll" tabIndex={0} role="region" aria-label={table.heading}>
+          {/* Keyboard focus lets readers scroll wide tables with arrow keys. */}
+          <section className="reference-scroll" tabIndex={0} aria-label={table.heading}>
             <table className="quick-table">
               <thead>
                 <tr>
-                  {table.columns.map((heading, i) => (
-                    <th scope="col" key={i}>
+                  {keyed(table.columns).map(({ value: heading, key }) => (
+                    <th scope="col" key={key}>
                       {heading}
                     </th>
                   ))}
                 </tr>
               </thead>
               <tbody>
-                {table.rows.map((row, i) => (
-                  <tr key={i}>
-                    {row.map((cell, j) => (
-                      <td key={j}>
+                {keyed(table.rows).map(({ value: row, key }) => (
+                  <tr key={key}>
+                    {keyed(row).map(({ value: cell, key }) => (
+                      <td key={key}>
                         <RoleText value={cell} show={furigana} />
                         {cell.reading && (
                           <small className="reading reference-kana" lang="ja">
@@ -228,7 +228,7 @@ export function ReferenceTables({
                 ))}
               </tbody>
             </table>
-          </div>
+          </section>
         </section>
       ))}
     </>

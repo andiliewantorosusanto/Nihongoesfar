@@ -11,12 +11,12 @@ export default function FamilyTree({
   onPractice,
   busy = false,
   romaji = true,
-}: {
+}: Readonly<{
   romaji?: boolean;
   entry: Entry;
   onPractice?: () => void;
   busy?: boolean;
-}) {
+}>) {
   const [mode, setMode] = useState<FamilyWordMode | 'address'>('own');
   function word(relationship: string) {
     const term = familyTreeWord(entry, relationship, mode === 'address' ? 'other' : mode);
@@ -39,10 +39,46 @@ export default function FamilyTree({
       </div>
     );
   }
+  function sibling(relationship: string) {
+    if (relationship === 'you')
+      return (
+        <div className="family-child-branch family-you-branch" key={relationship}>
+          <div className="family-node family-you">
+            <span className="family-relationship">
+              {mode === 'own' ? 'You' : 'Reference person'}
+            </span>
+            <strong lang="ja">{mode === 'own' ? '私' : 'その人'}</strong>
+            <span className="family-kana" lang="ja">
+              {mode === 'own' ? 'わたし' : 'そのひと'}
+            </span>
+            {romaji && (
+              <span className="family-romaji">{mode === 'own' ? 'watashi' : 'sono hito'}</span>
+            )}
+            <small>Older / younger is relative to this person.</small>
+          </div>
+        </div>
+      );
+    if (relationship === 'spouse')
+      return (
+        <div className="family-spouse-branch" key={relationship}>
+          <div className="family-node family-spouse">
+            <span className="family-relationship">Spouse · husband / wife</span>
+            {word('husband')}
+            <span className="family-or">or</span>
+            {word('wife')}
+          </div>
+        </div>
+      );
+    return (
+      <div className="family-child-branch" key={relationship}>
+        {card(relationship)}
+      </div>
+    );
+  }
   return (
     <section className="family-tree" aria-label="Japanese family tree">
       <div className="family-tree-heading">
-        <div className="number-view-switch family-mode" role="group" aria-label="Whose family?">
+        <fieldset className="number-view-switch family-mode" aria-label="Whose family?">
           <button
             className={mode === 'own' ? 'selected' : ''}
             aria-pressed={mode === 'own'}
@@ -64,7 +100,7 @@ export default function FamilyTree({
           >
             Addressing family
           </button>
-        </div>
+        </fieldset>
         {onPractice && (
           <button className="primary" disabled={busy} onClick={onPractice}>
             Practice →
@@ -99,10 +135,10 @@ export default function FamilyTree({
       ) : (
         <>
           <p className="family-scroll-help">Swipe sideways to see the whole tree.</p>
-          <div
+          {/* Keyboard focus lets readers scroll the relationship map with arrow keys. */}
+          <section
             className="family-tree-scroll"
             tabIndex={0}
-            role="region"
             aria-label="Family relationship diagram"
           >
             <div className="family-tree-canvas">
@@ -120,42 +156,7 @@ export default function FamilyTree({
                 ))}
               </div>
               <div className="family-parent-union" aria-hidden="true" />
-              <div className="family-siblings">
-                {familySiblingPositions.map((relationship) =>
-                  relationship === 'you' ? (
-                    <div className="family-child-branch family-you-branch" key={relationship}>
-                      <div className="family-node family-you">
-                        <span className="family-relationship">
-                          {mode === 'own' ? 'You' : 'Reference person'}
-                        </span>
-                        <strong lang="ja">{mode === 'own' ? '私' : 'その人'}</strong>
-                        <span className="family-kana" lang="ja">
-                          {mode === 'own' ? 'わたし' : 'そのひと'}
-                        </span>
-                        {romaji && (
-                          <span className="family-romaji">
-                            {mode === 'own' ? 'watashi' : 'sono hito'}
-                          </span>
-                        )}
-                        <small>Older / younger is relative to this person.</small>
-                      </div>
-                    </div>
-                  ) : relationship === 'spouse' ? (
-                    <div className="family-spouse-branch" key={relationship}>
-                      <div className="family-node family-spouse">
-                        <span className="family-relationship">Spouse · husband / wife</span>
-                        {word('husband')}
-                        <span className="family-or">or</span>
-                        {word('wife')}
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="family-child-branch" key={relationship}>
-                      {card(relationship)}
-                    </div>
-                  ),
-                )}
-              </div>
+              <div className="family-siblings">{familySiblingPositions.map(sibling)}</div>
               <div className="family-couple-union" aria-hidden="true" />
               <div className="family-stem" aria-hidden="true" />
               <div className="family-children">
@@ -163,7 +164,7 @@ export default function FamilyTree({
                 <div className="family-child-branch">{card('daughter')}</div>
               </div>
             </div>
-          </div>
+          </section>
           <div className="family-collective">
             <h4>Words for the group</h4>
             <div>

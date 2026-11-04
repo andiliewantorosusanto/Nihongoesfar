@@ -84,6 +84,7 @@ Open **http://127.0.0.1:5173**. To preview production output, run `npm run build
 - `japanese/`: readings, sentence annotations, romanization, and word forms.
 - `practice/`: question generation, grading, and stroke checking.
 - `guides/`: number conversion, reference readings, family and topic helpers.
+- `ui/`: shared rendering helpers such as duplicate-safe list keys.
 
 The editable subject files and attributed stroke/compound datasets live in `public/`. Stroke and compound code imports those same datasets, avoiding duplicate JSON copies. Source photo vocabulary stays in `content/` because lesson builders and their tests still use it.
 
