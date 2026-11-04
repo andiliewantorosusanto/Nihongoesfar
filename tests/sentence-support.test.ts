@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { entries, mergeEntry } from '../app/lib/content.ts';
+import { entries } from '../app/lib/content.ts';
 import { rubyParts } from '../app/lib/sentence-support.ts';
 test('all grammar examples have aligned readings and exact natural English translations', () => {
   for (const e of entries.filter((e) => e.kind === 'grammar')) {
@@ -38,20 +38,4 @@ test('furigana attaches only to kanji, keeping particles and okurigana separate'
       const parts = rubyParts(ex.japanese, ex.reading);
       assert.equal(parts.map((p) => p.text).join(''), ex.japanese);
     }
-});
-test('previous grammar note edits receive the new annotations without changing their text', () => {
-  const e = entries.find((e) => e.id === 'grammar-de')!;
-  const custom = {
-    ...e,
-    note: 'My explanation',
-    examples: e.examples.map((ex) => ({
-      ...ex,
-      translationTokens: undefined,
-      tokens: ex.tokens?.map(({ reading, ...t }) => t),
-    })),
-  };
-  const merged = mergeEntry(e, custom);
-  assert.equal(merged.note, 'My explanation');
-  assert.equal(merged.examples[0].tokens![0].reading, 'としょかんで');
-  assert.ok(merged.examples[0].translationTokens?.length);
 });

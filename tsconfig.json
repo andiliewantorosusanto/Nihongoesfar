@@ -16,14 +16,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true
   },
-  "include": [
-    "app/components",
-    "app/lib",
-    "app/main.tsx",
-    "app/api",
-    "server",
-    "tests",
-    "vite.config.ts"
-  ],
+  "include": ["app/components", "app/lib", "app/main.tsx", "tests", "vite.config.ts"],
   "exclude": ["node_modules", "work", "dist"]
 }

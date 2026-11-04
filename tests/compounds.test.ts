@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { entries, mergeEntry } from '../app/lib/content.ts';
+import { entries } from '../app/lib/content.ts';
 import { makePractice, answerFor, grade, promptFor } from '../app/lib/learning.ts';
 import strokes from '../app/lib/strokes.json' with { type: 'json' };
 test('every starter kanji has varied, real compounds rather than one repeated example', () => {
@@ -51,18 +51,7 @@ test('compound reading questions display and grade the actual chosen word', () =
   assert.ok(mixed.some((q) => q.skill === 'meaning'));
   assert.ok(mixed.some((q) => q.word));
 });
-test('new dictionary compounds reach entries with existing personal note edits', () => {
-  const fire = entries.find((e) => e.japanese === '火' && e.kind === 'kanji')!;
-  const custom = {
-    ...fire,
-    note: 'My own note.',
-    compounds: [{ japanese: '火曜日', reading: 'かようび', meaning: 'Tuesday' }],
-  };
-  const merged = mergeEntry(fire, custom);
-  assert.equal(merged.note, 'My own note.');
-  assert.ok(merged.compounds?.some((c) => c.japanese === '火山'));
-  assert.ok(merged.compounds!.length >= fire.compounds!.length);
-});
+
 test('dictionary selection keeps irregular readings and separates same-spelling senses', () => {
   const fire = entries.find((e) => e.kind === 'kanji' && e.japanese === '火')!;
   assert.ok(fire.compounds?.some((c) => c.japanese === '火傷' && c.reading === 'やけど'));

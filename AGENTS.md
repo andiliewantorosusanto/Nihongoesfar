@@ -15,7 +15,7 @@
 
 - Edit learning entries in `public/kana.json`, `public/kanji.json`, `public/grammar.json`, `public/vocabulary.json`, `public/numbers.json`, or `public/adjectives.json`.
 - `public/notebook.json` lists those files. Keep entry IDs unique and stable.
-- `npm run export:static` replaces the subject files with PostgreSQL content; do not run it over direct JSON edits unless replacement is intended.
 - Verify static-site changes with `npm run build:static` and `npm run test:static`; run `npm run format:check` for formatting.
-- Server/database changes also need the relevant PostgreSQL integration checks.
 - GitHub Actions publishes the static site to S3 and CloudFront after a successful default-branch push.
+
+The application is JSON-only. `npm run dev` serves it locally; `npm run build` creates `dist/`, and `npm start` previews that build. No API server or database is required.

@@ -1,4 +1,3 @@
-import { addGrammarAnnotations } from '../app/lib/grammar-annotations.ts';
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { entries } from '../app/lib/content.ts';
@@ -173,30 +172,4 @@ test('every guided example and Japanese practice sentence has matching role colo
       ['book.', 'subject'],
     ],
   );
-});
-test('annotation backfill preserves owner text, custom colors, and edited translations and is idempotent', () => {
-  const source = lessons.find((e) => e.id === 'grammar-existence-negative')!;
-  const saved = structuredClone(source);
-  saved.note = 'My owner explanation';
-  for (const ex of saved.lesson!.examples) {
-    delete ex.tokens;
-    delete ex.translationTokens;
-  }
-  saved.lesson!.examples[0].meaning = 'My custom translation';
-  saved.lesson!.examples[1].japanese = 'Custom Japanese';
-  saved.lesson!.examples[1].reading = 'Custom reading';
-  saved.exercises![0].feedback.tokens = undefined;
-  saved.exercises![0].feedback.translationTokens = undefined;
-  const result = addGrammarAnnotations(saved, source);
-  assert.equal(result.note, saved.note);
-  assert.equal(result.lesson!.examples[0].meaning, 'My custom translation');
-  assert.ok(result.lesson!.examples[0].tokens?.length);
-  assert.equal(result.lesson!.examples[0].translationTokens, undefined);
-  assert.equal(result.lesson!.examples[1].japanese, 'Custom Japanese');
-  assert.equal(result.lesson!.examples[1].tokens, undefined);
-  assert.ok(result.exercises![0].feedback.tokens?.length);
-  assert.deepEqual(addGrammarAnnotations(result, source), result);
-  const colored = structuredClone(source);
-  colored.lesson!.examples[0].tokens![0].role = 'topic';
-  assert.equal(addGrammarAnnotations(colored, source).lesson!.examples[0].tokens![0].role, 'topic');
 });

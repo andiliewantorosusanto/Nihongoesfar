@@ -1589,34 +1589,3 @@ const baseEntries: Entry[] = [
   ...adjectives,
 ];
 export const entries: Entry[] = [...baseEntries, ...makeStudyEntries(baseEntries)];
-
-// Keep personal notes while letting newer dictionary coverage reach previously edited entries.
-export function mergeEntry(base: Entry, custom?: Entry): Entry {
-  if (!custom) return base;
-  if (base.kind === 'grammar' && custom.kind === 'grammar')
-    return {
-      ...custom,
-      examples: custom.examples.map((ex) => {
-        const original = base.examples.find(
-          (b) => b.japanese === ex.japanese && b.reading === ex.reading && b.meaning === ex.meaning,
-        );
-        if (!original) return ex;
-        return {
-          ...ex,
-          tokens:
-            ex.tokens?.map((t) => ({
-              ...original.tokens?.find(
-                (b) => b.text === t.text && b.role === t.role && b.wordClass === t.wordClass,
-              ),
-              ...t,
-            })) || original.tokens,
-          translationTokens: ex.translationTokens || original.translationTokens,
-        };
-      }),
-    };
-  if (base.kind !== 'kanji' || custom.kind !== 'kanji') return custom;
-  const words = new Map<string, NonNullable<Entry['compounds']>[number]>();
-  for (const c of [...(base.compounds || []), ...(custom.compounds || [])])
-    words.set(c.japanese + ':' + c.reading, c);
-  return { ...custom, compounds: [...words.values()] };
-}
