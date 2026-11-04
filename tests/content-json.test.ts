@@ -18,6 +18,7 @@ test('the JSON library is the complete content source with unique IDs and valid 
   assert.equal(entries.length, published.length);
   assert.equal(new Set(entries.map((entry) => entry.id)).size, entries.length);
   for (const entry of entries) {
+    assert.notEqual(entry.level, 'Beginner', `${entry.id}: beginner entries belong to N5`);
     for (const field of [
       'id',
       'kind',

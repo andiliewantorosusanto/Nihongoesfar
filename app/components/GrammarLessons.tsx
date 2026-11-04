@@ -14,14 +14,13 @@ export function GrammarLessons({
     return entry.lesson?.order ?? Number.MAX_SAFE_INTEGER;
   };
   const ordered = [...entries].sort((a, b) => lessonOrder(a) - lessonOrder(b));
-  const displayLevel = (entry: Entry) => (entry.level === 'Beginner' ? 'N5' : entry.level);
-  const levels = [...new Set(['N5', ...ordered.map(displayLevel)])].filter((level) =>
-    ordered.some((entry) => displayLevel(entry) === level),
+  const levels = [...new Set(['N5', ...ordered.map((entry) => entry.level)])].filter((level) =>
+    ordered.some((entry) => entry.level === level),
   );
   return (
     <section className="grammar-course" aria-label="Grammar by level">
       {levels.map((level) => {
-        const lessons = ordered.filter((e) => displayLevel(e) === level);
+        const lessons = ordered.filter((e) => e.level === level);
         return (
           <section className="lesson-group" key={level}>
             <div className="section-heading">
