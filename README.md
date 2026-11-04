@@ -10,7 +10,7 @@ It is useful alongside classes or self-study: review a confusing particle, check
 - **Grammar:** revisit sentence patterns through explanations, worked examples, and guided practice. Sentence colors help connect Japanese phrases with their readings and English meanings.
 - **Kanji:** check readings, explore compound words, and practice writing.
 - **Vocabulary and adjectives:** look up words, meanings, readings, example sentences, and useful word forms. Guides to adjective sentence patterns and tenses live in Grammar.
-- **Numbers and time:** make sense of pronunciation changes, dates, ages, counters, and clock readings. Number, hour, and minute tables are always visible, with unusual readings highlighted. Try the number converter or practice a number range.
+- **Numbers and time:** make sense of pronunciation changes, dates, ages, counters, and clock readings. Number, hour, and minute tables are always visible, with unusual readings highlighted. The minute guide explains compound readings such as 13 and 28, plus exact tens. Try the number converter or practice a number range.
 - **Family terms:** use a relationship tree to compare words for your own family and someone else’s.
 
 The material focuses on beginner Japanese, with level labels to help you browse. Kanji compound lists also include words beyond beginner level.

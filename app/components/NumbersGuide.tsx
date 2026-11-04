@@ -1,5 +1,10 @@
 import { useState } from 'react';
-import { numberGuide, hourGuide, minuteGuide } from '../lib/guides/number-guide';
+import {
+  numberGuide,
+  hourGuide,
+  minuteGuide,
+  compoundMinuteGuide,
+} from '../lib/guides/number-guide';
 import { convertNumber, maximumNumber } from '../lib/guides/number-converter';
 import { toRomaji } from '../lib/japanese/romaji';
 import GuideTable from './GuideTable';
@@ -94,6 +99,28 @@ export default function NumbersGuide({
             <p>
               Minutes use <span lang="ja">ふん</span> or <span lang="ja">ぷん</span>. Learn the
               sound changes in the table.
+            </p>
+          </GuideTable>
+          <GuideTable
+            title="Minutes beyond ten"
+            romaji={romaji}
+            rows={compoundMinuteGuide.map((row) => ({
+              value: String(row.value),
+              japanese: convertNumber(row.value).kanji + '分',
+              kana: row.reading.kana,
+              romaji: row.reading.romaji,
+              special: row.reading.special,
+            }))}
+          >
+            <p>
+              For 11–59 minutes, say the tens, then use the same ending as the final digit: 2, 5, 7,
+              and 9 use ふん; 1, 3, 4, 6, and 8 use ぷん. The small っ stays in いっぷん, ろっぷん,
+              and はっぷん. For example, 13 follows 3 (さんぷん), and 28 follows 8 (はっぷん).
+            </p>
+            <p>
+              Exact tens use じゅっぷん: 20 is にじゅっぷん and 30 is さんじゅっぷん. Before another
+              digit, keep じゅう: 21 is にじゅういっぷん. For 30 minutes past the hour, you can also
+              use 半（はん）.
             </p>
           </GuideTable>
         </>

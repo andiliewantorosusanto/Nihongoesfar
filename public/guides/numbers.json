@@ -391,5 +391,87 @@
       },
       "ending": "ぷん"
     }
+  ],
+  "compoundMinuteGuide": [
+    {
+      "value": 12,
+      "reading": {
+        "kana": "じゅうにふん",
+        "romaji": "juuni-fun",
+        "special": false
+      }
+    },
+    {
+      "value": 13,
+      "reading": {
+        "kana": "じゅうさんぷん",
+        "romaji": "juusan-pun",
+        "special": true
+      }
+    },
+    {
+      "value": 16,
+      "reading": {
+        "kana": "じゅうろっぷん",
+        "romaji": "juu-roppun",
+        "special": true
+      }
+    },
+    {
+      "value": 20,
+      "reading": {
+        "kana": "にじゅっぷん",
+        "romaji": "ni-juppun",
+        "special": true
+      }
+    },
+    {
+      "value": 21,
+      "reading": {
+        "kana": "にじゅういっぷん",
+        "romaji": "nijuu-ippun",
+        "special": true
+      }
+    },
+    {
+      "value": 28,
+      "reading": {
+        "kana": "にじゅうはっぷん",
+        "romaji": "nijuu-happun",
+        "special": true
+      }
+    },
+    {
+      "value": 30,
+      "reading": {
+        "kana": "さんじゅっぷん",
+        "romaji": "san-juppun",
+        "special": true
+      }
+    },
+    {
+      "value": 40,
+      "reading": {
+        "kana": "よんじゅっぷん",
+        "romaji": "yon-juppun",
+        "special": true
+      }
+    },
+    {
+      "value": 50,
+      "reading": {
+        "kana": "ごじゅっぷん",
+        "romaji": "go-juppun",
+        "special": true
+      }
+    },
+    {
+      "value": 59,
+      "reading": {
+        "kana": "ごじゅうきゅうふん",
+        "romaji": "gojuukyuu-fun",
+        "special": false
+      }
+    }
   ]
 }

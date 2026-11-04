@@ -1,6 +1,11 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { numberGuide, hourGuide, minuteGuide } from '../app/lib/guides/number-guide.ts';
+import {
+  numberGuide,
+  hourGuide,
+  minuteGuide,
+  compoundMinuteGuide,
+} from '../app/lib/guides/number-guide.ts';
 test('number guide contrasts regular patterns with the important hundred and thousand sound changes', () => {
   assert.deepEqual(
     numberGuide.map((r) => r.value),
@@ -47,4 +52,25 @@ test('clock reference gives the different hour readings, half past, and fun/pun 
   assert.equal(minuteGuide[5].reading.kana, 'ろっぷん');
   assert.equal(minuteGuide[7].reading.kana, 'はっぷん');
   assert.equal(minuteGuide[9].reading.kana, 'じゅっぷん');
+});
+
+test('compound minute examples preserve final-digit sound changes and exact tens', () => {
+  for (const [value, kana, special] of [
+    [12, 'じゅうにふん', false],
+    [13, 'じゅうさんぷん', true],
+    [16, 'じゅうろっぷん', true],
+    [20, 'にじゅっぷん', true],
+    [21, 'にじゅういっぷん', true],
+    [28, 'にじゅうはっぷん', true],
+    [30, 'さんじゅっぷん', true],
+    [40, 'よんじゅっぷん', true],
+    [50, 'ごじゅっぷん', true],
+    [59, 'ごじゅうきゅうふん', false],
+  ] as const) {
+    const row = compoundMinuteGuide.find((row) => row.value === value);
+    assert.ok(row, String(value));
+    assert.equal(row.reading.kana, kana);
+    assert.equal(row.reading.special, special);
+    assert.ok(row.reading.romaji);
+  }
 });
