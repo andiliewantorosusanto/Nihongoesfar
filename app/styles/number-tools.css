@@ -24,9 +24,32 @@
 .number-tools button {
   margin: 4px 8px 4px 0;
 }
-.guide-reference select {
-  margin: 8px 0 16px 12px;
-  padding: 6px;
+.numbers-reference > .guide-reference {
+  margin-top: 0;
+}
+.number-place-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fafafa;
+}
+.number-place-control label {
+  font-size: 11px;
+  color: var(--muted);
+}
+.number-place-control select {
+  min-height: 30px;
+  padding: 4px 8px;
+  margin: 0;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  background: white;
+  color: var(--ink);
+  font-size: 11px;
 }
 
 .number-feedback {

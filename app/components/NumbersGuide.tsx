@@ -34,27 +34,29 @@ export default function NumbersGuide({
   });
   return (
     <section
-      className="numbers-guide"
+      className={'numbers-guide' + (view === 'numbers' ? ' numbers-reference' : '')}
       aria-label={view === 'numbers' ? 'Numbers quick guide' : 'Time quick guide'}
     >
       {view === 'numbers' ? (
         <>
           <GuideTable title="Numbers" showTitle={false} rows={numberRows} romaji={romaji}>
-            <label htmlFor="number-place">Place value</label>
-            <select
-              id="number-place"
-              value={place}
-              onChange={(event) => setPlace(Number(event.target.value))}
-            >
-              {Array.from(
-                { length: String(maximumNumber).length },
-                (_, exponent) => 10 ** exponent,
-              ).map((value) => (
-                <option key={value} value={value}>
-                  {value.toLocaleString('en')}
-                </option>
-              ))}
-            </select>
+            <div className="number-place-control">
+              <label htmlFor="number-place">Place value</label>
+              <select
+                id="number-place"
+                value={place}
+                onChange={(event) => setPlace(Number(event.target.value))}
+              >
+                {Array.from(
+                  { length: String(maximumNumber).length },
+                  (_, exponent) => 10 ** exponent,
+                ).map((value) => (
+                  <option key={value} value={value}>
+                    {value.toLocaleString('en')}
+                  </option>
+                ))}
+              </select>
+            </div>
           </GuideTable>
         </>
       ) : (
