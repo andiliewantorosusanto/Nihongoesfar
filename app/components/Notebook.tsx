@@ -194,6 +194,7 @@ export default function Notebook() {
   const [error, setError] = useState('');
   const [grammarDetailed, setGrammarDetailed] = useState(false);
   const [practiceSerial, setPracticeSerial] = useState(0);
+  const previousGuidedQuestions = useRef(new Map<string, string[]>());
   async function refresh() {
     const d = await api('state');
     try {
@@ -253,8 +254,15 @@ export default function Notebook() {
             }
           : {}),
         mode: entryId && !word ? 'guided' : 'mixed',
+        previousQuestionIds: entryId ? previousGuidedQuestions.current.get(entryId) : undefined,
         skill: practiceSkill(word, entryId, mode),
       });
+      if (entryId && !word) {
+        previousGuidedQuestions.current.set(
+          entryId,
+          d.queue.map((question: Question) => question.id),
+        );
+      }
       setEntry(null);
       setPracticeSerial((n) => n + 1);
       setQuestions(d.queue);

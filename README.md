@@ -19,7 +19,7 @@ The material focuses on beginner Japanese, with level labels to help you browse.
 
 Open a book and browse, or search for the word or topic you need. Read an explanation, compare examples, then start practice from that entry or the whole book.
 
-Grammar practice moves from recognizing a meaning or pattern to filling gaps, arranging a sentence, and typing an answer. Hints and explanations help you work through mistakes. Writing practice offers stroke animation, tracing, and feedback on stroke order, direction, and approximate shape.
+Guided grammar rounds sample five questions, moving from recognizing a meaning or pattern to filling gaps, arranging a sentence, and typing an answer. Repeating a round draws fresh examples where available; Present and Past also use their related grammar lessons. Hints and explanations help you work through mistakes. Writing practice offers stroke animation, tracing, and feedback on stroke order, direction, and approximate shape.
 
 Turn furigana and romaji on when you need reading support. Your reading preferences stay in your browser. You can start studying without an account, and return to any topic whenever you need it.
 

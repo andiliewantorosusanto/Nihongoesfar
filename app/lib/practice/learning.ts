@@ -1,6 +1,7 @@
 import type { Entry } from '../content/content.ts';
 import { topicBookFor } from '../guides/topic-books.ts';
 import { tenseTopicFor } from '../guides/tense-topics.ts';
+import practiceSources from '../../../public/guides/practice-sources.json' with { type: 'json' };
 export type Skill = 'recognition' | 'reading' | 'meaning' | 'writing' | 'grammar';
 export type Question = {
   id: string;
@@ -8,6 +9,7 @@ export type Question = {
   skill: Skill;
   word?: string;
   exerciseId?: string;
+  lessonId?: string;
 };
 export function normalize(s: string) {
   return s
@@ -64,15 +66,53 @@ export function makePractice(
     skill?: Skill;
     word?: string;
     mode?: 'guided' | 'mixed';
+    previousQuestionIds?: string[];
   } = {},
   random = Math.random,
 ): Question[] {
   if (options.mode === 'guided' && options.entryId) {
     const e = entries.find((e) => e.id === options.entryId);
-    if (e?.exercises?.length)
-      return e.exercises
-        .filter((x) => !x.alternate)
-        .map((x) => ({ id: e.id + ':' + x.id, entryId: e.id, skill: 'grammar', exerciseId: x.id }));
+    if (e?.exercises?.length) {
+      const sourceIds = (practiceSources as Record<string, string[]>)[e.id] || [];
+      const pool = entries
+        .filter((entry) => entry.id === e.id || sourceIds.includes(entry.id))
+        .flatMap((entry) =>
+          (entry.exercises || [])
+            .filter((exercise) => !exercise.alternate)
+            .map((exercise) => ({ entry, exercise, id: entry.id + ':' + exercise.id })),
+        );
+      const previousIds = new Set(options.previousQuestionIds);
+      const previousSentences = new Set(
+        pool
+          .filter((item) => previousIds.has(item.id))
+          .map((item) => normalize(item.exercise.feedback.text)),
+      );
+      const usedSentences = new Set<string>();
+      const queue: Question[] = [];
+      // Sample each learning step, keeping recognition before independent production.
+      for (const type of ['meaning-choice', 'pattern-choice', 'gap', 'tiles', 'typing']) {
+        const candidates = pool.filter((item) => item.exercise.type === type);
+        if (!candidates.length) continue;
+        const fresh = candidates.filter(
+          (item) => !previousSentences.has(normalize(item.exercise.feedback.text)),
+        );
+        const available = fresh.length ? fresh : candidates;
+        const distinct = available.filter(
+          (item) => !usedSentences.has(normalize(item.exercise.feedback.text)),
+        );
+        const choices = distinct.length ? distinct : available;
+        const selected = choices[Math.floor(random() * choices.length)];
+        usedSentences.add(normalize(selected.exercise.feedback.text));
+        queue.push({
+          id: selected.id,
+          entryId: selected.entry.id,
+          exerciseId: selected.exercise.id,
+          lessonId: e.id,
+          skill: 'grammar',
+        });
+      }
+      return queue;
+    }
   }
   const questions: Question[] = [];
   for (const e of entries.filter(

@@ -430,7 +430,12 @@ test('every new guide has varied, readable, color-aligned examples and five vali
     const queue = makePractice(entries, [], { entryId: e.id, mode: 'guided' });
     assert.equal(queue.length, 5, e.id);
     assert.deepEqual(
-      queue.map((q) => e.exercises!.find((x) => x.id === q.exerciseId)!.type),
+      queue.map(
+        (q) =>
+          entries
+            .find((source) => source.id === q.entryId)!
+            .exercises!.find((x) => x.id === q.exerciseId)!.type,
+      ),
       ['meaning-choice', 'pattern-choice', 'gap', 'tiles', 'typing'],
     );
     for (const x of e.exercises!) {

@@ -47,7 +47,9 @@ export default function Practice({
     () => shuffled(exercise?.choices ?? [], question?.id ?? ''),
     [question?.id, exercise],
   );
-  const lesson = entries.find((entry) => entry.id === questions[0]?.entryId);
+  const lesson = entries.find(
+    (entry) => entry.id === (questions[0]?.lessonId || questions[0]?.entryId),
+  );
   const nextOrder = lesson?.lesson?.order;
   const nextLesson = entries.find(
     (entry) => nextOrder !== undefined && entry.lesson?.order === nextOrder + 1,
@@ -68,7 +70,8 @@ export default function Practice({
       });
       setResult(checked);
       if (!checked.correct) setHadMistake(true);
-      else if (hadMistake) setQueue((current) => withAlternate(current, entry));
+      else if (hadMistake)
+        setQueue((current) => withAlternate(current, question.lessonId && lesson ? lesson : entry));
     } catch (error) {
       setError((error as Error).message);
     } finally {

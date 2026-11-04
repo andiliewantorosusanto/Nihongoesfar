@@ -83,8 +83,8 @@ test('guided practice preserves teaching order, mixed practice samples, and lega
   const e = lessons[0];
   const guided = makePractice(entries, [], { entryId: e.id, mode: 'guided' });
   assert.deepEqual(
-    guided.slice(0, 5).map((q) => q.exerciseId),
-    ['meaning', 'pattern', 'gap', 'tiles', 'typing'],
+    guided.map((q) => e.exercises!.find((exercise) => exercise.id === q.exerciseId)!.type),
+    ['meaning-choice', 'pattern-choice', 'gap', 'tiles', 'typing'],
   );
   const mixed = makePractice(entries, [], { kind: 'grammar', mode: 'mixed' }, () => 0.25);
   assert.equal(mixed.length, 12);
@@ -94,8 +94,8 @@ test('guided practice preserves teaching order, mixed practice samples, and lega
   assert.ok(grade(legacy, 'grammar', legacy.exercise!.answers[0]));
   assert.deepEqual(answerFor(e, 'grammar', undefined, 'missing'), []);
   const retry = withAlternate(guided, e);
-  assert.equal(retry.length, 56);
-  assert.equal(withAlternate(retry, e).length, 56);
+  assert.equal(retry.length, 6);
+  assert.equal(withAlternate(retry, e).length, 6);
 });
 test('authored particle contrasts and kana alternatives grade the intended pattern', () => {
   const de = lessons.find((e) => e.id === 'grammar-de')!;
@@ -172,4 +172,70 @@ test('every guided example and Japanese practice sentence has matching role colo
       ['book.', 'subject'],
     ],
   );
+});
+
+test('guided rounds sample available examples while preserving the five learning stages', () => {
+  for (const entry of lessons) {
+    const first = makePractice(entries, [], { entryId: entry.id, mode: 'guided' }, () => 0);
+    const second = makePractice(
+      entries,
+      [],
+      {
+        entryId: entry.id,
+        mode: 'guided',
+        previousQuestionIds: first.map((q) => q.id),
+      },
+      () => 0,
+    );
+    assert.equal(first.length, 5);
+    assert.equal(second.length, 5);
+    assert.notDeepEqual(
+      first.map((q) => q.id),
+      second.map((q) => q.id),
+      entry.id,
+    );
+    for (const round of [first, second]) {
+      assert.ok(round.every((q) => q.entryId === entry.id && q.lessonId === entry.id));
+      assert.deepEqual(
+        round.map((q) => entry.exercises!.find((x) => x.id === q.exerciseId)!.type),
+        ['meaning-choice', 'pattern-choice', 'gap', 'tiles', 'typing'],
+      );
+      for (const question of round) {
+        const exercise = entry.exercises!.find((x) => x.id === question.exerciseId)!;
+        assert.equal(exercise.alternate, undefined);
+        assert.ok(grade(entry, 'grammar', exercise.answers[0], undefined, exercise.id));
+      }
+    }
+  }
+});
+test('tense guide repeats use different authored examples without repeating a sentence across steps', () => {
+  for (const entryId of ['study-present-tense', 'study-past-tense']) {
+    const first = makePractice(entries, [], { entryId, mode: 'guided' }, () => 0);
+    const second = makePractice(
+      entries,
+      [],
+      { entryId, mode: 'guided', previousQuestionIds: first.map((q) => q.id) },
+      () => 0,
+    );
+    const sentences = (queue: typeof first) =>
+      queue.map((q) =>
+        normalize(
+          entries.find((e) => e.id === q.entryId)!.exercises!.find((x) => x.id === q.exerciseId)!
+            .feedback.text,
+        ),
+      );
+    const firstSentences = new Set(sentences(first));
+    assert.equal(firstSentences.size, 5, entryId);
+    assert.equal(new Set(sentences(second)).size, 5, entryId);
+    assert.ok(
+      sentences(second).every((sentence) => !firstSentences.has(sentence)),
+      entryId,
+    );
+    for (const question of [...first, ...second]) {
+      assert.equal(question.lessonId, entryId);
+      const source = entries.find((entry) => entry.id === question.entryId)!;
+      const exercise = source.exercises!.find((x) => x.id === question.exerciseId)!;
+      assert.ok(grade(source, 'grammar', exercise.answers[0], undefined, exercise.id));
+    }
+  }
 });

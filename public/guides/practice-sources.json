@@ -1,0 +1,13 @@
+{
+  "study-present-tense": [
+    "grammar-desu",
+    "grammar-question",
+    "grammar-noun-negative",
+    "grammar-masu",
+    "grammar-masen",
+    "grammar-existence-negative",
+    "grammar-i-adjective",
+    "grammar-na-adjective"
+  ],
+  "study-past-tense": ["grammar-noun-past", "grammar-verb-past"]
+}

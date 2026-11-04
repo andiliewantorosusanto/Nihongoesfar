@@ -4,6 +4,27 @@ import { entries, type Entry } from '../app/lib/content/content.ts';
 import { staticResult, staticApi } from '../app/lib/api/static-api.ts';
 import { readFile } from 'node:fs/promises';
 
+test('tense practice grades each sampled question using its authored source', () => {
+  const { queue } = staticResult(entries, 'practice', {
+    entryId: 'study-present-tense',
+    mode: 'guided',
+  });
+  assert.equal(queue?.length, 5);
+  for (const question of queue!) {
+    assert.equal(question.lessonId, 'study-present-tense');
+    const source = entries.find((entry) => entry.id === question.entryId)!;
+    const exercise = source.exercises!.find((exercise) => exercise.id === question.exerciseId)!;
+    const result = staticResult(entries, 'check', {
+      entryId: question.entryId,
+      skill: question.skill,
+      exerciseId: question.exerciseId,
+      answer: exercise.answers[0],
+    });
+    assert.equal(result.correct, true);
+    assert.equal(result.explanation, exercise.explanation);
+  }
+});
+
 test('static practice filters vocabulary and grades answers without a server', () => {
   const entry = entries.find((e) => e.kind === 'vocabulary')!;
   const { queue } = staticResult(entries, 'practice', {
