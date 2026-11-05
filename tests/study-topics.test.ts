@@ -408,7 +408,7 @@ test('number and katakana additions cover the requested boundaries and spellings
 });
 test('every new guide has varied, readable, color-aligned examples and five valid practice stages', () => {
   const guides = entries.filter((e) => e.references && !e.lesson);
-  assert.equal(guides.length, 33);
+  assert.equal(guides.length, 34);
   for (const e of guides) {
     assert.equal(e.examples.length, 4, e.id);
     assert.equal(new Set(e.examples.map((x) => x.japanese)).size, 4, e.id);

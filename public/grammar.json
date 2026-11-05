@@ -211084,13 +211084,13 @@
     "title": "Something, someone, somewhere; nothing",
     "japanese": "何かを食べます。",
     "reading": "なにかをたべます。",
-    "meaning": "Something, someone, somewhere; nothing",
+    "meaning": "Say that something or someone exists, go somewhere, or say that there is nothing.",
     "level": "N5",
     "topic": "Movement and expressions",
     "tags": [
       "Study guide"
     ],
-    "note": "何か (なにか) means something; 誰か (だれか) means someone; どこか means somewhere. 時々 (ときどき) means sometimes: it is a frequency word, not a question word + か. With a negative predicate, 何も (なにも) means nothing / not anything: 何もありません (なにもありません). 誰もいません (だれもいません) means nobody is here. どこにも行きません (どこにもいきません) means I do not go anywhere. 何も can be read なんにも in colloquial speech.",
+    "note": "Question word + か: 何 (なに, what), 誰 (だれ, who), and どこ (where) become 何か (something), 誰か (someone), and どこか (somewhere). The か is part of the word here; it does not make the sentence a question.\nQuestion word + も + a negative ending: 何も (なにも) with a negative means nothing / not anything, and 誰も (だれも) with a negative means nobody / not anybody. Include the negative ending: 何も食べません (なにもたべません) means “I do not eat anything.” The も alone does not make a sentence negative.\nParticle order: say 何かを食べます (なにかをたべます), but 何も食べません (なにもたべません), without を. For destinations, keep に before も: どこかに行きます (どこかにいきます) becomes どこにも行きません (どこにもいきません).\nAll full sentences in the tables below use polite endings. 時々 (ときどき, sometimes) is a separate frequency word; it is not formed by adding か to a question word.",
     "examples": [
       {
         "japanese": "何かを食べます。",
@@ -212441,6 +212441,112 @@
         },
         "hint": "Supply the missing predicate in the indicated form.",
         "explanation": "The missing part is 勉強します (べんきょうします). Together, the sentence means “I study somewhere.”"
+      }
+    ],
+    "references": [
+      {
+        "heading": "With か: something, someone, somewhere",
+        "columns": [
+          "Pattern",
+          "Polite example",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            {
+              "text": "何か",
+              "reading": "なにか"
+            },
+            {
+              "text": "何かを食べます。",
+              "reading": "なにかをたべます。"
+            },
+            {
+              "text": "I eat something.",
+              "reading": ""
+            }
+          ],
+          [
+            {
+              "text": "誰か",
+              "reading": "だれか"
+            },
+            {
+              "text": "誰かがいます。",
+              "reading": "だれかがいます。"
+            },
+            {
+              "text": "Someone is here.",
+              "reading": ""
+            }
+          ],
+          [
+            {
+              "text": "どこか",
+              "reading": "どこか"
+            },
+            {
+              "text": "どこかに行きます。",
+              "reading": "どこかにいきます。"
+            },
+            {
+              "text": "I go somewhere.",
+              "reading": ""
+            }
+          ]
+        ]
+      },
+      {
+        "heading": "With も and a negative ending: nothing, nobody, nowhere",
+        "columns": [
+          "Pattern",
+          "Polite example",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            {
+              "text": "何も + negative",
+              "reading": "なにも + negative"
+            },
+            {
+              "text": "何も食べません。",
+              "reading": "なにもたべません。"
+            },
+            {
+              "text": "I do not eat anything.",
+              "reading": ""
+            }
+          ],
+          [
+            {
+              "text": "誰も + negative",
+              "reading": "だれも + negative"
+            },
+            {
+              "text": "誰もいません。",
+              "reading": "だれもいません。"
+            },
+            {
+              "text": "Nobody is here.",
+              "reading": ""
+            }
+          ],
+          [
+            {
+              "text": "どこにも + negative",
+              "reading": "どこにも + negative"
+            },
+            {
+              "text": "どこにも行きません。",
+              "reading": "どこにもいきません。"
+            },
+            {
+              "text": "I do not go anywhere.",
+              "reading": ""
+            }
+          ]
+        ]
       }
     ]
   },
