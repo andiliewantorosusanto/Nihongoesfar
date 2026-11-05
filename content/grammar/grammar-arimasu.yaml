@@ -1,0 +1,1001 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-arimasu
+  kind: grammar
+  note:
+    'Use あります for things and plants. が marks what exists. The existence pattern can also express possession:
+    時間があります means “I have time”. This is an existence verb, not the negative copula in じゃありません.'
+  tags:
+    - Grammar
+    - arimasu
+  level: N5
+  title: 'Things exist: あります'
+  topic: Sentence building
+  lesson:
+    goal: Say that a thing exists.
+    group: Existence and location
+    order: 11
+    recap: Use あります for things and plants; use います for people and animals.
+    examples:
+      - tokens:
+          - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+        meaning: There is a book.
+        reading: ほんがあります。
+        japanese: 本があります。
+        translationTokens:
+          - { role: predicate, text: 'There is ' }
+          - { role: subject, text: a book. }
+      - tokens:
+          - { role: subject, text: 机, reading: つくえ, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+        meaning: There is a desk.
+        reading: つくえがあります。
+        japanese: 机があります。
+        translationTokens:
+          - { role: predicate, text: 'There is ' }
+          - { role: subject, text: a desk. }
+      - tokens:
+          - { role: subject, text: 時計, reading: とけい, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+        meaning: There is a clock.
+        reading: とけいがあります。
+        japanese: 時計があります。
+        translationTokens:
+          - { role: predicate, text: 'There is ' }
+          - { role: subject, text: a clock. }
+    comparison: Use あります for things and plants; use います for people and animals.
+    vocabulary:
+      - text: 本
+        meaning: book
+        reading: ほん
+      - text: 机
+        meaning: desk
+        reading: つくえ
+      - text: 時計
+        meaning: clock / watch
+        reading: とけい
+      - text: 車
+        meaning: car
+        reading: くるま
+    prerequisites:
+      - grammar-desu
+  meaning: There is a desk.
+  reading: つくえがあります。
+  examples:
+    - tokens:
+        - { role: subject, text: 机, reading: つくえ, wordClass: noun }
+        - { role: particle, text: が, reading: が, wordClass: subject particle }
+        - { role: predicate, text: あります, reading: あります, wordClass: existence verb }
+      meaning: There is a desk.
+      reading: つくえがあります。
+      japanese: 机があります。
+      translationTokens:
+        - { role: predicate, text: 'There is ', implicit: false }
+        - { role: subject, text: a desk., implicit: false }
+  exercise:
+    tiles:
+      - 机
+      - が
+      - あります
+    prompt: 'Build: “There is a desk.”'
+    answers:
+      - 机があります
+      - つくえがあります
+    explanation:
+      'Use あります for things and plants. が marks what exists. The existence pattern can also express
+      possession: 時間があります means “I have time”. This is an existence verb, not the negative copula in じゃありません.'
+  japanese: 机があります。
+sentences:
+  there-is-a-book:
+    text: 本があります。
+    tiles:
+      - { text: 本, reading: ほん }
+      - { text: が, reading: が }
+      - { text: あります, reading: あります }
+    tokens:
+      - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+    meaning: There is a book.
+    reading: ほんがあります。
+    translationTokens:
+      - { role: predicate, text: 'There is ' }
+      - { role: subject, text: a book. }
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+  there-is-a-desk:
+    text: 机があります。
+    tiles:
+      - { text: 机, reading: つくえ }
+      - { text: が, reading: が }
+      - { text: あります, reading: あります }
+    tokens:
+      - { role: subject, text: 机, reading: つくえ, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+    meaning: There is a desk.
+    reading: つくえがあります。
+    translationTokens:
+      - { role: predicate, text: 'There is ' }
+      - { role: subject, text: a desk. }
+    form: polite
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+  there-is-a-clock:
+    text: 時計があります。
+    tiles:
+      - { text: 時計, reading: とけい }
+      - { text: が, reading: が }
+      - { text: あります, reading: あります }
+    tokens:
+      - { role: subject, text: 時計, reading: とけい, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+    meaning: There is a clock.
+    reading: とけいがあります。
+    translationTokens:
+      - { role: predicate, text: 'There is ' }
+      - { role: subject, text: a clock. }
+    form: polite
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+  there-is-a-car:
+    text: 車があります。
+    tiles:
+      - { text: 車, reading: くるま }
+      - { text: が, reading: が }
+      - { text: あります, reading: あります }
+    tokens:
+      - { role: subject, text: 車, reading: くるま, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+    meaning: There is a car.
+    reading: くるまがあります。
+    translationTokens:
+      - { role: predicate, text: 'There is ' }
+      - { role: subject, text: a car. }
+    form: polite
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+  there-is-a-magazine:
+    text: 雑誌があります。
+    reading: ざっしがあります。
+    meaning: There is a magazine.
+    tiles:
+      - { text: 雑誌, reading: ざっし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 雑誌, reading: ざっし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a magazine., role: subject }
+    form: polite
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+  there-is-a-newspaper:
+    text: 新聞があります。
+    reading: しんぶんがあります。
+    meaning: There is a newspaper.
+    tiles:
+      - { text: 新聞, reading: しんぶん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 新聞, reading: しんぶん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a newspaper., role: subject }
+    form: polite
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+  there-is-a-dictionary:
+    text: 辞書があります。
+    reading: じしょがあります。
+    meaning: There is a dictionary.
+    tiles:
+      - { text: 辞書, reading: じしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 辞書, reading: じしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a dictionary., role: subject }
+    form: polite
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+  there-is-a-novel:
+    text: 小説があります。
+    reading: しょうせつがあります。
+    meaning: There is a novel.
+    tiles:
+      - { text: 小説, reading: しょうせつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 小説, reading: しょうせつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a novel., role: subject }
+    form: polite
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+  there-is-a-comic:
+    text: 漫画があります。
+    reading: まんががあります。
+    meaning: There is a comic.
+    tiles:
+      - { text: 漫画, reading: まんが, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 漫画, reading: まんが, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a comic., role: subject }
+    form: polite
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+  there-is-a-textbook:
+    text: 教科書があります。
+    reading: きょうかしょがあります。
+    meaning: There is a textbook.
+    tiles:
+      - { text: 教科書, reading: きょうかしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 教科書, reading: きょうかしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a textbook., role: subject }
+    form: polite
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+  there-is-a-picture-book:
+    text: 絵本があります。
+    reading: えほんがあります。
+    meaning: There is a picture book.
+    tiles:
+      - { text: 絵本, reading: えほん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 絵本, reading: えほん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a picture book., role: subject }
+    form: polite
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+  there-is-a-letter:
+    text: 手紙があります。
+    reading: てがみがあります。
+    meaning: There is a letter.
+    tiles:
+      - { text: 手紙, reading: てがみ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 手紙, reading: てがみ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a letter., role: subject }
+    form: polite
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+  there-is-a-diary:
+    text: 日記があります。
+    reading: にっきがあります。
+    meaning: There is a diary.
+    tiles:
+      - { text: 日記, reading: にっき, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 日記, reading: にっき, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a diary., role: subject }
+    form: polite
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+  there-is-a-article:
+    text: 記事があります。
+    reading: きじがあります。
+    meaning: There is a article.
+    tiles:
+      - { text: 記事, reading: きじ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 記事, reading: きじ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a article., role: subject }
+    form: polite
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+  there-is-a-bag:
+    text: かばんがあります。
+    reading: かばんがあります。
+    meaning: There is a bag.
+    tiles:
+      - { text: かばん, reading: かばん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: かばん, reading: かばん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a bag., role: subject }
+    form: polite
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+  there-is-a-chair:
+    text: 椅子があります。
+    reading: いすがあります。
+    meaning: There is a chair.
+    tiles:
+      - { text: 椅子, reading: いす, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 椅子, reading: いす, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a chair., role: subject }
+    form: polite
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+  there-is-a-bicycle:
+    text: 自転車があります。
+    reading: じてんしゃがあります。
+    meaning: There is a bicycle.
+    tiles:
+      - { text: 自転車, reading: じてんしゃ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 自転車, reading: じてんしゃ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a bicycle., role: subject }
+    form: polite
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+  there-is-a-shoe:
+    text: 靴があります。
+    reading: くつがあります。
+    meaning: There is a shoe.
+    tiles:
+      - { text: 靴, reading: くつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 靴, reading: くつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a shoe., role: subject }
+    form: polite
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+  there-is-a-umbrella:
+    text: 傘があります。
+    reading: かさがあります。
+    meaning: There is a umbrella.
+    tiles:
+      - { text: 傘, reading: かさ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 傘, reading: かさ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a umbrella., role: subject }
+    form: polite
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+  there-is-a-box:
+    text: 箱があります。
+    reading: はこがあります。
+    meaning: There is a box.
+    tiles:
+      - { text: 箱, reading: はこ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 箱, reading: はこ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a box., role: subject }
+    form: polite
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+  there-is-a-hat:
+    text: 帽子があります。
+    reading: ぼうしがあります。
+    meaning: There is a hat.
+    tiles:
+      - { text: 帽子, reading: ぼうし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 帽子, reading: ぼうし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a hat., role: subject }
+    form: polite
+    hint: The thing is not a person or animal.
+    explanation: Use あります for things and plants; use います for people and animals.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: there-is-a-book
+    choices:
+      - text: There is a book.
+        reading: ''
+      - text: There is a cat.
+        reading: ''
+    answers:
+      - There is a book.
+  - id: pattern
+    type: pattern-choice
+    sentence: there-is-a-book
+    choices:
+      - sentence: there-is-a-book
+      - text: 本がいます。
+        tiles:
+          - { text: 本, reading: ほん }
+          - { text: が, reading: が }
+          - { text: います, reading: います }
+        tokens:
+          - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: います, reading: います, wordClass: predicate }
+        meaning: There is a cat.
+        reading: ほんがいます。
+    prompt: 'Choose the correct Japanese: There is a book.'
+    answers:
+      - 本があります
+      - ほんがあります
+  - id: gap
+    type: gap
+    sentence: there-is-a-desk
+    answers:
+      - あります
+      - あります
+    context:
+      text: 机が___。
+      tokens:
+        - { role: subject, text: 机, reading: つくえ, wordClass: noun phrase }
+        - { role: particle, text: が, reading: が, wordClass: particle }
+        - { role: predicate, text: ___, reading: ___, wordClass: predicate }
+      reading: つくえが___。
+  - id: tiles
+    type: tiles
+    sentence: there-is-a-desk
+    prompt: 'Build this sentence: There is a desk. (polite)'
+    answers:
+      - 机があります
+      - つくえがあります
+    tiles:
+      - { role: subject, text: 机, reading: つくえ, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: there-is-a-clock
+    answers:
+      - 時計があります
+      - とけいがあります
+  - id: alternate
+    type: typing
+    sentence: there-is-a-car
+    alternate: true
+    prompt: 'One more example: There is a car. (polite)'
+    answers:
+      - 車があります
+      - くるまがあります
+  - id: extra-1-tiles
+    type: tiles
+    sentence: there-is-a-magazine
+    prompt: 'Build this sentence: There is a magazine. (polite)'
+    answers:
+      - 雑誌があります
+      - ざっしがあります
+    tiles:
+      - { text: 雑誌, reading: ざっし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: there-is-a-magazine
+    answers:
+      - 雑誌があります
+      - ざっしがあります
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-magazine
+    choices:
+      - text: There is a magazine.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+    prompt: 'Choose the meaning: 雑誌があります。'
+    answers:
+      - There is a magazine.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: there-is-a-newspaper
+    prompt: 'Build this sentence: There is a newspaper. (polite)'
+    answers:
+      - 新聞があります
+      - しんぶんがあります
+    tiles:
+      - { text: 新聞, reading: しんぶん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: there-is-a-newspaper
+    answers:
+      - 新聞があります
+      - しんぶんがあります
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-newspaper
+    choices:
+      - text: There is a newspaper.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+    prompt: 'Choose the meaning: 新聞があります。'
+    answers:
+      - There is a newspaper.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: there-is-a-dictionary
+    prompt: 'Build this sentence: There is a dictionary. (polite)'
+    answers:
+      - 辞書があります
+      - じしょがあります
+    tiles:
+      - { text: 辞書, reading: じしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: there-is-a-dictionary
+    answers:
+      - 辞書があります
+      - じしょがあります
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-dictionary
+    choices:
+      - text: There is a dictionary.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+    prompt: 'Choose the meaning: 辞書があります。'
+    answers:
+      - There is a dictionary.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: there-is-a-novel
+    prompt: 'Build this sentence: There is a novel. (polite)'
+    answers:
+      - 小説があります
+      - しょうせつがあります
+    tiles:
+      - { text: 小説, reading: しょうせつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: there-is-a-novel
+    answers:
+      - 小説があります
+      - しょうせつがあります
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-novel
+    choices:
+      - text: There is a novel.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+    prompt: 'Choose the meaning: 小説があります。'
+    answers:
+      - There is a novel.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: there-is-a-comic
+    prompt: 'Build this sentence: There is a comic. (polite)'
+    answers:
+      - 漫画があります
+      - まんががあります
+    tiles:
+      - { text: 漫画, reading: まんが, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: there-is-a-comic
+    answers:
+      - 漫画があります
+      - まんががあります
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-comic
+    choices:
+      - text: There is a comic.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+    prompt: 'Choose the meaning: 漫画があります。'
+    answers:
+      - There is a comic.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: there-is-a-textbook
+    prompt: 'Build this sentence: There is a textbook. (polite)'
+    answers:
+      - 教科書があります
+      - きょうかしょがあります
+    tiles:
+      - { text: 教科書, reading: きょうかしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: there-is-a-textbook
+    answers:
+      - 教科書があります
+      - きょうかしょがあります
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-textbook
+    choices:
+      - text: There is a textbook.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+    prompt: 'Choose the meaning: 教科書があります。'
+    answers:
+      - There is a textbook.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: there-is-a-picture-book
+    prompt: 'Build this sentence: There is a picture book. (polite)'
+    answers:
+      - 絵本があります
+      - えほんがあります
+    tiles:
+      - { text: 絵本, reading: えほん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: there-is-a-picture-book
+    answers:
+      - 絵本があります
+      - えほんがあります
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-picture-book
+    choices:
+      - text: There is a picture book.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+    prompt: 'Choose the meaning: 絵本があります。'
+    answers:
+      - There is a picture book.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: there-is-a-letter
+    prompt: 'Build this sentence: There is a letter. (polite)'
+    answers:
+      - 手紙があります
+      - てがみがあります
+    tiles:
+      - { text: 手紙, reading: てがみ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: there-is-a-letter
+    answers:
+      - 手紙があります
+      - てがみがあります
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-letter
+    choices:
+      - text: There is a letter.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+    prompt: 'Choose the meaning: 手紙があります。'
+    answers:
+      - There is a letter.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: there-is-a-diary
+    prompt: 'Build this sentence: There is a diary. (polite)'
+    answers:
+      - 日記があります
+      - にっきがあります
+    tiles:
+      - { text: 日記, reading: にっき, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: there-is-a-diary
+    answers:
+      - 日記があります
+      - にっきがあります
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-diary
+    choices:
+      - text: There is a diary.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+    prompt: 'Choose the meaning: 日記があります。'
+    answers:
+      - There is a diary.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: there-is-a-article
+    prompt: 'Build this sentence: There is a article. (polite)'
+    answers:
+      - 記事があります
+      - きじがあります
+    tiles:
+      - { text: 記事, reading: きじ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: there-is-a-article
+    answers:
+      - 記事があります
+      - きじがあります
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-article
+    choices:
+      - text: There is a article.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+    prompt: 'Choose the meaning: 記事があります。'
+    answers:
+      - There is a article.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: there-is-a-bag
+    prompt: 'Build this sentence: There is a bag. (polite)'
+    answers:
+      - かばんがあります
+    tiles:
+      - { text: かばん, reading: かばん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: there-is-a-bag
+    answers:
+      - かばんがあります
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-bag
+    choices:
+      - text: There is a bag.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+    prompt: 'Choose the meaning: かばんがあります。'
+    answers:
+      - There is a bag.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: there-is-a-chair
+    prompt: 'Build this sentence: There is a chair. (polite)'
+    answers:
+      - 椅子があります
+      - いすがあります
+    tiles:
+      - { text: 椅子, reading: いす, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: there-is-a-chair
+    answers:
+      - 椅子があります
+      - いすがあります
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-chair
+    choices:
+      - text: There is a chair.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+    prompt: 'Choose the meaning: 椅子があります。'
+    answers:
+      - There is a chair.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: there-is-a-bicycle
+    prompt: 'Build this sentence: There is a bicycle. (polite)'
+    answers:
+      - 自転車があります
+      - じてんしゃがあります
+    tiles:
+      - { text: 自転車, reading: じてんしゃ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: there-is-a-bicycle
+    answers:
+      - 自転車があります
+      - じてんしゃがあります
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-bicycle
+    choices:
+      - text: There is a bicycle.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+    prompt: 'Choose the meaning: 自転車があります。'
+    answers:
+      - There is a bicycle.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: there-is-a-shoe
+    prompt: 'Build this sentence: There is a shoe. (polite)'
+    answers:
+      - 靴があります
+      - くつがあります
+    tiles:
+      - { text: 靴, reading: くつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: there-is-a-shoe
+    answers:
+      - 靴があります
+      - くつがあります
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-shoe
+    choices:
+      - text: There is a shoe.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+    prompt: 'Choose the meaning: 靴があります。'
+    answers:
+      - There is a shoe.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: there-is-a-umbrella
+    prompt: 'Build this sentence: There is a umbrella. (polite)'
+    answers:
+      - 傘があります
+      - かさがあります
+    tiles:
+      - { text: 傘, reading: かさ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: there-is-a-umbrella
+    answers:
+      - 傘があります
+      - かさがあります
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-umbrella
+    choices:
+      - text: There is a umbrella.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+    prompt: 'Choose the meaning: 傘があります。'
+    answers:
+      - There is a umbrella.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: there-is-a-box
+    prompt: 'Build this sentence: There is a box. (polite)'
+    answers:
+      - 箱があります
+      - はこがあります
+    tiles:
+      - { text: 箱, reading: はこ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: there-is-a-box
+    answers:
+      - 箱があります
+      - はこがあります
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-box
+    choices:
+      - text: There is a box.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+    prompt: 'Choose the meaning: 箱があります。'
+    answers:
+      - There is a box.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: there-is-a-hat
+    prompt: 'Build this sentence: There is a hat. (polite)'
+    answers:
+      - 帽子があります
+      - ぼうしがあります
+    tiles:
+      - { text: 帽子, reading: ぼうし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: あります, reading: あります, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: there-is-a-hat
+    answers:
+      - 帽子があります
+      - ぼうしがあります

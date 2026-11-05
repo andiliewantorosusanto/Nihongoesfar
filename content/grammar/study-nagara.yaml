@@ -1,0 +1,447 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-nagara
+  kind: grammar
+  title: ながら — do one action while doing another
+  japanese: 音楽を聞きながら勉強します。
+  reading: おんがくをききながらべんきょうします。
+  meaning: ながら — do one action while doing another
+  level: N5
+  topic: Movement and expressions
+  tags:
+    - Study guide
+  note:
+    'Use verb ます-stem + ながら + main action. Remove ます: 聞きます (ききます) → 聞きながら (ききながら); 食べます (たべます) → 食べながら
+    (たべながら); します → しながら. Both actions normally have the same subject. The action after ながら is the main action
+    and carries tense: 音楽を聞きながら勉強します (おんがくをききながらべんきょうします) means I study while listening to music. Do not
+    attach ながら to the full ます form or the dictionary form. This pattern describes simultaneous actions, rather
+    than one action followed by another (て-form).'
+  examples:
+    - japanese: 音楽を聞きながら勉強します。
+      reading: おんがくをききながらべんきょうします。
+      meaning: I study while listening to music.
+      tokens:
+        - {
+            text: 音楽を聞きながら,
+            reading: おんがくをききながら,
+            role: modifier,
+            wordClass: phrase,
+          }
+        - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: phrase }
+      translationTokens:
+        - { text: 'I ', role: implicit, implicit: true }
+        - { text: study, role: predicate }
+        - { text: ' while listening to music', role: modifier }
+        - { text: ., role: implicit, implicit: true }
+    - japanese: 歌いながら料理します。
+      reading: うたいながらりょうりします。
+      meaning: I cook while singing.
+      tokens:
+        - { text: 歌いながら, reading: うたいながら, role: modifier, wordClass: phrase }
+        - { text: 料理します, reading: りょうりします, role: predicate, wordClass: phrase }
+      translationTokens:
+        - { text: 'I ', role: implicit, implicit: true }
+        - { text: cook, role: predicate }
+        - { text: ' while singing', role: modifier }
+        - { text: ., role: implicit, implicit: true }
+    - japanese: テレビを見ながら晩ご飯を食べます。
+      reading: てれびをみながらばんごはんをたべます。
+      meaning: I eat dinner while watching television.
+      tokens:
+        - { text: テレビを見ながら, reading: てれびをみながら, role: modifier, wordClass: phrase }
+        - {
+            text: 晩ご飯を食べます,
+            reading: ばんごはんをたべます,
+            role: predicate,
+            wordClass: phrase,
+          }
+      translationTokens:
+        - { text: 'I ', role: implicit, implicit: true }
+        - { text: eat dinner, role: predicate }
+        - { text: ' while watching television', role: modifier }
+        - { text: ., role: implicit, implicit: true }
+    - japanese: コーヒーを飲みながら本を読みました。
+      reading: こーひーをのみながらほんをよみました。
+      meaning: I read a book while drinking coffee.
+      tokens:
+        - {
+            text: コーヒーを飲みながら,
+            reading: こーひーをのみながら,
+            role: modifier,
+            wordClass: phrase,
+          }
+        - { text: 本を読みました, reading: ほんをよみました, role: predicate, wordClass: phrase }
+      translationTokens:
+        - { text: 'I ', role: implicit, implicit: true }
+        - { text: read a book, role: predicate }
+        - { text: ' while drinking coffee', role: modifier }
+        - { text: ., role: implicit, implicit: true }
+sentences:
+  i-study-while-listening-to-music:
+    text: 音楽を聞きながら勉強します。
+    reading: おんがくをききながらべんきょうします。
+    meaning: I study while listening to music.
+    tokens:
+      - { text: 音楽を聞きながら, reading: おんがくをききながら, role: modifier, wordClass: phrase }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' while listening to music', role: modifier }
+      - { text: ., role: implicit, implicit: true }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Use verb ます-stem + ながら + main action. Remove ます: 聞きます (ききます) → 聞きながら (ききながら); 食べます (たべます) →
+      食べながら (たべながら); します → しながら. Both actions normally have the same subject. The action after ながら is the main
+      action and carries tense: 音楽を聞きながら勉強します (おんがくをききながらべんきょうします) means I study while listening to music. Do
+      not attach ながら to the full ます form or the dictionary form. This pattern describes simultaneous actions,
+      rather than one action followed by another (て-form).'
+  i-cook-while-singing:
+    text: 歌いながら料理します。
+    reading: うたいながらりょうりします。
+    meaning: I cook while singing.
+    tokens:
+      - { text: 歌いながら, reading: うたいながら, role: modifier, wordClass: phrase }
+      - { text: 料理します, reading: りょうりします, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: cook, role: predicate }
+      - { text: ' while singing', role: modifier }
+      - { text: ., role: implicit, implicit: true }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Use verb ます-stem + ながら + main action. Remove ます: 聞きます (ききます) → 聞きながら (ききながら); 食べます (たべます) →
+      食べながら (たべながら); します → しながら. Both actions normally have the same subject. The action after ながら is the main
+      action and carries tense: 音楽を聞きながら勉強します (おんがくをききながらべんきょうします) means I study while listening to music. Do
+      not attach ながら to the full ます form or the dictionary form. This pattern describes simultaneous actions,
+      rather than one action followed by another (て-form).'
+    form: polite
+  i-eat-dinner-while-watching-television:
+    text: テレビを見ながら晩ご飯を食べます。
+    reading: てれびをみながらばんごはんをたべます。
+    meaning: I eat dinner while watching television.
+    tokens:
+      - { text: テレビを見ながら, reading: てれびをみながら, role: modifier, wordClass: phrase }
+      - {
+          text: 晩ご飯を食べます,
+          reading: ばんごはんをたべます,
+          role: predicate,
+          wordClass: phrase,
+        }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: eat dinner, role: predicate }
+      - { text: ' while watching television', role: modifier }
+      - { text: ., role: implicit, implicit: true }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Use verb ます-stem + ながら + main action. Remove ます: 聞きます (ききます) → 聞きながら (ききながら); 食べます (たべます) →
+      食べながら (たべながら); します → しながら. Both actions normally have the same subject. The action after ながら is the main
+      action and carries tense: 音楽を聞きながら勉強します (おんがくをききながらべんきょうします) means I study while listening to music. Do
+      not attach ながら to the full ます form or the dictionary form. This pattern describes simultaneous actions,
+      rather than one action followed by another (て-form).'
+  i-read-a-book-while-drinking-coffee:
+    text: コーヒーを飲みながら本を読みました。
+    reading: こーひーをのみながらほんをよみました。
+    meaning: I read a book while drinking coffee.
+    tokens:
+      - {
+          text: コーヒーを飲みながら,
+          reading: こーひーをのみながら,
+          role: modifier,
+          wordClass: phrase,
+        }
+      - { text: 本を読みました, reading: ほんをよみました, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: read a book, role: predicate }
+      - { text: ' while drinking coffee', role: modifier }
+      - { text: ., role: implicit, implicit: true }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Use verb ます-stem + ながら + main action. Remove ます: 聞きます (ききます) → 聞きながら (ききながら); 食べます (たべます) →
+      食べながら (たべながら); します → しながら. Both actions normally have the same subject. The action after ながら is the main
+      action and carries tense: 音楽を聞きながら勉強します (おんがくをききながらべんきょうします) means I study while listening to music. Do
+      not attach ながら to the full ます form or the dictionary form. This pattern describes simultaneous actions,
+      rather than one action followed by another (て-form).'
+  i-read-a-magazine-while-drinking-coffee:
+    reading: こーひーをのみながらざっしをよみました。
+    meaning: I read a magazine while drinking coffee.
+    tokens:
+      - {
+          text: コーヒーを飲みながら,
+          reading: こーひーをのみながら,
+          role: modifier,
+          wordClass: phrase,
+        }
+      - { text: 雑誌を読みました, reading: ざっしをよみました, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: read a magazine, role: predicate }
+      - { text: ' while drinking coffee', role: modifier }
+      - { text: ., role: implicit, implicit: true }
+    text: コーヒーを飲みながら雑誌を読みました。
+    hint: Check the particles and sentence ending.
+    explanation:
+      コーヒーを飲みながら雑誌を読みました。 means “I read a magazine while drinking coffee.” Match the vocabulary,
+      particles, and tense to the English sentence.
+    form: polite
+  i-read-a-book-while-drinking-tea:
+    reading: おちゃをのみながらほんをよみました。
+    meaning: I read a book while drinking tea.
+    tokens:
+      - { text: お茶を飲みながら, reading: おちゃをのみながら, role: modifier, wordClass: phrase }
+      - { text: 本を読みました, reading: ほんをよみました, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: read a book, role: predicate }
+      - { text: ' while drinking tea', role: modifier }
+      - { text: ., role: implicit, implicit: true }
+    text: お茶を飲みながら本を読みました。
+    hint: Check the particles and sentence ending.
+    explanation:
+      お茶を飲みながら本を読みました。 means “I read a book while drinking tea.” Match the vocabulary, particles, and
+      tense to the English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-study-while-listening-to-music
+    choices:
+      - text: I study while listening to music.
+        reading: ''
+      - text: I cook while singing.
+        reading: ''
+      - text: I eat dinner while watching television.
+        reading: ''
+      - text: I read a book while drinking coffee.
+        reading: ''
+    answers:
+      - I study while listening to music.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-cook-while-singing
+    choices:
+      - sentence: i-study-while-listening-to-music
+      - sentence: i-cook-while-singing
+    prompt: 'Choose the Japanese: I cook while singing.'
+    answers:
+      - 歌いながら料理します
+      - 歌いながらりょうりします
+      - うたいながら料理します
+      - うたいながらりょうりします
+  - id: gap
+    type: gap
+    sentence: i-cook-while-singing
+    prompt: 'Fill the missing part: I cook while singing. (polite)'
+    answers:
+      - 料理します
+      - りょうりします
+    context:
+      text: 歌いながら___。
+      reading: うたいながら___。
+      tokens:
+        - { text: 歌いながら, reading: うたいながら, role: modifier, wordClass: phrase }
+        - { text: ___, reading: ___, role: predicate, wordClass: phrase }
+  - id: tiles
+    type: tiles
+    sentence: i-cook-while-singing
+    prompt: 'Build: I cook while singing. (polite)'
+    answers:
+      - 歌いながら料理します
+      - 歌いながらりょうりします
+      - うたいながら料理します
+      - うたいながらりょうりします
+    tiles:
+      - { text: 歌いながら, reading: うたいながら, role: modifier, wordClass: phrase }
+      - { text: 料理します, reading: りょうりします, role: predicate, wordClass: phrase }
+  - id: typing
+    type: typing
+    sentence: i-eat-dinner-while-watching-television
+    answers:
+      - テレビを見ながら晩ご飯を食べます
+      - テレビを見ながらばんごはんをたべます
+      - てれびをみながら晩ご飯を食べます
+      - てれびをみながらばんごはんをたべます
+  - id: alternate
+    type: typing
+    sentence: i-read-a-book-while-drinking-coffee
+    alternate: true
+    prompt: 'Another example: I read a book while drinking coffee. (polite)'
+    answers:
+      - コーヒーを飲みながら本を読みました
+      - コーヒーを飲みながらほんをよみました
+      - こーひーをのみながら本を読みました
+      - こーひーをのみながらほんをよみました
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: i-read-a-magazine-while-drinking-coffee
+    choices:
+      - text: I read a magazine while drinking coffee.
+        reading: ''
+      - text: I study while listening to music.
+        reading: ''
+      - text: I cook while singing.
+        reading: ''
+      - text: I eat dinner while watching television.
+        reading: ''
+    answers:
+      - I read a magazine while drinking coffee.
+  - id: expanded-1-typing
+    type: typing
+    sentence: i-read-a-magazine-while-drinking-coffee
+    explanation:
+      コーヒーを飲みながら雑誌を読みました。 means “I read a magazine while drinking coffee.” Write the complete sentence,
+      including the indicated ending.
+    answers:
+      - コーヒーを飲みながら雑誌を読みました
+      - こーひーをのみながらざっしをよみました
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: i-read-a-magazine-while-drinking-coffee
+    prompt: 'Build this sentence: I read a magazine while drinking coffee. (polite)'
+    explanation:
+      コーヒーを飲みながら雑誌を読みました。 means “I read a magazine while drinking coffee.” Keep the particles with
+      their phrases and put the predicate last.
+    answers:
+      - コーヒーを飲みながら雑誌を読みました
+      - こーひーをのみながらざっしをよみました
+  - id: expanded-2-meaning
+    type: meaning-choice
+    sentence: i-read-a-book-while-drinking-tea
+    choices:
+      - text: I read a book while drinking tea.
+        reading: ''
+      - text: I study while listening to music.
+        reading: ''
+      - text: I cook while singing.
+        reading: ''
+      - text: I eat dinner while watching television.
+        reading: ''
+    answers:
+      - I read a book while drinking tea.
+  - id: expanded-2-typing
+    type: typing
+    sentence: i-read-a-book-while-drinking-tea
+    explanation:
+      お茶を飲みながら本を読みました。 means “I read a book while drinking tea.” Write the complete sentence, including
+      the indicated ending.
+    answers:
+      - お茶を飲みながら本を読みました
+      - おちゃをのみながらほんをよみました
+  - id: expanded-2-tiles
+    type: tiles
+    sentence: i-read-a-book-while-drinking-tea
+    prompt: 'Build this sentence: I read a book while drinking tea. (polite)'
+    explanation:
+      お茶を飲みながら本を読みました。 means “I read a book while drinking tea.” Keep the particles with their phrases
+      and put the predicate last.
+    answers:
+      - お茶を飲みながら本を読みました
+      - おちゃをのみながらほんをよみました
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: i-read-a-magazine-while-drinking-coffee
+    choices:
+      - sentence: i-read-a-magazine-while-drinking-coffee
+      - text: 音楽を聞きながら勉強します。
+        reading: おんがくをききながらべんきょうします。
+        tokens:
+          - {
+              text: 音楽を聞きながら,
+              reading: おんがくをききながら,
+              role: modifier,
+              wordClass: phrase,
+            }
+          - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: phrase }
+      - text: 歌いながら料理します。
+        reading: うたいながらりょうりします。
+        tokens:
+          - { text: 歌いながら, reading: うたいながら, role: modifier, wordClass: phrase }
+          - { text: 料理します, reading: りょうりします, role: predicate, wordClass: phrase }
+      - text: テレビを見ながら晩ご飯を食べます。
+        reading: てれびをみながらばんごはんをたべます。
+        tokens:
+          - { text: テレビを見ながら, reading: てれびをみながら, role: modifier, wordClass: phrase }
+          - {
+              text: 晩ご飯を食べます,
+              reading: ばんごはんをたべます,
+              role: predicate,
+              wordClass: phrase,
+            }
+    prompt: 'Choose the Japanese: I read a magazine while drinking coffee. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation:
+      Choose コーヒーを飲みながら雑誌を読みました。 for “I read a magazine while drinking coffee.” The other sentences
+      describe different situations.
+    answers:
+      - コーヒーを飲みながら雑誌を読みました
+      - こーひーをのみながらざっしをよみました
+  - id: expanded-1-gap
+    type: gap
+    sentence: i-read-a-magazine-while-drinking-coffee
+    prompt: 'Fill the missing part: I read a magazine while drinking coffee. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation:
+      The missing part is 雑誌を読みました (ざっしをよみました). Together, the sentence means “I read a magazine while
+      drinking coffee.”
+    answers:
+      - 雑誌を読みました
+      - ざっしをよみました
+    context:
+      reading: こーひーをのみながら___。
+      meaning: I read a magazine while drinking coffee.
+      text: コーヒーを飲みながら___。
+  - id: expanded-2-pattern
+    type: pattern-choice
+    sentence: i-read-a-book-while-drinking-tea
+    choices:
+      - sentence: i-read-a-book-while-drinking-tea
+      - text: 音楽を聞きながら勉強します。
+        reading: おんがくをききながらべんきょうします。
+        tokens:
+          - {
+              text: 音楽を聞きながら,
+              reading: おんがくをききながら,
+              role: modifier,
+              wordClass: phrase,
+            }
+          - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: phrase }
+      - text: 歌いながら料理します。
+        reading: うたいながらりょうりします。
+        tokens:
+          - { text: 歌いながら, reading: うたいながら, role: modifier, wordClass: phrase }
+          - { text: 料理します, reading: りょうりします, role: predicate, wordClass: phrase }
+      - text: テレビを見ながら晩ご飯を食べます。
+        reading: てれびをみながらばんごはんをたべます。
+        tokens:
+          - { text: テレビを見ながら, reading: てれびをみながら, role: modifier, wordClass: phrase }
+          - {
+              text: 晩ご飯を食べます,
+              reading: ばんごはんをたべます,
+              role: predicate,
+              wordClass: phrase,
+            }
+    prompt: 'Choose the Japanese: I read a book while drinking tea. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation:
+      Choose お茶を飲みながら本を読みました。 for “I read a book while drinking tea.” The other sentences describe
+      different situations.
+    answers:
+      - お茶を飲みながら本を読みました
+      - おちゃをのみながらほんをよみました
+  - id: expanded-2-gap
+    type: gap
+    sentence: i-read-a-book-while-drinking-tea
+    prompt: 'Fill the missing part: I read a book while drinking tea. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 本を読みました (ほんをよみました). Together, the sentence means “I read a book while drinking tea.”
+    answers:
+      - 本を読みました
+      - ほんをよみました
+    context:
+      reading: おちゃをのみながら___。
+      meaning: I read a book while drinking tea.
+      text: お茶を飲みながら___。

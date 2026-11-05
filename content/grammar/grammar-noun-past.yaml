@@ -1,0 +1,1130 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-noun-past
+  kind: grammar
+  note:
+    'Noun + でした is the polite past of noun + です. Negative past: じゃありませんでした / ではありませんでした. This noun pattern
+    is different from an い-adjective past ending in かった.'
+  tags:
+    - Grammar
+    - noun-past
+  level: N5
+  title: 'Noun past: でした'
+  topic: Sentence building
+  lesson:
+    goal: Describe what something was.
+    group: Negatives and past
+    order: 15
+    recap: Use noun + でした for the past. ます is a verb ending, not the past of です.
+    examples:
+      - tokens:
+          - { role: topic, text: 昨日, reading: きのう, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 休みでした, reading: やすみでした, wordClass: predicate }
+        meaning: Yesterday was a day off.
+        reading: きのうはやすみでした。
+        japanese: 昨日は休みでした。
+        translationTokens:
+          - { role: topic, text: Yesterday }
+          - { role: predicate, text: ' was a day off.' }
+      - tokens:
+          - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 学生でした, reading: がくせいでした, wordClass: predicate }
+        meaning: Tanaka was a student.
+        reading: たなかさんはがくせいでした。
+        japanese: 田中さんは学生でした。
+        translationTokens:
+          - { role: topic, text: Tanaka }
+          - { role: predicate, text: ' was a student.' }
+      - tokens:
+          - { role: topic, text: ここ, reading: ここ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 学校でした, reading: がっこうでした, wordClass: predicate }
+        meaning: This place was a school.
+        reading: ここはがっこうでした。
+        japanese: ここは学校でした。
+        translationTokens:
+          - { role: topic, text: This place }
+          - { role: predicate, text: ' was a school.' }
+    comparison: Use noun + でした for the past. ます is a verb ending, not the past of です.
+    vocabulary:
+      - text: 昨日
+        meaning: yesterday
+        reading: きのう
+      - text: 休み
+        meaning: day off / rest
+        reading: やすみ
+      - text: 田中さん
+        meaning: Tanaka (a person's name)
+        reading: たなかさん
+      - text: 学生
+        meaning: student
+        reading: がくせい
+      - text: 学校
+        meaning: school
+        reading: がっこう
+      - text: 雨
+        meaning: rain
+        reading: あめ
+    prerequisites:
+      - grammar-desu
+      - grammar-noun-negative
+  meaning: Yesterday was a day off.
+  reading: きのうはやすみでした。
+  examples:
+    - tokens:
+        - { role: topic, text: 昨日, reading: きのう, wordClass: time noun }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - {
+            role: predicate,
+            text: 休みでした,
+            reading: やすみでした,
+            wordClass: noun + past copula,
+          }
+      meaning: Yesterday was a day off.
+      reading: きのうはやすみでした。
+      japanese: 昨日は休みでした。
+      translationTokens:
+        - { role: topic, text: Yesterday, implicit: false }
+        - { role: predicate, text: ' was a day off.', implicit: false }
+  exercise:
+    tiles:
+      - 昨日
+      - は
+      - 休み
+      - でした
+    prompt: 'Build: “Yesterday was a day off.”'
+    answers:
+      - 昨日は休みでした
+      - きのうはやすみでした
+    explanation:
+      'Noun + でした is the polite past of noun + です. Negative past: じゃありませんでした / ではありませんでした. This noun
+      pattern is different from an い-adjective past ending in かった.'
+  japanese: 昨日は休みでした。
+sentences:
+  yesterday-was-a-day-off:
+    text: 昨日は休みでした。
+    tiles:
+      - { text: 昨日, reading: きのう }
+      - { text: は, reading: は }
+      - { text: 休み, reading: やすみ }
+      - { text: でした, reading: でした }
+    tokens:
+      - { role: topic, text: 昨日, reading: きのう, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 休みでした, reading: やすみでした, wordClass: predicate }
+    meaning: Yesterday was a day off.
+    reading: きのうはやすみでした。
+    translationTokens:
+      - { role: topic, text: Yesterday }
+      - { role: predicate, text: ' was a day off.' }
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+  tanaka-was-a-student:
+    text: 田中さんは学生でした。
+    tiles:
+      - { text: 田中さん, reading: たなかさん }
+      - { text: は, reading: は }
+      - { text: 学生, reading: がくせい }
+      - { text: でした, reading: でした }
+    tokens:
+      - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 学生でした, reading: がくせいでした, wordClass: predicate }
+    meaning: Tanaka was a student.
+    reading: たなかさんはがくせいでした。
+    translationTokens:
+      - { role: topic, text: Tanaka }
+      - { role: predicate, text: ' was a student.' }
+    form: polite
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+  this-place-was-a-school:
+    text: ここは学校でした。
+    tiles:
+      - { text: ここ, reading: ここ }
+      - { text: は, reading: は }
+      - { text: 学校, reading: がっこう }
+      - { text: でした, reading: でした }
+    tokens:
+      - { role: topic, text: ここ, reading: ここ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 学校でした, reading: がっこうでした, wordClass: predicate }
+    meaning: This place was a school.
+    reading: ここはがっこうでした。
+    translationTokens:
+      - { role: topic, text: This place }
+      - { role: predicate, text: ' was a school.' }
+    form: polite
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+  yesterday-was-rainy:
+    text: 昨日は雨でした。
+    tiles:
+      - { text: 昨日, reading: きのう }
+      - { text: は, reading: は }
+      - { text: 雨, reading: あめ }
+      - { text: でした, reading: でした }
+    tokens:
+      - { role: topic, text: 昨日, reading: きのう, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 雨でした, reading: あめでした, wordClass: predicate }
+    meaning: Yesterday was rainy.
+    reading: きのうはあめでした。
+    translationTokens:
+      - { role: topic, text: Yesterday }
+      - { role: predicate, text: ' was rainy.' }
+    form: polite
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+  monday-was-a-day-off:
+    text: 月曜日は休みでした。
+    reading: げつようびはやすみでした。
+    meaning: Monday was a day off.
+    tiles:
+      - { text: 月曜日, reading: げつようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休み, reading: やすみ, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 月曜日, reading: げつようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休みでした, reading: やすみでした, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Monday, role: topic }
+      - { text: ' was a day off.', role: predicate }
+    form: polite
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+  tuesday-was-a-day-off:
+    text: 火曜日は休みでした。
+    reading: かようびはやすみでした。
+    meaning: Tuesday was a day off.
+    tiles:
+      - { text: 火曜日, reading: かようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休み, reading: やすみ, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 火曜日, reading: かようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休みでした, reading: やすみでした, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Tuesday, role: topic }
+      - { text: ' was a day off.', role: predicate }
+    form: polite
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+  wednesday-was-a-day-off:
+    text: 水曜日は休みでした。
+    reading: すいようびはやすみでした。
+    meaning: Wednesday was a day off.
+    tiles:
+      - { text: 水曜日, reading: すいようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休み, reading: やすみ, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 水曜日, reading: すいようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休みでした, reading: やすみでした, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Wednesday, role: topic }
+      - { text: ' was a day off.', role: predicate }
+    form: polite
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+  thursday-was-a-day-off:
+    text: 木曜日は休みでした。
+    reading: もくようびはやすみでした。
+    meaning: Thursday was a day off.
+    tiles:
+      - { text: 木曜日, reading: もくようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休み, reading: やすみ, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 木曜日, reading: もくようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休みでした, reading: やすみでした, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Thursday, role: topic }
+      - { text: ' was a day off.', role: predicate }
+    form: polite
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+  friday-was-a-day-off:
+    text: 金曜日は休みでした。
+    reading: きんようびはやすみでした。
+    meaning: Friday was a day off.
+    tiles:
+      - { text: 金曜日, reading: きんようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休み, reading: やすみ, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 金曜日, reading: きんようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休みでした, reading: やすみでした, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Friday, role: topic }
+      - { text: ' was a day off.', role: predicate }
+    form: polite
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+  saturday-was-a-day-off:
+    text: 土曜日は休みでした。
+    reading: どようびはやすみでした。
+    meaning: Saturday was a day off.
+    tiles:
+      - { text: 土曜日, reading: どようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休み, reading: やすみ, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 土曜日, reading: どようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休みでした, reading: やすみでした, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Saturday, role: topic }
+      - { text: ' was a day off.', role: predicate }
+    form: polite
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+  sunday-was-a-day-off:
+    text: 日曜日は休みでした。
+    reading: にちようびはやすみでした。
+    meaning: Sunday was a day off.
+    tiles:
+      - { text: 日曜日, reading: にちようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休み, reading: やすみ, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 日曜日, reading: にちようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休みでした, reading: やすみでした, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Sunday, role: topic }
+      - { text: ' was a day off.', role: predicate }
+    form: polite
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+  yamada-was-a-student:
+    text: 山田さんは学生でした。
+    reading: やまださんはがくせいでした。
+    meaning: Yamada was a student.
+    tiles:
+      - { text: 山田さん, reading: やまださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 山田さん, reading: やまださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生でした, reading: がくせいでした, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Yamada, role: topic }
+      - { text: ' was a student.', role: predicate }
+    form: polite
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+  sato-was-a-student:
+    text: 佐藤さんは学生でした。
+    reading: さとうさんはがくせいでした。
+    meaning: Sato was a student.
+    tiles:
+      - { text: 佐藤さん, reading: さとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 佐藤さん, reading: さとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生でした, reading: がくせいでした, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Sato, role: topic }
+      - { text: ' was a student.', role: predicate }
+    form: polite
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+  suzuki-was-a-student:
+    text: 鈴木さんは学生でした。
+    reading: すずきさんはがくせいでした。
+    meaning: Suzuki was a student.
+    tiles:
+      - { text: 鈴木さん, reading: すずきさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 鈴木さん, reading: すずきさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生でした, reading: がくせいでした, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Suzuki, role: topic }
+      - { text: ' was a student.', role: predicate }
+    form: polite
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+  takahashi-was-a-student:
+    text: 高橋さんは学生でした。
+    reading: たかはしさんはがくせいでした。
+    meaning: Takahashi was a student.
+    tiles:
+      - { text: 高橋さん, reading: たかはしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 高橋さん, reading: たかはしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生でした, reading: がくせいでした, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Takahashi, role: topic }
+      - { text: ' was a student.', role: predicate }
+    form: polite
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+  ito-was-a-student:
+    text: 伊藤さんは学生でした。
+    reading: いとうさんはがくせいでした。
+    meaning: Ito was a student.
+    tiles:
+      - { text: 伊藤さん, reading: いとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 伊藤さん, reading: いとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生でした, reading: がくせいでした, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Ito, role: topic }
+      - { text: ' was a student.', role: predicate }
+    form: polite
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+  nakamura-was-a-student:
+    text: 中村さんは学生でした。
+    reading: なかむらさんはがくせいでした。
+    meaning: Nakamura was a student.
+    tiles:
+      - { text: 中村さん, reading: なかむらさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 中村さん, reading: なかむらさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生でした, reading: がくせいでした, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Nakamura, role: topic }
+      - { text: ' was a student.', role: predicate }
+    form: polite
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+  kobayashi-was-a-student:
+    text: 小林さんは学生でした。
+    reading: こばやしさんはがくせいでした。
+    meaning: Kobayashi was a student.
+    tiles:
+      - { text: 小林さん, reading: こばやしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 小林さん, reading: こばやしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生でした, reading: がくせいでした, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Kobayashi, role: topic }
+      - { text: ' was a student.', role: predicate }
+    form: polite
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+  kato-was-a-student:
+    text: 加藤さんは学生でした。
+    reading: かとうさんはがくせいでした。
+    meaning: Kato was a student.
+    tiles:
+      - { text: 加藤さん, reading: かとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 加藤さん, reading: かとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生でした, reading: がくせいでした, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Kato, role: topic }
+      - { text: ' was a student.', role: predicate }
+    form: polite
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+  yoshida-was-a-student:
+    text: 吉田さんは学生でした。
+    reading: よしださんはがくせいでした。
+    meaning: Yoshida was a student.
+    tiles:
+      - { text: 吉田さん, reading: よしださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 吉田さん, reading: よしださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生でした, reading: がくせいでした, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Yoshida, role: topic }
+      - { text: ' was a student.', role: predicate }
+    form: polite
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+  yamamoto-was-a-student:
+    text: 山本さんは学生でした。
+    reading: やまもとさんはがくせいでした。
+    meaning: Yamamoto was a student.
+    tiles:
+      - { text: 山本さん, reading: やまもとさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 山本さん, reading: やまもとさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生でした, reading: がくせいでした, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Yamamoto, role: topic }
+      - { text: ' was a student.', role: predicate }
+    form: polite
+    hint: The sentence describes yesterday, so use the noun-past ending.
+    explanation: Use noun + でした for the past. ます is a verb ending, not the past of です.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: yesterday-was-a-day-off
+    choices:
+      - text: Yesterday was a day off.
+        reading: ''
+      - text: Tomorrow is a day off.
+        reading: ''
+    answers:
+      - Yesterday was a day off.
+  - id: pattern
+    type: pattern-choice
+    sentence: yesterday-was-a-day-off
+    choices:
+      - sentence: yesterday-was-a-day-off
+      - text: 昨日は休みます。
+        tiles:
+          - { text: 昨日, reading: きのう }
+          - { text: は, reading: は }
+          - { text: 休み, reading: やすみ }
+          - { text: ます, reading: ます }
+        tokens:
+          - { role: topic, text: 昨日, reading: きのう, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 休みます, reading: やすみます, wordClass: predicate }
+        meaning: Tomorrow is a day off.
+        reading: きのうはやすみます。
+    prompt: 'Choose the correct Japanese: Yesterday was a day off.'
+    answers:
+      - 昨日は休みでした
+      - 昨日はやすみでした
+      - きのうは休みでした
+      - きのうはやすみでした
+  - id: gap
+    type: gap
+    sentence: tanaka-was-a-student
+    answers:
+      - でした
+      - でした
+    context:
+      text: 田中さんは学生___。
+      tokens:
+        - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 学生___, reading: がくせい___, wordClass: predicate }
+      reading: たなかさんはがくせい___。
+  - id: tiles
+    type: tiles
+    sentence: tanaka-was-a-student
+    prompt: 'Build this sentence: Tanaka was a student. (polite)'
+    answers:
+      - 田中さんは学生でした
+      - 田中さんはがくせいでした
+      - たなかさんは学生でした
+      - たなかさんはがくせいでした
+    tiles:
+      - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 学生, reading: がくせい, wordClass: predicate }
+      - { role: predicate, text: でした, reading: でした, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: this-place-was-a-school
+    answers:
+      - ここは学校でした
+      - ここはがっこうでした
+  - id: alternate
+    type: typing
+    sentence: yesterday-was-rainy
+    alternate: true
+    prompt: 'One more example: Yesterday was rainy. (polite)'
+    answers:
+      - 昨日は雨でした
+      - 昨日はあめでした
+      - きのうは雨でした
+      - きのうはあめでした
+  - id: extra-1-tiles
+    type: tiles
+    sentence: monday-was-a-day-off
+    prompt: 'Build this sentence: Monday was a day off. (polite)'
+    answers:
+      - 月曜日は休みでした
+      - 月曜日はやすみでした
+      - げつようびは休みでした
+      - げつようびはやすみでした
+    tiles:
+      - { text: 月曜日, reading: げつようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休み, reading: やすみ, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: monday-was-a-day-off
+    answers:
+      - 月曜日は休みでした
+      - 月曜日はやすみでした
+      - げつようびは休みでした
+      - げつようびはやすみでした
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: monday-was-a-day-off
+    choices:
+      - text: Monday was a day off.
+        reading: ''
+      - text: Yesterday was a day off.
+        reading: ''
+    prompt: 'Choose the meaning: 月曜日は休みでした。'
+    answers:
+      - Monday was a day off.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: tuesday-was-a-day-off
+    prompt: 'Build this sentence: Tuesday was a day off. (polite)'
+    answers:
+      - 火曜日は休みでした
+      - 火曜日はやすみでした
+      - かようびは休みでした
+      - かようびはやすみでした
+    tiles:
+      - { text: 火曜日, reading: かようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休み, reading: やすみ, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: tuesday-was-a-day-off
+    answers:
+      - 火曜日は休みでした
+      - 火曜日はやすみでした
+      - かようびは休みでした
+      - かようびはやすみでした
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: tuesday-was-a-day-off
+    choices:
+      - text: Tuesday was a day off.
+        reading: ''
+      - text: Yesterday was a day off.
+        reading: ''
+    prompt: 'Choose the meaning: 火曜日は休みでした。'
+    answers:
+      - Tuesday was a day off.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: wednesday-was-a-day-off
+    prompt: 'Build this sentence: Wednesday was a day off. (polite)'
+    answers:
+      - 水曜日は休みでした
+      - 水曜日はやすみでした
+      - すいようびは休みでした
+      - すいようびはやすみでした
+    tiles:
+      - { text: 水曜日, reading: すいようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休み, reading: やすみ, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: wednesday-was-a-day-off
+    answers:
+      - 水曜日は休みでした
+      - 水曜日はやすみでした
+      - すいようびは休みでした
+      - すいようびはやすみでした
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: wednesday-was-a-day-off
+    choices:
+      - text: Wednesday was a day off.
+        reading: ''
+      - text: Yesterday was a day off.
+        reading: ''
+    prompt: 'Choose the meaning: 水曜日は休みでした。'
+    answers:
+      - Wednesday was a day off.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: thursday-was-a-day-off
+    prompt: 'Build this sentence: Thursday was a day off. (polite)'
+    answers:
+      - 木曜日は休みでした
+      - 木曜日はやすみでした
+      - もくようびは休みでした
+      - もくようびはやすみでした
+    tiles:
+      - { text: 木曜日, reading: もくようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休み, reading: やすみ, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: thursday-was-a-day-off
+    answers:
+      - 木曜日は休みでした
+      - 木曜日はやすみでした
+      - もくようびは休みでした
+      - もくようびはやすみでした
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: thursday-was-a-day-off
+    choices:
+      - text: Thursday was a day off.
+        reading: ''
+      - text: Yesterday was a day off.
+        reading: ''
+    prompt: 'Choose the meaning: 木曜日は休みでした。'
+    answers:
+      - Thursday was a day off.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: friday-was-a-day-off
+    prompt: 'Build this sentence: Friday was a day off. (polite)'
+    answers:
+      - 金曜日は休みでした
+      - 金曜日はやすみでした
+      - きんようびは休みでした
+      - きんようびはやすみでした
+    tiles:
+      - { text: 金曜日, reading: きんようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休み, reading: やすみ, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: friday-was-a-day-off
+    answers:
+      - 金曜日は休みでした
+      - 金曜日はやすみでした
+      - きんようびは休みでした
+      - きんようびはやすみでした
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: friday-was-a-day-off
+    choices:
+      - text: Friday was a day off.
+        reading: ''
+      - text: Yesterday was a day off.
+        reading: ''
+    prompt: 'Choose the meaning: 金曜日は休みでした。'
+    answers:
+      - Friday was a day off.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: saturday-was-a-day-off
+    prompt: 'Build this sentence: Saturday was a day off. (polite)'
+    answers:
+      - 土曜日は休みでした
+      - 土曜日はやすみでした
+      - どようびは休みでした
+      - どようびはやすみでした
+    tiles:
+      - { text: 土曜日, reading: どようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休み, reading: やすみ, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: saturday-was-a-day-off
+    answers:
+      - 土曜日は休みでした
+      - 土曜日はやすみでした
+      - どようびは休みでした
+      - どようびはやすみでした
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: saturday-was-a-day-off
+    choices:
+      - text: Saturday was a day off.
+        reading: ''
+      - text: Yesterday was a day off.
+        reading: ''
+    prompt: 'Choose the meaning: 土曜日は休みでした。'
+    answers:
+      - Saturday was a day off.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: sunday-was-a-day-off
+    prompt: 'Build this sentence: Sunday was a day off. (polite)'
+    answers:
+      - 日曜日は休みでした
+      - 日曜日はやすみでした
+      - にちようびは休みでした
+      - にちようびはやすみでした
+    tiles:
+      - { text: 日曜日, reading: にちようび, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休み, reading: やすみ, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: sunday-was-a-day-off
+    answers:
+      - 日曜日は休みでした
+      - 日曜日はやすみでした
+      - にちようびは休みでした
+      - にちようびはやすみでした
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: sunday-was-a-day-off
+    choices:
+      - text: Sunday was a day off.
+        reading: ''
+      - text: Yesterday was a day off.
+        reading: ''
+    prompt: 'Choose the meaning: 日曜日は休みでした。'
+    answers:
+      - Sunday was a day off.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: yamada-was-a-student
+    prompt: 'Build this sentence: Yamada was a student. (polite)'
+    answers:
+      - 山田さんは学生でした
+      - 山田さんはがくせいでした
+      - やまださんは学生でした
+      - やまださんはがくせいでした
+    tiles:
+      - { text: 山田さん, reading: やまださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: yamada-was-a-student
+    answers:
+      - 山田さんは学生でした
+      - 山田さんはがくせいでした
+      - やまださんは学生でした
+      - やまださんはがくせいでした
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: yamada-was-a-student
+    choices:
+      - text: Yamada was a student.
+        reading: ''
+      - text: Yesterday was a day off.
+        reading: ''
+    prompt: 'Choose the meaning: 山田さんは学生でした。'
+    answers:
+      - Yamada was a student.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: sato-was-a-student
+    prompt: 'Build this sentence: Sato was a student. (polite)'
+    answers:
+      - 佐藤さんは学生でした
+      - 佐藤さんはがくせいでした
+      - さとうさんは学生でした
+      - さとうさんはがくせいでした
+    tiles:
+      - { text: 佐藤さん, reading: さとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: sato-was-a-student
+    answers:
+      - 佐藤さんは学生でした
+      - 佐藤さんはがくせいでした
+      - さとうさんは学生でした
+      - さとうさんはがくせいでした
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: sato-was-a-student
+    choices:
+      - text: Sato was a student.
+        reading: ''
+      - text: Yesterday was a day off.
+        reading: ''
+    prompt: 'Choose the meaning: 佐藤さんは学生でした。'
+    answers:
+      - Sato was a student.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: suzuki-was-a-student
+    prompt: 'Build this sentence: Suzuki was a student. (polite)'
+    answers:
+      - 鈴木さんは学生でした
+      - 鈴木さんはがくせいでした
+      - すずきさんは学生でした
+      - すずきさんはがくせいでした
+    tiles:
+      - { text: 鈴木さん, reading: すずきさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: suzuki-was-a-student
+    answers:
+      - 鈴木さんは学生でした
+      - 鈴木さんはがくせいでした
+      - すずきさんは学生でした
+      - すずきさんはがくせいでした
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: suzuki-was-a-student
+    choices:
+      - text: Suzuki was a student.
+        reading: ''
+      - text: Yesterday was a day off.
+        reading: ''
+    prompt: 'Choose the meaning: 鈴木さんは学生でした。'
+    answers:
+      - Suzuki was a student.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: takahashi-was-a-student
+    prompt: 'Build this sentence: Takahashi was a student. (polite)'
+    answers:
+      - 高橋さんは学生でした
+      - 高橋さんはがくせいでした
+      - たかはしさんは学生でした
+      - たかはしさんはがくせいでした
+    tiles:
+      - { text: 高橋さん, reading: たかはしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: takahashi-was-a-student
+    answers:
+      - 高橋さんは学生でした
+      - 高橋さんはがくせいでした
+      - たかはしさんは学生でした
+      - たかはしさんはがくせいでした
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: takahashi-was-a-student
+    choices:
+      - text: Takahashi was a student.
+        reading: ''
+      - text: Yesterday was a day off.
+        reading: ''
+    prompt: 'Choose the meaning: 高橋さんは学生でした。'
+    answers:
+      - Takahashi was a student.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: ito-was-a-student
+    prompt: 'Build this sentence: Ito was a student. (polite)'
+    answers:
+      - 伊藤さんは学生でした
+      - 伊藤さんはがくせいでした
+      - いとうさんは学生でした
+      - いとうさんはがくせいでした
+    tiles:
+      - { text: 伊藤さん, reading: いとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: ito-was-a-student
+    answers:
+      - 伊藤さんは学生でした
+      - 伊藤さんはがくせいでした
+      - いとうさんは学生でした
+      - いとうさんはがくせいでした
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: ito-was-a-student
+    choices:
+      - text: Ito was a student.
+        reading: ''
+      - text: Yesterday was a day off.
+        reading: ''
+    prompt: 'Choose the meaning: 伊藤さんは学生でした。'
+    answers:
+      - Ito was a student.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: nakamura-was-a-student
+    prompt: 'Build this sentence: Nakamura was a student. (polite)'
+    answers:
+      - 中村さんは学生でした
+      - 中村さんはがくせいでした
+      - なかむらさんは学生でした
+      - なかむらさんはがくせいでした
+    tiles:
+      - { text: 中村さん, reading: なかむらさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: nakamura-was-a-student
+    answers:
+      - 中村さんは学生でした
+      - 中村さんはがくせいでした
+      - なかむらさんは学生でした
+      - なかむらさんはがくせいでした
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: nakamura-was-a-student
+    choices:
+      - text: Nakamura was a student.
+        reading: ''
+      - text: Yesterday was a day off.
+        reading: ''
+    prompt: 'Choose the meaning: 中村さんは学生でした。'
+    answers:
+      - Nakamura was a student.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: kobayashi-was-a-student
+    prompt: 'Build this sentence: Kobayashi was a student. (polite)'
+    answers:
+      - 小林さんは学生でした
+      - 小林さんはがくせいでした
+      - こばやしさんは学生でした
+      - こばやしさんはがくせいでした
+    tiles:
+      - { text: 小林さん, reading: こばやしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: kobayashi-was-a-student
+    answers:
+      - 小林さんは学生でした
+      - 小林さんはがくせいでした
+      - こばやしさんは学生でした
+      - こばやしさんはがくせいでした
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: kobayashi-was-a-student
+    choices:
+      - text: Kobayashi was a student.
+        reading: ''
+      - text: Yesterday was a day off.
+        reading: ''
+    prompt: 'Choose the meaning: 小林さんは学生でした。'
+    answers:
+      - Kobayashi was a student.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: kato-was-a-student
+    prompt: 'Build this sentence: Kato was a student. (polite)'
+    answers:
+      - 加藤さんは学生でした
+      - 加藤さんはがくせいでした
+      - かとうさんは学生でした
+      - かとうさんはがくせいでした
+    tiles:
+      - { text: 加藤さん, reading: かとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: kato-was-a-student
+    answers:
+      - 加藤さんは学生でした
+      - 加藤さんはがくせいでした
+      - かとうさんは学生でした
+      - かとうさんはがくせいでした
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: kato-was-a-student
+    choices:
+      - text: Kato was a student.
+        reading: ''
+      - text: Yesterday was a day off.
+        reading: ''
+    prompt: 'Choose the meaning: 加藤さんは学生でした。'
+    answers:
+      - Kato was a student.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: yoshida-was-a-student
+    prompt: 'Build this sentence: Yoshida was a student. (polite)'
+    answers:
+      - 吉田さんは学生でした
+      - 吉田さんはがくせいでした
+      - よしださんは学生でした
+      - よしださんはがくせいでした
+    tiles:
+      - { text: 吉田さん, reading: よしださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: yoshida-was-a-student
+    answers:
+      - 吉田さんは学生でした
+      - 吉田さんはがくせいでした
+      - よしださんは学生でした
+      - よしださんはがくせいでした
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: yoshida-was-a-student
+    choices:
+      - text: Yoshida was a student.
+        reading: ''
+      - text: Yesterday was a day off.
+        reading: ''
+    prompt: 'Choose the meaning: 吉田さんは学生でした。'
+    answers:
+      - Yoshida was a student.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: yamamoto-was-a-student
+    prompt: 'Build this sentence: Yamamoto was a student. (polite)'
+    answers:
+      - 山本さんは学生でした
+      - 山本さんはがくせいでした
+      - やまもとさんは学生でした
+      - やまもとさんはがくせいでした
+    tiles:
+      - { text: 山本さん, reading: やまもとさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: でした, reading: でした, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: yamamoto-was-a-student
+    answers:
+      - 山本さんは学生でした
+      - 山本さんはがくせいでした
+      - やまもとさんは学生でした
+      - やまもとさんはがくせいでした

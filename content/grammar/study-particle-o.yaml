@@ -1,0 +1,473 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-particle-o
+  kind: grammar
+  note:
+    を is written wo but normally pronounced o. It marks the direct object of an action such as eating,
+    drinking, or reading. It can also mark a route or place traversed, as in 公園を歩きます (walk through the park).
+  tags:
+    - Study guide
+  level: N5
+  title: を — the o particle
+  topic: Grammar basics
+  romaji: o / wo
+  meaning: を — the o particle
+  reading: みずをのみます。
+  examples:
+    - tokens:
+        - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+        - { role: particle, text: を, reading: を, wordClass: particle }
+        - { role: predicate, text: 飲みます, reading: のみます, wordClass: predicate }
+      meaning: I drink water.
+      reading: みずをのみます。
+      japanese: 水を飲みます。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: 'drink ' }
+        - { role: object, text: water. }
+    - tokens:
+        - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+        - { role: particle, text: を, reading: を, wordClass: particle }
+        - { role: predicate, text: 読みます, reading: よみます, wordClass: predicate }
+      meaning: I read a book.
+      reading: ほんをよみます。
+      japanese: 本を読みます。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: 'read ' }
+        - { role: object, text: a book. }
+    - tokens:
+        - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+        - { role: particle, text: を, reading: を, wordClass: particle }
+        - { role: predicate, text: 食べます, reading: たべます, wordClass: predicate }
+      meaning: I eat bread.
+      reading: ぱんをたべます。
+      japanese: パンを食べます。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: 'eat ' }
+        - { role: object, text: bread. }
+    - tokens:
+        - { role: modifier, text: 公園, reading: こうえん, wordClass: noun phrase }
+        - { role: particle, text: を, reading: を, wordClass: particle }
+        - { role: predicate, text: 歩きます, reading: あるきます, wordClass: predicate }
+      meaning: I walk through the park.
+      reading: こうえんをあるきます。
+      japanese: 公園を歩きます。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: walk }
+        - { role: modifier, text: ' through the park.' }
+  japanese: 水を飲みます。
+  references:
+    - rows:
+        - - text: を
+            reading: を
+          - text: o
+            reading: ''
+      columns:
+        - Written
+        - Said as
+      heading: Spelling and particle pronunciation
+sentences:
+  i-drink-water:
+    text: 水を飲みます。
+    tokens:
+      - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 飲みます, reading: のみます, wordClass: predicate }
+    meaning: I drink water.
+    reading: みずをのみます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'drink ' }
+      - { role: object, text: water. }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      を is written wo but normally pronounced o. It marks the direct object of an action such as
+      eating, drinking, or reading. It can also mark a route or place traversed, as in 公園を歩きます (walk through
+      the park).
+  i-read-a-book:
+    text: 本を読みます。
+    tokens:
+      - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 読みます, reading: よみます, wordClass: predicate }
+    meaning: I read a book.
+    reading: ほんをよみます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'read ' }
+      - { role: object, text: a book. }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      を is written wo but normally pronounced o. It marks the direct object of an action such as
+      eating, drinking, or reading. It can also mark a route or place traversed, as in 公園を歩きます (walk through
+      the park).
+    form: polite
+  i-eat-bread:
+    text: パンを食べます。
+    tokens:
+      - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 食べます, reading: たべます, wordClass: predicate }
+    meaning: I eat bread.
+    reading: ぱんをたべます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'eat ' }
+      - { role: object, text: bread. }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      を is written wo but normally pronounced o. It marks the direct object of an action such as
+      eating, drinking, or reading. It can also mark a route or place traversed, as in 公園を歩きます (walk through
+      the park).
+  i-walk-through-the-park:
+    text: 公園を歩きます。
+    tokens:
+      - { role: modifier, text: 公園, reading: こうえん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 歩きます, reading: あるきます, wordClass: predicate }
+    meaning: I walk through the park.
+    reading: こうえんをあるきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: walk }
+      - { role: modifier, text: ' through the park.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      を is written wo but normally pronounced o. It marks the direct object of an action such as
+      eating, drinking, or reading. It can also mark a route or place traversed, as in 公園を歩きます (walk through
+      the park).
+  i-drink-tea:
+    tokens:
+      - { role: object, text: お茶, reading: おちゃ, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 飲みます, reading: のみます, wordClass: predicate }
+    meaning: I drink tea.
+    reading: おちゃをのみます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'drink ' }
+      - { role: object, text: tea. }
+    text: お茶を飲みます。
+    hint: Check the particles and sentence ending.
+    explanation: お茶を飲みます。 means “I drink tea.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+  i-read-a-magazine:
+    tokens:
+      - { role: object, text: 雑誌, reading: ざっし, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 読みます, reading: よみます, wordClass: predicate }
+    meaning: I read a magazine.
+    reading: ざっしをよみます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'read ' }
+      - { role: object, text: a magazine. }
+    text: 雑誌を読みます。
+    hint: Check the particles and sentence ending.
+    explanation: 雑誌を読みます。 means “I read a magazine.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+  i-eat-fish:
+    tokens:
+      - { role: object, text: 魚, reading: さかな, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 食べます, reading: たべます, wordClass: predicate }
+    meaning: I eat fish.
+    reading: さかなをたべます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'eat ' }
+      - { role: object, text: fish. }
+    text: 魚を食べます。
+    hint: Check the particles and sentence ending.
+    explanation: 魚を食べます。 means “I eat fish.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-drink-water
+    choices:
+      - text: I drink water.
+        reading: ''
+      - text: I read a book.
+        reading: ''
+      - text: I eat bread.
+        reading: ''
+      - text: I walk through the park.
+        reading: ''
+    answers:
+      - I drink water.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-read-a-book
+    choices:
+      - sentence: i-drink-water
+      - sentence: i-read-a-book
+    prompt: 'Choose the Japanese: I read a book.'
+    answers:
+      - 本を読みます
+      - 本をよみます
+      - ほんを読みます
+      - ほんをよみます
+  - id: gap
+    type: gap
+    sentence: i-read-a-book
+    prompt: 'Fill the missing part: I read a book. (polite)'
+    answers:
+      - を
+      - を
+    context:
+      text: 本___読みます。
+      tokens:
+        - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+        - { role: particle, text: ___, reading: ___, wordClass: particle }
+        - { role: predicate, text: 読みます, reading: よみます, wordClass: predicate }
+      reading: ほん___よみます。
+  - id: tiles
+    type: tiles
+    sentence: i-read-a-book
+    prompt: 'Build: I read a book. (polite)'
+    answers:
+      - 本を読みます
+      - 本をよみます
+      - ほんを読みます
+      - ほんをよみます
+    tiles:
+      - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 読みます, reading: よみます, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: i-eat-bread
+    answers:
+      - パンを食べます
+      - パンをたべます
+      - ぱんを食べます
+      - ぱんをたべます
+  - id: alternate
+    type: typing
+    sentence: i-walk-through-the-park
+    alternate: true
+    prompt: 'Another example: I walk through the park. (polite)'
+    answers:
+      - 公園を歩きます
+      - 公園をあるきます
+      - こうえんを歩きます
+      - こうえんをあるきます
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: i-drink-tea
+    choices:
+      - text: I drink tea.
+        reading: ''
+      - text: I drink water.
+        reading: ''
+      - text: I read a book.
+        reading: ''
+      - text: I eat bread.
+        reading: ''
+    answers:
+      - I drink tea.
+  - id: expanded-1-typing
+    type: typing
+    sentence: i-drink-tea
+    explanation: お茶を飲みます。 means “I drink tea.” Write the complete sentence, including the indicated ending.
+    answers:
+      - お茶を飲みます
+      - おちゃをのみます
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: i-drink-tea
+    prompt: 'Build this sentence: I drink tea. (polite)'
+    explanation: お茶を飲みます。 means “I drink tea.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - お茶を飲みます
+      - おちゃをのみます
+  - id: expanded-2-meaning
+    type: meaning-choice
+    sentence: i-read-a-magazine
+    choices:
+      - text: I read a magazine.
+        reading: ''
+      - text: I drink water.
+        reading: ''
+      - text: I read a book.
+        reading: ''
+      - text: I eat bread.
+        reading: ''
+    answers:
+      - I read a magazine.
+  - id: expanded-2-typing
+    type: typing
+    sentence: i-read-a-magazine
+    explanation: 雑誌を読みます。 means “I read a magazine.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 雑誌を読みます
+      - ざっしをよみます
+  - id: expanded-2-tiles
+    type: tiles
+    sentence: i-read-a-magazine
+    prompt: 'Build this sentence: I read a magazine. (polite)'
+    explanation: 雑誌を読みます。 means “I read a magazine.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 雑誌を読みます
+      - ざっしをよみます
+  - id: expanded-3-meaning
+    type: meaning-choice
+    sentence: i-eat-fish
+    choices:
+      - text: I eat fish.
+        reading: ''
+      - text: I drink water.
+        reading: ''
+      - text: I read a book.
+        reading: ''
+      - text: I eat bread.
+        reading: ''
+    answers:
+      - I eat fish.
+  - id: expanded-3-typing
+    type: typing
+    sentence: i-eat-fish
+    explanation: 魚を食べます。 means “I eat fish.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 魚を食べます
+      - さかなをたべます
+  - id: expanded-3-tiles
+    type: tiles
+    sentence: i-eat-fish
+    prompt: 'Build this sentence: I eat fish. (polite)'
+    explanation: 魚を食べます。 means “I eat fish.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 魚を食べます
+      - さかなをたべます
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: i-drink-tea
+    choices:
+      - sentence: i-drink-tea
+      - text: 水を飲みます。
+        reading: みずをのみます。
+        tokens:
+          - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 飲みます, reading: のみます, wordClass: predicate }
+      - text: 本を読みます。
+        reading: ほんをよみます。
+        tokens:
+          - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 読みます, reading: よみます, wordClass: predicate }
+      - text: パンを食べます。
+        reading: ぱんをたべます。
+        tokens:
+          - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 食べます, reading: たべます, wordClass: predicate }
+    prompt: 'Choose the Japanese: I drink tea. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose お茶を飲みます。 for “I drink tea.” The other sentences describe different situations.
+    answers:
+      - お茶を飲みます
+      - おちゃをのみます
+  - id: expanded-1-gap
+    type: gap
+    sentence: i-drink-tea
+    prompt: 'Fill the missing part: I drink tea. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 飲みます (のみます). Together, the sentence means “I drink tea.”
+    answers:
+      - 飲みます
+      - のみます
+    context:
+      meaning: I drink tea.
+      reading: おちゃを___。
+      text: お茶を___。
+  - id: expanded-2-pattern
+    type: pattern-choice
+    sentence: i-read-a-magazine
+    choices:
+      - sentence: i-read-a-magazine
+      - text: 水を飲みます。
+        reading: みずをのみます。
+        tokens:
+          - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 飲みます, reading: のみます, wordClass: predicate }
+      - text: 本を読みます。
+        reading: ほんをよみます。
+        tokens:
+          - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 読みます, reading: よみます, wordClass: predicate }
+      - text: パンを食べます。
+        reading: ぱんをたべます。
+        tokens:
+          - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 食べます, reading: たべます, wordClass: predicate }
+    prompt: 'Choose the Japanese: I read a magazine. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 雑誌を読みます。 for “I read a magazine.” The other sentences describe different situations.
+    answers:
+      - 雑誌を読みます
+      - ざっしをよみます
+  - id: expanded-2-gap
+    type: gap
+    sentence: i-read-a-magazine
+    prompt: 'Fill the missing part: I read a magazine. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 読みます (よみます). Together, the sentence means “I read a magazine.”
+    answers:
+      - 読みます
+      - よみます
+    context:
+      meaning: I read a magazine.
+      reading: ざっしを___。
+      text: 雑誌を___。
+  - id: expanded-3-pattern
+    type: pattern-choice
+    sentence: i-eat-fish
+    choices:
+      - sentence: i-eat-fish
+      - text: 水を飲みます。
+        reading: みずをのみます。
+        tokens:
+          - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 飲みます, reading: のみます, wordClass: predicate }
+      - text: 本を読みます。
+        reading: ほんをよみます。
+        tokens:
+          - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 読みます, reading: よみます, wordClass: predicate }
+      - text: パンを食べます。
+        reading: ぱんをたべます。
+        tokens:
+          - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 食べます, reading: たべます, wordClass: predicate }
+    prompt: 'Choose the Japanese: I eat fish. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 魚を食べます。 for “I eat fish.” The other sentences describe different situations.
+    answers:
+      - 魚を食べます
+      - さかなをたべます
+  - id: expanded-3-gap
+    type: gap
+    sentence: i-eat-fish
+    prompt: 'Fill the missing part: I eat fish. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 食べます (たべます). Together, the sentence means “I eat fish.”
+    answers:
+      - 食べます
+      - たべます
+    context:
+      meaning: I eat fish.
+      reading: さかなを___。
+      text: 魚を___。

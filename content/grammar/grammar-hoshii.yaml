@@ -1,0 +1,1252 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-hoshii
+  kind: grammar
+  note:
+    ほしい is an い-adjective, not a verb. A common beginner pattern is 私は noun がほしいです. Its negative is ほしくないです.
+    Use verb stem + たい for wanting to do an action. Direct statements normally describe the speaker’s own
+    desire.
+  tags:
+    - Grammar
+    - hoshii
+  level: N5
+  title: 'Want a thing: ほしい'
+  topic: Sentence building
+  lesson:
+    goal: Say what thing you want.
+    group: Descriptions and preferences
+    order: 22
+    recap: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+    examples:
+      - tokens:
+          - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: ほしいです, reading: ほしいです, wordClass: predicate }
+        meaning: I want a book.
+        reading: わたしはほんがほしいです。
+        japanese: 私は本がほしいです。
+        translationTokens:
+          - { role: topic, text: I }
+          - { role: predicate, text: ' want ' }
+          - { role: subject, text: a book. }
+      - tokens:
+          - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: subject, text: 車, reading: くるま, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: ほしいです, reading: ほしいです, wordClass: predicate }
+        meaning: I want a car.
+        reading: わたしはくるまがほしいです。
+        japanese: 私は車がほしいです。
+        translationTokens:
+          - { role: topic, text: I }
+          - { role: predicate, text: ' want ' }
+          - { role: subject, text: a car. }
+      - tokens:
+          - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: subject, text: 時計, reading: とけい, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: ほしいです, reading: ほしいです, wordClass: predicate }
+        meaning: I want a clock.
+        reading: わたしはとけいがほしいです。
+        japanese: 私は時計がほしいです。
+        translationTokens:
+          - { role: topic, text: I }
+          - { role: predicate, text: ' want ' }
+          - { role: subject, text: a clock. }
+    comparison: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+    vocabulary:
+      - text: 私
+        meaning: I / me
+        reading: わたし
+      - text: 本
+        meaning: book
+        reading: ほん
+      - text: ほしいです
+        meaning: want a thing
+        reading: ほしいです
+      - text: 車
+        meaning: car
+        reading: くるま
+      - text: 時計
+        meaning: clock / watch
+        reading: とけい
+      - text: 水
+        meaning: water
+        reading: みず
+    prerequisites:
+      - grammar-i-adjective
+      - grammar-suki
+  meaning: I want a book.
+  reading: わたしはほんがほしいです。
+  examples:
+    - tokens:
+        - { role: topic, text: 私, reading: わたし, wordClass: pronoun }
+        - { role: particle, text: は, reading: は, wordClass: topic particle }
+        - { role: subject, text: 本, reading: ほん, wordClass: noun }
+        - { role: particle, text: が, reading: が, wordClass: subject particle }
+        - {
+            role: predicate,
+            text: ほしいです,
+            reading: ほしいです,
+            wordClass: i-adjective + polite ending,
+          }
+      meaning: I want a book.
+      reading: わたしはほんがほしいです。
+      japanese: 私は本がほしいです。
+      translationTokens:
+        - { role: topic, text: I, implicit: false }
+        - { role: predicate, text: ' want ', implicit: false }
+        - { role: subject, text: a book., implicit: false }
+  exercise:
+    tiles:
+      - 私
+      - は
+      - 本
+      - が
+      - ほしい
+      - です
+    prompt: 'Build: “I want a book.” Start with 私は.'
+    answers:
+      - 私は本がほしいです
+      - 私は本が欲しいです
+      - わたしはほんがほしいです
+    explanation:
+      ほしい is an い-adjective, not a verb. A common beginner pattern is 私は noun がほしいです. Its negative is
+      ほしくないです. Use verb stem + たい for wanting to do an action. Direct statements normally describe the
+      speaker’s own desire.
+  japanese: 私は本がほしいです。
+sentences:
+  i-want-a-book:
+    text: 私は本がほしいです。
+    tiles:
+      - { text: 私, reading: わたし }
+      - { text: は, reading: は }
+      - { text: 本, reading: ほん }
+      - { text: が, reading: が }
+      - { text: ほしいです, reading: ほしいです }
+    tokens:
+      - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: ほしいです, reading: ほしいです, wordClass: predicate }
+    meaning: I want a book.
+    reading: わたしはほんがほしいです。
+    translationTokens:
+      - { role: topic, text: I }
+      - { role: predicate, text: ' want ' }
+      - { role: subject, text: a book. }
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+  i-want-a-car:
+    text: 私は車がほしいです。
+    tiles:
+      - { text: 私, reading: わたし }
+      - { text: は, reading: は }
+      - { text: 車, reading: くるま }
+      - { text: が, reading: が }
+      - { text: ほしいです, reading: ほしいです }
+    tokens:
+      - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: subject, text: 車, reading: くるま, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: ほしいです, reading: ほしいです, wordClass: predicate }
+    meaning: I want a car.
+    reading: わたしはくるまがほしいです。
+    translationTokens:
+      - { role: topic, text: I }
+      - { role: predicate, text: ' want ' }
+      - { role: subject, text: a car. }
+    form: polite
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+  i-want-a-clock:
+    text: 私は時計がほしいです。
+    tiles:
+      - { text: 私, reading: わたし }
+      - { text: は, reading: は }
+      - { text: 時計, reading: とけい }
+      - { text: が, reading: が }
+      - { text: ほしいです, reading: ほしいです }
+    tokens:
+      - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: subject, text: 時計, reading: とけい, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: ほしいです, reading: ほしいです, wordClass: predicate }
+    meaning: I want a clock.
+    reading: わたしはとけいがほしいです。
+    translationTokens:
+      - { role: topic, text: I }
+      - { role: predicate, text: ' want ' }
+      - { role: subject, text: a clock. }
+    form: polite
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+  i-want-some-water:
+    text: 私は水がほしいです。
+    tiles:
+      - { text: 私, reading: わたし }
+      - { text: は, reading: は }
+      - { text: 水, reading: みず }
+      - { text: が, reading: が }
+      - { text: ほしいです, reading: ほしいです }
+    tokens:
+      - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: subject, text: 水, reading: みず, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: ほしいです, reading: ほしいです, wordClass: predicate }
+    meaning: I want some water.
+    reading: わたしはみずがほしいです。
+    translationTokens:
+      - { role: topic, text: I }
+      - { role: predicate, text: ' want ' }
+      - { role: subject, text: some water. }
+    form: polite
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+  i-want-a-magazine:
+    text: 私は雑誌がほしいです。
+    reading: わたしはざっしがほしいです。
+    meaning: I want a magazine.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 雑誌, reading: ざっし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 雑誌, reading: ざっし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' want ', role: predicate }
+      - { text: a magazine., role: subject }
+    form: polite
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+  i-want-a-newspaper:
+    text: 私は新聞がほしいです。
+    reading: わたしはしんぶんがほしいです。
+    meaning: I want a newspaper.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 新聞, reading: しんぶん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 新聞, reading: しんぶん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' want ', role: predicate }
+      - { text: a newspaper., role: subject }
+    form: polite
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+  i-want-a-dictionary:
+    text: 私は辞書がほしいです。
+    reading: わたしはじしょがほしいです。
+    meaning: I want a dictionary.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 辞書, reading: じしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 辞書, reading: じしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' want ', role: predicate }
+      - { text: a dictionary., role: subject }
+    form: polite
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+  i-want-a-novel:
+    text: 私は小説がほしいです。
+    reading: わたしはしょうせつがほしいです。
+    meaning: I want a novel.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 小説, reading: しょうせつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 小説, reading: しょうせつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' want ', role: predicate }
+      - { text: a novel., role: subject }
+    form: polite
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+  i-want-a-comic:
+    text: 私は漫画がほしいです。
+    reading: わたしはまんががほしいです。
+    meaning: I want a comic.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 漫画, reading: まんが, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 漫画, reading: まんが, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' want ', role: predicate }
+      - { text: a comic., role: subject }
+    form: polite
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+  i-want-a-textbook:
+    text: 私は教科書がほしいです。
+    reading: わたしはきょうかしょがほしいです。
+    meaning: I want a textbook.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 教科書, reading: きょうかしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 教科書, reading: きょうかしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' want ', role: predicate }
+      - { text: a textbook., role: subject }
+    form: polite
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+  i-want-a-picture-book:
+    text: 私は絵本がほしいです。
+    reading: わたしはえほんがほしいです。
+    meaning: I want a picture book.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 絵本, reading: えほん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 絵本, reading: えほん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' want ', role: predicate }
+      - { text: a picture book., role: subject }
+    form: polite
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+  i-want-a-letter:
+    text: 私は手紙がほしいです。
+    reading: わたしはてがみがほしいです。
+    meaning: I want a letter.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 手紙, reading: てがみ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 手紙, reading: てがみ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' want ', role: predicate }
+      - { text: a letter., role: subject }
+    form: polite
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+  i-want-a-diary:
+    text: 私は日記がほしいです。
+    reading: わたしはにっきがほしいです。
+    meaning: I want a diary.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 日記, reading: にっき, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 日記, reading: にっき, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' want ', role: predicate }
+      - { text: a diary., role: subject }
+    form: polite
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+  i-want-a-article:
+    text: 私は記事がほしいです。
+    reading: わたしはきじがほしいです。
+    meaning: I want a article.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 記事, reading: きじ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 記事, reading: きじ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' want ', role: predicate }
+      - { text: a article., role: subject }
+    form: polite
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+  i-want-a-desk:
+    text: 私は机がほしいです。
+    reading: わたしはつくえがほしいです。
+    meaning: I want a desk.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 机, reading: つくえ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 机, reading: つくえ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' want ', role: predicate }
+      - { text: a desk., role: subject }
+    form: polite
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+  i-want-a-bag:
+    text: 私はかばんがほしいです。
+    reading: わたしはかばんがほしいです。
+    meaning: I want a bag.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: かばん, reading: かばん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: かばん, reading: かばん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' want ', role: predicate }
+      - { text: a bag., role: subject }
+    form: polite
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+  i-want-a-chair:
+    text: 私は椅子がほしいです。
+    reading: わたしはいすがほしいです。
+    meaning: I want a chair.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 椅子, reading: いす, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 椅子, reading: いす, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' want ', role: predicate }
+      - { text: a chair., role: subject }
+    form: polite
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+  i-want-a-bicycle:
+    text: 私は自転車がほしいです。
+    reading: わたしはじてんしゃがほしいです。
+    meaning: I want a bicycle.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 自転車, reading: じてんしゃ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 自転車, reading: じてんしゃ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' want ', role: predicate }
+      - { text: a bicycle., role: subject }
+    form: polite
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+  i-want-a-shoe:
+    text: 私は靴がほしいです。
+    reading: わたしはくつがほしいです。
+    meaning: I want a shoe.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 靴, reading: くつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 靴, reading: くつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' want ', role: predicate }
+      - { text: a shoe., role: subject }
+    form: polite
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+  i-want-a-umbrella:
+    text: 私は傘がほしいです。
+    reading: わたしはかさがほしいです。
+    meaning: I want a umbrella.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 傘, reading: かさ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 傘, reading: かさ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' want ', role: predicate }
+      - { text: a umbrella., role: subject }
+    form: polite
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+  i-want-a-box:
+    text: 私は箱がほしいです。
+    reading: わたしははこがほしいです。
+    meaning: I want a box.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 箱, reading: はこ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 箱, reading: はこ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' want ', role: predicate }
+      - { text: a box., role: subject }
+    form: polite
+    hint: Choose the adjective for wanting a thing, not an action.
+    explanation: Use が + ほしい for a wanted thing. Use verb stem + たい for an action you want to do.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-want-a-book
+    choices:
+      - text: I want a book.
+        reading: ''
+      - text: I already have a book.
+        reading: ''
+    answers:
+      - I want a book.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-want-a-book
+    choices:
+      - sentence: i-want-a-book
+      - text: 私は本がたいです。
+        tiles:
+          - { text: 私, reading: わたし }
+          - { text: は, reading: は }
+          - { text: 本, reading: ほん }
+          - { text: が, reading: が }
+          - { text: たいです, reading: たいです }
+        tokens:
+          - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: たいです, reading: たいです, wordClass: predicate }
+        meaning: I already have a book.
+        reading: わたしはほんがたいです。
+    prompt: 'Choose the correct Japanese: I want a book.'
+    answers:
+      - 私は本がほしいです
+      - 私はほんがほしいです
+      - わたしは本がほしいです
+      - わたしはほんがほしいです
+  - id: gap
+    type: gap
+    sentence: i-want-a-car
+    answers:
+      - ほしいです
+      - ほしいです
+    context:
+      text: 私は車が___。
+      tokens:
+        - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: subject, text: 車, reading: くるま, wordClass: noun phrase }
+        - { role: particle, text: が, reading: が, wordClass: particle }
+        - { role: predicate, text: ___, reading: ___, wordClass: predicate }
+      reading: わたしはくるまが___。
+  - id: tiles
+    type: tiles
+    sentence: i-want-a-car
+    prompt: 'Build this sentence: I want a car. (polite)'
+    answers:
+      - 私は車がほしいです
+      - 私はくるまがほしいです
+      - わたしは車がほしいです
+      - わたしはくるまがほしいです
+    tiles:
+      - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: subject, text: 車, reading: くるま, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: ほしいです, reading: ほしいです, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: i-want-a-clock
+    answers:
+      - 私は時計がほしいです
+      - 私はとけいがほしいです
+      - わたしは時計がほしいです
+      - わたしはとけいがほしいです
+  - id: alternate
+    type: typing
+    sentence: i-want-some-water
+    alternate: true
+    prompt: 'One more example: I want some water. (polite)'
+    answers:
+      - 私は水がほしいです
+      - 私はみずがほしいです
+      - わたしは水がほしいです
+      - わたしはみずがほしいです
+  - id: extra-1-tiles
+    type: tiles
+    sentence: i-want-a-magazine
+    prompt: 'Build this sentence: I want a magazine. (polite)'
+    answers:
+      - 私は雑誌がほしいです
+      - 私はざっしがほしいです
+      - わたしは雑誌がほしいです
+      - わたしはざっしがほしいです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 雑誌, reading: ざっし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: i-want-a-magazine
+    answers:
+      - 私は雑誌がほしいです
+      - 私はざっしがほしいです
+      - わたしは雑誌がほしいです
+      - わたしはざっしがほしいです
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: i-want-a-magazine
+    choices:
+      - text: I want a magazine.
+        reading: ''
+      - text: I want a book.
+        reading: ''
+    prompt: 'Choose the meaning: 私は雑誌がほしいです。'
+    answers:
+      - I want a magazine.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: i-want-a-newspaper
+    prompt: 'Build this sentence: I want a newspaper. (polite)'
+    answers:
+      - 私は新聞がほしいです
+      - 私はしんぶんがほしいです
+      - わたしは新聞がほしいです
+      - わたしはしんぶんがほしいです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 新聞, reading: しんぶん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: i-want-a-newspaper
+    answers:
+      - 私は新聞がほしいです
+      - 私はしんぶんがほしいです
+      - わたしは新聞がほしいです
+      - わたしはしんぶんがほしいです
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: i-want-a-newspaper
+    choices:
+      - text: I want a newspaper.
+        reading: ''
+      - text: I want a book.
+        reading: ''
+    prompt: 'Choose the meaning: 私は新聞がほしいです。'
+    answers:
+      - I want a newspaper.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: i-want-a-dictionary
+    prompt: 'Build this sentence: I want a dictionary. (polite)'
+    answers:
+      - 私は辞書がほしいです
+      - 私はじしょがほしいです
+      - わたしは辞書がほしいです
+      - わたしはじしょがほしいです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 辞書, reading: じしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: i-want-a-dictionary
+    answers:
+      - 私は辞書がほしいです
+      - 私はじしょがほしいです
+      - わたしは辞書がほしいです
+      - わたしはじしょがほしいです
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: i-want-a-dictionary
+    choices:
+      - text: I want a dictionary.
+        reading: ''
+      - text: I want a book.
+        reading: ''
+    prompt: 'Choose the meaning: 私は辞書がほしいです。'
+    answers:
+      - I want a dictionary.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: i-want-a-novel
+    prompt: 'Build this sentence: I want a novel. (polite)'
+    answers:
+      - 私は小説がほしいです
+      - 私はしょうせつがほしいです
+      - わたしは小説がほしいです
+      - わたしはしょうせつがほしいです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 小説, reading: しょうせつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: i-want-a-novel
+    answers:
+      - 私は小説がほしいです
+      - 私はしょうせつがほしいです
+      - わたしは小説がほしいです
+      - わたしはしょうせつがほしいです
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: i-want-a-novel
+    choices:
+      - text: I want a novel.
+        reading: ''
+      - text: I want a book.
+        reading: ''
+    prompt: 'Choose the meaning: 私は小説がほしいです。'
+    answers:
+      - I want a novel.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: i-want-a-comic
+    prompt: 'Build this sentence: I want a comic. (polite)'
+    answers:
+      - 私は漫画がほしいです
+      - 私はまんががほしいです
+      - わたしは漫画がほしいです
+      - わたしはまんががほしいです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 漫画, reading: まんが, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: i-want-a-comic
+    answers:
+      - 私は漫画がほしいです
+      - 私はまんががほしいです
+      - わたしは漫画がほしいです
+      - わたしはまんががほしいです
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: i-want-a-comic
+    choices:
+      - text: I want a comic.
+        reading: ''
+      - text: I want a book.
+        reading: ''
+    prompt: 'Choose the meaning: 私は漫画がほしいです。'
+    answers:
+      - I want a comic.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: i-want-a-textbook
+    prompt: 'Build this sentence: I want a textbook. (polite)'
+    answers:
+      - 私は教科書がほしいです
+      - 私はきょうかしょがほしいです
+      - わたしは教科書がほしいです
+      - わたしはきょうかしょがほしいです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 教科書, reading: きょうかしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: i-want-a-textbook
+    answers:
+      - 私は教科書がほしいです
+      - 私はきょうかしょがほしいです
+      - わたしは教科書がほしいです
+      - わたしはきょうかしょがほしいです
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: i-want-a-textbook
+    choices:
+      - text: I want a textbook.
+        reading: ''
+      - text: I want a book.
+        reading: ''
+    prompt: 'Choose the meaning: 私は教科書がほしいです。'
+    answers:
+      - I want a textbook.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: i-want-a-picture-book
+    prompt: 'Build this sentence: I want a picture book. (polite)'
+    answers:
+      - 私は絵本がほしいです
+      - 私はえほんがほしいです
+      - わたしは絵本がほしいです
+      - わたしはえほんがほしいです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 絵本, reading: えほん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: i-want-a-picture-book
+    answers:
+      - 私は絵本がほしいです
+      - 私はえほんがほしいです
+      - わたしは絵本がほしいです
+      - わたしはえほんがほしいです
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: i-want-a-picture-book
+    choices:
+      - text: I want a picture book.
+        reading: ''
+      - text: I want a book.
+        reading: ''
+    prompt: 'Choose the meaning: 私は絵本がほしいです。'
+    answers:
+      - I want a picture book.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: i-want-a-letter
+    prompt: 'Build this sentence: I want a letter. (polite)'
+    answers:
+      - 私は手紙がほしいです
+      - 私はてがみがほしいです
+      - わたしは手紙がほしいです
+      - わたしはてがみがほしいです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 手紙, reading: てがみ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: i-want-a-letter
+    answers:
+      - 私は手紙がほしいです
+      - 私はてがみがほしいです
+      - わたしは手紙がほしいです
+      - わたしはてがみがほしいです
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: i-want-a-letter
+    choices:
+      - text: I want a letter.
+        reading: ''
+      - text: I want a book.
+        reading: ''
+    prompt: 'Choose the meaning: 私は手紙がほしいです。'
+    answers:
+      - I want a letter.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: i-want-a-diary
+    prompt: 'Build this sentence: I want a diary. (polite)'
+    answers:
+      - 私は日記がほしいです
+      - 私はにっきがほしいです
+      - わたしは日記がほしいです
+      - わたしはにっきがほしいです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 日記, reading: にっき, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: i-want-a-diary
+    answers:
+      - 私は日記がほしいです
+      - 私はにっきがほしいです
+      - わたしは日記がほしいです
+      - わたしはにっきがほしいです
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: i-want-a-diary
+    choices:
+      - text: I want a diary.
+        reading: ''
+      - text: I want a book.
+        reading: ''
+    prompt: 'Choose the meaning: 私は日記がほしいです。'
+    answers:
+      - I want a diary.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: i-want-a-article
+    prompt: 'Build this sentence: I want a article. (polite)'
+    answers:
+      - 私は記事がほしいです
+      - 私はきじがほしいです
+      - わたしは記事がほしいです
+      - わたしはきじがほしいです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 記事, reading: きじ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: i-want-a-article
+    answers:
+      - 私は記事がほしいです
+      - 私はきじがほしいです
+      - わたしは記事がほしいです
+      - わたしはきじがほしいです
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: i-want-a-article
+    choices:
+      - text: I want a article.
+        reading: ''
+      - text: I want a book.
+        reading: ''
+    prompt: 'Choose the meaning: 私は記事がほしいです。'
+    answers:
+      - I want a article.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: i-want-a-desk
+    prompt: 'Build this sentence: I want a desk. (polite)'
+    answers:
+      - 私は机がほしいです
+      - 私はつくえがほしいです
+      - わたしは机がほしいです
+      - わたしはつくえがほしいです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 机, reading: つくえ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: i-want-a-desk
+    answers:
+      - 私は机がほしいです
+      - 私はつくえがほしいです
+      - わたしは机がほしいです
+      - わたしはつくえがほしいです
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: i-want-a-desk
+    choices:
+      - text: I want a desk.
+        reading: ''
+      - text: I want a book.
+        reading: ''
+    prompt: 'Choose the meaning: 私は机がほしいです。'
+    answers:
+      - I want a desk.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: i-want-a-bag
+    prompt: 'Build this sentence: I want a bag. (polite)'
+    answers:
+      - 私はかばんがほしいです
+      - わたしはかばんがほしいです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: かばん, reading: かばん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: i-want-a-bag
+    answers:
+      - 私はかばんがほしいです
+      - わたしはかばんがほしいです
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: i-want-a-bag
+    choices:
+      - text: I want a bag.
+        reading: ''
+      - text: I want a book.
+        reading: ''
+    prompt: 'Choose the meaning: 私はかばんがほしいです。'
+    answers:
+      - I want a bag.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: i-want-a-chair
+    prompt: 'Build this sentence: I want a chair. (polite)'
+    answers:
+      - 私は椅子がほしいです
+      - 私はいすがほしいです
+      - わたしは椅子がほしいです
+      - わたしはいすがほしいです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 椅子, reading: いす, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: i-want-a-chair
+    answers:
+      - 私は椅子がほしいです
+      - 私はいすがほしいです
+      - わたしは椅子がほしいです
+      - わたしはいすがほしいです
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: i-want-a-chair
+    choices:
+      - text: I want a chair.
+        reading: ''
+      - text: I want a book.
+        reading: ''
+    prompt: 'Choose the meaning: 私は椅子がほしいです。'
+    answers:
+      - I want a chair.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: i-want-a-bicycle
+    prompt: 'Build this sentence: I want a bicycle. (polite)'
+    answers:
+      - 私は自転車がほしいです
+      - 私はじてんしゃがほしいです
+      - わたしは自転車がほしいです
+      - わたしはじてんしゃがほしいです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 自転車, reading: じてんしゃ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: i-want-a-bicycle
+    answers:
+      - 私は自転車がほしいです
+      - 私はじてんしゃがほしいです
+      - わたしは自転車がほしいです
+      - わたしはじてんしゃがほしいです
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: i-want-a-bicycle
+    choices:
+      - text: I want a bicycle.
+        reading: ''
+      - text: I want a book.
+        reading: ''
+    prompt: 'Choose the meaning: 私は自転車がほしいです。'
+    answers:
+      - I want a bicycle.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: i-want-a-shoe
+    prompt: 'Build this sentence: I want a shoe. (polite)'
+    answers:
+      - 私は靴がほしいです
+      - 私はくつがほしいです
+      - わたしは靴がほしいです
+      - わたしはくつがほしいです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 靴, reading: くつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: i-want-a-shoe
+    answers:
+      - 私は靴がほしいです
+      - 私はくつがほしいです
+      - わたしは靴がほしいです
+      - わたしはくつがほしいです
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: i-want-a-shoe
+    choices:
+      - text: I want a shoe.
+        reading: ''
+      - text: I want a book.
+        reading: ''
+    prompt: 'Choose the meaning: 私は靴がほしいです。'
+    answers:
+      - I want a shoe.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: i-want-a-umbrella
+    prompt: 'Build this sentence: I want a umbrella. (polite)'
+    answers:
+      - 私は傘がほしいです
+      - 私はかさがほしいです
+      - わたしは傘がほしいです
+      - わたしはかさがほしいです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 傘, reading: かさ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: i-want-a-umbrella
+    answers:
+      - 私は傘がほしいです
+      - 私はかさがほしいです
+      - わたしは傘がほしいです
+      - わたしはかさがほしいです
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: i-want-a-umbrella
+    choices:
+      - text: I want a umbrella.
+        reading: ''
+      - text: I want a book.
+        reading: ''
+    prompt: 'Choose the meaning: 私は傘がほしいです。'
+    answers:
+      - I want a umbrella.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: i-want-a-box
+    prompt: 'Build this sentence: I want a box. (polite)'
+    answers:
+      - 私は箱がほしいです
+      - 私ははこがほしいです
+      - わたしは箱がほしいです
+      - わたしははこがほしいです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 箱, reading: はこ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ほしいです, reading: ほしいです, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: i-want-a-box
+    answers:
+      - 私は箱がほしいです
+      - 私ははこがほしいです
+      - わたしは箱がほしいです
+      - わたしははこがほしいです

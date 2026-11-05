@@ -1,0 +1,1346 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-destination
+  kind: grammar
+  note: >-
+    に marks a destination with 行きます / 来ます / 帰ります. へ emphasizes direction and is pronounced e. 学校に行きます and
+    学校へ行きます are both natural here.
+
+    行きます (いきます) means go; 来ます (きます) means come toward the speaker or the viewpoint location; 帰ります (かえります)
+    means return home or to a familiar base. に and へ can both mark the destination in these examples. へ is
+    pronounced “e”. Use で for transport, as in バスで学校に行きます (ばすでがっこうにいきます).
+  tags:
+    - Grammar
+    - destination
+  level: N5
+  title: 'Destinations: に・へ'
+  topic: Sentence building
+  lesson:
+    goal: Say where you go.
+    group: Polite verbs and particles
+    order: 9
+    recap:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+    examples:
+      - tokens:
+          - { role: modifier, text: 学校, reading: がっこう, wordClass: modifier }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+        meaning: I go to school.
+        reading: がっこうにいきます。
+        japanese: 学校に行きます。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: go }
+          - { role: modifier, text: ' to school.' }
+      - tokens:
+          - { role: modifier, text: 図書館, reading: としょかん, wordClass: modifier }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+        meaning: I go to the library.
+        reading: としょかんにいきます。
+        japanese: 図書館に行きます。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: go }
+          - { role: modifier, text: ' to the library.' }
+      - tokens:
+          - { role: modifier, text: 家, reading: いえ, wordClass: modifier }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: predicate, text: 帰ります, reading: かえります, wordClass: predicate }
+        meaning: I return home.
+        reading: いえにかえります。
+        japanese: 家に帰ります。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: return }
+          - { role: modifier, text: ' home.' }
+    comparison:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+    vocabulary:
+      - text: 学校
+        meaning: school
+        reading: がっこう
+      - text: 行きます
+        meaning: go
+        reading: いきます
+      - text: 図書館
+        meaning: library
+        reading: としょかん
+      - text: 家
+        meaning: home / house
+        reading: いえ
+      - text: 帰ります
+        meaning: return
+        reading: かえります
+      - text: 日本
+        meaning: Japan
+        reading: にほん
+    prerequisites:
+      - grammar-masu
+  meaning: I go to school.
+  reading: がっこうにいきます。
+  examples:
+    - tokens:
+        - {
+            role: modifier,
+            text: 学校に,
+            reading: がっこうに,
+            wordClass: destination noun + particle,
+          }
+        - { role: predicate, text: 行きます, reading: いきます, wordClass: verb }
+      meaning: I go to school.
+      reading: がっこうにいきます。
+      japanese: 学校に行きます。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: go, implicit: false }
+        - { role: modifier, text: ' to school.', implicit: false }
+  exercise:
+    tiles:
+      - 学校
+      - に
+      - 行きます
+    prompt: 'Build: “I go to school.”'
+    answers:
+      - 学校に行きます
+      - 学校へ行きます
+      - がっこうにいきます
+      - がっこうへいきます
+    explanation:
+      に marks a destination with 行きます / 来ます / 帰ります. へ emphasizes direction and is pronounced e. 学校に行きます
+      and 学校へ行きます are both natural here.
+  japanese: 学校に行きます。
+  references:
+    - rows:
+        - - text: 行きます / 行く
+            reading: いきます / いく
+          - text: 学校に行きます
+            reading: がっこうにいきます
+          - text: 学校へ行きます
+            reading: がっこうへいきます
+          - text: go to school
+            reading: ''
+        - - text: 来ます / 来る
+            reading: きます / くる
+          - text: ここに来ます
+            reading: ここにきます
+          - text: ここへ来ます
+            reading: ここへきます
+          - text: come here
+            reading: ''
+        - - text: 帰ります / 帰る
+            reading: かえります / かえる
+          - text: 家に帰ります
+            reading: いえにかえります
+          - text: 家へ帰ります
+            reading: いえへかえります
+          - text: return home
+            reading: ''
+      columns:
+        - Verb
+        - With に
+        - With へ
+        - Meaning
+      heading: Destination + に / へ + movement verb
+sentences:
+  i-go-to-school:
+    text: 学校に行きます。
+    tiles:
+      - { text: 学校, reading: がっこう }
+      - { text: に, reading: に }
+      - { text: 行きます, reading: いきます }
+    tokens:
+      - { role: modifier, text: 学校, reading: がっこう, wordClass: modifier }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+    meaning: I go to school.
+    reading: がっこうにいきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: go }
+      - { role: modifier, text: ' to school.' }
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+  i-go-to-the-library:
+    text: 図書館に行きます。
+    tiles:
+      - { text: 図書館, reading: としょかん }
+      - { text: に, reading: に }
+      - { text: 行きます, reading: いきます }
+    tokens:
+      - { role: modifier, text: 図書館, reading: としょかん, wordClass: modifier }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+    meaning: I go to the library.
+    reading: としょかんにいきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: go }
+      - { role: modifier, text: ' to the library.' }
+    form: polite
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+  i-return-home:
+    text: 家に帰ります。
+    tiles:
+      - { text: 家, reading: いえ }
+      - { text: に, reading: に }
+      - { text: 帰ります, reading: かえります }
+    tokens:
+      - { role: modifier, text: 家, reading: いえ, wordClass: modifier }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 帰ります, reading: かえります, wordClass: predicate }
+    meaning: I return home.
+    reading: いえにかえります。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: return }
+      - { role: modifier, text: ' home.' }
+    form: polite
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+  i-go-to-japan:
+    text: 日本に行きます。
+    tiles:
+      - { text: 日本, reading: にほん }
+      - { text: に, reading: に }
+      - { text: 行きます, reading: いきます }
+    tokens:
+      - { role: modifier, text: 日本, reading: にほん, wordClass: modifier }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+    meaning: I go to Japan.
+    reading: にほんにいきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: go }
+      - { role: modifier, text: ' to Japan.' }
+    form: polite
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+  i-go-to-shop:
+    text: 店に行きます。
+    reading: みせにいきます。
+    meaning: I go to shop.
+    tiles:
+      - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' to shop.', role: modifier }
+    form: polite
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+  i-go-to-bank:
+    text: 銀行に行きます。
+    reading: ぎんこうにいきます。
+    meaning: I go to bank.
+    tiles:
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' to bank.', role: modifier }
+    form: polite
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+  i-go-to-station:
+    text: 駅に行きます。
+    reading: えきにいきます。
+    meaning: I go to station.
+    tiles:
+      - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' to station.', role: modifier }
+    form: polite
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+  i-go-to-park:
+    text: 公園に行きます。
+    reading: こうえんにいきます。
+    meaning: I go to park.
+    tiles:
+      - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' to park.', role: modifier }
+    form: polite
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+  i-go-to-hospital:
+    text: 病院に行きます。
+    reading: びょういんにいきます。
+    meaning: I go to hospital.
+    tiles:
+      - { text: 病院, reading: びょういん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 病院, reading: びょういん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' to hospital.', role: modifier }
+    form: polite
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+  i-go-to-office:
+    text: 会社に行きます。
+    reading: かいしゃにいきます。
+    meaning: I go to office.
+    tiles:
+      - { text: 会社, reading: かいしゃ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 会社, reading: かいしゃ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' to office.', role: modifier }
+    form: polite
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+  i-go-to-post-office:
+    text: 郵便局に行きます。
+    reading: ゆうびんきょくにいきます。
+    meaning: I go to post office.
+    tiles:
+      - { text: 郵便局, reading: ゆうびんきょく, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 郵便局, reading: ゆうびんきょく, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' to post office.', role: modifier }
+    form: polite
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+  i-go-to-art-museum:
+    text: 美術館に行きます。
+    reading: びじゅつかんにいきます。
+    meaning: I go to art museum.
+    tiles:
+      - { text: 美術館, reading: びじゅつかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 美術館, reading: びじゅつかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' to art museum.', role: modifier }
+    form: polite
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+  i-go-to-supermarket:
+    text: スーパーに行きます。
+    reading: すーぱーにいきます。
+    meaning: I go to supermarket.
+    tiles:
+      - { text: スーパー, reading: すーぱー, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: スーパー, reading: すーぱー, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' to supermarket.', role: modifier }
+    form: polite
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+  i-go-to-university:
+    text: 大学に行きます。
+    reading: だいがくにいきます。
+    meaning: I go to university.
+    tiles:
+      - { text: 大学, reading: だいがく, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 大学, reading: だいがく, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' to university.', role: modifier }
+    form: polite
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+  i-go-to-airport:
+    text: 空港に行きます。
+    reading: くうこうにいきます。
+    meaning: I go to airport.
+    tiles:
+      - { text: 空港, reading: くうこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 空港, reading: くうこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' to airport.', role: modifier }
+    form: polite
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+  i-go-to-port:
+    text: 港に行きます。
+    reading: みなとにいきます。
+    meaning: I go to port.
+    tiles:
+      - { text: 港, reading: みなと, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 港, reading: みなと, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' to port.', role: modifier }
+    form: polite
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+  i-go-to-market:
+    text: 市場に行きます。
+    reading: いちばにいきます。
+    meaning: I go to market.
+    tiles:
+      - { text: 市場, reading: いちば, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 市場, reading: いちば, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' to market.', role: modifier }
+    form: polite
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+  i-go-to-theater:
+    text: 劇場に行きます。
+    reading: げきじょうにいきます。
+    meaning: I go to theater.
+    tiles:
+      - { text: 劇場, reading: げきじょう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 劇場, reading: げきじょう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' to theater.', role: modifier }
+    form: polite
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+  i-go-to-cinema:
+    text: 映画館に行きます。
+    reading: えいがかんにいきます。
+    meaning: I go to cinema.
+    tiles:
+      - { text: 映画館, reading: えいがかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 映画館, reading: えいがかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' to cinema.', role: modifier }
+    form: polite
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+  i-go-to-museum:
+    text: 博物館に行きます。
+    reading: はくぶつかんにいきます。
+    meaning: I go to museum.
+    tiles:
+      - { text: 博物館, reading: はくぶつかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 博物館, reading: はくぶつかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' to museum.', role: modifier }
+    form: polite
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+  i-go-to-zoo:
+    text: 動物園に行きます。
+    reading: どうぶつえんにいきます。
+    meaning: I go to zoo.
+    tiles:
+      - { text: 動物園, reading: どうぶつえん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 動物園, reading: どうぶつえん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' to zoo.', role: modifier }
+    form: polite
+    hint: Choose a destination particle; に and へ are both possible here.
+    explanation:
+      に or へ can mark a destination. で marks where an action takes place, not the destination in these
+      sentences.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-go-to-school
+    choices:
+      - text: I go to school.
+        reading: ''
+      - text: I study at school.
+        reading: ''
+    answers:
+      - I go to school.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-go-to-school
+    choices:
+      - sentence: i-go-to-school
+      - text: 学校で行きます。
+        tiles:
+          - { text: 学校, reading: がっこう }
+          - { text: で, reading: で }
+          - { text: 行きます, reading: いきます }
+        tokens:
+          - { role: modifier, text: 学校, reading: がっこう, wordClass: modifier }
+          - { role: particle, text: で, reading: で, wordClass: particle }
+          - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+        meaning: I study at school.
+        reading: がっこうでいきます。
+    prompt: 'Choose the correct Japanese: I go to school.'
+    answers:
+      - 学校に行きます
+      - 学校にいきます
+      - がっこうに行きます
+      - がっこうにいきます
+  - id: gap
+    type: gap
+    sentence: i-go-to-the-library
+    answers:
+      - に
+      - へ
+    context:
+      text: 図書館___行きます。
+      tokens:
+        - { role: modifier, text: 図書館, reading: としょかん, wordClass: modifier }
+        - { role: particle, text: ___, reading: ___, wordClass: particle }
+        - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+      reading: としょかん___いきます。
+  - id: tiles
+    type: tiles
+    sentence: i-go-to-the-library
+    prompt: 'Build this sentence: I go to the library. (polite)'
+    answers:
+      - 図書館に行きます
+      - 図書館にいきます
+      - としょかんに行きます
+      - としょかんにいきます
+      - 図書館へ行きます
+      - 図書館へいきます
+      - としょかんへ行きます
+      - としょかんへいきます
+    tiles:
+      - { role: modifier, text: 図書館, reading: としょかん, wordClass: modifier }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: i-return-home
+    answers:
+      - 家に帰ります
+      - 家にかえります
+      - いえに帰ります
+      - いえにかえります
+      - 家へ帰ります
+      - 家へかえります
+      - いえへ帰ります
+      - いえへかえります
+  - id: alternate
+    type: typing
+    sentence: i-go-to-japan
+    alternate: true
+    prompt: 'One more example: I go to Japan. (polite)'
+    answers:
+      - 日本に行きます
+      - 日本にいきます
+      - にほんに行きます
+      - にほんにいきます
+      - 日本へ行きます
+      - 日本へいきます
+      - にほんへ行きます
+      - にほんへいきます
+  - id: extra-1-tiles
+    type: tiles
+    sentence: i-go-to-shop
+    prompt: 'Build this sentence: I go to shop. (polite)'
+    answers:
+      - 店に行きます
+      - 店にいきます
+      - みせに行きます
+      - みせにいきます
+      - 店へ行きます
+      - 店へいきます
+      - みせへ行きます
+      - みせへいきます
+    tiles:
+      - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: i-go-to-shop
+    answers:
+      - 店に行きます
+      - 店にいきます
+      - みせに行きます
+      - みせにいきます
+      - 店へ行きます
+      - 店へいきます
+      - みせへ行きます
+      - みせへいきます
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: i-go-to-shop
+    choices:
+      - text: I go to shop.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 店に行きます。'
+    answers:
+      - I go to shop.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: i-go-to-bank
+    prompt: 'Build this sentence: I go to bank. (polite)'
+    answers:
+      - 銀行に行きます
+      - 銀行にいきます
+      - ぎんこうに行きます
+      - ぎんこうにいきます
+      - 銀行へ行きます
+      - 銀行へいきます
+      - ぎんこうへ行きます
+      - ぎんこうへいきます
+    tiles:
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: i-go-to-bank
+    answers:
+      - 銀行に行きます
+      - 銀行にいきます
+      - ぎんこうに行きます
+      - ぎんこうにいきます
+      - 銀行へ行きます
+      - 銀行へいきます
+      - ぎんこうへ行きます
+      - ぎんこうへいきます
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: i-go-to-bank
+    choices:
+      - text: I go to bank.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 銀行に行きます。'
+    answers:
+      - I go to bank.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: i-go-to-station
+    prompt: 'Build this sentence: I go to station. (polite)'
+    answers:
+      - 駅に行きます
+      - 駅にいきます
+      - えきに行きます
+      - えきにいきます
+      - 駅へ行きます
+      - 駅へいきます
+      - えきへ行きます
+      - えきへいきます
+    tiles:
+      - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: i-go-to-station
+    answers:
+      - 駅に行きます
+      - 駅にいきます
+      - えきに行きます
+      - えきにいきます
+      - 駅へ行きます
+      - 駅へいきます
+      - えきへ行きます
+      - えきへいきます
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: i-go-to-station
+    choices:
+      - text: I go to station.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 駅に行きます。'
+    answers:
+      - I go to station.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: i-go-to-park
+    prompt: 'Build this sentence: I go to park. (polite)'
+    answers:
+      - 公園に行きます
+      - 公園にいきます
+      - こうえんに行きます
+      - こうえんにいきます
+      - 公園へ行きます
+      - 公園へいきます
+      - こうえんへ行きます
+      - こうえんへいきます
+    tiles:
+      - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: i-go-to-park
+    answers:
+      - 公園に行きます
+      - 公園にいきます
+      - こうえんに行きます
+      - こうえんにいきます
+      - 公園へ行きます
+      - 公園へいきます
+      - こうえんへ行きます
+      - こうえんへいきます
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: i-go-to-park
+    choices:
+      - text: I go to park.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 公園に行きます。'
+    answers:
+      - I go to park.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: i-go-to-hospital
+    prompt: 'Build this sentence: I go to hospital. (polite)'
+    answers:
+      - 病院に行きます
+      - 病院にいきます
+      - びょういんに行きます
+      - びょういんにいきます
+      - 病院へ行きます
+      - 病院へいきます
+      - びょういんへ行きます
+      - びょういんへいきます
+    tiles:
+      - { text: 病院, reading: びょういん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: i-go-to-hospital
+    answers:
+      - 病院に行きます
+      - 病院にいきます
+      - びょういんに行きます
+      - びょういんにいきます
+      - 病院へ行きます
+      - 病院へいきます
+      - びょういんへ行きます
+      - びょういんへいきます
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: i-go-to-hospital
+    choices:
+      - text: I go to hospital.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 病院に行きます。'
+    answers:
+      - I go to hospital.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: i-go-to-office
+    prompt: 'Build this sentence: I go to office. (polite)'
+    answers:
+      - 会社に行きます
+      - 会社にいきます
+      - かいしゃに行きます
+      - かいしゃにいきます
+      - 会社へ行きます
+      - 会社へいきます
+      - かいしゃへ行きます
+      - かいしゃへいきます
+    tiles:
+      - { text: 会社, reading: かいしゃ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: i-go-to-office
+    answers:
+      - 会社に行きます
+      - 会社にいきます
+      - かいしゃに行きます
+      - かいしゃにいきます
+      - 会社へ行きます
+      - 会社へいきます
+      - かいしゃへ行きます
+      - かいしゃへいきます
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: i-go-to-office
+    choices:
+      - text: I go to office.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 会社に行きます。'
+    answers:
+      - I go to office.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: i-go-to-post-office
+    prompt: 'Build this sentence: I go to post office. (polite)'
+    answers:
+      - 郵便局に行きます
+      - 郵便局にいきます
+      - ゆうびんきょくに行きます
+      - ゆうびんきょくにいきます
+      - 郵便局へ行きます
+      - 郵便局へいきます
+      - ゆうびんきょくへ行きます
+      - ゆうびんきょくへいきます
+    tiles:
+      - { text: 郵便局, reading: ゆうびんきょく, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: i-go-to-post-office
+    answers:
+      - 郵便局に行きます
+      - 郵便局にいきます
+      - ゆうびんきょくに行きます
+      - ゆうびんきょくにいきます
+      - 郵便局へ行きます
+      - 郵便局へいきます
+      - ゆうびんきょくへ行きます
+      - ゆうびんきょくへいきます
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: i-go-to-post-office
+    choices:
+      - text: I go to post office.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 郵便局に行きます。'
+    answers:
+      - I go to post office.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: i-go-to-art-museum
+    prompt: 'Build this sentence: I go to art museum. (polite)'
+    answers:
+      - 美術館に行きます
+      - 美術館にいきます
+      - びじゅつかんに行きます
+      - びじゅつかんにいきます
+      - 美術館へ行きます
+      - 美術館へいきます
+      - びじゅつかんへ行きます
+      - びじゅつかんへいきます
+    tiles:
+      - { text: 美術館, reading: びじゅつかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: i-go-to-art-museum
+    answers:
+      - 美術館に行きます
+      - 美術館にいきます
+      - びじゅつかんに行きます
+      - びじゅつかんにいきます
+      - 美術館へ行きます
+      - 美術館へいきます
+      - びじゅつかんへ行きます
+      - びじゅつかんへいきます
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: i-go-to-art-museum
+    choices:
+      - text: I go to art museum.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 美術館に行きます。'
+    answers:
+      - I go to art museum.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: i-go-to-supermarket
+    prompt: 'Build this sentence: I go to supermarket. (polite)'
+    answers:
+      - スーパーに行きます
+      - スーパーにいきます
+      - すーぱーに行きます
+      - すーぱーにいきます
+      - スーパーへ行きます
+      - スーパーへいきます
+      - すーぱーへ行きます
+      - すーぱーへいきます
+    tiles:
+      - { text: スーパー, reading: すーぱー, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: i-go-to-supermarket
+    answers:
+      - スーパーに行きます
+      - スーパーにいきます
+      - すーぱーに行きます
+      - すーぱーにいきます
+      - スーパーへ行きます
+      - スーパーへいきます
+      - すーぱーへ行きます
+      - すーぱーへいきます
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: i-go-to-supermarket
+    choices:
+      - text: I go to supermarket.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+    prompt: 'Choose the meaning: スーパーに行きます。'
+    answers:
+      - I go to supermarket.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: i-go-to-university
+    prompt: 'Build this sentence: I go to university. (polite)'
+    answers:
+      - 大学に行きます
+      - 大学にいきます
+      - だいがくに行きます
+      - だいがくにいきます
+      - 大学へ行きます
+      - 大学へいきます
+      - だいがくへ行きます
+      - だいがくへいきます
+    tiles:
+      - { text: 大学, reading: だいがく, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: i-go-to-university
+    answers:
+      - 大学に行きます
+      - 大学にいきます
+      - だいがくに行きます
+      - だいがくにいきます
+      - 大学へ行きます
+      - 大学へいきます
+      - だいがくへ行きます
+      - だいがくへいきます
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: i-go-to-university
+    choices:
+      - text: I go to university.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 大学に行きます。'
+    answers:
+      - I go to university.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: i-go-to-airport
+    prompt: 'Build this sentence: I go to airport. (polite)'
+    answers:
+      - 空港に行きます
+      - 空港にいきます
+      - くうこうに行きます
+      - くうこうにいきます
+      - 空港へ行きます
+      - 空港へいきます
+      - くうこうへ行きます
+      - くうこうへいきます
+    tiles:
+      - { text: 空港, reading: くうこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: i-go-to-airport
+    answers:
+      - 空港に行きます
+      - 空港にいきます
+      - くうこうに行きます
+      - くうこうにいきます
+      - 空港へ行きます
+      - 空港へいきます
+      - くうこうへ行きます
+      - くうこうへいきます
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: i-go-to-airport
+    choices:
+      - text: I go to airport.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 空港に行きます。'
+    answers:
+      - I go to airport.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: i-go-to-port
+    prompt: 'Build this sentence: I go to port. (polite)'
+    answers:
+      - 港に行きます
+      - 港にいきます
+      - みなとに行きます
+      - みなとにいきます
+      - 港へ行きます
+      - 港へいきます
+      - みなとへ行きます
+      - みなとへいきます
+    tiles:
+      - { text: 港, reading: みなと, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: i-go-to-port
+    answers:
+      - 港に行きます
+      - 港にいきます
+      - みなとに行きます
+      - みなとにいきます
+      - 港へ行きます
+      - 港へいきます
+      - みなとへ行きます
+      - みなとへいきます
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: i-go-to-port
+    choices:
+      - text: I go to port.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 港に行きます。'
+    answers:
+      - I go to port.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: i-go-to-market
+    prompt: 'Build this sentence: I go to market. (polite)'
+    answers:
+      - 市場に行きます
+      - 市場にいきます
+      - いちばに行きます
+      - いちばにいきます
+      - 市場へ行きます
+      - 市場へいきます
+      - いちばへ行きます
+      - いちばへいきます
+    tiles:
+      - { text: 市場, reading: いちば, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: i-go-to-market
+    answers:
+      - 市場に行きます
+      - 市場にいきます
+      - いちばに行きます
+      - いちばにいきます
+      - 市場へ行きます
+      - 市場へいきます
+      - いちばへ行きます
+      - いちばへいきます
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: i-go-to-market
+    choices:
+      - text: I go to market.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 市場に行きます。'
+    answers:
+      - I go to market.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: i-go-to-theater
+    prompt: 'Build this sentence: I go to theater. (polite)'
+    answers:
+      - 劇場に行きます
+      - 劇場にいきます
+      - げきじょうに行きます
+      - げきじょうにいきます
+      - 劇場へ行きます
+      - 劇場へいきます
+      - げきじょうへ行きます
+      - げきじょうへいきます
+    tiles:
+      - { text: 劇場, reading: げきじょう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: i-go-to-theater
+    answers:
+      - 劇場に行きます
+      - 劇場にいきます
+      - げきじょうに行きます
+      - げきじょうにいきます
+      - 劇場へ行きます
+      - 劇場へいきます
+      - げきじょうへ行きます
+      - げきじょうへいきます
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: i-go-to-theater
+    choices:
+      - text: I go to theater.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 劇場に行きます。'
+    answers:
+      - I go to theater.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: i-go-to-cinema
+    prompt: 'Build this sentence: I go to cinema. (polite)'
+    answers:
+      - 映画館に行きます
+      - 映画館にいきます
+      - えいがかんに行きます
+      - えいがかんにいきます
+      - 映画館へ行きます
+      - 映画館へいきます
+      - えいがかんへ行きます
+      - えいがかんへいきます
+    tiles:
+      - { text: 映画館, reading: えいがかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: i-go-to-cinema
+    answers:
+      - 映画館に行きます
+      - 映画館にいきます
+      - えいがかんに行きます
+      - えいがかんにいきます
+      - 映画館へ行きます
+      - 映画館へいきます
+      - えいがかんへ行きます
+      - えいがかんへいきます
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: i-go-to-cinema
+    choices:
+      - text: I go to cinema.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 映画館に行きます。'
+    answers:
+      - I go to cinema.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: i-go-to-museum
+    prompt: 'Build this sentence: I go to museum. (polite)'
+    answers:
+      - 博物館に行きます
+      - 博物館にいきます
+      - はくぶつかんに行きます
+      - はくぶつかんにいきます
+      - 博物館へ行きます
+      - 博物館へいきます
+      - はくぶつかんへ行きます
+      - はくぶつかんへいきます
+    tiles:
+      - { text: 博物館, reading: はくぶつかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: i-go-to-museum
+    answers:
+      - 博物館に行きます
+      - 博物館にいきます
+      - はくぶつかんに行きます
+      - はくぶつかんにいきます
+      - 博物館へ行きます
+      - 博物館へいきます
+      - はくぶつかんへ行きます
+      - はくぶつかんへいきます
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: i-go-to-museum
+    choices:
+      - text: I go to museum.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 博物館に行きます。'
+    answers:
+      - I go to museum.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: i-go-to-zoo
+    prompt: 'Build this sentence: I go to zoo. (polite)'
+    answers:
+      - 動物園に行きます
+      - 動物園にいきます
+      - どうぶつえんに行きます
+      - どうぶつえんにいきます
+      - 動物園へ行きます
+      - 動物園へいきます
+      - どうぶつえんへ行きます
+      - どうぶつえんへいきます
+    tiles:
+      - { text: 動物園, reading: どうぶつえん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: i-go-to-zoo
+    answers:
+      - 動物園に行きます
+      - 動物園にいきます
+      - どうぶつえんに行きます
+      - どうぶつえんにいきます
+      - 動物園へ行きます
+      - 動物園へいきます
+      - どうぶつえんへ行きます
+      - どうぶつえんへいきます

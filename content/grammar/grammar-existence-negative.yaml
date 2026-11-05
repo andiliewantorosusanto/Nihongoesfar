@@ -1,0 +1,1008 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-existence-negative
+  kind: grammar
+  note:
+    The negative of あります is ありません; the negative of います is いません. 時間がありません means there is no time / I do not
+    have time. 私は学生じゃありません instead negates the noun predicate “student”.
+  tags:
+    - Grammar
+    - existence-negative
+  level: N5
+  title: 'Negative existence: ありません・いません'
+  topic: Sentence building
+  lesson:
+    goal: Say that something or someone is absent.
+    group: Negatives and past
+    order: 18
+    recap: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+    examples:
+      - tokens:
+          - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: ありません, reading: ありません, wordClass: predicate }
+        meaning: There is no book.
+        reading: ほんがありません。
+        japanese: 本がありません。
+        translationTokens:
+          - { role: predicate, text: 'There is no ' }
+          - { role: subject, text: book. }
+      - tokens:
+          - { role: subject, text: 机, reading: つくえ, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: ありません, reading: ありません, wordClass: predicate }
+        meaning: There is no desk.
+        reading: つくえがありません。
+        japanese: 机がありません。
+        translationTokens:
+          - { role: predicate, text: 'There is no ' }
+          - { role: subject, text: desk. }
+      - tokens:
+          - { role: subject, text: 猫, reading: ねこ, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: いません, reading: いません, wordClass: predicate }
+        meaning: There is no cat.
+        reading: ねこがいません。
+        japanese: 猫がいません。
+        translationTokens:
+          - { role: predicate, text: 'There is no ' }
+          - { role: subject, text: cat. }
+    comparison: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+    vocabulary:
+      - text: 本
+        meaning: book
+        reading: ほん
+      - text: 机
+        meaning: desk
+        reading: つくえ
+      - text: 猫
+        meaning: cat
+        reading: ねこ
+      - text: 先生
+        meaning: teacher
+        reading: せんせい
+    prerequisites:
+      - grammar-arimasu
+      - grammar-imasu
+  meaning: I do not have time.
+  reading: じかんがありません。
+  examples:
+    - tokens:
+        - { role: subject, text: 時間, reading: じかん, wordClass: noun }
+        - { role: particle, text: が, reading: が, wordClass: subject particle }
+        - {
+            role: predicate,
+            text: ありません,
+            reading: ありません,
+            wordClass: negative existence verb,
+          }
+      meaning: I do not have time.
+      reading: じかんがありません。
+      japanese: 時間がありません。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: 'do not have ', implicit: false }
+        - { role: subject, text: time., implicit: false }
+  exercise:
+    tiles:
+      - 時間
+      - が
+      - ありません
+    prompt: 'Build: “I do not have time.” Use 時間が.'
+    answers:
+      - 時間がありません
+      - じかんがありません
+    explanation:
+      The negative of あります is ありません; the negative of います is いません. 時間がありません means there is no time / I
+      do not have time. 私は学生じゃありません instead negates the noun predicate “student”.
+  japanese: 時間がありません。
+sentences:
+  there-is-no-book:
+    text: 本がありません。
+    tiles:
+      - { text: 本, reading: ほん }
+      - { text: が, reading: が }
+      - { text: ありません, reading: ありません }
+    tokens:
+      - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: ありません, reading: ありません, wordClass: predicate }
+    meaning: There is no book.
+    reading: ほんがありません。
+    translationTokens:
+      - { role: predicate, text: 'There is no ' }
+      - { role: subject, text: book. }
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+  there-is-no-desk:
+    text: 机がありません。
+    tiles:
+      - { text: 机, reading: つくえ }
+      - { text: が, reading: が }
+      - { text: ありません, reading: ありません }
+    tokens:
+      - { role: subject, text: 机, reading: つくえ, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: ありません, reading: ありません, wordClass: predicate }
+    meaning: There is no desk.
+    reading: つくえがありません。
+    translationTokens:
+      - { role: predicate, text: 'There is no ' }
+      - { role: subject, text: desk. }
+    form: polite
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+  there-is-no-cat:
+    text: 猫がいません。
+    tiles:
+      - { text: 猫, reading: ねこ }
+      - { text: が, reading: が }
+      - { text: いません, reading: いません }
+    tokens:
+      - { role: subject, text: 猫, reading: ねこ, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: いません, reading: いません, wordClass: predicate }
+    meaning: There is no cat.
+    reading: ねこがいません。
+    translationTokens:
+      - { role: predicate, text: 'There is no ' }
+      - { role: subject, text: cat. }
+    form: polite
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+  there-is-no-teacher:
+    text: 先生がいません。
+    tiles:
+      - { text: 先生, reading: せんせい }
+      - { text: が, reading: が }
+      - { text: いません, reading: いません }
+    tokens:
+      - { role: subject, text: 先生, reading: せんせい, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: いません, reading: いません, wordClass: predicate }
+    meaning: There is no teacher.
+    reading: せんせいがいません。
+    translationTokens:
+      - { role: predicate, text: 'There is no ' }
+      - { role: subject, text: teacher. }
+    form: polite
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+  there-is-no-magazine:
+    text: 雑誌がありません。
+    reading: ざっしがありません。
+    meaning: There is no magazine.
+    tiles:
+      - { text: 雑誌, reading: ざっし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 雑誌, reading: ざっし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is no ', role: predicate }
+      - { text: magazine., role: subject }
+    form: polite
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+  there-is-no-newspaper:
+    text: 新聞がありません。
+    reading: しんぶんがありません。
+    meaning: There is no newspaper.
+    tiles:
+      - { text: 新聞, reading: しんぶん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 新聞, reading: しんぶん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is no ', role: predicate }
+      - { text: newspaper., role: subject }
+    form: polite
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+  there-is-no-dictionary:
+    text: 辞書がありません。
+    reading: じしょがありません。
+    meaning: There is no dictionary.
+    tiles:
+      - { text: 辞書, reading: じしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 辞書, reading: じしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is no ', role: predicate }
+      - { text: dictionary., role: subject }
+    form: polite
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+  there-is-no-novel:
+    text: 小説がありません。
+    reading: しょうせつがありません。
+    meaning: There is no novel.
+    tiles:
+      - { text: 小説, reading: しょうせつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 小説, reading: しょうせつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is no ', role: predicate }
+      - { text: novel., role: subject }
+    form: polite
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+  there-is-no-comic:
+    text: 漫画がありません。
+    reading: まんががありません。
+    meaning: There is no comic.
+    tiles:
+      - { text: 漫画, reading: まんが, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 漫画, reading: まんが, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is no ', role: predicate }
+      - { text: comic., role: subject }
+    form: polite
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+  there-is-no-textbook:
+    text: 教科書がありません。
+    reading: きょうかしょがありません。
+    meaning: There is no textbook.
+    tiles:
+      - { text: 教科書, reading: きょうかしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 教科書, reading: きょうかしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is no ', role: predicate }
+      - { text: textbook., role: subject }
+    form: polite
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+  there-is-no-picture-book:
+    text: 絵本がありません。
+    reading: えほんがありません。
+    meaning: There is no picture book.
+    tiles:
+      - { text: 絵本, reading: えほん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 絵本, reading: えほん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is no ', role: predicate }
+      - { text: picture book., role: subject }
+    form: polite
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+  there-is-no-letter:
+    text: 手紙がありません。
+    reading: てがみがありません。
+    meaning: There is no letter.
+    tiles:
+      - { text: 手紙, reading: てがみ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 手紙, reading: てがみ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is no ', role: predicate }
+      - { text: letter., role: subject }
+    form: polite
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+  there-is-no-diary:
+    text: 日記がありません。
+    reading: にっきがありません。
+    meaning: There is no diary.
+    tiles:
+      - { text: 日記, reading: にっき, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 日記, reading: にっき, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is no ', role: predicate }
+      - { text: diary., role: subject }
+    form: polite
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+  there-is-no-article:
+    text: 記事がありません。
+    reading: きじがありません。
+    meaning: There is no article.
+    tiles:
+      - { text: 記事, reading: きじ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 記事, reading: きじ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is no ', role: predicate }
+      - { text: article., role: subject }
+    form: polite
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+  there-is-no-car:
+    text: 車がありません。
+    reading: くるまがありません。
+    meaning: There is no car.
+    tiles:
+      - { text: 車, reading: くるま, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 車, reading: くるま, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is no ', role: predicate }
+      - { text: car., role: subject }
+    form: polite
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+  there-is-no-clock:
+    text: 時計がありません。
+    reading: とけいがありません。
+    meaning: There is no clock.
+    tiles:
+      - { text: 時計, reading: とけい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 時計, reading: とけい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is no ', role: predicate }
+      - { text: clock., role: subject }
+    form: polite
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+  there-is-no-bag:
+    text: かばんがありません。
+    reading: かばんがありません。
+    meaning: There is no bag.
+    tiles:
+      - { text: かばん, reading: かばん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: かばん, reading: かばん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is no ', role: predicate }
+      - { text: bag., role: subject }
+    form: polite
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+  there-is-no-chair:
+    text: 椅子がありません。
+    reading: いすがありません。
+    meaning: There is no chair.
+    tiles:
+      - { text: 椅子, reading: いす, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 椅子, reading: いす, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is no ', role: predicate }
+      - { text: chair., role: subject }
+    form: polite
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+  there-is-no-bicycle:
+    text: 自転車がありません。
+    reading: じてんしゃがありません。
+    meaning: There is no bicycle.
+    tiles:
+      - { text: 自転車, reading: じてんしゃ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 自転車, reading: じてんしゃ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is no ', role: predicate }
+      - { text: bicycle., role: subject }
+    form: polite
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+  there-is-no-shoe:
+    text: 靴がありません。
+    reading: くつがありません。
+    meaning: There is no shoe.
+    tiles:
+      - { text: 靴, reading: くつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 靴, reading: くつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is no ', role: predicate }
+      - { text: shoe., role: subject }
+    form: polite
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+  there-is-no-umbrella:
+    text: 傘がありません。
+    reading: かさがありません。
+    meaning: There is no umbrella.
+    tiles:
+      - { text: 傘, reading: かさ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 傘, reading: かさ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is no ', role: predicate }
+      - { text: umbrella., role: subject }
+    form: polite
+    hint: The desk is a thing, so negate the inanimate existence verb.
+    explanation: ありません negates あります; いません negates います. Noun + じゃありません means “is not”, not “is absent”.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: there-is-no-book
+    choices:
+      - text: There is no book.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+    answers:
+      - There is no book.
+  - id: pattern
+    type: pattern-choice
+    sentence: there-is-no-book
+    choices:
+      - sentence: there-is-no-book
+      - text: 本がじゃありません。
+        tiles:
+          - { text: 本, reading: ほん }
+          - { text: が, reading: が }
+          - { text: じゃありません, reading: じゃありません }
+        tokens:
+          - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: じゃありません, reading: じゃありません, wordClass: predicate }
+        meaning: There is a book.
+        reading: ほんがじゃありません。
+    prompt: 'Choose the correct Japanese: There is no book.'
+    answers:
+      - 本がありません
+      - ほんがありません
+  - id: gap
+    type: gap
+    sentence: there-is-no-desk
+    answers:
+      - ありません
+      - ありません
+    context:
+      text: 机が___。
+      tokens:
+        - { role: subject, text: 机, reading: つくえ, wordClass: noun phrase }
+        - { role: particle, text: が, reading: が, wordClass: particle }
+        - { role: predicate, text: ___, reading: ___, wordClass: predicate }
+      reading: つくえが___。
+  - id: tiles
+    type: tiles
+    sentence: there-is-no-desk
+    prompt: 'Build this sentence: There is no desk. (polite)'
+    answers:
+      - 机がありません
+      - つくえがありません
+    tiles:
+      - { role: subject, text: 机, reading: つくえ, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: ありません, reading: ありません, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: there-is-no-cat
+    answers:
+      - 猫がいません
+      - ねこがいません
+  - id: alternate
+    type: typing
+    sentence: there-is-no-teacher
+    alternate: true
+    prompt: 'One more example: There is no teacher. (polite)'
+    answers:
+      - 先生がいません
+      - せんせいがいません
+  - id: extra-1-tiles
+    type: tiles
+    sentence: there-is-no-magazine
+    prompt: 'Build this sentence: There is no magazine. (polite)'
+    answers:
+      - 雑誌がありません
+      - ざっしがありません
+    tiles:
+      - { text: 雑誌, reading: ざっし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: there-is-no-magazine
+    answers:
+      - 雑誌がありません
+      - ざっしがありません
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: there-is-no-magazine
+    choices:
+      - text: There is no magazine.
+        reading: ''
+      - text: There is no book.
+        reading: ''
+    prompt: 'Choose the meaning: 雑誌がありません。'
+    answers:
+      - There is no magazine.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: there-is-no-newspaper
+    prompt: 'Build this sentence: There is no newspaper. (polite)'
+    answers:
+      - 新聞がありません
+      - しんぶんがありません
+    tiles:
+      - { text: 新聞, reading: しんぶん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: there-is-no-newspaper
+    answers:
+      - 新聞がありません
+      - しんぶんがありません
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: there-is-no-newspaper
+    choices:
+      - text: There is no newspaper.
+        reading: ''
+      - text: There is no book.
+        reading: ''
+    prompt: 'Choose the meaning: 新聞がありません。'
+    answers:
+      - There is no newspaper.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: there-is-no-dictionary
+    prompt: 'Build this sentence: There is no dictionary. (polite)'
+    answers:
+      - 辞書がありません
+      - じしょがありません
+    tiles:
+      - { text: 辞書, reading: じしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: there-is-no-dictionary
+    answers:
+      - 辞書がありません
+      - じしょがありません
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: there-is-no-dictionary
+    choices:
+      - text: There is no dictionary.
+        reading: ''
+      - text: There is no book.
+        reading: ''
+    prompt: 'Choose the meaning: 辞書がありません。'
+    answers:
+      - There is no dictionary.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: there-is-no-novel
+    prompt: 'Build this sentence: There is no novel. (polite)'
+    answers:
+      - 小説がありません
+      - しょうせつがありません
+    tiles:
+      - { text: 小説, reading: しょうせつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: there-is-no-novel
+    answers:
+      - 小説がありません
+      - しょうせつがありません
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: there-is-no-novel
+    choices:
+      - text: There is no novel.
+        reading: ''
+      - text: There is no book.
+        reading: ''
+    prompt: 'Choose the meaning: 小説がありません。'
+    answers:
+      - There is no novel.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: there-is-no-comic
+    prompt: 'Build this sentence: There is no comic. (polite)'
+    answers:
+      - 漫画がありません
+      - まんががありません
+    tiles:
+      - { text: 漫画, reading: まんが, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: there-is-no-comic
+    answers:
+      - 漫画がありません
+      - まんががありません
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: there-is-no-comic
+    choices:
+      - text: There is no comic.
+        reading: ''
+      - text: There is no book.
+        reading: ''
+    prompt: 'Choose the meaning: 漫画がありません。'
+    answers:
+      - There is no comic.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: there-is-no-textbook
+    prompt: 'Build this sentence: There is no textbook. (polite)'
+    answers:
+      - 教科書がありません
+      - きょうかしょがありません
+    tiles:
+      - { text: 教科書, reading: きょうかしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: there-is-no-textbook
+    answers:
+      - 教科書がありません
+      - きょうかしょがありません
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: there-is-no-textbook
+    choices:
+      - text: There is no textbook.
+        reading: ''
+      - text: There is no book.
+        reading: ''
+    prompt: 'Choose the meaning: 教科書がありません。'
+    answers:
+      - There is no textbook.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: there-is-no-picture-book
+    prompt: 'Build this sentence: There is no picture book. (polite)'
+    answers:
+      - 絵本がありません
+      - えほんがありません
+    tiles:
+      - { text: 絵本, reading: えほん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: there-is-no-picture-book
+    answers:
+      - 絵本がありません
+      - えほんがありません
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: there-is-no-picture-book
+    choices:
+      - text: There is no picture book.
+        reading: ''
+      - text: There is no book.
+        reading: ''
+    prompt: 'Choose the meaning: 絵本がありません。'
+    answers:
+      - There is no picture book.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: there-is-no-letter
+    prompt: 'Build this sentence: There is no letter. (polite)'
+    answers:
+      - 手紙がありません
+      - てがみがありません
+    tiles:
+      - { text: 手紙, reading: てがみ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: there-is-no-letter
+    answers:
+      - 手紙がありません
+      - てがみがありません
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: there-is-no-letter
+    choices:
+      - text: There is no letter.
+        reading: ''
+      - text: There is no book.
+        reading: ''
+    prompt: 'Choose the meaning: 手紙がありません。'
+    answers:
+      - There is no letter.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: there-is-no-diary
+    prompt: 'Build this sentence: There is no diary. (polite)'
+    answers:
+      - 日記がありません
+      - にっきがありません
+    tiles:
+      - { text: 日記, reading: にっき, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: there-is-no-diary
+    answers:
+      - 日記がありません
+      - にっきがありません
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: there-is-no-diary
+    choices:
+      - text: There is no diary.
+        reading: ''
+      - text: There is no book.
+        reading: ''
+    prompt: 'Choose the meaning: 日記がありません。'
+    answers:
+      - There is no diary.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: there-is-no-article
+    prompt: 'Build this sentence: There is no article. (polite)'
+    answers:
+      - 記事がありません
+      - きじがありません
+    tiles:
+      - { text: 記事, reading: きじ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: there-is-no-article
+    answers:
+      - 記事がありません
+      - きじがありません
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: there-is-no-article
+    choices:
+      - text: There is no article.
+        reading: ''
+      - text: There is no book.
+        reading: ''
+    prompt: 'Choose the meaning: 記事がありません。'
+    answers:
+      - There is no article.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: there-is-no-car
+    prompt: 'Build this sentence: There is no car. (polite)'
+    answers:
+      - 車がありません
+      - くるまがありません
+    tiles:
+      - { text: 車, reading: くるま, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: there-is-no-car
+    answers:
+      - 車がありません
+      - くるまがありません
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: there-is-no-car
+    choices:
+      - text: There is no car.
+        reading: ''
+      - text: There is no book.
+        reading: ''
+    prompt: 'Choose the meaning: 車がありません。'
+    answers:
+      - There is no car.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: there-is-no-clock
+    prompt: 'Build this sentence: There is no clock. (polite)'
+    answers:
+      - 時計がありません
+      - とけいがありません
+    tiles:
+      - { text: 時計, reading: とけい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: there-is-no-clock
+    answers:
+      - 時計がありません
+      - とけいがありません
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: there-is-no-clock
+    choices:
+      - text: There is no clock.
+        reading: ''
+      - text: There is no book.
+        reading: ''
+    prompt: 'Choose the meaning: 時計がありません。'
+    answers:
+      - There is no clock.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: there-is-no-bag
+    prompt: 'Build this sentence: There is no bag. (polite)'
+    answers:
+      - かばんがありません
+    tiles:
+      - { text: かばん, reading: かばん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: there-is-no-bag
+    answers:
+      - かばんがありません
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: there-is-no-bag
+    choices:
+      - text: There is no bag.
+        reading: ''
+      - text: There is no book.
+        reading: ''
+    prompt: 'Choose the meaning: かばんがありません。'
+    answers:
+      - There is no bag.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: there-is-no-chair
+    prompt: 'Build this sentence: There is no chair. (polite)'
+    answers:
+      - 椅子がありません
+      - いすがありません
+    tiles:
+      - { text: 椅子, reading: いす, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: there-is-no-chair
+    answers:
+      - 椅子がありません
+      - いすがありません
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: there-is-no-chair
+    choices:
+      - text: There is no chair.
+        reading: ''
+      - text: There is no book.
+        reading: ''
+    prompt: 'Choose the meaning: 椅子がありません。'
+    answers:
+      - There is no chair.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: there-is-no-bicycle
+    prompt: 'Build this sentence: There is no bicycle. (polite)'
+    answers:
+      - 自転車がありません
+      - じてんしゃがありません
+    tiles:
+      - { text: 自転車, reading: じてんしゃ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: there-is-no-bicycle
+    answers:
+      - 自転車がありません
+      - じてんしゃがありません
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: there-is-no-bicycle
+    choices:
+      - text: There is no bicycle.
+        reading: ''
+      - text: There is no book.
+        reading: ''
+    prompt: 'Choose the meaning: 自転車がありません。'
+    answers:
+      - There is no bicycle.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: there-is-no-shoe
+    prompt: 'Build this sentence: There is no shoe. (polite)'
+    answers:
+      - 靴がありません
+      - くつがありません
+    tiles:
+      - { text: 靴, reading: くつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: there-is-no-shoe
+    answers:
+      - 靴がありません
+      - くつがありません
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: there-is-no-shoe
+    choices:
+      - text: There is no shoe.
+        reading: ''
+      - text: There is no book.
+        reading: ''
+    prompt: 'Choose the meaning: 靴がありません。'
+    answers:
+      - There is no shoe.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: there-is-no-umbrella
+    prompt: 'Build this sentence: There is no umbrella. (polite)'
+    answers:
+      - 傘がありません
+      - かさがありません
+    tiles:
+      - { text: 傘, reading: かさ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: there-is-no-umbrella
+    answers:
+      - 傘がありません
+      - かさがありません

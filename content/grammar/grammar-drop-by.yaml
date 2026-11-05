@@ -1,0 +1,1185 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-drop-by
+  kind: grammar
+  title: 'Stopping by: 〜に寄る'
+  japanese: 店に寄ります。
+  reading: みせによります。
+  meaning: I stop by the shop.
+  level: N5
+  topic: Passing places
+  tags:
+    - Grammar
+    - drop-by
+  note:
+    Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means passing
+    along or by; よる means stopping there.
+  examples:
+    - japanese: 店に寄ります。
+      reading: みせによります。
+      meaning: I stop by the shop.
+      tokens:
+        - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+        - { text: に, reading: に, role: particle, wordClass: particle }
+        - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+      translationTokens:
+        - { text: 'I ', role: implicit, implicit: true }
+        - { text: stop by, role: predicate }
+        - { text: ' the shop.', role: modifier }
+    - japanese: 銀行に寄って帰ります。
+      reading: ぎんこうによってかえります。
+      meaning: I stop by the bank and then go home.
+      tokens:
+        - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+        - { text: に, reading: に, role: particle, wordClass: particle }
+        - { text: 寄って帰ります, reading: よってかえります, role: predicate, wordClass: predicate }
+      translationTokens:
+        - { text: 'I ', role: implicit, implicit: true }
+        - { text: stop by, role: predicate }
+        - { text: ' the bank', role: modifier }
+        - { text: ' and then go home.', role: predicate }
+    - japanese: 友達の家に寄ります。
+      reading: ともだちのいえによります。
+      meaning: I drop by my friend's house.
+      tokens:
+        - { text: 友達, reading: ともだち, role: modifier, wordClass: modifier }
+        - { text: の, reading: の, role: particle, wordClass: particle }
+        - { text: 家, reading: いえ, role: modifier, wordClass: modifier }
+        - { text: に, reading: に, role: particle, wordClass: particle }
+        - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+      translationTokens:
+        - { text: 'I ', role: implicit, implicit: true }
+        - { text: drop by, role: predicate }
+        - { text: " my friend's house.", role: modifier }
+  lesson:
+    order: 30
+    group: Passing places
+    goal: Say you stop by a place on the way.
+    prerequisites:
+      - grammar-destination
+      - grammar-te-sequence
+    recap:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means passing
+      along or by; よる means stopping there.
+    comparison:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+    examples:
+      - japanese: 店に寄ります。
+        reading: みせによります。
+        meaning: I stop by the shop.
+        tokens:
+          - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+          - { text: に, reading: に, role: particle, wordClass: particle }
+          - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+        translationTokens:
+          - { text: 'I ', role: implicit, implicit: true }
+          - { text: stop by, role: predicate }
+          - { text: ' the shop.', role: modifier }
+      - japanese: 銀行に寄って帰ります。
+        reading: ぎんこうによってかえります。
+        meaning: I stop by the bank and then go home.
+        tokens:
+          - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+          - { text: に, reading: に, role: particle, wordClass: particle }
+          - {
+              text: 寄って帰ります,
+              reading: よってかえります,
+              role: predicate,
+              wordClass: predicate,
+            }
+        translationTokens:
+          - { text: 'I ', role: implicit, implicit: true }
+          - { text: stop by, role: predicate }
+          - { text: ' the bank', role: modifier }
+          - { text: ' and then go home.', role: predicate }
+      - japanese: 友達の家に寄ります。
+        reading: ともだちのいえによります。
+        meaning: I drop by my friend's house.
+        tokens:
+          - { text: 友達, reading: ともだち, role: modifier, wordClass: modifier }
+          - { text: の, reading: の, role: particle, wordClass: particle }
+          - { text: 家, reading: いえ, role: modifier, wordClass: modifier }
+          - { text: に, reading: に, role: particle, wordClass: particle }
+          - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+        translationTokens:
+          - { text: 'I ', role: implicit, implicit: true }
+          - { text: drop by, role: predicate }
+          - { text: " my friend's house.", role: modifier }
+    vocabulary:
+      - text: 帰ります
+        reading: かえります
+        role: predicate
+        wordClass: predicate
+        meaning: return
+      - text: 家
+        reading: いえ
+        role: modifier
+        wordClass: modifier
+        meaning: home / house
+sentences:
+  i-stop-by-the-shop:
+    text: 店に寄ります。
+    reading: みせによります。
+    meaning: I stop by the shop.
+    tiles:
+      - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: stop by, role: predicate }
+      - { text: ' the shop.', role: modifier }
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+  i-stop-by-the-bank-and-then-go-home:
+    text: 銀行に寄って帰ります。
+    reading: ぎんこうによってかえります。
+    meaning: I stop by the bank and then go home.
+    tiles:
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄って, reading: よって, role: predicate, wordClass: predicate }
+      - { text: 帰ります, reading: かえります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄って帰ります, reading: よってかえります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: stop by, role: predicate }
+      - { text: ' the bank', role: modifier }
+      - { text: ' and then go home.', role: predicate }
+    form: polite
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+  i-drop-by-my-friend-s-house:
+    text: 友達の家に寄ります。
+    reading: ともだちのいえによります。
+    meaning: I drop by my friend's house.
+    tiles:
+      - { text: 友達, reading: ともだち, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 家, reading: いえ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 友達, reading: ともだち, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 家, reading: いえ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: drop by, role: predicate }
+      - { text: " my friend's house.", role: modifier }
+    form: polite
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+  i-stop-by-the-convenience-store:
+    text: コンビニに寄ります。
+    reading: こんびにによります。
+    meaning: I stop by the convenience store.
+    tiles:
+      - { text: コンビニ, reading: こんびに, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: コンビニ, reading: こんびに, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: stop by, role: predicate }
+      - { text: ' the convenience store.', role: modifier }
+    form: polite
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+  i-stop-by-the-school:
+    text: 学校に寄ります。
+    reading: がっこうによります。
+    meaning: I stop by the school.
+    tiles:
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: stop by, role: predicate }
+      - { text: ' the school.', role: modifier }
+    form: polite
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+  i-stop-by-the-library:
+    text: 図書館に寄ります。
+    reading: としょかんによります。
+    meaning: I stop by the library.
+    tiles:
+      - { text: 図書館, reading: としょかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 図書館, reading: としょかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: stop by, role: predicate }
+      - { text: ' the library.', role: modifier }
+    form: polite
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+  i-stop-by-the-bank:
+    text: 銀行に寄ります。
+    reading: ぎんこうによります。
+    meaning: I stop by the bank.
+    tiles:
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: stop by, role: predicate }
+      - { text: ' the bank.', role: modifier }
+    form: polite
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+  i-stop-by-the-station:
+    text: 駅に寄ります。
+    reading: えきによります。
+    meaning: I stop by the station.
+    tiles:
+      - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: stop by, role: predicate }
+      - { text: ' the station.', role: modifier }
+    form: polite
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+  i-stop-by-the-park:
+    text: 公園に寄ります。
+    reading: こうえんによります。
+    meaning: I stop by the park.
+    tiles:
+      - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: stop by, role: predicate }
+      - { text: ' the park.', role: modifier }
+    form: polite
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+  i-stop-by-the-hospital:
+    text: 病院に寄ります。
+    reading: びょういんによります。
+    meaning: I stop by the hospital.
+    tiles:
+      - { text: 病院, reading: びょういん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 病院, reading: びょういん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: stop by, role: predicate }
+      - { text: ' the hospital.', role: modifier }
+    form: polite
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+  i-stop-by-the-office:
+    text: 会社に寄ります。
+    reading: かいしゃによります。
+    meaning: I stop by the office.
+    tiles:
+      - { text: 会社, reading: かいしゃ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 会社, reading: かいしゃ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: stop by, role: predicate }
+      - { text: ' the office.', role: modifier }
+    form: polite
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+  i-stop-by-the-post-office:
+    text: 郵便局に寄ります。
+    reading: ゆうびんきょくによります。
+    meaning: I stop by the post office.
+    tiles:
+      - { text: 郵便局, reading: ゆうびんきょく, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 郵便局, reading: ゆうびんきょく, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: stop by, role: predicate }
+      - { text: ' the post office.', role: modifier }
+    form: polite
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+  i-stop-by-the-art-museum:
+    text: 美術館に寄ります。
+    reading: びじゅつかんによります。
+    meaning: I stop by the art museum.
+    tiles:
+      - { text: 美術館, reading: びじゅつかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 美術館, reading: びじゅつかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: stop by, role: predicate }
+      - { text: ' the art museum.', role: modifier }
+    form: polite
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+  i-stop-by-the-supermarket:
+    text: スーパーに寄ります。
+    reading: すーぱーによります。
+    meaning: I stop by the supermarket.
+    tiles:
+      - { text: スーパー, reading: すーぱー, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: スーパー, reading: すーぱー, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: stop by, role: predicate }
+      - { text: ' the supermarket.', role: modifier }
+    form: polite
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+  i-stop-by-the-university:
+    text: 大学に寄ります。
+    reading: だいがくによります。
+    meaning: I stop by the university.
+    tiles:
+      - { text: 大学, reading: だいがく, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 大学, reading: だいがく, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: stop by, role: predicate }
+      - { text: ' the university.', role: modifier }
+    form: polite
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+  i-stop-by-the-airport:
+    text: 空港に寄ります。
+    reading: くうこうによります。
+    meaning: I stop by the airport.
+    tiles:
+      - { text: 空港, reading: くうこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 空港, reading: くうこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: stop by, role: predicate }
+      - { text: ' the airport.', role: modifier }
+    form: polite
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+  i-stop-by-the-port:
+    text: 港に寄ります。
+    reading: みなとによります。
+    meaning: I stop by the port.
+    tiles:
+      - { text: 港, reading: みなと, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 港, reading: みなと, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: stop by, role: predicate }
+      - { text: ' the port.', role: modifier }
+    form: polite
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+  i-stop-by-the-market:
+    text: 市場に寄ります。
+    reading: いちばによります。
+    meaning: I stop by the market.
+    tiles:
+      - { text: 市場, reading: いちば, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 市場, reading: いちば, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: stop by, role: predicate }
+      - { text: ' the market.', role: modifier }
+    form: polite
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+  i-stop-by-the-theater:
+    text: 劇場に寄ります。
+    reading: げきじょうによります。
+    meaning: I stop by the theater.
+    tiles:
+      - { text: 劇場, reading: げきじょう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 劇場, reading: げきじょう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: stop by, role: predicate }
+      - { text: ' the theater.', role: modifier }
+    form: polite
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+  i-stop-by-the-cinema:
+    text: 映画館に寄ります。
+    reading: えいがかんによります。
+    meaning: I stop by the cinema.
+    tiles:
+      - { text: 映画館, reading: えいがかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 映画館, reading: えいがかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: stop by, role: predicate }
+      - { text: ' the cinema.', role: modifier }
+    form: polite
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+  i-stop-by-the-museum:
+    text: 博物館に寄ります。
+    reading: はくぶつかんによります。
+    meaning: I stop by the museum.
+    tiles:
+      - { text: 博物館, reading: はくぶつかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 博物館, reading: はくぶつかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: stop by, role: predicate }
+      - { text: ' the museum.', role: modifier }
+    form: polite
+    hint: Use に for the place you stop at.
+    explanation:
+      Use place + に + よる for a short stop or visit. よって connects it to the next action. とおる means
+      passing along or by; よる means stopping there.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-stop-by-the-shop
+    choices:
+      - text: I stop by the shop.
+        reading: ''
+      - text: I pass by the shop.
+        reading: ''
+    answers:
+      - I stop by the shop.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-stop-by-the-shop
+    choices:
+      - sentence: i-stop-by-the-shop
+      - text: 店を寄ります。
+        reading: みせをよります。
+        meaning: I pass by the shop.
+        tiles:
+          - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+        tokens:
+          - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+    prompt: 'Choose the correct Japanese: I stop by the shop.'
+    answers:
+      - 店に寄ります
+      - 店によります
+      - みせに寄ります
+      - みせによります
+  - id: gap
+    type: gap
+    sentence: i-stop-by-the-bank-and-then-go-home
+    answers:
+      - に
+      - に
+    context:
+      tokens:
+        - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+        - { text: ___, reading: ___, role: particle, wordClass: particle }
+        - { text: 寄って帰ります, reading: よってかえります, role: predicate, wordClass: predicate }
+      text: 銀行___寄って帰ります。
+      reading: ぎんこう___よってかえります。
+  - id: tiles
+    type: tiles
+    sentence: i-stop-by-the-bank-and-then-go-home
+    prompt: 'Build this sentence: I stop by the bank and then go home. (polite)'
+    answers:
+      - 銀行に寄って帰ります
+      - 銀行に寄ってかえります
+      - 銀行によって帰ります
+      - 銀行によってかえります
+      - ぎんこうに寄って帰ります
+      - ぎんこうに寄ってかえります
+      - ぎんこうによって帰ります
+      - ぎんこうによってかえります
+    tiles:
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄って, reading: よって, role: predicate, wordClass: predicate }
+      - { text: 帰ります, reading: かえります, role: predicate, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: i-drop-by-my-friend-s-house
+    answers:
+      - 友達の家に寄ります
+      - 友達の家によります
+      - 友達のいえに寄ります
+      - 友達のいえによります
+      - ともだちの家に寄ります
+      - ともだちの家によります
+      - ともだちのいえに寄ります
+      - ともだちのいえによります
+  - id: alternate
+    type: typing
+    sentence: i-stop-by-the-convenience-store
+    alternate: true
+    prompt: 'One more example: I stop by the convenience store. (polite)'
+    answers:
+      - コンビニに寄ります
+      - コンビニによります
+      - こんびにに寄ります
+      - こんびにによります
+  - id: extra-1-tiles
+    type: tiles
+    sentence: i-stop-by-the-school
+    prompt: 'Build this sentence: I stop by the school. (polite)'
+    answers:
+      - 学校に寄ります
+      - 学校によります
+      - がっこうに寄ります
+      - がっこうによります
+    tiles:
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: i-stop-by-the-school
+    answers:
+      - 学校に寄ります
+      - 学校によります
+      - がっこうに寄ります
+      - がっこうによります
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: i-stop-by-the-school
+    choices:
+      - text: I stop by the school.
+        reading: ''
+      - text: I stop by the shop.
+        reading: ''
+    prompt: 'Choose the meaning: 学校に寄ります。'
+    answers:
+      - I stop by the school.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: i-stop-by-the-library
+    prompt: 'Build this sentence: I stop by the library. (polite)'
+    answers:
+      - 図書館に寄ります
+      - 図書館によります
+      - としょかんに寄ります
+      - としょかんによります
+    tiles:
+      - { text: 図書館, reading: としょかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: i-stop-by-the-library
+    answers:
+      - 図書館に寄ります
+      - 図書館によります
+      - としょかんに寄ります
+      - としょかんによります
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: i-stop-by-the-library
+    choices:
+      - text: I stop by the library.
+        reading: ''
+      - text: I stop by the shop.
+        reading: ''
+    prompt: 'Choose the meaning: 図書館に寄ります。'
+    answers:
+      - I stop by the library.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: i-stop-by-the-bank
+    prompt: 'Build this sentence: I stop by the bank. (polite)'
+    answers:
+      - 銀行に寄ります
+      - 銀行によります
+      - ぎんこうに寄ります
+      - ぎんこうによります
+    tiles:
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: i-stop-by-the-bank
+    answers:
+      - 銀行に寄ります
+      - 銀行によります
+      - ぎんこうに寄ります
+      - ぎんこうによります
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: i-stop-by-the-bank
+    choices:
+      - text: I stop by the bank.
+        reading: ''
+      - text: I stop by the shop.
+        reading: ''
+    prompt: 'Choose the meaning: 銀行に寄ります。'
+    answers:
+      - I stop by the bank.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: i-stop-by-the-station
+    prompt: 'Build this sentence: I stop by the station. (polite)'
+    answers:
+      - 駅に寄ります
+      - 駅によります
+      - えきに寄ります
+      - えきによります
+    tiles:
+      - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: i-stop-by-the-station
+    answers:
+      - 駅に寄ります
+      - 駅によります
+      - えきに寄ります
+      - えきによります
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: i-stop-by-the-station
+    choices:
+      - text: I stop by the station.
+        reading: ''
+      - text: I stop by the shop.
+        reading: ''
+    prompt: 'Choose the meaning: 駅に寄ります。'
+    answers:
+      - I stop by the station.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: i-stop-by-the-park
+    prompt: 'Build this sentence: I stop by the park. (polite)'
+    answers:
+      - 公園に寄ります
+      - 公園によります
+      - こうえんに寄ります
+      - こうえんによります
+    tiles:
+      - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: i-stop-by-the-park
+    answers:
+      - 公園に寄ります
+      - 公園によります
+      - こうえんに寄ります
+      - こうえんによります
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: i-stop-by-the-park
+    choices:
+      - text: I stop by the park.
+        reading: ''
+      - text: I stop by the shop.
+        reading: ''
+    prompt: 'Choose the meaning: 公園に寄ります。'
+    answers:
+      - I stop by the park.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: i-stop-by-the-hospital
+    prompt: 'Build this sentence: I stop by the hospital. (polite)'
+    answers:
+      - 病院に寄ります
+      - 病院によります
+      - びょういんに寄ります
+      - びょういんによります
+    tiles:
+      - { text: 病院, reading: びょういん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: i-stop-by-the-hospital
+    answers:
+      - 病院に寄ります
+      - 病院によります
+      - びょういんに寄ります
+      - びょういんによります
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: i-stop-by-the-hospital
+    choices:
+      - text: I stop by the hospital.
+        reading: ''
+      - text: I stop by the shop.
+        reading: ''
+    prompt: 'Choose the meaning: 病院に寄ります。'
+    answers:
+      - I stop by the hospital.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: i-stop-by-the-office
+    prompt: 'Build this sentence: I stop by the office. (polite)'
+    answers:
+      - 会社に寄ります
+      - 会社によります
+      - かいしゃに寄ります
+      - かいしゃによります
+    tiles:
+      - { text: 会社, reading: かいしゃ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: i-stop-by-the-office
+    answers:
+      - 会社に寄ります
+      - 会社によります
+      - かいしゃに寄ります
+      - かいしゃによります
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: i-stop-by-the-office
+    choices:
+      - text: I stop by the office.
+        reading: ''
+      - text: I stop by the shop.
+        reading: ''
+    prompt: 'Choose the meaning: 会社に寄ります。'
+    answers:
+      - I stop by the office.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: i-stop-by-the-post-office
+    prompt: 'Build this sentence: I stop by the post office. (polite)'
+    answers:
+      - 郵便局に寄ります
+      - 郵便局によります
+      - ゆうびんきょくに寄ります
+      - ゆうびんきょくによります
+    tiles:
+      - { text: 郵便局, reading: ゆうびんきょく, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: i-stop-by-the-post-office
+    answers:
+      - 郵便局に寄ります
+      - 郵便局によります
+      - ゆうびんきょくに寄ります
+      - ゆうびんきょくによります
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: i-stop-by-the-post-office
+    choices:
+      - text: I stop by the post office.
+        reading: ''
+      - text: I stop by the shop.
+        reading: ''
+    prompt: 'Choose the meaning: 郵便局に寄ります。'
+    answers:
+      - I stop by the post office.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: i-stop-by-the-art-museum
+    prompt: 'Build this sentence: I stop by the art museum. (polite)'
+    answers:
+      - 美術館に寄ります
+      - 美術館によります
+      - びじゅつかんに寄ります
+      - びじゅつかんによります
+    tiles:
+      - { text: 美術館, reading: びじゅつかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: i-stop-by-the-art-museum
+    answers:
+      - 美術館に寄ります
+      - 美術館によります
+      - びじゅつかんに寄ります
+      - びじゅつかんによります
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: i-stop-by-the-art-museum
+    choices:
+      - text: I stop by the art museum.
+        reading: ''
+      - text: I stop by the shop.
+        reading: ''
+    prompt: 'Choose the meaning: 美術館に寄ります。'
+    answers:
+      - I stop by the art museum.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: i-stop-by-the-supermarket
+    prompt: 'Build this sentence: I stop by the supermarket. (polite)'
+    answers:
+      - スーパーに寄ります
+      - スーパーによります
+      - すーぱーに寄ります
+      - すーぱーによります
+    tiles:
+      - { text: スーパー, reading: すーぱー, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: i-stop-by-the-supermarket
+    answers:
+      - スーパーに寄ります
+      - スーパーによります
+      - すーぱーに寄ります
+      - すーぱーによります
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: i-stop-by-the-supermarket
+    choices:
+      - text: I stop by the supermarket.
+        reading: ''
+      - text: I stop by the shop.
+        reading: ''
+    prompt: 'Choose the meaning: スーパーに寄ります。'
+    answers:
+      - I stop by the supermarket.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: i-stop-by-the-university
+    prompt: 'Build this sentence: I stop by the university. (polite)'
+    answers:
+      - 大学に寄ります
+      - 大学によります
+      - だいがくに寄ります
+      - だいがくによります
+    tiles:
+      - { text: 大学, reading: だいがく, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: i-stop-by-the-university
+    answers:
+      - 大学に寄ります
+      - 大学によります
+      - だいがくに寄ります
+      - だいがくによります
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: i-stop-by-the-university
+    choices:
+      - text: I stop by the university.
+        reading: ''
+      - text: I stop by the shop.
+        reading: ''
+    prompt: 'Choose the meaning: 大学に寄ります。'
+    answers:
+      - I stop by the university.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: i-stop-by-the-airport
+    prompt: 'Build this sentence: I stop by the airport. (polite)'
+    answers:
+      - 空港に寄ります
+      - 空港によります
+      - くうこうに寄ります
+      - くうこうによります
+    tiles:
+      - { text: 空港, reading: くうこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: i-stop-by-the-airport
+    answers:
+      - 空港に寄ります
+      - 空港によります
+      - くうこうに寄ります
+      - くうこうによります
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: i-stop-by-the-airport
+    choices:
+      - text: I stop by the airport.
+        reading: ''
+      - text: I stop by the shop.
+        reading: ''
+    prompt: 'Choose the meaning: 空港に寄ります。'
+    answers:
+      - I stop by the airport.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: i-stop-by-the-port
+    prompt: 'Build this sentence: I stop by the port. (polite)'
+    answers:
+      - 港に寄ります
+      - 港によります
+      - みなとに寄ります
+      - みなとによります
+    tiles:
+      - { text: 港, reading: みなと, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: i-stop-by-the-port
+    answers:
+      - 港に寄ります
+      - 港によります
+      - みなとに寄ります
+      - みなとによります
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: i-stop-by-the-port
+    choices:
+      - text: I stop by the port.
+        reading: ''
+      - text: I stop by the shop.
+        reading: ''
+    prompt: 'Choose the meaning: 港に寄ります。'
+    answers:
+      - I stop by the port.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: i-stop-by-the-market
+    prompt: 'Build this sentence: I stop by the market. (polite)'
+    answers:
+      - 市場に寄ります
+      - 市場によります
+      - いちばに寄ります
+      - いちばによります
+    tiles:
+      - { text: 市場, reading: いちば, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: i-stop-by-the-market
+    answers:
+      - 市場に寄ります
+      - 市場によります
+      - いちばに寄ります
+      - いちばによります
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: i-stop-by-the-market
+    choices:
+      - text: I stop by the market.
+        reading: ''
+      - text: I stop by the shop.
+        reading: ''
+    prompt: 'Choose the meaning: 市場に寄ります。'
+    answers:
+      - I stop by the market.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: i-stop-by-the-theater
+    prompt: 'Build this sentence: I stop by the theater. (polite)'
+    answers:
+      - 劇場に寄ります
+      - 劇場によります
+      - げきじょうに寄ります
+      - げきじょうによります
+    tiles:
+      - { text: 劇場, reading: げきじょう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: i-stop-by-the-theater
+    answers:
+      - 劇場に寄ります
+      - 劇場によります
+      - げきじょうに寄ります
+      - げきじょうによります
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: i-stop-by-the-theater
+    choices:
+      - text: I stop by the theater.
+        reading: ''
+      - text: I stop by the shop.
+        reading: ''
+    prompt: 'Choose the meaning: 劇場に寄ります。'
+    answers:
+      - I stop by the theater.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: i-stop-by-the-cinema
+    prompt: 'Build this sentence: I stop by the cinema. (polite)'
+    answers:
+      - 映画館に寄ります
+      - 映画館によります
+      - えいがかんに寄ります
+      - えいがかんによります
+    tiles:
+      - { text: 映画館, reading: えいがかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: i-stop-by-the-cinema
+    answers:
+      - 映画館に寄ります
+      - 映画館によります
+      - えいがかんに寄ります
+      - えいがかんによります
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: i-stop-by-the-cinema
+    choices:
+      - text: I stop by the cinema.
+        reading: ''
+      - text: I stop by the shop.
+        reading: ''
+    prompt: 'Choose the meaning: 映画館に寄ります。'
+    answers:
+      - I stop by the cinema.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: i-stop-by-the-museum
+    prompt: 'Build this sentence: I stop by the museum. (polite)'
+    answers:
+      - 博物館に寄ります
+      - 博物館によります
+      - はくぶつかんに寄ります
+      - はくぶつかんによります
+    tiles:
+      - { text: 博物館, reading: はくぶつかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 寄ります, reading: よります, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: i-stop-by-the-museum
+    answers:
+      - 博物館に寄ります
+      - 博物館によります
+      - はくぶつかんに寄ります
+      - はくぶつかんによります

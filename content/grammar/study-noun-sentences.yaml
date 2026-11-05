@@ -1,0 +1,667 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-noun-sentences
+  kind: grammar
+  note:
+    'Use noun A + は + noun B + です to identify or describe A. は is pronounced “wa”. Nouns use でした for polite
+    past; do not add the verb ending ます. じゃ is the contracted form of では. Both じゃありません and ではありません are polite
+    negatives. これ / それ / あれ stand alone; この / その / あの must come before a noun. どれ asks which item among
+    several choices: どれがあなたのペンですか (どれがあなたのぺんですか). Use が after どれ in this question. の connects an owner or
+    related noun to the following noun: 私の車 (わたしのくるま).'
+  tags:
+    - Study guide
+  level: N5
+  title: 'Noun sentences: present, past, negatives, and questions'
+  topic: Sentence basics
+  meaning: 'Noun sentences: present, past, negatives, and questions'
+  reading: それはわたしのくるまです。
+  examples:
+    - tokens:
+        - { role: topic, text: それ, reading: それ, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: modifier, text: 私, reading: わたし, wordClass: noun phrase }
+        - { role: particle, text: の, reading: の, wordClass: particle }
+        - { role: predicate, text: 車, reading: くるま, wordClass: predicate }
+        - { role: predicate, text: です, reading: です, wordClass: predicate }
+      meaning: That is my car.
+      reading: それはわたしのくるまです。
+      japanese: それは私の車です。
+      translationTokens:
+        - { role: topic, text: That }
+        - { role: predicate, text: ' is ' }
+        - { role: modifier, text: my }
+        - { role: predicate, text: ' car.' }
+    - tokens:
+        - { role: topic, text: あれ, reading: あれ, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: modifier, text: キムさん, reading: きむさん, wordClass: noun phrase }
+        - { role: particle, text: の, reading: の, wordClass: particle }
+        - { role: predicate, text: 車, reading: くるま, wordClass: predicate }
+        - { role: predicate, text: じゃありません, reading: じゃありません, wordClass: predicate }
+      meaning: That is not Kim's car.
+      reading: あれはきむさんのくるまじゃありません。
+      japanese: あれはキムさんの車じゃありません。
+      translationTokens:
+        - { role: topic, text: That }
+        - { role: predicate, text: ' is not ' }
+        - { role: modifier, text: Kim's }
+        - { role: predicate, text: ' car.' }
+    - tokens:
+        - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+        - { role: topic, text: 建物, reading: たてもの, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 病院, reading: びょういん, wordClass: predicate }
+        - { role: predicate, text: でした, reading: でした, wordClass: predicate }
+      meaning: This building was a hospital.
+      reading: このたてものはびょういんでした。
+      japanese: この建物は病院でした。
+      translationTokens:
+        - { role: modifier, text: 'This ' }
+        - { role: topic, text: building }
+        - { role: predicate, text: ' was a hospital.' }
+    - tokens:
+        - { role: topic, text: Aビル, reading: えーびる, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 学校, reading: がっこう, wordClass: predicate }
+        - {
+            role: predicate,
+            text: じゃありませんでした,
+            reading: じゃありませんでした,
+            wordClass: predicate,
+          }
+      meaning: Building A was not a school.
+      reading: えーびるはがっこうじゃありませんでした。
+      japanese: Aビルは学校じゃありませんでした。
+      translationTokens:
+        - { role: topic, text: Building A }
+        - { role: predicate, text: ' was not a school.' }
+  japanese: それは私の車です。
+  references:
+    - rows:
+        - - text: Present
+            reading: ''
+          - text: 学生です
+            reading: がくせいです
+          - text: 学生だ
+            reading: がくせいだ
+          - text: am / is a student
+            reading: ''
+        - - text: Negative
+            reading: ''
+          - text: 学生じゃありません
+            reading: がくせいじゃありません
+          - text: 学生じゃない
+            reading: がくせいじゃない
+          - text: am / is not a student
+            reading: ''
+        - - text: Past
+            reading: ''
+          - text: 学生でした
+            reading: がくせいでした
+          - text: 学生だった
+            reading: がくせいだった
+          - text: was a student
+            reading: ''
+        - - text: Negative past
+            reading: ''
+          - text: 学生じゃありませんでした
+            reading: がくせいじゃありませんでした
+          - text: 学生じゃなかった
+            reading: がくせいじゃなかった
+          - text: was not a student
+            reading: ''
+      columns:
+        - Form
+        - Polite
+        - Casual
+        - Meaning
+      heading: 'Noun endings: polite and casual together'
+    - rows:
+        - - text: これ
+            reading: これ
+          - text: これはボールペンです
+            reading: これはぼーるぺんです
+          - text: This is a ballpoint pen (near me).
+            reading: ''
+        - - text: それ
+            reading: それ
+          - text: それは私の車です
+            reading: それはわたしのくるまです
+          - text: That is my car (near you).
+            reading: ''
+        - - text: あれ
+            reading: あれ
+          - text: あれはエアコンです
+            reading: あれはえあこんです
+          - text: That is an air conditioner (away from both of us).
+            reading: ''
+        - - text: どれ
+            reading: どれ
+          - text: どれがあなたのペンですか
+            reading: どれがあなたのぺんですか
+          - text: Which one is your pen?
+            reading: ''
+        - - text: noun + の + noun
+            reading: ''
+          - text: キムさんの車
+            reading: きむさんのくるま
+          - text: Kim's car
+            reading: ''
+      columns:
+        - Word / pattern
+        - Example
+        - Meaning
+      heading: Pointing words and possession
+    - rows:
+        - - text: 田中さんは学生ですか
+            reading: たなかさんはがくせいですか
+          - text: はい、学生です
+            reading: はい、がくせいです
+          - text: いいえ、学生じゃありません
+            reading: いいえ、がくせいじゃありません
+        - - text: この建物は病院でしたか
+            reading: このたてものはびょういんでしたか
+          - text: はい、病院でした
+            reading: はい、びょういんでした
+          - text: いいえ、病院じゃありませんでした
+            reading: いいえ、びょういんじゃありませんでした
+      columns:
+        - Question
+        - Yes
+        - No
+      heading: Ask and answer
+sentences:
+  that-is-my-car:
+    text: それは私の車です。
+    tokens:
+      - { role: topic, text: それ, reading: それ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: modifier, text: 私, reading: わたし, wordClass: noun phrase }
+      - { role: particle, text: の, reading: の, wordClass: particle }
+      - { role: predicate, text: 車, reading: くるま, wordClass: predicate }
+      - { role: predicate, text: です, reading: です, wordClass: predicate }
+    meaning: That is my car.
+    reading: それはわたしのくるまです。
+    translationTokens:
+      - { role: topic, text: That }
+      - { role: predicate, text: ' is ' }
+      - { role: modifier, text: my }
+      - { role: predicate, text: ' car.' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Use noun A + は + noun B + です to identify or describe A. は is pronounced “wa”. Nouns use でした for
+      polite past; do not add the verb ending ます. じゃ is the contracted form of では. Both じゃありません and ではありません
+      are polite negatives. これ / それ / あれ stand alone; この / その / あの must come before a noun. どれ asks which item
+      among several choices: どれがあなたのペンですか (どれがあなたのぺんですか). Use が after どれ in this question. の connects an owner
+      or related noun to the following noun: 私の車 (わたしのくるま).'
+  that-is-not-kim-s-car:
+    text: あれはキムさんの車じゃありません。
+    tokens:
+      - { role: topic, text: あれ, reading: あれ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: modifier, text: キムさん, reading: きむさん, wordClass: noun phrase }
+      - { role: particle, text: の, reading: の, wordClass: particle }
+      - { role: predicate, text: 車, reading: くるま, wordClass: predicate }
+      - { role: predicate, text: じゃありません, reading: じゃありません, wordClass: predicate }
+    meaning: That is not Kim's car.
+    reading: あれはきむさんのくるまじゃありません。
+    translationTokens:
+      - { role: topic, text: That }
+      - { role: predicate, text: ' is not ' }
+      - { role: modifier, text: Kim's }
+      - { role: predicate, text: ' car.' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Use noun A + は + noun B + です to identify or describe A. は is pronounced “wa”. Nouns use でした for
+      polite past; do not add the verb ending ます. じゃ is the contracted form of では. Both じゃありません and ではありません
+      are polite negatives. これ / それ / あれ stand alone; この / その / あの must come before a noun. どれ asks which item
+      among several choices: どれがあなたのペンですか (どれがあなたのぺんですか). Use が after どれ in this question. の connects an owner
+      or related noun to the following noun: 私の車 (わたしのくるま).'
+    form: polite
+  this-building-was-a-hospital:
+    text: この建物は病院でした。
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+      - { role: topic, text: 建物, reading: たてもの, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 病院, reading: びょういん, wordClass: predicate }
+      - { role: predicate, text: でした, reading: でした, wordClass: predicate }
+    meaning: This building was a hospital.
+    reading: このたてものはびょういんでした。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: building }
+      - { role: predicate, text: ' was a hospital.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Use noun A + は + noun B + です to identify or describe A. は is pronounced “wa”. Nouns use でした for
+      polite past; do not add the verb ending ます. じゃ is the contracted form of では. Both じゃありません and ではありません
+      are polite negatives. これ / それ / あれ stand alone; この / その / あの must come before a noun. どれ asks which item
+      among several choices: どれがあなたのペンですか (どれがあなたのぺんですか). Use が after どれ in this question. の connects an owner
+      or related noun to the following noun: 私の車 (わたしのくるま).'
+  building-a-was-not-a-school:
+    text: Aビルは学校じゃありませんでした。
+    tokens:
+      - { role: topic, text: Aビル, reading: えーびる, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 学校, reading: がっこう, wordClass: predicate }
+      - {
+          role: predicate,
+          text: じゃありませんでした,
+          reading: じゃありませんでした,
+          wordClass: predicate,
+        }
+    meaning: Building A was not a school.
+    reading: えーびるはがっこうじゃありませんでした。
+    translationTokens:
+      - { role: topic, text: Building A }
+      - { role: predicate, text: ' was not a school.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Use noun A + は + noun B + です to identify or describe A. は is pronounced “wa”. Nouns use でした for
+      polite past; do not add the verb ending ます. じゃ is the contracted form of では. Both じゃありません and ではありません
+      are polite negatives. これ / それ / あれ stand alone; この / その / あの must come before a noun. どれ asks which item
+      among several choices: どれがあなたのペンですか (どれがあなたのぺんですか). Use が after どれ in this question. の connects an owner
+      or related noun to the following noun: 私の車 (わたしのくるま).'
+  that-is-my-bicycle:
+    tokens:
+      - { role: topic, text: それ, reading: それ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: modifier, text: 私, reading: わたし, wordClass: noun phrase }
+      - { role: particle, text: の, reading: の, wordClass: particle }
+      - { role: predicate, text: 自転車, reading: じてんしゃ, wordClass: predicate }
+      - { role: predicate, text: です, reading: です, wordClass: predicate }
+    meaning: That is my bicycle.
+    reading: それはわたしのじてんしゃです。
+    translationTokens:
+      - { role: topic, text: That }
+      - { role: predicate, text: ' is ' }
+      - { role: modifier, text: my }
+      - { role: predicate, text: ' bicycle.' }
+    text: それは私の自転車です。
+    hint: Check the particles and sentence ending.
+    explanation:
+      それは私の自転車です。 means “That is my bicycle.” Match the vocabulary, particles, and tense to the English
+      sentence.
+    form: polite
+  that-is-not-kim-s-bicycle:
+    tokens:
+      - { role: topic, text: あれ, reading: あれ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: modifier, text: キムさん, reading: きむさん, wordClass: noun phrase }
+      - { role: particle, text: の, reading: の, wordClass: particle }
+      - { role: predicate, text: 自転車, reading: じてんしゃ, wordClass: predicate }
+      - { role: predicate, text: じゃありません, reading: じゃありません, wordClass: predicate }
+    meaning: That is not Kim's bicycle.
+    reading: あれはきむさんのじてんしゃじゃありません。
+    translationTokens:
+      - { role: topic, text: That }
+      - { role: predicate, text: ' is not ' }
+      - { role: modifier, text: Kim's }
+      - { role: predicate, text: ' bicycle.' }
+    text: あれはキムさんの自転車じゃありません。
+    hint: Check the particles and sentence ending.
+    explanation:
+      あれはキムさんの自転車じゃありません。 means “That is not Kim's bicycle.” Match the vocabulary, particles, and tense
+      to the English sentence.
+    form: polite
+  building-a-was-not-a-library:
+    tokens:
+      - { role: topic, text: Aビル, reading: えーびる, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 図書館, reading: としょかん, wordClass: predicate }
+      - {
+          role: predicate,
+          text: じゃありませんでした,
+          reading: じゃありませんでした,
+          wordClass: predicate,
+        }
+    meaning: Building A was not a library.
+    reading: えーびるはとしょかんじゃありませんでした。
+    translationTokens:
+      - { role: topic, text: Building A }
+      - { role: predicate, text: ' was not a library.' }
+    text: Aビルは図書館じゃありませんでした。
+    hint: Check the particles and sentence ending.
+    explanation:
+      Aビルは図書館じゃありませんでした。 means “Building A was not a library.” Match the vocabulary, particles, and
+      tense to the English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: that-is-my-car
+    choices:
+      - text: That is my car.
+        reading: ''
+      - text: That is not Kim's car.
+        reading: ''
+      - text: This building was a hospital.
+        reading: ''
+      - text: Building A was not a school.
+        reading: ''
+    answers:
+      - That is my car.
+  - id: pattern
+    type: pattern-choice
+    sentence: that-is-not-kim-s-car
+    choices:
+      - sentence: that-is-my-car
+      - sentence: that-is-not-kim-s-car
+    prompt: "Choose the Japanese: That is not Kim's car."
+    answers:
+      - あれはキムさんの車じゃありません
+      - あれはキムさんの車ではありません
+      - あれはキムさんのくるまじゃありません
+      - あれはキムさんのくるまではありません
+      - あれはきむさんの車じゃありません
+      - あれはきむさんの車ではありません
+      - あれはきむさんのくるまじゃありません
+      - あれはきむさんのくるまではありません
+  - id: gap
+    type: gap
+    sentence: that-is-not-kim-s-car
+    prompt: "Fill the missing part: That is not Kim's car. (polite)"
+    answers:
+      - じゃありません
+      - ではありません
+    context:
+      text: あれはキムさんの車___。
+      tokens:
+        - { role: topic, text: あれ, reading: あれ, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: modifier, text: キムさん, reading: きむさん, wordClass: noun phrase }
+        - { role: particle, text: の, reading: の, wordClass: particle }
+        - { role: predicate, text: 車, reading: くるま, wordClass: predicate }
+        - { role: predicate, text: ___, reading: ___, wordClass: predicate }
+      reading: あれはきむさんのくるま___。
+  - id: tiles
+    type: tiles
+    sentence: that-is-not-kim-s-car
+    prompt: "Build: That is not Kim's car. (polite)"
+    answers:
+      - あれはキムさんの車じゃありません
+      - あれはキムさんの車ではありません
+      - あれはキムさんのくるまじゃありません
+      - あれはキムさんのくるまではありません
+      - あれはきむさんの車じゃありません
+      - あれはきむさんの車ではありません
+      - あれはきむさんのくるまじゃありません
+      - あれはきむさんのくるまではありません
+    tiles:
+      - { role: topic, text: あれ, reading: あれ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: modifier, text: キムさん, reading: きむさん, wordClass: noun phrase }
+      - { role: particle, text: の, reading: の, wordClass: particle }
+      - { role: predicate, text: 車, reading: くるま, wordClass: predicate }
+      - { role: predicate, text: じゃありません, reading: じゃありません, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: this-building-was-a-hospital
+    answers:
+      - この建物は病院でした
+      - この建物はびょういんでした
+      - このたてものは病院でした
+      - このたてものはびょういんでした
+  - id: alternate
+    type: typing
+    sentence: building-a-was-not-a-school
+    alternate: true
+    prompt: 'Another example: Building A was not a school. (polite)'
+    answers:
+      - Aビルは学校じゃありませんでした
+      - Aビルは学校ではありませんでした
+      - Aビルはがっこうじゃありませんでした
+      - Aビルはがっこうではありませんでした
+      - えーびるは学校じゃありませんでした
+      - えーびるは学校ではありませんでした
+      - えーびるはがっこうじゃありませんでした
+      - えーびるはがっこうではありませんでした
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: that-is-my-bicycle
+    choices:
+      - text: That is my bicycle.
+        reading: ''
+      - text: That is my car.
+        reading: ''
+      - text: That is not Kim's car.
+        reading: ''
+      - text: This building was a hospital.
+        reading: ''
+    answers:
+      - That is my bicycle.
+  - id: expanded-1-typing
+    type: typing
+    sentence: that-is-my-bicycle
+    explanation: それは私の自転車です。 means “That is my bicycle.” Write the complete sentence, including the indicated ending.
+    answers:
+      - それは私の自転車です
+      - それはわたしのじてんしゃです
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: that-is-my-bicycle
+    prompt: 'Build this sentence: That is my bicycle. (polite)'
+    explanation: それは私の自転車です。 means “That is my bicycle.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - それは私の自転車です
+      - それはわたしのじてんしゃです
+  - id: expanded-2-meaning
+    type: meaning-choice
+    sentence: that-is-not-kim-s-bicycle
+    choices:
+      - text: That is not Kim's bicycle.
+        reading: ''
+      - text: That is my car.
+        reading: ''
+      - text: That is not Kim's car.
+        reading: ''
+      - text: This building was a hospital.
+        reading: ''
+    answers:
+      - That is not Kim's bicycle.
+  - id: expanded-2-typing
+    type: typing
+    sentence: that-is-not-kim-s-bicycle
+    explanation:
+      あれはキムさんの自転車じゃありません。 means “That is not Kim's bicycle.” Write the complete sentence, including the
+      indicated ending.
+    answers:
+      - あれはキムさんの自転車じゃありません
+      - あれはきむさんのじてんしゃじゃありません
+  - id: expanded-2-tiles
+    type: tiles
+    sentence: that-is-not-kim-s-bicycle
+    prompt: "Build this sentence: That is not Kim's bicycle. (polite)"
+    explanation:
+      あれはキムさんの自転車じゃありません。 means “That is not Kim's bicycle.” Keep the particles with their phrases and
+      put the predicate last.
+    answers:
+      - あれはキムさんの自転車じゃありません
+      - あれはきむさんのじてんしゃじゃありません
+  - id: expanded-3-meaning
+    type: meaning-choice
+    sentence: building-a-was-not-a-library
+    choices:
+      - text: Building A was not a library.
+        reading: ''
+      - text: That is my car.
+        reading: ''
+      - text: That is not Kim's car.
+        reading: ''
+      - text: This building was a hospital.
+        reading: ''
+    answers:
+      - Building A was not a library.
+  - id: expanded-3-typing
+    type: typing
+    sentence: building-a-was-not-a-library
+    explanation:
+      Aビルは図書館じゃありませんでした。 means “Building A was not a library.” Write the complete sentence, including
+      the indicated ending.
+    answers:
+      - Aビルは図書館じゃありませんでした
+      - えーびるはとしょかんじゃありませんでした
+  - id: expanded-3-tiles
+    type: tiles
+    sentence: building-a-was-not-a-library
+    prompt: 'Build this sentence: Building A was not a library. (polite)'
+    explanation:
+      Aビルは図書館じゃありませんでした。 means “Building A was not a library.” Keep the particles with their phrases
+      and put the predicate last.
+    answers:
+      - Aビルは図書館じゃありませんでした
+      - えーびるはとしょかんじゃありませんでした
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: that-is-my-bicycle
+    choices:
+      - sentence: that-is-my-bicycle
+      - text: それは私の車です。
+        reading: それはわたしのくるまです。
+        tokens:
+          - { role: topic, text: それ, reading: それ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: modifier, text: 私, reading: わたし, wordClass: noun phrase }
+          - { role: particle, text: の, reading: の, wordClass: particle }
+          - { role: predicate, text: 車, reading: くるま, wordClass: predicate }
+          - { role: predicate, text: です, reading: です, wordClass: predicate }
+      - text: あれはキムさんの車じゃありません。
+        reading: あれはきむさんのくるまじゃありません。
+        tokens:
+          - { role: topic, text: あれ, reading: あれ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: modifier, text: キムさん, reading: きむさん, wordClass: noun phrase }
+          - { role: particle, text: の, reading: の, wordClass: particle }
+          - { role: predicate, text: 車, reading: くるま, wordClass: predicate }
+          - { role: predicate, text: じゃありません, reading: じゃありません, wordClass: predicate }
+      - text: この建物は病院でした。
+        reading: このたてものはびょういんでした。
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+          - { role: topic, text: 建物, reading: たてもの, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 病院, reading: びょういん, wordClass: predicate }
+          - { role: predicate, text: でした, reading: でした, wordClass: predicate }
+    prompt: 'Choose the Japanese: That is my bicycle. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose それは私の自転車です。 for “That is my bicycle.” The other sentences describe different situations.
+    answers:
+      - それは私の自転車です
+      - それはわたしのじてんしゃです
+  - id: expanded-1-gap
+    type: gap
+    sentence: that-is-my-bicycle
+    prompt: 'Fill the missing part: That is my bicycle. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is です (です). Together, the sentence means “That is my bicycle.”
+    answers:
+      - です
+    context:
+      meaning: That is my bicycle.
+      reading: それはわたしのじてんしゃ___。
+      text: それは私の自転車___。
+  - id: expanded-2-pattern
+    type: pattern-choice
+    sentence: that-is-not-kim-s-bicycle
+    choices:
+      - sentence: that-is-not-kim-s-bicycle
+      - text: それは私の車です。
+        reading: それはわたしのくるまです。
+        tokens:
+          - { role: topic, text: それ, reading: それ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: modifier, text: 私, reading: わたし, wordClass: noun phrase }
+          - { role: particle, text: の, reading: の, wordClass: particle }
+          - { role: predicate, text: 車, reading: くるま, wordClass: predicate }
+          - { role: predicate, text: です, reading: です, wordClass: predicate }
+      - text: あれはキムさんの車じゃありません。
+        reading: あれはきむさんのくるまじゃありません。
+        tokens:
+          - { role: topic, text: あれ, reading: あれ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: modifier, text: キムさん, reading: きむさん, wordClass: noun phrase }
+          - { role: particle, text: の, reading: の, wordClass: particle }
+          - { role: predicate, text: 車, reading: くるま, wordClass: predicate }
+          - { role: predicate, text: じゃありません, reading: じゃありません, wordClass: predicate }
+      - text: この建物は病院でした。
+        reading: このたてものはびょういんでした。
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+          - { role: topic, text: 建物, reading: たてもの, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 病院, reading: びょういん, wordClass: predicate }
+          - { role: predicate, text: でした, reading: でした, wordClass: predicate }
+    prompt: "Choose the Japanese: That is not Kim's bicycle. (polite)"
+    hint: Match both the meaning and the sentence ending.
+    explanation:
+      Choose あれはキムさんの自転車じゃありません。 for “That is not Kim's bicycle.” The other sentences describe
+      different situations.
+    answers:
+      - あれはキムさんの自転車じゃありません
+      - あれはきむさんのじてんしゃじゃありません
+  - id: expanded-2-gap
+    type: gap
+    sentence: that-is-not-kim-s-bicycle
+    prompt: "Fill the missing part: That is not Kim's bicycle. (polite)"
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is じゃありません (じゃありません). Together, the sentence means “That is not Kim's bicycle.”
+    answers:
+      - じゃありません
+    context:
+      meaning: That is not Kim's bicycle.
+      reading: あれはきむさんのじてんしゃ___。
+      text: あれはキムさんの自転車___。
+  - id: expanded-3-pattern
+    type: pattern-choice
+    sentence: building-a-was-not-a-library
+    choices:
+      - sentence: building-a-was-not-a-library
+      - text: それは私の車です。
+        reading: それはわたしのくるまです。
+        tokens:
+          - { role: topic, text: それ, reading: それ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: modifier, text: 私, reading: わたし, wordClass: noun phrase }
+          - { role: particle, text: の, reading: の, wordClass: particle }
+          - { role: predicate, text: 車, reading: くるま, wordClass: predicate }
+          - { role: predicate, text: です, reading: です, wordClass: predicate }
+      - text: あれはキムさんの車じゃありません。
+        reading: あれはきむさんのくるまじゃありません。
+        tokens:
+          - { role: topic, text: あれ, reading: あれ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: modifier, text: キムさん, reading: きむさん, wordClass: noun phrase }
+          - { role: particle, text: の, reading: の, wordClass: particle }
+          - { role: predicate, text: 車, reading: くるま, wordClass: predicate }
+          - { role: predicate, text: じゃありません, reading: じゃありません, wordClass: predicate }
+      - text: この建物は病院でした。
+        reading: このたてものはびょういんでした。
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+          - { role: topic, text: 建物, reading: たてもの, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 病院, reading: びょういん, wordClass: predicate }
+          - { role: predicate, text: でした, reading: でした, wordClass: predicate }
+    prompt: 'Choose the Japanese: Building A was not a library. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation:
+      Choose Aビルは図書館じゃありませんでした。 for “Building A was not a library.” The other sentences describe
+      different situations.
+    answers:
+      - Aビルは図書館じゃありませんでした
+      - えーびるはとしょかんじゃありませんでした
+  - id: expanded-3-gap
+    type: gap
+    sentence: building-a-was-not-a-library
+    prompt: 'Fill the missing part: Building A was not a library. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is じゃありませんでした (じゃありませんでした). Together, the sentence means “Building A was not a library.”
+    answers:
+      - じゃありませんでした
+    context:
+      meaning: Building A was not a library.
+      reading: えーびるはとしょかん___。
+      text: Aビルは図書館___。

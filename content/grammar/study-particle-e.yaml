@@ -1,0 +1,482 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-particle-e
+  kind: grammar
+  note:
+    'へ is written he but pronounced e as a particle. It marks direction or a destination of movement. It is
+    not limited to 行きます, 来ます, and 帰ります: 駅へ歩きます means “walk toward the station”. に also marks destinations with
+    many movement verbs; で marks where an action happens. Do not replace every に with へ: specific times and
+    existence locations use に.'
+  tags:
+    - Study guide
+  level: N5
+  title: へ — the e particle
+  topic: Grammar basics
+  romaji: e / he
+  meaning: へ — the e particle
+  reading: がっこうへいきます。
+  examples:
+    - tokens:
+        - { role: modifier, text: 学校, reading: がっこう, wordClass: noun phrase }
+        - { role: particle, text: へ, reading: へ, wordClass: particle }
+        - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+      meaning: I go to school.
+      reading: がっこうへいきます。
+      japanese: 学校へ行きます。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: go }
+        - { role: modifier, text: ' to school.' }
+    - tokens:
+        - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+        - { role: particle, text: へ, reading: へ, wordClass: particle }
+        - { role: predicate, text: 来ます, reading: きます, wordClass: predicate }
+      meaning: I come to Japan.
+      reading: にほんへきます。
+      japanese: 日本へ来ます。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: come }
+        - { role: modifier, text: ' to Japan.' }
+    - tokens:
+        - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+        - { role: particle, text: へ, reading: へ, wordClass: particle }
+        - { role: predicate, text: 帰ります, reading: かえります, wordClass: predicate }
+      meaning: I return home.
+      reading: いえへかえります。
+      japanese: 家へ帰ります。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: return }
+        - { role: modifier, text: ' home.' }
+    - tokens:
+        - { role: modifier, text: 駅, reading: えき, wordClass: noun phrase }
+        - { role: particle, text: へ, reading: へ, wordClass: particle }
+        - { role: predicate, text: 歩きます, reading: あるきます, wordClass: predicate }
+      meaning: I walk toward the station.
+      reading: えきへあるきます。
+      japanese: 駅へ歩きます。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: walk }
+        - { role: modifier, text: ' toward the station.' }
+  japanese: 学校へ行きます。
+  references:
+    - rows:
+        - - text: へ
+            reading: へ
+          - text: e
+            reading: ''
+      columns:
+        - Written
+        - Said as
+      heading: Spelling and particle pronunciation
+sentences:
+  i-go-to-school:
+    text: 学校へ行きます。
+    tokens:
+      - { role: modifier, text: 学校, reading: がっこう, wordClass: noun phrase }
+      - { role: particle, text: へ, reading: へ, wordClass: particle }
+      - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+    meaning: I go to school.
+    reading: がっこうへいきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: go }
+      - { role: modifier, text: ' to school.' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'へ is written he but pronounced e as a particle. It marks direction or a destination of movement.
+      It is not limited to 行きます, 来ます, and 帰ります: 駅へ歩きます means “walk toward the station”. に also marks
+      destinations with many movement verbs; で marks where an action happens. Do not replace every に with へ:
+      specific times and existence locations use に.'
+  i-come-to-japan:
+    text: 日本へ来ます。
+    tokens:
+      - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+      - { role: particle, text: へ, reading: へ, wordClass: particle }
+      - { role: predicate, text: 来ます, reading: きます, wordClass: predicate }
+    meaning: I come to Japan.
+    reading: にほんへきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: come }
+      - { role: modifier, text: ' to Japan.' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'へ is written he but pronounced e as a particle. It marks direction or a destination of movement.
+      It is not limited to 行きます, 来ます, and 帰ります: 駅へ歩きます means “walk toward the station”. に also marks
+      destinations with many movement verbs; で marks where an action happens. Do not replace every に with へ:
+      specific times and existence locations use に.'
+    form: polite
+  i-return-home:
+    text: 家へ帰ります。
+    tokens:
+      - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+      - { role: particle, text: へ, reading: へ, wordClass: particle }
+      - { role: predicate, text: 帰ります, reading: かえります, wordClass: predicate }
+    meaning: I return home.
+    reading: いえへかえります。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: return }
+      - { role: modifier, text: ' home.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'へ is written he but pronounced e as a particle. It marks direction or a destination of movement.
+      It is not limited to 行きます, 来ます, and 帰ります: 駅へ歩きます means “walk toward the station”. に also marks
+      destinations with many movement verbs; で marks where an action happens. Do not replace every に with へ:
+      specific times and existence locations use に.'
+  i-walk-toward-the-station:
+    text: 駅へ歩きます。
+    tokens:
+      - { role: modifier, text: 駅, reading: えき, wordClass: noun phrase }
+      - { role: particle, text: へ, reading: へ, wordClass: particle }
+      - { role: predicate, text: 歩きます, reading: あるきます, wordClass: predicate }
+    meaning: I walk toward the station.
+    reading: えきへあるきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: walk }
+      - { role: modifier, text: ' toward the station.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'へ is written he but pronounced e as a particle. It marks direction or a destination of movement.
+      It is not limited to 行きます, 来ます, and 帰ります: 駅へ歩きます means “walk toward the station”. に also marks
+      destinations with many movement verbs; で marks where an action happens. Do not replace every に with へ:
+      specific times and existence locations use に.'
+  i-go-to-the-library:
+    tokens:
+      - { role: modifier, text: 図書館, reading: としょかん, wordClass: noun phrase }
+      - { role: particle, text: へ, reading: へ, wordClass: particle }
+      - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+    meaning: I go to the library.
+    reading: としょかんへいきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: go }
+      - { role: modifier, text: ' to the library.' }
+    text: 図書館へ行きます。
+    hint: Check the particles and sentence ending.
+    explanation:
+      図書館へ行きます。 means “I go to the library.” Match the vocabulary, particles, and tense to the English
+      sentence.
+    form: polite
+  i-come-to-korea:
+    tokens:
+      - { role: modifier, text: 韓国, reading: かんこく, wordClass: noun phrase }
+      - { role: particle, text: へ, reading: へ, wordClass: particle }
+      - { role: predicate, text: 来ます, reading: きます, wordClass: predicate }
+    meaning: I come to Korea.
+    reading: かんこくへきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: come }
+      - { role: modifier, text: ' to Korea.' }
+    text: 韓国へ来ます。
+    hint: Check the particles and sentence ending.
+    explanation: 韓国へ来ます。 means “I come to Korea.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+  i-return-to-the-station:
+    tokens:
+      - { role: modifier, text: 駅, reading: えき, wordClass: noun phrase }
+      - { role: particle, text: へ, reading: へ, wordClass: particle }
+      - { role: predicate, text: 帰ります, reading: かえります, wordClass: predicate }
+    meaning: I return to the station.
+    reading: えきへかえります。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: return }
+      - { role: modifier, text: ' station.' }
+    text: 駅へ帰ります。
+    hint: Check the particles and sentence ending.
+    explanation: 駅へ帰ります。 means “I return station.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-go-to-school
+    choices:
+      - text: I go to school.
+        reading: ''
+      - text: I come to Japan.
+        reading: ''
+      - text: I return home.
+        reading: ''
+      - text: I walk toward the station.
+        reading: ''
+    answers:
+      - I go to school.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-come-to-japan
+    choices:
+      - sentence: i-go-to-school
+      - sentence: i-come-to-japan
+    prompt: 'Choose the Japanese: I come to Japan.'
+    answers:
+      - 日本へ来ます
+      - 日本へきます
+      - にほんへ来ます
+      - にほんへきます
+  - id: gap
+    type: gap
+    sentence: i-come-to-japan
+    prompt: 'Fill the missing part: I come to Japan. (polite)'
+    answers:
+      - へ
+      - へ
+    context:
+      text: 日本___来ます。
+      tokens:
+        - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+        - { role: particle, text: ___, reading: ___, wordClass: particle }
+        - { role: predicate, text: 来ます, reading: きます, wordClass: predicate }
+      reading: にほん___きます。
+  - id: tiles
+    type: tiles
+    sentence: i-come-to-japan
+    prompt: 'Build: I come to Japan. (polite)'
+    answers:
+      - 日本へ来ます
+      - 日本へきます
+      - にほんへ来ます
+      - にほんへきます
+    tiles:
+      - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+      - { role: particle, text: へ, reading: へ, wordClass: particle }
+      - { role: predicate, text: 来ます, reading: きます, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: i-return-home
+    answers:
+      - 家へ帰ります
+      - 家へかえります
+      - いえへ帰ります
+      - いえへかえります
+  - id: alternate
+    type: typing
+    sentence: i-walk-toward-the-station
+    alternate: true
+    prompt: 'Another example: I walk toward the station. (polite)'
+    answers:
+      - 駅へ歩きます
+      - 駅へあるきます
+      - えきへ歩きます
+      - えきへあるきます
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: i-go-to-the-library
+    choices:
+      - text: I go to the library.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+      - text: I come to Japan.
+        reading: ''
+      - text: I return home.
+        reading: ''
+    answers:
+      - I go to the library.
+  - id: expanded-1-typing
+    type: typing
+    sentence: i-go-to-the-library
+    explanation: 図書館へ行きます。 means “I go to the library.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 図書館へ行きます
+      - としょかんへいきます
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: i-go-to-the-library
+    prompt: 'Build this sentence: I go to the library. (polite)'
+    explanation: 図書館へ行きます。 means “I go to the library.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 図書館へ行きます
+      - としょかんへいきます
+  - id: expanded-2-meaning
+    type: meaning-choice
+    sentence: i-come-to-korea
+    choices:
+      - text: I come to Korea.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+      - text: I come to Japan.
+        reading: ''
+      - text: I return home.
+        reading: ''
+    answers:
+      - I come to Korea.
+  - id: expanded-2-typing
+    type: typing
+    sentence: i-come-to-korea
+    explanation: 韓国へ来ます。 means “I come to Korea.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 韓国へ来ます
+      - かんこくへきます
+  - id: expanded-2-tiles
+    type: tiles
+    sentence: i-come-to-korea
+    prompt: 'Build this sentence: I come to Korea. (polite)'
+    explanation: 韓国へ来ます。 means “I come to Korea.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 韓国へ来ます
+      - かんこくへきます
+  - id: expanded-3-meaning
+    type: meaning-choice
+    sentence: i-return-to-the-station
+    choices:
+      - text: I return station.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+      - text: I come to Japan.
+        reading: ''
+      - text: I return home.
+        reading: ''
+    answers:
+      - I return station.
+  - id: expanded-3-typing
+    type: typing
+    sentence: i-return-to-the-station
+    prompt: 'Write in Japanese: I return station. (polite)'
+    explanation: 駅へ帰ります。 means “I return station.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 駅へ帰ります
+      - えきへかえります
+  - id: expanded-3-tiles
+    type: tiles
+    sentence: i-return-to-the-station
+    prompt: 'Build this sentence: I return station. (polite)'
+    explanation: 駅へ帰ります。 means “I return station.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 駅へ帰ります
+      - えきへかえります
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: i-go-to-the-library
+    choices:
+      - sentence: i-go-to-the-library
+      - text: 学校へ行きます。
+        reading: がっこうへいきます。
+        tokens:
+          - { role: modifier, text: 学校, reading: がっこう, wordClass: noun phrase }
+          - { role: particle, text: へ, reading: へ, wordClass: particle }
+          - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+      - text: 日本へ来ます。
+        reading: にほんへきます。
+        tokens:
+          - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+          - { role: particle, text: へ, reading: へ, wordClass: particle }
+          - { role: predicate, text: 来ます, reading: きます, wordClass: predicate }
+      - text: 家へ帰ります。
+        reading: いえへかえります。
+        tokens:
+          - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+          - { role: particle, text: へ, reading: へ, wordClass: particle }
+          - { role: predicate, text: 帰ります, reading: かえります, wordClass: predicate }
+    prompt: 'Choose the Japanese: I go to the library. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 図書館へ行きます。 for “I go to the library.” The other sentences describe different situations.
+    answers:
+      - 図書館へ行きます
+      - としょかんへいきます
+  - id: expanded-1-gap
+    type: gap
+    sentence: i-go-to-the-library
+    prompt: 'Fill the missing part: I go to the library. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 行きます (いきます). Together, the sentence means “I go to the library.”
+    answers:
+      - 行きます
+      - いきます
+    context:
+      meaning: I go to the library.
+      reading: としょかんへ___。
+      text: 図書館へ___。
+  - id: expanded-2-pattern
+    type: pattern-choice
+    sentence: i-come-to-korea
+    choices:
+      - sentence: i-come-to-korea
+      - text: 学校へ行きます。
+        reading: がっこうへいきます。
+        tokens:
+          - { role: modifier, text: 学校, reading: がっこう, wordClass: noun phrase }
+          - { role: particle, text: へ, reading: へ, wordClass: particle }
+          - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+      - text: 日本へ来ます。
+        reading: にほんへきます。
+        tokens:
+          - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+          - { role: particle, text: へ, reading: へ, wordClass: particle }
+          - { role: predicate, text: 来ます, reading: きます, wordClass: predicate }
+      - text: 家へ帰ります。
+        reading: いえへかえります。
+        tokens:
+          - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+          - { role: particle, text: へ, reading: へ, wordClass: particle }
+          - { role: predicate, text: 帰ります, reading: かえります, wordClass: predicate }
+    prompt: 'Choose the Japanese: I come to Korea. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 韓国へ来ます。 for “I come to Korea.” The other sentences describe different situations.
+    answers:
+      - 韓国へ来ます
+      - かんこくへきます
+  - id: expanded-2-gap
+    type: gap
+    sentence: i-come-to-korea
+    prompt: 'Fill the missing part: I come to Korea. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 来ます (きます). Together, the sentence means “I come to Korea.”
+    answers:
+      - 来ます
+      - きます
+    context:
+      meaning: I come to Korea.
+      reading: かんこくへ___。
+      text: 韓国へ___。
+  - id: expanded-3-pattern
+    type: pattern-choice
+    sentence: i-return-to-the-station
+    choices:
+      - sentence: i-return-to-the-station
+      - text: 学校へ行きます。
+        reading: がっこうへいきます。
+        tokens:
+          - { role: modifier, text: 学校, reading: がっこう, wordClass: noun phrase }
+          - { role: particle, text: へ, reading: へ, wordClass: particle }
+          - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+      - text: 日本へ来ます。
+        reading: にほんへきます。
+        tokens:
+          - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+          - { role: particle, text: へ, reading: へ, wordClass: particle }
+          - { role: predicate, text: 来ます, reading: きます, wordClass: predicate }
+      - text: 家へ帰ります。
+        reading: いえへかえります。
+        tokens:
+          - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+          - { role: particle, text: へ, reading: へ, wordClass: particle }
+          - { role: predicate, text: 帰ります, reading: かえります, wordClass: predicate }
+    prompt: 'Choose the Japanese: I return station. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 駅へ帰ります。 for “I return to the station.” The other sentences describe different situations.
+    answers:
+      - 駅へ帰ります
+      - えきへかえります
+  - id: expanded-3-gap
+    type: gap
+    sentence: i-return-to-the-station
+    prompt: 'Fill the missing part: I return station. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 帰ります (かえります). Together, the sentence means “I return to the station.”
+    answers:
+      - 帰ります
+      - かえります
+    context:
+      meaning: I return to the station.
+      reading: えきへ___。
+      text: 駅へ___。

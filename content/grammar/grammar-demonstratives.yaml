@@ -1,0 +1,1182 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-demonstratives
+  kind: grammar
+  note:
+    'これ stands alone: これは本です. この must come before a noun: この本. それ / その refer to something near the listener
+    or already mentioned; あれ / あの are distant from both speakers.'
+  tags:
+    - Grammar
+    - demonstratives
+  level: N5
+  title: これ・それ・あれ and この
+  topic: Sentence building
+  lesson:
+    goal: Point to things using stand-alone and noun-modifying words.
+    group: Sentence basics
+    order: 5
+    recap: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+    examples:
+      - tokens:
+          - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 本です, reading: ほんです, wordClass: predicate }
+        meaning: This is a book.
+        reading: これはほんです。
+        japanese: これは本です。
+        translationTokens:
+          - { role: topic, text: This }
+          - { role: predicate, text: ' is a book.' }
+      - tokens:
+          - { role: modifier, text: この, reading: この, wordClass: modifier }
+          - { role: topic, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 私, reading: わたし, wordClass: predicate }
+          - { role: particle, text: の, reading: の, wordClass: particle }
+          - { role: predicate, text: です, reading: です, wordClass: predicate }
+        meaning: This book is mine.
+        reading: このほんはわたしのです。
+        japanese: この本は私のです。
+        translationTokens:
+          - { role: modifier, text: 'This ' }
+          - { role: topic, text: book }
+          - { role: predicate, text: ' is mine.' }
+      - tokens:
+          - { role: modifier, text: その, reading: その, wordClass: modifier }
+          - { role: topic, text: 時計, reading: とけい, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 先生, reading: せんせい, wordClass: predicate }
+          - { role: particle, text: の, reading: の, wordClass: particle }
+          - { role: predicate, text: です, reading: です, wordClass: predicate }
+        meaning: That clock is the teacher's.
+        reading: そのとけいはせんせいのです。
+        japanese: その時計は先生のです。
+        translationTokens:
+          - { role: modifier, text: 'That ' }
+          - { role: topic, text: clock }
+          - { role: predicate, text: " is the teacher's." }
+    comparison: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+    vocabulary:
+      - text: 本
+        meaning: book
+        reading: ほん
+      - text: 私
+        meaning: I / me
+        reading: わたし
+      - text: 時計
+        meaning: clock / watch
+        reading: とけい
+      - text: 先生
+        meaning: teacher
+        reading: せんせい
+      - text: 車
+        meaning: car
+        reading: くるま
+      - text: 田中さん
+        meaning: Tanaka (a person's name)
+        reading: たなかさん
+    prerequisites:
+      - grammar-desu
+      - grammar-no
+  meaning: This book is interesting.
+  reading: このほんはおもしろいです。
+  examples:
+    - tokens:
+        - { role: modifier, text: この, reading: この, wordClass: demonstrative determiner }
+        - { role: topic, text: 本, reading: ほん, wordClass: noun }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - {
+            role: predicate,
+            text: 面白いです,
+            reading: おもしろいです,
+            wordClass: i-adjective + polite ending,
+          }
+      meaning: This book is interesting.
+      reading: このほんはおもしろいです。
+      japanese: この本は面白いです。
+      translationTokens:
+        - { role: modifier, text: This, implicit: false }
+        - { role: topic, text: ' book', implicit: false }
+        - { role: predicate, text: ' is interesting.', implicit: false }
+  exercise:
+    tiles:
+      - この
+      - 本
+      - は
+      - 面白い
+      - です
+    prompt: 'Build: “This book is interesting.” Start with この本.'
+    answers:
+      - この本は面白いです
+      - この本はおもしろいです
+      - このほんはおもしろいです
+    explanation:
+      'これ stands alone: これは本です. この must come before a noun: この本. それ / その refer to something near the
+      listener or already mentioned; あれ / あの are distant from both speakers.'
+  japanese: この本は面白いです。
+sentences:
+  this-is-a-book:
+    text: これは本です。
+    tiles:
+      - { text: これ, reading: これ }
+      - { text: は, reading: は }
+      - { text: 本, reading: ほん }
+      - { text: です, reading: です }
+    tokens:
+      - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 本です, reading: ほんです, wordClass: predicate }
+    meaning: This is a book.
+    reading: これはほんです。
+    translationTokens:
+      - { role: topic, text: This }
+      - { role: predicate, text: ' is a book.' }
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+  this-book-is-mine:
+    text: この本は私のです。
+    tiles:
+      - { text: この, reading: この }
+      - { text: 本, reading: ほん }
+      - { text: は, reading: は }
+      - { text: 私, reading: わたし }
+      - { text: の, reading: の }
+      - { text: です, reading: です }
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: modifier }
+      - { role: topic, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 私, reading: わたし, wordClass: predicate }
+      - { role: particle, text: の, reading: の, wordClass: particle }
+      - { role: predicate, text: です, reading: です, wordClass: predicate }
+    meaning: This book is mine.
+    reading: このほんはわたしのです。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: book }
+      - { role: predicate, text: ' is mine.' }
+    form: polite
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+  that-clock-is-the-teacher-s:
+    text: その時計は先生のです。
+    tiles:
+      - { text: その, reading: その }
+      - { text: 時計, reading: とけい }
+      - { text: は, reading: は }
+      - { text: 先生, reading: せんせい }
+      - { text: の, reading: の }
+      - { text: です, reading: です }
+    tokens:
+      - { role: modifier, text: その, reading: その, wordClass: modifier }
+      - { role: topic, text: 時計, reading: とけい, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 先生, reading: せんせい, wordClass: predicate }
+      - { role: particle, text: の, reading: の, wordClass: particle }
+      - { role: predicate, text: です, reading: です, wordClass: predicate }
+    meaning: That clock is the teacher's.
+    reading: そのとけいはせんせいのです。
+    translationTokens:
+      - { role: modifier, text: 'That ' }
+      - { role: topic, text: clock }
+      - { role: predicate, text: " is the teacher's." }
+    form: polite
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+  that-car-over-there-is-tanaka-s:
+    text: あの車は田中さんのです。
+    tiles:
+      - { text: あの, reading: あの }
+      - { text: 車, reading: くるま }
+      - { text: は, reading: は }
+      - { text: 田中さん, reading: たなかさん }
+      - { text: の, reading: の }
+      - { text: です, reading: です }
+    tokens:
+      - { role: modifier, text: あの, reading: あの, wordClass: modifier }
+      - { role: topic, text: 車, reading: くるま, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 田中さん, reading: たなかさん, wordClass: predicate }
+      - { role: particle, text: の, reading: の, wordClass: particle }
+      - { role: predicate, text: です, reading: です, wordClass: predicate }
+    meaning: That car over there is Tanaka's.
+    reading: あのくるまはたなかさんのです。
+    translationTokens:
+      - { role: modifier, text: 'That ' }
+      - { role: topic, text: car }
+      - { role: modifier, text: ' over there' }
+      - { role: predicate, text: " is Tanaka's." }
+    form: polite
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+  this-is-a-magazine:
+    text: これは雑誌です。
+    reading: これはざっしです。
+    meaning: This is a magazine.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 雑誌, reading: ざっし, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 雑誌です, reading: ざっしです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is a magazine.', role: predicate }
+    form: polite
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+  this-is-a-newspaper:
+    text: これは新聞です。
+    reading: これはしんぶんです。
+    meaning: This is a newspaper.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 新聞, reading: しんぶん, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 新聞です, reading: しんぶんです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is a newspaper.', role: predicate }
+    form: polite
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+  this-is-a-dictionary:
+    text: これは辞書です。
+    reading: これはじしょです。
+    meaning: This is a dictionary.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 辞書, reading: じしょ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 辞書です, reading: じしょです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is a dictionary.', role: predicate }
+    form: polite
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+  this-is-a-novel:
+    text: これは小説です。
+    reading: これはしょうせつです。
+    meaning: This is a novel.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 小説, reading: しょうせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 小説です, reading: しょうせつです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is a novel.', role: predicate }
+    form: polite
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+  this-is-a-comic:
+    text: これは漫画です。
+    reading: これはまんがです。
+    meaning: This is a comic.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 漫画, reading: まんが, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 漫画です, reading: まんがです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is a comic.', role: predicate }
+    form: polite
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+  this-is-a-textbook:
+    text: これは教科書です。
+    reading: これはきょうかしょです。
+    meaning: This is a textbook.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 教科書, reading: きょうかしょ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 教科書です, reading: きょうかしょです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is a textbook.', role: predicate }
+    form: polite
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+  this-is-a-picture-book:
+    text: これは絵本です。
+    reading: これはえほんです。
+    meaning: This is a picture book.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 絵本, reading: えほん, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 絵本です, reading: えほんです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is a picture book.', role: predicate }
+    form: polite
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+  this-is-a-letter:
+    text: これは手紙です。
+    reading: これはてがみです。
+    meaning: This is a letter.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 手紙, reading: てがみ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 手紙です, reading: てがみです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is a letter.', role: predicate }
+    form: polite
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+  this-is-a-diary:
+    text: これは日記です。
+    reading: これはにっきです。
+    meaning: This is a diary.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 日記, reading: にっき, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 日記です, reading: にっきです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is a diary.', role: predicate }
+    form: polite
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+  this-is-a-article:
+    text: これは記事です。
+    reading: これはきじです。
+    meaning: This is a article.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 記事, reading: きじ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 記事です, reading: きじです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is a article.', role: predicate }
+    form: polite
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+  this-magazine-is-mine:
+    text: この雑誌は私のです。
+    reading: このざっしはわたしのです。
+    meaning: This magazine is mine.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 雑誌, reading: ざっし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 雑誌, reading: ざっし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: magazine, role: topic }
+      - { text: ' is mine.', role: predicate }
+    form: polite
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+  this-newspaper-is-mine:
+    text: この新聞は私のです。
+    reading: このしんぶんはわたしのです。
+    meaning: This newspaper is mine.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 新聞, reading: しんぶん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 新聞, reading: しんぶん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: newspaper, role: topic }
+      - { text: ' is mine.', role: predicate }
+    form: polite
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+  this-dictionary-is-mine:
+    text: この辞書は私のです。
+    reading: このじしょはわたしのです。
+    meaning: This dictionary is mine.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 辞書, reading: じしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 辞書, reading: じしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: dictionary, role: topic }
+      - { text: ' is mine.', role: predicate }
+    form: polite
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+  this-novel-is-mine:
+    text: この小説は私のです。
+    reading: このしょうせつはわたしのです。
+    meaning: This novel is mine.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 小説, reading: しょうせつ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 小説, reading: しょうせつ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: novel, role: topic }
+      - { text: ' is mine.', role: predicate }
+    form: polite
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+  this-comic-is-mine:
+    text: この漫画は私のです。
+    reading: このまんがはわたしのです。
+    meaning: This comic is mine.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 漫画, reading: まんが, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 漫画, reading: まんが, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: comic, role: topic }
+      - { text: ' is mine.', role: predicate }
+    form: polite
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+  this-textbook-is-mine:
+    text: この教科書は私のです。
+    reading: このきょうかしょはわたしのです。
+    meaning: This textbook is mine.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 教科書, reading: きょうかしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 教科書, reading: きょうかしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: textbook, role: topic }
+      - { text: ' is mine.', role: predicate }
+    form: polite
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+  this-picture-book-is-mine:
+    text: この絵本は私のです。
+    reading: このえほんはわたしのです。
+    meaning: This picture book is mine.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 絵本, reading: えほん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 絵本, reading: えほん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: picture book, role: topic }
+      - { text: ' is mine.', role: predicate }
+    form: polite
+    hint: Use the form that goes directly before a noun.
+    explanation: これ stands alone; この must be followed by a noun. The same distinction applies to それ/その and あれ/あの.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: this-is-a-book
+    choices:
+      - text: This is a book.
+        reading: ''
+      - text: That is a book over there.
+        reading: ''
+    answers:
+      - This is a book.
+  - id: pattern
+    type: pattern-choice
+    sentence: this-is-a-book
+    choices:
+      - sentence: this-is-a-book
+      - text: このは本です。
+        tiles:
+          - { text: この, reading: この }
+          - { text: は, reading: は }
+          - { text: 本, reading: ほん }
+          - { text: です, reading: です }
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: modifier }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 本です, reading: ほんです, wordClass: predicate }
+        meaning: That is a book over there.
+        reading: このはほんです。
+    prompt: 'Choose the correct Japanese: This is a book.'
+    answers:
+      - これは本です
+      - これはほんです
+  - id: gap
+    type: gap
+    sentence: this-book-is-mine
+    answers:
+      - この
+      - この
+    context:
+      text: ___本は私のです。
+      tokens:
+        - { role: modifier, text: ___, reading: ___, wordClass: modifier }
+        - { role: topic, text: 本, reading: ほん, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 私, reading: わたし, wordClass: predicate }
+        - { role: particle, text: の, reading: の, wordClass: particle }
+        - { role: predicate, text: です, reading: です, wordClass: predicate }
+      reading: ___ほんはわたしのです。
+  - id: tiles
+    type: tiles
+    sentence: this-book-is-mine
+    prompt: 'Build this sentence: This book is mine. (polite)'
+    answers:
+      - この本は私のです
+      - この本はわたしのです
+      - このほんは私のです
+      - このほんはわたしのです
+    tiles:
+      - { role: modifier, text: この, reading: この, wordClass: modifier }
+      - { role: topic, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 私, reading: わたし, wordClass: predicate }
+      - { role: particle, text: の, reading: の, wordClass: particle }
+      - { role: predicate, text: です, reading: です, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: that-clock-is-the-teacher-s
+    answers:
+      - その時計は先生のです
+      - その時計はせんせいのです
+      - そのとけいは先生のです
+      - そのとけいはせんせいのです
+  - id: alternate
+    type: typing
+    sentence: that-car-over-there-is-tanaka-s
+    alternate: true
+    prompt: "One more example: That car over there is Tanaka's. (polite)"
+    answers:
+      - あの車は田中さんのです
+      - あの車はたなかさんのです
+      - あのくるまは田中さんのです
+      - あのくるまはたなかさんのです
+  - id: extra-1-tiles
+    type: tiles
+    sentence: this-is-a-magazine
+    prompt: 'Build this sentence: This is a magazine. (polite)'
+    answers:
+      - これは雑誌です
+      - これはざっしです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 雑誌, reading: ざっし, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: this-is-a-magazine
+    answers:
+      - これは雑誌です
+      - これはざっしです
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: this-is-a-magazine
+    choices:
+      - text: This is a magazine.
+        reading: ''
+      - text: This is a book.
+        reading: ''
+    prompt: 'Choose the meaning: これは雑誌です。'
+    answers:
+      - This is a magazine.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: this-is-a-newspaper
+    prompt: 'Build this sentence: This is a newspaper. (polite)'
+    answers:
+      - これは新聞です
+      - これはしんぶんです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 新聞, reading: しんぶん, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: this-is-a-newspaper
+    answers:
+      - これは新聞です
+      - これはしんぶんです
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: this-is-a-newspaper
+    choices:
+      - text: This is a newspaper.
+        reading: ''
+      - text: This is a book.
+        reading: ''
+    prompt: 'Choose the meaning: これは新聞です。'
+    answers:
+      - This is a newspaper.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: this-is-a-dictionary
+    prompt: 'Build this sentence: This is a dictionary. (polite)'
+    answers:
+      - これは辞書です
+      - これはじしょです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 辞書, reading: じしょ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: this-is-a-dictionary
+    answers:
+      - これは辞書です
+      - これはじしょです
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: this-is-a-dictionary
+    choices:
+      - text: This is a dictionary.
+        reading: ''
+      - text: This is a book.
+        reading: ''
+    prompt: 'Choose the meaning: これは辞書です。'
+    answers:
+      - This is a dictionary.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: this-is-a-novel
+    prompt: 'Build this sentence: This is a novel. (polite)'
+    answers:
+      - これは小説です
+      - これはしょうせつです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 小説, reading: しょうせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: this-is-a-novel
+    answers:
+      - これは小説です
+      - これはしょうせつです
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: this-is-a-novel
+    choices:
+      - text: This is a novel.
+        reading: ''
+      - text: This is a book.
+        reading: ''
+    prompt: 'Choose the meaning: これは小説です。'
+    answers:
+      - This is a novel.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: this-is-a-comic
+    prompt: 'Build this sentence: This is a comic. (polite)'
+    answers:
+      - これは漫画です
+      - これはまんがです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 漫画, reading: まんが, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: this-is-a-comic
+    answers:
+      - これは漫画です
+      - これはまんがです
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: this-is-a-comic
+    choices:
+      - text: This is a comic.
+        reading: ''
+      - text: This is a book.
+        reading: ''
+    prompt: 'Choose the meaning: これは漫画です。'
+    answers:
+      - This is a comic.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: this-is-a-textbook
+    prompt: 'Build this sentence: This is a textbook. (polite)'
+    answers:
+      - これは教科書です
+      - これはきょうかしょです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 教科書, reading: きょうかしょ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: this-is-a-textbook
+    answers:
+      - これは教科書です
+      - これはきょうかしょです
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: this-is-a-textbook
+    choices:
+      - text: This is a textbook.
+        reading: ''
+      - text: This is a book.
+        reading: ''
+    prompt: 'Choose the meaning: これは教科書です。'
+    answers:
+      - This is a textbook.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: this-is-a-picture-book
+    prompt: 'Build this sentence: This is a picture book. (polite)'
+    answers:
+      - これは絵本です
+      - これはえほんです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 絵本, reading: えほん, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: this-is-a-picture-book
+    answers:
+      - これは絵本です
+      - これはえほんです
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: this-is-a-picture-book
+    choices:
+      - text: This is a picture book.
+        reading: ''
+      - text: This is a book.
+        reading: ''
+    prompt: 'Choose the meaning: これは絵本です。'
+    answers:
+      - This is a picture book.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: this-is-a-letter
+    prompt: 'Build this sentence: This is a letter. (polite)'
+    answers:
+      - これは手紙です
+      - これはてがみです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 手紙, reading: てがみ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: this-is-a-letter
+    answers:
+      - これは手紙です
+      - これはてがみです
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: this-is-a-letter
+    choices:
+      - text: This is a letter.
+        reading: ''
+      - text: This is a book.
+        reading: ''
+    prompt: 'Choose the meaning: これは手紙です。'
+    answers:
+      - This is a letter.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: this-is-a-diary
+    prompt: 'Build this sentence: This is a diary. (polite)'
+    answers:
+      - これは日記です
+      - これはにっきです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 日記, reading: にっき, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: this-is-a-diary
+    answers:
+      - これは日記です
+      - これはにっきです
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: this-is-a-diary
+    choices:
+      - text: This is a diary.
+        reading: ''
+      - text: This is a book.
+        reading: ''
+    prompt: 'Choose the meaning: これは日記です。'
+    answers:
+      - This is a diary.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: this-is-a-article
+    prompt: 'Build this sentence: This is a article. (polite)'
+    answers:
+      - これは記事です
+      - これはきじです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 記事, reading: きじ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: this-is-a-article
+    answers:
+      - これは記事です
+      - これはきじです
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: this-is-a-article
+    choices:
+      - text: This is a article.
+        reading: ''
+      - text: This is a book.
+        reading: ''
+    prompt: 'Choose the meaning: これは記事です。'
+    answers:
+      - This is a article.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: this-magazine-is-mine
+    prompt: 'Build this sentence: This magazine is mine. (polite)'
+    answers:
+      - この雑誌は私のです
+      - この雑誌はわたしのです
+      - このざっしは私のです
+      - このざっしはわたしのです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 雑誌, reading: ざっし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: this-magazine-is-mine
+    answers:
+      - この雑誌は私のです
+      - この雑誌はわたしのです
+      - このざっしは私のです
+      - このざっしはわたしのです
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: this-magazine-is-mine
+    choices:
+      - text: This magazine is mine.
+        reading: ''
+      - text: This is a book.
+        reading: ''
+    prompt: 'Choose the meaning: この雑誌は私のです。'
+    answers:
+      - This magazine is mine.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: this-newspaper-is-mine
+    prompt: 'Build this sentence: This newspaper is mine. (polite)'
+    answers:
+      - この新聞は私のです
+      - この新聞はわたしのです
+      - このしんぶんは私のです
+      - このしんぶんはわたしのです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 新聞, reading: しんぶん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: this-newspaper-is-mine
+    answers:
+      - この新聞は私のです
+      - この新聞はわたしのです
+      - このしんぶんは私のです
+      - このしんぶんはわたしのです
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: this-newspaper-is-mine
+    choices:
+      - text: This newspaper is mine.
+        reading: ''
+      - text: This is a book.
+        reading: ''
+    prompt: 'Choose the meaning: この新聞は私のです。'
+    answers:
+      - This newspaper is mine.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: this-dictionary-is-mine
+    prompt: 'Build this sentence: This dictionary is mine. (polite)'
+    answers:
+      - この辞書は私のです
+      - この辞書はわたしのです
+      - このじしょは私のです
+      - このじしょはわたしのです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 辞書, reading: じしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: this-dictionary-is-mine
+    answers:
+      - この辞書は私のです
+      - この辞書はわたしのです
+      - このじしょは私のです
+      - このじしょはわたしのです
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: this-dictionary-is-mine
+    choices:
+      - text: This dictionary is mine.
+        reading: ''
+      - text: This is a book.
+        reading: ''
+    prompt: 'Choose the meaning: この辞書は私のです。'
+    answers:
+      - This dictionary is mine.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: this-novel-is-mine
+    prompt: 'Build this sentence: This novel is mine. (polite)'
+    answers:
+      - この小説は私のです
+      - この小説はわたしのです
+      - このしょうせつは私のです
+      - このしょうせつはわたしのです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 小説, reading: しょうせつ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: this-novel-is-mine
+    answers:
+      - この小説は私のです
+      - この小説はわたしのです
+      - このしょうせつは私のです
+      - このしょうせつはわたしのです
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: this-novel-is-mine
+    choices:
+      - text: This novel is mine.
+        reading: ''
+      - text: This is a book.
+        reading: ''
+    prompt: 'Choose the meaning: この小説は私のです。'
+    answers:
+      - This novel is mine.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: this-comic-is-mine
+    prompt: 'Build this sentence: This comic is mine. (polite)'
+    answers:
+      - この漫画は私のです
+      - この漫画はわたしのです
+      - このまんがは私のです
+      - このまんがはわたしのです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 漫画, reading: まんが, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: this-comic-is-mine
+    answers:
+      - この漫画は私のです
+      - この漫画はわたしのです
+      - このまんがは私のです
+      - このまんがはわたしのです
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: this-comic-is-mine
+    choices:
+      - text: This comic is mine.
+        reading: ''
+      - text: This is a book.
+        reading: ''
+    prompt: 'Choose the meaning: この漫画は私のです。'
+    answers:
+      - This comic is mine.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: this-textbook-is-mine
+    prompt: 'Build this sentence: This textbook is mine. (polite)'
+    answers:
+      - この教科書は私のです
+      - この教科書はわたしのです
+      - このきょうかしょは私のです
+      - このきょうかしょはわたしのです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 教科書, reading: きょうかしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: this-textbook-is-mine
+    answers:
+      - この教科書は私のです
+      - この教科書はわたしのです
+      - このきょうかしょは私のです
+      - このきょうかしょはわたしのです
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: this-textbook-is-mine
+    choices:
+      - text: This textbook is mine.
+        reading: ''
+      - text: This is a book.
+        reading: ''
+    prompt: 'Choose the meaning: この教科書は私のです。'
+    answers:
+      - This textbook is mine.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: this-picture-book-is-mine
+    prompt: 'Build this sentence: This picture book is mine. (polite)'
+    answers:
+      - この絵本は私のです
+      - この絵本はわたしのです
+      - このえほんは私のです
+      - このえほんはわたしのです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 絵本, reading: えほん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: predicate, wordClass: predicate }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: this-picture-book-is-mine
+    answers:
+      - この絵本は私のです
+      - この絵本はわたしのです
+      - このえほんは私のです
+      - このえほんはわたしのです

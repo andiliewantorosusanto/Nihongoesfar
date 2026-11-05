@@ -1,0 +1,1365 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-verb-past
+  kind: grammar
+  note:
+    'Replace ます with ました for past affirmative and with ませんでした for past negative: 買います → 買いました / 買いませんでした.
+    Noun and adjective past forms follow other patterns.'
+  tags:
+    - Grammar
+    - verb-past
+  level: N5
+  title: Polite verb past
+  topic: Sentence building
+  lesson:
+    goal: Describe a completed action politely.
+    group: Negatives and past
+    order: 17
+    recap: Replace ます with ました for past actions; noun + でした follows a different pattern.
+    examples:
+      - tokens:
+          - { role: modifier, text: 昨日, reading: きのう, wordClass: modifier }
+          - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 読みました, reading: よみました, wordClass: predicate }
+        meaning: I read a book yesterday.
+        reading: きのうほんをよみました。
+        japanese: 昨日本を読みました。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: 'read ' }
+          - { role: object, text: a book }
+          - { role: modifier, text: ' yesterday.' }
+      - tokens:
+          - { role: modifier, text: 昨日, reading: きのう, wordClass: modifier }
+          - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 飲みました, reading: のみました, wordClass: predicate }
+        meaning: I drank water yesterday.
+        reading: きのうみずをのみました。
+        japanese: 昨日水を飲みました。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: 'drank ' }
+          - { role: object, text: water }
+          - { role: modifier, text: ' yesterday.' }
+      - tokens:
+          - { role: modifier, text: 昨日, reading: きのう, wordClass: modifier }
+          - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 食べました, reading: たべました, wordClass: predicate }
+        meaning: I ate bread yesterday.
+        reading: きのうぱんをたべました。
+        japanese: 昨日パンを食べました。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: 'ate ' }
+          - { role: object, text: bread }
+          - { role: modifier, text: ' yesterday.' }
+    comparison: Replace ます with ました for past actions; noun + でした follows a different pattern.
+    vocabulary:
+      - text: 昨日
+        meaning: yesterday
+        reading: きのう
+      - text: 本
+        meaning: book
+        reading: ほん
+      - text: 読みました
+        meaning: read (past)
+        reading: よみました
+      - text: 水
+        meaning: water
+        reading: みず
+      - text: 飲みました
+        meaning: drank
+        reading: のみました
+      - text: パン
+        meaning: bread
+        reading: ぱん
+      - text: 食べました
+        meaning: ate
+        reading: たべました
+      - text: 学校
+        meaning: school
+        reading: がっこう
+      - text: 行きました
+        meaning: went
+        reading: いきました
+    prerequisites:
+      - grammar-masu
+      - grammar-masen
+  meaning: I bought a book yesterday.
+  reading: きのうほんをかいました。
+  examples:
+    - tokens:
+        - { role: modifier, text: 昨日, reading: きのう, wordClass: time noun }
+        - { role: object, text: 本, reading: ほん, wordClass: noun }
+        - { role: particle, text: を, reading: を, wordClass: object particle }
+        - { role: predicate, text: 買いました, reading: かいました, wordClass: past verb }
+      meaning: I bought a book yesterday.
+      reading: きのうほんをかいました。
+      japanese: 昨日本を買いました。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: bought, implicit: false }
+        - { role: object, text: ' a book', implicit: false }
+        - { role: modifier, text: ' yesterday.', implicit: false }
+  exercise:
+    tiles:
+      - 昨日
+      - 本
+      - を
+      - 買いました
+    prompt: 'Build: “I bought a book yesterday.” Start with 昨日.'
+    answers:
+      - 昨日本を買いました
+      - きのうほんをかいました
+    explanation:
+      'Replace ます with ました for past affirmative and with ませんでした for past negative: 買います → 買いました /
+      買いませんでした. Noun and adjective past forms follow other patterns.'
+  japanese: 昨日本を買いました。
+sentences:
+  i-read-a-book-yesterday:
+    text: 昨日本を読みました。
+    tiles:
+      - { text: 昨日, reading: きのう }
+      - { text: 本, reading: ほん }
+      - { text: を, reading: を }
+      - { text: 読みました, reading: よみました }
+    tokens:
+      - { role: modifier, text: 昨日, reading: きのう, wordClass: modifier }
+      - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 読みました, reading: よみました, wordClass: predicate }
+    meaning: I read a book yesterday.
+    reading: きのうほんをよみました。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'read ' }
+      - { role: object, text: a book }
+      - { role: modifier, text: ' yesterday.' }
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+  i-drank-water-yesterday:
+    text: 昨日水を飲みました。
+    tiles:
+      - { text: 昨日, reading: きのう }
+      - { text: 水, reading: みず }
+      - { text: を, reading: を }
+      - { text: 飲みました, reading: のみました }
+    tokens:
+      - { role: modifier, text: 昨日, reading: きのう, wordClass: modifier }
+      - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 飲みました, reading: のみました, wordClass: predicate }
+    meaning: I drank water yesterday.
+    reading: きのうみずをのみました。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'drank ' }
+      - { role: object, text: water }
+      - { role: modifier, text: ' yesterday.' }
+    form: polite
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+  i-ate-bread-yesterday:
+    text: 昨日パンを食べました。
+    tiles:
+      - { text: 昨日, reading: きのう }
+      - { text: パン, reading: ぱん }
+      - { text: を, reading: を }
+      - { text: 食べました, reading: たべました }
+    tokens:
+      - { role: modifier, text: 昨日, reading: きのう, wordClass: modifier }
+      - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 食べました, reading: たべました, wordClass: predicate }
+    meaning: I ate bread yesterday.
+    reading: きのうぱんをたべました。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'ate ' }
+      - { role: object, text: bread }
+      - { role: modifier, text: ' yesterday.' }
+    form: polite
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+  i-went-to-school-yesterday:
+    text: 昨日学校に行きました。
+    tiles:
+      - { text: 昨日, reading: きのう }
+      - { text: 学校, reading: がっこう }
+      - { text: に, reading: に }
+      - { text: 行きました, reading: いきました }
+    tokens:
+      - { role: modifier, text: 昨日, reading: きのう, wordClass: modifier }
+      - { role: object, text: 学校, reading: がっこう, wordClass: noun phrase }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 行きました, reading: いきました, wordClass: predicate }
+    meaning: I went to school yesterday.
+    reading: きのうがっこうにいきました。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: went }
+      - { role: modifier, text: ' to school' }
+      - { role: modifier, text: ' yesterday.' }
+    form: polite
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+  i-read-a-magazine-yesterday:
+    text: 昨日雑誌を読みました。
+    reading: きのうざっしをよみました。
+    meaning: I read a magazine yesterday.
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 雑誌, reading: ざっし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 雑誌, reading: ざっし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'read ', role: predicate }
+      - { text: a magazine, role: object }
+      - { text: ' yesterday.', role: modifier }
+    form: polite
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+  i-read-a-newspaper-yesterday:
+    text: 昨日新聞を読みました。
+    reading: きのうしんぶんをよみました。
+    meaning: I read a newspaper yesterday.
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 新聞, reading: しんぶん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 新聞, reading: しんぶん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'read ', role: predicate }
+      - { text: a newspaper, role: object }
+      - { text: ' yesterday.', role: modifier }
+    form: polite
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+  i-read-a-dictionary-yesterday:
+    text: 昨日辞書を読みました。
+    reading: きのうじしょをよみました。
+    meaning: I read a dictionary yesterday.
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 辞書, reading: じしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 辞書, reading: じしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'read ', role: predicate }
+      - { text: a dictionary, role: object }
+      - { text: ' yesterday.', role: modifier }
+    form: polite
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+  i-read-a-novel-yesterday:
+    text: 昨日小説を読みました。
+    reading: きのうしょうせつをよみました。
+    meaning: I read a novel yesterday.
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 小説, reading: しょうせつ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 小説, reading: しょうせつ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'read ', role: predicate }
+      - { text: a novel, role: object }
+      - { text: ' yesterday.', role: modifier }
+    form: polite
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+  i-read-a-comic-yesterday:
+    text: 昨日漫画を読みました。
+    reading: きのうまんがをよみました。
+    meaning: I read a comic yesterday.
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 漫画, reading: まんが, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 漫画, reading: まんが, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'read ', role: predicate }
+      - { text: a comic, role: object }
+      - { text: ' yesterday.', role: modifier }
+    form: polite
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+  i-read-a-textbook-yesterday:
+    text: 昨日教科書を読みました。
+    reading: きのうきょうかしょをよみました。
+    meaning: I read a textbook yesterday.
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 教科書, reading: きょうかしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 教科書, reading: きょうかしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'read ', role: predicate }
+      - { text: a textbook, role: object }
+      - { text: ' yesterday.', role: modifier }
+    form: polite
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+  i-read-a-picture-book-yesterday:
+    text: 昨日絵本を読みました。
+    reading: きのうえほんをよみました。
+    meaning: I read a picture book yesterday.
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 絵本, reading: えほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 絵本, reading: えほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'read ', role: predicate }
+      - { text: a picture book, role: object }
+      - { text: ' yesterday.', role: modifier }
+    form: polite
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+  i-read-a-letter-yesterday:
+    text: 昨日手紙を読みました。
+    reading: きのうてがみをよみました。
+    meaning: I read a letter yesterday.
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 手紙, reading: てがみ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 手紙, reading: てがみ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'read ', role: predicate }
+      - { text: a letter, role: object }
+      - { text: ' yesterday.', role: modifier }
+    form: polite
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+  i-read-a-diary-yesterday:
+    text: 昨日日記を読みました。
+    reading: きのうにっきをよみました。
+    meaning: I read a diary yesterday.
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 日記, reading: にっき, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 日記, reading: にっき, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'read ', role: predicate }
+      - { text: a diary, role: object }
+      - { text: ' yesterday.', role: modifier }
+    form: polite
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+  i-read-a-article-yesterday:
+    text: 昨日記事を読みました。
+    reading: きのうきじをよみました。
+    meaning: I read a article yesterday.
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 記事, reading: きじ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 記事, reading: きじ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'read ', role: predicate }
+      - { text: a article, role: object }
+      - { text: ' yesterday.', role: modifier }
+    form: polite
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+  i-drank-tea-yesterday:
+    text: 昨日お茶を飲みました。
+    reading: きのうおちゃをのみました。
+    meaning: I drank tea yesterday.
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: お茶, reading: おちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: お茶, reading: おちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'drank ', role: predicate }
+      - { text: tea, role: object }
+      - { text: ' yesterday.', role: modifier }
+    form: polite
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+  i-drank-milk-yesterday:
+    text: 昨日牛乳を飲みました。
+    reading: きのうぎゅうにゅうをのみました。
+    meaning: I drank milk yesterday.
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 牛乳, reading: ぎゅうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 牛乳, reading: ぎゅうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'drank ', role: predicate }
+      - { text: milk, role: object }
+      - { text: ' yesterday.', role: modifier }
+    form: polite
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+  i-drank-coffee-yesterday:
+    text: 昨日コーヒーを飲みました。
+    reading: きのうこーひーをのみました。
+    meaning: I drank coffee yesterday.
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: コーヒー, reading: こーひー, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: コーヒー, reading: こーひー, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'drank ', role: predicate }
+      - { text: coffee, role: object }
+      - { text: ' yesterday.', role: modifier }
+    form: polite
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+  i-drank-juice-yesterday:
+    text: 昨日ジュースを飲みました。
+    reading: きのうじゅーすをのみました。
+    meaning: I drank juice yesterday.
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: ジュース, reading: じゅーす, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: ジュース, reading: じゅーす, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'drank ', role: predicate }
+      - { text: juice, role: object }
+      - { text: ' yesterday.', role: modifier }
+    form: polite
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+  i-drank-black-tea-yesterday:
+    text: 昨日紅茶を飲みました。
+    reading: きのうこうちゃをのみました。
+    meaning: I drank black tea yesterday.
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 紅茶, reading: こうちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 紅茶, reading: こうちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'drank ', role: predicate }
+      - { text: black tea, role: object }
+      - { text: ' yesterday.', role: modifier }
+    form: polite
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+  i-drank-green-tea-yesterday:
+    text: 昨日緑茶を飲みました。
+    reading: きのうりょくちゃをのみました。
+    meaning: I drank green tea yesterday.
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 緑茶, reading: りょくちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 緑茶, reading: りょくちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'drank ', role: predicate }
+      - { text: green tea, role: object }
+      - { text: ' yesterday.', role: modifier }
+    form: polite
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+  i-drank-soy-milk-yesterday:
+    text: 昨日豆乳を飲みました。
+    reading: きのうとうにゅうをのみました。
+    meaning: I drank soy milk yesterday.
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 豆乳, reading: とうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 豆乳, reading: とうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'drank ', role: predicate }
+      - { text: soy milk, role: object }
+      - { text: ' yesterday.', role: modifier }
+    form: polite
+    hint: Use the polite past verb form for a completed action.
+    explanation: Replace ます with ました for past actions; noun + でした follows a different pattern.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-read-a-book-yesterday
+    choices:
+      - text: I read a book yesterday.
+        reading: ''
+      - text: I will read a book tomorrow.
+        reading: ''
+    answers:
+      - I read a book yesterday.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-read-a-book-yesterday
+    choices:
+      - sentence: i-read-a-book-yesterday
+      - text: 昨日本を読みでした。
+        tiles:
+          - { text: 昨日, reading: きのう }
+          - { text: 本, reading: ほん }
+          - { text: を, reading: を }
+          - { text: 読みでした, reading: よみでした }
+        tokens:
+          - { role: modifier, text: 昨日, reading: きのう, wordClass: modifier }
+          - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 読みでした, reading: よみでした, wordClass: predicate }
+        meaning: I will read a book tomorrow.
+        reading: きのうほんをよみでした。
+    prompt: 'Choose the correct Japanese: I read a book yesterday.'
+    answers:
+      - 昨日本を読みました
+      - 昨日本をよみました
+      - 昨日ほんを読みました
+      - 昨日ほんをよみました
+      - きのう本を読みました
+      - きのう本をよみました
+      - きのうほんを読みました
+      - きのうほんをよみました
+  - id: gap
+    type: gap
+    sentence: i-drank-water-yesterday
+    answers:
+      - 飲みました
+      - のみました
+    context:
+      text: 昨日水を___。
+      tokens:
+        - { role: modifier, text: 昨日, reading: きのう, wordClass: modifier }
+        - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+        - { role: particle, text: を, reading: を, wordClass: particle }
+        - { role: predicate, text: ___, reading: ___, wordClass: predicate }
+      reading: きのうみずを___。
+  - id: tiles
+    type: tiles
+    sentence: i-drank-water-yesterday
+    prompt: 'Build this sentence: I drank water yesterday. (polite)'
+    answers:
+      - 昨日水を飲みました
+      - 昨日水をのみました
+      - 昨日みずを飲みました
+      - 昨日みずをのみました
+      - きのう水を飲みました
+      - きのう水をのみました
+      - きのうみずを飲みました
+      - きのうみずをのみました
+    tiles:
+      - { role: modifier, text: 昨日, reading: きのう, wordClass: modifier }
+      - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 飲みました, reading: のみました, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: i-ate-bread-yesterday
+    answers:
+      - 昨日パンを食べました
+      - 昨日パンをたべました
+      - 昨日ぱんを食べました
+      - 昨日ぱんをたべました
+      - きのうパンを食べました
+      - きのうパンをたべました
+      - きのうぱんを食べました
+      - きのうぱんをたべました
+  - id: alternate
+    type: typing
+    sentence: i-went-to-school-yesterday
+    alternate: true
+    prompt: 'One more example: I went to school yesterday. (polite)'
+    answers:
+      - 昨日学校に行きました
+      - 昨日学校にいきました
+      - 昨日がっこうに行きました
+      - 昨日がっこうにいきました
+      - きのう学校に行きました
+      - きのう学校にいきました
+      - きのうがっこうに行きました
+      - きのうがっこうにいきました
+  - id: extra-1-tiles
+    type: tiles
+    sentence: i-read-a-magazine-yesterday
+    prompt: 'Build this sentence: I read a magazine yesterday. (polite)'
+    answers:
+      - 昨日雑誌を読みました
+      - 昨日雑誌をよみました
+      - 昨日ざっしを読みました
+      - 昨日ざっしをよみました
+      - きのう雑誌を読みました
+      - きのう雑誌をよみました
+      - きのうざっしを読みました
+      - きのうざっしをよみました
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 雑誌, reading: ざっし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: i-read-a-magazine-yesterday
+    answers:
+      - 昨日雑誌を読みました
+      - 昨日雑誌をよみました
+      - 昨日ざっしを読みました
+      - 昨日ざっしをよみました
+      - きのう雑誌を読みました
+      - きのう雑誌をよみました
+      - きのうざっしを読みました
+      - きのうざっしをよみました
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: i-read-a-magazine-yesterday
+    choices:
+      - text: I read a magazine yesterday.
+        reading: ''
+      - text: I read a book yesterday.
+        reading: ''
+    prompt: 'Choose the meaning: 昨日雑誌を読みました。'
+    answers:
+      - I read a magazine yesterday.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: i-read-a-newspaper-yesterday
+    prompt: 'Build this sentence: I read a newspaper yesterday. (polite)'
+    answers:
+      - 昨日新聞を読みました
+      - 昨日新聞をよみました
+      - 昨日しんぶんを読みました
+      - 昨日しんぶんをよみました
+      - きのう新聞を読みました
+      - きのう新聞をよみました
+      - きのうしんぶんを読みました
+      - きのうしんぶんをよみました
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 新聞, reading: しんぶん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: i-read-a-newspaper-yesterday
+    answers:
+      - 昨日新聞を読みました
+      - 昨日新聞をよみました
+      - 昨日しんぶんを読みました
+      - 昨日しんぶんをよみました
+      - きのう新聞を読みました
+      - きのう新聞をよみました
+      - きのうしんぶんを読みました
+      - きのうしんぶんをよみました
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: i-read-a-newspaper-yesterday
+    choices:
+      - text: I read a newspaper yesterday.
+        reading: ''
+      - text: I read a book yesterday.
+        reading: ''
+    prompt: 'Choose the meaning: 昨日新聞を読みました。'
+    answers:
+      - I read a newspaper yesterday.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: i-read-a-dictionary-yesterday
+    prompt: 'Build this sentence: I read a dictionary yesterday. (polite)'
+    answers:
+      - 昨日辞書を読みました
+      - 昨日辞書をよみました
+      - 昨日じしょを読みました
+      - 昨日じしょをよみました
+      - きのう辞書を読みました
+      - きのう辞書をよみました
+      - きのうじしょを読みました
+      - きのうじしょをよみました
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 辞書, reading: じしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: i-read-a-dictionary-yesterday
+    answers:
+      - 昨日辞書を読みました
+      - 昨日辞書をよみました
+      - 昨日じしょを読みました
+      - 昨日じしょをよみました
+      - きのう辞書を読みました
+      - きのう辞書をよみました
+      - きのうじしょを読みました
+      - きのうじしょをよみました
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: i-read-a-dictionary-yesterday
+    choices:
+      - text: I read a dictionary yesterday.
+        reading: ''
+      - text: I read a book yesterday.
+        reading: ''
+    prompt: 'Choose the meaning: 昨日辞書を読みました。'
+    answers:
+      - I read a dictionary yesterday.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: i-read-a-novel-yesterday
+    prompt: 'Build this sentence: I read a novel yesterday. (polite)'
+    answers:
+      - 昨日小説を読みました
+      - 昨日小説をよみました
+      - 昨日しょうせつを読みました
+      - 昨日しょうせつをよみました
+      - きのう小説を読みました
+      - きのう小説をよみました
+      - きのうしょうせつを読みました
+      - きのうしょうせつをよみました
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 小説, reading: しょうせつ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: i-read-a-novel-yesterday
+    answers:
+      - 昨日小説を読みました
+      - 昨日小説をよみました
+      - 昨日しょうせつを読みました
+      - 昨日しょうせつをよみました
+      - きのう小説を読みました
+      - きのう小説をよみました
+      - きのうしょうせつを読みました
+      - きのうしょうせつをよみました
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: i-read-a-novel-yesterday
+    choices:
+      - text: I read a novel yesterday.
+        reading: ''
+      - text: I read a book yesterday.
+        reading: ''
+    prompt: 'Choose the meaning: 昨日小説を読みました。'
+    answers:
+      - I read a novel yesterday.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: i-read-a-comic-yesterday
+    prompt: 'Build this sentence: I read a comic yesterday. (polite)'
+    answers:
+      - 昨日漫画を読みました
+      - 昨日漫画をよみました
+      - 昨日まんがを読みました
+      - 昨日まんがをよみました
+      - きのう漫画を読みました
+      - きのう漫画をよみました
+      - きのうまんがを読みました
+      - きのうまんがをよみました
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 漫画, reading: まんが, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: i-read-a-comic-yesterday
+    answers:
+      - 昨日漫画を読みました
+      - 昨日漫画をよみました
+      - 昨日まんがを読みました
+      - 昨日まんがをよみました
+      - きのう漫画を読みました
+      - きのう漫画をよみました
+      - きのうまんがを読みました
+      - きのうまんがをよみました
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: i-read-a-comic-yesterday
+    choices:
+      - text: I read a comic yesterday.
+        reading: ''
+      - text: I read a book yesterday.
+        reading: ''
+    prompt: 'Choose the meaning: 昨日漫画を読みました。'
+    answers:
+      - I read a comic yesterday.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: i-read-a-textbook-yesterday
+    prompt: 'Build this sentence: I read a textbook yesterday. (polite)'
+    answers:
+      - 昨日教科書を読みました
+      - 昨日教科書をよみました
+      - 昨日きょうかしょを読みました
+      - 昨日きょうかしょをよみました
+      - きのう教科書を読みました
+      - きのう教科書をよみました
+      - きのうきょうかしょを読みました
+      - きのうきょうかしょをよみました
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 教科書, reading: きょうかしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: i-read-a-textbook-yesterday
+    answers:
+      - 昨日教科書を読みました
+      - 昨日教科書をよみました
+      - 昨日きょうかしょを読みました
+      - 昨日きょうかしょをよみました
+      - きのう教科書を読みました
+      - きのう教科書をよみました
+      - きのうきょうかしょを読みました
+      - きのうきょうかしょをよみました
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: i-read-a-textbook-yesterday
+    choices:
+      - text: I read a textbook yesterday.
+        reading: ''
+      - text: I read a book yesterday.
+        reading: ''
+    prompt: 'Choose the meaning: 昨日教科書を読みました。'
+    answers:
+      - I read a textbook yesterday.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: i-read-a-picture-book-yesterday
+    prompt: 'Build this sentence: I read a picture book yesterday. (polite)'
+    answers:
+      - 昨日絵本を読みました
+      - 昨日絵本をよみました
+      - 昨日えほんを読みました
+      - 昨日えほんをよみました
+      - きのう絵本を読みました
+      - きのう絵本をよみました
+      - きのうえほんを読みました
+      - きのうえほんをよみました
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 絵本, reading: えほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: i-read-a-picture-book-yesterday
+    answers:
+      - 昨日絵本を読みました
+      - 昨日絵本をよみました
+      - 昨日えほんを読みました
+      - 昨日えほんをよみました
+      - きのう絵本を読みました
+      - きのう絵本をよみました
+      - きのうえほんを読みました
+      - きのうえほんをよみました
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: i-read-a-picture-book-yesterday
+    choices:
+      - text: I read a picture book yesterday.
+        reading: ''
+      - text: I read a book yesterday.
+        reading: ''
+    prompt: 'Choose the meaning: 昨日絵本を読みました。'
+    answers:
+      - I read a picture book yesterday.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: i-read-a-letter-yesterday
+    prompt: 'Build this sentence: I read a letter yesterday. (polite)'
+    answers:
+      - 昨日手紙を読みました
+      - 昨日手紙をよみました
+      - 昨日てがみを読みました
+      - 昨日てがみをよみました
+      - きのう手紙を読みました
+      - きのう手紙をよみました
+      - きのうてがみを読みました
+      - きのうてがみをよみました
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 手紙, reading: てがみ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: i-read-a-letter-yesterday
+    answers:
+      - 昨日手紙を読みました
+      - 昨日手紙をよみました
+      - 昨日てがみを読みました
+      - 昨日てがみをよみました
+      - きのう手紙を読みました
+      - きのう手紙をよみました
+      - きのうてがみを読みました
+      - きのうてがみをよみました
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: i-read-a-letter-yesterday
+    choices:
+      - text: I read a letter yesterday.
+        reading: ''
+      - text: I read a book yesterday.
+        reading: ''
+    prompt: 'Choose the meaning: 昨日手紙を読みました。'
+    answers:
+      - I read a letter yesterday.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: i-read-a-diary-yesterday
+    prompt: 'Build this sentence: I read a diary yesterday. (polite)'
+    answers:
+      - 昨日日記を読みました
+      - 昨日日記をよみました
+      - 昨日にっきを読みました
+      - 昨日にっきをよみました
+      - きのう日記を読みました
+      - きのう日記をよみました
+      - きのうにっきを読みました
+      - きのうにっきをよみました
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 日記, reading: にっき, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: i-read-a-diary-yesterday
+    answers:
+      - 昨日日記を読みました
+      - 昨日日記をよみました
+      - 昨日にっきを読みました
+      - 昨日にっきをよみました
+      - きのう日記を読みました
+      - きのう日記をよみました
+      - きのうにっきを読みました
+      - きのうにっきをよみました
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: i-read-a-diary-yesterday
+    choices:
+      - text: I read a diary yesterday.
+        reading: ''
+      - text: I read a book yesterday.
+        reading: ''
+    prompt: 'Choose the meaning: 昨日日記を読みました。'
+    answers:
+      - I read a diary yesterday.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: i-read-a-article-yesterday
+    prompt: 'Build this sentence: I read a article yesterday. (polite)'
+    answers:
+      - 昨日記事を読みました
+      - 昨日記事をよみました
+      - 昨日きじを読みました
+      - 昨日きじをよみました
+      - きのう記事を読みました
+      - きのう記事をよみました
+      - きのうきじを読みました
+      - きのうきじをよみました
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 記事, reading: きじ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みました, reading: よみました, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: i-read-a-article-yesterday
+    answers:
+      - 昨日記事を読みました
+      - 昨日記事をよみました
+      - 昨日きじを読みました
+      - 昨日きじをよみました
+      - きのう記事を読みました
+      - きのう記事をよみました
+      - きのうきじを読みました
+      - きのうきじをよみました
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: i-read-a-article-yesterday
+    choices:
+      - text: I read a article yesterday.
+        reading: ''
+      - text: I read a book yesterday.
+        reading: ''
+    prompt: 'Choose the meaning: 昨日記事を読みました。'
+    answers:
+      - I read a article yesterday.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: i-drank-tea-yesterday
+    prompt: 'Build this sentence: I drank tea yesterday. (polite)'
+    answers:
+      - 昨日お茶を飲みました
+      - 昨日お茶をのみました
+      - 昨日おちゃを飲みました
+      - 昨日おちゃをのみました
+      - きのうお茶を飲みました
+      - きのうお茶をのみました
+      - きのうおちゃを飲みました
+      - きのうおちゃをのみました
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: お茶, reading: おちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: i-drank-tea-yesterday
+    answers:
+      - 昨日お茶を飲みました
+      - 昨日お茶をのみました
+      - 昨日おちゃを飲みました
+      - 昨日おちゃをのみました
+      - きのうお茶を飲みました
+      - きのうお茶をのみました
+      - きのうおちゃを飲みました
+      - きのうおちゃをのみました
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: i-drank-tea-yesterday
+    choices:
+      - text: I drank tea yesterday.
+        reading: ''
+      - text: I read a book yesterday.
+        reading: ''
+    prompt: 'Choose the meaning: 昨日お茶を飲みました。'
+    answers:
+      - I drank tea yesterday.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: i-drank-milk-yesterday
+    prompt: 'Build this sentence: I drank milk yesterday. (polite)'
+    answers:
+      - 昨日牛乳を飲みました
+      - 昨日牛乳をのみました
+      - 昨日ぎゅうにゅうを飲みました
+      - 昨日ぎゅうにゅうをのみました
+      - きのう牛乳を飲みました
+      - きのう牛乳をのみました
+      - きのうぎゅうにゅうを飲みました
+      - きのうぎゅうにゅうをのみました
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 牛乳, reading: ぎゅうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: i-drank-milk-yesterday
+    answers:
+      - 昨日牛乳を飲みました
+      - 昨日牛乳をのみました
+      - 昨日ぎゅうにゅうを飲みました
+      - 昨日ぎゅうにゅうをのみました
+      - きのう牛乳を飲みました
+      - きのう牛乳をのみました
+      - きのうぎゅうにゅうを飲みました
+      - きのうぎゅうにゅうをのみました
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: i-drank-milk-yesterday
+    choices:
+      - text: I drank milk yesterday.
+        reading: ''
+      - text: I read a book yesterday.
+        reading: ''
+    prompt: 'Choose the meaning: 昨日牛乳を飲みました。'
+    answers:
+      - I drank milk yesterday.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: i-drank-coffee-yesterday
+    prompt: 'Build this sentence: I drank coffee yesterday. (polite)'
+    answers:
+      - 昨日コーヒーを飲みました
+      - 昨日コーヒーをのみました
+      - 昨日こーひーを飲みました
+      - 昨日こーひーをのみました
+      - きのうコーヒーを飲みました
+      - きのうコーヒーをのみました
+      - きのうこーひーを飲みました
+      - きのうこーひーをのみました
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: コーヒー, reading: こーひー, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: i-drank-coffee-yesterday
+    answers:
+      - 昨日コーヒーを飲みました
+      - 昨日コーヒーをのみました
+      - 昨日こーひーを飲みました
+      - 昨日こーひーをのみました
+      - きのうコーヒーを飲みました
+      - きのうコーヒーをのみました
+      - きのうこーひーを飲みました
+      - きのうこーひーをのみました
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: i-drank-coffee-yesterday
+    choices:
+      - text: I drank coffee yesterday.
+        reading: ''
+      - text: I read a book yesterday.
+        reading: ''
+    prompt: 'Choose the meaning: 昨日コーヒーを飲みました。'
+    answers:
+      - I drank coffee yesterday.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: i-drank-juice-yesterday
+    prompt: 'Build this sentence: I drank juice yesterday. (polite)'
+    answers:
+      - 昨日ジュースを飲みました
+      - 昨日ジュースをのみました
+      - 昨日じゅーすを飲みました
+      - 昨日じゅーすをのみました
+      - きのうジュースを飲みました
+      - きのうジュースをのみました
+      - きのうじゅーすを飲みました
+      - きのうじゅーすをのみました
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: ジュース, reading: じゅーす, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: i-drank-juice-yesterday
+    answers:
+      - 昨日ジュースを飲みました
+      - 昨日ジュースをのみました
+      - 昨日じゅーすを飲みました
+      - 昨日じゅーすをのみました
+      - きのうジュースを飲みました
+      - きのうジュースをのみました
+      - きのうじゅーすを飲みました
+      - きのうじゅーすをのみました
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: i-drank-juice-yesterday
+    choices:
+      - text: I drank juice yesterday.
+        reading: ''
+      - text: I read a book yesterday.
+        reading: ''
+    prompt: 'Choose the meaning: 昨日ジュースを飲みました。'
+    answers:
+      - I drank juice yesterday.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: i-drank-black-tea-yesterday
+    prompt: 'Build this sentence: I drank black tea yesterday. (polite)'
+    answers:
+      - 昨日紅茶を飲みました
+      - 昨日紅茶をのみました
+      - 昨日こうちゃを飲みました
+      - 昨日こうちゃをのみました
+      - きのう紅茶を飲みました
+      - きのう紅茶をのみました
+      - きのうこうちゃを飲みました
+      - きのうこうちゃをのみました
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 紅茶, reading: こうちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: i-drank-black-tea-yesterday
+    answers:
+      - 昨日紅茶を飲みました
+      - 昨日紅茶をのみました
+      - 昨日こうちゃを飲みました
+      - 昨日こうちゃをのみました
+      - きのう紅茶を飲みました
+      - きのう紅茶をのみました
+      - きのうこうちゃを飲みました
+      - きのうこうちゃをのみました
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: i-drank-black-tea-yesterday
+    choices:
+      - text: I drank black tea yesterday.
+        reading: ''
+      - text: I read a book yesterday.
+        reading: ''
+    prompt: 'Choose the meaning: 昨日紅茶を飲みました。'
+    answers:
+      - I drank black tea yesterday.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: i-drank-green-tea-yesterday
+    prompt: 'Build this sentence: I drank green tea yesterday. (polite)'
+    answers:
+      - 昨日緑茶を飲みました
+      - 昨日緑茶をのみました
+      - 昨日りょくちゃを飲みました
+      - 昨日りょくちゃをのみました
+      - きのう緑茶を飲みました
+      - きのう緑茶をのみました
+      - きのうりょくちゃを飲みました
+      - きのうりょくちゃをのみました
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 緑茶, reading: りょくちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: i-drank-green-tea-yesterday
+    answers:
+      - 昨日緑茶を飲みました
+      - 昨日緑茶をのみました
+      - 昨日りょくちゃを飲みました
+      - 昨日りょくちゃをのみました
+      - きのう緑茶を飲みました
+      - きのう緑茶をのみました
+      - きのうりょくちゃを飲みました
+      - きのうりょくちゃをのみました
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: i-drank-green-tea-yesterday
+    choices:
+      - text: I drank green tea yesterday.
+        reading: ''
+      - text: I read a book yesterday.
+        reading: ''
+    prompt: 'Choose the meaning: 昨日緑茶を飲みました。'
+    answers:
+      - I drank green tea yesterday.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: i-drank-soy-milk-yesterday
+    prompt: 'Build this sentence: I drank soy milk yesterday. (polite)'
+    answers:
+      - 昨日豆乳を飲みました
+      - 昨日豆乳をのみました
+      - 昨日とうにゅうを飲みました
+      - 昨日とうにゅうをのみました
+      - きのう豆乳を飲みました
+      - きのう豆乳をのみました
+      - きのうとうにゅうを飲みました
+      - きのうとうにゅうをのみました
+    tiles:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: modifier }
+      - { text: 豆乳, reading: とうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みました, reading: のみました, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: i-drank-soy-milk-yesterday
+    answers:
+      - 昨日豆乳を飲みました
+      - 昨日豆乳をのみました
+      - 昨日とうにゅうを飲みました
+      - 昨日とうにゅうをのみました
+      - きのう豆乳を飲みました
+      - きのう豆乳をのみました
+      - きのうとうにゅうを飲みました
+      - きのうとうにゅうをのみました

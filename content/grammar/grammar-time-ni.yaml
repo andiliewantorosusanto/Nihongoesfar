@@ -1,0 +1,1110 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-time-ni
+  kind: grammar
+  note:
+    'Use に after a specific clock time: 七時に. It is usually omitted after relative times such as 今日, 明日 and
+    毎日. Seven o’clock is commonly しちじ; four o’clock is よじ and nine o’clock is くじ.'
+  tags:
+    - Grammar
+    - time-ni
+  level: N5
+  title: 'Specific times: に'
+  topic: Sentence building
+  lesson:
+    goal: Say at what clock time an action happens.
+    group: Polite verbs and particles
+    order: 10
+    recap: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+    examples:
+      - tokens:
+          - { role: modifier, text: 七時, reading: しちじ, wordClass: modifier }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: predicate, text: 起きます, reading: おきます, wordClass: predicate }
+        meaning: I get up at seven.
+        reading: しちじにおきます。
+        japanese: 七時に起きます。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: get up }
+          - { role: modifier, text: ' at seven.' }
+      - tokens:
+          - { role: modifier, text: 八時, reading: はちじ, wordClass: modifier }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+        meaning: I go at eight.
+        reading: はちじにいきます。
+        japanese: 八時に行きます。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: go }
+          - { role: modifier, text: ' at eight.' }
+      - tokens:
+          - { role: modifier, text: 九時, reading: くじ, wordClass: modifier }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: predicate, text: 勉強します, reading: べんきょうします, wordClass: predicate }
+        meaning: I study at nine.
+        reading: くじにべんきょうします。
+        japanese: 九時に勉強します。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: study }
+          - { role: modifier, text: ' at nine.' }
+    comparison: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+    vocabulary:
+      - text: 七時
+        meaning: seven o'clock
+        reading: しちじ
+      - text: 起きます
+        meaning: get up
+        reading: おきます
+      - text: 八時
+        meaning: eight o'clock
+        reading: はちじ
+      - text: 行きます
+        meaning: go
+        reading: いきます
+      - text: 九時
+        meaning: nine o'clock
+        reading: くじ
+      - text: 勉強します
+        meaning: study
+        reading: べんきょうします
+      - text: 六時
+        meaning: six o'clock
+        reading: ろくじ
+      - text: 帰ります
+        meaning: return
+        reading: かえります
+    prerequisites:
+      - grammar-masu
+  meaning: I get up at seven.
+  reading: しちじにおきます。
+  examples:
+    - tokens:
+        - { role: modifier, text: 七時に, reading: しちじに, wordClass: time noun + particle }
+        - { role: predicate, text: 起きます, reading: おきます, wordClass: verb }
+      meaning: I get up at seven.
+      reading: しちじにおきます。
+      japanese: 七時に起きます。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: get up, implicit: false }
+        - { role: modifier, text: ' at seven.', implicit: false }
+  exercise:
+    prompt: 'Fill the missing particle: 七時 __ 起きます。'
+    answers:
+      - に
+    explanation:
+      'Use に after a specific clock time: 七時に. It is usually omitted after relative times such as 今日,
+      明日 and 毎日. Seven o’clock is commonly しちじ; four o’clock is よじ and nine o’clock is くじ.'
+  japanese: 七時に起きます。
+sentences:
+  i-get-up-at-seven:
+    text: 七時に起きます。
+    tiles:
+      - { text: 七時, reading: しちじ }
+      - { text: に, reading: に }
+      - { text: 起きます, reading: おきます }
+    tokens:
+      - { role: modifier, text: 七時, reading: しちじ, wordClass: modifier }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 起きます, reading: おきます, wordClass: predicate }
+    meaning: I get up at seven.
+    reading: しちじにおきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: get up }
+      - { role: modifier, text: ' at seven.' }
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+  i-go-at-eight:
+    text: 八時に行きます。
+    tiles:
+      - { text: 八時, reading: はちじ }
+      - { text: に, reading: に }
+      - { text: 行きます, reading: いきます }
+    tokens:
+      - { role: modifier, text: 八時, reading: はちじ, wordClass: modifier }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+    meaning: I go at eight.
+    reading: はちじにいきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: go }
+      - { role: modifier, text: ' at eight.' }
+    form: polite
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+  i-study-at-nine:
+    text: 九時に勉強します。
+    tiles:
+      - { text: 九時, reading: くじ }
+      - { text: に, reading: に }
+      - { text: 勉強します, reading: べんきょうします }
+    tokens:
+      - { role: modifier, text: 九時, reading: くじ, wordClass: modifier }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 勉強します, reading: べんきょうします, wordClass: predicate }
+    meaning: I study at nine.
+    reading: くじにべんきょうします。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: study }
+      - { role: modifier, text: ' at nine.' }
+    form: polite
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+  i-return-at-six:
+    text: 六時に帰ります。
+    tiles:
+      - { text: 六時, reading: ろくじ }
+      - { text: に, reading: に }
+      - { text: 帰ります, reading: かえります }
+    tokens:
+      - { role: modifier, text: 六時, reading: ろくじ, wordClass: modifier }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 帰ります, reading: かえります, wordClass: predicate }
+    meaning: I return at six.
+    reading: ろくじにかえります。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: return }
+      - { role: modifier, text: ' at six.' }
+    form: polite
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+  i-get-up-at-eight:
+    text: 八時に起きます。
+    reading: はちじにおきます。
+    meaning: I get up at eight.
+    tiles:
+      - { text: 八時, reading: はちじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 八時, reading: はちじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: get up, role: predicate }
+      - { text: ' at eight.', role: modifier }
+    form: polite
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+  i-get-up-at-nine:
+    text: 九時に起きます。
+    reading: くじにおきます。
+    meaning: I get up at nine.
+    tiles:
+      - { text: 九時, reading: くじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 九時, reading: くじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: get up, role: predicate }
+      - { text: ' at nine.', role: modifier }
+    form: polite
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+  i-get-up-at-six:
+    text: 六時に起きます。
+    reading: ろくじにおきます。
+    meaning: I get up at six.
+    tiles:
+      - { text: 六時, reading: ろくじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 六時, reading: ろくじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: get up, role: predicate }
+      - { text: ' at six.', role: modifier }
+    form: polite
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+  i-get-up-at-one:
+    text: 一時に起きます。
+    reading: いちじにおきます。
+    meaning: I get up at one.
+    tiles:
+      - { text: 一時, reading: いちじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 一時, reading: いちじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: get up, role: predicate }
+      - { text: ' at one.', role: modifier }
+    form: polite
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+  i-get-up-at-two:
+    text: 二時に起きます。
+    reading: にじにおきます。
+    meaning: I get up at two.
+    tiles:
+      - { text: 二時, reading: にじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 二時, reading: にじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: get up, role: predicate }
+      - { text: ' at two.', role: modifier }
+    form: polite
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+  i-get-up-at-three:
+    text: 三時に起きます。
+    reading: さんじにおきます。
+    meaning: I get up at three.
+    tiles:
+      - { text: 三時, reading: さんじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 三時, reading: さんじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: get up, role: predicate }
+      - { text: ' at three.', role: modifier }
+    form: polite
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+  i-get-up-at-four:
+    text: 四時に起きます。
+    reading: よじにおきます。
+    meaning: I get up at four.
+    tiles:
+      - { text: 四時, reading: よじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 四時, reading: よじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: get up, role: predicate }
+      - { text: ' at four.', role: modifier }
+    form: polite
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+  i-get-up-at-five:
+    text: 五時に起きます。
+    reading: ごじにおきます。
+    meaning: I get up at five.
+    tiles:
+      - { text: 五時, reading: ごじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 五時, reading: ごじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: get up, role: predicate }
+      - { text: ' at five.', role: modifier }
+    form: polite
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+  i-get-up-at-ten:
+    text: 十時に起きます。
+    reading: じゅうじにおきます。
+    meaning: I get up at ten.
+    tiles:
+      - { text: 十時, reading: じゅうじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 十時, reading: じゅうじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: get up, role: predicate }
+      - { text: ' at ten.', role: modifier }
+    form: polite
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+  i-get-up-at-eleven:
+    text: 十一時に起きます。
+    reading: じゅういちじにおきます。
+    meaning: I get up at eleven.
+    tiles:
+      - { text: 十一時, reading: じゅういちじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 十一時, reading: じゅういちじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: get up, role: predicate }
+      - { text: ' at eleven.', role: modifier }
+    form: polite
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+  i-go-at-seven:
+    text: 七時に行きます。
+    reading: しちじにいきます。
+    meaning: I go at seven.
+    tiles:
+      - { text: 七時, reading: しちじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 七時, reading: しちじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' at seven.', role: modifier }
+    form: polite
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+  i-go-at-nine:
+    text: 九時に行きます。
+    reading: くじにいきます。
+    meaning: I go at nine.
+    tiles:
+      - { text: 九時, reading: くじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 九時, reading: くじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' at nine.', role: modifier }
+    form: polite
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+  i-go-at-six:
+    text: 六時に行きます。
+    reading: ろくじにいきます。
+    meaning: I go at six.
+    tiles:
+      - { text: 六時, reading: ろくじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 六時, reading: ろくじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' at six.', role: modifier }
+    form: polite
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+  i-go-at-one:
+    text: 一時に行きます。
+    reading: いちじにいきます。
+    meaning: I go at one.
+    tiles:
+      - { text: 一時, reading: いちじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 一時, reading: いちじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' at one.', role: modifier }
+    form: polite
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+  i-go-at-two:
+    text: 二時に行きます。
+    reading: にじにいきます。
+    meaning: I go at two.
+    tiles:
+      - { text: 二時, reading: にじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 二時, reading: にじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' at two.', role: modifier }
+    form: polite
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+  i-go-at-three:
+    text: 三時に行きます。
+    reading: さんじにいきます。
+    meaning: I go at three.
+    tiles:
+      - { text: 三時, reading: さんじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 三時, reading: さんじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' at three.', role: modifier }
+    form: polite
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+  i-go-at-four:
+    text: 四時に行きます。
+    reading: よじにいきます。
+    meaning: I go at four.
+    tiles:
+      - { text: 四時, reading: よじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 四時, reading: よじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' at four.', role: modifier }
+    form: polite
+    hint: This is a specific clock time, so a time particle is needed.
+    explanation: Use に after a specific clock time; relative times such as 毎日 usually do not take に.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-get-up-at-seven
+    choices:
+      - text: I get up at seven.
+        reading: ''
+      - text: I get up at eight.
+        reading: ''
+    answers:
+      - I get up at seven.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-get-up-at-seven
+    choices:
+      - sentence: i-get-up-at-seven
+      - text: 七時を起きます。
+        tiles:
+          - { text: 七時, reading: しちじ }
+          - { text: を, reading: を }
+          - { text: 起きます, reading: おきます }
+        tokens:
+          - { role: modifier, text: 七時, reading: しちじ, wordClass: modifier }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 起きます, reading: おきます, wordClass: predicate }
+        meaning: I get up at eight.
+        reading: しちじをおきます。
+    prompt: 'Choose the correct Japanese: I get up at seven.'
+    answers:
+      - 七時に起きます
+      - 七時におきます
+      - しちじに起きます
+      - しちじにおきます
+  - id: gap
+    type: gap
+    sentence: i-go-at-eight
+    answers:
+      - に
+      - に
+    context:
+      text: 八時___行きます。
+      tokens:
+        - { role: modifier, text: 八時, reading: はちじ, wordClass: modifier }
+        - { role: particle, text: ___, reading: ___, wordClass: particle }
+        - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+      reading: はちじ___いきます。
+  - id: tiles
+    type: tiles
+    sentence: i-go-at-eight
+    prompt: 'Build this sentence: I go at eight. (polite)'
+    answers:
+      - 八時に行きます
+      - 八時にいきます
+      - はちじに行きます
+      - はちじにいきます
+    tiles:
+      - { role: modifier, text: 八時, reading: はちじ, wordClass: modifier }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: i-study-at-nine
+    answers:
+      - 九時に勉強します
+      - 九時にべんきょうします
+      - くじに勉強します
+      - くじにべんきょうします
+  - id: alternate
+    type: typing
+    sentence: i-return-at-six
+    alternate: true
+    prompt: 'One more example: I return at six. (polite)'
+    answers:
+      - 六時に帰ります
+      - 六時にかえります
+      - ろくじに帰ります
+      - ろくじにかえります
+  - id: extra-1-tiles
+    type: tiles
+    sentence: i-get-up-at-eight
+    prompt: 'Build this sentence: I get up at eight. (polite)'
+    answers:
+      - 八時に起きます
+      - 八時におきます
+      - はちじに起きます
+      - はちじにおきます
+    tiles:
+      - { text: 八時, reading: はちじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: i-get-up-at-eight
+    answers:
+      - 八時に起きます
+      - 八時におきます
+      - はちじに起きます
+      - はちじにおきます
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: i-get-up-at-eight
+    choices:
+      - text: I get up at eight.
+        reading: ''
+      - text: I get up at seven.
+        reading: ''
+    prompt: 'Choose the meaning: 八時に起きます。'
+    answers:
+      - I get up at eight.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: i-get-up-at-nine
+    prompt: 'Build this sentence: I get up at nine. (polite)'
+    answers:
+      - 九時に起きます
+      - 九時におきます
+      - くじに起きます
+      - くじにおきます
+    tiles:
+      - { text: 九時, reading: くじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: i-get-up-at-nine
+    answers:
+      - 九時に起きます
+      - 九時におきます
+      - くじに起きます
+      - くじにおきます
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: i-get-up-at-nine
+    choices:
+      - text: I get up at nine.
+        reading: ''
+      - text: I get up at seven.
+        reading: ''
+    prompt: 'Choose the meaning: 九時に起きます。'
+    answers:
+      - I get up at nine.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: i-get-up-at-six
+    prompt: 'Build this sentence: I get up at six. (polite)'
+    answers:
+      - 六時に起きます
+      - 六時におきます
+      - ろくじに起きます
+      - ろくじにおきます
+    tiles:
+      - { text: 六時, reading: ろくじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: i-get-up-at-six
+    answers:
+      - 六時に起きます
+      - 六時におきます
+      - ろくじに起きます
+      - ろくじにおきます
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: i-get-up-at-six
+    choices:
+      - text: I get up at six.
+        reading: ''
+      - text: I get up at seven.
+        reading: ''
+    prompt: 'Choose the meaning: 六時に起きます。'
+    answers:
+      - I get up at six.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: i-get-up-at-one
+    prompt: 'Build this sentence: I get up at one. (polite)'
+    answers:
+      - 一時に起きます
+      - 一時におきます
+      - いちじに起きます
+      - いちじにおきます
+    tiles:
+      - { text: 一時, reading: いちじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: i-get-up-at-one
+    answers:
+      - 一時に起きます
+      - 一時におきます
+      - いちじに起きます
+      - いちじにおきます
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: i-get-up-at-one
+    choices:
+      - text: I get up at one.
+        reading: ''
+      - text: I get up at seven.
+        reading: ''
+    prompt: 'Choose the meaning: 一時に起きます。'
+    answers:
+      - I get up at one.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: i-get-up-at-two
+    prompt: 'Build this sentence: I get up at two. (polite)'
+    answers:
+      - 二時に起きます
+      - 二時におきます
+      - にじに起きます
+      - にじにおきます
+    tiles:
+      - { text: 二時, reading: にじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: i-get-up-at-two
+    answers:
+      - 二時に起きます
+      - 二時におきます
+      - にじに起きます
+      - にじにおきます
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: i-get-up-at-two
+    choices:
+      - text: I get up at two.
+        reading: ''
+      - text: I get up at seven.
+        reading: ''
+    prompt: 'Choose the meaning: 二時に起きます。'
+    answers:
+      - I get up at two.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: i-get-up-at-three
+    prompt: 'Build this sentence: I get up at three. (polite)'
+    answers:
+      - 三時に起きます
+      - 三時におきます
+      - さんじに起きます
+      - さんじにおきます
+    tiles:
+      - { text: 三時, reading: さんじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: i-get-up-at-three
+    answers:
+      - 三時に起きます
+      - 三時におきます
+      - さんじに起きます
+      - さんじにおきます
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: i-get-up-at-three
+    choices:
+      - text: I get up at three.
+        reading: ''
+      - text: I get up at seven.
+        reading: ''
+    prompt: 'Choose the meaning: 三時に起きます。'
+    answers:
+      - I get up at three.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: i-get-up-at-four
+    prompt: 'Build this sentence: I get up at four. (polite)'
+    answers:
+      - 四時に起きます
+      - 四時におきます
+      - よじに起きます
+      - よじにおきます
+    tiles:
+      - { text: 四時, reading: よじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: i-get-up-at-four
+    answers:
+      - 四時に起きます
+      - 四時におきます
+      - よじに起きます
+      - よじにおきます
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: i-get-up-at-four
+    choices:
+      - text: I get up at four.
+        reading: ''
+      - text: I get up at seven.
+        reading: ''
+    prompt: 'Choose the meaning: 四時に起きます。'
+    answers:
+      - I get up at four.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: i-get-up-at-five
+    prompt: 'Build this sentence: I get up at five. (polite)'
+    answers:
+      - 五時に起きます
+      - 五時におきます
+      - ごじに起きます
+      - ごじにおきます
+    tiles:
+      - { text: 五時, reading: ごじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: i-get-up-at-five
+    answers:
+      - 五時に起きます
+      - 五時におきます
+      - ごじに起きます
+      - ごじにおきます
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: i-get-up-at-five
+    choices:
+      - text: I get up at five.
+        reading: ''
+      - text: I get up at seven.
+        reading: ''
+    prompt: 'Choose the meaning: 五時に起きます。'
+    answers:
+      - I get up at five.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: i-get-up-at-ten
+    prompt: 'Build this sentence: I get up at ten. (polite)'
+    answers:
+      - 十時に起きます
+      - 十時におきます
+      - じゅうじに起きます
+      - じゅうじにおきます
+    tiles:
+      - { text: 十時, reading: じゅうじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: i-get-up-at-ten
+    answers:
+      - 十時に起きます
+      - 十時におきます
+      - じゅうじに起きます
+      - じゅうじにおきます
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: i-get-up-at-ten
+    choices:
+      - text: I get up at ten.
+        reading: ''
+      - text: I get up at seven.
+        reading: ''
+    prompt: 'Choose the meaning: 十時に起きます。'
+    answers:
+      - I get up at ten.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: i-get-up-at-eleven
+    prompt: 'Build this sentence: I get up at eleven. (polite)'
+    answers:
+      - 十一時に起きます
+      - 十一時におきます
+      - じゅういちじに起きます
+      - じゅういちじにおきます
+    tiles:
+      - { text: 十一時, reading: じゅういちじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 起きます, reading: おきます, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: i-get-up-at-eleven
+    answers:
+      - 十一時に起きます
+      - 十一時におきます
+      - じゅういちじに起きます
+      - じゅういちじにおきます
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: i-get-up-at-eleven
+    choices:
+      - text: I get up at eleven.
+        reading: ''
+      - text: I get up at seven.
+        reading: ''
+    prompt: 'Choose the meaning: 十一時に起きます。'
+    answers:
+      - I get up at eleven.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: i-go-at-seven
+    prompt: 'Build this sentence: I go at seven. (polite)'
+    answers:
+      - 七時に行きます
+      - 七時にいきます
+      - しちじに行きます
+      - しちじにいきます
+    tiles:
+      - { text: 七時, reading: しちじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: i-go-at-seven
+    answers:
+      - 七時に行きます
+      - 七時にいきます
+      - しちじに行きます
+      - しちじにいきます
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: i-go-at-seven
+    choices:
+      - text: I go at seven.
+        reading: ''
+      - text: I get up at seven.
+        reading: ''
+    prompt: 'Choose the meaning: 七時に行きます。'
+    answers:
+      - I go at seven.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: i-go-at-nine
+    prompt: 'Build this sentence: I go at nine. (polite)'
+    answers:
+      - 九時に行きます
+      - 九時にいきます
+      - くじに行きます
+      - くじにいきます
+    tiles:
+      - { text: 九時, reading: くじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: i-go-at-nine
+    answers:
+      - 九時に行きます
+      - 九時にいきます
+      - くじに行きます
+      - くじにいきます
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: i-go-at-nine
+    choices:
+      - text: I go at nine.
+        reading: ''
+      - text: I get up at seven.
+        reading: ''
+    prompt: 'Choose the meaning: 九時に行きます。'
+    answers:
+      - I go at nine.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: i-go-at-six
+    prompt: 'Build this sentence: I go at six. (polite)'
+    answers:
+      - 六時に行きます
+      - 六時にいきます
+      - ろくじに行きます
+      - ろくじにいきます
+    tiles:
+      - { text: 六時, reading: ろくじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: i-go-at-six
+    answers:
+      - 六時に行きます
+      - 六時にいきます
+      - ろくじに行きます
+      - ろくじにいきます
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: i-go-at-six
+    choices:
+      - text: I go at six.
+        reading: ''
+      - text: I get up at seven.
+        reading: ''
+    prompt: 'Choose the meaning: 六時に行きます。'
+    answers:
+      - I go at six.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: i-go-at-one
+    prompt: 'Build this sentence: I go at one. (polite)'
+    answers:
+      - 一時に行きます
+      - 一時にいきます
+      - いちじに行きます
+      - いちじにいきます
+    tiles:
+      - { text: 一時, reading: いちじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: i-go-at-one
+    answers:
+      - 一時に行きます
+      - 一時にいきます
+      - いちじに行きます
+      - いちじにいきます
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: i-go-at-one
+    choices:
+      - text: I go at one.
+        reading: ''
+      - text: I get up at seven.
+        reading: ''
+    prompt: 'Choose the meaning: 一時に行きます。'
+    answers:
+      - I go at one.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: i-go-at-two
+    prompt: 'Build this sentence: I go at two. (polite)'
+    answers:
+      - 二時に行きます
+      - 二時にいきます
+      - にじに行きます
+      - にじにいきます
+    tiles:
+      - { text: 二時, reading: にじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: i-go-at-two
+    answers:
+      - 二時に行きます
+      - 二時にいきます
+      - にじに行きます
+      - にじにいきます
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: i-go-at-two
+    choices:
+      - text: I go at two.
+        reading: ''
+      - text: I get up at seven.
+        reading: ''
+    prompt: 'Choose the meaning: 二時に行きます。'
+    answers:
+      - I go at two.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: i-go-at-three
+    prompt: 'Build this sentence: I go at three. (polite)'
+    answers:
+      - 三時に行きます
+      - 三時にいきます
+      - さんじに行きます
+      - さんじにいきます
+    tiles:
+      - { text: 三時, reading: さんじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: i-go-at-three
+    answers:
+      - 三時に行きます
+      - 三時にいきます
+      - さんじに行きます
+      - さんじにいきます
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: i-go-at-three
+    choices:
+      - text: I go at three.
+        reading: ''
+      - text: I get up at seven.
+        reading: ''
+    prompt: 'Choose the meaning: 三時に行きます。'
+    answers:
+      - I go at three.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: i-go-at-four
+    prompt: 'Build this sentence: I go at four. (polite)'
+    answers:
+      - 四時に行きます
+      - 四時にいきます
+      - よじに行きます
+      - よじにいきます
+    tiles:
+      - { text: 四時, reading: よじ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: i-go-at-four
+    answers:
+      - 四時に行きます
+      - 四時にいきます
+      - よじに行きます
+      - よじにいきます

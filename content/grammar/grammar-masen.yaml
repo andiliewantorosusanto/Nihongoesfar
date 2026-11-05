@@ -1,0 +1,1122 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-masen
+  kind: grammar
+  note:
+    'Replace ます with ません for a polite non-past negative: 食べます → 食べません. Do not add じゃありません to the dictionary
+    form of a verb. 食べません may mean a habit or a future choice in context.'
+  tags:
+    - Grammar
+    - masen
+  level: N5
+  title: 'Polite verb negative: ません'
+  topic: Sentence building
+  lesson:
+    goal: Say that you do not do an action.
+    group: Negatives and past
+    order: 16
+    recap: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+    examples:
+      - tokens:
+          - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 飲みません, reading: のみません, wordClass: predicate }
+        meaning: I do not drink water.
+        reading: みずをのみません。
+        japanese: 水を飲みません。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: 'do not drink ' }
+          - { role: object, text: water. }
+      - tokens:
+          - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 読みません, reading: よみません, wordClass: predicate }
+        meaning: I do not read books.
+        reading: ほんをよみません。
+        japanese: 本を読みません。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: 'do not read ' }
+          - { role: object, text: books. }
+      - tokens:
+          - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 食べません, reading: たべません, wordClass: predicate }
+        meaning: I do not eat bread.
+        reading: ぱんをたべません。
+        japanese: パンを食べません。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: 'do not eat ' }
+          - { role: object, text: bread. }
+    comparison: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+    vocabulary:
+      - text: 水
+        meaning: water
+        reading: みず
+      - text: 飲みません
+        meaning: do not drink
+        reading: のみません
+      - text: 本
+        meaning: book
+        reading: ほん
+      - text: 読みません
+        meaning: do not read
+        reading: よみません
+      - text: パン
+        meaning: bread
+        reading: ぱん
+      - text: 食べません
+        meaning: do not eat
+        reading: たべません
+      - text: 今日
+        meaning: today
+        reading: きょう
+      - text: 働きません
+        meaning: do not work
+        reading: はたらきません
+    prerequisites:
+      - grammar-masu
+      - grammar-object
+  meaning: I do not eat meat.
+  reading: にくをたべません。
+  examples:
+    - tokens:
+        - { role: object, text: 肉, reading: にく, wordClass: noun }
+        - { role: particle, text: を, reading: を, wordClass: object particle }
+        - { role: predicate, text: 食べません, reading: たべません, wordClass: negative verb }
+      meaning: I do not eat meat.
+      reading: にくをたべません。
+      japanese: 肉を食べません。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: do not eat, implicit: false }
+        - { role: object, text: ' meat.', implicit: false }
+  exercise:
+    tiles:
+      - 肉
+      - を
+      - 食べません
+    prompt: 'Build: “I do not eat meat.”'
+    answers:
+      - 肉を食べません
+      - にくをたべません
+    explanation:
+      'Replace ます with ません for a polite non-past negative: 食べます → 食べません. Do not add じゃありません to the
+      dictionary form of a verb. 食べません may mean a habit or a future choice in context.'
+  japanese: 肉を食べません。
+sentences:
+  i-do-not-drink-water:
+    text: 水を飲みません。
+    tiles:
+      - { text: 水, reading: みず }
+      - { text: を, reading: を }
+      - { text: 飲みません, reading: のみません }
+    tokens:
+      - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 飲みません, reading: のみません, wordClass: predicate }
+    meaning: I do not drink water.
+    reading: みずをのみません。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'do not drink ' }
+      - { role: object, text: water. }
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+  i-do-not-read-books:
+    text: 本を読みません。
+    tiles:
+      - { text: 本, reading: ほん }
+      - { text: を, reading: を }
+      - { text: 読みません, reading: よみません }
+    tokens:
+      - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 読みません, reading: よみません, wordClass: predicate }
+    meaning: I do not read books.
+    reading: ほんをよみません。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'do not read ' }
+      - { role: object, text: books. }
+    form: polite
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+  i-do-not-eat-bread:
+    text: パンを食べません。
+    tiles:
+      - { text: パン, reading: ぱん }
+      - { text: を, reading: を }
+      - { text: 食べません, reading: たべません }
+    tokens:
+      - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 食べません, reading: たべません, wordClass: predicate }
+    meaning: I do not eat bread.
+    reading: ぱんをたべません。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'do not eat ' }
+      - { role: object, text: bread. }
+    form: polite
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+  i-do-not-work-today:
+    text: 今日は働きません。
+    tiles:
+      - { text: 今日, reading: きょう }
+      - { text: は, reading: は }
+      - { text: 働きません, reading: はたらきません }
+    tokens:
+      - { role: topic, text: 今日, reading: きょう, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 働きません, reading: はたらきません, wordClass: predicate }
+    meaning: I do not work today.
+    reading: きょうははたらきません。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: do not work }
+      - { role: topic, text: ' today.' }
+    form: polite
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+  i-do-not-drink-tea:
+    text: お茶を飲みません。
+    reading: おちゃをのみません。
+    meaning: I do not drink tea.
+    tiles:
+      - { text: お茶, reading: おちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: お茶, reading: おちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'do not drink ', role: predicate }
+      - { text: tea., role: object }
+    form: polite
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+  i-do-not-drink-milk:
+    text: 牛乳を飲みません。
+    reading: ぎゅうにゅうをのみません。
+    meaning: I do not drink milk.
+    tiles:
+      - { text: 牛乳, reading: ぎゅうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 牛乳, reading: ぎゅうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'do not drink ', role: predicate }
+      - { text: milk., role: object }
+    form: polite
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+  i-do-not-drink-coffee:
+    text: コーヒーを飲みません。
+    reading: こーひーをのみません。
+    meaning: I do not drink coffee.
+    tiles:
+      - { text: コーヒー, reading: こーひー, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: コーヒー, reading: こーひー, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'do not drink ', role: predicate }
+      - { text: coffee., role: object }
+    form: polite
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+  i-do-not-drink-juice:
+    text: ジュースを飲みません。
+    reading: じゅーすをのみません。
+    meaning: I do not drink juice.
+    tiles:
+      - { text: ジュース, reading: じゅーす, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: ジュース, reading: じゅーす, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'do not drink ', role: predicate }
+      - { text: juice., role: object }
+    form: polite
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+  i-do-not-drink-black-tea:
+    text: 紅茶を飲みません。
+    reading: こうちゃをのみません。
+    meaning: I do not drink black tea.
+    tiles:
+      - { text: 紅茶, reading: こうちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 紅茶, reading: こうちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'do not drink ', role: predicate }
+      - { text: black tea., role: object }
+    form: polite
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+  i-do-not-drink-green-tea:
+    text: 緑茶を飲みません。
+    reading: りょくちゃをのみません。
+    meaning: I do not drink green tea.
+    tiles:
+      - { text: 緑茶, reading: りょくちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 緑茶, reading: りょくちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'do not drink ', role: predicate }
+      - { text: green tea., role: object }
+    form: polite
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+  i-do-not-drink-soy-milk:
+    text: 豆乳を飲みません。
+    reading: とうにゅうをのみません。
+    meaning: I do not drink soy milk.
+    tiles:
+      - { text: 豆乳, reading: とうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 豆乳, reading: とうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'do not drink ', role: predicate }
+      - { text: soy milk., role: object }
+    form: polite
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+  i-do-not-drink-barley-tea:
+    text: 麦茶を飲みません。
+    reading: むぎちゃをのみません。
+    meaning: I do not drink barley tea.
+    tiles:
+      - { text: 麦茶, reading: むぎちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 麦茶, reading: むぎちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'do not drink ', role: predicate }
+      - { text: barley tea., role: object }
+    form: polite
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+  i-do-not-drink-cold-water:
+    text: 冷水を飲みません。
+    reading: れいすいをのみません。
+    meaning: I do not drink cold water.
+    tiles:
+      - { text: 冷水, reading: れいすい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 冷水, reading: れいすい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'do not drink ', role: predicate }
+      - { text: cold water., role: object }
+    form: polite
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+  i-do-not-drink-sparkling-water:
+    text: 炭酸水を飲みません。
+    reading: たんさんすいをのみません。
+    meaning: I do not drink sparkling water.
+    tiles:
+      - { text: 炭酸水, reading: たんさんすい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 炭酸水, reading: たんさんすい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'do not drink ', role: predicate }
+      - { text: sparkling water., role: object }
+    form: polite
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+  i-do-not-read-magazines:
+    text: 雑誌を読みません。
+    reading: ざっしをよみません。
+    meaning: I do not read magazines.
+    tiles:
+      - { text: 雑誌, reading: ざっし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 雑誌, reading: ざっし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'do not read ', role: predicate }
+      - { text: magazines., role: object }
+    form: polite
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+  i-do-not-read-newspapers:
+    text: 新聞を読みません。
+    reading: しんぶんをよみません。
+    meaning: I do not read newspapers.
+    tiles:
+      - { text: 新聞, reading: しんぶん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 新聞, reading: しんぶん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'do not read ', role: predicate }
+      - { text: newspapers., role: object }
+    form: polite
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+  i-do-not-read-dictionarys:
+    text: 辞書を読みません。
+    reading: じしょをよみません。
+    meaning: I do not read dictionarys.
+    tiles:
+      - { text: 辞書, reading: じしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 辞書, reading: じしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'do not read ', role: predicate }
+      - { text: dictionarys., role: object }
+    form: polite
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+  i-do-not-read-novels:
+    text: 小説を読みません。
+    reading: しょうせつをよみません。
+    meaning: I do not read novels.
+    tiles:
+      - { text: 小説, reading: しょうせつ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 小説, reading: しょうせつ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'do not read ', role: predicate }
+      - { text: novels., role: object }
+    form: polite
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+  i-do-not-read-comics:
+    text: 漫画を読みません。
+    reading: まんがをよみません。
+    meaning: I do not read comics.
+    tiles:
+      - { text: 漫画, reading: まんが, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 漫画, reading: まんが, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'do not read ', role: predicate }
+      - { text: comics., role: object }
+    form: polite
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+  i-do-not-read-textbooks:
+    text: 教科書を読みません。
+    reading: きょうかしょをよみません。
+    meaning: I do not read textbooks.
+    tiles:
+      - { text: 教科書, reading: きょうかしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 教科書, reading: きょうかしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'do not read ', role: predicate }
+      - { text: textbooks., role: object }
+    form: polite
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+  i-do-not-read-picture-books:
+    text: 絵本を読みません。
+    reading: えほんをよみません。
+    meaning: I do not read picture books.
+    tiles:
+      - { text: 絵本, reading: えほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 絵本, reading: えほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'do not read ', role: predicate }
+      - { text: picture books., role: object }
+    form: polite
+    hint: Use the negative partner of ます.
+    explanation: Replace verb ます with ません. Do not attach noun-negative じゃありません to a verb stem.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-do-not-drink-water
+    choices:
+      - text: I do not drink water.
+        reading: ''
+      - text: I drink water.
+        reading: ''
+    answers:
+      - I do not drink water.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-do-not-drink-water
+    choices:
+      - sentence: i-do-not-drink-water
+      - text: 水を飲みじゃありません。
+        tiles:
+          - { text: 水, reading: みず }
+          - { text: を, reading: を }
+          - { text: 飲みじゃありません, reading: のみじゃありません }
+        tokens:
+          - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - {
+              role: predicate,
+              text: 飲みじゃありません,
+              reading: のみじゃありません,
+              wordClass: predicate,
+            }
+        meaning: I drink water.
+        reading: みずをのみじゃありません。
+    prompt: 'Choose the correct Japanese: I do not drink water.'
+    answers:
+      - 水を飲みません
+      - 水をのみません
+      - みずを飲みません
+      - みずをのみません
+  - id: gap
+    type: gap
+    sentence: i-do-not-read-books
+    answers:
+      - 読みません
+      - よみません
+    context:
+      text: 本を___。
+      tokens:
+        - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+        - { role: particle, text: を, reading: を, wordClass: particle }
+        - { role: predicate, text: ___, reading: ___, wordClass: predicate }
+      reading: ほんを___。
+  - id: tiles
+    type: tiles
+    sentence: i-do-not-read-books
+    prompt: 'Build this sentence: I do not read books. (polite)'
+    answers:
+      - 本を読みません
+      - 本をよみません
+      - ほんを読みません
+      - ほんをよみません
+    tiles:
+      - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 読みません, reading: よみません, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: i-do-not-eat-bread
+    answers:
+      - パンを食べません
+      - パンをたべません
+      - ぱんを食べません
+      - ぱんをたべません
+  - id: alternate
+    type: typing
+    sentence: i-do-not-work-today
+    alternate: true
+    prompt: 'One more example: I do not work today. (polite)'
+    answers:
+      - 今日は働きません
+      - 今日ははたらきません
+      - きょうは働きません
+      - きょうははたらきません
+  - id: extra-1-tiles
+    type: tiles
+    sentence: i-do-not-drink-tea
+    prompt: 'Build this sentence: I do not drink tea. (polite)'
+    answers:
+      - お茶を飲みません
+      - お茶をのみません
+      - おちゃを飲みません
+      - おちゃをのみません
+    tiles:
+      - { text: お茶, reading: おちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: i-do-not-drink-tea
+    answers:
+      - お茶を飲みません
+      - お茶をのみません
+      - おちゃを飲みません
+      - おちゃをのみません
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: i-do-not-drink-tea
+    choices:
+      - text: I do not drink tea.
+        reading: ''
+      - text: I do not drink water.
+        reading: ''
+    prompt: 'Choose the meaning: お茶を飲みません。'
+    answers:
+      - I do not drink tea.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: i-do-not-drink-milk
+    prompt: 'Build this sentence: I do not drink milk. (polite)'
+    answers:
+      - 牛乳を飲みません
+      - 牛乳をのみません
+      - ぎゅうにゅうを飲みません
+      - ぎゅうにゅうをのみません
+    tiles:
+      - { text: 牛乳, reading: ぎゅうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: i-do-not-drink-milk
+    answers:
+      - 牛乳を飲みません
+      - 牛乳をのみません
+      - ぎゅうにゅうを飲みません
+      - ぎゅうにゅうをのみません
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: i-do-not-drink-milk
+    choices:
+      - text: I do not drink milk.
+        reading: ''
+      - text: I do not drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 牛乳を飲みません。'
+    answers:
+      - I do not drink milk.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: i-do-not-drink-coffee
+    prompt: 'Build this sentence: I do not drink coffee. (polite)'
+    answers:
+      - コーヒーを飲みません
+      - コーヒーをのみません
+      - こーひーを飲みません
+      - こーひーをのみません
+    tiles:
+      - { text: コーヒー, reading: こーひー, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: i-do-not-drink-coffee
+    answers:
+      - コーヒーを飲みません
+      - コーヒーをのみません
+      - こーひーを飲みません
+      - こーひーをのみません
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: i-do-not-drink-coffee
+    choices:
+      - text: I do not drink coffee.
+        reading: ''
+      - text: I do not drink water.
+        reading: ''
+    prompt: 'Choose the meaning: コーヒーを飲みません。'
+    answers:
+      - I do not drink coffee.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: i-do-not-drink-juice
+    prompt: 'Build this sentence: I do not drink juice. (polite)'
+    answers:
+      - ジュースを飲みません
+      - ジュースをのみません
+      - じゅーすを飲みません
+      - じゅーすをのみません
+    tiles:
+      - { text: ジュース, reading: じゅーす, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: i-do-not-drink-juice
+    answers:
+      - ジュースを飲みません
+      - ジュースをのみません
+      - じゅーすを飲みません
+      - じゅーすをのみません
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: i-do-not-drink-juice
+    choices:
+      - text: I do not drink juice.
+        reading: ''
+      - text: I do not drink water.
+        reading: ''
+    prompt: 'Choose the meaning: ジュースを飲みません。'
+    answers:
+      - I do not drink juice.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: i-do-not-drink-black-tea
+    prompt: 'Build this sentence: I do not drink black tea. (polite)'
+    answers:
+      - 紅茶を飲みません
+      - 紅茶をのみません
+      - こうちゃを飲みません
+      - こうちゃをのみません
+    tiles:
+      - { text: 紅茶, reading: こうちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: i-do-not-drink-black-tea
+    answers:
+      - 紅茶を飲みません
+      - 紅茶をのみません
+      - こうちゃを飲みません
+      - こうちゃをのみません
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: i-do-not-drink-black-tea
+    choices:
+      - text: I do not drink black tea.
+        reading: ''
+      - text: I do not drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 紅茶を飲みません。'
+    answers:
+      - I do not drink black tea.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: i-do-not-drink-green-tea
+    prompt: 'Build this sentence: I do not drink green tea. (polite)'
+    answers:
+      - 緑茶を飲みません
+      - 緑茶をのみません
+      - りょくちゃを飲みません
+      - りょくちゃをのみません
+    tiles:
+      - { text: 緑茶, reading: りょくちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: i-do-not-drink-green-tea
+    answers:
+      - 緑茶を飲みません
+      - 緑茶をのみません
+      - りょくちゃを飲みません
+      - りょくちゃをのみません
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: i-do-not-drink-green-tea
+    choices:
+      - text: I do not drink green tea.
+        reading: ''
+      - text: I do not drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 緑茶を飲みません。'
+    answers:
+      - I do not drink green tea.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: i-do-not-drink-soy-milk
+    prompt: 'Build this sentence: I do not drink soy milk. (polite)'
+    answers:
+      - 豆乳を飲みません
+      - 豆乳をのみません
+      - とうにゅうを飲みません
+      - とうにゅうをのみません
+    tiles:
+      - { text: 豆乳, reading: とうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: i-do-not-drink-soy-milk
+    answers:
+      - 豆乳を飲みません
+      - 豆乳をのみません
+      - とうにゅうを飲みません
+      - とうにゅうをのみません
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: i-do-not-drink-soy-milk
+    choices:
+      - text: I do not drink soy milk.
+        reading: ''
+      - text: I do not drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 豆乳を飲みません。'
+    answers:
+      - I do not drink soy milk.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: i-do-not-drink-barley-tea
+    prompt: 'Build this sentence: I do not drink barley tea. (polite)'
+    answers:
+      - 麦茶を飲みません
+      - 麦茶をのみません
+      - むぎちゃを飲みません
+      - むぎちゃをのみません
+    tiles:
+      - { text: 麦茶, reading: むぎちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: i-do-not-drink-barley-tea
+    answers:
+      - 麦茶を飲みません
+      - 麦茶をのみません
+      - むぎちゃを飲みません
+      - むぎちゃをのみません
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: i-do-not-drink-barley-tea
+    choices:
+      - text: I do not drink barley tea.
+        reading: ''
+      - text: I do not drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 麦茶を飲みません。'
+    answers:
+      - I do not drink barley tea.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: i-do-not-drink-cold-water
+    prompt: 'Build this sentence: I do not drink cold water. (polite)'
+    answers:
+      - 冷水を飲みません
+      - 冷水をのみません
+      - れいすいを飲みません
+      - れいすいをのみません
+    tiles:
+      - { text: 冷水, reading: れいすい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: i-do-not-drink-cold-water
+    answers:
+      - 冷水を飲みません
+      - 冷水をのみません
+      - れいすいを飲みません
+      - れいすいをのみません
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: i-do-not-drink-cold-water
+    choices:
+      - text: I do not drink cold water.
+        reading: ''
+      - text: I do not drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 冷水を飲みません。'
+    answers:
+      - I do not drink cold water.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: i-do-not-drink-sparkling-water
+    prompt: 'Build this sentence: I do not drink sparkling water. (polite)'
+    answers:
+      - 炭酸水を飲みません
+      - 炭酸水をのみません
+      - たんさんすいを飲みません
+      - たんさんすいをのみません
+    tiles:
+      - { text: 炭酸水, reading: たんさんすい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みません, reading: のみません, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: i-do-not-drink-sparkling-water
+    answers:
+      - 炭酸水を飲みません
+      - 炭酸水をのみません
+      - たんさんすいを飲みません
+      - たんさんすいをのみません
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: i-do-not-drink-sparkling-water
+    choices:
+      - text: I do not drink sparkling water.
+        reading: ''
+      - text: I do not drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 炭酸水を飲みません。'
+    answers:
+      - I do not drink sparkling water.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: i-do-not-read-magazines
+    prompt: 'Build this sentence: I do not read magazines. (polite)'
+    answers:
+      - 雑誌を読みません
+      - 雑誌をよみません
+      - ざっしを読みません
+      - ざっしをよみません
+    tiles:
+      - { text: 雑誌, reading: ざっし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: i-do-not-read-magazines
+    answers:
+      - 雑誌を読みません
+      - 雑誌をよみません
+      - ざっしを読みません
+      - ざっしをよみません
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: i-do-not-read-magazines
+    choices:
+      - text: I do not read magazines.
+        reading: ''
+      - text: I do not drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 雑誌を読みません。'
+    answers:
+      - I do not read magazines.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: i-do-not-read-newspapers
+    prompt: 'Build this sentence: I do not read newspapers. (polite)'
+    answers:
+      - 新聞を読みません
+      - 新聞をよみません
+      - しんぶんを読みません
+      - しんぶんをよみません
+    tiles:
+      - { text: 新聞, reading: しんぶん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: i-do-not-read-newspapers
+    answers:
+      - 新聞を読みません
+      - 新聞をよみません
+      - しんぶんを読みません
+      - しんぶんをよみません
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: i-do-not-read-newspapers
+    choices:
+      - text: I do not read newspapers.
+        reading: ''
+      - text: I do not drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 新聞を読みません。'
+    answers:
+      - I do not read newspapers.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: i-do-not-read-dictionarys
+    prompt: 'Build this sentence: I do not read dictionarys. (polite)'
+    answers:
+      - 辞書を読みません
+      - 辞書をよみません
+      - じしょを読みません
+      - じしょをよみません
+    tiles:
+      - { text: 辞書, reading: じしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: i-do-not-read-dictionarys
+    answers:
+      - 辞書を読みません
+      - 辞書をよみません
+      - じしょを読みません
+      - じしょをよみません
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: i-do-not-read-dictionarys
+    choices:
+      - text: I do not read dictionarys.
+        reading: ''
+      - text: I do not drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 辞書を読みません。'
+    answers:
+      - I do not read dictionarys.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: i-do-not-read-novels
+    prompt: 'Build this sentence: I do not read novels. (polite)'
+    answers:
+      - 小説を読みません
+      - 小説をよみません
+      - しょうせつを読みません
+      - しょうせつをよみません
+    tiles:
+      - { text: 小説, reading: しょうせつ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: i-do-not-read-novels
+    answers:
+      - 小説を読みません
+      - 小説をよみません
+      - しょうせつを読みません
+      - しょうせつをよみません
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: i-do-not-read-novels
+    choices:
+      - text: I do not read novels.
+        reading: ''
+      - text: I do not drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 小説を読みません。'
+    answers:
+      - I do not read novels.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: i-do-not-read-comics
+    prompt: 'Build this sentence: I do not read comics. (polite)'
+    answers:
+      - 漫画を読みません
+      - 漫画をよみません
+      - まんがを読みません
+      - まんがをよみません
+    tiles:
+      - { text: 漫画, reading: まんが, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: i-do-not-read-comics
+    answers:
+      - 漫画を読みません
+      - 漫画をよみません
+      - まんがを読みません
+      - まんがをよみません
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: i-do-not-read-comics
+    choices:
+      - text: I do not read comics.
+        reading: ''
+      - text: I do not drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 漫画を読みません。'
+    answers:
+      - I do not read comics.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: i-do-not-read-textbooks
+    prompt: 'Build this sentence: I do not read textbooks. (polite)'
+    answers:
+      - 教科書を読みません
+      - 教科書をよみません
+      - きょうかしょを読みません
+      - きょうかしょをよみません
+    tiles:
+      - { text: 教科書, reading: きょうかしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: i-do-not-read-textbooks
+    answers:
+      - 教科書を読みません
+      - 教科書をよみません
+      - きょうかしょを読みません
+      - きょうかしょをよみません
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: i-do-not-read-textbooks
+    choices:
+      - text: I do not read textbooks.
+        reading: ''
+      - text: I do not drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 教科書を読みません。'
+    answers:
+      - I do not read textbooks.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: i-do-not-read-picture-books
+    prompt: 'Build this sentence: I do not read picture books. (polite)'
+    answers:
+      - 絵本を読みません
+      - 絵本をよみません
+      - えほんを読みません
+      - えほんをよみません
+    tiles:
+      - { text: 絵本, reading: えほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みません, reading: よみません, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: i-do-not-read-picture-books
+    answers:
+      - 絵本を読みません
+      - 絵本をよみません
+      - えほんを読みません
+      - えほんをよみません

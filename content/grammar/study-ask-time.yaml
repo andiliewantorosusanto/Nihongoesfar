@@ -1,0 +1,267 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-ask-time
+  kind: grammar
+  note:
+    Ask 今、何時ですか (いま、なんじですか). Answer with hour + 時（じ）, then minutes + 分（ふん / ぷん）if needed. 半（はん）means half
+    past. This asks clock time; 何時間 asks a duration.
+  tags:
+    - Study guide
+  level: N5
+  title: 'Ask and answer: what time is it?'
+  topic: Grammar basics
+  romaji: ima nanji desu ka
+  meaning: 'Ask and answer: what time is it?'
+  reading: いまなんじですか。
+  examples:
+    - tokens:
+        - { role: modifier, text: 今, reading: いま, wordClass: noun phrase }
+        - { role: predicate, text: 何時です, reading: なんじです, wordClass: predicate }
+        - { role: particle, text: か, reading: か, wordClass: particle }
+      meaning: What time is it now?
+      reading: いまなんじですか。
+      japanese: 今何時ですか。
+      translationTokens:
+        - { role: predicate, text: What time is it }
+        - { role: modifier, text: ' now' }
+        - { role: particle, text: '?' }
+    - tokens:
+        - { role: predicate, text: 三時です, reading: さんじです, wordClass: predicate }
+      meaning: It is three o’clock.
+      reading: さんじです。
+      japanese: 三時です。
+      translationTokens:
+        - { role: predicate, text: It is three o’clock. }
+    - tokens:
+        - { role: predicate, text: 四時半です, reading: よじはんです, wordClass: predicate }
+      meaning: It is half past four.
+      reading: よじはんです。
+      japanese: 四時半です。
+      translationTokens:
+        - { role: predicate, text: It is half past four. }
+    - tokens:
+        - {
+            role: predicate,
+            text: 七時十五分です,
+            reading: しちじじゅうごふんです,
+            wordClass: predicate,
+          }
+      meaning: It is seven fifteen.
+      reading: しちじじゅうごふんです。
+      japanese: 七時十五分です。
+      translationTokens:
+        - { role: predicate, text: It is seven fifteen. }
+  japanese: 今何時ですか。
+  references:
+    - rows:
+        - - text: 何時ですか
+            reading: なんじですか
+          - text: What time is it?
+            reading: ''
+        - - text: 何時間ですか
+            reading: なんじかんですか
+          - text: How many hours?
+            reading: ''
+      columns:
+        - Japanese
+        - Meaning
+      heading: Time questions
+sentences:
+  what-time-is-it-now:
+    text: 今何時ですか。
+    tokens:
+      - { role: modifier, text: 今, reading: いま, wordClass: noun phrase }
+      - { role: predicate, text: 何時です, reading: なんじです, wordClass: predicate }
+      - { role: particle, text: か, reading: か, wordClass: particle }
+    meaning: What time is it now?
+    reading: いまなんじですか。
+    translationTokens:
+      - { role: predicate, text: What time is it }
+      - { role: modifier, text: ' now' }
+      - { role: particle, text: '?' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      Ask 今、何時ですか (いま、なんじですか). Answer with hour + 時（じ）, then minutes + 分（ふん / ぷん）if needed. 半（はん）means
+      half past. This asks clock time; 何時間 asks a duration.
+  it-is-three-o-clock:
+    text: 三時です。
+    tokens:
+      - { role: predicate, text: 三時です, reading: さんじです, wordClass: predicate }
+    meaning: It is three o’clock.
+    reading: さんじです。
+    translationTokens:
+      - { role: predicate, text: It is three o’clock. }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      Ask 今、何時ですか (いま、なんじですか). Answer with hour + 時（じ）, then minutes + 分（ふん / ぷん）if needed. 半（はん）means
+      half past. This asks clock time; 何時間 asks a duration.
+    form: polite
+  it-is-half-past-four:
+    text: 四時半です。
+    tokens:
+      - { role: predicate, text: 四時半です, reading: よじはんです, wordClass: predicate }
+    meaning: It is half past four.
+    reading: よじはんです。
+    translationTokens:
+      - { role: predicate, text: It is half past four. }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      Ask 今、何時ですか (いま、なんじですか). Answer with hour + 時（じ）, then minutes + 分（ふん / ぷん）if needed. 半（はん）means
+      half past. This asks clock time; 何時間 asks a duration.
+  it-is-seven-fifteen:
+    text: 七時十五分です。
+    tokens:
+      - {
+          role: predicate,
+          text: 七時十五分です,
+          reading: しちじじゅうごふんです,
+          wordClass: predicate,
+        }
+    meaning: It is seven fifteen.
+    reading: しちじじゅうごふんです。
+    translationTokens:
+      - { role: predicate, text: It is seven fifteen. }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      Ask 今、何時ですか (いま、なんじですか). Answer with hour + 時（じ）, then minutes + 分（ふん / ぷん）if needed. 半（はん）means
+      half past. This asks clock time; 何時間 asks a duration.
+  it-is-two-o-clock:
+    tokens:
+      - { role: predicate, text: 二時です, reading: にじです, wordClass: predicate }
+    meaning: It is two o’clock.
+    reading: にじです。
+    translationTokens:
+      - { role: predicate, text: It is two o’clock. }
+    text: 二時です。
+    hint: Check the particles and sentence ending.
+    explanation: 二時です。 means “It is two o’clock.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: what-time-is-it-now
+    choices:
+      - text: What time is it now?
+        reading: ''
+      - text: It is three o’clock.
+        reading: ''
+      - text: It is half past four.
+        reading: ''
+      - text: It is seven fifteen.
+        reading: ''
+    answers:
+      - What time is it now?
+  - id: pattern
+    type: pattern-choice
+    sentence: it-is-three-o-clock
+    choices:
+      - sentence: what-time-is-it-now
+      - sentence: it-is-three-o-clock
+    prompt: 'Choose the Japanese: It is three o’clock.'
+    answers:
+      - 三時です
+      - さんじです
+  - id: gap
+    type: gap
+    sentence: it-is-three-o-clock
+    prompt: 'Fill the missing part: It is three o’clock. (polite)'
+    answers:
+      - 三時です
+      - さんじです
+    context:
+      text: ___。
+      tokens:
+        - { role: predicate, text: ___, reading: ___, wordClass: predicate }
+      reading: ___。
+  - id: tiles
+    type: tiles
+    sentence: it-is-three-o-clock
+    prompt: 'Build: It is three o’clock. (polite)'
+    answers:
+      - 三時です
+      - さんじです
+    tiles:
+      - { role: predicate, text: 三時です, reading: さんじです, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: it-is-half-past-four
+    answers:
+      - 四時半です
+      - よじはんです
+  - id: alternate
+    type: typing
+    sentence: it-is-seven-fifteen
+    alternate: true
+    prompt: 'Another example: It is seven fifteen. (polite)'
+    answers:
+      - 七時十五分です
+      - しちじじゅうごふんです
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: it-is-two-o-clock
+    choices:
+      - text: It is two o’clock.
+        reading: ''
+      - text: What time is it now?
+        reading: ''
+      - text: It is three o’clock.
+        reading: ''
+      - text: It is half past four.
+        reading: ''
+    answers:
+      - It is two o’clock.
+  - id: expanded-1-typing
+    type: typing
+    sentence: it-is-two-o-clock
+    explanation: 二時です。 means “It is two o’clock.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 二時です
+      - にじです
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: it-is-two-o-clock
+    prompt: 'Build this sentence: It is two o’clock. (polite)'
+    explanation: 二時です。 means “It is two o’clock.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 二時です
+      - にじです
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: it-is-two-o-clock
+    choices:
+      - sentence: it-is-two-o-clock
+      - text: 今何時ですか。
+        reading: いまなんじですか。
+        tokens:
+          - { role: modifier, text: 今, reading: いま, wordClass: noun phrase }
+          - { role: predicate, text: 何時です, reading: なんじです, wordClass: predicate }
+          - { role: particle, text: か, reading: か, wordClass: particle }
+      - text: 三時です。
+        reading: さんじです。
+        tokens:
+          - { role: predicate, text: 三時です, reading: さんじです, wordClass: predicate }
+      - text: 四時半です。
+        reading: よじはんです。
+        tokens:
+          - { role: predicate, text: 四時半です, reading: よじはんです, wordClass: predicate }
+    prompt: 'Choose the Japanese: It is two o’clock. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 二時です。 for “It is two o’clock.” The other sentences describe different situations.
+    answers:
+      - 二時です
+      - にじです
+  - id: expanded-1-gap
+    type: gap
+    sentence: it-is-two-o-clock
+    prompt: 'Fill the missing part: It is two o’clock. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 二時です (にじです). Together, the sentence means “It is two o’clock.”
+    answers:
+      - 二時です
+      - にじです
+    context:
+      meaning: It is two o’clock.
+      reading: ___。
+      text: ___。

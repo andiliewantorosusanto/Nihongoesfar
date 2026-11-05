@@ -1,0 +1,372 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-verb-particle-pairs
+  kind: grammar
+  note:
+    'Learn the particle together with the verb. を is pronounced “o”. It marks an object, but also a place or
+    vehicle you leave, or a route you move through. に can mark what you board, a place you enter, or a person
+    you meet. These patterns stay the same in polite and casual speech. For example, use 電車に乗ります (でんしゃにのります),
+    not 電車を乗ります. The place where you board or get off takes で: 駅で電車を降ります (えきででんしゃをおります).'
+  tags:
+    - Study guide
+  level: N5
+  title: 'Verb–particle pairs: を and に'
+  topic: Polite verbs and particles
+  meaning: 'Verb–particle pairs: を and に'
+  reading: でんしゃにのります。
+  examples:
+    - tokens:
+        - { role: modifier, text: 電車, reading: でんしゃ, wordClass: noun phrase }
+        - { role: particle, text: に, reading: に, wordClass: particle }
+        - { role: predicate, text: 乗ります, reading: のります, wordClass: predicate }
+      meaning: I get on the train.
+      reading: でんしゃにのります。
+      japanese: 電車に乗ります。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: get on }
+        - { role: modifier, text: ' the train.' }
+    - tokens:
+        - { role: modifier, text: バス, reading: ばす, wordClass: noun phrase }
+        - { role: particle, text: を, reading: を, wordClass: particle }
+        - { role: predicate, text: 降ります, reading: おります, wordClass: predicate }
+      meaning: I get off the bus.
+      reading: ばすをおります。
+      japanese: バスを降ります。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: get off }
+        - { role: modifier, text: ' the bus.' }
+    - tokens:
+        - { role: modifier, text: 部屋, reading: へや, wordClass: noun phrase }
+        - { role: particle, text: に, reading: に, wordClass: particle }
+        - { role: predicate, text: 入ります, reading: はいります, wordClass: predicate }
+      meaning: I enter the room.
+      reading: へやにはいります。
+      japanese: 部屋に入ります。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: enter }
+        - { role: modifier, text: ' the room.' }
+    - tokens:
+        - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+        - { role: particle, text: を, reading: を, wordClass: particle }
+        - { role: predicate, text: 出ます, reading: でます, wordClass: predicate }
+      meaning: I leave the house.
+      reading: いえをでます。
+      japanese: 家を出ます。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: leave }
+        - { role: modifier, text: ' the house.' }
+  japanese: 電車に乗ります。
+  references:
+    - rows:
+        - - text: Board a vehicle
+            reading: ''
+          - text: 電車に乗ります
+            reading: でんしゃにのります
+          - text: 電車に乗る
+            reading: でんしゃにのる
+          - text: get on the train
+            reading: ''
+        - - text: Leave a vehicle
+            reading: ''
+          - text: バスを降ります
+            reading: ばすをおります
+          - text: バスを降りる
+            reading: ばすをおりる
+          - text: get off the bus
+            reading: ''
+        - - text: Enter a place
+            reading: ''
+          - text: 部屋に入ります
+            reading: へやにはいります
+          - text: 部屋に入る
+            reading: へやにはいる
+          - text: enter the room
+            reading: ''
+        - - text: Leave a place
+            reading: ''
+          - text: 家を出ます
+            reading: いえをでます
+          - text: 家を出る
+            reading: いえをでる
+          - text: leave the house
+            reading: ''
+        - - text: Move through a place
+            reading: ''
+          - text: 公園を散歩します
+            reading: こうえんをさんぽします
+          - text: 公園を散歩する
+            reading: こうえんをさんぽする
+          - text: take a walk in the park
+            reading: ''
+        - - text: Meet a person
+            reading: ''
+          - text: 友達に会います
+            reading: ともだちにあいます
+          - text: 友達に会う
+            reading: ともだちにあう
+          - text: meet a friend
+            reading: ''
+        - - text: Sit on a seat
+            reading: ''
+          - text: 椅子に座ります
+            reading: いすにすわります
+          - text: 椅子に座る
+            reading: いすにすわる
+          - text: sit on a chair
+            reading: ''
+        - - text: Act on an object
+            reading: ''
+          - text: 水を飲みます
+            reading: みずをのみます
+          - text: 水を飲む
+            reading: みずをのむ
+          - text: drink water
+            reading: ''
+      columns:
+        - Use
+        - Polite
+        - Casual
+        - Meaning
+      heading: Learn each verb with its particle
+sentences:
+  i-get-on-the-train:
+    text: 電車に乗ります。
+    tokens:
+      - { role: modifier, text: 電車, reading: でんしゃ, wordClass: noun phrase }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 乗ります, reading: のります, wordClass: predicate }
+    meaning: I get on the train.
+    reading: でんしゃにのります。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: get on }
+      - { role: modifier, text: ' the train.' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Learn the particle together with the verb. を is pronounced “o”. It marks an object, but also a
+      place or vehicle you leave, or a route you move through. に can mark what you board, a place you enter,
+      or a person you meet. These patterns stay the same in polite and casual speech. For example, use 電車に乗ります
+      (でんしゃにのります), not 電車を乗ります. The place where you board or get off takes で: 駅で電車を降ります (えきででんしゃをおります).'
+  i-get-off-the-bus:
+    text: バスを降ります。
+    tokens:
+      - { role: modifier, text: バス, reading: ばす, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 降ります, reading: おります, wordClass: predicate }
+    meaning: I get off the bus.
+    reading: ばすをおります。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: get off }
+      - { role: modifier, text: ' the bus.' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Learn the particle together with the verb. を is pronounced “o”. It marks an object, but also a
+      place or vehicle you leave, or a route you move through. に can mark what you board, a place you enter,
+      or a person you meet. These patterns stay the same in polite and casual speech. For example, use 電車に乗ります
+      (でんしゃにのります), not 電車を乗ります. The place where you board or get off takes で: 駅で電車を降ります (えきででんしゃをおります).'
+    form: polite
+  i-enter-the-room:
+    text: 部屋に入ります。
+    tokens:
+      - { role: modifier, text: 部屋, reading: へや, wordClass: noun phrase }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 入ります, reading: はいります, wordClass: predicate }
+    meaning: I enter the room.
+    reading: へやにはいります。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: enter }
+      - { role: modifier, text: ' the room.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Learn the particle together with the verb. を is pronounced “o”. It marks an object, but also a
+      place or vehicle you leave, or a route you move through. に can mark what you board, a place you enter,
+      or a person you meet. These patterns stay the same in polite and casual speech. For example, use 電車に乗ります
+      (でんしゃにのります), not 電車を乗ります. The place where you board or get off takes で: 駅で電車を降ります (えきででんしゃをおります).'
+  i-leave-the-house:
+    text: 家を出ます。
+    tokens:
+      - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 出ます, reading: でます, wordClass: predicate }
+    meaning: I leave the house.
+    reading: いえをでます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: leave }
+      - { role: modifier, text: ' the house.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Learn the particle together with the verb. を is pronounced “o”. It marks an object, but also a
+      place or vehicle you leave, or a route you move through. に can mark what you board, a place you enter,
+      or a person you meet. These patterns stay the same in polite and casual speech. For example, use 電車に乗ります
+      (でんしゃにのります), not 電車を乗ります. The place where you board or get off takes で: 駅で電車を降ります (えきででんしゃをおります).'
+  i-get-on-the-bus:
+    tokens:
+      - { role: modifier, text: バス, reading: ばす, wordClass: noun phrase }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 乗ります, reading: のります, wordClass: predicate }
+    meaning: I get on the bus.
+    reading: ばすにのります。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: get on }
+      - { role: modifier, text: ' the bus.' }
+    text: バスに乗ります。
+    hint: Check the particles and sentence ending.
+    explanation: バスに乗ります。 means “I get on the bus.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-get-on-the-train
+    choices:
+      - text: I get on the train.
+        reading: ''
+      - text: I get off the bus.
+        reading: ''
+      - text: I enter the room.
+        reading: ''
+      - text: I leave the house.
+        reading: ''
+    answers:
+      - I get on the train.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-get-off-the-bus
+    choices:
+      - sentence: i-get-off-the-bus
+      - text: バスに降ります。
+        reading: ばすにおります。
+    prompt: 'Choose the Japanese: I get off the bus.'
+    explanation:
+      'Use を with the vehicle you get off: バスを降ります (ばすをおります). Use に with the vehicle you board: バスに乗ります
+      (ばすにのります).'
+    answers:
+      - バスを降ります
+      - バスをおります
+      - ばすを降ります
+      - ばすをおります
+  - id: gap
+    type: gap
+    sentence: i-get-off-the-bus
+    prompt: 'Fill the missing part: I get off the bus. (polite)'
+    answers:
+      - を
+      - を
+    context:
+      text: バス___降ります。
+      tokens:
+        - { role: modifier, text: バス, reading: ばす, wordClass: noun phrase }
+        - { role: particle, text: ___, reading: ___, wordClass: particle }
+        - { role: predicate, text: 降ります, reading: おります, wordClass: predicate }
+      reading: ばす___おります。
+  - id: tiles
+    type: tiles
+    sentence: i-get-off-the-bus
+    prompt: 'Build: I get off the bus. (polite)'
+    answers:
+      - バスを降ります
+      - バスをおります
+      - ばすを降ります
+      - ばすをおります
+    tiles:
+      - { role: modifier, text: バス, reading: ばす, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 降ります, reading: おります, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: i-enter-the-room
+    answers:
+      - 部屋に入ります
+      - 部屋にはいります
+      - へやに入ります
+      - へやにはいります
+  - id: alternate
+    type: typing
+    sentence: i-leave-the-house
+    alternate: true
+    prompt: 'Another example: I leave the house. (polite)'
+    answers:
+      - 家を出ます
+      - 家をでます
+      - いえを出ます
+      - いえをでます
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: i-get-on-the-bus
+    choices:
+      - text: I get on the bus.
+        reading: ''
+      - text: I get on the train.
+        reading: ''
+      - text: I get off the bus.
+        reading: ''
+      - text: I enter the room.
+        reading: ''
+    answers:
+      - I get on the bus.
+  - id: expanded-1-typing
+    type: typing
+    sentence: i-get-on-the-bus
+    explanation: バスに乗ります。 means “I get on the bus.” Write the complete sentence, including the indicated ending.
+    answers:
+      - バスに乗ります
+      - ばすにのります
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: i-get-on-the-bus
+    prompt: 'Build this sentence: I get on the bus. (polite)'
+    explanation: バスに乗ります。 means “I get on the bus.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - バスに乗ります
+      - ばすにのります
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: i-get-on-the-bus
+    choices:
+      - sentence: i-get-on-the-bus
+      - text: 電車に乗ります。
+        reading: でんしゃにのります。
+        tokens:
+          - { role: modifier, text: 電車, reading: でんしゃ, wordClass: noun phrase }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: predicate, text: 乗ります, reading: のります, wordClass: predicate }
+      - text: バスを降ります。
+        reading: ばすをおります。
+        tokens:
+          - { role: modifier, text: バス, reading: ばす, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 降ります, reading: おります, wordClass: predicate }
+      - text: 部屋に入ります。
+        reading: へやにはいります。
+        tokens:
+          - { role: modifier, text: 部屋, reading: へや, wordClass: noun phrase }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: predicate, text: 入ります, reading: はいります, wordClass: predicate }
+    prompt: 'Choose the Japanese: I get on the bus. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose バスに乗ります。 for “I get on the bus.” The other sentences describe different situations.
+    answers:
+      - バスに乗ります
+      - ばすにのります
+  - id: expanded-1-gap
+    type: gap
+    sentence: i-get-on-the-bus
+    prompt: 'Fill the missing part: I get on the bus. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 乗ります (のります). Together, the sentence means “I get on the bus.”
+    answers:
+      - 乗ります
+      - のります
+    context:
+      meaning: I get on the bus.
+      reading: ばすに___。
+      text: バスに___。

@@ -1,0 +1,1093 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-desu
+  kind: grammar
+  note:
+    は marks the topic (pronounced wa). A noun followed by です makes a polite statement. Japanese often leaves
+    out an understood topic; は does not automatically mean the grammatical subject.
+  tags:
+    - Grammar
+    - desu
+  level: N5
+  title: A は B です
+  topic: Sentence building
+  lesson:
+    goal: Introduce someone or identify something politely.
+    group: Sentence basics
+    order: 1
+    recap: Use noun + です. A noun does not take the verb ending ます.
+    examples:
+      - tokens:
+          - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 学生です, reading: がくせいです, wordClass: predicate }
+        meaning: I am a student.
+        reading: わたしはがくせいです。
+        japanese: 私は学生です。
+        translationTokens:
+          - { role: topic, text: I }
+          - { role: predicate, text: ' am a student.' }
+      - tokens:
+          - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 先生です, reading: せんせいです, wordClass: predicate }
+        meaning: Tanaka is a teacher.
+        reading: たなかさんはせんせいです。
+        japanese: 田中さんは先生です。
+        translationTokens:
+          - { role: topic, text: Tanaka }
+          - { role: predicate, text: ' is a teacher.' }
+      - tokens:
+          - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 本です, reading: ほんです, wordClass: predicate }
+        meaning: This is a book.
+        reading: これはほんです。
+        japanese: これは本です。
+        translationTokens:
+          - { role: topic, text: This }
+          - { role: predicate, text: ' is a book.' }
+    comparison: Use noun + です. A noun does not take the verb ending ます.
+    vocabulary:
+      - text: 私
+        meaning: I / me
+        reading: わたし
+      - text: 学生
+        meaning: student
+        reading: がくせい
+      - text: 田中さん
+        meaning: Tanaka (a person's name)
+        reading: たなかさん
+      - text: 先生
+        meaning: teacher
+        reading: せんせい
+      - text: 本
+        meaning: book
+        reading: ほん
+      - text: 時計
+        meaning: clock / watch
+        reading: とけい
+    prerequisites: []
+  meaning: I am a student.
+  reading: わたしはがくせいです。
+  examples:
+    - tokens:
+        - { role: topic, text: 私, reading: わたし, wordClass: pronoun }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 学生です, reading: がくせいです, wordClass: noun + copula }
+      meaning: I am a student.
+      reading: わたしはがくせいです。
+      japanese: 私は学生です。
+      translationTokens:
+        - { role: topic, text: I, implicit: false }
+        - { role: predicate, text: ' am a student.', implicit: false }
+  exercise:
+    tiles:
+      - 私
+      - は
+      - 学生
+      - です
+    prompt: 'Build: “I am a student.” Start with 私.'
+    answers:
+      - 私は学生です
+      - わたしはがくせいです
+    explanation:
+      は marks the topic (pronounced wa). A noun followed by です makes a polite statement. Japanese often
+      leaves out an understood topic; は does not automatically mean the grammatical subject.
+  japanese: 私は学生です。
+sentences:
+  i-am-a-student:
+    text: 私は学生です。
+    tiles:
+      - { text: 私, reading: わたし }
+      - { text: は, reading: は }
+      - { text: 学生, reading: がくせい }
+      - { text: です, reading: です }
+    tokens:
+      - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 学生です, reading: がくせいです, wordClass: predicate }
+    meaning: I am a student.
+    reading: わたしはがくせいです。
+    translationTokens:
+      - { role: topic, text: I }
+      - { role: predicate, text: ' am a student.' }
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+  tanaka-is-a-teacher:
+    text: 田中さんは先生です。
+    tiles:
+      - { text: 田中さん, reading: たなかさん }
+      - { text: は, reading: は }
+      - { text: 先生, reading: せんせい }
+      - { text: です, reading: です }
+    tokens:
+      - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 先生です, reading: せんせいです, wordClass: predicate }
+    meaning: Tanaka is a teacher.
+    reading: たなかさんはせんせいです。
+    translationTokens:
+      - { role: topic, text: Tanaka }
+      - { role: predicate, text: ' is a teacher.' }
+    form: polite
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+  this-is-a-book:
+    text: これは本です。
+    tiles:
+      - { text: これ, reading: これ }
+      - { text: は, reading: は }
+      - { text: 本, reading: ほん }
+      - { text: です, reading: です }
+    tokens:
+      - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 本です, reading: ほんです, wordClass: predicate }
+    meaning: This is a book.
+    reading: これはほんです。
+    translationTokens:
+      - { role: topic, text: This }
+      - { role: predicate, text: ' is a book.' }
+    form: polite
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+  that-is-a-clock:
+    text: それは時計です。
+    tiles:
+      - { text: それ, reading: それ }
+      - { text: は, reading: は }
+      - { text: 時計, reading: とけい }
+      - { text: です, reading: です }
+    tokens:
+      - { role: topic, text: それ, reading: それ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 時計です, reading: とけいです, wordClass: predicate }
+    meaning: That is a clock.
+    reading: それはとけいです。
+    translationTokens:
+      - { role: topic, text: That }
+      - { role: predicate, text: ' is a clock.' }
+    form: polite
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+  yamada-is-a-teacher:
+    text: 山田さんは先生です。
+    reading: やまださんはせんせいです。
+    meaning: Yamada is a teacher.
+    tiles:
+      - { text: 山田さん, reading: やまださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 山田さん, reading: やまださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生です, reading: せんせいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Yamada, role: topic }
+      - { text: ' is a teacher.', role: predicate }
+    form: polite
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+  sato-is-a-teacher:
+    text: 佐藤さんは先生です。
+    reading: さとうさんはせんせいです。
+    meaning: Sato is a teacher.
+    tiles:
+      - { text: 佐藤さん, reading: さとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 佐藤さん, reading: さとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生です, reading: せんせいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Sato, role: topic }
+      - { text: ' is a teacher.', role: predicate }
+    form: polite
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+  suzuki-is-a-teacher:
+    text: 鈴木さんは先生です。
+    reading: すずきさんはせんせいです。
+    meaning: Suzuki is a teacher.
+    tiles:
+      - { text: 鈴木さん, reading: すずきさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 鈴木さん, reading: すずきさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生です, reading: せんせいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Suzuki, role: topic }
+      - { text: ' is a teacher.', role: predicate }
+    form: polite
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+  takahashi-is-a-teacher:
+    text: 高橋さんは先生です。
+    reading: たかはしさんはせんせいです。
+    meaning: Takahashi is a teacher.
+    tiles:
+      - { text: 高橋さん, reading: たかはしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 高橋さん, reading: たかはしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生です, reading: せんせいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Takahashi, role: topic }
+      - { text: ' is a teacher.', role: predicate }
+    form: polite
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+  ito-is-a-teacher:
+    text: 伊藤さんは先生です。
+    reading: いとうさんはせんせいです。
+    meaning: Ito is a teacher.
+    tiles:
+      - { text: 伊藤さん, reading: いとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 伊藤さん, reading: いとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生です, reading: せんせいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Ito, role: topic }
+      - { text: ' is a teacher.', role: predicate }
+    form: polite
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+  nakamura-is-a-teacher:
+    text: 中村さんは先生です。
+    reading: なかむらさんはせんせいです。
+    meaning: Nakamura is a teacher.
+    tiles:
+      - { text: 中村さん, reading: なかむらさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 中村さん, reading: なかむらさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生です, reading: せんせいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Nakamura, role: topic }
+      - { text: ' is a teacher.', role: predicate }
+    form: polite
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+  kobayashi-is-a-teacher:
+    text: 小林さんは先生です。
+    reading: こばやしさんはせんせいです。
+    meaning: Kobayashi is a teacher.
+    tiles:
+      - { text: 小林さん, reading: こばやしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 小林さん, reading: こばやしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生です, reading: せんせいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Kobayashi, role: topic }
+      - { text: ' is a teacher.', role: predicate }
+    form: polite
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+  kato-is-a-teacher:
+    text: 加藤さんは先生です。
+    reading: かとうさんはせんせいです。
+    meaning: Kato is a teacher.
+    tiles:
+      - { text: 加藤さん, reading: かとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 加藤さん, reading: かとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生です, reading: せんせいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Kato, role: topic }
+      - { text: ' is a teacher.', role: predicate }
+    form: polite
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+  yoshida-is-a-teacher:
+    text: 吉田さんは先生です。
+    reading: よしださんはせんせいです。
+    meaning: Yoshida is a teacher.
+    tiles:
+      - { text: 吉田さん, reading: よしださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 吉田さん, reading: よしださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生です, reading: せんせいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Yoshida, role: topic }
+      - { text: ' is a teacher.', role: predicate }
+    form: polite
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+  yamamoto-is-a-teacher:
+    text: 山本さんは先生です。
+    reading: やまもとさんはせんせいです。
+    meaning: Yamamoto is a teacher.
+    tiles:
+      - { text: 山本さん, reading: やまもとさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 山本さん, reading: やまもとさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生です, reading: せんせいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Yamamoto, role: topic }
+      - { text: ' is a teacher.', role: predicate }
+    form: polite
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+  this-is-a-magazine:
+    text: これは雑誌です。
+    reading: これはざっしです。
+    meaning: This is a magazine.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 雑誌, reading: ざっし, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 雑誌です, reading: ざっしです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is a magazine.', role: predicate }
+    form: polite
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+  this-is-a-newspaper:
+    text: これは新聞です。
+    reading: これはしんぶんです。
+    meaning: This is a newspaper.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 新聞, reading: しんぶん, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 新聞です, reading: しんぶんです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is a newspaper.', role: predicate }
+    form: polite
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+  this-is-a-dictionary:
+    text: これは辞書です。
+    reading: これはじしょです。
+    meaning: This is a dictionary.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 辞書, reading: じしょ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 辞書です, reading: じしょです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is a dictionary.', role: predicate }
+    form: polite
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+  this-is-a-novel:
+    text: これは小説です。
+    reading: これはしょうせつです。
+    meaning: This is a novel.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 小説, reading: しょうせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 小説です, reading: しょうせつです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is a novel.', role: predicate }
+    form: polite
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+  this-is-a-comic:
+    text: これは漫画です。
+    reading: これはまんがです。
+    meaning: This is a comic.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 漫画, reading: まんが, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 漫画です, reading: まんがです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is a comic.', role: predicate }
+    form: polite
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+  this-is-a-textbook:
+    text: これは教科書です。
+    reading: これはきょうかしょです。
+    meaning: This is a textbook.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 教科書, reading: きょうかしょ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 教科書です, reading: きょうかしょです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is a textbook.', role: predicate }
+    form: polite
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+  this-is-a-picture-book:
+    text: これは絵本です。
+    reading: これはえほんです。
+    meaning: This is a picture book.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 絵本, reading: えほん, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 絵本です, reading: えほんです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is a picture book.', role: predicate }
+    form: polite
+    hint: Look for the polite ending used after a noun.
+    explanation: Use noun + です. A noun does not take the verb ending ます.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-am-a-student
+    choices:
+      - text: I am a student.
+        reading: ''
+      - text: I was a student.
+        reading: ''
+    answers:
+      - I am a student.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-am-a-student
+    choices:
+      - sentence: i-am-a-student
+      - text: 私は学生ます。
+        tiles:
+          - { text: 私, reading: わたし }
+          - { text: は, reading: は }
+          - { text: 学生, reading: がくせい }
+          - { text: ます, reading: ます }
+        tokens:
+          - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 学生ます, reading: がくせいます, wordClass: predicate }
+        meaning: I was a student.
+        reading: わたしはがくせいます。
+    prompt: 'Choose the correct Japanese: I am a student.'
+    answers:
+      - 私は学生です
+      - 私はがくせいです
+      - わたしは学生です
+      - わたしはがくせいです
+  - id: gap
+    type: gap
+    sentence: tanaka-is-a-teacher
+    answers:
+      - です
+      - です
+    context:
+      text: 田中さんは先生___。
+      tokens:
+        - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 先生___, reading: せんせい___, wordClass: predicate }
+      reading: たなかさんはせんせい___。
+  - id: tiles
+    type: tiles
+    sentence: tanaka-is-a-teacher
+    prompt: 'Build this sentence: Tanaka is a teacher. (polite)'
+    answers:
+      - 田中さんは先生です
+      - 田中さんはせんせいです
+      - たなかさんは先生です
+      - たなかさんはせんせいです
+    tiles:
+      - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 先生, reading: せんせい, wordClass: predicate }
+      - { role: predicate, text: です, reading: です, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: this-is-a-book
+    answers:
+      - これは本です
+      - これはほんです
+  - id: alternate
+    type: typing
+    sentence: that-is-a-clock
+    alternate: true
+    prompt: 'One more example: That is a clock. (polite)'
+    answers:
+      - それは時計です
+      - それはとけいです
+  - id: extra-1-tiles
+    type: tiles
+    sentence: yamada-is-a-teacher
+    prompt: 'Build this sentence: Yamada is a teacher. (polite)'
+    answers:
+      - 山田さんは先生です
+      - 山田さんはせんせいです
+      - やまださんは先生です
+      - やまださんはせんせいです
+    tiles:
+      - { text: 山田さん, reading: やまださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: yamada-is-a-teacher
+    answers:
+      - 山田さんは先生です
+      - 山田さんはせんせいです
+      - やまださんは先生です
+      - やまださんはせんせいです
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: yamada-is-a-teacher
+    choices:
+      - text: Yamada is a teacher.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+    prompt: 'Choose the meaning: 山田さんは先生です。'
+    answers:
+      - Yamada is a teacher.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: sato-is-a-teacher
+    prompt: 'Build this sentence: Sato is a teacher. (polite)'
+    answers:
+      - 佐藤さんは先生です
+      - 佐藤さんはせんせいです
+      - さとうさんは先生です
+      - さとうさんはせんせいです
+    tiles:
+      - { text: 佐藤さん, reading: さとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: sato-is-a-teacher
+    answers:
+      - 佐藤さんは先生です
+      - 佐藤さんはせんせいです
+      - さとうさんは先生です
+      - さとうさんはせんせいです
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: sato-is-a-teacher
+    choices:
+      - text: Sato is a teacher.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+    prompt: 'Choose the meaning: 佐藤さんは先生です。'
+    answers:
+      - Sato is a teacher.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: suzuki-is-a-teacher
+    prompt: 'Build this sentence: Suzuki is a teacher. (polite)'
+    answers:
+      - 鈴木さんは先生です
+      - 鈴木さんはせんせいです
+      - すずきさんは先生です
+      - すずきさんはせんせいです
+    tiles:
+      - { text: 鈴木さん, reading: すずきさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: suzuki-is-a-teacher
+    answers:
+      - 鈴木さんは先生です
+      - 鈴木さんはせんせいです
+      - すずきさんは先生です
+      - すずきさんはせんせいです
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: suzuki-is-a-teacher
+    choices:
+      - text: Suzuki is a teacher.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+    prompt: 'Choose the meaning: 鈴木さんは先生です。'
+    answers:
+      - Suzuki is a teacher.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: takahashi-is-a-teacher
+    prompt: 'Build this sentence: Takahashi is a teacher. (polite)'
+    answers:
+      - 高橋さんは先生です
+      - 高橋さんはせんせいです
+      - たかはしさんは先生です
+      - たかはしさんはせんせいです
+    tiles:
+      - { text: 高橋さん, reading: たかはしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: takahashi-is-a-teacher
+    answers:
+      - 高橋さんは先生です
+      - 高橋さんはせんせいです
+      - たかはしさんは先生です
+      - たかはしさんはせんせいです
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: takahashi-is-a-teacher
+    choices:
+      - text: Takahashi is a teacher.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+    prompt: 'Choose the meaning: 高橋さんは先生です。'
+    answers:
+      - Takahashi is a teacher.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: ito-is-a-teacher
+    prompt: 'Build this sentence: Ito is a teacher. (polite)'
+    answers:
+      - 伊藤さんは先生です
+      - 伊藤さんはせんせいです
+      - いとうさんは先生です
+      - いとうさんはせんせいです
+    tiles:
+      - { text: 伊藤さん, reading: いとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: ito-is-a-teacher
+    answers:
+      - 伊藤さんは先生です
+      - 伊藤さんはせんせいです
+      - いとうさんは先生です
+      - いとうさんはせんせいです
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: ito-is-a-teacher
+    choices:
+      - text: Ito is a teacher.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+    prompt: 'Choose the meaning: 伊藤さんは先生です。'
+    answers:
+      - Ito is a teacher.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: nakamura-is-a-teacher
+    prompt: 'Build this sentence: Nakamura is a teacher. (polite)'
+    answers:
+      - 中村さんは先生です
+      - 中村さんはせんせいです
+      - なかむらさんは先生です
+      - なかむらさんはせんせいです
+    tiles:
+      - { text: 中村さん, reading: なかむらさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: nakamura-is-a-teacher
+    answers:
+      - 中村さんは先生です
+      - 中村さんはせんせいです
+      - なかむらさんは先生です
+      - なかむらさんはせんせいです
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: nakamura-is-a-teacher
+    choices:
+      - text: Nakamura is a teacher.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+    prompt: 'Choose the meaning: 中村さんは先生です。'
+    answers:
+      - Nakamura is a teacher.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: kobayashi-is-a-teacher
+    prompt: 'Build this sentence: Kobayashi is a teacher. (polite)'
+    answers:
+      - 小林さんは先生です
+      - 小林さんはせんせいです
+      - こばやしさんは先生です
+      - こばやしさんはせんせいです
+    tiles:
+      - { text: 小林さん, reading: こばやしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: kobayashi-is-a-teacher
+    answers:
+      - 小林さんは先生です
+      - 小林さんはせんせいです
+      - こばやしさんは先生です
+      - こばやしさんはせんせいです
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: kobayashi-is-a-teacher
+    choices:
+      - text: Kobayashi is a teacher.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+    prompt: 'Choose the meaning: 小林さんは先生です。'
+    answers:
+      - Kobayashi is a teacher.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: kato-is-a-teacher
+    prompt: 'Build this sentence: Kato is a teacher. (polite)'
+    answers:
+      - 加藤さんは先生です
+      - 加藤さんはせんせいです
+      - かとうさんは先生です
+      - かとうさんはせんせいです
+    tiles:
+      - { text: 加藤さん, reading: かとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: kato-is-a-teacher
+    answers:
+      - 加藤さんは先生です
+      - 加藤さんはせんせいです
+      - かとうさんは先生です
+      - かとうさんはせんせいです
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: kato-is-a-teacher
+    choices:
+      - text: Kato is a teacher.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+    prompt: 'Choose the meaning: 加藤さんは先生です。'
+    answers:
+      - Kato is a teacher.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: yoshida-is-a-teacher
+    prompt: 'Build this sentence: Yoshida is a teacher. (polite)'
+    answers:
+      - 吉田さんは先生です
+      - 吉田さんはせんせいです
+      - よしださんは先生です
+      - よしださんはせんせいです
+    tiles:
+      - { text: 吉田さん, reading: よしださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: yoshida-is-a-teacher
+    answers:
+      - 吉田さんは先生です
+      - 吉田さんはせんせいです
+      - よしださんは先生です
+      - よしださんはせんせいです
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: yoshida-is-a-teacher
+    choices:
+      - text: Yoshida is a teacher.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+    prompt: 'Choose the meaning: 吉田さんは先生です。'
+    answers:
+      - Yoshida is a teacher.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: yamamoto-is-a-teacher
+    prompt: 'Build this sentence: Yamamoto is a teacher. (polite)'
+    answers:
+      - 山本さんは先生です
+      - 山本さんはせんせいです
+      - やまもとさんは先生です
+      - やまもとさんはせんせいです
+    tiles:
+      - { text: 山本さん, reading: やまもとさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: yamamoto-is-a-teacher
+    answers:
+      - 山本さんは先生です
+      - 山本さんはせんせいです
+      - やまもとさんは先生です
+      - やまもとさんはせんせいです
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: yamamoto-is-a-teacher
+    choices:
+      - text: Yamamoto is a teacher.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+    prompt: 'Choose the meaning: 山本さんは先生です。'
+    answers:
+      - Yamamoto is a teacher.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: this-is-a-magazine
+    prompt: 'Build this sentence: This is a magazine. (polite)'
+    answers:
+      - これは雑誌です
+      - これはざっしです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 雑誌, reading: ざっし, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: this-is-a-magazine
+    answers:
+      - これは雑誌です
+      - これはざっしです
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: this-is-a-magazine
+    choices:
+      - text: This is a magazine.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+    prompt: 'Choose the meaning: これは雑誌です。'
+    answers:
+      - This is a magazine.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: this-is-a-newspaper
+    prompt: 'Build this sentence: This is a newspaper. (polite)'
+    answers:
+      - これは新聞です
+      - これはしんぶんです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 新聞, reading: しんぶん, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: this-is-a-newspaper
+    answers:
+      - これは新聞です
+      - これはしんぶんです
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: this-is-a-newspaper
+    choices:
+      - text: This is a newspaper.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+    prompt: 'Choose the meaning: これは新聞です。'
+    answers:
+      - This is a newspaper.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: this-is-a-dictionary
+    prompt: 'Build this sentence: This is a dictionary. (polite)'
+    answers:
+      - これは辞書です
+      - これはじしょです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 辞書, reading: じしょ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: this-is-a-dictionary
+    answers:
+      - これは辞書です
+      - これはじしょです
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: this-is-a-dictionary
+    choices:
+      - text: This is a dictionary.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+    prompt: 'Choose the meaning: これは辞書です。'
+    answers:
+      - This is a dictionary.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: this-is-a-novel
+    prompt: 'Build this sentence: This is a novel. (polite)'
+    answers:
+      - これは小説です
+      - これはしょうせつです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 小説, reading: しょうせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: this-is-a-novel
+    answers:
+      - これは小説です
+      - これはしょうせつです
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: this-is-a-novel
+    choices:
+      - text: This is a novel.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+    prompt: 'Choose the meaning: これは小説です。'
+    answers:
+      - This is a novel.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: this-is-a-comic
+    prompt: 'Build this sentence: This is a comic. (polite)'
+    answers:
+      - これは漫画です
+      - これはまんがです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 漫画, reading: まんが, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: this-is-a-comic
+    answers:
+      - これは漫画です
+      - これはまんがです
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: this-is-a-comic
+    choices:
+      - text: This is a comic.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+    prompt: 'Choose the meaning: これは漫画です。'
+    answers:
+      - This is a comic.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: this-is-a-textbook
+    prompt: 'Build this sentence: This is a textbook. (polite)'
+    answers:
+      - これは教科書です
+      - これはきょうかしょです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 教科書, reading: きょうかしょ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: this-is-a-textbook
+    answers:
+      - これは教科書です
+      - これはきょうかしょです
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: this-is-a-textbook
+    choices:
+      - text: This is a textbook.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+    prompt: 'Choose the meaning: これは教科書です。'
+    answers:
+      - This is a textbook.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: this-is-a-picture-book
+    prompt: 'Build this sentence: This is a picture book. (polite)'
+    answers:
+      - これは絵本です
+      - これはえほんです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 絵本, reading: えほん, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: this-is-a-picture-book
+    answers:
+      - これは絵本です
+      - これはえほんです

@@ -1,0 +1,460 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-existence
+  kind: grammar
+  note:
+    'Use います for people and animals, and あります for things and plants. “Living/non-living” is only a rough
+    shortcut: plants are biologically living but normally use あります. Use subject + が + existence verb. Location
+    uses に, not で.'
+  tags:
+    - Study guide
+  level: N5
+  title: Existence — people and animals versus things
+  topic: Grammar basics
+  meaning: Existence — people and animals versus things
+  reading: ねこがいます。
+  examples:
+    - tokens:
+        - { role: subject, text: 猫, reading: ねこ, wordClass: noun phrase }
+        - { role: particle, text: が, reading: が, wordClass: particle }
+        - { role: predicate, text: います, reading: います, wordClass: predicate }
+      meaning: There is a cat.
+      reading: ねこがいます。
+      japanese: 猫がいます。
+      translationTokens:
+        - { role: predicate, text: 'There is ' }
+        - { role: subject, text: a cat. }
+    - tokens:
+        - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+        - { role: particle, text: が, reading: が, wordClass: particle }
+        - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+      meaning: There is a book.
+      reading: ほんがあります。
+      japanese: 本があります。
+      translationTokens:
+        - { role: predicate, text: 'There is ' }
+        - { role: subject, text: a book. }
+    - tokens:
+        - { role: subject, text: 先生, reading: せんせい, wordClass: noun phrase }
+        - { role: particle, text: が, reading: が, wordClass: particle }
+        - { role: predicate, text: います, reading: います, wordClass: predicate }
+      meaning: There is a teacher.
+      reading: せんせいがいます。
+      japanese: 先生がいます。
+      translationTokens:
+        - { role: predicate, text: 'There is ' }
+        - { role: subject, text: a teacher. }
+    - tokens:
+        - { role: subject, text: 花, reading: はな, wordClass: noun phrase }
+        - { role: particle, text: が, reading: が, wordClass: particle }
+        - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+      meaning: There is a flower.
+      reading: はながあります。
+      japanese: 花があります。
+      translationTokens:
+        - { role: predicate, text: 'There is ' }
+        - { role: subject, text: a flower. }
+  japanese: 猫がいます。
+  references:
+    - rows:
+        - - text: people / animals
+            reading: ''
+          - text: います
+            reading: います
+          - text: いません
+            reading: いません
+        - - text: things / plants
+            reading: ''
+          - text: あります
+            reading: あります
+          - text: ありません
+            reading: ありません
+      columns:
+        - Use
+        - Positive
+        - Negative
+      heading: Choose the existence verb
+sentences:
+  there-is-a-cat:
+    text: 猫がいます。
+    tokens:
+      - { role: subject, text: 猫, reading: ねこ, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: います, reading: います, wordClass: predicate }
+    meaning: There is a cat.
+    reading: ねこがいます。
+    translationTokens:
+      - { role: predicate, text: 'There is ' }
+      - { role: subject, text: a cat. }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Use います for people and animals, and あります for things and plants. “Living/non-living” is only a
+      rough shortcut: plants are biologically living but normally use あります. Use subject + が + existence verb.
+      Location uses に, not で.'
+  there-is-a-book:
+    text: 本があります。
+    tokens:
+      - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+    meaning: There is a book.
+    reading: ほんがあります。
+    translationTokens:
+      - { role: predicate, text: 'There is ' }
+      - { role: subject, text: a book. }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Use います for people and animals, and あります for things and plants. “Living/non-living” is only a
+      rough shortcut: plants are biologically living but normally use あります. Use subject + が + existence verb.
+      Location uses に, not で.'
+    form: polite
+  there-is-a-teacher:
+    text: 先生がいます。
+    tokens:
+      - { role: subject, text: 先生, reading: せんせい, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: います, reading: います, wordClass: predicate }
+    meaning: There is a teacher.
+    reading: せんせいがいます。
+    translationTokens:
+      - { role: predicate, text: 'There is ' }
+      - { role: subject, text: a teacher. }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Use います for people and animals, and あります for things and plants. “Living/non-living” is only a
+      rough shortcut: plants are biologically living but normally use あります. Use subject + が + existence verb.
+      Location uses に, not で.'
+  there-is-a-flower:
+    text: 花があります。
+    tokens:
+      - { role: subject, text: 花, reading: はな, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+    meaning: There is a flower.
+    reading: はながあります。
+    translationTokens:
+      - { role: predicate, text: 'There is ' }
+      - { role: subject, text: a flower. }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Use います for people and animals, and あります for things and plants. “Living/non-living” is only a
+      rough shortcut: plants are biologically living but normally use あります. Use subject + が + existence verb.
+      Location uses に, not で.'
+  there-is-a-dog:
+    tokens:
+      - { role: subject, text: 犬, reading: いぬ, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: います, reading: います, wordClass: predicate }
+    meaning: There is a dog.
+    reading: いぬがいます。
+    translationTokens:
+      - { role: predicate, text: 'There is ' }
+      - { role: subject, text: a dog. }
+    text: 犬がいます。
+    hint: Check the particles and sentence ending.
+    explanation: 犬がいます。 means “There is a dog.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+  there-is-a-magazine:
+    tokens:
+      - { role: subject, text: 雑誌, reading: ざっし, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+    meaning: There is a magazine.
+    reading: ざっしがあります。
+    translationTokens:
+      - { role: predicate, text: 'There is ' }
+      - { role: subject, text: a magazine. }
+    text: 雑誌があります。
+    hint: Check the particles and sentence ending.
+    explanation: 雑誌があります。 means “There is a magazine.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+  there-is-a-student:
+    tokens:
+      - { role: subject, text: 学生, reading: がくせい, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: います, reading: います, wordClass: predicate }
+    meaning: There is a student.
+    reading: がくせいがいます。
+    translationTokens:
+      - { role: predicate, text: 'There is ' }
+      - { role: subject, text: a student. }
+    text: 学生がいます。
+    hint: Check the particles and sentence ending.
+    explanation: 学生がいます。 means “There is a student.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: there-is-a-cat
+    choices:
+      - text: There is a cat.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+      - text: There is a teacher.
+        reading: ''
+      - text: There is a flower.
+        reading: ''
+    answers:
+      - There is a cat.
+  - id: pattern
+    type: pattern-choice
+    sentence: there-is-a-book
+    choices:
+      - sentence: there-is-a-cat
+      - sentence: there-is-a-book
+    prompt: 'Choose the Japanese: There is a book.'
+    answers:
+      - 本があります
+      - ほんがあります
+  - id: gap
+    type: gap
+    sentence: there-is-a-book
+    prompt: 'Fill the missing part: There is a book. (polite)'
+    answers:
+      - が
+      - が
+    context:
+      text: 本___あります。
+      tokens:
+        - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+        - { role: particle, text: ___, reading: ___, wordClass: particle }
+        - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+      reading: ほん___あります。
+  - id: tiles
+    type: tiles
+    sentence: there-is-a-book
+    prompt: 'Build: There is a book. (polite)'
+    answers:
+      - 本があります
+      - ほんがあります
+    tiles:
+      - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: there-is-a-teacher
+    answers:
+      - 先生がいます
+      - せんせいがいます
+  - id: alternate
+    type: typing
+    sentence: there-is-a-flower
+    alternate: true
+    prompt: 'Another example: There is a flower. (polite)'
+    answers:
+      - 花があります
+      - はながあります
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: there-is-a-dog
+    choices:
+      - text: There is a dog.
+        reading: ''
+      - text: There is a cat.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+      - text: There is a teacher.
+        reading: ''
+    answers:
+      - There is a dog.
+  - id: expanded-1-typing
+    type: typing
+    sentence: there-is-a-dog
+    explanation: 犬がいます。 means “There is a dog.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 犬がいます
+      - いぬがいます
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: there-is-a-dog
+    prompt: 'Build this sentence: There is a dog. (polite)'
+    explanation: 犬がいます。 means “There is a dog.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 犬がいます
+      - いぬがいます
+  - id: expanded-2-meaning
+    type: meaning-choice
+    sentence: there-is-a-magazine
+    choices:
+      - text: There is a magazine.
+        reading: ''
+      - text: There is a cat.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+      - text: There is a teacher.
+        reading: ''
+    answers:
+      - There is a magazine.
+  - id: expanded-2-typing
+    type: typing
+    sentence: there-is-a-magazine
+    explanation: 雑誌があります。 means “There is a magazine.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 雑誌があります
+      - ざっしがあります
+  - id: expanded-2-tiles
+    type: tiles
+    sentence: there-is-a-magazine
+    prompt: 'Build this sentence: There is a magazine. (polite)'
+    explanation: 雑誌があります。 means “There is a magazine.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 雑誌があります
+      - ざっしがあります
+  - id: expanded-3-meaning
+    type: meaning-choice
+    sentence: there-is-a-student
+    choices:
+      - text: There is a student.
+        reading: ''
+      - text: There is a cat.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+      - text: There is a teacher.
+        reading: ''
+    answers:
+      - There is a student.
+  - id: expanded-3-typing
+    type: typing
+    sentence: there-is-a-student
+    explanation: 学生がいます。 means “There is a student.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 学生がいます
+      - がくせいがいます
+  - id: expanded-3-tiles
+    type: tiles
+    sentence: there-is-a-student
+    prompt: 'Build this sentence: There is a student. (polite)'
+    explanation: 学生がいます。 means “There is a student.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 学生がいます
+      - がくせいがいます
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: there-is-a-dog
+    choices:
+      - sentence: there-is-a-dog
+      - text: 猫がいます。
+        reading: ねこがいます。
+        tokens:
+          - { role: subject, text: 猫, reading: ねこ, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: います, reading: います, wordClass: predicate }
+      - text: 本があります。
+        reading: ほんがあります。
+        tokens:
+          - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+      - text: 先生がいます。
+        reading: せんせいがいます。
+        tokens:
+          - { role: subject, text: 先生, reading: せんせい, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: います, reading: います, wordClass: predicate }
+    prompt: 'Choose the Japanese: There is a dog. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 犬がいます。 for “There is a dog.” The other sentences describe different situations.
+    answers:
+      - 犬がいます
+      - いぬがいます
+  - id: expanded-1-gap
+    type: gap
+    sentence: there-is-a-dog
+    prompt: 'Fill the missing part: There is a dog. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is います (います). Together, the sentence means “There is a dog.”
+    answers:
+      - います
+    context:
+      meaning: There is a dog.
+      reading: いぬが___。
+      text: 犬が___。
+  - id: expanded-2-pattern
+    type: pattern-choice
+    sentence: there-is-a-magazine
+    choices:
+      - sentence: there-is-a-magazine
+      - text: 猫がいます。
+        reading: ねこがいます。
+        tokens:
+          - { role: subject, text: 猫, reading: ねこ, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: います, reading: います, wordClass: predicate }
+      - text: 本があります。
+        reading: ほんがあります。
+        tokens:
+          - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+      - text: 先生がいます。
+        reading: せんせいがいます。
+        tokens:
+          - { role: subject, text: 先生, reading: せんせい, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: います, reading: います, wordClass: predicate }
+    prompt: 'Choose the Japanese: There is a magazine. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 雑誌があります。 for “There is a magazine.” The other sentences describe different situations.
+    answers:
+      - 雑誌があります
+      - ざっしがあります
+  - id: expanded-2-gap
+    type: gap
+    sentence: there-is-a-magazine
+    prompt: 'Fill the missing part: There is a magazine. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is あります (あります). Together, the sentence means “There is a magazine.”
+    answers:
+      - あります
+    context:
+      meaning: There is a magazine.
+      reading: ざっしが___。
+      text: 雑誌が___。
+  - id: expanded-3-pattern
+    type: pattern-choice
+    sentence: there-is-a-student
+    choices:
+      - sentence: there-is-a-student
+      - text: 猫がいます。
+        reading: ねこがいます。
+        tokens:
+          - { role: subject, text: 猫, reading: ねこ, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: います, reading: います, wordClass: predicate }
+      - text: 本があります。
+        reading: ほんがあります。
+        tokens:
+          - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+      - text: 先生がいます。
+        reading: せんせいがいます。
+        tokens:
+          - { role: subject, text: 先生, reading: せんせい, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: います, reading: います, wordClass: predicate }
+    prompt: 'Choose the Japanese: There is a student. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 学生がいます。 for “There is a student.” The other sentences describe different situations.
+    answers:
+      - 学生がいます
+      - がくせいがいます
+  - id: expanded-3-gap
+    type: gap
+    sentence: there-is-a-student
+    prompt: 'Fill the missing part: There is a student. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is います (います). Together, the sentence means “There is a student.”
+    answers:
+      - います
+    context:
+      meaning: There is a student.
+      reading: がくせいが___。
+      text: 学生が___。

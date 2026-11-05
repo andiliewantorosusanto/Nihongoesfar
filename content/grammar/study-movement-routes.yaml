@@ -1,0 +1,406 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-movement-routes
+  kind: grammar
+  title: 'Movement: walking, crossing, flying, boarding and leaving'
+  japanese: 橋を渡ります。
+  reading: はしをわたります。
+  meaning: 'Movement: walking, crossing, flying, boarding and leaving'
+  level: N5
+  topic: Movement and expressions
+  tags:
+    - Study guide
+  note:
+    '歩いて (あるいて) and 徒歩で (とほで) mean on foot: 学校まで歩いて行きます (がっこうまであるいていきます). Use を for a route traversed: 道を歩く
+    (みちをあるく), 公園を走る (こうえんをはしる), 空を飛ぶ (そらをとぶ), 橋を渡る (はしをわたる), and 道を通る (みちをとおる). 通る means pass through/along;
+    渡る means cross to the other side. Vehicle + に乗る (にのる) means board/get into; vehicle + を降りる (をおりる) means
+    get off/out. Place + を出る (をでる) means leave a place; place + に入る (にはいる) means enter. 駅で電車を降ります
+    (えきででんしゃをおります): で marks where you get off. 走る and 入る are group 1: 走ります (はしります), 入ります (はいります). 降りる is group
+    2: 降ります (おります). In-progress forms include 歩いています (あるいています), 走っています (はしっています), and 飛んでいます (とんでいます).'
+  examples:
+    - japanese: 橋を渡ります。
+      reading: はしをわたります。
+      meaning: I cross the bridge.
+      tokens:
+        - { text: 橋, reading: はし, role: modifier, wordClass: phrase }
+        - { text: を, reading: を, role: particle, wordClass: particle }
+        - { text: 渡ります, reading: わたります, role: predicate, wordClass: phrase }
+      translationTokens:
+        - { text: 'I ', role: implicit, implicit: true }
+        - { text: cross, role: predicate }
+        - { text: ' the bridge', role: modifier }
+        - { text: ., role: implicit, implicit: true }
+    - japanese: 電車に乗ります。
+      reading: でんしゃにのります。
+      meaning: I board the train.
+      tokens:
+        - { text: 電車, reading: でんしゃ, role: modifier, wordClass: phrase }
+        - { text: に, reading: に, role: particle, wordClass: particle }
+        - { text: 乗ります, reading: のります, role: predicate, wordClass: phrase }
+      translationTokens:
+        - { text: 'I ', role: implicit, implicit: true }
+        - { text: board, role: predicate }
+        - { text: ' the train', role: modifier }
+        - { text: ., role: implicit, implicit: true }
+    - japanese: バスを降ります。
+      reading: ばすをおります。
+      meaning: I get off the bus.
+      tokens:
+        - { text: バス, reading: ばす, role: modifier, wordClass: phrase }
+        - { text: を, reading: を, role: particle, wordClass: particle }
+        - { text: 降ります, reading: おります, role: predicate, wordClass: phrase }
+      translationTokens:
+        - { text: 'I ', role: implicit, implicit: true }
+        - { text: get off, role: predicate }
+        - { text: ' the bus', role: modifier }
+        - { text: ., role: implicit, implicit: true }
+    - japanese: 家を出ます。
+      reading: いえをでます。
+      meaning: I leave the house.
+      tokens:
+        - { text: 家, reading: いえ, role: modifier, wordClass: phrase }
+        - { text: を, reading: を, role: particle, wordClass: particle }
+        - { text: 出ます, reading: でます, role: predicate, wordClass: phrase }
+      translationTokens:
+        - { text: 'I ', role: implicit, implicit: true }
+        - { text: leave, role: predicate }
+        - { text: ' the house', role: modifier }
+        - { text: ., role: implicit, implicit: true }
+sentences:
+  i-cross-the-bridge:
+    text: 橋を渡ります。
+    reading: はしをわたります。
+    meaning: I cross the bridge.
+    tokens:
+      - { text: 橋, reading: はし, role: modifier, wordClass: phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 渡ります, reading: わたります, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: cross, role: predicate }
+      - { text: ' the bridge', role: modifier }
+      - { text: ., role: implicit, implicit: true }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      '歩いて (あるいて) and 徒歩で (とほで) mean on foot: 学校まで歩いて行きます (がっこうまであるいていきます). Use を for a route
+      traversed: 道を歩く (みちをあるく), 公園を走る (こうえんをはしる), 空を飛ぶ (そらをとぶ), 橋を渡る (はしをわたる), and 道を通る (みちをとおる). 通る means
+      pass through/along; 渡る means cross to the other side. Vehicle + に乗る (にのる) means board/get into; vehicle
+      + を降りる (をおりる) means get off/out. Place + を出る (をでる) means leave a place; place + に入る (にはいる) means enter.
+      駅で電車を降ります (えきででんしゃをおります): で marks where you get off. 走る and 入る are group 1: 走ります (はしります), 入ります (はいります).
+      降りる is group 2: 降ります (おります). In-progress forms include 歩いています (あるいています), 走っています (はしっています), and 飛んでいます
+      (とんでいます).'
+  i-board-the-train:
+    text: 電車に乗ります。
+    reading: でんしゃにのります。
+    meaning: I board the train.
+    tokens:
+      - { text: 電車, reading: でんしゃ, role: modifier, wordClass: phrase }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 乗ります, reading: のります, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: board, role: predicate }
+      - { text: ' the train', role: modifier }
+      - { text: ., role: implicit, implicit: true }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      '歩いて (あるいて) and 徒歩で (とほで) mean on foot: 学校まで歩いて行きます (がっこうまであるいていきます). Use を for a route
+      traversed: 道を歩く (みちをあるく), 公園を走る (こうえんをはしる), 空を飛ぶ (そらをとぶ), 橋を渡る (はしをわたる), and 道を通る (みちをとおる). 通る means
+      pass through/along; 渡る means cross to the other side. Vehicle + に乗る (にのる) means board/get into; vehicle
+      + を降りる (をおりる) means get off/out. Place + を出る (をでる) means leave a place; place + に入る (にはいる) means enter.
+      駅で電車を降ります (えきででんしゃをおります): で marks where you get off. 走る and 入る are group 1: 走ります (はしります), 入ります (はいります).
+      降りる is group 2: 降ります (おります). In-progress forms include 歩いています (あるいています), 走っています (はしっています), and 飛んでいます
+      (とんでいます).'
+    form: polite
+  i-get-off-the-bus:
+    text: バスを降ります。
+    reading: ばすをおります。
+    meaning: I get off the bus.
+    tokens:
+      - { text: バス, reading: ばす, role: modifier, wordClass: phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 降ります, reading: おります, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: get off, role: predicate }
+      - { text: ' the bus', role: modifier }
+      - { text: ., role: implicit, implicit: true }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      '歩いて (あるいて) and 徒歩で (とほで) mean on foot: 学校まで歩いて行きます (がっこうまであるいていきます). Use を for a route
+      traversed: 道を歩く (みちをあるく), 公園を走る (こうえんをはしる), 空を飛ぶ (そらをとぶ), 橋を渡る (はしをわたる), and 道を通る (みちをとおる). 通る means
+      pass through/along; 渡る means cross to the other side. Vehicle + に乗る (にのる) means board/get into; vehicle
+      + を降りる (をおりる) means get off/out. Place + を出る (をでる) means leave a place; place + に入る (にはいる) means enter.
+      駅で電車を降ります (えきででんしゃをおります): で marks where you get off. 走る and 入る are group 1: 走ります (はしります), 入ります (はいります).
+      降りる is group 2: 降ります (おります). In-progress forms include 歩いています (あるいています), 走っています (はしっています), and 飛んでいます
+      (とんでいます).'
+  i-leave-the-house:
+    text: 家を出ます。
+    reading: いえをでます。
+    meaning: I leave the house.
+    tokens:
+      - { text: 家, reading: いえ, role: modifier, wordClass: phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 出ます, reading: でます, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: leave, role: predicate }
+      - { text: ' the house', role: modifier }
+      - { text: ., role: implicit, implicit: true }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      '歩いて (あるいて) and 徒歩で (とほで) mean on foot: 学校まで歩いて行きます (がっこうまであるいていきます). Use を for a route
+      traversed: 道を歩く (みちをあるく), 公園を走る (こうえんをはしる), 空を飛ぶ (そらをとぶ), 橋を渡る (はしをわたる), and 道を通る (みちをとおる). 通る means
+      pass through/along; 渡る means cross to the other side. Vehicle + に乗る (にのる) means board/get into; vehicle
+      + を降りる (をおりる) means get off/out. Place + を出る (をでる) means leave a place; place + に入る (にはいる) means enter.
+      駅で電車を降ります (えきででんしゃをおります): で marks where you get off. 走る and 入る are group 1: 走ります (はしります), 入ります (はいります).
+      降りる is group 2: 降ります (おります). In-progress forms include 歩いています (あるいています), 走っています (はしっています), and 飛んでいます
+      (とんでいます).'
+  i-cross-the-road:
+    reading: みちをわたります。
+    meaning: I cross the road.
+    tokens:
+      - { text: 道, reading: みち, role: modifier, wordClass: phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 渡ります, reading: わたります, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: cross, role: predicate }
+      - { text: ' the road', role: modifier }
+      - { text: ., role: implicit, implicit: true }
+    text: 道を渡ります。
+    hint: Check the particles and sentence ending.
+    explanation: 道を渡ります。 means “I cross the road.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+  i-board-the-bus:
+    reading: ばすにのります。
+    meaning: I board the bus.
+    tokens:
+      - { text: バス, reading: ばす, role: modifier, wordClass: phrase }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 乗ります, reading: のります, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: board, role: predicate }
+      - { text: ' the bus', role: modifier }
+      - { text: ., role: implicit, implicit: true }
+    text: バスに乗ります。
+    hint: Check the particles and sentence ending.
+    explanation: バスに乗ります。 means “I board the bus.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-cross-the-bridge
+    choices:
+      - text: I cross the bridge.
+        reading: ''
+      - text: I board the train.
+        reading: ''
+      - text: I get off the bus.
+        reading: ''
+      - text: I leave the house.
+        reading: ''
+    answers:
+      - I cross the bridge.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-board-the-train
+    choices:
+      - sentence: i-cross-the-bridge
+      - sentence: i-board-the-train
+    prompt: 'Choose the Japanese: I board the train.'
+    answers:
+      - 電車に乗ります
+      - 電車にのります
+      - でんしゃに乗ります
+      - でんしゃにのります
+  - id: gap
+    type: gap
+    sentence: i-board-the-train
+    prompt: 'Fill the missing part: I board the train. (polite)'
+    answers:
+      - に
+      - に
+    context:
+      text: 電車___乗ります。
+      reading: でんしゃ___のります。
+      tokens:
+        - { text: 電車, reading: でんしゃ, role: modifier, wordClass: phrase }
+        - { text: ___, reading: ___, role: particle, wordClass: particle }
+        - { text: 乗ります, reading: のります, role: predicate, wordClass: phrase }
+  - id: tiles
+    type: tiles
+    sentence: i-board-the-train
+    prompt: 'Build: I board the train. (polite)'
+    answers:
+      - 電車に乗ります
+      - 電車にのります
+      - でんしゃに乗ります
+      - でんしゃにのります
+    tiles:
+      - { text: 電車, reading: でんしゃ, role: modifier, wordClass: phrase }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 乗ります, reading: のります, role: predicate, wordClass: phrase }
+  - id: typing
+    type: typing
+    sentence: i-get-off-the-bus
+    answers:
+      - バスを降ります
+      - バスをおります
+      - ばすを降ります
+      - ばすをおります
+  - id: alternate
+    type: typing
+    sentence: i-leave-the-house
+    alternate: true
+    prompt: 'Another example: I leave the house. (polite)'
+    answers:
+      - 家を出ます
+      - 家をでます
+      - いえを出ます
+      - いえをでます
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: i-cross-the-road
+    choices:
+      - text: I cross the road.
+        reading: ''
+      - text: I cross the bridge.
+        reading: ''
+      - text: I board the train.
+        reading: ''
+      - text: I get off the bus.
+        reading: ''
+    answers:
+      - I cross the road.
+  - id: expanded-1-typing
+    type: typing
+    sentence: i-cross-the-road
+    explanation: 道を渡ります。 means “I cross the road.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 道を渡ります
+      - みちをわたります
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: i-cross-the-road
+    prompt: 'Build this sentence: I cross the road. (polite)'
+    explanation: 道を渡ります。 means “I cross the road.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 道を渡ります
+      - みちをわたります
+  - id: expanded-2-meaning
+    type: meaning-choice
+    sentence: i-board-the-bus
+    choices:
+      - text: I board the bus.
+        reading: ''
+      - text: I cross the bridge.
+        reading: ''
+      - text: I board the train.
+        reading: ''
+      - text: I get off the bus.
+        reading: ''
+    answers:
+      - I board the bus.
+  - id: expanded-2-typing
+    type: typing
+    sentence: i-board-the-bus
+    explanation: バスに乗ります。 means “I board the bus.” Write the complete sentence, including the indicated ending.
+    answers:
+      - バスに乗ります
+      - ばすにのります
+  - id: expanded-2-tiles
+    type: tiles
+    sentence: i-board-the-bus
+    prompt: 'Build this sentence: I board the bus. (polite)'
+    explanation: バスに乗ります。 means “I board the bus.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - バスに乗ります
+      - ばすにのります
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: i-cross-the-road
+    choices:
+      - sentence: i-cross-the-road
+      - text: 橋を渡ります。
+        reading: はしをわたります。
+        tokens:
+          - { text: 橋, reading: はし, role: modifier, wordClass: phrase }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - { text: 渡ります, reading: わたります, role: predicate, wordClass: phrase }
+      - text: 電車に乗ります。
+        reading: でんしゃにのります。
+        tokens:
+          - { text: 電車, reading: でんしゃ, role: modifier, wordClass: phrase }
+          - { text: に, reading: に, role: particle, wordClass: particle }
+          - { text: 乗ります, reading: のります, role: predicate, wordClass: phrase }
+      - text: バスを降ります。
+        reading: ばすをおります。
+        tokens:
+          - { text: バス, reading: ばす, role: modifier, wordClass: phrase }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - { text: 降ります, reading: おります, role: predicate, wordClass: phrase }
+    prompt: 'Choose the Japanese: I cross the road. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 道を渡ります。 for “I cross the road.” The other sentences describe different situations.
+    answers:
+      - 道を渡ります
+      - みちをわたります
+  - id: expanded-1-gap
+    type: gap
+    sentence: i-cross-the-road
+    prompt: 'Fill the missing part: I cross the road. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 渡ります (わたります). Together, the sentence means “I cross the road.”
+    answers:
+      - 渡ります
+      - わたります
+    context:
+      reading: みちを___。
+      meaning: I cross the road.
+      text: 道を___。
+  - id: expanded-2-pattern
+    type: pattern-choice
+    sentence: i-board-the-bus
+    choices:
+      - sentence: i-board-the-bus
+      - text: 橋を渡ります。
+        reading: はしをわたります。
+        tokens:
+          - { text: 橋, reading: はし, role: modifier, wordClass: phrase }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - { text: 渡ります, reading: わたります, role: predicate, wordClass: phrase }
+      - text: 電車に乗ります。
+        reading: でんしゃにのります。
+        tokens:
+          - { text: 電車, reading: でんしゃ, role: modifier, wordClass: phrase }
+          - { text: に, reading: に, role: particle, wordClass: particle }
+          - { text: 乗ります, reading: のります, role: predicate, wordClass: phrase }
+      - text: バスを降ります。
+        reading: ばすをおります。
+        tokens:
+          - { text: バス, reading: ばす, role: modifier, wordClass: phrase }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - { text: 降ります, reading: おります, role: predicate, wordClass: phrase }
+    prompt: 'Choose the Japanese: I board the bus. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose バスに乗ります。 for “I board the bus.” The other sentences describe different situations.
+    answers:
+      - バスに乗ります
+      - ばすにのります
+  - id: expanded-2-gap
+    type: gap
+    sentence: i-board-the-bus
+    prompt: 'Fill the missing part: I board the bus. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 乗ります (のります). Together, the sentence means “I board the bus.”
+    answers:
+      - 乗ります
+      - のります
+    context:
+      reading: ばすに___。
+      meaning: I board the bus.
+      text: バスに___。

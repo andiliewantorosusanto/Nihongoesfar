@@ -1,0 +1,383 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-daily-routine
+  kind: grammar
+  note:
+    何時に asks at what time; 何時間 asks how many hours. Use どのくらいかかりますか for travel time. Answer clock times with
+    に, but durations without に. Use ます for routines and ました for past activities. Replace these example answers
+    with your own.
+  tags:
+    - Study guide
+  level: N5
+  title: 'Daily routine: ask and answer'
+  topic: Grammar basics
+  meaning: 'Daily routine: ask and answer'
+  reading: なんじにおきますか。
+  examples:
+    - tokens:
+        - { role: modifier, text: 何時, reading: なんじ, wordClass: noun phrase }
+        - { role: particle, text: に, reading: に, wordClass: particle }
+        - { role: predicate, text: 起きます, reading: おきます, wordClass: predicate }
+        - { role: particle, text: か, reading: か, wordClass: particle }
+      meaning: What time do you wake up?
+      reading: なんじにおきますか。
+      japanese: 何時に起きますか。
+      translationTokens:
+        - { role: modifier, text: 'What time ' }
+        - { role: predicate, text: do you wake up }
+        - { role: particle, text: '?' }
+    - tokens:
+        - { role: modifier, text: 六時, reading: ろくじ, wordClass: noun phrase }
+        - { role: particle, text: に, reading: に, wordClass: particle }
+        - { role: predicate, text: 起きます, reading: おきます, wordClass: predicate }
+      meaning: At six I wake up.
+      reading: ろくじにおきます。
+      japanese: 六時に起きます。
+      translationTokens:
+        - { role: modifier, text: 'At six ' }
+        - { role: predicate, text: I wake up. }
+    - tokens:
+        - { role: modifier, text: 十一時, reading: じゅういちじ, wordClass: noun phrase }
+        - { role: particle, text: に, reading: に, wordClass: particle }
+        - { role: predicate, text: 寝ます, reading: ねます, wordClass: predicate }
+      meaning: At eleven I go to bed.
+      reading: じゅういちじにねます。
+      japanese: 十一時に寝ます。
+      translationTokens:
+        - { role: modifier, text: 'At eleven ' }
+        - { role: predicate, text: I go to bed. }
+    - tokens:
+        - { role: modifier, text: 八時, reading: はちじ, wordClass: noun phrase }
+        - { role: particle, text: に, reading: に, wordClass: particle }
+        - { role: predicate, text: 起きます, reading: おきます, wordClass: predicate }
+      meaning: At eight I wake up.
+      reading: はちじにおきます。
+      japanese: 八時に起きます。
+      translationTokens:
+        - { role: modifier, text: 'At eight ' }
+        - { role: predicate, text: I wake up. }
+  japanese: 何時に起きますか。
+  references:
+    - rows:
+        - - text: Wake up
+            reading: ''
+          - text: 何時に起きますか。
+            reading: なんじにおきますか。
+          - text: 六時に起きます。
+            reading: ろくじにおきます。
+          - text: What time do you wake up? → I wake up at six.
+            reading: ''
+        - - text: Go to school
+            reading: ''
+          - text: 何時に学校に行きますか。
+            reading: なんじにがっこうにいきますか。
+          - text: 八時に学校に行きます。
+            reading: はちじにがっこうにいきます。
+          - text: What time do you go to school? → I go at eight.
+            reading: ''
+        - - text: Go to work
+            reading: ''
+          - text: 何時に仕事に行きますか。
+            reading: なんじにしごとにいきますか。
+          - text: 九時に仕事に行きます。
+            reading: くじにしごとにいきます。
+          - text: What time do you go to work? → I go at nine.
+            reading: ''
+        - - text: Travel to school
+            reading: ''
+          - text: 学校までどのくらいかかりますか。
+            reading: がっこうまでどのくらいかかりますか。
+          - text: 三十分かかります。
+            reading: さんじゅっぷんかかります。
+          - text: How long does it take to get to school? → It takes thirty minutes.
+            reading: ''
+        - - text: Travel to work
+            reading: ''
+          - text: 職場までどのくらいかかりますか。
+            reading: しょくばまでどのくらいかかりますか。
+          - text: 一時間かかります。
+            reading: いちじかんかかります。
+          - text: How long does it take to get to work? → It takes an hour.
+            reading: ''
+        - - text: Time at school
+            reading: ''
+          - text: 毎日何時間学校にいますか。
+            reading: まいにちなんじかんがっこうにいますか。
+          - text: 六時間います。
+            reading: ろくじかんいます。
+          - text: How many hours are you at school each day? → Six hours.
+            reading: ''
+        - - text: Hours of work
+            reading: ''
+          - text: 毎日何時間働きますか。
+            reading: まいにちなんじかんはたらきますか。
+          - text: 八時間働きます。
+            reading: はちじかんはたらきます。
+          - text: How many hours do you work each day? → Eight hours.
+            reading: ''
+        - - text: Food
+            reading: ''
+          - text: 昨日、何を食べましたか。
+            reading: きのう、なにをたべましたか。
+          - text: カレーを食べました。
+            reading: かれーをたべました。
+          - text: What did you eat yesterday? → I ate curry.
+            reading: ''
+        - - text: Cooking
+            reading: ''
+          - text: 昨日、何を作りましたか。
+            reading: きのう、なにをつくりましたか。
+          - text: 晩ご飯にカレーを作りました。
+            reading: ばんごはんにかれーをつくりました。
+          - text: What did you make yesterday? → I made curry for dinner.
+            reading: ''
+        - - text: Activities
+            reading: ''
+          - text: 昨日、何をしましたか。
+            reading: きのう、なにをしましたか。
+          - text: 日本語を勉強しました。
+            reading: にほんごをべんきょうしました。
+          - text: What did you do yesterday? → I studied Japanese.
+            reading: ''
+        - - text: Bedtime
+            reading: ''
+          - text: 何時に寝ますか。
+            reading: なんじにねますか。
+          - text: 十一時に寝ます。
+            reading: じゅういちじにねます。
+          - text: What time do you go to bed? → I go to bed at eleven.
+            reading: ''
+      columns:
+        - Topic
+        - Ask
+        - Example answer
+        - Meaning
+      heading: Daily routine
+sentences:
+  what-time-do-you-wake-up:
+    text: 何時に起きますか。
+    tokens:
+      - { role: modifier, text: 何時, reading: なんじ, wordClass: noun phrase }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 起きます, reading: おきます, wordClass: predicate }
+      - { role: particle, text: か, reading: か, wordClass: particle }
+    meaning: What time do you wake up?
+    reading: なんじにおきますか。
+    translationTokens:
+      - { role: modifier, text: 'What time ' }
+      - { role: predicate, text: do you wake up }
+      - { role: particle, text: '?' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      何時に asks at what time; 何時間 asks how many hours. Use どのくらいかかりますか for travel time. Answer clock
+      times with に, but durations without に. Use ます for routines and ました for past activities. Replace these
+      example answers with your own.
+  at-six-i-wake-up:
+    text: 六時に起きます。
+    tokens:
+      - { role: modifier, text: 六時, reading: ろくじ, wordClass: noun phrase }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 起きます, reading: おきます, wordClass: predicate }
+    meaning: At six I wake up.
+    reading: ろくじにおきます。
+    translationTokens:
+      - { role: modifier, text: 'At six ' }
+      - { role: predicate, text: I wake up. }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      何時に asks at what time; 何時間 asks how many hours. Use どのくらいかかりますか for travel time. Answer clock
+      times with に, but durations without に. Use ます for routines and ました for past activities. Replace these
+      example answers with your own.
+    form: polite
+  at-eleven-i-go-to-bed:
+    text: 十一時に寝ます。
+    tokens:
+      - { role: modifier, text: 十一時, reading: じゅういちじ, wordClass: noun phrase }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 寝ます, reading: ねます, wordClass: predicate }
+    meaning: At eleven I go to bed.
+    reading: じゅういちじにねます。
+    translationTokens:
+      - { role: modifier, text: 'At eleven ' }
+      - { role: predicate, text: I go to bed. }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      何時に asks at what time; 何時間 asks how many hours. Use どのくらいかかりますか for travel time. Answer clock
+      times with に, but durations without に. Use ます for routines and ました for past activities. Replace these
+      example answers with your own.
+  at-eight-i-wake-up:
+    text: 八時に起きます。
+    tokens:
+      - { role: modifier, text: 八時, reading: はちじ, wordClass: noun phrase }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 起きます, reading: おきます, wordClass: predicate }
+    meaning: At eight I wake up.
+    reading: はちじにおきます。
+    translationTokens:
+      - { role: modifier, text: 'At eight ' }
+      - { role: predicate, text: I wake up. }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      何時に asks at what time; 何時間 asks how many hours. Use どのくらいかかりますか for travel time. Answer clock
+      times with に, but durations without に. Use ます for routines and ました for past activities. Replace these
+      example answers with your own.
+  at-seven-i-wake-up:
+    tokens:
+      - { role: modifier, text: 七時, reading: しちじ, wordClass: noun phrase }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 起きます, reading: おきます, wordClass: predicate }
+    meaning: At seven I wake up.
+    reading: しちじにおきます。
+    translationTokens:
+      - { role: modifier, text: 'At seven ' }
+      - { role: predicate, text: I wake up. }
+    text: 七時に起きます。
+    hint: Check the particles and sentence ending.
+    explanation: 七時に起きます。 means “At seven I wake up.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: what-time-do-you-wake-up
+    choices:
+      - text: What time do you wake up?
+        reading: ''
+      - text: At six I wake up.
+        reading: ''
+      - text: At eleven I go to bed.
+        reading: ''
+      - text: At eight I wake up.
+        reading: ''
+    answers:
+      - What time do you wake up?
+  - id: pattern
+    type: pattern-choice
+    sentence: at-six-i-wake-up
+    choices:
+      - sentence: what-time-do-you-wake-up
+      - sentence: at-six-i-wake-up
+    prompt: 'Choose the Japanese: At six I wake up.'
+    answers:
+      - 六時に起きます
+      - 六時におきます
+      - ろくじに起きます
+      - ろくじにおきます
+  - id: gap
+    type: gap
+    sentence: at-six-i-wake-up
+    prompt: 'Fill the missing part: At six I wake up. (polite)'
+    answers:
+      - に
+      - に
+    context:
+      text: 六時___起きます。
+      tokens:
+        - { role: modifier, text: 六時, reading: ろくじ, wordClass: noun phrase }
+        - { role: particle, text: ___, reading: ___, wordClass: particle }
+        - { role: predicate, text: 起きます, reading: おきます, wordClass: predicate }
+      reading: ろくじ___おきます。
+  - id: tiles
+    type: tiles
+    sentence: at-six-i-wake-up
+    prompt: 'Build: At six I wake up. (polite)'
+    answers:
+      - 六時に起きます
+      - 六時におきます
+      - ろくじに起きます
+      - ろくじにおきます
+    tiles:
+      - { role: modifier, text: 六時, reading: ろくじ, wordClass: noun phrase }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 起きます, reading: おきます, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: at-eleven-i-go-to-bed
+    answers:
+      - 十一時に寝ます
+      - 十一時にねます
+      - じゅういちじに寝ます
+      - じゅういちじにねます
+  - id: alternate
+    type: typing
+    sentence: at-eight-i-wake-up
+    alternate: true
+    prompt: 'Another example: At eight I wake up. (polite)'
+    answers:
+      - 八時に起きます
+      - 八時におきます
+      - はちじに起きます
+      - はちじにおきます
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: at-seven-i-wake-up
+    choices:
+      - text: At seven I wake up.
+        reading: ''
+      - text: What time do you wake up?
+        reading: ''
+      - text: At six I wake up.
+        reading: ''
+      - text: At eleven I go to bed.
+        reading: ''
+    answers:
+      - At seven I wake up.
+  - id: expanded-1-typing
+    type: typing
+    sentence: at-seven-i-wake-up
+    explanation: 七時に起きます。 means “At seven I wake up.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 七時に起きます
+      - しちじにおきます
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: at-seven-i-wake-up
+    prompt: 'Build this sentence: At seven I wake up. (polite)'
+    explanation: 七時に起きます。 means “At seven I wake up.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 七時に起きます
+      - しちじにおきます
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: at-seven-i-wake-up
+    choices:
+      - sentence: at-seven-i-wake-up
+      - text: 何時に起きますか。
+        reading: なんじにおきますか。
+        tokens:
+          - { role: modifier, text: 何時, reading: なんじ, wordClass: noun phrase }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: predicate, text: 起きます, reading: おきます, wordClass: predicate }
+          - { role: particle, text: か, reading: か, wordClass: particle }
+      - text: 六時に起きます。
+        reading: ろくじにおきます。
+        tokens:
+          - { role: modifier, text: 六時, reading: ろくじ, wordClass: noun phrase }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: predicate, text: 起きます, reading: おきます, wordClass: predicate }
+      - text: 十一時に寝ます。
+        reading: じゅういちじにねます。
+        tokens:
+          - { role: modifier, text: 十一時, reading: じゅういちじ, wordClass: noun phrase }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: predicate, text: 寝ます, reading: ねます, wordClass: predicate }
+    prompt: 'Choose the Japanese: At seven I wake up. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 七時に起きます。 for “At seven I wake up.” The other sentences describe different situations.
+    answers:
+      - 七時に起きます
+      - しちじにおきます
+  - id: expanded-1-gap
+    type: gap
+    sentence: at-seven-i-wake-up
+    prompt: 'Fill the missing part: At seven I wake up. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 起きます (おきます). Together, the sentence means “At seven I wake up.”
+    answers:
+      - 起きます
+      - おきます
+    context:
+      meaning: At seven I wake up.
+      reading: しちじに___。
+      text: 七時に___。

@@ -1,0 +1,1445 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-pass-by
+  kind: grammar
+  title: 'Passing by or through: 〜を通る'
+  japanese: 駅の前を通ります。
+  reading: えきのまえをとおります。
+  meaning: I pass in front of the station.
+  level: N5
+  topic: Passing places
+  tags:
+    - Grammar
+    - pass-by
+  note:
+    'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+    えきのまえをとおります. を marks the route here, rather than a direct object.'
+  examples:
+    - japanese: 駅の前を通ります。
+      reading: えきのまえをとおります。
+      meaning: I pass in front of the station.
+      tokens:
+        - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+        - { text: の, reading: の, role: particle, wordClass: particle }
+        - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+        - { text: を, reading: を, role: particle, wordClass: particle }
+        - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+      translationTokens:
+        - { text: 'I ', role: implicit, implicit: true }
+        - { text: pass, role: predicate }
+        - { text: ' in front of the station.', role: modifier }
+    - japanese: 学校の前を通ります。
+      reading: がっこうのまえをとおります。
+      meaning: I pass in front of the school.
+      tokens:
+        - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+        - { text: の, reading: の, role: particle, wordClass: particle }
+        - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+        - { text: を, reading: を, role: particle, wordClass: particle }
+        - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+      translationTokens:
+        - { text: 'I ', role: implicit, implicit: true }
+        - { text: pass, role: predicate }
+        - { text: ' in front of the school.', role: modifier }
+    - japanese: 公園を通って帰ります。
+      reading: こうえんをとおってかえります。
+      meaning: I go home through the park.
+      tokens:
+        - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+        - { text: を, reading: を, role: particle, wordClass: particle }
+        - {
+            text: 通って帰ります,
+            reading: とおってかえります,
+            role: predicate,
+            wordClass: predicate,
+          }
+      translationTokens:
+        - { text: 'I ', role: implicit, implicit: true }
+        - { text: go home, role: predicate }
+        - { text: ' through the park.', role: modifier }
+  lesson:
+    order: 29
+    group: Passing places
+    goal: Say you pass by or through a place.
+    prerequisites:
+      - grammar-object
+      - grammar-destination
+    recap:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+    comparison:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+    examples:
+      - japanese: 駅の前を通ります。
+        reading: えきのまえをとおります。
+        meaning: I pass in front of the station.
+        tokens:
+          - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+          - { text: の, reading: の, role: particle, wordClass: particle }
+          - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+        translationTokens:
+          - { text: 'I ', role: implicit, implicit: true }
+          - { text: pass, role: predicate }
+          - { text: ' in front of the station.', role: modifier }
+      - japanese: 学校の前を通ります。
+        reading: がっこうのまえをとおります。
+        meaning: I pass in front of the school.
+        tokens:
+          - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+          - { text: の, reading: の, role: particle, wordClass: particle }
+          - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+        translationTokens:
+          - { text: 'I ', role: implicit, implicit: true }
+          - { text: pass, role: predicate }
+          - { text: ' in front of the school.', role: modifier }
+      - japanese: 公園を通って帰ります。
+        reading: こうえんをとおってかえります。
+        meaning: I go home through the park.
+        tokens:
+          - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - {
+              text: 通って帰ります,
+              reading: とおってかえります,
+              role: predicate,
+              wordClass: predicate,
+            }
+        translationTokens:
+          - { text: 'I ', role: implicit, implicit: true }
+          - { text: go home, role: predicate }
+          - { text: ' through the park.', role: modifier }
+    vocabulary:
+      - text: 学校
+        reading: がっこう
+        role: modifier
+        wordClass: modifier
+        meaning: school
+      - text: 帰ります
+        reading: かえります
+        role: predicate
+        wordClass: predicate
+        meaning: return
+sentences:
+  i-pass-in-front-of-the-station:
+    text: 駅の前を通ります。
+    reading: えきのまえをとおります。
+    meaning: I pass in front of the station.
+    tiles:
+      - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: pass, role: predicate }
+      - { text: ' in front of the station.', role: modifier }
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+  i-pass-in-front-of-the-school:
+    text: 学校の前を通ります。
+    reading: がっこうのまえをとおります。
+    meaning: I pass in front of the school.
+    tiles:
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: pass, role: predicate }
+      - { text: ' in front of the school.', role: modifier }
+    form: polite
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+  i-go-home-through-the-park:
+    text: 公園を通って帰ります。
+    reading: こうえんをとおってかえります。
+    meaning: I go home through the park.
+    tiles:
+      - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通って, reading: とおって, role: predicate, wordClass: predicate }
+      - { text: 帰ります, reading: かえります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通って帰ります, reading: とおってかえります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go home, role: predicate }
+      - { text: ' through the park.', role: modifier }
+    form: polite
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+  i-take-this-road:
+    text: この道を通ります。
+    reading: このみちをとおります。
+    meaning: I take this road.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 道, reading: みち, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この道, reading: このみち, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: take, role: predicate }
+      - { text: ' this road.', role: modifier }
+    form: polite
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+  i-pass-in-front-of-the-library:
+    text: 図書館の前を通ります。
+    reading: としょかんのまえをとおります。
+    meaning: I pass in front of the library.
+    tiles:
+      - { text: 図書館, reading: としょかん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 図書館, reading: としょかん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: pass, role: predicate }
+      - { text: ' in front of the library.', role: modifier }
+    form: polite
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+  i-pass-in-front-of-the-shop:
+    text: 店の前を通ります。
+    reading: みせのまえをとおります。
+    meaning: I pass in front of the shop.
+    tiles:
+      - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: pass, role: predicate }
+      - { text: ' in front of the shop.', role: modifier }
+    form: polite
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+  i-pass-in-front-of-the-bank:
+    text: 銀行の前を通ります。
+    reading: ぎんこうのまえをとおります。
+    meaning: I pass in front of the bank.
+    tiles:
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: pass, role: predicate }
+      - { text: ' in front of the bank.', role: modifier }
+    form: polite
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+  i-pass-in-front-of-the-park:
+    text: 公園の前を通ります。
+    reading: こうえんのまえをとおります。
+    meaning: I pass in front of the park.
+    tiles:
+      - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: pass, role: predicate }
+      - { text: ' in front of the park.', role: modifier }
+    form: polite
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+  i-pass-in-front-of-the-hospital:
+    text: 病院の前を通ります。
+    reading: びょういんのまえをとおります。
+    meaning: I pass in front of the hospital.
+    tiles:
+      - { text: 病院, reading: びょういん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 病院, reading: びょういん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: pass, role: predicate }
+      - { text: ' in front of the hospital.', role: modifier }
+    form: polite
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+  i-pass-in-front-of-the-office:
+    text: 会社の前を通ります。
+    reading: かいしゃのまえをとおります。
+    meaning: I pass in front of the office.
+    tiles:
+      - { text: 会社, reading: かいしゃ, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 会社, reading: かいしゃ, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: pass, role: predicate }
+      - { text: ' in front of the office.', role: modifier }
+    form: polite
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+  i-pass-in-front-of-the-post-office:
+    text: 郵便局の前を通ります。
+    reading: ゆうびんきょくのまえをとおります。
+    meaning: I pass in front of the post office.
+    tiles:
+      - { text: 郵便局, reading: ゆうびんきょく, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 郵便局, reading: ゆうびんきょく, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: pass, role: predicate }
+      - { text: ' in front of the post office.', role: modifier }
+    form: polite
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+  i-pass-in-front-of-the-art-museum:
+    text: 美術館の前を通ります。
+    reading: びじゅつかんのまえをとおります。
+    meaning: I pass in front of the art museum.
+    tiles:
+      - { text: 美術館, reading: びじゅつかん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 美術館, reading: びじゅつかん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: pass, role: predicate }
+      - { text: ' in front of the art museum.', role: modifier }
+    form: polite
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+  i-pass-in-front-of-the-supermarket:
+    text: スーパーの前を通ります。
+    reading: すーぱーのまえをとおります。
+    meaning: I pass in front of the supermarket.
+    tiles:
+      - { text: スーパー, reading: すーぱー, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: スーパー, reading: すーぱー, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: pass, role: predicate }
+      - { text: ' in front of the supermarket.', role: modifier }
+    form: polite
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+  i-pass-in-front-of-the-university:
+    text: 大学の前を通ります。
+    reading: だいがくのまえをとおります。
+    meaning: I pass in front of the university.
+    tiles:
+      - { text: 大学, reading: だいがく, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 大学, reading: だいがく, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: pass, role: predicate }
+      - { text: ' in front of the university.', role: modifier }
+    form: polite
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+  i-pass-in-front-of-the-airport:
+    text: 空港の前を通ります。
+    reading: くうこうのまえをとおります。
+    meaning: I pass in front of the airport.
+    tiles:
+      - { text: 空港, reading: くうこう, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 空港, reading: くうこう, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: pass, role: predicate }
+      - { text: ' in front of the airport.', role: modifier }
+    form: polite
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+  i-pass-in-front-of-the-port:
+    text: 港の前を通ります。
+    reading: みなとのまえをとおります。
+    meaning: I pass in front of the port.
+    tiles:
+      - { text: 港, reading: みなと, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 港, reading: みなと, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: pass, role: predicate }
+      - { text: ' in front of the port.', role: modifier }
+    form: polite
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+  i-pass-in-front-of-the-market:
+    text: 市場の前を通ります。
+    reading: いちばのまえをとおります。
+    meaning: I pass in front of the market.
+    tiles:
+      - { text: 市場, reading: いちば, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 市場, reading: いちば, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: pass, role: predicate }
+      - { text: ' in front of the market.', role: modifier }
+    form: polite
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+  i-pass-in-front-of-the-theater:
+    text: 劇場の前を通ります。
+    reading: げきじょうのまえをとおります。
+    meaning: I pass in front of the theater.
+    tiles:
+      - { text: 劇場, reading: げきじょう, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 劇場, reading: げきじょう, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: pass, role: predicate }
+      - { text: ' in front of the theater.', role: modifier }
+    form: polite
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+  i-pass-in-front-of-the-cinema:
+    text: 映画館の前を通ります。
+    reading: えいがかんのまえをとおります。
+    meaning: I pass in front of the cinema.
+    tiles:
+      - { text: 映画館, reading: えいがかん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 映画館, reading: えいがかん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: pass, role: predicate }
+      - { text: ' in front of the cinema.', role: modifier }
+    form: polite
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+  i-pass-in-front-of-the-museum:
+    text: 博物館の前を通ります。
+    reading: はくぶつかんのまえをとおります。
+    meaning: I pass in front of the museum.
+    tiles:
+      - { text: 博物館, reading: はくぶつかん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 博物館, reading: はくぶつかん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: pass, role: predicate }
+      - { text: ' in front of the museum.', role: modifier }
+    form: polite
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+  i-pass-in-front-of-the-zoo:
+    text: 動物園の前を通ります。
+    reading: どうぶつえんのまえをとおります。
+    meaning: I pass in front of the zoo.
+    tiles:
+      - { text: 動物園, reading: どうぶつえん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 動物園, reading: どうぶつえん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: pass, role: predicate }
+      - { text: ' in front of the zoo.', role: modifier }
+    form: polite
+    hint: Mark the route with を.
+    explanation:
+      'Use place + を + とおる for a route you pass along or through. To pass by a building, use its まえ:
+      えきのまえをとおります. を marks the route here, rather than a direct object.'
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-pass-in-front-of-the-station
+    choices:
+      - text: I pass in front of the station.
+        reading: ''
+      - text: I stop at the station.
+        reading: ''
+    answers:
+      - I pass in front of the station.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-pass-in-front-of-the-station
+    choices:
+      - sentence: i-pass-in-front-of-the-station
+      - text: 駅の前で通ります。
+        reading: えきのまえでとおります。
+        meaning: I stop at the station.
+        tiles:
+          - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+          - { text: の, reading: の, role: particle, wordClass: particle }
+          - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+          - { text: で, reading: で, role: particle, wordClass: particle }
+          - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+        tokens:
+          - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+          - { text: の, reading: の, role: particle, wordClass: particle }
+          - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+          - { text: で, reading: で, role: particle, wordClass: particle }
+          - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+    prompt: 'Choose the correct Japanese: I pass in front of the station.'
+    answers:
+      - 駅の前を通ります
+      - 駅の前をとおります
+      - 駅のまえを通ります
+      - 駅のまえをとおります
+      - えきの前を通ります
+      - えきの前をとおります
+      - えきのまえを通ります
+      - えきのまえをとおります
+  - id: gap
+    type: gap
+    sentence: i-pass-in-front-of-the-school
+    answers:
+      - を
+      - を
+    context:
+      tokens:
+        - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+        - { text: の, reading: の, role: particle, wordClass: particle }
+        - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+        - { text: ___, reading: ___, role: particle, wordClass: particle }
+        - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+      text: 学校の前___通ります。
+      reading: がっこうのまえ___とおります。
+  - id: tiles
+    type: tiles
+    sentence: i-pass-in-front-of-the-school
+    prompt: 'Build this sentence: I pass in front of the school. (polite)'
+    answers:
+      - 学校の前を通ります
+      - 学校の前をとおります
+      - 学校のまえを通ります
+      - 学校のまえをとおります
+      - がっこうの前を通ります
+      - がっこうの前をとおります
+      - がっこうのまえを通ります
+      - がっこうのまえをとおります
+    tiles:
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: i-go-home-through-the-park
+    answers:
+      - 公園を通って帰ります
+      - 公園を通ってかえります
+      - 公園をとおって帰ります
+      - 公園をとおってかえります
+      - こうえんを通って帰ります
+      - こうえんを通ってかえります
+      - こうえんをとおって帰ります
+      - こうえんをとおってかえります
+  - id: alternate
+    type: typing
+    sentence: i-take-this-road
+    alternate: true
+    prompt: 'One more example: I take this road. (polite)'
+    answers:
+      - この道を通ります
+      - この道をとおります
+      - このみちを通ります
+      - このみちをとおります
+  - id: extra-1-tiles
+    type: tiles
+    sentence: i-pass-in-front-of-the-library
+    prompt: 'Build this sentence: I pass in front of the library. (polite)'
+    answers:
+      - 図書館の前を通ります
+      - 図書館の前をとおります
+      - 図書館のまえを通ります
+      - 図書館のまえをとおります
+      - としょかんの前を通ります
+      - としょかんの前をとおります
+      - としょかんのまえを通ります
+      - としょかんのまえをとおります
+    tiles:
+      - { text: 図書館, reading: としょかん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: i-pass-in-front-of-the-library
+    answers:
+      - 図書館の前を通ります
+      - 図書館の前をとおります
+      - 図書館のまえを通ります
+      - 図書館のまえをとおります
+      - としょかんの前を通ります
+      - としょかんの前をとおります
+      - としょかんのまえを通ります
+      - としょかんのまえをとおります
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: i-pass-in-front-of-the-library
+    choices:
+      - text: I pass in front of the library.
+        reading: ''
+      - text: I pass in front of the station.
+        reading: ''
+    prompt: 'Choose the meaning: 図書館の前を通ります。'
+    answers:
+      - I pass in front of the library.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: i-pass-in-front-of-the-shop
+    prompt: 'Build this sentence: I pass in front of the shop. (polite)'
+    answers:
+      - 店の前を通ります
+      - 店の前をとおります
+      - 店のまえを通ります
+      - 店のまえをとおります
+      - みせの前を通ります
+      - みせの前をとおります
+      - みせのまえを通ります
+      - みせのまえをとおります
+    tiles:
+      - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: i-pass-in-front-of-the-shop
+    answers:
+      - 店の前を通ります
+      - 店の前をとおります
+      - 店のまえを通ります
+      - 店のまえをとおります
+      - みせの前を通ります
+      - みせの前をとおります
+      - みせのまえを通ります
+      - みせのまえをとおります
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: i-pass-in-front-of-the-shop
+    choices:
+      - text: I pass in front of the shop.
+        reading: ''
+      - text: I pass in front of the station.
+        reading: ''
+    prompt: 'Choose the meaning: 店の前を通ります。'
+    answers:
+      - I pass in front of the shop.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: i-pass-in-front-of-the-bank
+    prompt: 'Build this sentence: I pass in front of the bank. (polite)'
+    answers:
+      - 銀行の前を通ります
+      - 銀行の前をとおります
+      - 銀行のまえを通ります
+      - 銀行のまえをとおります
+      - ぎんこうの前を通ります
+      - ぎんこうの前をとおります
+      - ぎんこうのまえを通ります
+      - ぎんこうのまえをとおります
+    tiles:
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: i-pass-in-front-of-the-bank
+    answers:
+      - 銀行の前を通ります
+      - 銀行の前をとおります
+      - 銀行のまえを通ります
+      - 銀行のまえをとおります
+      - ぎんこうの前を通ります
+      - ぎんこうの前をとおります
+      - ぎんこうのまえを通ります
+      - ぎんこうのまえをとおります
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: i-pass-in-front-of-the-bank
+    choices:
+      - text: I pass in front of the bank.
+        reading: ''
+      - text: I pass in front of the station.
+        reading: ''
+    prompt: 'Choose the meaning: 銀行の前を通ります。'
+    answers:
+      - I pass in front of the bank.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: i-pass-in-front-of-the-park
+    prompt: 'Build this sentence: I pass in front of the park. (polite)'
+    answers:
+      - 公園の前を通ります
+      - 公園の前をとおります
+      - 公園のまえを通ります
+      - 公園のまえをとおります
+      - こうえんの前を通ります
+      - こうえんの前をとおります
+      - こうえんのまえを通ります
+      - こうえんのまえをとおります
+    tiles:
+      - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: i-pass-in-front-of-the-park
+    answers:
+      - 公園の前を通ります
+      - 公園の前をとおります
+      - 公園のまえを通ります
+      - 公園のまえをとおります
+      - こうえんの前を通ります
+      - こうえんの前をとおります
+      - こうえんのまえを通ります
+      - こうえんのまえをとおります
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: i-pass-in-front-of-the-park
+    choices:
+      - text: I pass in front of the park.
+        reading: ''
+      - text: I pass in front of the station.
+        reading: ''
+    prompt: 'Choose the meaning: 公園の前を通ります。'
+    answers:
+      - I pass in front of the park.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: i-pass-in-front-of-the-hospital
+    prompt: 'Build this sentence: I pass in front of the hospital. (polite)'
+    answers:
+      - 病院の前を通ります
+      - 病院の前をとおります
+      - 病院のまえを通ります
+      - 病院のまえをとおります
+      - びょういんの前を通ります
+      - びょういんの前をとおります
+      - びょういんのまえを通ります
+      - びょういんのまえをとおります
+    tiles:
+      - { text: 病院, reading: びょういん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: i-pass-in-front-of-the-hospital
+    answers:
+      - 病院の前を通ります
+      - 病院の前をとおります
+      - 病院のまえを通ります
+      - 病院のまえをとおります
+      - びょういんの前を通ります
+      - びょういんの前をとおります
+      - びょういんのまえを通ります
+      - びょういんのまえをとおります
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: i-pass-in-front-of-the-hospital
+    choices:
+      - text: I pass in front of the hospital.
+        reading: ''
+      - text: I pass in front of the station.
+        reading: ''
+    prompt: 'Choose the meaning: 病院の前を通ります。'
+    answers:
+      - I pass in front of the hospital.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: i-pass-in-front-of-the-office
+    prompt: 'Build this sentence: I pass in front of the office. (polite)'
+    answers:
+      - 会社の前を通ります
+      - 会社の前をとおります
+      - 会社のまえを通ります
+      - 会社のまえをとおります
+      - かいしゃの前を通ります
+      - かいしゃの前をとおります
+      - かいしゃのまえを通ります
+      - かいしゃのまえをとおります
+    tiles:
+      - { text: 会社, reading: かいしゃ, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: i-pass-in-front-of-the-office
+    answers:
+      - 会社の前を通ります
+      - 会社の前をとおります
+      - 会社のまえを通ります
+      - 会社のまえをとおります
+      - かいしゃの前を通ります
+      - かいしゃの前をとおります
+      - かいしゃのまえを通ります
+      - かいしゃのまえをとおります
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: i-pass-in-front-of-the-office
+    choices:
+      - text: I pass in front of the office.
+        reading: ''
+      - text: I pass in front of the station.
+        reading: ''
+    prompt: 'Choose the meaning: 会社の前を通ります。'
+    answers:
+      - I pass in front of the office.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: i-pass-in-front-of-the-post-office
+    prompt: 'Build this sentence: I pass in front of the post office. (polite)'
+    answers:
+      - 郵便局の前を通ります
+      - 郵便局の前をとおります
+      - 郵便局のまえを通ります
+      - 郵便局のまえをとおります
+      - ゆうびんきょくの前を通ります
+      - ゆうびんきょくの前をとおります
+      - ゆうびんきょくのまえを通ります
+      - ゆうびんきょくのまえをとおります
+    tiles:
+      - { text: 郵便局, reading: ゆうびんきょく, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: i-pass-in-front-of-the-post-office
+    answers:
+      - 郵便局の前を通ります
+      - 郵便局の前をとおります
+      - 郵便局のまえを通ります
+      - 郵便局のまえをとおります
+      - ゆうびんきょくの前を通ります
+      - ゆうびんきょくの前をとおります
+      - ゆうびんきょくのまえを通ります
+      - ゆうびんきょくのまえをとおります
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: i-pass-in-front-of-the-post-office
+    choices:
+      - text: I pass in front of the post office.
+        reading: ''
+      - text: I pass in front of the station.
+        reading: ''
+    prompt: 'Choose the meaning: 郵便局の前を通ります。'
+    answers:
+      - I pass in front of the post office.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: i-pass-in-front-of-the-art-museum
+    prompt: 'Build this sentence: I pass in front of the art museum. (polite)'
+    answers:
+      - 美術館の前を通ります
+      - 美術館の前をとおります
+      - 美術館のまえを通ります
+      - 美術館のまえをとおります
+      - びじゅつかんの前を通ります
+      - びじゅつかんの前をとおります
+      - びじゅつかんのまえを通ります
+      - びじゅつかんのまえをとおります
+    tiles:
+      - { text: 美術館, reading: びじゅつかん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: i-pass-in-front-of-the-art-museum
+    answers:
+      - 美術館の前を通ります
+      - 美術館の前をとおります
+      - 美術館のまえを通ります
+      - 美術館のまえをとおります
+      - びじゅつかんの前を通ります
+      - びじゅつかんの前をとおります
+      - びじゅつかんのまえを通ります
+      - びじゅつかんのまえをとおります
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: i-pass-in-front-of-the-art-museum
+    choices:
+      - text: I pass in front of the art museum.
+        reading: ''
+      - text: I pass in front of the station.
+        reading: ''
+    prompt: 'Choose the meaning: 美術館の前を通ります。'
+    answers:
+      - I pass in front of the art museum.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: i-pass-in-front-of-the-supermarket
+    prompt: 'Build this sentence: I pass in front of the supermarket. (polite)'
+    answers:
+      - スーパーの前を通ります
+      - スーパーの前をとおります
+      - スーパーのまえを通ります
+      - スーパーのまえをとおります
+      - すーぱーの前を通ります
+      - すーぱーの前をとおります
+      - すーぱーのまえを通ります
+      - すーぱーのまえをとおります
+    tiles:
+      - { text: スーパー, reading: すーぱー, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: i-pass-in-front-of-the-supermarket
+    answers:
+      - スーパーの前を通ります
+      - スーパーの前をとおります
+      - スーパーのまえを通ります
+      - スーパーのまえをとおります
+      - すーぱーの前を通ります
+      - すーぱーの前をとおります
+      - すーぱーのまえを通ります
+      - すーぱーのまえをとおります
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: i-pass-in-front-of-the-supermarket
+    choices:
+      - text: I pass in front of the supermarket.
+        reading: ''
+      - text: I pass in front of the station.
+        reading: ''
+    prompt: 'Choose the meaning: スーパーの前を通ります。'
+    answers:
+      - I pass in front of the supermarket.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: i-pass-in-front-of-the-university
+    prompt: 'Build this sentence: I pass in front of the university. (polite)'
+    answers:
+      - 大学の前を通ります
+      - 大学の前をとおります
+      - 大学のまえを通ります
+      - 大学のまえをとおります
+      - だいがくの前を通ります
+      - だいがくの前をとおります
+      - だいがくのまえを通ります
+      - だいがくのまえをとおります
+    tiles:
+      - { text: 大学, reading: だいがく, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: i-pass-in-front-of-the-university
+    answers:
+      - 大学の前を通ります
+      - 大学の前をとおります
+      - 大学のまえを通ります
+      - 大学のまえをとおります
+      - だいがくの前を通ります
+      - だいがくの前をとおります
+      - だいがくのまえを通ります
+      - だいがくのまえをとおります
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: i-pass-in-front-of-the-university
+    choices:
+      - text: I pass in front of the university.
+        reading: ''
+      - text: I pass in front of the station.
+        reading: ''
+    prompt: 'Choose the meaning: 大学の前を通ります。'
+    answers:
+      - I pass in front of the university.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: i-pass-in-front-of-the-airport
+    prompt: 'Build this sentence: I pass in front of the airport. (polite)'
+    answers:
+      - 空港の前を通ります
+      - 空港の前をとおります
+      - 空港のまえを通ります
+      - 空港のまえをとおります
+      - くうこうの前を通ります
+      - くうこうの前をとおります
+      - くうこうのまえを通ります
+      - くうこうのまえをとおります
+    tiles:
+      - { text: 空港, reading: くうこう, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: i-pass-in-front-of-the-airport
+    answers:
+      - 空港の前を通ります
+      - 空港の前をとおります
+      - 空港のまえを通ります
+      - 空港のまえをとおります
+      - くうこうの前を通ります
+      - くうこうの前をとおります
+      - くうこうのまえを通ります
+      - くうこうのまえをとおります
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: i-pass-in-front-of-the-airport
+    choices:
+      - text: I pass in front of the airport.
+        reading: ''
+      - text: I pass in front of the station.
+        reading: ''
+    prompt: 'Choose the meaning: 空港の前を通ります。'
+    answers:
+      - I pass in front of the airport.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: i-pass-in-front-of-the-port
+    prompt: 'Build this sentence: I pass in front of the port. (polite)'
+    answers:
+      - 港の前を通ります
+      - 港の前をとおります
+      - 港のまえを通ります
+      - 港のまえをとおります
+      - みなとの前を通ります
+      - みなとの前をとおります
+      - みなとのまえを通ります
+      - みなとのまえをとおります
+    tiles:
+      - { text: 港, reading: みなと, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: i-pass-in-front-of-the-port
+    answers:
+      - 港の前を通ります
+      - 港の前をとおります
+      - 港のまえを通ります
+      - 港のまえをとおります
+      - みなとの前を通ります
+      - みなとの前をとおります
+      - みなとのまえを通ります
+      - みなとのまえをとおります
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: i-pass-in-front-of-the-port
+    choices:
+      - text: I pass in front of the port.
+        reading: ''
+      - text: I pass in front of the station.
+        reading: ''
+    prompt: 'Choose the meaning: 港の前を通ります。'
+    answers:
+      - I pass in front of the port.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: i-pass-in-front-of-the-market
+    prompt: 'Build this sentence: I pass in front of the market. (polite)'
+    answers:
+      - 市場の前を通ります
+      - 市場の前をとおります
+      - 市場のまえを通ります
+      - 市場のまえをとおります
+      - いちばの前を通ります
+      - いちばの前をとおります
+      - いちばのまえを通ります
+      - いちばのまえをとおります
+    tiles:
+      - { text: 市場, reading: いちば, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: i-pass-in-front-of-the-market
+    answers:
+      - 市場の前を通ります
+      - 市場の前をとおります
+      - 市場のまえを通ります
+      - 市場のまえをとおります
+      - いちばの前を通ります
+      - いちばの前をとおります
+      - いちばのまえを通ります
+      - いちばのまえをとおります
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: i-pass-in-front-of-the-market
+    choices:
+      - text: I pass in front of the market.
+        reading: ''
+      - text: I pass in front of the station.
+        reading: ''
+    prompt: 'Choose the meaning: 市場の前を通ります。'
+    answers:
+      - I pass in front of the market.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: i-pass-in-front-of-the-theater
+    prompt: 'Build this sentence: I pass in front of the theater. (polite)'
+    answers:
+      - 劇場の前を通ります
+      - 劇場の前をとおります
+      - 劇場のまえを通ります
+      - 劇場のまえをとおります
+      - げきじょうの前を通ります
+      - げきじょうの前をとおります
+      - げきじょうのまえを通ります
+      - げきじょうのまえをとおります
+    tiles:
+      - { text: 劇場, reading: げきじょう, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: i-pass-in-front-of-the-theater
+    answers:
+      - 劇場の前を通ります
+      - 劇場の前をとおります
+      - 劇場のまえを通ります
+      - 劇場のまえをとおります
+      - げきじょうの前を通ります
+      - げきじょうの前をとおります
+      - げきじょうのまえを通ります
+      - げきじょうのまえをとおります
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: i-pass-in-front-of-the-theater
+    choices:
+      - text: I pass in front of the theater.
+        reading: ''
+      - text: I pass in front of the station.
+        reading: ''
+    prompt: 'Choose the meaning: 劇場の前を通ります。'
+    answers:
+      - I pass in front of the theater.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: i-pass-in-front-of-the-cinema
+    prompt: 'Build this sentence: I pass in front of the cinema. (polite)'
+    answers:
+      - 映画館の前を通ります
+      - 映画館の前をとおります
+      - 映画館のまえを通ります
+      - 映画館のまえをとおります
+      - えいがかんの前を通ります
+      - えいがかんの前をとおります
+      - えいがかんのまえを通ります
+      - えいがかんのまえをとおります
+    tiles:
+      - { text: 映画館, reading: えいがかん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: i-pass-in-front-of-the-cinema
+    answers:
+      - 映画館の前を通ります
+      - 映画館の前をとおります
+      - 映画館のまえを通ります
+      - 映画館のまえをとおります
+      - えいがかんの前を通ります
+      - えいがかんの前をとおります
+      - えいがかんのまえを通ります
+      - えいがかんのまえをとおります
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: i-pass-in-front-of-the-cinema
+    choices:
+      - text: I pass in front of the cinema.
+        reading: ''
+      - text: I pass in front of the station.
+        reading: ''
+    prompt: 'Choose the meaning: 映画館の前を通ります。'
+    answers:
+      - I pass in front of the cinema.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: i-pass-in-front-of-the-museum
+    prompt: 'Build this sentence: I pass in front of the museum. (polite)'
+    answers:
+      - 博物館の前を通ります
+      - 博物館の前をとおります
+      - 博物館のまえを通ります
+      - 博物館のまえをとおります
+      - はくぶつかんの前を通ります
+      - はくぶつかんの前をとおります
+      - はくぶつかんのまえを通ります
+      - はくぶつかんのまえをとおります
+    tiles:
+      - { text: 博物館, reading: はくぶつかん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: i-pass-in-front-of-the-museum
+    answers:
+      - 博物館の前を通ります
+      - 博物館の前をとおります
+      - 博物館のまえを通ります
+      - 博物館のまえをとおります
+      - はくぶつかんの前を通ります
+      - はくぶつかんの前をとおります
+      - はくぶつかんのまえを通ります
+      - はくぶつかんのまえをとおります
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: i-pass-in-front-of-the-museum
+    choices:
+      - text: I pass in front of the museum.
+        reading: ''
+      - text: I pass in front of the station.
+        reading: ''
+    prompt: 'Choose the meaning: 博物館の前を通ります。'
+    answers:
+      - I pass in front of the museum.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: i-pass-in-front-of-the-zoo
+    prompt: 'Build this sentence: I pass in front of the zoo. (polite)'
+    answers:
+      - 動物園の前を通ります
+      - 動物園の前をとおります
+      - 動物園のまえを通ります
+      - 動物園のまえをとおります
+      - どうぶつえんの前を通ります
+      - どうぶつえんの前をとおります
+      - どうぶつえんのまえを通ります
+      - どうぶつえんのまえをとおります
+    tiles:
+      - { text: 動物園, reading: どうぶつえん, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 前, reading: まえ, role: modifier, wordClass: modifier }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 通ります, reading: とおります, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: i-pass-in-front-of-the-zoo
+    answers:
+      - 動物園の前を通ります
+      - 動物園の前をとおります
+      - 動物園のまえを通ります
+      - 動物園のまえをとおります
+      - どうぶつえんの前を通ります
+      - どうぶつえんの前をとおります
+      - どうぶつえんのまえを通ります
+      - どうぶつえんのまえをとおります

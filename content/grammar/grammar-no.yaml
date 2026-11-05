@@ -1,0 +1,1312 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-no
+  kind: grammar
+  note:
+    Noun A + の + noun B links the nouns. It may express ownership (私の本), affiliation (学校の先生), or another
+    relationship. の follows the possessor, unlike English apostrophe placement.
+  tags:
+    - Grammar
+    - no
+  level: N5
+  title: 'Possession and connection: の'
+  topic: Sentence building
+  lesson:
+    goal: Say who something belongs to.
+    group: Sentence basics
+    order: 3
+    recap: The owner comes before の, and the owned thing comes after it.
+    examples:
+      - tokens:
+          - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: modifier, text: 私, reading: わたし, wordClass: modifier }
+          - { role: particle, text: の, reading: の, wordClass: particle }
+          - { role: predicate, text: 本です, reading: ほんです, wordClass: predicate }
+        meaning: This is my book.
+        reading: これはわたしのほんです。
+        japanese: これは私の本です。
+        translationTokens:
+          - { role: topic, text: This }
+          - { role: predicate, text: ' is ' }
+          - { role: modifier, text: my }
+          - { role: predicate, text: ' book.' }
+      - tokens:
+          - { role: topic, text: それ, reading: それ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: modifier, text: 先生, reading: せんせい, wordClass: modifier }
+          - { role: particle, text: の, reading: の, wordClass: particle }
+          - { role: predicate, text: 時計です, reading: とけいです, wordClass: predicate }
+        meaning: That is the teacher's clock.
+        reading: それはせんせいのとけいです。
+        japanese: それは先生の時計です。
+        translationTokens:
+          - { role: topic, text: That }
+          - { role: predicate, text: ' is ' }
+          - { role: modifier, text: the teacher's }
+          - { role: predicate, text: ' clock.' }
+      - tokens:
+          - { role: topic, text: あれ, reading: あれ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: modifier, text: 田中さん, reading: たなかさん, wordClass: modifier }
+          - { role: particle, text: の, reading: の, wordClass: particle }
+          - { role: predicate, text: 車です, reading: くるまです, wordClass: predicate }
+        meaning: That is Tanaka's car over there.
+        reading: あれはたなかさんのくるまです。
+        japanese: あれは田中さんの車です。
+        translationTokens:
+          - { role: topic, text: That }
+          - { role: predicate, text: ' is ' }
+          - { role: modifier, text: Tanaka's }
+          - { role: predicate, text: ' car over there.' }
+    comparison: The owner comes before の, and the owned thing comes after it.
+    vocabulary:
+      - text: 私
+        meaning: I / me
+        reading: わたし
+      - text: 本
+        meaning: book
+        reading: ほん
+      - text: 先生
+        meaning: teacher
+        reading: せんせい
+      - text: 時計
+        meaning: clock / watch
+        reading: とけい
+      - text: 田中さん
+        meaning: Tanaka (a person's name)
+        reading: たなかさん
+      - text: 車
+        meaning: car
+        reading: くるま
+      - text: 母
+        meaning: my mother
+        reading: はは
+      - text: かばん
+        meaning: bag
+        reading: かばん
+    prerequisites:
+      - grammar-desu
+      - grammar-question
+  meaning: This is my book.
+  reading: これはわたしのほんです。
+  examples:
+    - tokens:
+        - { role: topic, text: これ, reading: これ, wordClass: demonstrative pronoun }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: modifier, text: 私の, reading: わたしの, wordClass: pronoun + particle }
+        - { role: predicate, text: 本です, reading: ほんです, wordClass: noun + copula }
+      meaning: This is my book.
+      reading: これはわたしのほんです。
+      japanese: これは私の本です。
+      translationTokens:
+        - { role: topic, text: This, implicit: false }
+        - { role: predicate, text: ' is ', implicit: false }
+        - { role: modifier, text: my, implicit: false }
+        - { role: predicate, text: ' book.', implicit: false }
+  exercise:
+    tiles:
+      - これ
+      - は
+      - 私
+      - の
+      - 本
+      - です
+    prompt: 'Build: “This is my book.”'
+    answers:
+      - これは私の本です
+      - これはわたしのほんです
+    explanation:
+      Noun A + の + noun B links the nouns. It may express ownership (私の本), affiliation (学校の先生), or
+      another relationship. の follows the possessor, unlike English apostrophe placement.
+  japanese: これは私の本です。
+sentences:
+  this-is-my-book:
+    text: これは私の本です。
+    tiles:
+      - { text: これ, reading: これ }
+      - { text: は, reading: は }
+      - { text: 私, reading: わたし }
+      - { text: の, reading: の }
+      - { text: 本, reading: ほん }
+      - { text: です, reading: です }
+    tokens:
+      - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: modifier, text: 私, reading: わたし, wordClass: modifier }
+      - { role: particle, text: の, reading: の, wordClass: particle }
+      - { role: predicate, text: 本です, reading: ほんです, wordClass: predicate }
+    meaning: This is my book.
+    reading: これはわたしのほんです。
+    translationTokens:
+      - { role: topic, text: This }
+      - { role: predicate, text: ' is ' }
+      - { role: modifier, text: my }
+      - { role: predicate, text: ' book.' }
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+  that-is-the-teacher-s-clock:
+    text: それは先生の時計です。
+    tiles:
+      - { text: それ, reading: それ }
+      - { text: は, reading: は }
+      - { text: 先生, reading: せんせい }
+      - { text: の, reading: の }
+      - { text: 時計, reading: とけい }
+      - { text: です, reading: です }
+    tokens:
+      - { role: topic, text: それ, reading: それ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: modifier, text: 先生, reading: せんせい, wordClass: modifier }
+      - { role: particle, text: の, reading: の, wordClass: particle }
+      - { role: predicate, text: 時計です, reading: とけいです, wordClass: predicate }
+    meaning: That is the teacher's clock.
+    reading: それはせんせいのとけいです。
+    translationTokens:
+      - { role: topic, text: That }
+      - { role: predicate, text: ' is ' }
+      - { role: modifier, text: the teacher's }
+      - { role: predicate, text: ' clock.' }
+    form: polite
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+  that-is-tanaka-s-car-over-there:
+    text: あれは田中さんの車です。
+    tiles:
+      - { text: あれ, reading: あれ }
+      - { text: は, reading: は }
+      - { text: 田中さん, reading: たなかさん }
+      - { text: の, reading: の }
+      - { text: 車, reading: くるま }
+      - { text: です, reading: です }
+    tokens:
+      - { role: topic, text: あれ, reading: あれ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: modifier, text: 田中さん, reading: たなかさん, wordClass: modifier }
+      - { role: particle, text: の, reading: の, wordClass: particle }
+      - { role: predicate, text: 車です, reading: くるまです, wordClass: predicate }
+    meaning: That is Tanaka's car over there.
+    reading: あれはたなかさんのくるまです。
+    translationTokens:
+      - { role: topic, text: That }
+      - { role: predicate, text: ' is ' }
+      - { role: modifier, text: Tanaka's }
+      - { role: predicate, text: ' car over there.' }
+    form: polite
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+  this-is-my-mother-s-bag:
+    text: これは母のかばんです。
+    tiles:
+      - { text: これ, reading: これ }
+      - { text: は, reading: は }
+      - { text: 母, reading: はは }
+      - { text: の, reading: の }
+      - { text: かばん, reading: かばん }
+      - { text: です, reading: です }
+    tokens:
+      - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: modifier, text: 母, reading: はは, wordClass: modifier }
+      - { role: particle, text: の, reading: の, wordClass: particle }
+      - { role: predicate, text: かばんです, reading: かばんです, wordClass: predicate }
+    meaning: This is my mother's bag.
+    reading: これはははのかばんです。
+    translationTokens:
+      - { role: topic, text: This }
+      - { role: predicate, text: ' is ' }
+      - { role: modifier, text: my mother's }
+      - { role: predicate, text: ' bag.' }
+    form: polite
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+  this-is-my-magazine:
+    text: これは私の雑誌です。
+    reading: これはわたしのざっしです。
+    meaning: This is my magazine.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 雑誌, reading: ざっし, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 雑誌です, reading: ざっしです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is ', role: predicate }
+      - { text: my, role: modifier }
+      - { text: ' magazine.', role: predicate }
+    form: polite
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+  this-is-my-newspaper:
+    text: これは私の新聞です。
+    reading: これはわたしのしんぶんです。
+    meaning: This is my newspaper.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 新聞, reading: しんぶん, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 新聞です, reading: しんぶんです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is ', role: predicate }
+      - { text: my, role: modifier }
+      - { text: ' newspaper.', role: predicate }
+    form: polite
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+  this-is-my-dictionary:
+    text: これは私の辞書です。
+    reading: これはわたしのじしょです。
+    meaning: This is my dictionary.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 辞書, reading: じしょ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 辞書です, reading: じしょです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is ', role: predicate }
+      - { text: my, role: modifier }
+      - { text: ' dictionary.', role: predicate }
+    form: polite
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+  this-is-my-novel:
+    text: これは私の小説です。
+    reading: これはわたしのしょうせつです。
+    meaning: This is my novel.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 小説, reading: しょうせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 小説です, reading: しょうせつです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is ', role: predicate }
+      - { text: my, role: modifier }
+      - { text: ' novel.', role: predicate }
+    form: polite
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+  this-is-my-comic:
+    text: これは私の漫画です。
+    reading: これはわたしのまんがです。
+    meaning: This is my comic.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 漫画, reading: まんが, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 漫画です, reading: まんがです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is ', role: predicate }
+      - { text: my, role: modifier }
+      - { text: ' comic.', role: predicate }
+    form: polite
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+  this-is-my-textbook:
+    text: これは私の教科書です。
+    reading: これはわたしのきょうかしょです。
+    meaning: This is my textbook.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 教科書, reading: きょうかしょ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 教科書です, reading: きょうかしょです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is ', role: predicate }
+      - { text: my, role: modifier }
+      - { text: ' textbook.', role: predicate }
+    form: polite
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+  this-is-my-picture-book:
+    text: これは私の絵本です。
+    reading: これはわたしのえほんです。
+    meaning: This is my picture book.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 絵本, reading: えほん, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 絵本です, reading: えほんです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is ', role: predicate }
+      - { text: my, role: modifier }
+      - { text: ' picture book.', role: predicate }
+    form: polite
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+  this-is-my-letter:
+    text: これは私の手紙です。
+    reading: これはわたしのてがみです。
+    meaning: This is my letter.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 手紙, reading: てがみ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 手紙です, reading: てがみです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is ', role: predicate }
+      - { text: my, role: modifier }
+      - { text: ' letter.', role: predicate }
+    form: polite
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+  this-is-my-diary:
+    text: これは私の日記です。
+    reading: これはわたしのにっきです。
+    meaning: This is my diary.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 日記, reading: にっき, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 日記です, reading: にっきです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is ', role: predicate }
+      - { text: my, role: modifier }
+      - { text: ' diary.', role: predicate }
+    form: polite
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+  this-is-my-article:
+    text: これは私の記事です。
+    reading: これはわたしのきじです。
+    meaning: This is my article.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 記事, reading: きじ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 記事です, reading: きじです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is ', role: predicate }
+      - { text: my, role: modifier }
+      - { text: ' article.', role: predicate }
+    form: polite
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+  that-is-the-teacher-s-car:
+    text: それは先生の車です。
+    reading: それはせんせいのくるまです。
+    meaning: That is the teacher's car.
+    tiles:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 車, reading: くるま, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 車です, reading: くるまです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: That, role: topic }
+      - { text: ' is ', role: predicate }
+      - { text: the teacher's, role: modifier }
+      - { text: ' car.', role: predicate }
+    form: polite
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+  that-is-the-teacher-s-desk:
+    text: それは先生の机です。
+    reading: それはせんせいのつくえです。
+    meaning: That is the teacher's desk.
+    tiles:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 机, reading: つくえ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 机です, reading: つくえです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: That, role: topic }
+      - { text: ' is ', role: predicate }
+      - { text: the teacher's, role: modifier }
+      - { text: ' desk.', role: predicate }
+    form: polite
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+  that-is-the-teacher-s-bag:
+    text: それは先生のかばんです。
+    reading: それはせんせいのかばんです。
+    meaning: That is the teacher's bag.
+    tiles:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: かばん, reading: かばん, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: かばんです, reading: かばんです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: That, role: topic }
+      - { text: ' is ', role: predicate }
+      - { text: the teacher's, role: modifier }
+      - { text: ' bag.', role: predicate }
+    form: polite
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+  that-is-the-teacher-s-chair:
+    text: それは先生の椅子です。
+    reading: それはせんせいのいすです。
+    meaning: That is the teacher's chair.
+    tiles:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 椅子, reading: いす, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 椅子です, reading: いすです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: That, role: topic }
+      - { text: ' is ', role: predicate }
+      - { text: the teacher's, role: modifier }
+      - { text: ' chair.', role: predicate }
+    form: polite
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+  that-is-the-teacher-s-bicycle:
+    text: それは先生の自転車です。
+    reading: それはせんせいのじてんしゃです。
+    meaning: That is the teacher's bicycle.
+    tiles:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 自転車, reading: じてんしゃ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 自転車です, reading: じてんしゃです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: That, role: topic }
+      - { text: ' is ', role: predicate }
+      - { text: the teacher's, role: modifier }
+      - { text: ' bicycle.', role: predicate }
+    form: polite
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+  that-is-the-teacher-s-shoe:
+    text: それは先生の靴です。
+    reading: それはせんせいのくつです。
+    meaning: That is the teacher's shoe.
+    tiles:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 靴, reading: くつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 靴です, reading: くつです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: That, role: topic }
+      - { text: ' is ', role: predicate }
+      - { text: the teacher's, role: modifier }
+      - { text: ' shoe.', role: predicate }
+    form: polite
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+  that-is-the-teacher-s-umbrella:
+    text: それは先生の傘です。
+    reading: それはせんせいのかさです。
+    meaning: That is the teacher's umbrella.
+    tiles:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 傘, reading: かさ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 傘です, reading: かさです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: That, role: topic }
+      - { text: ' is ', role: predicate }
+      - { text: the teacher's, role: modifier }
+      - { text: ' umbrella.', role: predicate }
+    form: polite
+    hint: Link the owner to the following noun.
+    explanation: The owner comes before の, and the owned thing comes after it.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: this-is-my-book
+    choices:
+      - text: This is my book.
+        reading: ''
+      - text: This is the teacher's book.
+        reading: ''
+    answers:
+      - This is my book.
+  - id: pattern
+    type: pattern-choice
+    sentence: this-is-my-book
+    choices:
+      - sentence: this-is-my-book
+      - text: これは私は本です。
+        tiles:
+          - { text: これ, reading: これ }
+          - { text: は, reading: は }
+          - { text: 私, reading: わたし }
+          - { text: は, reading: は }
+          - { text: 本, reading: ほん }
+          - { text: です, reading: です }
+        tokens:
+          - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: modifier, text: 私, reading: わたし, wordClass: modifier }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 本です, reading: ほんです, wordClass: predicate }
+        meaning: This is the teacher's book.
+        reading: これはわたしはほんです。
+    prompt: 'Choose the correct Japanese: This is my book.'
+    answers:
+      - これは私の本です
+      - これは私のほんです
+      - これはわたしの本です
+      - これはわたしのほんです
+  - id: gap
+    type: gap
+    sentence: that-is-the-teacher-s-clock
+    answers:
+      - の
+      - の
+    context:
+      text: それは先生___時計です。
+      tokens:
+        - { role: topic, text: それ, reading: それ, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: modifier, text: 先生, reading: せんせい, wordClass: modifier }
+        - { role: particle, text: ___, reading: ___, wordClass: particle }
+        - { role: predicate, text: 時計です, reading: とけいです, wordClass: predicate }
+      reading: それはせんせい___とけいです。
+  - id: tiles
+    type: tiles
+    sentence: that-is-the-teacher-s-clock
+    prompt: "Build this sentence: That is the teacher's clock. (polite)"
+    answers:
+      - それは先生の時計です
+      - それは先生のとけいです
+      - それはせんせいの時計です
+      - それはせんせいのとけいです
+    tiles:
+      - { role: topic, text: それ, reading: それ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: modifier, text: 先生, reading: せんせい, wordClass: modifier }
+      - { role: particle, text: の, reading: の, wordClass: particle }
+      - { role: predicate, text: 時計, reading: とけい, wordClass: predicate }
+      - { role: predicate, text: です, reading: です, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: that-is-tanaka-s-car-over-there
+    answers:
+      - あれは田中さんの車です
+      - あれは田中さんのくるまです
+      - あれはたなかさんの車です
+      - あれはたなかさんのくるまです
+  - id: alternate
+    type: typing
+    sentence: this-is-my-mother-s-bag
+    alternate: true
+    prompt: "One more example: This is my mother's bag. (polite)"
+    answers:
+      - これは母のかばんです
+      - これはははのかばんです
+  - id: extra-1-tiles
+    type: tiles
+    sentence: this-is-my-magazine
+    prompt: 'Build this sentence: This is my magazine. (polite)'
+    answers:
+      - これは私の雑誌です
+      - これは私のざっしです
+      - これはわたしの雑誌です
+      - これはわたしのざっしです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 雑誌, reading: ざっし, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: this-is-my-magazine
+    answers:
+      - これは私の雑誌です
+      - これは私のざっしです
+      - これはわたしの雑誌です
+      - これはわたしのざっしです
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: this-is-my-magazine
+    choices:
+      - text: This is my magazine.
+        reading: ''
+      - text: This is my book.
+        reading: ''
+    prompt: 'Choose the meaning: これは私の雑誌です。'
+    answers:
+      - This is my magazine.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: this-is-my-newspaper
+    prompt: 'Build this sentence: This is my newspaper. (polite)'
+    answers:
+      - これは私の新聞です
+      - これは私のしんぶんです
+      - これはわたしの新聞です
+      - これはわたしのしんぶんです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 新聞, reading: しんぶん, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: this-is-my-newspaper
+    answers:
+      - これは私の新聞です
+      - これは私のしんぶんです
+      - これはわたしの新聞です
+      - これはわたしのしんぶんです
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: this-is-my-newspaper
+    choices:
+      - text: This is my newspaper.
+        reading: ''
+      - text: This is my book.
+        reading: ''
+    prompt: 'Choose the meaning: これは私の新聞です。'
+    answers:
+      - This is my newspaper.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: this-is-my-dictionary
+    prompt: 'Build this sentence: This is my dictionary. (polite)'
+    answers:
+      - これは私の辞書です
+      - これは私のじしょです
+      - これはわたしの辞書です
+      - これはわたしのじしょです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 辞書, reading: じしょ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: this-is-my-dictionary
+    answers:
+      - これは私の辞書です
+      - これは私のじしょです
+      - これはわたしの辞書です
+      - これはわたしのじしょです
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: this-is-my-dictionary
+    choices:
+      - text: This is my dictionary.
+        reading: ''
+      - text: This is my book.
+        reading: ''
+    prompt: 'Choose the meaning: これは私の辞書です。'
+    answers:
+      - This is my dictionary.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: this-is-my-novel
+    prompt: 'Build this sentence: This is my novel. (polite)'
+    answers:
+      - これは私の小説です
+      - これは私のしょうせつです
+      - これはわたしの小説です
+      - これはわたしのしょうせつです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 小説, reading: しょうせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: this-is-my-novel
+    answers:
+      - これは私の小説です
+      - これは私のしょうせつです
+      - これはわたしの小説です
+      - これはわたしのしょうせつです
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: this-is-my-novel
+    choices:
+      - text: This is my novel.
+        reading: ''
+      - text: This is my book.
+        reading: ''
+    prompt: 'Choose the meaning: これは私の小説です。'
+    answers:
+      - This is my novel.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: this-is-my-comic
+    prompt: 'Build this sentence: This is my comic. (polite)'
+    answers:
+      - これは私の漫画です
+      - これは私のまんがです
+      - これはわたしの漫画です
+      - これはわたしのまんがです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 漫画, reading: まんが, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: this-is-my-comic
+    answers:
+      - これは私の漫画です
+      - これは私のまんがです
+      - これはわたしの漫画です
+      - これはわたしのまんがです
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: this-is-my-comic
+    choices:
+      - text: This is my comic.
+        reading: ''
+      - text: This is my book.
+        reading: ''
+    prompt: 'Choose the meaning: これは私の漫画です。'
+    answers:
+      - This is my comic.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: this-is-my-textbook
+    prompt: 'Build this sentence: This is my textbook. (polite)'
+    answers:
+      - これは私の教科書です
+      - これは私のきょうかしょです
+      - これはわたしの教科書です
+      - これはわたしのきょうかしょです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 教科書, reading: きょうかしょ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: this-is-my-textbook
+    answers:
+      - これは私の教科書です
+      - これは私のきょうかしょです
+      - これはわたしの教科書です
+      - これはわたしのきょうかしょです
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: this-is-my-textbook
+    choices:
+      - text: This is my textbook.
+        reading: ''
+      - text: This is my book.
+        reading: ''
+    prompt: 'Choose the meaning: これは私の教科書です。'
+    answers:
+      - This is my textbook.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: this-is-my-picture-book
+    prompt: 'Build this sentence: This is my picture book. (polite)'
+    answers:
+      - これは私の絵本です
+      - これは私のえほんです
+      - これはわたしの絵本です
+      - これはわたしのえほんです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 絵本, reading: えほん, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: this-is-my-picture-book
+    answers:
+      - これは私の絵本です
+      - これは私のえほんです
+      - これはわたしの絵本です
+      - これはわたしのえほんです
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: this-is-my-picture-book
+    choices:
+      - text: This is my picture book.
+        reading: ''
+      - text: This is my book.
+        reading: ''
+    prompt: 'Choose the meaning: これは私の絵本です。'
+    answers:
+      - This is my picture book.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: this-is-my-letter
+    prompt: 'Build this sentence: This is my letter. (polite)'
+    answers:
+      - これは私の手紙です
+      - これは私のてがみです
+      - これはわたしの手紙です
+      - これはわたしのてがみです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 手紙, reading: てがみ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: this-is-my-letter
+    answers:
+      - これは私の手紙です
+      - これは私のてがみです
+      - これはわたしの手紙です
+      - これはわたしのてがみです
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: this-is-my-letter
+    choices:
+      - text: This is my letter.
+        reading: ''
+      - text: This is my book.
+        reading: ''
+    prompt: 'Choose the meaning: これは私の手紙です。'
+    answers:
+      - This is my letter.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: this-is-my-diary
+    prompt: 'Build this sentence: This is my diary. (polite)'
+    answers:
+      - これは私の日記です
+      - これは私のにっきです
+      - これはわたしの日記です
+      - これはわたしのにっきです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 日記, reading: にっき, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: this-is-my-diary
+    answers:
+      - これは私の日記です
+      - これは私のにっきです
+      - これはわたしの日記です
+      - これはわたしのにっきです
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: this-is-my-diary
+    choices:
+      - text: This is my diary.
+        reading: ''
+      - text: This is my book.
+        reading: ''
+    prompt: 'Choose the meaning: これは私の日記です。'
+    answers:
+      - This is my diary.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: this-is-my-article
+    prompt: 'Build this sentence: This is my article. (polite)'
+    answers:
+      - これは私の記事です
+      - これは私のきじです
+      - これはわたしの記事です
+      - これはわたしのきじです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 私, reading: わたし, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 記事, reading: きじ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: this-is-my-article
+    answers:
+      - これは私の記事です
+      - これは私のきじです
+      - これはわたしの記事です
+      - これはわたしのきじです
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: this-is-my-article
+    choices:
+      - text: This is my article.
+        reading: ''
+      - text: This is my book.
+        reading: ''
+    prompt: 'Choose the meaning: これは私の記事です。'
+    answers:
+      - This is my article.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: that-is-the-teacher-s-car
+    prompt: "Build this sentence: That is the teacher's car. (polite)"
+    answers:
+      - それは先生の車です
+      - それは先生のくるまです
+      - それはせんせいの車です
+      - それはせんせいのくるまです
+    tiles:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 車, reading: くるま, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: that-is-the-teacher-s-car
+    answers:
+      - それは先生の車です
+      - それは先生のくるまです
+      - それはせんせいの車です
+      - それはせんせいのくるまです
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: that-is-the-teacher-s-car
+    choices:
+      - text: That is the teacher's car.
+        reading: ''
+      - text: This is my book.
+        reading: ''
+    prompt: 'Choose the meaning: それは先生の車です。'
+    answers:
+      - That is the teacher's car.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: that-is-the-teacher-s-desk
+    prompt: "Build this sentence: That is the teacher's desk. (polite)"
+    answers:
+      - それは先生の机です
+      - それは先生のつくえです
+      - それはせんせいの机です
+      - それはせんせいのつくえです
+    tiles:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 机, reading: つくえ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: that-is-the-teacher-s-desk
+    answers:
+      - それは先生の机です
+      - それは先生のつくえです
+      - それはせんせいの机です
+      - それはせんせいのつくえです
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: that-is-the-teacher-s-desk
+    choices:
+      - text: That is the teacher's desk.
+        reading: ''
+      - text: This is my book.
+        reading: ''
+    prompt: 'Choose the meaning: それは先生の机です。'
+    answers:
+      - That is the teacher's desk.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: that-is-the-teacher-s-bag
+    prompt: "Build this sentence: That is the teacher's bag. (polite)"
+    answers:
+      - それは先生のかばんです
+      - それはせんせいのかばんです
+    tiles:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: かばん, reading: かばん, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: that-is-the-teacher-s-bag
+    answers:
+      - それは先生のかばんです
+      - それはせんせいのかばんです
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: that-is-the-teacher-s-bag
+    choices:
+      - text: That is the teacher's bag.
+        reading: ''
+      - text: This is my book.
+        reading: ''
+    prompt: 'Choose the meaning: それは先生のかばんです。'
+    answers:
+      - That is the teacher's bag.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: that-is-the-teacher-s-chair
+    prompt: "Build this sentence: That is the teacher's chair. (polite)"
+    answers:
+      - それは先生の椅子です
+      - それは先生のいすです
+      - それはせんせいの椅子です
+      - それはせんせいのいすです
+    tiles:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 椅子, reading: いす, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: that-is-the-teacher-s-chair
+    answers:
+      - それは先生の椅子です
+      - それは先生のいすです
+      - それはせんせいの椅子です
+      - それはせんせいのいすです
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: that-is-the-teacher-s-chair
+    choices:
+      - text: That is the teacher's chair.
+        reading: ''
+      - text: This is my book.
+        reading: ''
+    prompt: 'Choose the meaning: それは先生の椅子です。'
+    answers:
+      - That is the teacher's chair.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: that-is-the-teacher-s-bicycle
+    prompt: "Build this sentence: That is the teacher's bicycle. (polite)"
+    answers:
+      - それは先生の自転車です
+      - それは先生のじてんしゃです
+      - それはせんせいの自転車です
+      - それはせんせいのじてんしゃです
+    tiles:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 自転車, reading: じてんしゃ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: that-is-the-teacher-s-bicycle
+    answers:
+      - それは先生の自転車です
+      - それは先生のじてんしゃです
+      - それはせんせいの自転車です
+      - それはせんせいのじてんしゃです
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: that-is-the-teacher-s-bicycle
+    choices:
+      - text: That is the teacher's bicycle.
+        reading: ''
+      - text: This is my book.
+        reading: ''
+    prompt: 'Choose the meaning: それは先生の自転車です。'
+    answers:
+      - That is the teacher's bicycle.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: that-is-the-teacher-s-shoe
+    prompt: "Build this sentence: That is the teacher's shoe. (polite)"
+    answers:
+      - それは先生の靴です
+      - それは先生のくつです
+      - それはせんせいの靴です
+      - それはせんせいのくつです
+    tiles:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 靴, reading: くつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: that-is-the-teacher-s-shoe
+    answers:
+      - それは先生の靴です
+      - それは先生のくつです
+      - それはせんせいの靴です
+      - それはせんせいのくつです
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: that-is-the-teacher-s-shoe
+    choices:
+      - text: That is the teacher's shoe.
+        reading: ''
+      - text: This is my book.
+        reading: ''
+    prompt: 'Choose the meaning: それは先生の靴です。'
+    answers:
+      - That is the teacher's shoe.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: that-is-the-teacher-s-umbrella
+    prompt: "Build this sentence: That is the teacher's umbrella. (polite)"
+    answers:
+      - それは先生の傘です
+      - それは先生のかさです
+      - それはせんせいの傘です
+      - それはせんせいのかさです
+    tiles:
+      - { text: それ, reading: それ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: modifier, wordClass: modifier }
+      - { text: の, reading: の, role: particle, wordClass: particle }
+      - { text: 傘, reading: かさ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: that-is-the-teacher-s-umbrella
+    answers:
+      - それは先生の傘です
+      - それは先生のかさです
+      - それはせんせいの傘です
+      - それはせんせいのかさです

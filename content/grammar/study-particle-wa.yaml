@@ -1,0 +1,288 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-particle-wa
+  kind: grammar
+  note:
+    'は is written ha but pronounced wa when it is a particle. It sets the topic: “As for ...”. It can
+    contrast topics. It is not automatically the grammatical subject.'
+  tags:
+    - Study guide
+  level: N5
+  title: は — the wa particle
+  topic: Grammar basics
+  romaji: wa / ha
+  meaning: は — the wa particle
+  reading: わたしはがくせいです。
+  examples:
+    - tokens:
+        - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 学生です, reading: がくせいです, wordClass: predicate }
+      meaning: I am a student.
+      reading: わたしはがくせいです。
+      japanese: 私は学生です。
+      translationTokens:
+        - { role: topic, text: I }
+        - { role: predicate, text: ' am a student.' }
+    - tokens:
+        - { role: topic, text: 母, reading: はは, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 先生です, reading: せんせいです, wordClass: predicate }
+      meaning: My mother is a teacher.
+      reading: はははせんせいです。
+      japanese: 母は先生です。
+      translationTokens:
+        - { role: topic, text: My mother }
+        - { role: predicate, text: ' is a teacher.' }
+    - tokens:
+        - { role: topic, text: 今日, reading: きょう, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 休みです, reading: やすみです, wordClass: predicate }
+      meaning: Today is a day off.
+      reading: きょうはやすみです。
+      japanese: 今日は休みです。
+      translationTokens:
+        - { role: topic, text: Today }
+        - { role: predicate, text: ' is a day off.' }
+    - tokens:
+        - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 本です, reading: ほんです, wordClass: predicate }
+      meaning: This is a book.
+      reading: これはほんです。
+      japanese: これは本です。
+      translationTokens:
+        - { role: topic, text: This }
+        - { role: predicate, text: ' is a book.' }
+  japanese: 私は学生です。
+  references:
+    - rows:
+        - - text: は
+            reading: は
+          - text: wa
+            reading: ''
+      columns:
+        - Written
+        - Said as
+      heading: Spelling and particle pronunciation
+sentences:
+  i-am-a-student:
+    text: 私は学生です。
+    tokens:
+      - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 学生です, reading: がくせいです, wordClass: predicate }
+    meaning: I am a student.
+    reading: わたしはがくせいです。
+    translationTokens:
+      - { role: topic, text: I }
+      - { role: predicate, text: ' am a student.' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'は is written ha but pronounced wa when it is a particle. It sets the topic: “As for ...”. It can
+      contrast topics. It is not automatically the grammatical subject.'
+  my-mother-is-a-teacher:
+    text: 母は先生です。
+    tokens:
+      - { role: topic, text: 母, reading: はは, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 先生です, reading: せんせいです, wordClass: predicate }
+    meaning: My mother is a teacher.
+    reading: はははせんせいです。
+    translationTokens:
+      - { role: topic, text: My mother }
+      - { role: predicate, text: ' is a teacher.' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'は is written ha but pronounced wa when it is a particle. It sets the topic: “As for ...”. It can
+      contrast topics. It is not automatically the grammatical subject.'
+    form: polite
+  today-is-a-day-off:
+    text: 今日は休みです。
+    tokens:
+      - { role: topic, text: 今日, reading: きょう, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 休みです, reading: やすみです, wordClass: predicate }
+    meaning: Today is a day off.
+    reading: きょうはやすみです。
+    translationTokens:
+      - { role: topic, text: Today }
+      - { role: predicate, text: ' is a day off.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'は is written ha but pronounced wa when it is a particle. It sets the topic: “As for ...”. It can
+      contrast topics. It is not automatically the grammatical subject.'
+  this-is-a-book:
+    text: これは本です。
+    tokens:
+      - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 本です, reading: ほんです, wordClass: predicate }
+    meaning: This is a book.
+    reading: これはほんです。
+    translationTokens:
+      - { role: topic, text: This }
+      - { role: predicate, text: ' is a book.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'は is written ha but pronounced wa when it is a particle. It sets the topic: “As for ...”. It can
+      contrast topics. It is not automatically the grammatical subject.'
+  tomorrow-is-a-day-off:
+    tokens:
+      - { role: topic, text: 明日, reading: あした, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 休みです, reading: やすみです, wordClass: predicate }
+    meaning: Tomorrow is a day off.
+    reading: あしたはやすみです。
+    translationTokens:
+      - { role: topic, text: Tomorrow }
+      - { role: predicate, text: ' is a day off.' }
+    text: 明日は休みです。
+    hint: Check the particles and sentence ending.
+    explanation:
+      明日は休みです。 means “Tomorrow is a day off.” Match the vocabulary, particles, and tense to the English
+      sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-am-a-student
+    choices:
+      - text: I am a student.
+        reading: ''
+      - text: My mother is a teacher.
+        reading: ''
+      - text: Today is a day off.
+        reading: ''
+      - text: This is a book.
+        reading: ''
+    answers:
+      - I am a student.
+  - id: pattern
+    type: pattern-choice
+    sentence: my-mother-is-a-teacher
+    choices:
+      - sentence: i-am-a-student
+      - sentence: my-mother-is-a-teacher
+    prompt: 'Choose the Japanese: My mother is a teacher.'
+    answers:
+      - 母は先生です
+      - 母はせんせいです
+      - ははは先生です
+      - はははせんせいです
+  - id: gap
+    type: gap
+    sentence: my-mother-is-a-teacher
+    prompt: 'Fill the missing part: My mother is a teacher. (polite)'
+    answers:
+      - は
+      - は
+    context:
+      text: 母___先生です。
+      tokens:
+        - { role: topic, text: 母, reading: はは, wordClass: noun phrase }
+        - { role: particle, text: ___, reading: ___, wordClass: particle }
+        - { role: predicate, text: 先生です, reading: せんせいです, wordClass: predicate }
+      reading: はは___せんせいです。
+  - id: tiles
+    type: tiles
+    sentence: my-mother-is-a-teacher
+    prompt: 'Build: My mother is a teacher. (polite)'
+    answers:
+      - 母は先生です
+      - 母はせんせいです
+      - ははは先生です
+      - はははせんせいです
+    tiles:
+      - { role: topic, text: 母, reading: はは, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 先生です, reading: せんせいです, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: today-is-a-day-off
+    answers:
+      - 今日は休みです
+      - 今日はやすみです
+      - きょうは休みです
+      - きょうはやすみです
+  - id: alternate
+    type: typing
+    sentence: this-is-a-book
+    alternate: true
+    prompt: 'Another example: This is a book. (polite)'
+    answers:
+      - これは本です
+      - これはほんです
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: tomorrow-is-a-day-off
+    choices:
+      - text: Tomorrow is a day off.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+      - text: My mother is a teacher.
+        reading: ''
+      - text: Today is a day off.
+        reading: ''
+    answers:
+      - Tomorrow is a day off.
+  - id: expanded-1-typing
+    type: typing
+    sentence: tomorrow-is-a-day-off
+    explanation: 明日は休みです。 means “Tomorrow is a day off.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 明日は休みです
+      - あしたはやすみです
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: tomorrow-is-a-day-off
+    prompt: 'Build this sentence: Tomorrow is a day off. (polite)'
+    explanation: 明日は休みです。 means “Tomorrow is a day off.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 明日は休みです
+      - あしたはやすみです
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: tomorrow-is-a-day-off
+    choices:
+      - sentence: tomorrow-is-a-day-off
+      - text: 私は学生です。
+        reading: わたしはがくせいです。
+        tokens:
+          - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 学生です, reading: がくせいです, wordClass: predicate }
+      - text: 母は先生です。
+        reading: はははせんせいです。
+        tokens:
+          - { role: topic, text: 母, reading: はは, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 先生です, reading: せんせいです, wordClass: predicate }
+      - text: 今日は休みです。
+        reading: きょうはやすみです。
+        tokens:
+          - { role: topic, text: 今日, reading: きょう, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 休みです, reading: やすみです, wordClass: predicate }
+    prompt: 'Choose the Japanese: Tomorrow is a day off. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 明日は休みです。 for “Tomorrow is a day off.” The other sentences describe different situations.
+    answers:
+      - 明日は休みです
+      - あしたはやすみです
+  - id: expanded-1-gap
+    type: gap
+    sentence: tomorrow-is-a-day-off
+    prompt: 'Fill the missing part: Tomorrow is a day off. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 休みです (やすみです). Together, the sentence means “Tomorrow is a day off.”
+    answers:
+      - 休みです
+      - やすみです
+    context:
+      meaning: Tomorrow is a day off.
+      reading: あしたは___。
+      text: 明日は___。

@@ -1,0 +1,1164 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-de
+  kind: grammar
+  note:
+    'で marks the place where an action occurs. It also marks means: バスで行きます (go by bus). Use に for a
+    destination or the location of existence, not で.'
+  tags:
+    - Grammar
+    - de
+  level: N5
+  title: 'Action place and means: で'
+  topic: Sentence building
+  lesson:
+    goal: Say where an action happens.
+    group: Polite verbs and particles
+    order: 8
+    recap: Use で for where an action happens; use に for a destination or where something exists.
+    examples:
+      - tokens:
+          - { role: modifier, text: 図書館, reading: としょかん, wordClass: modifier }
+          - { role: particle, text: で, reading: で, wordClass: particle }
+          - { role: predicate, text: 勉強します, reading: べんきょうします, wordClass: predicate }
+        meaning: I study at the library.
+        reading: としょかんでべんきょうします。
+        japanese: 図書館で勉強します。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: study }
+          - { role: modifier, text: ' at the library.' }
+      - tokens:
+          - { role: modifier, text: 家, reading: いえ, wordClass: modifier }
+          - { role: particle, text: で, reading: で, wordClass: particle }
+          - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 読みます, reading: よみます, wordClass: predicate }
+        meaning: I read a book at home.
+        reading: いえでほんをよみます。
+        japanese: 家で本を読みます。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: 'read ' }
+          - { role: object, text: a book }
+          - { role: modifier, text: ' at home.' }
+      - tokens:
+          - { role: modifier, text: 学校, reading: がっこう, wordClass: modifier }
+          - { role: particle, text: で, reading: で, wordClass: particle }
+          - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 食べます, reading: たべます, wordClass: predicate }
+        meaning: I eat bread at school.
+        reading: がっこうでぱんをたべます。
+        japanese: 学校でパンを食べます。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: 'eat ' }
+          - { role: object, text: bread }
+          - { role: modifier, text: ' at school.' }
+    comparison: Use で for where an action happens; use に for a destination or where something exists.
+    vocabulary:
+      - text: 図書館
+        meaning: library
+        reading: としょかん
+      - text: 勉強します
+        meaning: study
+        reading: べんきょうします
+      - text: 家
+        meaning: home / house
+        reading: いえ
+      - text: 本
+        meaning: book
+        reading: ほん
+      - text: 読みます
+        meaning: read
+        reading: よみます
+      - text: 学校
+        meaning: school
+        reading: がっこう
+      - text: パン
+        meaning: bread
+        reading: ぱん
+      - text: 食べます
+        meaning: eat
+        reading: たべます
+      - text: お茶
+        meaning: tea
+        reading: おちゃ
+      - text: 飲みます
+        meaning: drink
+        reading: のみます
+    prerequisites:
+      - grammar-masu
+      - grammar-object
+  meaning: I study at the library.
+  reading: としょかんでべんきょうします。
+  examples:
+    - tokens:
+        - {
+            role: modifier,
+            text: 図書館で,
+            reading: としょかんで,
+            wordClass: place noun + particle,
+          }
+        - { role: predicate, text: 勉強します, reading: べんきょうします, wordClass: verb }
+      meaning: I study at the library.
+      reading: としょかんでべんきょうします。
+      japanese: 図書館で勉強します。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: study, implicit: false }
+        - { role: modifier, text: ' at the library.', implicit: false }
+  exercise:
+    tiles:
+      - 図書館
+      - で
+      - 勉強します
+    prompt: 'Build: “I study at the library.”'
+    answers:
+      - 図書館で勉強します
+      - としょかんでべんきょうします
+    explanation:
+      'で marks the place where an action occurs. It also marks means: バスで行きます (go by bus). Use に for a
+      destination or the location of existence, not で.'
+  japanese: 図書館で勉強します。
+sentences:
+  i-study-at-the-library:
+    text: 図書館で勉強します。
+    tiles:
+      - { text: 図書館, reading: としょかん }
+      - { text: で, reading: で }
+      - { text: 勉強します, reading: べんきょうします }
+    tokens:
+      - { role: modifier, text: 図書館, reading: としょかん, wordClass: modifier }
+      - { role: particle, text: で, reading: で, wordClass: particle }
+      - { role: predicate, text: 勉強します, reading: べんきょうします, wordClass: predicate }
+    meaning: I study at the library.
+    reading: としょかんでべんきょうします。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: study }
+      - { role: modifier, text: ' at the library.' }
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+  i-read-a-book-at-home:
+    text: 家で本を読みます。
+    tiles:
+      - { text: 家, reading: いえ }
+      - { text: で, reading: で }
+      - { text: 本, reading: ほん }
+      - { text: を, reading: を }
+      - { text: 読みます, reading: よみます }
+    tokens:
+      - { role: modifier, text: 家, reading: いえ, wordClass: modifier }
+      - { role: particle, text: で, reading: で, wordClass: particle }
+      - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 読みます, reading: よみます, wordClass: predicate }
+    meaning: I read a book at home.
+    reading: いえでほんをよみます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'read ' }
+      - { role: object, text: a book }
+      - { role: modifier, text: ' at home.' }
+    form: polite
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+  i-eat-bread-at-school:
+    text: 学校でパンを食べます。
+    tiles:
+      - { text: 学校, reading: がっこう }
+      - { text: で, reading: で }
+      - { text: パン, reading: ぱん }
+      - { text: を, reading: を }
+      - { text: 食べます, reading: たべます }
+    tokens:
+      - { role: modifier, text: 学校, reading: がっこう, wordClass: modifier }
+      - { role: particle, text: で, reading: で, wordClass: particle }
+      - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 食べます, reading: たべます, wordClass: predicate }
+    meaning: I eat bread at school.
+    reading: がっこうでぱんをたべます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'eat ' }
+      - { role: object, text: bread }
+      - { role: modifier, text: ' at school.' }
+    form: polite
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+  i-drink-tea-at-home:
+    text: 家でお茶を飲みます。
+    tiles:
+      - { text: 家, reading: いえ }
+      - { text: で, reading: で }
+      - { text: お茶, reading: おちゃ }
+      - { text: を, reading: を }
+      - { text: 飲みます, reading: のみます }
+    tokens:
+      - { role: modifier, text: 家, reading: いえ, wordClass: modifier }
+      - { role: particle, text: で, reading: で, wordClass: particle }
+      - { role: object, text: お茶, reading: おちゃ, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 飲みます, reading: のみます, wordClass: predicate }
+    meaning: I drink tea at home.
+    reading: いえでおちゃをのみます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'drink ' }
+      - { role: object, text: tea }
+      - { role: modifier, text: ' at home.' }
+    form: polite
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+  i-study-at-the-school:
+    text: 学校で勉強します。
+    reading: がっこうでべんきょうします。
+    meaning: I study at the school.
+    tiles:
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' at the school.', role: modifier }
+    form: polite
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+  i-study-at-the-shop:
+    text: 店で勉強します。
+    reading: みせでべんきょうします。
+    meaning: I study at the shop.
+    tiles:
+      - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' at the shop.', role: modifier }
+    form: polite
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+  i-study-at-the-bank:
+    text: 銀行で勉強します。
+    reading: ぎんこうでべんきょうします。
+    meaning: I study at the bank.
+    tiles:
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' at the bank.', role: modifier }
+    form: polite
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+  i-study-at-the-station:
+    text: 駅で勉強します。
+    reading: えきでべんきょうします。
+    meaning: I study at the station.
+    tiles:
+      - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' at the station.', role: modifier }
+    form: polite
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+  i-study-at-the-park:
+    text: 公園で勉強します。
+    reading: こうえんでべんきょうします。
+    meaning: I study at the park.
+    tiles:
+      - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' at the park.', role: modifier }
+    form: polite
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+  i-study-at-the-hospital:
+    text: 病院で勉強します。
+    reading: びょういんでべんきょうします。
+    meaning: I study at the hospital.
+    tiles:
+      - { text: 病院, reading: びょういん, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 病院, reading: びょういん, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' at the hospital.', role: modifier }
+    form: polite
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+  i-study-at-the-office:
+    text: 会社で勉強します。
+    reading: かいしゃでべんきょうします。
+    meaning: I study at the office.
+    tiles:
+      - { text: 会社, reading: かいしゃ, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 会社, reading: かいしゃ, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' at the office.', role: modifier }
+    form: polite
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+  i-study-at-the-post-office:
+    text: 郵便局で勉強します。
+    reading: ゆうびんきょくでべんきょうします。
+    meaning: I study at the post office.
+    tiles:
+      - { text: 郵便局, reading: ゆうびんきょく, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 郵便局, reading: ゆうびんきょく, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' at the post office.', role: modifier }
+    form: polite
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+  i-study-at-the-art-museum:
+    text: 美術館で勉強します。
+    reading: びじゅつかんでべんきょうします。
+    meaning: I study at the art museum.
+    tiles:
+      - { text: 美術館, reading: びじゅつかん, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 美術館, reading: びじゅつかん, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' at the art museum.', role: modifier }
+    form: polite
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+  i-study-at-the-supermarket:
+    text: スーパーで勉強します。
+    reading: すーぱーでべんきょうします。
+    meaning: I study at the supermarket.
+    tiles:
+      - { text: スーパー, reading: すーぱー, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: スーパー, reading: すーぱー, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' at the supermarket.', role: modifier }
+    form: polite
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+  i-study-at-the-university:
+    text: 大学で勉強します。
+    reading: だいがくでべんきょうします。
+    meaning: I study at the university.
+    tiles:
+      - { text: 大学, reading: だいがく, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 大学, reading: だいがく, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' at the university.', role: modifier }
+    form: polite
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+  i-study-at-the-airport:
+    text: 空港で勉強します。
+    reading: くうこうでべんきょうします。
+    meaning: I study at the airport.
+    tiles:
+      - { text: 空港, reading: くうこう, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 空港, reading: くうこう, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' at the airport.', role: modifier }
+    form: polite
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+  i-study-at-the-port:
+    text: 港で勉強します。
+    reading: みなとでべんきょうします。
+    meaning: I study at the port.
+    tiles:
+      - { text: 港, reading: みなと, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 港, reading: みなと, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' at the port.', role: modifier }
+    form: polite
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+  i-study-at-the-market:
+    text: 市場で勉強します。
+    reading: いちばでべんきょうします。
+    meaning: I study at the market.
+    tiles:
+      - { text: 市場, reading: いちば, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 市場, reading: いちば, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' at the market.', role: modifier }
+    form: polite
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+  i-study-at-the-theater:
+    text: 劇場で勉強します。
+    reading: げきじょうでべんきょうします。
+    meaning: I study at the theater.
+    tiles:
+      - { text: 劇場, reading: げきじょう, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 劇場, reading: げきじょう, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' at the theater.', role: modifier }
+    form: polite
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+  i-study-at-the-cinema:
+    text: 映画館で勉強します。
+    reading: えいがかんでべんきょうします。
+    meaning: I study at the cinema.
+    tiles:
+      - { text: 映画館, reading: えいがかん, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 映画館, reading: えいがかん, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' at the cinema.', role: modifier }
+    form: polite
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+  i-study-at-the-museum:
+    text: 博物館で勉強します。
+    reading: はくぶつかんでべんきょうします。
+    meaning: I study at the museum.
+    tiles:
+      - { text: 博物館, reading: はくぶつかん, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 博物館, reading: はくぶつかん, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' at the museum.', role: modifier }
+    form: polite
+    hint: The place is where an action happens, not a destination.
+    explanation: Use で for where an action happens; use に for a destination or where something exists.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-study-at-the-library
+    choices:
+      - text: I study at the library.
+        reading: ''
+      - text: I go to the library.
+        reading: ''
+    answers:
+      - I study at the library.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-study-at-the-library
+    choices:
+      - sentence: i-study-at-the-library
+      - text: 図書館に勉強します。
+        tiles:
+          - { text: 図書館, reading: としょかん }
+          - { text: に, reading: に }
+          - { text: 勉強します, reading: べんきょうします }
+        tokens:
+          - { role: modifier, text: 図書館, reading: としょかん, wordClass: modifier }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: predicate, text: 勉強します, reading: べんきょうします, wordClass: predicate }
+        meaning: I go to the library.
+        reading: としょかんにべんきょうします。
+    prompt: 'Choose the correct Japanese: I study at the library.'
+    answers:
+      - 図書館で勉強します
+      - 図書館でべんきょうします
+      - としょかんで勉強します
+      - としょかんでべんきょうします
+  - id: gap
+    type: gap
+    sentence: i-read-a-book-at-home
+    answers:
+      - で
+      - で
+    context:
+      text: 家___本を読みます。
+      tokens:
+        - { role: modifier, text: 家, reading: いえ, wordClass: modifier }
+        - { role: particle, text: ___, reading: ___, wordClass: particle }
+        - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+        - { role: particle, text: を, reading: を, wordClass: particle }
+        - { role: predicate, text: 読みます, reading: よみます, wordClass: predicate }
+      reading: いえ___ほんをよみます。
+  - id: tiles
+    type: tiles
+    sentence: i-read-a-book-at-home
+    prompt: 'Build this sentence: I read a book at home. (polite)'
+    answers:
+      - 家で本を読みます
+      - 家で本をよみます
+      - 家でほんを読みます
+      - 家でほんをよみます
+      - いえで本を読みます
+      - いえで本をよみます
+      - いえでほんを読みます
+      - いえでほんをよみます
+    tiles:
+      - { role: modifier, text: 家, reading: いえ, wordClass: modifier }
+      - { role: particle, text: で, reading: で, wordClass: particle }
+      - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 読みます, reading: よみます, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: i-eat-bread-at-school
+    answers:
+      - 学校でパンを食べます
+      - 学校でパンをたべます
+      - 学校でぱんを食べます
+      - 学校でぱんをたべます
+      - がっこうでパンを食べます
+      - がっこうでパンをたべます
+      - がっこうでぱんを食べます
+      - がっこうでぱんをたべます
+  - id: alternate
+    type: typing
+    sentence: i-drink-tea-at-home
+    alternate: true
+    prompt: 'One more example: I drink tea at home. (polite)'
+    answers:
+      - 家でお茶を飲みます
+      - 家でお茶をのみます
+      - 家でおちゃを飲みます
+      - 家でおちゃをのみます
+      - いえでお茶を飲みます
+      - いえでお茶をのみます
+      - いえでおちゃを飲みます
+      - いえでおちゃをのみます
+  - id: extra-1-tiles
+    type: tiles
+    sentence: i-study-at-the-school
+    prompt: 'Build this sentence: I study at the school. (polite)'
+    answers:
+      - 学校で勉強します
+      - 学校でべんきょうします
+      - がっこうで勉強します
+      - がっこうでべんきょうします
+    tiles:
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: i-study-at-the-school
+    answers:
+      - 学校で勉強します
+      - 学校でべんきょうします
+      - がっこうで勉強します
+      - がっこうでべんきょうします
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: i-study-at-the-school
+    choices:
+      - text: I study at the school.
+        reading: ''
+      - text: I study at the library.
+        reading: ''
+    prompt: 'Choose the meaning: 学校で勉強します。'
+    answers:
+      - I study at the school.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: i-study-at-the-shop
+    prompt: 'Build this sentence: I study at the shop. (polite)'
+    answers:
+      - 店で勉強します
+      - 店でべんきょうします
+      - みせで勉強します
+      - みせでべんきょうします
+    tiles:
+      - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: i-study-at-the-shop
+    answers:
+      - 店で勉強します
+      - 店でべんきょうします
+      - みせで勉強します
+      - みせでべんきょうします
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: i-study-at-the-shop
+    choices:
+      - text: I study at the shop.
+        reading: ''
+      - text: I study at the library.
+        reading: ''
+    prompt: 'Choose the meaning: 店で勉強します。'
+    answers:
+      - I study at the shop.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: i-study-at-the-bank
+    prompt: 'Build this sentence: I study at the bank. (polite)'
+    answers:
+      - 銀行で勉強します
+      - 銀行でべんきょうします
+      - ぎんこうで勉強します
+      - ぎんこうでべんきょうします
+    tiles:
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: i-study-at-the-bank
+    answers:
+      - 銀行で勉強します
+      - 銀行でべんきょうします
+      - ぎんこうで勉強します
+      - ぎんこうでべんきょうします
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: i-study-at-the-bank
+    choices:
+      - text: I study at the bank.
+        reading: ''
+      - text: I study at the library.
+        reading: ''
+    prompt: 'Choose the meaning: 銀行で勉強します。'
+    answers:
+      - I study at the bank.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: i-study-at-the-station
+    prompt: 'Build this sentence: I study at the station. (polite)'
+    answers:
+      - 駅で勉強します
+      - 駅でべんきょうします
+      - えきで勉強します
+      - えきでべんきょうします
+    tiles:
+      - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: i-study-at-the-station
+    answers:
+      - 駅で勉強します
+      - 駅でべんきょうします
+      - えきで勉強します
+      - えきでべんきょうします
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: i-study-at-the-station
+    choices:
+      - text: I study at the station.
+        reading: ''
+      - text: I study at the library.
+        reading: ''
+    prompt: 'Choose the meaning: 駅で勉強します。'
+    answers:
+      - I study at the station.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: i-study-at-the-park
+    prompt: 'Build this sentence: I study at the park. (polite)'
+    answers:
+      - 公園で勉強します
+      - 公園でべんきょうします
+      - こうえんで勉強します
+      - こうえんでべんきょうします
+    tiles:
+      - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: i-study-at-the-park
+    answers:
+      - 公園で勉強します
+      - 公園でべんきょうします
+      - こうえんで勉強します
+      - こうえんでべんきょうします
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: i-study-at-the-park
+    choices:
+      - text: I study at the park.
+        reading: ''
+      - text: I study at the library.
+        reading: ''
+    prompt: 'Choose the meaning: 公園で勉強します。'
+    answers:
+      - I study at the park.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: i-study-at-the-hospital
+    prompt: 'Build this sentence: I study at the hospital. (polite)'
+    answers:
+      - 病院で勉強します
+      - 病院でべんきょうします
+      - びょういんで勉強します
+      - びょういんでべんきょうします
+    tiles:
+      - { text: 病院, reading: びょういん, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: i-study-at-the-hospital
+    answers:
+      - 病院で勉強します
+      - 病院でべんきょうします
+      - びょういんで勉強します
+      - びょういんでべんきょうします
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: i-study-at-the-hospital
+    choices:
+      - text: I study at the hospital.
+        reading: ''
+      - text: I study at the library.
+        reading: ''
+    prompt: 'Choose the meaning: 病院で勉強します。'
+    answers:
+      - I study at the hospital.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: i-study-at-the-office
+    prompt: 'Build this sentence: I study at the office. (polite)'
+    answers:
+      - 会社で勉強します
+      - 会社でべんきょうします
+      - かいしゃで勉強します
+      - かいしゃでべんきょうします
+    tiles:
+      - { text: 会社, reading: かいしゃ, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: i-study-at-the-office
+    answers:
+      - 会社で勉強します
+      - 会社でべんきょうします
+      - かいしゃで勉強します
+      - かいしゃでべんきょうします
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: i-study-at-the-office
+    choices:
+      - text: I study at the office.
+        reading: ''
+      - text: I study at the library.
+        reading: ''
+    prompt: 'Choose the meaning: 会社で勉強します。'
+    answers:
+      - I study at the office.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: i-study-at-the-post-office
+    prompt: 'Build this sentence: I study at the post office. (polite)'
+    answers:
+      - 郵便局で勉強します
+      - 郵便局でべんきょうします
+      - ゆうびんきょくで勉強します
+      - ゆうびんきょくでべんきょうします
+    tiles:
+      - { text: 郵便局, reading: ゆうびんきょく, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: i-study-at-the-post-office
+    answers:
+      - 郵便局で勉強します
+      - 郵便局でべんきょうします
+      - ゆうびんきょくで勉強します
+      - ゆうびんきょくでべんきょうします
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: i-study-at-the-post-office
+    choices:
+      - text: I study at the post office.
+        reading: ''
+      - text: I study at the library.
+        reading: ''
+    prompt: 'Choose the meaning: 郵便局で勉強します。'
+    answers:
+      - I study at the post office.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: i-study-at-the-art-museum
+    prompt: 'Build this sentence: I study at the art museum. (polite)'
+    answers:
+      - 美術館で勉強します
+      - 美術館でべんきょうします
+      - びじゅつかんで勉強します
+      - びじゅつかんでべんきょうします
+    tiles:
+      - { text: 美術館, reading: びじゅつかん, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: i-study-at-the-art-museum
+    answers:
+      - 美術館で勉強します
+      - 美術館でべんきょうします
+      - びじゅつかんで勉強します
+      - びじゅつかんでべんきょうします
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: i-study-at-the-art-museum
+    choices:
+      - text: I study at the art museum.
+        reading: ''
+      - text: I study at the library.
+        reading: ''
+    prompt: 'Choose the meaning: 美術館で勉強します。'
+    answers:
+      - I study at the art museum.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: i-study-at-the-supermarket
+    prompt: 'Build this sentence: I study at the supermarket. (polite)'
+    answers:
+      - スーパーで勉強します
+      - スーパーでべんきょうします
+      - すーぱーで勉強します
+      - すーぱーでべんきょうします
+    tiles:
+      - { text: スーパー, reading: すーぱー, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: i-study-at-the-supermarket
+    answers:
+      - スーパーで勉強します
+      - スーパーでべんきょうします
+      - すーぱーで勉強します
+      - すーぱーでべんきょうします
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: i-study-at-the-supermarket
+    choices:
+      - text: I study at the supermarket.
+        reading: ''
+      - text: I study at the library.
+        reading: ''
+    prompt: 'Choose the meaning: スーパーで勉強します。'
+    answers:
+      - I study at the supermarket.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: i-study-at-the-university
+    prompt: 'Build this sentence: I study at the university. (polite)'
+    answers:
+      - 大学で勉強します
+      - 大学でべんきょうします
+      - だいがくで勉強します
+      - だいがくでべんきょうします
+    tiles:
+      - { text: 大学, reading: だいがく, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: i-study-at-the-university
+    answers:
+      - 大学で勉強します
+      - 大学でべんきょうします
+      - だいがくで勉強します
+      - だいがくでべんきょうします
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: i-study-at-the-university
+    choices:
+      - text: I study at the university.
+        reading: ''
+      - text: I study at the library.
+        reading: ''
+    prompt: 'Choose the meaning: 大学で勉強します。'
+    answers:
+      - I study at the university.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: i-study-at-the-airport
+    prompt: 'Build this sentence: I study at the airport. (polite)'
+    answers:
+      - 空港で勉強します
+      - 空港でべんきょうします
+      - くうこうで勉強します
+      - くうこうでべんきょうします
+    tiles:
+      - { text: 空港, reading: くうこう, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: i-study-at-the-airport
+    answers:
+      - 空港で勉強します
+      - 空港でべんきょうします
+      - くうこうで勉強します
+      - くうこうでべんきょうします
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: i-study-at-the-airport
+    choices:
+      - text: I study at the airport.
+        reading: ''
+      - text: I study at the library.
+        reading: ''
+    prompt: 'Choose the meaning: 空港で勉強します。'
+    answers:
+      - I study at the airport.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: i-study-at-the-port
+    prompt: 'Build this sentence: I study at the port. (polite)'
+    answers:
+      - 港で勉強します
+      - 港でべんきょうします
+      - みなとで勉強します
+      - みなとでべんきょうします
+    tiles:
+      - { text: 港, reading: みなと, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: i-study-at-the-port
+    answers:
+      - 港で勉強します
+      - 港でべんきょうします
+      - みなとで勉強します
+      - みなとでべんきょうします
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: i-study-at-the-port
+    choices:
+      - text: I study at the port.
+        reading: ''
+      - text: I study at the library.
+        reading: ''
+    prompt: 'Choose the meaning: 港で勉強します。'
+    answers:
+      - I study at the port.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: i-study-at-the-market
+    prompt: 'Build this sentence: I study at the market. (polite)'
+    answers:
+      - 市場で勉強します
+      - 市場でべんきょうします
+      - いちばで勉強します
+      - いちばでべんきょうします
+    tiles:
+      - { text: 市場, reading: いちば, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: i-study-at-the-market
+    answers:
+      - 市場で勉強します
+      - 市場でべんきょうします
+      - いちばで勉強します
+      - いちばでべんきょうします
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: i-study-at-the-market
+    choices:
+      - text: I study at the market.
+        reading: ''
+      - text: I study at the library.
+        reading: ''
+    prompt: 'Choose the meaning: 市場で勉強します。'
+    answers:
+      - I study at the market.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: i-study-at-the-theater
+    prompt: 'Build this sentence: I study at the theater. (polite)'
+    answers:
+      - 劇場で勉強します
+      - 劇場でべんきょうします
+      - げきじょうで勉強します
+      - げきじょうでべんきょうします
+    tiles:
+      - { text: 劇場, reading: げきじょう, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: i-study-at-the-theater
+    answers:
+      - 劇場で勉強します
+      - 劇場でべんきょうします
+      - げきじょうで勉強します
+      - げきじょうでべんきょうします
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: i-study-at-the-theater
+    choices:
+      - text: I study at the theater.
+        reading: ''
+      - text: I study at the library.
+        reading: ''
+    prompt: 'Choose the meaning: 劇場で勉強します。'
+    answers:
+      - I study at the theater.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: i-study-at-the-cinema
+    prompt: 'Build this sentence: I study at the cinema. (polite)'
+    answers:
+      - 映画館で勉強します
+      - 映画館でべんきょうします
+      - えいがかんで勉強します
+      - えいがかんでべんきょうします
+    tiles:
+      - { text: 映画館, reading: えいがかん, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: i-study-at-the-cinema
+    answers:
+      - 映画館で勉強します
+      - 映画館でべんきょうします
+      - えいがかんで勉強します
+      - えいがかんでべんきょうします
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: i-study-at-the-cinema
+    choices:
+      - text: I study at the cinema.
+        reading: ''
+      - text: I study at the library.
+        reading: ''
+    prompt: 'Choose the meaning: 映画館で勉強します。'
+    answers:
+      - I study at the cinema.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: i-study-at-the-museum
+    prompt: 'Build this sentence: I study at the museum. (polite)'
+    answers:
+      - 博物館で勉強します
+      - 博物館でべんきょうします
+      - はくぶつかんで勉強します
+      - はくぶつかんでべんきょうします
+    tiles:
+      - { text: 博物館, reading: はくぶつかん, role: modifier, wordClass: modifier }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: i-study-at-the-museum
+    answers:
+      - 博物館で勉強します
+      - 博物館でべんきょうします
+      - はくぶつかんで勉強します
+      - はくぶつかんでべんきょうします

@@ -1,0 +1,1417 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-te-imasu
+  kind: grammar
+  note:
+    'Verb て-form + います often describes an ongoing action: 読んでいます. It can also describe a resulting state
+    with some verbs, so it is not always an exact equivalent of English “-ing”.'
+  tags:
+    - Grammar
+    - te-imasu
+  level: N5
+  title: 'Ongoing actions: ています'
+  topic: Sentence building
+  lesson:
+    goal: Describe an action happening now.
+    group: Requests and ongoing actions
+    order: 25
+    recap:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a routine.
+      Some verbs use this form for a resulting state.
+    examples:
+      - tokens:
+          - { role: modifier, text: 今, reading: いま, wordClass: modifier }
+          - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 読んでいます, reading: よんでいます, wordClass: predicate }
+        meaning: I am reading a book now.
+        reading: いまほんをよんでいます。
+        japanese: 今本を読んでいます。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: 'am reading ' }
+          - { role: object, text: a book }
+          - { role: modifier, text: ' now.' }
+      - tokens:
+          - { role: modifier, text: 今, reading: いま, wordClass: modifier }
+          - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 飲んでいます, reading: のんでいます, wordClass: predicate }
+        meaning: I am drinking water now.
+        reading: いまみずをのんでいます。
+        japanese: 今水を飲んでいます。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: 'am drinking ' }
+          - { role: object, text: water }
+          - { role: modifier, text: ' now.' }
+      - tokens:
+          - { role: modifier, text: 今, reading: いま, wordClass: modifier }
+          - { role: object, text: 名前, reading: なまえ, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 書いています, reading: かいています, wordClass: predicate }
+        meaning: I am writing my name now.
+        reading: いまなまえをかいています。
+        japanese: 今名前を書いています。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: 'am writing ' }
+          - { role: object, text: my name }
+          - { role: modifier, text: ' now.' }
+    comparison:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+    vocabulary:
+      - text: 今
+        meaning: now
+        reading: いま
+      - text: 本
+        meaning: book
+        reading: ほん
+      - text: 読んでいます
+        meaning: am reading
+        reading: よんでいます
+      - text: 水
+        meaning: water
+        reading: みず
+      - text: 飲んでいます
+        meaning: am drinking
+        reading: のんでいます
+      - text: 名前
+        meaning: name
+        reading: なまえ
+      - text: 書いています
+        meaning: am writing
+        reading: かいています
+      - text: パン
+        meaning: bread
+        reading: ぱん
+      - text: 食べています
+        meaning: am eating
+        reading: たべています
+    prerequisites:
+      - grammar-te-request
+      - grammar-imasu
+  meaning: I am reading a book now.
+  reading: いまほんをよんでいます。
+  examples:
+    - tokens:
+        - { role: modifier, text: 今, reading: いま, wordClass: time noun }
+        - { role: object, text: 本, reading: ほん, wordClass: noun }
+        - { role: particle, text: を, reading: を, wordClass: object particle }
+        - {
+            role: predicate,
+            text: 読んでいます,
+            reading: よんでいます,
+            wordClass: verb + auxiliary,
+          }
+      meaning: I am reading a book now.
+      reading: いまほんをよんでいます。
+      japanese: 今本を読んでいます。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: am reading, implicit: false }
+        - { role: object, text: ' a book', implicit: false }
+        - { role: modifier, text: ' now.', implicit: false }
+  exercise:
+    tiles:
+      - 今
+      - 本
+      - を
+      - 読んで
+      - います
+    prompt: 'Build: “I am reading a book now.” Start with 今.'
+    answers:
+      - 今本を読んでいます
+      - いまほんをよんでいます
+    explanation:
+      'Verb て-form + います often describes an ongoing action: 読んでいます. It can also describe a resulting
+      state with some verbs, so it is not always an exact equivalent of English “-ing”.'
+  japanese: 今本を読んでいます。
+sentences:
+  i-am-reading-a-book-now:
+    text: 今本を読んでいます。
+    tiles:
+      - { text: 今, reading: いま }
+      - { text: 本, reading: ほん }
+      - { text: を, reading: を }
+      - { text: 読んでいます, reading: よんでいます }
+    tokens:
+      - { role: modifier, text: 今, reading: いま, wordClass: modifier }
+      - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 読んでいます, reading: よんでいます, wordClass: predicate }
+    meaning: I am reading a book now.
+    reading: いまほんをよんでいます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'am reading ' }
+      - { role: object, text: a book }
+      - { role: modifier, text: ' now.' }
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+  i-am-drinking-water-now:
+    text: 今水を飲んでいます。
+    tiles:
+      - { text: 今, reading: いま }
+      - { text: 水, reading: みず }
+      - { text: を, reading: を }
+      - { text: 飲んでいます, reading: のんでいます }
+    tokens:
+      - { role: modifier, text: 今, reading: いま, wordClass: modifier }
+      - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 飲んでいます, reading: のんでいます, wordClass: predicate }
+    meaning: I am drinking water now.
+    reading: いまみずをのんでいます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'am drinking ' }
+      - { role: object, text: water }
+      - { role: modifier, text: ' now.' }
+    form: polite
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+  i-am-writing-my-name-now:
+    text: 今名前を書いています。
+    tiles:
+      - { text: 今, reading: いま }
+      - { text: 名前, reading: なまえ }
+      - { text: を, reading: を }
+      - { text: 書いています, reading: かいています }
+    tokens:
+      - { role: modifier, text: 今, reading: いま, wordClass: modifier }
+      - { role: object, text: 名前, reading: なまえ, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 書いています, reading: かいています, wordClass: predicate }
+    meaning: I am writing my name now.
+    reading: いまなまえをかいています。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'am writing ' }
+      - { role: object, text: my name }
+      - { role: modifier, text: ' now.' }
+    form: polite
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+  i-am-eating-bread-now:
+    text: 今パンを食べています。
+    tiles:
+      - { text: 今, reading: いま }
+      - { text: パン, reading: ぱん }
+      - { text: を, reading: を }
+      - { text: 食べています, reading: たべています }
+    tokens:
+      - { role: modifier, text: 今, reading: いま, wordClass: modifier }
+      - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 食べています, reading: たべています, wordClass: predicate }
+    meaning: I am eating bread now.
+    reading: いまぱんをたべています。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'am eating ' }
+      - { role: object, text: bread }
+      - { role: modifier, text: ' now.' }
+    form: polite
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+  i-am-reading-a-magazine-now:
+    text: 今雑誌を読んでいます。
+    reading: いまざっしをよんでいます。
+    meaning: I am reading a magazine now.
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 雑誌, reading: ざっし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 雑誌, reading: ざっし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'am reading ', role: predicate }
+      - { text: a magazine, role: object }
+      - { text: ' now.', role: modifier }
+    form: polite
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+  i-am-reading-a-newspaper-now:
+    text: 今新聞を読んでいます。
+    reading: いましんぶんをよんでいます。
+    meaning: I am reading a newspaper now.
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 新聞, reading: しんぶん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 新聞, reading: しんぶん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'am reading ', role: predicate }
+      - { text: a newspaper, role: object }
+      - { text: ' now.', role: modifier }
+    form: polite
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+  i-am-reading-a-dictionary-now:
+    text: 今辞書を読んでいます。
+    reading: いまじしょをよんでいます。
+    meaning: I am reading a dictionary now.
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 辞書, reading: じしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 辞書, reading: じしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'am reading ', role: predicate }
+      - { text: a dictionary, role: object }
+      - { text: ' now.', role: modifier }
+    form: polite
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+  i-am-reading-a-novel-now:
+    text: 今小説を読んでいます。
+    reading: いましょうせつをよんでいます。
+    meaning: I am reading a novel now.
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 小説, reading: しょうせつ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 小説, reading: しょうせつ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'am reading ', role: predicate }
+      - { text: a novel, role: object }
+      - { text: ' now.', role: modifier }
+    form: polite
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+  i-am-reading-a-comic-now:
+    text: 今漫画を読んでいます。
+    reading: いままんがをよんでいます。
+    meaning: I am reading a comic now.
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 漫画, reading: まんが, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 漫画, reading: まんが, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'am reading ', role: predicate }
+      - { text: a comic, role: object }
+      - { text: ' now.', role: modifier }
+    form: polite
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+  i-am-reading-a-textbook-now:
+    text: 今教科書を読んでいます。
+    reading: いまきょうかしょをよんでいます。
+    meaning: I am reading a textbook now.
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 教科書, reading: きょうかしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 教科書, reading: きょうかしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'am reading ', role: predicate }
+      - { text: a textbook, role: object }
+      - { text: ' now.', role: modifier }
+    form: polite
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+  i-am-reading-a-picture-book-now:
+    text: 今絵本を読んでいます。
+    reading: いまえほんをよんでいます。
+    meaning: I am reading a picture book now.
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 絵本, reading: えほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 絵本, reading: えほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'am reading ', role: predicate }
+      - { text: a picture book, role: object }
+      - { text: ' now.', role: modifier }
+    form: polite
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+  i-am-reading-a-letter-now:
+    text: 今手紙を読んでいます。
+    reading: いまてがみをよんでいます。
+    meaning: I am reading a letter now.
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 手紙, reading: てがみ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 手紙, reading: てがみ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'am reading ', role: predicate }
+      - { text: a letter, role: object }
+      - { text: ' now.', role: modifier }
+    form: polite
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+  i-am-reading-a-diary-now:
+    text: 今日記を読んでいます。
+    reading: いまにっきをよんでいます。
+    meaning: I am reading a diary now.
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 日記, reading: にっき, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 日記, reading: にっき, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'am reading ', role: predicate }
+      - { text: a diary, role: object }
+      - { text: ' now.', role: modifier }
+    form: polite
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+  i-am-reading-a-article-now:
+    text: 今記事を読んでいます。
+    reading: いまきじをよんでいます。
+    meaning: I am reading a article now.
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 記事, reading: きじ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 記事, reading: きじ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'am reading ', role: predicate }
+      - { text: a article, role: object }
+      - { text: ' now.', role: modifier }
+    form: polite
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+  i-am-drinking-tea-now:
+    text: 今お茶を飲んでいます。
+    reading: いまおちゃをのんでいます。
+    meaning: I am drinking tea now.
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: お茶, reading: おちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: お茶, reading: おちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'am drinking ', role: predicate }
+      - { text: tea, role: object }
+      - { text: ' now.', role: modifier }
+    form: polite
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+  i-am-drinking-milk-now:
+    text: 今牛乳を飲んでいます。
+    reading: いまぎゅうにゅうをのんでいます。
+    meaning: I am drinking milk now.
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 牛乳, reading: ぎゅうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 牛乳, reading: ぎゅうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'am drinking ', role: predicate }
+      - { text: milk, role: object }
+      - { text: ' now.', role: modifier }
+    form: polite
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+  i-am-drinking-coffee-now:
+    text: 今コーヒーを飲んでいます。
+    reading: いまこーひーをのんでいます。
+    meaning: I am drinking coffee now.
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: コーヒー, reading: こーひー, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: コーヒー, reading: こーひー, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'am drinking ', role: predicate }
+      - { text: coffee, role: object }
+      - { text: ' now.', role: modifier }
+    form: polite
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+  i-am-drinking-juice-now:
+    text: 今ジュースを飲んでいます。
+    reading: いまじゅーすをのんでいます。
+    meaning: I am drinking juice now.
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: ジュース, reading: じゅーす, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: ジュース, reading: じゅーす, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'am drinking ', role: predicate }
+      - { text: juice, role: object }
+      - { text: ' now.', role: modifier }
+    form: polite
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+  i-am-drinking-black-tea-now:
+    text: 今紅茶を飲んでいます。
+    reading: いまこうちゃをのんでいます。
+    meaning: I am drinking black tea now.
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 紅茶, reading: こうちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 紅茶, reading: こうちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'am drinking ', role: predicate }
+      - { text: black tea, role: object }
+      - { text: ' now.', role: modifier }
+    form: polite
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+  i-am-drinking-green-tea-now:
+    text: 今緑茶を飲んでいます。
+    reading: いまりょくちゃをのんでいます。
+    meaning: I am drinking green tea now.
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 緑茶, reading: りょくちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 緑茶, reading: りょくちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'am drinking ', role: predicate }
+      - { text: green tea, role: object }
+      - { text: ' now.', role: modifier }
+    form: polite
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+  i-am-drinking-soy-milk-now:
+    text: 今豆乳を飲んでいます。
+    reading: いまとうにゅうをのんでいます。
+    meaning: I am drinking soy milk now.
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 豆乳, reading: とうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 豆乳, reading: とうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'am drinking ', role: predicate }
+      - { text: soy milk, role: object }
+      - { text: ' now.', role: modifier }
+    form: polite
+    hint: Combine the て-form with います to describe the action in progress.
+    explanation:
+      Use verb て-form + います for an ongoing action. 読んでいます means “am reading”; 読みます often describes a
+      routine. Some verbs use this form for a resulting state.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-am-reading-a-book-now
+    choices:
+      - text: I am reading a book now.
+        reading: ''
+      - text: I read a book yesterday.
+        reading: ''
+    answers:
+      - I am reading a book now.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-am-reading-a-book-now
+    choices:
+      - sentence: i-am-reading-a-book-now
+      - text: 今本を読みますいます。
+        tiles:
+          - { text: 今, reading: いま }
+          - { text: 本, reading: ほん }
+          - { text: を, reading: を }
+          - { text: 読みますいます, reading: よみますいます }
+        tokens:
+          - { role: modifier, text: 今, reading: いま, wordClass: modifier }
+          - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 読みますいます, reading: よみますいます, wordClass: predicate }
+        meaning: I read a book yesterday.
+        reading: いまほんをよみますいます。
+    prompt: 'Choose the correct Japanese: I am reading a book now.'
+    answers:
+      - 今本を読んでいます
+      - 今本をよんでいます
+      - 今ほんを読んでいます
+      - 今ほんをよんでいます
+      - いま本を読んでいます
+      - いま本をよんでいます
+      - いまほんを読んでいます
+      - いまほんをよんでいます
+  - id: gap
+    type: gap
+    sentence: i-am-drinking-water-now
+    answers:
+      - 飲んでいます
+      - のんでいます
+    context:
+      text: 今水を___。
+      tokens:
+        - { role: modifier, text: 今, reading: いま, wordClass: modifier }
+        - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+        - { role: particle, text: を, reading: を, wordClass: particle }
+        - { role: predicate, text: ___, reading: ___, wordClass: predicate }
+      reading: いまみずを___。
+  - id: tiles
+    type: tiles
+    sentence: i-am-drinking-water-now
+    prompt: 'Build this sentence: I am drinking water now. (polite)'
+    answers:
+      - 今水を飲んでいます
+      - 今水をのんでいます
+      - 今みずを飲んでいます
+      - 今みずをのんでいます
+      - いま水を飲んでいます
+      - いま水をのんでいます
+      - いまみずを飲んでいます
+      - いまみずをのんでいます
+    tiles:
+      - { role: modifier, text: 今, reading: いま, wordClass: modifier }
+      - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 飲んでいます, reading: のんでいます, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: i-am-writing-my-name-now
+    answers:
+      - 今名前を書いています
+      - 今名前をかいています
+      - 今なまえを書いています
+      - 今なまえをかいています
+      - いま名前を書いています
+      - いま名前をかいています
+      - いまなまえを書いています
+      - いまなまえをかいています
+  - id: alternate
+    type: typing
+    sentence: i-am-eating-bread-now
+    alternate: true
+    prompt: 'One more example: I am eating bread now. (polite)'
+    answers:
+      - 今パンを食べています
+      - 今パンをたべています
+      - 今ぱんを食べています
+      - 今ぱんをたべています
+      - いまパンを食べています
+      - いまパンをたべています
+      - いまぱんを食べています
+      - いまぱんをたべています
+  - id: extra-1-tiles
+    type: tiles
+    sentence: i-am-reading-a-magazine-now
+    prompt: 'Build this sentence: I am reading a magazine now. (polite)'
+    answers:
+      - 今雑誌を読んでいます
+      - 今雑誌をよんでいます
+      - 今ざっしを読んでいます
+      - 今ざっしをよんでいます
+      - いま雑誌を読んでいます
+      - いま雑誌をよんでいます
+      - いまざっしを読んでいます
+      - いまざっしをよんでいます
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 雑誌, reading: ざっし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: i-am-reading-a-magazine-now
+    answers:
+      - 今雑誌を読んでいます
+      - 今雑誌をよんでいます
+      - 今ざっしを読んでいます
+      - 今ざっしをよんでいます
+      - いま雑誌を読んでいます
+      - いま雑誌をよんでいます
+      - いまざっしを読んでいます
+      - いまざっしをよんでいます
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: i-am-reading-a-magazine-now
+    choices:
+      - text: I am reading a magazine now.
+        reading: ''
+      - text: I am reading a book now.
+        reading: ''
+    prompt: 'Choose the meaning: 今雑誌を読んでいます。'
+    answers:
+      - I am reading a magazine now.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: i-am-reading-a-newspaper-now
+    prompt: 'Build this sentence: I am reading a newspaper now. (polite)'
+    answers:
+      - 今新聞を読んでいます
+      - 今新聞をよんでいます
+      - 今しんぶんを読んでいます
+      - 今しんぶんをよんでいます
+      - いま新聞を読んでいます
+      - いま新聞をよんでいます
+      - いましんぶんを読んでいます
+      - いましんぶんをよんでいます
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 新聞, reading: しんぶん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: i-am-reading-a-newspaper-now
+    answers:
+      - 今新聞を読んでいます
+      - 今新聞をよんでいます
+      - 今しんぶんを読んでいます
+      - 今しんぶんをよんでいます
+      - いま新聞を読んでいます
+      - いま新聞をよんでいます
+      - いましんぶんを読んでいます
+      - いましんぶんをよんでいます
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: i-am-reading-a-newspaper-now
+    choices:
+      - text: I am reading a newspaper now.
+        reading: ''
+      - text: I am reading a book now.
+        reading: ''
+    prompt: 'Choose the meaning: 今新聞を読んでいます。'
+    answers:
+      - I am reading a newspaper now.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: i-am-reading-a-dictionary-now
+    prompt: 'Build this sentence: I am reading a dictionary now. (polite)'
+    answers:
+      - 今辞書を読んでいます
+      - 今辞書をよんでいます
+      - 今じしょを読んでいます
+      - 今じしょをよんでいます
+      - いま辞書を読んでいます
+      - いま辞書をよんでいます
+      - いまじしょを読んでいます
+      - いまじしょをよんでいます
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 辞書, reading: じしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: i-am-reading-a-dictionary-now
+    answers:
+      - 今辞書を読んでいます
+      - 今辞書をよんでいます
+      - 今じしょを読んでいます
+      - 今じしょをよんでいます
+      - いま辞書を読んでいます
+      - いま辞書をよんでいます
+      - いまじしょを読んでいます
+      - いまじしょをよんでいます
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: i-am-reading-a-dictionary-now
+    choices:
+      - text: I am reading a dictionary now.
+        reading: ''
+      - text: I am reading a book now.
+        reading: ''
+    prompt: 'Choose the meaning: 今辞書を読んでいます。'
+    answers:
+      - I am reading a dictionary now.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: i-am-reading-a-novel-now
+    prompt: 'Build this sentence: I am reading a novel now. (polite)'
+    answers:
+      - 今小説を読んでいます
+      - 今小説をよんでいます
+      - 今しょうせつを読んでいます
+      - 今しょうせつをよんでいます
+      - いま小説を読んでいます
+      - いま小説をよんでいます
+      - いましょうせつを読んでいます
+      - いましょうせつをよんでいます
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 小説, reading: しょうせつ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: i-am-reading-a-novel-now
+    answers:
+      - 今小説を読んでいます
+      - 今小説をよんでいます
+      - 今しょうせつを読んでいます
+      - 今しょうせつをよんでいます
+      - いま小説を読んでいます
+      - いま小説をよんでいます
+      - いましょうせつを読んでいます
+      - いましょうせつをよんでいます
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: i-am-reading-a-novel-now
+    choices:
+      - text: I am reading a novel now.
+        reading: ''
+      - text: I am reading a book now.
+        reading: ''
+    prompt: 'Choose the meaning: 今小説を読んでいます。'
+    answers:
+      - I am reading a novel now.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: i-am-reading-a-comic-now
+    prompt: 'Build this sentence: I am reading a comic now. (polite)'
+    answers:
+      - 今漫画を読んでいます
+      - 今漫画をよんでいます
+      - 今まんがを読んでいます
+      - 今まんがをよんでいます
+      - いま漫画を読んでいます
+      - いま漫画をよんでいます
+      - いままんがを読んでいます
+      - いままんがをよんでいます
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 漫画, reading: まんが, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: i-am-reading-a-comic-now
+    answers:
+      - 今漫画を読んでいます
+      - 今漫画をよんでいます
+      - 今まんがを読んでいます
+      - 今まんがをよんでいます
+      - いま漫画を読んでいます
+      - いま漫画をよんでいます
+      - いままんがを読んでいます
+      - いままんがをよんでいます
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: i-am-reading-a-comic-now
+    choices:
+      - text: I am reading a comic now.
+        reading: ''
+      - text: I am reading a book now.
+        reading: ''
+    prompt: 'Choose the meaning: 今漫画を読んでいます。'
+    answers:
+      - I am reading a comic now.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: i-am-reading-a-textbook-now
+    prompt: 'Build this sentence: I am reading a textbook now. (polite)'
+    answers:
+      - 今教科書を読んでいます
+      - 今教科書をよんでいます
+      - 今きょうかしょを読んでいます
+      - 今きょうかしょをよんでいます
+      - いま教科書を読んでいます
+      - いま教科書をよんでいます
+      - いまきょうかしょを読んでいます
+      - いまきょうかしょをよんでいます
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 教科書, reading: きょうかしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: i-am-reading-a-textbook-now
+    answers:
+      - 今教科書を読んでいます
+      - 今教科書をよんでいます
+      - 今きょうかしょを読んでいます
+      - 今きょうかしょをよんでいます
+      - いま教科書を読んでいます
+      - いま教科書をよんでいます
+      - いまきょうかしょを読んでいます
+      - いまきょうかしょをよんでいます
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: i-am-reading-a-textbook-now
+    choices:
+      - text: I am reading a textbook now.
+        reading: ''
+      - text: I am reading a book now.
+        reading: ''
+    prompt: 'Choose the meaning: 今教科書を読んでいます。'
+    answers:
+      - I am reading a textbook now.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: i-am-reading-a-picture-book-now
+    prompt: 'Build this sentence: I am reading a picture book now. (polite)'
+    answers:
+      - 今絵本を読んでいます
+      - 今絵本をよんでいます
+      - 今えほんを読んでいます
+      - 今えほんをよんでいます
+      - いま絵本を読んでいます
+      - いま絵本をよんでいます
+      - いまえほんを読んでいます
+      - いまえほんをよんでいます
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 絵本, reading: えほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: i-am-reading-a-picture-book-now
+    answers:
+      - 今絵本を読んでいます
+      - 今絵本をよんでいます
+      - 今えほんを読んでいます
+      - 今えほんをよんでいます
+      - いま絵本を読んでいます
+      - いま絵本をよんでいます
+      - いまえほんを読んでいます
+      - いまえほんをよんでいます
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: i-am-reading-a-picture-book-now
+    choices:
+      - text: I am reading a picture book now.
+        reading: ''
+      - text: I am reading a book now.
+        reading: ''
+    prompt: 'Choose the meaning: 今絵本を読んでいます。'
+    answers:
+      - I am reading a picture book now.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: i-am-reading-a-letter-now
+    prompt: 'Build this sentence: I am reading a letter now. (polite)'
+    answers:
+      - 今手紙を読んでいます
+      - 今手紙をよんでいます
+      - 今てがみを読んでいます
+      - 今てがみをよんでいます
+      - いま手紙を読んでいます
+      - いま手紙をよんでいます
+      - いまてがみを読んでいます
+      - いまてがみをよんでいます
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 手紙, reading: てがみ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: i-am-reading-a-letter-now
+    answers:
+      - 今手紙を読んでいます
+      - 今手紙をよんでいます
+      - 今てがみを読んでいます
+      - 今てがみをよんでいます
+      - いま手紙を読んでいます
+      - いま手紙をよんでいます
+      - いまてがみを読んでいます
+      - いまてがみをよんでいます
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: i-am-reading-a-letter-now
+    choices:
+      - text: I am reading a letter now.
+        reading: ''
+      - text: I am reading a book now.
+        reading: ''
+    prompt: 'Choose the meaning: 今手紙を読んでいます。'
+    answers:
+      - I am reading a letter now.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: i-am-reading-a-diary-now
+    prompt: 'Build this sentence: I am reading a diary now. (polite)'
+    answers:
+      - 今日記を読んでいます
+      - 今日記をよんでいます
+      - 今にっきを読んでいます
+      - 今にっきをよんでいます
+      - いま日記を読んでいます
+      - いま日記をよんでいます
+      - いまにっきを読んでいます
+      - いまにっきをよんでいます
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 日記, reading: にっき, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: i-am-reading-a-diary-now
+    answers:
+      - 今日記を読んでいます
+      - 今日記をよんでいます
+      - 今にっきを読んでいます
+      - 今にっきをよんでいます
+      - いま日記を読んでいます
+      - いま日記をよんでいます
+      - いまにっきを読んでいます
+      - いまにっきをよんでいます
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: i-am-reading-a-diary-now
+    choices:
+      - text: I am reading a diary now.
+        reading: ''
+      - text: I am reading a book now.
+        reading: ''
+    prompt: 'Choose the meaning: 今日記を読んでいます。'
+    answers:
+      - I am reading a diary now.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: i-am-reading-a-article-now
+    prompt: 'Build this sentence: I am reading a article now. (polite)'
+    answers:
+      - 今記事を読んでいます
+      - 今記事をよんでいます
+      - 今きじを読んでいます
+      - 今きじをよんでいます
+      - いま記事を読んでいます
+      - いま記事をよんでいます
+      - いまきじを読んでいます
+      - いまきじをよんでいます
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 記事, reading: きじ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでいます, reading: よんでいます, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: i-am-reading-a-article-now
+    answers:
+      - 今記事を読んでいます
+      - 今記事をよんでいます
+      - 今きじを読んでいます
+      - 今きじをよんでいます
+      - いま記事を読んでいます
+      - いま記事をよんでいます
+      - いまきじを読んでいます
+      - いまきじをよんでいます
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: i-am-reading-a-article-now
+    choices:
+      - text: I am reading a article now.
+        reading: ''
+      - text: I am reading a book now.
+        reading: ''
+    prompt: 'Choose the meaning: 今記事を読んでいます。'
+    answers:
+      - I am reading a article now.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: i-am-drinking-tea-now
+    prompt: 'Build this sentence: I am drinking tea now. (polite)'
+    answers:
+      - 今お茶を飲んでいます
+      - 今お茶をのんでいます
+      - 今おちゃを飲んでいます
+      - 今おちゃをのんでいます
+      - いまお茶を飲んでいます
+      - いまお茶をのんでいます
+      - いまおちゃを飲んでいます
+      - いまおちゃをのんでいます
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: お茶, reading: おちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: i-am-drinking-tea-now
+    answers:
+      - 今お茶を飲んでいます
+      - 今お茶をのんでいます
+      - 今おちゃを飲んでいます
+      - 今おちゃをのんでいます
+      - いまお茶を飲んでいます
+      - いまお茶をのんでいます
+      - いまおちゃを飲んでいます
+      - いまおちゃをのんでいます
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: i-am-drinking-tea-now
+    choices:
+      - text: I am drinking tea now.
+        reading: ''
+      - text: I am reading a book now.
+        reading: ''
+    prompt: 'Choose the meaning: 今お茶を飲んでいます。'
+    answers:
+      - I am drinking tea now.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: i-am-drinking-milk-now
+    prompt: 'Build this sentence: I am drinking milk now. (polite)'
+    answers:
+      - 今牛乳を飲んでいます
+      - 今牛乳をのんでいます
+      - 今ぎゅうにゅうを飲んでいます
+      - 今ぎゅうにゅうをのんでいます
+      - いま牛乳を飲んでいます
+      - いま牛乳をのんでいます
+      - いまぎゅうにゅうを飲んでいます
+      - いまぎゅうにゅうをのんでいます
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 牛乳, reading: ぎゅうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: i-am-drinking-milk-now
+    answers:
+      - 今牛乳を飲んでいます
+      - 今牛乳をのんでいます
+      - 今ぎゅうにゅうを飲んでいます
+      - 今ぎゅうにゅうをのんでいます
+      - いま牛乳を飲んでいます
+      - いま牛乳をのんでいます
+      - いまぎゅうにゅうを飲んでいます
+      - いまぎゅうにゅうをのんでいます
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: i-am-drinking-milk-now
+    choices:
+      - text: I am drinking milk now.
+        reading: ''
+      - text: I am reading a book now.
+        reading: ''
+    prompt: 'Choose the meaning: 今牛乳を飲んでいます。'
+    answers:
+      - I am drinking milk now.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: i-am-drinking-coffee-now
+    prompt: 'Build this sentence: I am drinking coffee now. (polite)'
+    answers:
+      - 今コーヒーを飲んでいます
+      - 今コーヒーをのんでいます
+      - 今こーひーを飲んでいます
+      - 今こーひーをのんでいます
+      - いまコーヒーを飲んでいます
+      - いまコーヒーをのんでいます
+      - いまこーひーを飲んでいます
+      - いまこーひーをのんでいます
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: コーヒー, reading: こーひー, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: i-am-drinking-coffee-now
+    answers:
+      - 今コーヒーを飲んでいます
+      - 今コーヒーをのんでいます
+      - 今こーひーを飲んでいます
+      - 今こーひーをのんでいます
+      - いまコーヒーを飲んでいます
+      - いまコーヒーをのんでいます
+      - いまこーひーを飲んでいます
+      - いまこーひーをのんでいます
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: i-am-drinking-coffee-now
+    choices:
+      - text: I am drinking coffee now.
+        reading: ''
+      - text: I am reading a book now.
+        reading: ''
+    prompt: 'Choose the meaning: 今コーヒーを飲んでいます。'
+    answers:
+      - I am drinking coffee now.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: i-am-drinking-juice-now
+    prompt: 'Build this sentence: I am drinking juice now. (polite)'
+    answers:
+      - 今ジュースを飲んでいます
+      - 今ジュースをのんでいます
+      - 今じゅーすを飲んでいます
+      - 今じゅーすをのんでいます
+      - いまジュースを飲んでいます
+      - いまジュースをのんでいます
+      - いまじゅーすを飲んでいます
+      - いまじゅーすをのんでいます
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: ジュース, reading: じゅーす, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: i-am-drinking-juice-now
+    answers:
+      - 今ジュースを飲んでいます
+      - 今ジュースをのんでいます
+      - 今じゅーすを飲んでいます
+      - 今じゅーすをのんでいます
+      - いまジュースを飲んでいます
+      - いまジュースをのんでいます
+      - いまじゅーすを飲んでいます
+      - いまじゅーすをのんでいます
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: i-am-drinking-juice-now
+    choices:
+      - text: I am drinking juice now.
+        reading: ''
+      - text: I am reading a book now.
+        reading: ''
+    prompt: 'Choose the meaning: 今ジュースを飲んでいます。'
+    answers:
+      - I am drinking juice now.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: i-am-drinking-black-tea-now
+    prompt: 'Build this sentence: I am drinking black tea now. (polite)'
+    answers:
+      - 今紅茶を飲んでいます
+      - 今紅茶をのんでいます
+      - 今こうちゃを飲んでいます
+      - 今こうちゃをのんでいます
+      - いま紅茶を飲んでいます
+      - いま紅茶をのんでいます
+      - いまこうちゃを飲んでいます
+      - いまこうちゃをのんでいます
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 紅茶, reading: こうちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: i-am-drinking-black-tea-now
+    answers:
+      - 今紅茶を飲んでいます
+      - 今紅茶をのんでいます
+      - 今こうちゃを飲んでいます
+      - 今こうちゃをのんでいます
+      - いま紅茶を飲んでいます
+      - いま紅茶をのんでいます
+      - いまこうちゃを飲んでいます
+      - いまこうちゃをのんでいます
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: i-am-drinking-black-tea-now
+    choices:
+      - text: I am drinking black tea now.
+        reading: ''
+      - text: I am reading a book now.
+        reading: ''
+    prompt: 'Choose the meaning: 今紅茶を飲んでいます。'
+    answers:
+      - I am drinking black tea now.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: i-am-drinking-green-tea-now
+    prompt: 'Build this sentence: I am drinking green tea now. (polite)'
+    answers:
+      - 今緑茶を飲んでいます
+      - 今緑茶をのんでいます
+      - 今りょくちゃを飲んでいます
+      - 今りょくちゃをのんでいます
+      - いま緑茶を飲んでいます
+      - いま緑茶をのんでいます
+      - いまりょくちゃを飲んでいます
+      - いまりょくちゃをのんでいます
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 緑茶, reading: りょくちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: i-am-drinking-green-tea-now
+    answers:
+      - 今緑茶を飲んでいます
+      - 今緑茶をのんでいます
+      - 今りょくちゃを飲んでいます
+      - 今りょくちゃをのんでいます
+      - いま緑茶を飲んでいます
+      - いま緑茶をのんでいます
+      - いまりょくちゃを飲んでいます
+      - いまりょくちゃをのんでいます
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: i-am-drinking-green-tea-now
+    choices:
+      - text: I am drinking green tea now.
+        reading: ''
+      - text: I am reading a book now.
+        reading: ''
+    prompt: 'Choose the meaning: 今緑茶を飲んでいます。'
+    answers:
+      - I am drinking green tea now.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: i-am-drinking-soy-milk-now
+    prompt: 'Build this sentence: I am drinking soy milk now. (polite)'
+    answers:
+      - 今豆乳を飲んでいます
+      - 今豆乳をのんでいます
+      - 今とうにゅうを飲んでいます
+      - 今とうにゅうをのんでいます
+      - いま豆乳を飲んでいます
+      - いま豆乳をのんでいます
+      - いまとうにゅうを飲んでいます
+      - いまとうにゅうをのんでいます
+    tiles:
+      - { text: 今, reading: いま, role: modifier, wordClass: modifier }
+      - { text: 豆乳, reading: とうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでいます, reading: のんでいます, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: i-am-drinking-soy-milk-now
+    answers:
+      - 今豆乳を飲んでいます
+      - 今豆乳をのんでいます
+      - 今とうにゅうを飲んでいます
+      - 今とうにゅうをのんでいます
+      - いま豆乳を飲んでいます
+      - いま豆乳をのんでいます
+      - いまとうにゅうを飲んでいます
+      - いまとうにゅうをのんでいます

@@ -1,0 +1,1174 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-tai
+  kind: grammar
+  note:
+    'Attach たい to the ます stem: 行きます → 行きたいです. The resulting expression inflects like an い-adjective:
+    行きたくないです. Use ほしい for a desired thing.'
+  tags:
+    - Grammar
+    - tai
+  level: N5
+  title: 'Want to do: たい'
+  topic: Sentence building
+  lesson:
+    goal: Say what action you want to do.
+    group: Descriptions and preferences
+    order: 23
+    recap: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+    examples:
+      - tokens:
+          - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 飲みたいです, reading: のみたいです, wordClass: predicate }
+        meaning: I want to drink water.
+        reading: みずをのみたいです。
+        japanese: 水を飲みたいです。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: 'want to drink ' }
+          - { role: object, text: water. }
+      - tokens:
+          - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 読みたいです, reading: よみたいです, wordClass: predicate }
+        meaning: I want to read a book.
+        reading: ほんをよみたいです。
+        japanese: 本を読みたいです。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: 'want to read ' }
+          - { role: object, text: a book. }
+      - tokens:
+          - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 食べたいです, reading: たべたいです, wordClass: predicate }
+        meaning: I want to eat bread.
+        reading: ぱんをたべたいです。
+        japanese: パンを食べたいです。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: 'want to eat ' }
+          - { role: object, text: bread. }
+    comparison: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+    vocabulary:
+      - text: 水
+        meaning: water
+        reading: みず
+      - text: 飲みたいです
+        meaning: want to drink
+        reading: のみたいです
+      - text: 本
+        meaning: book
+        reading: ほん
+      - text: 読みたいです
+        meaning: want to read
+        reading: よみたいです
+      - text: パン
+        meaning: bread
+        reading: ぱん
+      - text: 食べたいです
+        meaning: want to eat
+        reading: たべたいです
+      - text: 日本
+        meaning: Japan
+        reading: にほん
+      - text: 行きたいです
+        meaning: want to go
+        reading: いきたいです
+    prerequisites:
+      - grammar-masu
+      - grammar-hoshii
+  meaning: I want to go to Japan.
+  reading: にほんにいきたいです。
+  examples:
+    - tokens:
+        - {
+            role: modifier,
+            text: 日本に,
+            reading: にほんに,
+            wordClass: destination noun + particle,
+          }
+        - {
+            role: predicate,
+            text: 行きたいです,
+            reading: いきたいです,
+            wordClass: verb stem + desire adjective,
+          }
+      meaning: I want to go to Japan.
+      reading: にほんにいきたいです。
+      japanese: 日本に行きたいです。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: want to go, implicit: false }
+        - { role: modifier, text: ' to Japan.', implicit: false }
+  exercise:
+    tiles:
+      - 日本
+      - に
+      - 行きたい
+      - です
+    prompt: 'Build: “I want to go to Japan.”'
+    answers:
+      - 日本に行きたいです
+      - 日本へ行きたいです
+      - にほんにいきたいです
+      - にほんへいきたいです
+    explanation:
+      'Attach たい to the ます stem: 行きます → 行きたいです. The resulting expression inflects like an い-adjective:
+      行きたくないです. Use ほしい for a desired thing.'
+  japanese: 日本に行きたいです。
+  references:
+    - rows:
+        - - text: 食べます
+            reading: たべます
+          - text: 食べたいです
+            reading: たべたいです
+          - text: 食べたい
+            reading: たべたい
+          - text: 食べたくないです
+            reading: たべたくないです
+        - - text: 飲みます
+            reading: のみます
+          - text: 飲みたいです
+            reading: のみたいです
+          - text: 飲みたい
+            reading: のみたい
+          - text: 飲みたくないです
+            reading: のみたくないです
+        - - text: 行きます
+            reading: いきます
+          - text: 行きたいです
+            reading: いきたいです
+          - text: 行きたい
+            reading: いきたい
+          - text: 行きたくないです
+            reading: いきたくないです
+        - - text: 勉強します
+            reading: べんきょうします
+          - text: 勉強したいです
+            reading: べんきょうしたいです
+          - text: 勉強したい
+            reading: べんきょうしたい
+          - text: 勉強したくないです
+            reading: べんきょうしたくないです
+      columns:
+        - Verb
+        - Polite
+        - Casual
+        - Negative (polite)
+      heading: 'ます stem + たい: polite and casual'
+sentences:
+  i-want-to-drink-water:
+    text: 水を飲みたいです。
+    tiles:
+      - { text: 水, reading: みず }
+      - { text: を, reading: を }
+      - { text: 飲みたいです, reading: のみたいです }
+    tokens:
+      - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 飲みたいです, reading: のみたいです, wordClass: predicate }
+    meaning: I want to drink water.
+    reading: みずをのみたいです。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'want to drink ' }
+      - { role: object, text: water. }
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+  i-want-to-read-a-book:
+    text: 本を読みたいです。
+    tiles:
+      - { text: 本, reading: ほん }
+      - { text: を, reading: を }
+      - { text: 読みたいです, reading: よみたいです }
+    tokens:
+      - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 読みたいです, reading: よみたいです, wordClass: predicate }
+    meaning: I want to read a book.
+    reading: ほんをよみたいです。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'want to read ' }
+      - { role: object, text: a book. }
+    form: polite
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+  i-want-to-eat-bread:
+    text: パンを食べたいです。
+    tiles:
+      - { text: パン, reading: ぱん }
+      - { text: を, reading: を }
+      - { text: 食べたいです, reading: たべたいです }
+    tokens:
+      - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 食べたいです, reading: たべたいです, wordClass: predicate }
+    meaning: I want to eat bread.
+    reading: ぱんをたべたいです。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'want to eat ' }
+      - { role: object, text: bread. }
+    form: polite
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+  i-want-to-go-to-japan:
+    text: 日本に行きたいです。
+    tiles:
+      - { text: 日本, reading: にほん }
+      - { text: に, reading: に }
+      - { text: 行きたいです, reading: いきたいです }
+    tokens:
+      - { role: modifier, text: 日本, reading: にほん, wordClass: modifier }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 行きたいです, reading: いきたいです, wordClass: predicate }
+    meaning: I want to go to Japan.
+    reading: にほんにいきたいです。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: want to go }
+      - { role: modifier, text: ' to Japan.' }
+    form: polite
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+  i-want-to-drink-tea:
+    text: お茶を飲みたいです。
+    reading: おちゃをのみたいです。
+    meaning: I want to drink tea.
+    tiles:
+      - { text: お茶, reading: おちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: お茶, reading: おちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'want to drink ', role: predicate }
+      - { text: tea., role: object }
+    form: polite
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+  i-want-to-drink-milk:
+    text: 牛乳を飲みたいです。
+    reading: ぎゅうにゅうをのみたいです。
+    meaning: I want to drink milk.
+    tiles:
+      - { text: 牛乳, reading: ぎゅうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 牛乳, reading: ぎゅうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'want to drink ', role: predicate }
+      - { text: milk., role: object }
+    form: polite
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+  i-want-to-drink-coffee:
+    text: コーヒーを飲みたいです。
+    reading: こーひーをのみたいです。
+    meaning: I want to drink coffee.
+    tiles:
+      - { text: コーヒー, reading: こーひー, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: コーヒー, reading: こーひー, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'want to drink ', role: predicate }
+      - { text: coffee., role: object }
+    form: polite
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+  i-want-to-drink-juice:
+    text: ジュースを飲みたいです。
+    reading: じゅーすをのみたいです。
+    meaning: I want to drink juice.
+    tiles:
+      - { text: ジュース, reading: じゅーす, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: ジュース, reading: じゅーす, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'want to drink ', role: predicate }
+      - { text: juice., role: object }
+    form: polite
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+  i-want-to-drink-black-tea:
+    text: 紅茶を飲みたいです。
+    reading: こうちゃをのみたいです。
+    meaning: I want to drink black tea.
+    tiles:
+      - { text: 紅茶, reading: こうちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 紅茶, reading: こうちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'want to drink ', role: predicate }
+      - { text: black tea., role: object }
+    form: polite
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+  i-want-to-drink-green-tea:
+    text: 緑茶を飲みたいです。
+    reading: りょくちゃをのみたいです。
+    meaning: I want to drink green tea.
+    tiles:
+      - { text: 緑茶, reading: りょくちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 緑茶, reading: りょくちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'want to drink ', role: predicate }
+      - { text: green tea., role: object }
+    form: polite
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+  i-want-to-drink-soy-milk:
+    text: 豆乳を飲みたいです。
+    reading: とうにゅうをのみたいです。
+    meaning: I want to drink soy milk.
+    tiles:
+      - { text: 豆乳, reading: とうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 豆乳, reading: とうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'want to drink ', role: predicate }
+      - { text: soy milk., role: object }
+    form: polite
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+  i-want-to-drink-barley-tea:
+    text: 麦茶を飲みたいです。
+    reading: むぎちゃをのみたいです。
+    meaning: I want to drink barley tea.
+    tiles:
+      - { text: 麦茶, reading: むぎちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 麦茶, reading: むぎちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'want to drink ', role: predicate }
+      - { text: barley tea., role: object }
+    form: polite
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+  i-want-to-drink-cold-water:
+    text: 冷水を飲みたいです。
+    reading: れいすいをのみたいです。
+    meaning: I want to drink cold water.
+    tiles:
+      - { text: 冷水, reading: れいすい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 冷水, reading: れいすい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'want to drink ', role: predicate }
+      - { text: cold water., role: object }
+    form: polite
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+  i-want-to-drink-sparkling-water:
+    text: 炭酸水を飲みたいです。
+    reading: たんさんすいをのみたいです。
+    meaning: I want to drink sparkling water.
+    tiles:
+      - { text: 炭酸水, reading: たんさんすい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 炭酸水, reading: たんさんすい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'want to drink ', role: predicate }
+      - { text: sparkling water., role: object }
+    form: polite
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+  i-want-to-read-a-magazine:
+    text: 雑誌を読みたいです。
+    reading: ざっしをよみたいです。
+    meaning: I want to read a magazine.
+    tiles:
+      - { text: 雑誌, reading: ざっし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 雑誌, reading: ざっし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'want to read ', role: predicate }
+      - { text: a magazine., role: object }
+    form: polite
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+  i-want-to-read-a-newspaper:
+    text: 新聞を読みたいです。
+    reading: しんぶんをよみたいです。
+    meaning: I want to read a newspaper.
+    tiles:
+      - { text: 新聞, reading: しんぶん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 新聞, reading: しんぶん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'want to read ', role: predicate }
+      - { text: a newspaper., role: object }
+    form: polite
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+  i-want-to-read-a-dictionary:
+    text: 辞書を読みたいです。
+    reading: じしょをよみたいです。
+    meaning: I want to read a dictionary.
+    tiles:
+      - { text: 辞書, reading: じしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 辞書, reading: じしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'want to read ', role: predicate }
+      - { text: a dictionary., role: object }
+    form: polite
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+  i-want-to-read-a-novel:
+    text: 小説を読みたいです。
+    reading: しょうせつをよみたいです。
+    meaning: I want to read a novel.
+    tiles:
+      - { text: 小説, reading: しょうせつ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 小説, reading: しょうせつ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'want to read ', role: predicate }
+      - { text: a novel., role: object }
+    form: polite
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+  i-want-to-read-a-comic:
+    text: 漫画を読みたいです。
+    reading: まんがをよみたいです。
+    meaning: I want to read a comic.
+    tiles:
+      - { text: 漫画, reading: まんが, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 漫画, reading: まんが, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'want to read ', role: predicate }
+      - { text: a comic., role: object }
+    form: polite
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+  i-want-to-read-a-textbook:
+    text: 教科書を読みたいです。
+    reading: きょうかしょをよみたいです。
+    meaning: I want to read a textbook.
+    tiles:
+      - { text: 教科書, reading: きょうかしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 教科書, reading: きょうかしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'want to read ', role: predicate }
+      - { text: a textbook., role: object }
+    form: polite
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+  i-want-to-read-a-picture-book:
+    text: 絵本を読みたいです。
+    reading: えほんをよみたいです。
+    meaning: I want to read a picture book.
+    tiles:
+      - { text: 絵本, reading: えほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 絵本, reading: えほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'want to read ', role: predicate }
+      - { text: a picture book., role: object }
+    form: polite
+    hint: Use the verb stem followed by the desire ending.
+    explanation: 'Attach たい to the ます stem, not the full ます form: 飲みます becomes 飲みたいです.'
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-want-to-drink-water
+    choices:
+      - text: I want to drink water.
+        reading: ''
+      - text: I do not want to drink water.
+        reading: ''
+    answers:
+      - I want to drink water.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-want-to-drink-water
+    choices:
+      - sentence: i-want-to-drink-water
+      - text: 水を飲みますたいです。
+        tiles:
+          - { text: 水, reading: みず }
+          - { text: を, reading: を }
+          - { text: 飲みますたいです, reading: のみますたいです }
+        tokens:
+          - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - {
+              role: predicate,
+              text: 飲みますたいです,
+              reading: のみますたいです,
+              wordClass: predicate,
+            }
+        meaning: I do not want to drink water.
+        reading: みずをのみますたいです。
+    prompt: 'Choose the correct Japanese: I want to drink water.'
+    answers:
+      - 水を飲みたいです
+      - 水をのみたいです
+      - みずを飲みたいです
+      - みずをのみたいです
+  - id: gap
+    type: gap
+    sentence: i-want-to-read-a-book
+    answers:
+      - 読みたいです
+      - よみたいです
+    context:
+      text: 本を___。
+      tokens:
+        - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+        - { role: particle, text: を, reading: を, wordClass: particle }
+        - { role: predicate, text: ___, reading: ___, wordClass: predicate }
+      reading: ほんを___。
+  - id: tiles
+    type: tiles
+    sentence: i-want-to-read-a-book
+    prompt: 'Build this sentence: I want to read a book. (polite)'
+    answers:
+      - 本を読みたいです
+      - 本をよみたいです
+      - ほんを読みたいです
+      - ほんをよみたいです
+    tiles:
+      - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 読みたいです, reading: よみたいです, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: i-want-to-eat-bread
+    answers:
+      - パンを食べたいです
+      - パンをたべたいです
+      - ぱんを食べたいです
+      - ぱんをたべたいです
+  - id: alternate
+    type: typing
+    sentence: i-want-to-go-to-japan
+    alternate: true
+    prompt: 'One more example: I want to go to Japan. (polite)'
+    answers:
+      - 日本に行きたいです
+      - 日本にいきたいです
+      - にほんに行きたいです
+      - にほんにいきたいです
+  - id: extra-1-tiles
+    type: tiles
+    sentence: i-want-to-drink-tea
+    prompt: 'Build this sentence: I want to drink tea. (polite)'
+    answers:
+      - お茶を飲みたいです
+      - お茶をのみたいです
+      - おちゃを飲みたいです
+      - おちゃをのみたいです
+    tiles:
+      - { text: お茶, reading: おちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: i-want-to-drink-tea
+    answers:
+      - お茶を飲みたいです
+      - お茶をのみたいです
+      - おちゃを飲みたいです
+      - おちゃをのみたいです
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: i-want-to-drink-tea
+    choices:
+      - text: I want to drink tea.
+        reading: ''
+      - text: I want to drink water.
+        reading: ''
+    prompt: 'Choose the meaning: お茶を飲みたいです。'
+    answers:
+      - I want to drink tea.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: i-want-to-drink-milk
+    prompt: 'Build this sentence: I want to drink milk. (polite)'
+    answers:
+      - 牛乳を飲みたいです
+      - 牛乳をのみたいです
+      - ぎゅうにゅうを飲みたいです
+      - ぎゅうにゅうをのみたいです
+    tiles:
+      - { text: 牛乳, reading: ぎゅうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: i-want-to-drink-milk
+    answers:
+      - 牛乳を飲みたいです
+      - 牛乳をのみたいです
+      - ぎゅうにゅうを飲みたいです
+      - ぎゅうにゅうをのみたいです
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: i-want-to-drink-milk
+    choices:
+      - text: I want to drink milk.
+        reading: ''
+      - text: I want to drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 牛乳を飲みたいです。'
+    answers:
+      - I want to drink milk.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: i-want-to-drink-coffee
+    prompt: 'Build this sentence: I want to drink coffee. (polite)'
+    answers:
+      - コーヒーを飲みたいです
+      - コーヒーをのみたいです
+      - こーひーを飲みたいです
+      - こーひーをのみたいです
+    tiles:
+      - { text: コーヒー, reading: こーひー, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: i-want-to-drink-coffee
+    answers:
+      - コーヒーを飲みたいです
+      - コーヒーをのみたいです
+      - こーひーを飲みたいです
+      - こーひーをのみたいです
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: i-want-to-drink-coffee
+    choices:
+      - text: I want to drink coffee.
+        reading: ''
+      - text: I want to drink water.
+        reading: ''
+    prompt: 'Choose the meaning: コーヒーを飲みたいです。'
+    answers:
+      - I want to drink coffee.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: i-want-to-drink-juice
+    prompt: 'Build this sentence: I want to drink juice. (polite)'
+    answers:
+      - ジュースを飲みたいです
+      - ジュースをのみたいです
+      - じゅーすを飲みたいです
+      - じゅーすをのみたいです
+    tiles:
+      - { text: ジュース, reading: じゅーす, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: i-want-to-drink-juice
+    answers:
+      - ジュースを飲みたいです
+      - ジュースをのみたいです
+      - じゅーすを飲みたいです
+      - じゅーすをのみたいです
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: i-want-to-drink-juice
+    choices:
+      - text: I want to drink juice.
+        reading: ''
+      - text: I want to drink water.
+        reading: ''
+    prompt: 'Choose the meaning: ジュースを飲みたいです。'
+    answers:
+      - I want to drink juice.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: i-want-to-drink-black-tea
+    prompt: 'Build this sentence: I want to drink black tea. (polite)'
+    answers:
+      - 紅茶を飲みたいです
+      - 紅茶をのみたいです
+      - こうちゃを飲みたいです
+      - こうちゃをのみたいです
+    tiles:
+      - { text: 紅茶, reading: こうちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: i-want-to-drink-black-tea
+    answers:
+      - 紅茶を飲みたいです
+      - 紅茶をのみたいです
+      - こうちゃを飲みたいです
+      - こうちゃをのみたいです
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: i-want-to-drink-black-tea
+    choices:
+      - text: I want to drink black tea.
+        reading: ''
+      - text: I want to drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 紅茶を飲みたいです。'
+    answers:
+      - I want to drink black tea.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: i-want-to-drink-green-tea
+    prompt: 'Build this sentence: I want to drink green tea. (polite)'
+    answers:
+      - 緑茶を飲みたいです
+      - 緑茶をのみたいです
+      - りょくちゃを飲みたいです
+      - りょくちゃをのみたいです
+    tiles:
+      - { text: 緑茶, reading: りょくちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: i-want-to-drink-green-tea
+    answers:
+      - 緑茶を飲みたいです
+      - 緑茶をのみたいです
+      - りょくちゃを飲みたいです
+      - りょくちゃをのみたいです
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: i-want-to-drink-green-tea
+    choices:
+      - text: I want to drink green tea.
+        reading: ''
+      - text: I want to drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 緑茶を飲みたいです。'
+    answers:
+      - I want to drink green tea.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: i-want-to-drink-soy-milk
+    prompt: 'Build this sentence: I want to drink soy milk. (polite)'
+    answers:
+      - 豆乳を飲みたいです
+      - 豆乳をのみたいです
+      - とうにゅうを飲みたいです
+      - とうにゅうをのみたいです
+    tiles:
+      - { text: 豆乳, reading: とうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: i-want-to-drink-soy-milk
+    answers:
+      - 豆乳を飲みたいです
+      - 豆乳をのみたいです
+      - とうにゅうを飲みたいです
+      - とうにゅうをのみたいです
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: i-want-to-drink-soy-milk
+    choices:
+      - text: I want to drink soy milk.
+        reading: ''
+      - text: I want to drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 豆乳を飲みたいです。'
+    answers:
+      - I want to drink soy milk.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: i-want-to-drink-barley-tea
+    prompt: 'Build this sentence: I want to drink barley tea. (polite)'
+    answers:
+      - 麦茶を飲みたいです
+      - 麦茶をのみたいです
+      - むぎちゃを飲みたいです
+      - むぎちゃをのみたいです
+    tiles:
+      - { text: 麦茶, reading: むぎちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: i-want-to-drink-barley-tea
+    answers:
+      - 麦茶を飲みたいです
+      - 麦茶をのみたいです
+      - むぎちゃを飲みたいです
+      - むぎちゃをのみたいです
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: i-want-to-drink-barley-tea
+    choices:
+      - text: I want to drink barley tea.
+        reading: ''
+      - text: I want to drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 麦茶を飲みたいです。'
+    answers:
+      - I want to drink barley tea.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: i-want-to-drink-cold-water
+    prompt: 'Build this sentence: I want to drink cold water. (polite)'
+    answers:
+      - 冷水を飲みたいです
+      - 冷水をのみたいです
+      - れいすいを飲みたいです
+      - れいすいをのみたいです
+    tiles:
+      - { text: 冷水, reading: れいすい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: i-want-to-drink-cold-water
+    answers:
+      - 冷水を飲みたいです
+      - 冷水をのみたいです
+      - れいすいを飲みたいです
+      - れいすいをのみたいです
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: i-want-to-drink-cold-water
+    choices:
+      - text: I want to drink cold water.
+        reading: ''
+      - text: I want to drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 冷水を飲みたいです。'
+    answers:
+      - I want to drink cold water.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: i-want-to-drink-sparkling-water
+    prompt: 'Build this sentence: I want to drink sparkling water. (polite)'
+    answers:
+      - 炭酸水を飲みたいです
+      - 炭酸水をのみたいです
+      - たんさんすいを飲みたいです
+      - たんさんすいをのみたいです
+    tiles:
+      - { text: 炭酸水, reading: たんさんすい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みたいです, reading: のみたいです, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: i-want-to-drink-sparkling-water
+    answers:
+      - 炭酸水を飲みたいです
+      - 炭酸水をのみたいです
+      - たんさんすいを飲みたいです
+      - たんさんすいをのみたいです
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: i-want-to-drink-sparkling-water
+    choices:
+      - text: I want to drink sparkling water.
+        reading: ''
+      - text: I want to drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 炭酸水を飲みたいです。'
+    answers:
+      - I want to drink sparkling water.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: i-want-to-read-a-magazine
+    prompt: 'Build this sentence: I want to read a magazine. (polite)'
+    answers:
+      - 雑誌を読みたいです
+      - 雑誌をよみたいです
+      - ざっしを読みたいです
+      - ざっしをよみたいです
+    tiles:
+      - { text: 雑誌, reading: ざっし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: i-want-to-read-a-magazine
+    answers:
+      - 雑誌を読みたいです
+      - 雑誌をよみたいです
+      - ざっしを読みたいです
+      - ざっしをよみたいです
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: i-want-to-read-a-magazine
+    choices:
+      - text: I want to read a magazine.
+        reading: ''
+      - text: I want to drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 雑誌を読みたいです。'
+    answers:
+      - I want to read a magazine.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: i-want-to-read-a-newspaper
+    prompt: 'Build this sentence: I want to read a newspaper. (polite)'
+    answers:
+      - 新聞を読みたいです
+      - 新聞をよみたいです
+      - しんぶんを読みたいです
+      - しんぶんをよみたいです
+    tiles:
+      - { text: 新聞, reading: しんぶん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: i-want-to-read-a-newspaper
+    answers:
+      - 新聞を読みたいです
+      - 新聞をよみたいです
+      - しんぶんを読みたいです
+      - しんぶんをよみたいです
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: i-want-to-read-a-newspaper
+    choices:
+      - text: I want to read a newspaper.
+        reading: ''
+      - text: I want to drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 新聞を読みたいです。'
+    answers:
+      - I want to read a newspaper.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: i-want-to-read-a-dictionary
+    prompt: 'Build this sentence: I want to read a dictionary. (polite)'
+    answers:
+      - 辞書を読みたいです
+      - 辞書をよみたいです
+      - じしょを読みたいです
+      - じしょをよみたいです
+    tiles:
+      - { text: 辞書, reading: じしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: i-want-to-read-a-dictionary
+    answers:
+      - 辞書を読みたいです
+      - 辞書をよみたいです
+      - じしょを読みたいです
+      - じしょをよみたいです
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: i-want-to-read-a-dictionary
+    choices:
+      - text: I want to read a dictionary.
+        reading: ''
+      - text: I want to drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 辞書を読みたいです。'
+    answers:
+      - I want to read a dictionary.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: i-want-to-read-a-novel
+    prompt: 'Build this sentence: I want to read a novel. (polite)'
+    answers:
+      - 小説を読みたいです
+      - 小説をよみたいです
+      - しょうせつを読みたいです
+      - しょうせつをよみたいです
+    tiles:
+      - { text: 小説, reading: しょうせつ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: i-want-to-read-a-novel
+    answers:
+      - 小説を読みたいです
+      - 小説をよみたいです
+      - しょうせつを読みたいです
+      - しょうせつをよみたいです
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: i-want-to-read-a-novel
+    choices:
+      - text: I want to read a novel.
+        reading: ''
+      - text: I want to drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 小説を読みたいです。'
+    answers:
+      - I want to read a novel.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: i-want-to-read-a-comic
+    prompt: 'Build this sentence: I want to read a comic. (polite)'
+    answers:
+      - 漫画を読みたいです
+      - 漫画をよみたいです
+      - まんがを読みたいです
+      - まんがをよみたいです
+    tiles:
+      - { text: 漫画, reading: まんが, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: i-want-to-read-a-comic
+    answers:
+      - 漫画を読みたいです
+      - 漫画をよみたいです
+      - まんがを読みたいです
+      - まんがをよみたいです
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: i-want-to-read-a-comic
+    choices:
+      - text: I want to read a comic.
+        reading: ''
+      - text: I want to drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 漫画を読みたいです。'
+    answers:
+      - I want to read a comic.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: i-want-to-read-a-textbook
+    prompt: 'Build this sentence: I want to read a textbook. (polite)'
+    answers:
+      - 教科書を読みたいです
+      - 教科書をよみたいです
+      - きょうかしょを読みたいです
+      - きょうかしょをよみたいです
+    tiles:
+      - { text: 教科書, reading: きょうかしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: i-want-to-read-a-textbook
+    answers:
+      - 教科書を読みたいです
+      - 教科書をよみたいです
+      - きょうかしょを読みたいです
+      - きょうかしょをよみたいです
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: i-want-to-read-a-textbook
+    choices:
+      - text: I want to read a textbook.
+        reading: ''
+      - text: I want to drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 教科書を読みたいです。'
+    answers:
+      - I want to read a textbook.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: i-want-to-read-a-picture-book
+    prompt: 'Build this sentence: I want to read a picture book. (polite)'
+    answers:
+      - 絵本を読みたいです
+      - 絵本をよみたいです
+      - えほんを読みたいです
+      - えほんをよみたいです
+    tiles:
+      - { text: 絵本, reading: えほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みたいです, reading: よみたいです, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: i-want-to-read-a-picture-book
+    answers:
+      - 絵本を読みたいです
+      - 絵本をよみたいです
+      - えほんを読みたいです
+      - えほんをよみたいです

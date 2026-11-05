@@ -1,0 +1,833 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-particle-kara
+  kind: grammar
+  note:
+    'から marks a starting point: a place or a time. まで marks an endpoint and is optional. Use どこから to ask
+    “from where?” and 何時から (なんじから) to ask “from what time?”. You do not add に after から in these patterns. This
+    lesson covers “from”; clause + から meaning “because” is a different pattern.'
+  tags:
+    - Study guide
+  level: N5
+  title: から — from a place or starting time
+  topic: Polite verbs and particles
+  meaning: から — from a place or starting time
+  reading: いえからがっこうまであるきます。
+  examples:
+    - tokens:
+        - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+        - { role: particle, text: から, reading: から, wordClass: particle }
+        - { role: modifier, text: 学校, reading: がっこう, wordClass: noun phrase }
+        - { role: particle, text: まで, reading: まで, wordClass: particle }
+        - { role: predicate, text: 歩きます, reading: あるきます, wordClass: predicate }
+      meaning: I walk from home to school.
+      reading: いえからがっこうまであるきます。
+      japanese: 家から学校まで歩きます。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: walk }
+        - { role: modifier, text: ' from home' }
+        - { role: modifier, text: ' to school.' }
+    - tokens:
+        - { role: modifier, text: 九時, reading: くじ, wordClass: noun phrase }
+        - { role: particle, text: から, reading: から, wordClass: particle }
+        - { role: predicate, text: 勉強します, reading: べんきょうします, wordClass: predicate }
+      meaning: I study from nine.
+      reading: くじからべんきょうします。
+      japanese: 九時から勉強します。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: study }
+        - { role: modifier, text: ' from nine.' }
+    - tokens:
+        - { role: modifier, text: インドネシア, reading: いんどねしあ, wordClass: noun phrase }
+        - { role: particle, text: から, reading: から, wordClass: particle }
+        - { role: predicate, text: 来ました, reading: きました, wordClass: predicate }
+      meaning: I came from Indonesia.
+      reading: いんどねしあからきました。
+      japanese: インドネシアから来ました。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: came }
+        - { role: modifier, text: ' from Indonesia.' }
+    - tokens:
+        - { role: modifier, text: 八時, reading: はちじ, wordClass: noun phrase }
+        - { role: particle, text: から, reading: から, wordClass: particle }
+        - { role: modifier, text: 五時, reading: ごじ, wordClass: noun phrase }
+        - { role: particle, text: まで, reading: まで, wordClass: particle }
+        - { role: predicate, text: 働きます, reading: はたらきます, wordClass: predicate }
+      meaning: I work from eight until five.
+      reading: はちじからごじまではたらきます。
+      japanese: 八時から五時まで働きます。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: work }
+        - { role: modifier, text: ' from eight' }
+        - { role: modifier, text: ' until five.' }
+  japanese: 家から学校まで歩きます。
+  references:
+    - rows:
+        - - text: Origin
+            reading: ''
+          - text: どこから来ましたか
+            reading: どこからきましたか
+          - text: インドネシアから来ました
+            reading: いんどねしあからきました
+          - text: Where did you come from? — I came from Indonesia.
+            reading: ''
+        - - text: Starting time
+            reading: ''
+          - text: 何時から勉強しますか
+            reading: なんじからべんきょうしますか
+          - text: 九時から勉強します
+            reading: くじからべんきょうします
+          - text: From what time will you study? — From nine.
+            reading: ''
+        - - text: Time range
+            reading: ''
+          - text: 何時から何時まで働きますか
+            reading: なんじからなんじまではたらきますか
+          - text: 八時から五時まで働きます
+            reading: はちじからごじまではたらきます
+          - text: From what time until what time do you work? — From eight until five.
+            reading: ''
+        - - text: Route
+            reading: ''
+          - text: どこからどこまで歩きますか
+            reading: どこからどこまであるきますか
+          - text: 家から学校まで歩きます
+            reading: いえからがっこうまであるきます
+          - text: From where to where do you walk? — From home to school.
+            reading: ''
+      columns:
+        - Use
+        - Question
+        - Example answer
+        - Meaning
+      heading: Starting points and endpoints
+sentences:
+  i-walk-from-home-to-school:
+    text: 家から学校まで歩きます。
+    tokens:
+      - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+      - { role: particle, text: から, reading: から, wordClass: particle }
+      - { role: modifier, text: 学校, reading: がっこう, wordClass: noun phrase }
+      - { role: particle, text: まで, reading: まで, wordClass: particle }
+      - { role: predicate, text: 歩きます, reading: あるきます, wordClass: predicate }
+    meaning: I walk from home to school.
+    reading: いえからがっこうまであるきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: walk }
+      - { role: modifier, text: ' from home' }
+      - { role: modifier, text: ' to school.' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'から marks a starting point: a place or a time. まで marks an endpoint and is optional. Use どこから to
+      ask “from where?” and 何時から (なんじから) to ask “from what time?”. You do not add に after から in these
+      patterns. This lesson covers “from”; clause + から meaning “because” is a different pattern.'
+  i-study-from-nine:
+    text: 九時から勉強します。
+    tokens:
+      - { role: modifier, text: 九時, reading: くじ, wordClass: noun phrase }
+      - { role: particle, text: から, reading: から, wordClass: particle }
+      - { role: predicate, text: 勉強します, reading: べんきょうします, wordClass: predicate }
+    meaning: I study from nine.
+    reading: くじからべんきょうします。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: study }
+      - { role: modifier, text: ' from nine.' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'から marks a starting point: a place or a time. まで marks an endpoint and is optional. Use どこから to
+      ask “from where?” and 何時から (なんじから) to ask “from what time?”. You do not add に after から in these
+      patterns. This lesson covers “from”; clause + から meaning “because” is a different pattern.'
+    form: polite
+  i-came-from-indonesia:
+    text: インドネシアから来ました。
+    tokens:
+      - { role: modifier, text: インドネシア, reading: いんどねしあ, wordClass: noun phrase }
+      - { role: particle, text: から, reading: から, wordClass: particle }
+      - { role: predicate, text: 来ました, reading: きました, wordClass: predicate }
+    meaning: I came from Indonesia.
+    reading: いんどねしあからきました。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: came }
+      - { role: modifier, text: ' from Indonesia.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'から marks a starting point: a place or a time. まで marks an endpoint and is optional. Use どこから to
+      ask “from where?” and 何時から (なんじから) to ask “from what time?”. You do not add に after から in these
+      patterns. This lesson covers “from”; clause + から meaning “because” is a different pattern.'
+  i-work-from-eight-until-five:
+    text: 八時から五時まで働きます。
+    tokens:
+      - { role: modifier, text: 八時, reading: はちじ, wordClass: noun phrase }
+      - { role: particle, text: から, reading: から, wordClass: particle }
+      - { role: modifier, text: 五時, reading: ごじ, wordClass: noun phrase }
+      - { role: particle, text: まで, reading: まで, wordClass: particle }
+      - { role: predicate, text: 働きます, reading: はたらきます, wordClass: predicate }
+    meaning: I work from eight until five.
+    reading: はちじからごじまではたらきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: work }
+      - { role: modifier, text: ' from eight' }
+      - { role: modifier, text: ' until five.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'から marks a starting point: a place or a time. まで marks an endpoint and is optional. Use どこから to
+      ask “from where?” and 何時から (なんじから) to ask “from what time?”. You do not add に after から in these
+      patterns. This lesson covers “from”; clause + から meaning “because” is a different pattern.'
+  i-walk-from-home-to-the-library:
+    tokens:
+      - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+      - { role: particle, text: から, reading: から, wordClass: particle }
+      - { role: modifier, text: 図書館, reading: としょかん, wordClass: noun phrase }
+      - { role: particle, text: まで, reading: まで, wordClass: particle }
+      - { role: predicate, text: 歩きます, reading: あるきます, wordClass: predicate }
+    meaning: I walk from home to the library.
+    reading: いえからとしょかんまであるきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: walk }
+      - { role: modifier, text: ' from home' }
+      - { role: modifier, text: ' to the library.' }
+    text: 家から図書館まで歩きます。
+    hint: Check the particles and sentence ending.
+    explanation:
+      家から図書館まで歩きます。 means “I walk from home to the library.” Match the vocabulary, particles, and tense
+      to the English sentence.
+    form: polite
+  i-walk-from-the-station-to-school:
+    tokens:
+      - { role: modifier, text: 駅, reading: えき, wordClass: noun phrase }
+      - { role: particle, text: から, reading: から, wordClass: particle }
+      - { role: modifier, text: 学校, reading: がっこう, wordClass: noun phrase }
+      - { role: particle, text: まで, reading: まで, wordClass: particle }
+      - { role: predicate, text: 歩きます, reading: あるきます, wordClass: predicate }
+    meaning: I walk from the station to school.
+    reading: えきからがっこうまであるきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: walk }
+      - { role: modifier, text: ' from the station' }
+      - { role: modifier, text: ' to school.' }
+    text: 駅から学校まで歩きます。
+    hint: Check the particles and sentence ending.
+    explanation:
+      駅から学校まで歩きます。 means “I walk from the station to school.” Match the vocabulary, particles, and
+      tense to the English sentence.
+    form: polite
+  i-study-from-ten:
+    tokens:
+      - { role: modifier, text: 十時, reading: じゅうじ, wordClass: noun phrase }
+      - { role: particle, text: から, reading: から, wordClass: particle }
+      - { role: predicate, text: 勉強します, reading: べんきょうします, wordClass: predicate }
+    meaning: I study from ten.
+    reading: じゅうじからべんきょうします。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: study }
+      - { role: modifier, text: ' from ten.' }
+    text: 十時から勉強します。
+    hint: Check the particles and sentence ending.
+    explanation: 十時から勉強します。 means “I study from ten.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+  i-came-from-japan:
+    tokens:
+      - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+      - { role: particle, text: から, reading: から, wordClass: particle }
+      - { role: predicate, text: 来ました, reading: きました, wordClass: predicate }
+    meaning: I came from Japan.
+    reading: にほんからきました。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: came }
+      - { role: modifier, text: ' from Japan.' }
+    text: 日本から来ました。
+    hint: Check the particles and sentence ending.
+    explanation: 日本から来ました。 means “I came from Japan.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+  i-work-from-seven-until-five:
+    tokens:
+      - { role: modifier, text: 七時, reading: しちじ, wordClass: noun phrase }
+      - { role: particle, text: から, reading: から, wordClass: particle }
+      - { role: modifier, text: 五時, reading: ごじ, wordClass: noun phrase }
+      - { role: particle, text: まで, reading: まで, wordClass: particle }
+      - { role: predicate, text: 働きます, reading: はたらきます, wordClass: predicate }
+    meaning: I work from seven until five.
+    reading: しちじからごじまではたらきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: work }
+      - { role: modifier, text: ' from seven' }
+      - { role: modifier, text: ' until five.' }
+    text: 七時から五時まで働きます。
+    hint: Check the particles and sentence ending.
+    explanation:
+      七時から五時まで働きます。 means “I work from seven until five.” Match the vocabulary, particles, and tense to
+      the English sentence.
+    form: polite
+  i-work-from-eight-until-six:
+    tokens:
+      - { role: modifier, text: 八時, reading: はちじ, wordClass: noun phrase }
+      - { role: particle, text: から, reading: から, wordClass: particle }
+      - { role: modifier, text: 六時, reading: ろくじ, wordClass: noun phrase }
+      - { role: particle, text: まで, reading: まで, wordClass: particle }
+      - { role: predicate, text: 働きます, reading: はたらきます, wordClass: predicate }
+    meaning: I work from eight until six.
+    reading: はちじからろくじまではたらきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: work }
+      - { role: modifier, text: ' from eight' }
+      - { role: modifier, text: ' until six.' }
+    text: 八時から六時まで働きます。
+    hint: Check the particles and sentence ending.
+    explanation:
+      八時から六時まで働きます。 means “I work from eight until six.” Match the vocabulary, particles, and tense to
+      the English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-walk-from-home-to-school
+    choices:
+      - text: I walk from home to school.
+        reading: ''
+      - text: I study from nine.
+        reading: ''
+      - text: I came from Indonesia.
+        reading: ''
+      - text: I work from eight until five.
+        reading: ''
+    answers:
+      - I walk from home to school.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-study-from-nine
+    choices:
+      - sentence: i-walk-from-home-to-school
+      - sentence: i-study-from-nine
+    prompt: 'Choose the Japanese: I study from nine.'
+    answers:
+      - 九時から勉強します
+      - 九時からべんきょうします
+      - くじから勉強します
+      - くじからべんきょうします
+  - id: gap
+    type: gap
+    sentence: i-study-from-nine
+    prompt: 'Fill the missing part: I study from nine. (polite)'
+    answers:
+      - から
+      - から
+    context:
+      text: 九時___勉強します。
+      tokens:
+        - { role: modifier, text: 九時, reading: くじ, wordClass: noun phrase }
+        - { role: particle, text: ___, reading: ___, wordClass: particle }
+        - { role: predicate, text: 勉強します, reading: べんきょうします, wordClass: predicate }
+      reading: くじ___べんきょうします。
+  - id: tiles
+    type: tiles
+    sentence: i-study-from-nine
+    prompt: 'Build: I study from nine. (polite)'
+    answers:
+      - 九時から勉強します
+      - 九時からべんきょうします
+      - くじから勉強します
+      - くじからべんきょうします
+    tiles:
+      - { role: modifier, text: 九時, reading: くじ, wordClass: noun phrase }
+      - { role: particle, text: から, reading: から, wordClass: particle }
+      - { role: predicate, text: 勉強します, reading: べんきょうします, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: i-came-from-indonesia
+    answers:
+      - インドネシアから来ました
+      - インドネシアからきました
+      - いんどねしあから来ました
+      - いんどねしあからきました
+  - id: alternate
+    type: typing
+    sentence: i-work-from-eight-until-five
+    alternate: true
+    prompt: 'Another example: I work from eight until five. (polite)'
+    answers:
+      - 八時から五時まで働きます
+      - 八時から五時まではたらきます
+      - 八時からごじまで働きます
+      - 八時からごじまではたらきます
+      - はちじから五時まで働きます
+      - はちじから五時まではたらきます
+      - はちじからごじまで働きます
+      - はちじからごじまではたらきます
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: i-walk-from-home-to-the-library
+    choices:
+      - text: I walk from home to the library.
+        reading: ''
+      - text: I walk from home to school.
+        reading: ''
+      - text: I study from nine.
+        reading: ''
+      - text: I came from Indonesia.
+        reading: ''
+    answers:
+      - I walk from home to the library.
+  - id: expanded-1-typing
+    type: typing
+    sentence: i-walk-from-home-to-the-library
+    explanation:
+      家から図書館まで歩きます。 means “I walk from home to the library.” Write the complete sentence, including the
+      indicated ending.
+    answers:
+      - 家から図書館まで歩きます
+      - いえからとしょかんまであるきます
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: i-walk-from-home-to-the-library
+    prompt: 'Build this sentence: I walk from home to the library. (polite)'
+    explanation:
+      家から図書館まで歩きます。 means “I walk from home to the library.” Keep the particles with their phrases and
+      put the predicate last.
+    answers:
+      - 家から図書館まで歩きます
+      - いえからとしょかんまであるきます
+  - id: expanded-2-meaning
+    type: meaning-choice
+    sentence: i-walk-from-the-station-to-school
+    choices:
+      - text: I walk from the station to school.
+        reading: ''
+      - text: I walk from home to school.
+        reading: ''
+      - text: I study from nine.
+        reading: ''
+      - text: I came from Indonesia.
+        reading: ''
+    answers:
+      - I walk from the station to school.
+  - id: expanded-2-typing
+    type: typing
+    sentence: i-walk-from-the-station-to-school
+    explanation:
+      駅から学校まで歩きます。 means “I walk from the station to school.” Write the complete sentence, including
+      the indicated ending.
+    answers:
+      - 駅から学校まで歩きます
+      - えきからがっこうまであるきます
+  - id: expanded-2-tiles
+    type: tiles
+    sentence: i-walk-from-the-station-to-school
+    prompt: 'Build this sentence: I walk from the station to school. (polite)'
+    explanation:
+      駅から学校まで歩きます。 means “I walk from the station to school.” Keep the particles with their phrases and
+      put the predicate last.
+    answers:
+      - 駅から学校まで歩きます
+      - えきからがっこうまであるきます
+  - id: expanded-3-meaning
+    type: meaning-choice
+    sentence: i-study-from-ten
+    choices:
+      - text: I study from ten.
+        reading: ''
+      - text: I walk from home to school.
+        reading: ''
+      - text: I study from nine.
+        reading: ''
+      - text: I came from Indonesia.
+        reading: ''
+    answers:
+      - I study from ten.
+  - id: expanded-3-typing
+    type: typing
+    sentence: i-study-from-ten
+    explanation: 十時から勉強します。 means “I study from ten.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 十時から勉強します
+      - じゅうじからべんきょうします
+  - id: expanded-3-tiles
+    type: tiles
+    sentence: i-study-from-ten
+    prompt: 'Build this sentence: I study from ten. (polite)'
+    explanation: 十時から勉強します。 means “I study from ten.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 十時から勉強します
+      - じゅうじからべんきょうします
+  - id: expanded-4-meaning
+    type: meaning-choice
+    sentence: i-came-from-japan
+    choices:
+      - text: I came from Japan.
+        reading: ''
+      - text: I walk from home to school.
+        reading: ''
+      - text: I study from nine.
+        reading: ''
+      - text: I came from Indonesia.
+        reading: ''
+    answers:
+      - I came from Japan.
+  - id: expanded-4-typing
+    type: typing
+    sentence: i-came-from-japan
+    explanation: 日本から来ました。 means “I came from Japan.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 日本から来ました
+      - にほんからきました
+  - id: expanded-4-tiles
+    type: tiles
+    sentence: i-came-from-japan
+    prompt: 'Build this sentence: I came from Japan. (polite)'
+    explanation: 日本から来ました。 means “I came from Japan.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 日本から来ました
+      - にほんからきました
+  - id: expanded-5-meaning
+    type: meaning-choice
+    sentence: i-work-from-seven-until-five
+    choices:
+      - text: I work from seven until five.
+        reading: ''
+      - text: I walk from home to school.
+        reading: ''
+      - text: I study from nine.
+        reading: ''
+      - text: I came from Indonesia.
+        reading: ''
+    answers:
+      - I work from seven until five.
+  - id: expanded-5-typing
+    type: typing
+    sentence: i-work-from-seven-until-five
+    explanation:
+      七時から五時まで働きます。 means “I work from seven until five.” Write the complete sentence, including the
+      indicated ending.
+    answers:
+      - 七時から五時まで働きます
+      - しちじからごじまではたらきます
+  - id: expanded-5-tiles
+    type: tiles
+    sentence: i-work-from-seven-until-five
+    prompt: 'Build this sentence: I work from seven until five. (polite)'
+    explanation:
+      七時から五時まで働きます。 means “I work from seven until five.” Keep the particles with their phrases and put
+      the predicate last.
+    answers:
+      - 七時から五時まで働きます
+      - しちじからごじまではたらきます
+  - id: expanded-6-meaning
+    type: meaning-choice
+    sentence: i-work-from-eight-until-six
+    choices:
+      - text: I work from eight until six.
+        reading: ''
+      - text: I walk from home to school.
+        reading: ''
+      - text: I study from nine.
+        reading: ''
+      - text: I came from Indonesia.
+        reading: ''
+    answers:
+      - I work from eight until six.
+  - id: expanded-6-typing
+    type: typing
+    sentence: i-work-from-eight-until-six
+    explanation:
+      八時から六時まで働きます。 means “I work from eight until six.” Write the complete sentence, including the
+      indicated ending.
+    answers:
+      - 八時から六時まで働きます
+      - はちじからろくじまではたらきます
+  - id: expanded-6-tiles
+    type: tiles
+    sentence: i-work-from-eight-until-six
+    prompt: 'Build this sentence: I work from eight until six. (polite)'
+    explanation:
+      八時から六時まで働きます。 means “I work from eight until six.” Keep the particles with their phrases and put
+      the predicate last.
+    answers:
+      - 八時から六時まで働きます
+      - はちじからろくじまではたらきます
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: i-walk-from-home-to-the-library
+    choices:
+      - sentence: i-walk-from-home-to-the-library
+      - text: 家から学校まで歩きます。
+        reading: いえからがっこうまであるきます。
+        tokens:
+          - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+          - { role: particle, text: から, reading: から, wordClass: particle }
+          - { role: modifier, text: 学校, reading: がっこう, wordClass: noun phrase }
+          - { role: particle, text: まで, reading: まで, wordClass: particle }
+          - { role: predicate, text: 歩きます, reading: あるきます, wordClass: predicate }
+      - text: 九時から勉強します。
+        reading: くじからべんきょうします。
+        tokens:
+          - { role: modifier, text: 九時, reading: くじ, wordClass: noun phrase }
+          - { role: particle, text: から, reading: から, wordClass: particle }
+          - { role: predicate, text: 勉強します, reading: べんきょうします, wordClass: predicate }
+      - text: インドネシアから来ました。
+        reading: いんどねしあからきました。
+        tokens:
+          - { role: modifier, text: インドネシア, reading: いんどねしあ, wordClass: noun phrase }
+          - { role: particle, text: から, reading: から, wordClass: particle }
+          - { role: predicate, text: 来ました, reading: きました, wordClass: predicate }
+    prompt: 'Choose the Japanese: I walk from home to the library. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation:
+      Choose 家から図書館まで歩きます。 for “I walk from home to the library.” The other sentences describe
+      different situations.
+    answers:
+      - 家から図書館まで歩きます
+      - いえからとしょかんまであるきます
+  - id: expanded-1-gap
+    type: gap
+    sentence: i-walk-from-home-to-the-library
+    prompt: 'Fill the missing part: I walk from home to the library. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 歩きます (あるきます). Together, the sentence means “I walk from home to the library.”
+    answers:
+      - 歩きます
+      - あるきます
+    context:
+      meaning: I walk from home to the library.
+      reading: いえからとしょかんまで___。
+      text: 家から図書館まで___。
+  - id: expanded-2-pattern
+    type: pattern-choice
+    sentence: i-walk-from-the-station-to-school
+    choices:
+      - sentence: i-walk-from-the-station-to-school
+      - text: 家から学校まで歩きます。
+        reading: いえからがっこうまであるきます。
+        tokens:
+          - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+          - { role: particle, text: から, reading: から, wordClass: particle }
+          - { role: modifier, text: 学校, reading: がっこう, wordClass: noun phrase }
+          - { role: particle, text: まで, reading: まで, wordClass: particle }
+          - { role: predicate, text: 歩きます, reading: あるきます, wordClass: predicate }
+      - text: 九時から勉強します。
+        reading: くじからべんきょうします。
+        tokens:
+          - { role: modifier, text: 九時, reading: くじ, wordClass: noun phrase }
+          - { role: particle, text: から, reading: から, wordClass: particle }
+          - { role: predicate, text: 勉強します, reading: べんきょうします, wordClass: predicate }
+      - text: インドネシアから来ました。
+        reading: いんどねしあからきました。
+        tokens:
+          - { role: modifier, text: インドネシア, reading: いんどねしあ, wordClass: noun phrase }
+          - { role: particle, text: から, reading: から, wordClass: particle }
+          - { role: predicate, text: 来ました, reading: きました, wordClass: predicate }
+    prompt: 'Choose the Japanese: I walk from the station to school. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation:
+      Choose 駅から学校まで歩きます。 for “I walk from the station to school.” The other sentences describe
+      different situations.
+    answers:
+      - 駅から学校まで歩きます
+      - えきからがっこうまであるきます
+  - id: expanded-2-gap
+    type: gap
+    sentence: i-walk-from-the-station-to-school
+    prompt: 'Fill the missing part: I walk from the station to school. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 歩きます (あるきます). Together, the sentence means “I walk from the station to school.”
+    answers:
+      - 歩きます
+      - あるきます
+    context:
+      meaning: I walk from the station to school.
+      reading: えきからがっこうまで___。
+      text: 駅から学校まで___。
+  - id: expanded-3-pattern
+    type: pattern-choice
+    sentence: i-study-from-ten
+    choices:
+      - sentence: i-study-from-ten
+      - text: 家から学校まで歩きます。
+        reading: いえからがっこうまであるきます。
+        tokens:
+          - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+          - { role: particle, text: から, reading: から, wordClass: particle }
+          - { role: modifier, text: 学校, reading: がっこう, wordClass: noun phrase }
+          - { role: particle, text: まで, reading: まで, wordClass: particle }
+          - { role: predicate, text: 歩きます, reading: あるきます, wordClass: predicate }
+      - text: 九時から勉強します。
+        reading: くじからべんきょうします。
+        tokens:
+          - { role: modifier, text: 九時, reading: くじ, wordClass: noun phrase }
+          - { role: particle, text: から, reading: から, wordClass: particle }
+          - { role: predicate, text: 勉強します, reading: べんきょうします, wordClass: predicate }
+      - text: インドネシアから来ました。
+        reading: いんどねしあからきました。
+        tokens:
+          - { role: modifier, text: インドネシア, reading: いんどねしあ, wordClass: noun phrase }
+          - { role: particle, text: から, reading: から, wordClass: particle }
+          - { role: predicate, text: 来ました, reading: きました, wordClass: predicate }
+    prompt: 'Choose the Japanese: I study from ten. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 十時から勉強します。 for “I study from ten.” The other sentences describe different situations.
+    answers:
+      - 十時から勉強します
+      - じゅうじからべんきょうします
+  - id: expanded-3-gap
+    type: gap
+    sentence: i-study-from-ten
+    prompt: 'Fill the missing part: I study from ten. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 勉強します (べんきょうします). Together, the sentence means “I study from ten.”
+    answers:
+      - 勉強します
+      - べんきょうします
+    context:
+      meaning: I study from ten.
+      reading: じゅうじから___。
+      text: 十時から___。
+  - id: expanded-4-pattern
+    type: pattern-choice
+    sentence: i-came-from-japan
+    choices:
+      - sentence: i-came-from-japan
+      - text: 家から学校まで歩きます。
+        reading: いえからがっこうまであるきます。
+        tokens:
+          - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+          - { role: particle, text: から, reading: から, wordClass: particle }
+          - { role: modifier, text: 学校, reading: がっこう, wordClass: noun phrase }
+          - { role: particle, text: まで, reading: まで, wordClass: particle }
+          - { role: predicate, text: 歩きます, reading: あるきます, wordClass: predicate }
+      - text: 九時から勉強します。
+        reading: くじからべんきょうします。
+        tokens:
+          - { role: modifier, text: 九時, reading: くじ, wordClass: noun phrase }
+          - { role: particle, text: から, reading: から, wordClass: particle }
+          - { role: predicate, text: 勉強します, reading: べんきょうします, wordClass: predicate }
+      - text: インドネシアから来ました。
+        reading: いんどねしあからきました。
+        tokens:
+          - { role: modifier, text: インドネシア, reading: いんどねしあ, wordClass: noun phrase }
+          - { role: particle, text: から, reading: から, wordClass: particle }
+          - { role: predicate, text: 来ました, reading: きました, wordClass: predicate }
+    prompt: 'Choose the Japanese: I came from Japan. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 日本から来ました。 for “I came from Japan.” The other sentences describe different situations.
+    answers:
+      - 日本から来ました
+      - にほんからきました
+  - id: expanded-4-gap
+    type: gap
+    sentence: i-came-from-japan
+    prompt: 'Fill the missing part: I came from Japan. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 来ました (きました). Together, the sentence means “I came from Japan.”
+    answers:
+      - 来ました
+      - きました
+    context:
+      meaning: I came from Japan.
+      reading: にほんから___。
+      text: 日本から___。
+  - id: expanded-5-pattern
+    type: pattern-choice
+    sentence: i-work-from-seven-until-five
+    choices:
+      - sentence: i-work-from-seven-until-five
+      - text: 家から学校まで歩きます。
+        reading: いえからがっこうまであるきます。
+        tokens:
+          - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+          - { role: particle, text: から, reading: から, wordClass: particle }
+          - { role: modifier, text: 学校, reading: がっこう, wordClass: noun phrase }
+          - { role: particle, text: まで, reading: まで, wordClass: particle }
+          - { role: predicate, text: 歩きます, reading: あるきます, wordClass: predicate }
+      - text: 九時から勉強します。
+        reading: くじからべんきょうします。
+        tokens:
+          - { role: modifier, text: 九時, reading: くじ, wordClass: noun phrase }
+          - { role: particle, text: から, reading: から, wordClass: particle }
+          - { role: predicate, text: 勉強します, reading: べんきょうします, wordClass: predicate }
+      - text: インドネシアから来ました。
+        reading: いんどねしあからきました。
+        tokens:
+          - { role: modifier, text: インドネシア, reading: いんどねしあ, wordClass: noun phrase }
+          - { role: particle, text: から, reading: から, wordClass: particle }
+          - { role: predicate, text: 来ました, reading: きました, wordClass: predicate }
+    prompt: 'Choose the Japanese: I work from seven until five. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation:
+      Choose 七時から五時まで働きます。 for “I work from seven until five.” The other sentences describe different
+      situations.
+    answers:
+      - 七時から五時まで働きます
+      - しちじからごじまではたらきます
+  - id: expanded-5-gap
+    type: gap
+    sentence: i-work-from-seven-until-five
+    prompt: 'Fill the missing part: I work from seven until five. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 働きます (はたらきます). Together, the sentence means “I work from seven until five.”
+    answers:
+      - 働きます
+      - はたらきます
+    context:
+      meaning: I work from seven until five.
+      reading: しちじからごじまで___。
+      text: 七時から五時まで___。
+  - id: expanded-6-pattern
+    type: pattern-choice
+    sentence: i-work-from-eight-until-six
+    choices:
+      - sentence: i-work-from-eight-until-six
+      - text: 家から学校まで歩きます。
+        reading: いえからがっこうまであるきます。
+        tokens:
+          - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+          - { role: particle, text: から, reading: から, wordClass: particle }
+          - { role: modifier, text: 学校, reading: がっこう, wordClass: noun phrase }
+          - { role: particle, text: まで, reading: まで, wordClass: particle }
+          - { role: predicate, text: 歩きます, reading: あるきます, wordClass: predicate }
+      - text: 九時から勉強します。
+        reading: くじからべんきょうします。
+        tokens:
+          - { role: modifier, text: 九時, reading: くじ, wordClass: noun phrase }
+          - { role: particle, text: から, reading: から, wordClass: particle }
+          - { role: predicate, text: 勉強します, reading: べんきょうします, wordClass: predicate }
+      - text: インドネシアから来ました。
+        reading: いんどねしあからきました。
+        tokens:
+          - { role: modifier, text: インドネシア, reading: いんどねしあ, wordClass: noun phrase }
+          - { role: particle, text: から, reading: から, wordClass: particle }
+          - { role: predicate, text: 来ました, reading: きました, wordClass: predicate }
+    prompt: 'Choose the Japanese: I work from eight until six. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation:
+      Choose 八時から六時まで働きます。 for “I work from eight until six.” The other sentences describe different
+      situations.
+    answers:
+      - 八時から六時まで働きます
+      - はちじからろくじまではたらきます
+  - id: expanded-6-gap
+    type: gap
+    sentence: i-work-from-eight-until-six
+    prompt: 'Fill the missing part: I work from eight until six. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 働きます (はたらきます). Together, the sentence means “I work from eight until six.”
+    answers:
+      - 働きます
+      - はたらきます
+    context:
+      meaning: I work from eight until six.
+      reading: はちじからろくじまで___。
+      text: 八時から六時まで___。

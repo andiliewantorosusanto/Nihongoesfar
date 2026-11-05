@@ -1,0 +1,1548 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-description-de
+  kind: grammar
+  title: 'Connecting な-adjectives and nouns: 〜で'
+  japanese: この町は静かで便利です。
+  reading: このまちはしずかでべんりです。
+  meaning: This town is quiet and convenient.
+  level: N5
+  topic: Connecting descriptions and actions
+  tags:
+    - Grammar
+    - description-de
+  note:
+    Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending in い.
+    This connecting で differs from the place or means particle で.
+  examples:
+    - japanese: この町は静かで便利です。
+      reading: このまちはしずかでべんりです。
+      meaning: This town is quiet and convenient.
+      tokens:
+        - { text: この, reading: この, role: modifier, wordClass: modifier }
+        - { text: 町, reading: まち, role: topic, wordClass: noun phrase }
+        - { text: は, reading: は, role: particle, wordClass: particle }
+        - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+        - { text: で, reading: で, role: particle, wordClass: particle }
+        - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+      translationTokens:
+        - { text: 'This ', role: modifier }
+        - { text: town, role: topic }
+        - { text: ' is quiet and convenient.', role: predicate }
+    - japanese: この部屋はきれいで静かです。
+      reading: このへやはきれいでしずかです。
+      meaning: This room is clean and quiet.
+      tokens:
+        - { text: この, reading: この, role: modifier, wordClass: modifier }
+        - { text: 部屋, reading: へや, role: topic, wordClass: noun phrase }
+        - { text: は, reading: は, role: particle, wordClass: particle }
+        - { text: きれい, reading: きれい, role: predicate, wordClass: predicate }
+        - { text: で, reading: で, role: particle, wordClass: particle }
+        - { text: 静かです, reading: しずかです, role: predicate, wordClass: predicate }
+      translationTokens:
+        - { text: 'This ', role: modifier }
+        - { text: room, role: topic }
+        - { text: ' is clean and quiet.', role: predicate }
+    - japanese: 田中さんは先生で親切です。
+      reading: たなかさんはせんせいでしんせつです。
+      meaning: Tanaka is a teacher and kind.
+      tokens:
+        - { text: 田中さん, reading: たなかさん, role: topic, wordClass: noun phrase }
+        - { text: は, reading: は, role: particle, wordClass: particle }
+        - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+        - { text: で, reading: で, role: particle, wordClass: particle }
+        - { text: 親切です, reading: しんせつです, role: predicate, wordClass: predicate }
+      translationTokens:
+        - { text: Tanaka, role: topic }
+        - { text: ' is a teacher and kind.', role: predicate }
+  lesson:
+    order: 27
+    group: Connecting descriptions and actions
+    goal: Join descriptions using a な-adjective or noun.
+    prerequisites:
+      - grammar-na-adjective
+      - grammar-adjective-kute
+    recap:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending in い.
+      This connecting で differs from the place or means particle で.
+    comparison:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+    examples:
+      - japanese: この町は静かで便利です。
+        reading: このまちはしずかでべんりです。
+        meaning: This town is quiet and convenient.
+        tokens:
+          - { text: この, reading: この, role: modifier, wordClass: modifier }
+          - { text: 町, reading: まち, role: topic, wordClass: noun phrase }
+          - { text: は, reading: は, role: particle, wordClass: particle }
+          - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+          - { text: で, reading: で, role: particle, wordClass: particle }
+          - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+        translationTokens:
+          - { text: 'This ', role: modifier }
+          - { text: town, role: topic }
+          - { text: ' is quiet and convenient.', role: predicate }
+      - japanese: この部屋はきれいで静かです。
+        reading: このへやはきれいでしずかです。
+        meaning: This room is clean and quiet.
+        tokens:
+          - { text: この, reading: この, role: modifier, wordClass: modifier }
+          - { text: 部屋, reading: へや, role: topic, wordClass: noun phrase }
+          - { text: は, reading: は, role: particle, wordClass: particle }
+          - { text: きれい, reading: きれい, role: predicate, wordClass: predicate }
+          - { text: で, reading: で, role: particle, wordClass: particle }
+          - { text: 静かです, reading: しずかです, role: predicate, wordClass: predicate }
+        translationTokens:
+          - { text: 'This ', role: modifier }
+          - { text: room, role: topic }
+          - { text: ' is clean and quiet.', role: predicate }
+      - japanese: 田中さんは先生で親切です。
+        reading: たなかさんはせんせいでしんせつです。
+        meaning: Tanaka is a teacher and kind.
+        tokens:
+          - { text: 田中さん, reading: たなかさん, role: topic, wordClass: noun phrase }
+          - { text: は, reading: は, role: particle, wordClass: particle }
+          - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+          - { text: で, reading: で, role: particle, wordClass: particle }
+          - { text: 親切です, reading: しんせつです, role: predicate, wordClass: predicate }
+        translationTokens:
+          - { text: Tanaka, role: topic }
+          - { text: ' is a teacher and kind.', role: predicate }
+    vocabulary:
+      - text: 町
+        reading: まち
+        role: topic
+        wordClass: noun phrase
+        meaning: town
+      - text: 静か
+        reading: しずか
+        role: predicate
+        wordClass: predicate
+        meaning: quiet
+      - text: 便利
+        reading: べんり
+        role: predicate
+        wordClass: predicate
+        meaning: convenient
+      - text: 部屋
+        reading: へや
+        role: topic
+        wordClass: noun phrase
+        meaning: room
+      - text: きれい
+        reading: きれい
+        role: predicate
+        wordClass: predicate
+        meaning: clean / beautiful
+      - text: 田中さん
+        reading: たなかさん
+        role: topic
+        wordClass: noun phrase
+        meaning: Tanaka (a person's name)
+      - text: 先生
+        reading: せんせい
+        role: predicate
+        wordClass: predicate
+        meaning: teacher
+      - text: 母
+        reading: はは
+        role: topic
+        wordClass: noun phrase
+        meaning: my mother
+sentences:
+  this-town-is-quiet-and-convenient:
+    text: この町は静かで便利です。
+    reading: このまちはしずかでべんりです。
+    meaning: This town is quiet and convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 町, reading: まち, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 町, reading: まち, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: town, role: topic }
+      - { text: ' is quiet and convenient.', role: predicate }
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+  this-room-is-clean-and-quiet:
+    text: この部屋はきれいで静かです。
+    reading: このへやはきれいでしずかです。
+    meaning: This room is clean and quiet.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 部屋, reading: へや, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: きれい, reading: きれい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 部屋, reading: へや, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: きれい, reading: きれい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 静かです, reading: しずかです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: room, role: topic }
+      - { text: ' is clean and quiet.', role: predicate }
+    form: polite
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+  tanaka-is-a-teacher-and-kind:
+    text: 田中さんは先生で親切です。
+    reading: たなかさんはせんせいでしんせつです。
+    meaning: Tanaka is a teacher and kind.
+    tiles:
+      - { text: 田中さん, reading: たなかさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切, reading: しんせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 田中さん, reading: たなかさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切です, reading: しんせつです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Tanaka, role: topic }
+      - { text: ' is a teacher and kind.', role: predicate }
+    form: polite
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+  my-mother-is-a-doctor-and-healthy:
+    text: 母は医者で元気です。
+    reading: はははいしゃでげんきです。
+    meaning: My mother is a doctor and healthy.
+    tiles:
+      - { text: 母, reading: はは, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 医者, reading: いしゃ, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 元気, reading: げんき, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 母, reading: はは, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 医者, reading: いしゃ, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 元気です, reading: げんきです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: My mother, role: topic }
+      - { text: ' is a doctor and healthy.', role: predicate }
+    form: polite
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+  this-village-is-quiet-and-convenient:
+    text: この村は静かで便利です。
+    reading: このむらはしずかでべんりです。
+    meaning: This village is quiet and convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 村, reading: むら, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 村, reading: むら, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: village, role: topic }
+      - { text: ' is quiet and convenient.', role: predicate }
+    form: polite
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+  this-city-is-quiet-and-convenient:
+    text: この都市は静かで便利です。
+    reading: このとしはしずかでべんりです。
+    meaning: This city is quiet and convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 都市, reading: とし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 都市, reading: とし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: city, role: topic }
+      - { text: ' is quiet and convenient.', role: predicate }
+    form: polite
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+  this-area-is-quiet-and-convenient:
+    text: この地域は静かで便利です。
+    reading: このちいきはしずかでべんりです。
+    meaning: This area is quiet and convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 地域, reading: ちいき, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 地域, reading: ちいき, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: area, role: topic }
+      - { text: ' is quiet and convenient.', role: predicate }
+    form: polite
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+  this-district-is-quiet-and-convenient:
+    text: この地区は静かで便利です。
+    reading: このちくはしずかでべんりです。
+    meaning: This district is quiet and convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 地区, reading: ちく, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 地区, reading: ちく, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: district, role: topic }
+      - { text: ' is quiet and convenient.', role: predicate }
+    form: polite
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+  this-island-is-quiet-and-convenient:
+    text: この島は静かで便利です。
+    reading: このしまはしずかでべんりです。
+    meaning: This island is quiet and convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 島, reading: しま, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 島, reading: しま, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: island, role: topic }
+      - { text: ' is quiet and convenient.', role: predicate }
+    form: polite
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+  this-neighborhood-is-quiet-and-convenient:
+    text: この近所は静かで便利です。
+    reading: このきんじょはしずかでべんりです。
+    meaning: This neighborhood is quiet and convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 近所, reading: きんじょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 近所, reading: きんじょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: neighborhood, role: topic }
+      - { text: ' is quiet and convenient.', role: predicate }
+    form: polite
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+  this-place-is-quiet-and-convenient:
+    text: この場所は静かで便利です。
+    reading: このばしょはしずかでべんりです。
+    meaning: This place is quiet and convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 場所, reading: ばしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 場所, reading: ばしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: place, role: topic }
+      - { text: ' is quiet and convenient.', role: predicate }
+    form: polite
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+  this-residential-area-is-quiet-and-convenient:
+    text: この住宅街は静かで便利です。
+    reading: このじゅうたくがいはしずかでべんりです。
+    meaning: This residential area is quiet and convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 住宅街, reading: じゅうたくがい, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 住宅街, reading: じゅうたくがい, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: residential area, role: topic }
+      - { text: ' is quiet and convenient.', role: predicate }
+    form: polite
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+  this-shopping-street-is-quiet-and-convenient:
+    text: この商店街は静かで便利です。
+    reading: このしょうてんがいはしずかでべんりです。
+    meaning: This shopping street is quiet and convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 商店街, reading: しょうてんがい, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 商店街, reading: しょうてんがい, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: shopping street, role: topic }
+      - { text: ' is quiet and convenient.', role: predicate }
+    form: polite
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+  this-countryside-is-quiet-and-convenient:
+    text: この田舎は静かで便利です。
+    reading: このいなかはしずかでべんりです。
+    meaning: This countryside is quiet and convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 田舎, reading: いなか, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 田舎, reading: いなか, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: countryside, role: topic }
+      - { text: ' is quiet and convenient.', role: predicate }
+    form: polite
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+  yamada-is-a-teacher-and-kind:
+    text: 山田さんは先生で親切です。
+    reading: やまださんはせんせいでしんせつです。
+    meaning: Yamada is a teacher and kind.
+    tiles:
+      - { text: 山田さん, reading: やまださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切, reading: しんせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 山田さん, reading: やまださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切です, reading: しんせつです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Yamada, role: topic }
+      - { text: ' is a teacher and kind.', role: predicate }
+    form: polite
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+  sato-is-a-teacher-and-kind:
+    text: 佐藤さんは先生で親切です。
+    reading: さとうさんはせんせいでしんせつです。
+    meaning: Sato is a teacher and kind.
+    tiles:
+      - { text: 佐藤さん, reading: さとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切, reading: しんせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 佐藤さん, reading: さとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切です, reading: しんせつです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Sato, role: topic }
+      - { text: ' is a teacher and kind.', role: predicate }
+    form: polite
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+  suzuki-is-a-teacher-and-kind:
+    text: 鈴木さんは先生で親切です。
+    reading: すずきさんはせんせいでしんせつです。
+    meaning: Suzuki is a teacher and kind.
+    tiles:
+      - { text: 鈴木さん, reading: すずきさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切, reading: しんせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 鈴木さん, reading: すずきさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切です, reading: しんせつです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Suzuki, role: topic }
+      - { text: ' is a teacher and kind.', role: predicate }
+    form: polite
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+  takahashi-is-a-teacher-and-kind:
+    text: 高橋さんは先生で親切です。
+    reading: たかはしさんはせんせいでしんせつです。
+    meaning: Takahashi is a teacher and kind.
+    tiles:
+      - { text: 高橋さん, reading: たかはしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切, reading: しんせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 高橋さん, reading: たかはしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切です, reading: しんせつです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Takahashi, role: topic }
+      - { text: ' is a teacher and kind.', role: predicate }
+    form: polite
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+  ito-is-a-teacher-and-kind:
+    text: 伊藤さんは先生で親切です。
+    reading: いとうさんはせんせいでしんせつです。
+    meaning: Ito is a teacher and kind.
+    tiles:
+      - { text: 伊藤さん, reading: いとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切, reading: しんせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 伊藤さん, reading: いとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切です, reading: しんせつです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Ito, role: topic }
+      - { text: ' is a teacher and kind.', role: predicate }
+    form: polite
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+  nakamura-is-a-teacher-and-kind:
+    text: 中村さんは先生で親切です。
+    reading: なかむらさんはせんせいでしんせつです。
+    meaning: Nakamura is a teacher and kind.
+    tiles:
+      - { text: 中村さん, reading: なかむらさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切, reading: しんせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 中村さん, reading: なかむらさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切です, reading: しんせつです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Nakamura, role: topic }
+      - { text: ' is a teacher and kind.', role: predicate }
+    form: polite
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+  kobayashi-is-a-teacher-and-kind:
+    text: 小林さんは先生で親切です。
+    reading: こばやしさんはせんせいでしんせつです。
+    meaning: Kobayashi is a teacher and kind.
+    tiles:
+      - { text: 小林さん, reading: こばやしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切, reading: しんせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 小林さん, reading: こばやしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切です, reading: しんせつです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Kobayashi, role: topic }
+      - { text: ' is a teacher and kind.', role: predicate }
+    form: polite
+    hint: Connect the first description with で.
+    explanation:
+      Use the な-adjective stem + で, or noun + で, before the next description. きれい uses で despite ending
+      in い. This connecting で differs from the place or means particle で.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: this-town-is-quiet-and-convenient
+    choices:
+      - text: This town is quiet and convenient.
+        reading: ''
+      - text: This town is quiet but inconvenient.
+        reading: ''
+    answers:
+      - This town is quiet and convenient.
+  - id: pattern
+    type: pattern-choice
+    sentence: this-town-is-quiet-and-convenient
+    choices:
+      - sentence: this-town-is-quiet-and-convenient
+      - text: この町は静かくて便利です。
+        reading: このまちはしずかくてべんりです。
+        meaning: This town is quiet but inconvenient.
+        tiles:
+          - { text: この, reading: この, role: modifier, wordClass: modifier }
+          - { text: 町, reading: まち, role: topic, wordClass: noun phrase }
+          - { text: は, reading: は, role: particle, wordClass: particle }
+          - { text: 静かくて, reading: しずかくて, role: predicate, wordClass: predicate }
+          - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+          - { text: です, reading: です, role: predicate, wordClass: predicate }
+        tokens:
+          - { text: この, reading: この, role: modifier, wordClass: modifier }
+          - { text: 町, reading: まち, role: topic, wordClass: noun phrase }
+          - { text: は, reading: は, role: particle, wordClass: particle }
+          - {
+              text: 静かくて便利です,
+              reading: しずかくてべんりです,
+              role: predicate,
+              wordClass: predicate,
+            }
+    prompt: 'Choose the correct Japanese: This town is quiet and convenient.'
+    answers:
+      - この町は静かで便利です
+      - この町は静かでべんりです
+      - この町はしずかで便利です
+      - この町はしずかでべんりです
+      - このまちは静かで便利です
+      - このまちは静かでべんりです
+      - このまちはしずかで便利です
+      - このまちはしずかでべんりです
+  - id: gap
+    type: gap
+    sentence: this-room-is-clean-and-quiet
+    answers:
+      - で
+      - で
+    context:
+      tokens:
+        - { text: この, reading: この, role: modifier, wordClass: modifier }
+        - { text: 部屋, reading: へや, role: topic, wordClass: noun phrase }
+        - { text: は, reading: は, role: particle, wordClass: particle }
+        - { text: きれい, reading: きれい, role: predicate, wordClass: predicate }
+        - { text: ___, reading: ___, role: particle, wordClass: particle }
+        - { text: 静かです, reading: しずかです, role: predicate, wordClass: predicate }
+      text: この部屋はきれい___静かです。
+      reading: このへやはきれい___しずかです。
+  - id: tiles
+    type: tiles
+    sentence: this-room-is-clean-and-quiet
+    prompt: 'Build this sentence: This room is clean and quiet. (polite)'
+    answers:
+      - この部屋はきれいで静かです
+      - この部屋はきれいでしずかです
+      - このへやはきれいで静かです
+      - このへやはきれいでしずかです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 部屋, reading: へや, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: きれい, reading: きれい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: tanaka-is-a-teacher-and-kind
+    answers:
+      - 田中さんは先生で親切です
+      - 田中さんは先生でしんせつです
+      - 田中さんはせんせいで親切です
+      - 田中さんはせんせいでしんせつです
+      - たなかさんは先生で親切です
+      - たなかさんは先生でしんせつです
+      - たなかさんはせんせいで親切です
+      - たなかさんはせんせいでしんせつです
+  - id: alternate
+    type: typing
+    sentence: my-mother-is-a-doctor-and-healthy
+    alternate: true
+    prompt: 'One more example: My mother is a doctor and healthy. (polite)'
+    answers:
+      - 母は医者で元気です
+      - 母は医者でげんきです
+      - 母はいしゃで元気です
+      - 母はいしゃでげんきです
+      - ははは医者で元気です
+      - ははは医者でげんきです
+      - はははいしゃで元気です
+      - はははいしゃでげんきです
+  - id: extra-1-tiles
+    type: tiles
+    sentence: this-village-is-quiet-and-convenient
+    prompt: 'Build this sentence: This village is quiet and convenient. (polite)'
+    answers:
+      - この村は静かで便利です
+      - この村は静かでべんりです
+      - この村はしずかで便利です
+      - この村はしずかでべんりです
+      - このむらは静かで便利です
+      - このむらは静かでべんりです
+      - このむらはしずかで便利です
+      - このむらはしずかでべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 村, reading: むら, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: this-village-is-quiet-and-convenient
+    answers:
+      - この村は静かで便利です
+      - この村は静かでべんりです
+      - この村はしずかで便利です
+      - この村はしずかでべんりです
+      - このむらは静かで便利です
+      - このむらは静かでべんりです
+      - このむらはしずかで便利です
+      - このむらはしずかでべんりです
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: this-village-is-quiet-and-convenient
+    choices:
+      - text: This village is quiet and convenient.
+        reading: ''
+      - text: This town is quiet and convenient.
+        reading: ''
+    prompt: 'Choose the meaning: この村は静かで便利です。'
+    answers:
+      - This village is quiet and convenient.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: this-city-is-quiet-and-convenient
+    prompt: 'Build this sentence: This city is quiet and convenient. (polite)'
+    answers:
+      - この都市は静かで便利です
+      - この都市は静かでべんりです
+      - この都市はしずかで便利です
+      - この都市はしずかでべんりです
+      - このとしは静かで便利です
+      - このとしは静かでべんりです
+      - このとしはしずかで便利です
+      - このとしはしずかでべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 都市, reading: とし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: this-city-is-quiet-and-convenient
+    answers:
+      - この都市は静かで便利です
+      - この都市は静かでべんりです
+      - この都市はしずかで便利です
+      - この都市はしずかでべんりです
+      - このとしは静かで便利です
+      - このとしは静かでべんりです
+      - このとしはしずかで便利です
+      - このとしはしずかでべんりです
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: this-city-is-quiet-and-convenient
+    choices:
+      - text: This city is quiet and convenient.
+        reading: ''
+      - text: This town is quiet and convenient.
+        reading: ''
+    prompt: 'Choose the meaning: この都市は静かで便利です。'
+    answers:
+      - This city is quiet and convenient.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: this-area-is-quiet-and-convenient
+    prompt: 'Build this sentence: This area is quiet and convenient. (polite)'
+    answers:
+      - この地域は静かで便利です
+      - この地域は静かでべんりです
+      - この地域はしずかで便利です
+      - この地域はしずかでべんりです
+      - このちいきは静かで便利です
+      - このちいきは静かでべんりです
+      - このちいきはしずかで便利です
+      - このちいきはしずかでべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 地域, reading: ちいき, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: this-area-is-quiet-and-convenient
+    answers:
+      - この地域は静かで便利です
+      - この地域は静かでべんりです
+      - この地域はしずかで便利です
+      - この地域はしずかでべんりです
+      - このちいきは静かで便利です
+      - このちいきは静かでべんりです
+      - このちいきはしずかで便利です
+      - このちいきはしずかでべんりです
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: this-area-is-quiet-and-convenient
+    choices:
+      - text: This area is quiet and convenient.
+        reading: ''
+      - text: This town is quiet and convenient.
+        reading: ''
+    prompt: 'Choose the meaning: この地域は静かで便利です。'
+    answers:
+      - This area is quiet and convenient.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: this-district-is-quiet-and-convenient
+    prompt: 'Build this sentence: This district is quiet and convenient. (polite)'
+    answers:
+      - この地区は静かで便利です
+      - この地区は静かでべんりです
+      - この地区はしずかで便利です
+      - この地区はしずかでべんりです
+      - このちくは静かで便利です
+      - このちくは静かでべんりです
+      - このちくはしずかで便利です
+      - このちくはしずかでべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 地区, reading: ちく, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: this-district-is-quiet-and-convenient
+    answers:
+      - この地区は静かで便利です
+      - この地区は静かでべんりです
+      - この地区はしずかで便利です
+      - この地区はしずかでべんりです
+      - このちくは静かで便利です
+      - このちくは静かでべんりです
+      - このちくはしずかで便利です
+      - このちくはしずかでべんりです
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: this-district-is-quiet-and-convenient
+    choices:
+      - text: This district is quiet and convenient.
+        reading: ''
+      - text: This town is quiet and convenient.
+        reading: ''
+    prompt: 'Choose the meaning: この地区は静かで便利です。'
+    answers:
+      - This district is quiet and convenient.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: this-island-is-quiet-and-convenient
+    prompt: 'Build this sentence: This island is quiet and convenient. (polite)'
+    answers:
+      - この島は静かで便利です
+      - この島は静かでべんりです
+      - この島はしずかで便利です
+      - この島はしずかでべんりです
+      - このしまは静かで便利です
+      - このしまは静かでべんりです
+      - このしまはしずかで便利です
+      - このしまはしずかでべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 島, reading: しま, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: this-island-is-quiet-and-convenient
+    answers:
+      - この島は静かで便利です
+      - この島は静かでべんりです
+      - この島はしずかで便利です
+      - この島はしずかでべんりです
+      - このしまは静かで便利です
+      - このしまは静かでべんりです
+      - このしまはしずかで便利です
+      - このしまはしずかでべんりです
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: this-island-is-quiet-and-convenient
+    choices:
+      - text: This island is quiet and convenient.
+        reading: ''
+      - text: This town is quiet and convenient.
+        reading: ''
+    prompt: 'Choose the meaning: この島は静かで便利です。'
+    answers:
+      - This island is quiet and convenient.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: this-neighborhood-is-quiet-and-convenient
+    prompt: 'Build this sentence: This neighborhood is quiet and convenient. (polite)'
+    answers:
+      - この近所は静かで便利です
+      - この近所は静かでべんりです
+      - この近所はしずかで便利です
+      - この近所はしずかでべんりです
+      - このきんじょは静かで便利です
+      - このきんじょは静かでべんりです
+      - このきんじょはしずかで便利です
+      - このきんじょはしずかでべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 近所, reading: きんじょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: this-neighborhood-is-quiet-and-convenient
+    answers:
+      - この近所は静かで便利です
+      - この近所は静かでべんりです
+      - この近所はしずかで便利です
+      - この近所はしずかでべんりです
+      - このきんじょは静かで便利です
+      - このきんじょは静かでべんりです
+      - このきんじょはしずかで便利です
+      - このきんじょはしずかでべんりです
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: this-neighborhood-is-quiet-and-convenient
+    choices:
+      - text: This neighborhood is quiet and convenient.
+        reading: ''
+      - text: This town is quiet and convenient.
+        reading: ''
+    prompt: 'Choose the meaning: この近所は静かで便利です。'
+    answers:
+      - This neighborhood is quiet and convenient.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: this-place-is-quiet-and-convenient
+    prompt: 'Build this sentence: This place is quiet and convenient. (polite)'
+    answers:
+      - この場所は静かで便利です
+      - この場所は静かでべんりです
+      - この場所はしずかで便利です
+      - この場所はしずかでべんりです
+      - このばしょは静かで便利です
+      - このばしょは静かでべんりです
+      - このばしょはしずかで便利です
+      - このばしょはしずかでべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 場所, reading: ばしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: this-place-is-quiet-and-convenient
+    answers:
+      - この場所は静かで便利です
+      - この場所は静かでべんりです
+      - この場所はしずかで便利です
+      - この場所はしずかでべんりです
+      - このばしょは静かで便利です
+      - このばしょは静かでべんりです
+      - このばしょはしずかで便利です
+      - このばしょはしずかでべんりです
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: this-place-is-quiet-and-convenient
+    choices:
+      - text: This place is quiet and convenient.
+        reading: ''
+      - text: This town is quiet and convenient.
+        reading: ''
+    prompt: 'Choose the meaning: この場所は静かで便利です。'
+    answers:
+      - This place is quiet and convenient.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: this-residential-area-is-quiet-and-convenient
+    prompt: 'Build this sentence: This residential area is quiet and convenient. (polite)'
+    answers:
+      - この住宅街は静かで便利です
+      - この住宅街は静かでべんりです
+      - この住宅街はしずかで便利です
+      - この住宅街はしずかでべんりです
+      - このじゅうたくがいは静かで便利です
+      - このじゅうたくがいは静かでべんりです
+      - このじゅうたくがいはしずかで便利です
+      - このじゅうたくがいはしずかでべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 住宅街, reading: じゅうたくがい, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: this-residential-area-is-quiet-and-convenient
+    answers:
+      - この住宅街は静かで便利です
+      - この住宅街は静かでべんりです
+      - この住宅街はしずかで便利です
+      - この住宅街はしずかでべんりです
+      - このじゅうたくがいは静かで便利です
+      - このじゅうたくがいは静かでべんりです
+      - このじゅうたくがいはしずかで便利です
+      - このじゅうたくがいはしずかでべんりです
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: this-residential-area-is-quiet-and-convenient
+    choices:
+      - text: This residential area is quiet and convenient.
+        reading: ''
+      - text: This town is quiet and convenient.
+        reading: ''
+    prompt: 'Choose the meaning: この住宅街は静かで便利です。'
+    answers:
+      - This residential area is quiet and convenient.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: this-shopping-street-is-quiet-and-convenient
+    prompt: 'Build this sentence: This shopping street is quiet and convenient. (polite)'
+    answers:
+      - この商店街は静かで便利です
+      - この商店街は静かでべんりです
+      - この商店街はしずかで便利です
+      - この商店街はしずかでべんりです
+      - このしょうてんがいは静かで便利です
+      - このしょうてんがいは静かでべんりです
+      - このしょうてんがいはしずかで便利です
+      - このしょうてんがいはしずかでべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 商店街, reading: しょうてんがい, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: this-shopping-street-is-quiet-and-convenient
+    answers:
+      - この商店街は静かで便利です
+      - この商店街は静かでべんりです
+      - この商店街はしずかで便利です
+      - この商店街はしずかでべんりです
+      - このしょうてんがいは静かで便利です
+      - このしょうてんがいは静かでべんりです
+      - このしょうてんがいはしずかで便利です
+      - このしょうてんがいはしずかでべんりです
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: this-shopping-street-is-quiet-and-convenient
+    choices:
+      - text: This shopping street is quiet and convenient.
+        reading: ''
+      - text: This town is quiet and convenient.
+        reading: ''
+    prompt: 'Choose the meaning: この商店街は静かで便利です。'
+    answers:
+      - This shopping street is quiet and convenient.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: this-countryside-is-quiet-and-convenient
+    prompt: 'Build this sentence: This countryside is quiet and convenient. (polite)'
+    answers:
+      - この田舎は静かで便利です
+      - この田舎は静かでべんりです
+      - この田舎はしずかで便利です
+      - この田舎はしずかでべんりです
+      - このいなかは静かで便利です
+      - このいなかは静かでべんりです
+      - このいなかはしずかで便利です
+      - このいなかはしずかでべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 田舎, reading: いなか, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 静か, reading: しずか, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: this-countryside-is-quiet-and-convenient
+    answers:
+      - この田舎は静かで便利です
+      - この田舎は静かでべんりです
+      - この田舎はしずかで便利です
+      - この田舎はしずかでべんりです
+      - このいなかは静かで便利です
+      - このいなかは静かでべんりです
+      - このいなかはしずかで便利です
+      - このいなかはしずかでべんりです
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: this-countryside-is-quiet-and-convenient
+    choices:
+      - text: This countryside is quiet and convenient.
+        reading: ''
+      - text: This town is quiet and convenient.
+        reading: ''
+    prompt: 'Choose the meaning: この田舎は静かで便利です。'
+    answers:
+      - This countryside is quiet and convenient.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: yamada-is-a-teacher-and-kind
+    prompt: 'Build this sentence: Yamada is a teacher and kind. (polite)'
+    answers:
+      - 山田さんは先生で親切です
+      - 山田さんは先生でしんせつです
+      - 山田さんはせんせいで親切です
+      - 山田さんはせんせいでしんせつです
+      - やまださんは先生で親切です
+      - やまださんは先生でしんせつです
+      - やまださんはせんせいで親切です
+      - やまださんはせんせいでしんせつです
+    tiles:
+      - { text: 山田さん, reading: やまださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切, reading: しんせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: yamada-is-a-teacher-and-kind
+    answers:
+      - 山田さんは先生で親切です
+      - 山田さんは先生でしんせつです
+      - 山田さんはせんせいで親切です
+      - 山田さんはせんせいでしんせつです
+      - やまださんは先生で親切です
+      - やまださんは先生でしんせつです
+      - やまださんはせんせいで親切です
+      - やまださんはせんせいでしんせつです
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: yamada-is-a-teacher-and-kind
+    choices:
+      - text: Yamada is a teacher and kind.
+        reading: ''
+      - text: This town is quiet and convenient.
+        reading: ''
+    prompt: 'Choose the meaning: 山田さんは先生で親切です。'
+    answers:
+      - Yamada is a teacher and kind.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: sato-is-a-teacher-and-kind
+    prompt: 'Build this sentence: Sato is a teacher and kind. (polite)'
+    answers:
+      - 佐藤さんは先生で親切です
+      - 佐藤さんは先生でしんせつです
+      - 佐藤さんはせんせいで親切です
+      - 佐藤さんはせんせいでしんせつです
+      - さとうさんは先生で親切です
+      - さとうさんは先生でしんせつです
+      - さとうさんはせんせいで親切です
+      - さとうさんはせんせいでしんせつです
+    tiles:
+      - { text: 佐藤さん, reading: さとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切, reading: しんせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: sato-is-a-teacher-and-kind
+    answers:
+      - 佐藤さんは先生で親切です
+      - 佐藤さんは先生でしんせつです
+      - 佐藤さんはせんせいで親切です
+      - 佐藤さんはせんせいでしんせつです
+      - さとうさんは先生で親切です
+      - さとうさんは先生でしんせつです
+      - さとうさんはせんせいで親切です
+      - さとうさんはせんせいでしんせつです
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: sato-is-a-teacher-and-kind
+    choices:
+      - text: Sato is a teacher and kind.
+        reading: ''
+      - text: This town is quiet and convenient.
+        reading: ''
+    prompt: 'Choose the meaning: 佐藤さんは先生で親切です。'
+    answers:
+      - Sato is a teacher and kind.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: suzuki-is-a-teacher-and-kind
+    prompt: 'Build this sentence: Suzuki is a teacher and kind. (polite)'
+    answers:
+      - 鈴木さんは先生で親切です
+      - 鈴木さんは先生でしんせつです
+      - 鈴木さんはせんせいで親切です
+      - 鈴木さんはせんせいでしんせつです
+      - すずきさんは先生で親切です
+      - すずきさんは先生でしんせつです
+      - すずきさんはせんせいで親切です
+      - すずきさんはせんせいでしんせつです
+    tiles:
+      - { text: 鈴木さん, reading: すずきさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切, reading: しんせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: suzuki-is-a-teacher-and-kind
+    answers:
+      - 鈴木さんは先生で親切です
+      - 鈴木さんは先生でしんせつです
+      - 鈴木さんはせんせいで親切です
+      - 鈴木さんはせんせいでしんせつです
+      - すずきさんは先生で親切です
+      - すずきさんは先生でしんせつです
+      - すずきさんはせんせいで親切です
+      - すずきさんはせんせいでしんせつです
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: suzuki-is-a-teacher-and-kind
+    choices:
+      - text: Suzuki is a teacher and kind.
+        reading: ''
+      - text: This town is quiet and convenient.
+        reading: ''
+    prompt: 'Choose the meaning: 鈴木さんは先生で親切です。'
+    answers:
+      - Suzuki is a teacher and kind.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: takahashi-is-a-teacher-and-kind
+    prompt: 'Build this sentence: Takahashi is a teacher and kind. (polite)'
+    answers:
+      - 高橋さんは先生で親切です
+      - 高橋さんは先生でしんせつです
+      - 高橋さんはせんせいで親切です
+      - 高橋さんはせんせいでしんせつです
+      - たかはしさんは先生で親切です
+      - たかはしさんは先生でしんせつです
+      - たかはしさんはせんせいで親切です
+      - たかはしさんはせんせいでしんせつです
+    tiles:
+      - { text: 高橋さん, reading: たかはしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切, reading: しんせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: takahashi-is-a-teacher-and-kind
+    answers:
+      - 高橋さんは先生で親切です
+      - 高橋さんは先生でしんせつです
+      - 高橋さんはせんせいで親切です
+      - 高橋さんはせんせいでしんせつです
+      - たかはしさんは先生で親切です
+      - たかはしさんは先生でしんせつです
+      - たかはしさんはせんせいで親切です
+      - たかはしさんはせんせいでしんせつです
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: takahashi-is-a-teacher-and-kind
+    choices:
+      - text: Takahashi is a teacher and kind.
+        reading: ''
+      - text: This town is quiet and convenient.
+        reading: ''
+    prompt: 'Choose the meaning: 高橋さんは先生で親切です。'
+    answers:
+      - Takahashi is a teacher and kind.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: ito-is-a-teacher-and-kind
+    prompt: 'Build this sentence: Ito is a teacher and kind. (polite)'
+    answers:
+      - 伊藤さんは先生で親切です
+      - 伊藤さんは先生でしんせつです
+      - 伊藤さんはせんせいで親切です
+      - 伊藤さんはせんせいでしんせつです
+      - いとうさんは先生で親切です
+      - いとうさんは先生でしんせつです
+      - いとうさんはせんせいで親切です
+      - いとうさんはせんせいでしんせつです
+    tiles:
+      - { text: 伊藤さん, reading: いとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切, reading: しんせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: ito-is-a-teacher-and-kind
+    answers:
+      - 伊藤さんは先生で親切です
+      - 伊藤さんは先生でしんせつです
+      - 伊藤さんはせんせいで親切です
+      - 伊藤さんはせんせいでしんせつです
+      - いとうさんは先生で親切です
+      - いとうさんは先生でしんせつです
+      - いとうさんはせんせいで親切です
+      - いとうさんはせんせいでしんせつです
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: ito-is-a-teacher-and-kind
+    choices:
+      - text: Ito is a teacher and kind.
+        reading: ''
+      - text: This town is quiet and convenient.
+        reading: ''
+    prompt: 'Choose the meaning: 伊藤さんは先生で親切です。'
+    answers:
+      - Ito is a teacher and kind.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: nakamura-is-a-teacher-and-kind
+    prompt: 'Build this sentence: Nakamura is a teacher and kind. (polite)'
+    answers:
+      - 中村さんは先生で親切です
+      - 中村さんは先生でしんせつです
+      - 中村さんはせんせいで親切です
+      - 中村さんはせんせいでしんせつです
+      - なかむらさんは先生で親切です
+      - なかむらさんは先生でしんせつです
+      - なかむらさんはせんせいで親切です
+      - なかむらさんはせんせいでしんせつです
+    tiles:
+      - { text: 中村さん, reading: なかむらさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切, reading: しんせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: nakamura-is-a-teacher-and-kind
+    answers:
+      - 中村さんは先生で親切です
+      - 中村さんは先生でしんせつです
+      - 中村さんはせんせいで親切です
+      - 中村さんはせんせいでしんせつです
+      - なかむらさんは先生で親切です
+      - なかむらさんは先生でしんせつです
+      - なかむらさんはせんせいで親切です
+      - なかむらさんはせんせいでしんせつです
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: nakamura-is-a-teacher-and-kind
+    choices:
+      - text: Nakamura is a teacher and kind.
+        reading: ''
+      - text: This town is quiet and convenient.
+        reading: ''
+    prompt: 'Choose the meaning: 中村さんは先生で親切です。'
+    answers:
+      - Nakamura is a teacher and kind.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: kobayashi-is-a-teacher-and-kind
+    prompt: 'Build this sentence: Kobayashi is a teacher and kind. (polite)'
+    answers:
+      - 小林さんは先生で親切です
+      - 小林さんは先生でしんせつです
+      - 小林さんはせんせいで親切です
+      - 小林さんはせんせいでしんせつです
+      - こばやしさんは先生で親切です
+      - こばやしさんは先生でしんせつです
+      - こばやしさんはせんせいで親切です
+      - こばやしさんはせんせいでしんせつです
+    tiles:
+      - { text: 小林さん, reading: こばやしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 親切, reading: しんせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: kobayashi-is-a-teacher-and-kind
+    answers:
+      - 小林さんは先生で親切です
+      - 小林さんは先生でしんせつです
+      - 小林さんはせんせいで親切です
+      - 小林さんはせんせいでしんせつです
+      - こばやしさんは先生で親切です
+      - こばやしさんは先生でしんせつです
+      - こばやしさんはせんせいで親切です
+      - こばやしさんはせんせいでしんせつです

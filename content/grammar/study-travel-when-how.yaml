@@ -1,0 +1,948 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-travel-when-how
+  kind: grammar
+  note:
+    'Combine the patterns: transport + で + destination + に / へ + movement verb. Use 行きます (いきます) for go, 来ます
+    (きます) for come toward the speaker or viewpoint, and 帰ります (かえります) for return home. Past polite forms are
+    行きました (いきました), 来ました (きました), and 帰りました (かえりました). A specific clock time takes に; 昨日 (きのう, yesterday) does
+    not. Say 歩いて (あるいて) for “on foot”, not 歩いてで. Ask 何で行きますか (なんでいきますか) about transport; どうやって行きますか is another
+    way to ask how to get there.'
+  tags:
+    - Study guide
+  level: N5
+  title: 'Travel: where, when, and how'
+  topic: Polite verbs and particles
+  meaning: 'Travel: where, when, and how'
+  reading: でぱーとへいきます。
+  examples:
+    - tokens:
+        - { role: modifier, text: デパート, reading: でぱーと, wordClass: noun phrase }
+        - { role: particle, text: へ, reading: へ, wordClass: particle }
+        - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+      meaning: I go to the department store.
+      reading: でぱーとへいきます。
+      japanese: デパートへ行きます。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: go }
+        - { role: modifier, text: ' to the department store.' }
+    - tokens:
+        - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+        - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+        - { role: particle, text: に, reading: に, wordClass: particle }
+        - { role: predicate, text: 来ました, reading: きました, wordClass: predicate }
+      meaning: I came to Japan yesterday.
+      reading: きのうにほんにきました。
+      japanese: 昨日日本に来ました。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: came }
+        - { role: modifier, text: ' to Japan' }
+        - { role: modifier, text: ' yesterday.' }
+    - tokens:
+        - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+        - { role: modifier, text: 十一時, reading: じゅういちじ, wordClass: noun phrase }
+        - { role: particle, text: に, reading: に, wordClass: particle }
+        - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+        - { role: particle, text: へ, reading: へ, wordClass: particle }
+        - { role: predicate, text: 帰りました, reading: かえりました, wordClass: predicate }
+      meaning: I returned home at eleven yesterday.
+      reading: きのうじゅういちじにいえへかえりました。
+      japanese: 昨日十一時に家へ帰りました。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: returned }
+        - { role: modifier, text: ' home' }
+        - { role: modifier, text: ' at eleven' }
+        - { role: modifier, text: ' yesterday.' }
+    - tokens:
+        - { role: modifier, text: 飛行機, reading: ひこうき, wordClass: noun phrase }
+        - { role: particle, text: で, reading: で, wordClass: particle }
+        - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+        - { role: particle, text: へ, reading: へ, wordClass: particle }
+        - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+      meaning: I go to Japan by plane.
+      reading: ひこうきでにほんへいきます。
+      japanese: 飛行機で日本へ行きます。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: go }
+        - { role: modifier, text: ' to Japan' }
+        - { role: modifier, text: ' by plane.' }
+  japanese: デパートへ行きます。
+  references:
+    - rows:
+        - - text: 飛行機で
+            reading: ひこうきで
+          - text: ひこうきで
+            reading: ひこうきで
+          - text: by plane
+            reading: ''
+        - - text: 電車で
+            reading: でんしゃで
+          - text: でんしゃで
+            reading: でんしゃで
+          - text: by train
+            reading: ''
+        - - text: バスで
+            reading: ばすで
+          - text: ばすで
+            reading: ばすで
+          - text: by bus
+            reading: ''
+        - - text: バイクで
+            reading: ばいくで
+          - text: ばいくで
+            reading: ばいくで
+          - text: by motorbike
+            reading: ''
+        - - text: 自転車で
+            reading: じてんしゃで
+          - text: じてんしゃで
+            reading: じてんしゃで
+          - text: by bicycle
+            reading: ''
+        - - text: 歩いて
+            reading: あるいて
+          - text: あるいて
+            reading: あるいて
+          - text: on foot
+            reading: ''
+      columns:
+        - Japanese
+        - Reading
+        - Meaning
+      heading: How do you travel?
+    - rows:
+        - - text: どこへ行きますか
+            reading: どこへいきますか
+          - text: デパートへ行きます
+            reading: でぱーとへいきます
+          - text: Where are you going? — To the department store.
+            reading: ''
+        - - text: どうやって日本へ行きますか
+            reading: どうやってにほんへいきますか
+          - text: 飛行機で行きます
+            reading: ひこうきでいきます
+          - text: How will you go to Japan? — By plane.
+            reading: ''
+        - - text: 何時に家へ帰りましたか
+            reading: なんじにいえへかえりましたか
+          - text: 十一時に帰りました
+            reading: じゅういちじにかえりました
+          - text: At what time did you return home? — At eleven.
+            reading: ''
+        - - text: 何で会社へ行きますか
+            reading: なんでかいしゃへいきますか
+          - text: バイクで会社へ行きます
+            reading: ばいくでかいしゃへいきます
+          - text: How do you travel to work? — By motorbike.
+            reading: ''
+      columns:
+        - Question
+        - Example answer
+        - Meaning
+      heading: Ask and answer
+    - rows:
+        - - text: 図書館
+            reading: としょかん
+          - text: library
+            reading: ''
+        - - text: 病院
+            reading: びょういん
+          - text: hospital
+            reading: ''
+        - - text: 郵便局
+            reading: ゆうびんきょく
+          - text: post office
+            reading: ''
+        - - text: 銀行
+            reading: ぎんこう
+          - text: bank
+            reading: ''
+        - - text: 美術館
+            reading: びじゅつかん
+          - text: art museum
+            reading: ''
+        - - text: 大使館
+            reading: たいしかん
+          - text: embassy
+            reading: ''
+        - - text: 公園
+            reading: こうえん
+          - text: park
+            reading: ''
+        - - text: 駅
+            reading: えき
+          - text: station
+            reading: ''
+      columns:
+        - Place
+        - Meaning
+      heading: Places
+    - rows:
+        - - text: 三時半
+            reading: さんじはん
+          - text: さんじはん
+            reading: さんじはん
+          - text: half past three
+            reading: ''
+        - - text: 十分 / 10分
+            reading: じゅっぷん
+          - text: じゅっぷん / じっぷん
+            reading: じゅっぷん / じっぷん
+          - text: ten minutes; both readings are accepted
+            reading: ''
+        - - text: 十分
+            reading: じゅうぶん
+          - text: じゅうぶん
+            reading: じゅうぶん
+          - text: enough / sufficient (a different word)
+            reading: ''
+        - - text: 分ける
+            reading: わける
+          - text: わける
+            reading: わける
+          - text: divide / share
+            reading: ''
+        - - text: 分かる
+            reading: わかる
+          - text: わかる
+            reading: わかる
+          - text: understand
+            reading: ''
+      columns:
+        - Japanese
+        - Reading
+        - Meaning
+      heading: '半 and 分: read them in context'
+sentences:
+  i-go-to-the-department-store:
+    text: デパートへ行きます。
+    tokens:
+      - { role: modifier, text: デパート, reading: でぱーと, wordClass: noun phrase }
+      - { role: particle, text: へ, reading: へ, wordClass: particle }
+      - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+    meaning: I go to the department store.
+    reading: でぱーとへいきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: go }
+      - { role: modifier, text: ' to the department store.' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Combine the patterns: transport + で + destination + に / へ + movement verb. Use 行きます (いきます) for
+      go, 来ます (きます) for come toward the speaker or viewpoint, and 帰ります (かえります) for return home. Past polite
+      forms are 行きました (いきました), 来ました (きました), and 帰りました (かえりました). A specific clock time takes に; 昨日 (きのう,
+      yesterday) does not. Say 歩いて (あるいて) for “on foot”, not 歩いてで. Ask 何で行きますか (なんでいきますか) about transport;
+      どうやって行きますか is another way to ask how to get there.'
+  i-came-to-japan-yesterday:
+    text: 昨日日本に来ました。
+    tokens:
+      - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+      - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 来ました, reading: きました, wordClass: predicate }
+    meaning: I came to Japan yesterday.
+    reading: きのうにほんにきました。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: came }
+      - { role: modifier, text: ' to Japan' }
+      - { role: modifier, text: ' yesterday.' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Combine the patterns: transport + で + destination + に / へ + movement verb. Use 行きます (いきます) for
+      go, 来ます (きます) for come toward the speaker or viewpoint, and 帰ります (かえります) for return home. Past polite
+      forms are 行きました (いきました), 来ました (きました), and 帰りました (かえりました). A specific clock time takes に; 昨日 (きのう,
+      yesterday) does not. Say 歩いて (あるいて) for “on foot”, not 歩いてで. Ask 何で行きますか (なんでいきますか) about transport;
+      どうやって行きますか is another way to ask how to get there.'
+    form: polite
+  i-returned-home-at-eleven-yesterday:
+    text: 昨日十一時に家へ帰りました。
+    tokens:
+      - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+      - { role: modifier, text: 十一時, reading: じゅういちじ, wordClass: noun phrase }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+      - { role: particle, text: へ, reading: へ, wordClass: particle }
+      - { role: predicate, text: 帰りました, reading: かえりました, wordClass: predicate }
+    meaning: I returned home at eleven yesterday.
+    reading: きのうじゅういちじにいえへかえりました。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: returned }
+      - { role: modifier, text: ' home' }
+      - { role: modifier, text: ' at eleven' }
+      - { role: modifier, text: ' yesterday.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Combine the patterns: transport + で + destination + に / へ + movement verb. Use 行きます (いきます) for
+      go, 来ます (きます) for come toward the speaker or viewpoint, and 帰ります (かえります) for return home. Past polite
+      forms are 行きました (いきました), 来ました (きました), and 帰りました (かえりました). A specific clock time takes に; 昨日 (きのう,
+      yesterday) does not. Say 歩いて (あるいて) for “on foot”, not 歩いてで. Ask 何で行きますか (なんでいきますか) about transport;
+      どうやって行きますか is another way to ask how to get there.'
+  i-go-to-japan-by-plane:
+    text: 飛行機で日本へ行きます。
+    tokens:
+      - { role: modifier, text: 飛行機, reading: ひこうき, wordClass: noun phrase }
+      - { role: particle, text: で, reading: で, wordClass: particle }
+      - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+      - { role: particle, text: へ, reading: へ, wordClass: particle }
+      - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+    meaning: I go to Japan by plane.
+    reading: ひこうきでにほんへいきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: go }
+      - { role: modifier, text: ' to Japan' }
+      - { role: modifier, text: ' by plane.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Combine the patterns: transport + で + destination + に / へ + movement verb. Use 行きます (いきます) for
+      go, 来ます (きます) for come toward the speaker or viewpoint, and 帰ります (かえります) for return home. Past polite
+      forms are 行きました (いきました), 来ました (きました), and 帰りました (かえりました). A specific clock time takes に; 昨日 (きのう,
+      yesterday) does not. Say 歩いて (あるいて) for “on foot”, not 歩いてで. Ask 何で行きますか (なんでいきますか) about transport;
+      どうやって行きますか is another way to ask how to get there.'
+  i-came-to-korea-yesterday:
+    tokens:
+      - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+      - { role: modifier, text: 韓国, reading: かんこく, wordClass: noun phrase }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 来ました, reading: きました, wordClass: predicate }
+    meaning: I came to Korea yesterday.
+    reading: きのうかんこくにきました。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: came }
+      - { role: modifier, text: ' to Korea' }
+      - { role: modifier, text: ' yesterday.' }
+    text: 昨日韓国に来ました。
+    hint: Check the particles and sentence ending.
+    explanation:
+      昨日韓国に来ました。 means “I came to Korea yesterday.” Match the vocabulary, particles, and tense to the
+      English sentence.
+    form: polite
+  i-came-to-japan-last-week:
+    tokens:
+      - { role: modifier, text: 先週, reading: せんしゅう, wordClass: noun phrase }
+      - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 来ました, reading: きました, wordClass: predicate }
+    meaning: I came to Japan last week.
+    reading: せんしゅうにほんにきました。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: came }
+      - { role: modifier, text: ' to Japan' }
+      - { role: modifier, text: ' last week.' }
+    text: 先週日本に来ました。
+    hint: Check the particles and sentence ending.
+    explanation:
+      先週日本に来ました。 means “I came to Japan last week.” Match the vocabulary, particles, and tense to the
+      English sentence.
+    form: polite
+  i-returned-to-the-station-at-eleven-yesterday:
+    tokens:
+      - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+      - { role: modifier, text: 十一時, reading: じゅういちじ, wordClass: noun phrase }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: modifier, text: 駅, reading: えき, wordClass: noun phrase }
+      - { role: particle, text: へ, reading: へ, wordClass: particle }
+      - { role: predicate, text: 帰りました, reading: かえりました, wordClass: predicate }
+    meaning: I returned to the station at eleven yesterday.
+    reading: きのうじゅういちじにえきへかえりました。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: returned }
+      - { role: modifier, text: ' station' }
+      - { role: modifier, text: ' at eleven' }
+      - { role: modifier, text: ' yesterday.' }
+    text: 昨日十一時に駅へ帰りました。
+    hint: Check the particles and sentence ending.
+    explanation:
+      昨日十一時に駅へ帰りました。 means “I returned to the station at eleven yesterday.” Match the vocabulary,
+      particles, and tense to the English sentence.
+    form: polite
+  i-returned-home-at-eleven-last-week:
+    tokens:
+      - { role: modifier, text: 先週, reading: せんしゅう, wordClass: noun phrase }
+      - { role: modifier, text: 十一時, reading: じゅういちじ, wordClass: noun phrase }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+      - { role: particle, text: へ, reading: へ, wordClass: particle }
+      - { role: predicate, text: 帰りました, reading: かえりました, wordClass: predicate }
+    meaning: I returned home at eleven last week.
+    reading: せんしゅうじゅういちじにいえへかえりました。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: returned }
+      - { role: modifier, text: ' home' }
+      - { role: modifier, text: ' at eleven' }
+      - { role: modifier, text: ' last week.' }
+    text: 先週十一時に家へ帰りました。
+    hint: Check the particles and sentence ending.
+    explanation:
+      先週十一時に家へ帰りました。 means “I returned home at eleven last week.” Match the vocabulary, particles, and
+      tense to the English sentence.
+    form: polite
+  i-go-to-korea-by-plane:
+    tokens:
+      - { role: modifier, text: 飛行機, reading: ひこうき, wordClass: noun phrase }
+      - { role: particle, text: で, reading: で, wordClass: particle }
+      - { role: modifier, text: 韓国, reading: かんこく, wordClass: noun phrase }
+      - { role: particle, text: へ, reading: へ, wordClass: particle }
+      - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+    meaning: I go to Korea by plane.
+    reading: ひこうきでかんこくへいきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: go }
+      - { role: modifier, text: ' to Korea' }
+      - { role: modifier, text: ' by plane.' }
+    text: 飛行機で韓国へ行きます。
+    hint: Check the particles and sentence ending.
+    explanation:
+      飛行機で韓国へ行きます。 means “I go to Korea by plane.” Match the vocabulary, particles, and tense to the
+      English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-go-to-the-department-store
+    choices:
+      - text: I go to the department store.
+        reading: ''
+      - text: I came to Japan yesterday.
+        reading: ''
+      - text: I returned home at eleven yesterday.
+        reading: ''
+      - text: I go to Japan by plane.
+        reading: ''
+    answers:
+      - I go to the department store.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-came-to-japan-yesterday
+    choices:
+      - sentence: i-go-to-the-department-store
+      - sentence: i-came-to-japan-yesterday
+    prompt: 'Choose the Japanese: I came to Japan yesterday.'
+    answers:
+      - 昨日日本に来ました
+      - 昨日日本へ来ました
+      - 昨日日本にきました
+      - 昨日日本へきました
+      - 昨日にほんに来ました
+      - 昨日にほんへ来ました
+      - 昨日にほんにきました
+      - 昨日にほんへきました
+      - きのう日本に来ました
+      - きのう日本へ来ました
+      - きのう日本にきました
+      - きのう日本へきました
+      - きのうにほんに来ました
+      - きのうにほんへ来ました
+      - きのうにほんにきました
+      - きのうにほんへきました
+  - id: gap
+    type: gap
+    sentence: i-came-to-japan-yesterday
+    prompt: 'Fill the missing part: I came to Japan yesterday. (polite)'
+    answers:
+      - に
+      - へ
+    context:
+      text: 昨日日本___来ました。
+      tokens:
+        - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+        - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+        - { role: particle, text: ___, reading: ___, wordClass: particle }
+        - { role: predicate, text: 来ました, reading: きました, wordClass: predicate }
+      reading: きのうにほん___きました。
+  - id: tiles
+    type: tiles
+    sentence: i-came-to-japan-yesterday
+    prompt: 'Build: I came to Japan yesterday. (polite)'
+    answers:
+      - 昨日日本に来ました
+      - 昨日日本へ来ました
+      - 昨日日本にきました
+      - 昨日日本へきました
+      - 昨日にほんに来ました
+      - 昨日にほんへ来ました
+      - 昨日にほんにきました
+      - 昨日にほんへきました
+      - きのう日本に来ました
+      - きのう日本へ来ました
+      - きのう日本にきました
+      - きのう日本へきました
+      - きのうにほんに来ました
+      - きのうにほんへ来ました
+      - きのうにほんにきました
+      - きのうにほんへきました
+    tiles:
+      - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+      - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 来ました, reading: きました, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: i-returned-home-at-eleven-yesterday
+    answers:
+      - 昨日十一時に家へ帰りました
+      - 昨日十一時に家に帰りました
+      - 昨日十一時に家へかえりました
+      - 昨日十一時に家にかえりました
+      - 昨日十一時にいえへ帰りました
+      - 昨日十一時にいえに帰りました
+      - 昨日十一時にいえへかえりました
+      - 昨日十一時にいえにかえりました
+      - 昨日じゅういちじに家へ帰りました
+      - 昨日じゅういちじに家に帰りました
+      - 昨日じゅういちじに家へかえりました
+      - 昨日じゅういちじに家にかえりました
+      - 昨日じゅういちじにいえへ帰りました
+      - 昨日じゅういちじにいえに帰りました
+      - 昨日じゅういちじにいえへかえりました
+      - 昨日じゅういちじにいえにかえりました
+      - きのう十一時に家へ帰りました
+      - きのう十一時に家に帰りました
+      - きのう十一時に家へかえりました
+      - きのう十一時に家にかえりました
+      - きのう十一時にいえへ帰りました
+      - きのう十一時にいえに帰りました
+      - きのう十一時にいえへかえりました
+      - きのう十一時にいえにかえりました
+      - きのうじゅういちじに家へ帰りました
+      - きのうじゅういちじに家に帰りました
+      - きのうじゅういちじに家へかえりました
+      - きのうじゅういちじに家にかえりました
+      - きのうじゅういちじにいえへ帰りました
+      - きのうじゅういちじにいえに帰りました
+      - きのうじゅういちじにいえへかえりました
+      - きのうじゅういちじにいえにかえりました
+  - id: alternate
+    type: typing
+    sentence: i-go-to-japan-by-plane
+    alternate: true
+    prompt: 'Another example: I go to Japan by plane. (polite)'
+    answers:
+      - 飛行機で日本へ行きます
+      - 飛行機で日本に行きます
+      - 飛行機で日本へいきます
+      - 飛行機で日本にいきます
+      - 飛行機でにほんへ行きます
+      - 飛行機でにほんに行きます
+      - 飛行機でにほんへいきます
+      - 飛行機でにほんにいきます
+      - ひこうきで日本へ行きます
+      - ひこうきで日本に行きます
+      - ひこうきで日本へいきます
+      - ひこうきで日本にいきます
+      - ひこうきでにほんへ行きます
+      - ひこうきでにほんに行きます
+      - ひこうきでにほんへいきます
+      - ひこうきでにほんにいきます
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: i-came-to-korea-yesterday
+    choices:
+      - text: I came to Korea yesterday.
+        reading: ''
+      - text: I go to the department store.
+        reading: ''
+      - text: I came to Japan yesterday.
+        reading: ''
+      - text: I returned home at eleven yesterday.
+        reading: ''
+    answers:
+      - I came to Korea yesterday.
+  - id: expanded-1-typing
+    type: typing
+    sentence: i-came-to-korea-yesterday
+    explanation:
+      昨日韓国に来ました。 means “I came to Korea yesterday.” Write the complete sentence, including the
+      indicated ending.
+    answers:
+      - 昨日韓国に来ました
+      - きのうかんこくにきました
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: i-came-to-korea-yesterday
+    prompt: 'Build this sentence: I came to Korea yesterday. (polite)'
+    explanation:
+      昨日韓国に来ました。 means “I came to Korea yesterday.” Keep the particles with their phrases and put the
+      predicate last.
+    answers:
+      - 昨日韓国に来ました
+      - きのうかんこくにきました
+  - id: expanded-2-meaning
+    type: meaning-choice
+    sentence: i-came-to-japan-last-week
+    choices:
+      - text: I came to Japan last week.
+        reading: ''
+      - text: I go to the department store.
+        reading: ''
+      - text: I came to Japan yesterday.
+        reading: ''
+      - text: I returned home at eleven yesterday.
+        reading: ''
+    answers:
+      - I came to Japan last week.
+  - id: expanded-2-typing
+    type: typing
+    sentence: i-came-to-japan-last-week
+    explanation:
+      先週日本に来ました。 means “I came to Japan last week.” Write the complete sentence, including the
+      indicated ending.
+    answers:
+      - 先週日本に来ました
+      - せんしゅうにほんにきました
+  - id: expanded-2-tiles
+    type: tiles
+    sentence: i-came-to-japan-last-week
+    prompt: 'Build this sentence: I came to Japan last week. (polite)'
+    explanation:
+      先週日本に来ました。 means “I came to Japan last week.” Keep the particles with their phrases and put the
+      predicate last.
+    answers:
+      - 先週日本に来ました
+      - せんしゅうにほんにきました
+  - id: expanded-3-meaning
+    type: meaning-choice
+    sentence: i-returned-to-the-station-at-eleven-yesterday
+    choices:
+      - text: I returned to the station at eleven yesterday.
+        reading: ''
+      - text: I go to the department store.
+        reading: ''
+      - text: I came to Japan yesterday.
+        reading: ''
+      - text: I returned home at eleven yesterday.
+        reading: ''
+    answers:
+      - I returned to the station at eleven yesterday.
+  - id: expanded-3-typing
+    type: typing
+    sentence: i-returned-to-the-station-at-eleven-yesterday
+    explanation:
+      昨日十一時に駅へ帰りました。 means “I returned to the station at eleven yesterday.” Write the complete
+      sentence, including the indicated ending.
+    answers:
+      - 昨日十一時に駅へ帰りました
+      - きのうじゅういちじにえきへかえりました
+  - id: expanded-3-tiles
+    type: tiles
+    sentence: i-returned-to-the-station-at-eleven-yesterday
+    prompt: 'Build this sentence: I returned to the station at eleven yesterday. (polite)'
+    explanation:
+      昨日十一時に駅へ帰りました。 means “I returned to the station at eleven yesterday.” Keep the particles with
+      their phrases and put the predicate last.
+    answers:
+      - 昨日十一時に駅へ帰りました
+      - きのうじゅういちじにえきへかえりました
+  - id: expanded-4-meaning
+    type: meaning-choice
+    sentence: i-returned-home-at-eleven-last-week
+    choices:
+      - text: I returned home at eleven last week.
+        reading: ''
+      - text: I go to the department store.
+        reading: ''
+      - text: I came to Japan yesterday.
+        reading: ''
+      - text: I returned home at eleven yesterday.
+        reading: ''
+    answers:
+      - I returned home at eleven last week.
+  - id: expanded-4-typing
+    type: typing
+    sentence: i-returned-home-at-eleven-last-week
+    explanation:
+      先週十一時に家へ帰りました。 means “I returned home at eleven last week.” Write the complete sentence,
+      including the indicated ending.
+    answers:
+      - 先週十一時に家へ帰りました
+      - せんしゅうじゅういちじにいえへかえりました
+  - id: expanded-4-tiles
+    type: tiles
+    sentence: i-returned-home-at-eleven-last-week
+    prompt: 'Build this sentence: I returned home at eleven last week. (polite)'
+    explanation:
+      先週十一時に家へ帰りました。 means “I returned home at eleven last week.” Keep the particles with their phrases
+      and put the predicate last.
+    answers:
+      - 先週十一時に家へ帰りました
+      - せんしゅうじゅういちじにいえへかえりました
+  - id: expanded-5-meaning
+    type: meaning-choice
+    sentence: i-go-to-korea-by-plane
+    choices:
+      - text: I go to Korea by plane.
+        reading: ''
+      - text: I go to the department store.
+        reading: ''
+      - text: I came to Japan yesterday.
+        reading: ''
+      - text: I returned home at eleven yesterday.
+        reading: ''
+    answers:
+      - I go to Korea by plane.
+  - id: expanded-5-typing
+    type: typing
+    sentence: i-go-to-korea-by-plane
+    explanation: 飛行機で韓国へ行きます。 means “I go to Korea by plane.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 飛行機で韓国へ行きます
+      - ひこうきでかんこくへいきます
+  - id: expanded-5-tiles
+    type: tiles
+    sentence: i-go-to-korea-by-plane
+    prompt: 'Build this sentence: I go to Korea by plane. (polite)'
+    explanation:
+      飛行機で韓国へ行きます。 means “I go to Korea by plane.” Keep the particles with their phrases and put the
+      predicate last.
+    answers:
+      - 飛行機で韓国へ行きます
+      - ひこうきでかんこくへいきます
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: i-came-to-korea-yesterday
+    choices:
+      - sentence: i-came-to-korea-yesterday
+      - text: デパートへ行きます。
+        reading: でぱーとへいきます。
+        tokens:
+          - { role: modifier, text: デパート, reading: でぱーと, wordClass: noun phrase }
+          - { role: particle, text: へ, reading: へ, wordClass: particle }
+          - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+      - text: 昨日日本に来ました。
+        reading: きのうにほんにきました。
+        tokens:
+          - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+          - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: predicate, text: 来ました, reading: きました, wordClass: predicate }
+      - text: 昨日十一時に家へ帰りました。
+        reading: きのうじゅういちじにいえへかえりました。
+        tokens:
+          - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+          - { role: modifier, text: 十一時, reading: じゅういちじ, wordClass: noun phrase }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+          - { role: particle, text: へ, reading: へ, wordClass: particle }
+          - { role: predicate, text: 帰りました, reading: かえりました, wordClass: predicate }
+    prompt: 'Choose the Japanese: I came to Korea yesterday. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 昨日韓国に来ました。 for “I came to Korea yesterday.” The other sentences describe different situations.
+    answers:
+      - 昨日韓国に来ました
+      - きのうかんこくにきました
+  - id: expanded-1-gap
+    type: gap
+    sentence: i-came-to-korea-yesterday
+    prompt: 'Fill the missing part: I came to Korea yesterday. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 来ました (きました). Together, the sentence means “I came to Korea yesterday.”
+    answers:
+      - 来ました
+      - きました
+    context:
+      meaning: I came to Korea yesterday.
+      reading: きのうかんこくに___。
+      text: 昨日韓国に___。
+  - id: expanded-2-pattern
+    type: pattern-choice
+    sentence: i-came-to-japan-last-week
+    choices:
+      - sentence: i-came-to-japan-last-week
+      - text: デパートへ行きます。
+        reading: でぱーとへいきます。
+        tokens:
+          - { role: modifier, text: デパート, reading: でぱーと, wordClass: noun phrase }
+          - { role: particle, text: へ, reading: へ, wordClass: particle }
+          - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+      - text: 昨日日本に来ました。
+        reading: きのうにほんにきました。
+        tokens:
+          - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+          - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: predicate, text: 来ました, reading: きました, wordClass: predicate }
+      - text: 昨日十一時に家へ帰りました。
+        reading: きのうじゅういちじにいえへかえりました。
+        tokens:
+          - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+          - { role: modifier, text: 十一時, reading: じゅういちじ, wordClass: noun phrase }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+          - { role: particle, text: へ, reading: へ, wordClass: particle }
+          - { role: predicate, text: 帰りました, reading: かえりました, wordClass: predicate }
+    prompt: 'Choose the Japanese: I came to Japan last week. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 先週日本に来ました。 for “I came to Japan last week.” The other sentences describe different situations.
+    answers:
+      - 先週日本に来ました
+      - せんしゅうにほんにきました
+  - id: expanded-2-gap
+    type: gap
+    sentence: i-came-to-japan-last-week
+    prompt: 'Fill the missing part: I came to Japan last week. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 来ました (きました). Together, the sentence means “I came to Japan last week.”
+    answers:
+      - 来ました
+      - きました
+    context:
+      meaning: I came to Japan last week.
+      reading: せんしゅうにほんに___。
+      text: 先週日本に___。
+  - id: expanded-3-pattern
+    type: pattern-choice
+    sentence: i-returned-to-the-station-at-eleven-yesterday
+    choices:
+      - sentence: i-returned-to-the-station-at-eleven-yesterday
+      - text: デパートへ行きます。
+        reading: でぱーとへいきます。
+        tokens:
+          - { role: modifier, text: デパート, reading: でぱーと, wordClass: noun phrase }
+          - { role: particle, text: へ, reading: へ, wordClass: particle }
+          - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+      - text: 昨日日本に来ました。
+        reading: きのうにほんにきました。
+        tokens:
+          - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+          - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: predicate, text: 来ました, reading: きました, wordClass: predicate }
+      - text: 昨日十一時に家へ帰りました。
+        reading: きのうじゅういちじにいえへかえりました。
+        tokens:
+          - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+          - { role: modifier, text: 十一時, reading: じゅういちじ, wordClass: noun phrase }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+          - { role: particle, text: へ, reading: へ, wordClass: particle }
+          - { role: predicate, text: 帰りました, reading: かえりました, wordClass: predicate }
+    prompt: 'Choose the Japanese: I returned to the station at eleven yesterday. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation:
+      Choose 昨日十一時に駅へ帰りました。 for “I returned to the station at eleven yesterday.” The other sentences
+      describe different situations.
+    answers:
+      - 昨日十一時に駅へ帰りました
+      - きのうじゅういちじにえきへかえりました
+  - id: expanded-3-gap
+    type: gap
+    sentence: i-returned-to-the-station-at-eleven-yesterday
+    prompt: 'Fill the missing part: I returned to the station at eleven yesterday. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation:
+      The missing part is 帰りました (かえりました). Together, the sentence means “I returned to the station at
+      eleven yesterday.”
+    answers:
+      - 帰りました
+      - かえりました
+    context:
+      meaning: I returned to the station at eleven yesterday.
+      reading: きのうじゅういちじにえきへ___。
+      text: 昨日十一時に駅へ___。
+  - id: expanded-4-pattern
+    type: pattern-choice
+    sentence: i-returned-home-at-eleven-last-week
+    choices:
+      - sentence: i-returned-home-at-eleven-last-week
+      - text: デパートへ行きます。
+        reading: でぱーとへいきます。
+        tokens:
+          - { role: modifier, text: デパート, reading: でぱーと, wordClass: noun phrase }
+          - { role: particle, text: へ, reading: へ, wordClass: particle }
+          - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+      - text: 昨日日本に来ました。
+        reading: きのうにほんにきました。
+        tokens:
+          - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+          - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: predicate, text: 来ました, reading: きました, wordClass: predicate }
+      - text: 昨日十一時に家へ帰りました。
+        reading: きのうじゅういちじにいえへかえりました。
+        tokens:
+          - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+          - { role: modifier, text: 十一時, reading: じゅういちじ, wordClass: noun phrase }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+          - { role: particle, text: へ, reading: へ, wordClass: particle }
+          - { role: predicate, text: 帰りました, reading: かえりました, wordClass: predicate }
+    prompt: 'Choose the Japanese: I returned home at eleven last week. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation:
+      Choose 先週十一時に家へ帰りました。 for “I returned home at eleven last week.” The other sentences describe
+      different situations.
+    answers:
+      - 先週十一時に家へ帰りました
+      - せんしゅうじゅういちじにいえへかえりました
+  - id: expanded-4-gap
+    type: gap
+    sentence: i-returned-home-at-eleven-last-week
+    prompt: 'Fill the missing part: I returned home at eleven last week. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 帰りました (かえりました). Together, the sentence means “I returned home at eleven last week.”
+    answers:
+      - 帰りました
+      - かえりました
+    context:
+      meaning: I returned home at eleven last week.
+      reading: せんしゅうじゅういちじにいえへ___。
+      text: 先週十一時に家へ___。
+  - id: expanded-5-pattern
+    type: pattern-choice
+    sentence: i-go-to-korea-by-plane
+    choices:
+      - sentence: i-go-to-korea-by-plane
+      - text: デパートへ行きます。
+        reading: でぱーとへいきます。
+        tokens:
+          - { role: modifier, text: デパート, reading: でぱーと, wordClass: noun phrase }
+          - { role: particle, text: へ, reading: へ, wordClass: particle }
+          - { role: predicate, text: 行きます, reading: いきます, wordClass: predicate }
+      - text: 昨日日本に来ました。
+        reading: きのうにほんにきました。
+        tokens:
+          - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+          - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: predicate, text: 来ました, reading: きました, wordClass: predicate }
+      - text: 昨日十一時に家へ帰りました。
+        reading: きのうじゅういちじにいえへかえりました。
+        tokens:
+          - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+          - { role: modifier, text: 十一時, reading: じゅういちじ, wordClass: noun phrase }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: modifier, text: 家, reading: いえ, wordClass: noun phrase }
+          - { role: particle, text: へ, reading: へ, wordClass: particle }
+          - { role: predicate, text: 帰りました, reading: かえりました, wordClass: predicate }
+    prompt: 'Choose the Japanese: I go to Korea by plane. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 飛行機で韓国へ行きます。 for “I go to Korea by plane.” The other sentences describe different situations.
+    answers:
+      - 飛行機で韓国へ行きます
+      - ひこうきでかんこくへいきます
+  - id: expanded-5-gap
+    type: gap
+    sentence: i-go-to-korea-by-plane
+    prompt: 'Fill the missing part: I go to Korea by plane. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 行きます (いきます). Together, the sentence means “I go to Korea by plane.”
+    answers:
+      - 行きます
+      - いきます
+    context:
+      meaning: I go to Korea by plane.
+      reading: ひこうきでかんこくへ___。
+      text: 飛行機で韓国へ___。

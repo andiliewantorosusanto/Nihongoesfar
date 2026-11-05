@@ -1,0 +1,574 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-present-tense
+  kind: grammar
+  note:
+    'Learn the present / non-past forms together: polite, casual, negative polite, negative casual, and
+    questions. Non-past also covers routines and future actions. Nouns and な-adjectives use だ / です;
+    い-adjectives do not take だ. Verbs have their own dictionary and negative forms. Add か to a polite
+    statement to ask a question; casual questions usually use rising intonation, for example 食べる？ (たべる？).
+    Negative questions depend on context: 食べませんか (たべませんか) can invite someone to eat. では and じゃ are alternative
+    forms in noun / な-adjective negatives. いい changes to よくない in the negative.'
+  tags:
+    - Study guide
+    - Adjective guide
+  level: N5
+  title: Present
+  topic: Tenses
+  meaning: Present
+  reading: わたしはがくせいです。
+  examples:
+    - tokens:
+        - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 学生です, reading: がくせいです, wordClass: predicate }
+      meaning: I am a student.
+      reading: わたしはがくせいです。
+      japanese: 私は学生です。
+      translationTokens:
+        - { role: topic, text: I }
+        - { role: predicate, text: ' am a student.' }
+    - tokens:
+        - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+        - { role: particle, text: を, reading: を, wordClass: particle }
+        - { role: predicate, text: 食べない, reading: たべない, wordClass: predicate }
+      meaning: I do not eat bread.
+      reading: ぱんをたべない。
+      japanese: パンを食べない。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: 'do not eat ' }
+        - { role: object, text: bread. }
+    - tokens:
+        - { role: topic, text: 今日, reading: きょう, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 暑くないです, reading: あつくないです, wordClass: predicate }
+      meaning: Today is not hot.
+      reading: きょうはあつくないです。
+      japanese: 今日は暑くないです。
+      translationTokens:
+        - { role: topic, text: Today }
+        - { role: predicate, text: ' is not hot.' }
+    - tokens:
+        - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 元気です, reading: げんきです, wordClass: predicate }
+        - { role: particle, text: か, reading: か, wordClass: particle }
+      meaning: Is Tanaka well?
+      reading: たなかさんはげんきですか。
+      japanese: 田中さんは元気ですか。
+      translationTokens:
+        - { role: predicate, text: 'Is ' }
+        - { role: topic, text: Tanaka }
+        - { role: predicate, text: ' well' }
+        - { role: particle, text: '?' }
+  japanese: 私は学生です。
+  references:
+    - rows:
+        - - text: Noun — student
+            reading: ''
+          - text: 学生です
+            reading: がくせいです
+        - - text: Verb — eat
+            reading: ''
+          - text: 食べます
+            reading: たべます
+        - - text: い-adjective — hot
+            reading: ''
+          - text: 暑いです
+            reading: あついです
+        - - text: な-adjective — well
+            reading: ''
+          - text: 元気です
+            reading: げんきです
+        - - text: Existence — things
+            reading: ''
+          - text: あります
+            reading: あります
+        - - text: Existence — people / animals
+            reading: ''
+          - text: います
+            reading: います
+      columns:
+        - Type
+        - Example
+      heading: Polite
+    - rows:
+        - - text: Noun — student
+            reading: ''
+          - text: 学生だ
+            reading: がくせいだ
+        - - text: Verb — eat
+            reading: ''
+          - text: 食べる
+            reading: たべる
+        - - text: い-adjective — hot
+            reading: ''
+          - text: 暑い
+            reading: あつい
+        - - text: な-adjective — well
+            reading: ''
+          - text: 元気だ
+            reading: げんきだ
+        - - text: Existence — things
+            reading: ''
+          - text: ある
+            reading: ある
+        - - text: Existence — people / animals
+            reading: ''
+          - text: いる
+            reading: いる
+      columns:
+        - Type
+        - Example
+      heading: Casual
+    - rows:
+        - - text: Noun — student
+            reading: ''
+          - text: 学生じゃありません
+            reading: がくせいじゃありません
+        - - text: Verb — eat
+            reading: ''
+          - text: 食べません
+            reading: たべません
+        - - text: い-adjective — hot
+            reading: ''
+          - text: 暑くないです
+            reading: あつくないです
+        - - text: な-adjective — well
+            reading: ''
+          - text: 元気じゃありません
+            reading: げんきじゃありません
+        - - text: Existence — things
+            reading: ''
+          - text: ありません
+            reading: ありません
+        - - text: Existence — people / animals
+            reading: ''
+          - text: いません
+            reading: いません
+      columns:
+        - Type
+        - Example
+      heading: Negative polite
+    - rows:
+        - - text: Noun — student
+            reading: ''
+          - text: 学生じゃない
+            reading: がくせいじゃない
+        - - text: Verb — eat
+            reading: ''
+          - text: 食べない
+            reading: たべない
+        - - text: い-adjective — hot
+            reading: ''
+          - text: 暑くない
+            reading: あつくない
+        - - text: な-adjective — well
+            reading: ''
+          - text: 元気じゃない
+            reading: げんきじゃない
+        - - text: Existence — things
+            reading: ''
+          - text: ない
+            reading: ない
+        - - text: Existence — people / animals
+            reading: ''
+          - text: いない
+            reading: いない
+      columns:
+        - Type
+        - Example
+      heading: Negative casual
+    - rows:
+        - - text: Noun — student
+            reading: ''
+          - text: 学生ですか
+            reading: がくせいですか
+          - text: 学生じゃありませんか
+            reading: がくせいじゃありませんか
+        - - text: Verb — eat
+            reading: ''
+          - text: 食べますか
+            reading: たべますか
+          - text: 食べませんか
+            reading: たべませんか
+        - - text: い-adjective — hot
+            reading: ''
+          - text: 暑いですか
+            reading: あついですか
+          - text: 暑くないですか
+            reading: あつくないですか
+        - - text: な-adjective — well
+            reading: ''
+          - text: 元気ですか
+            reading: げんきですか
+          - text: 元気じゃありませんか
+            reading: げんきじゃありませんか
+        - - text: Existence — things
+            reading: ''
+          - text: ありますか
+            reading: ありますか
+          - text: ありませんか
+            reading: ありませんか
+        - - text: Existence — people / animals
+            reading: ''
+          - text: いますか
+            reading: いますか
+          - text: いませんか
+            reading: いませんか
+      columns:
+        - Type
+        - Question
+        - Negative question
+      heading: Question / negative question
+sentences:
+  i-am-a-student:
+    text: 私は学生です。
+    reading: わたしはがくせいです。
+    meaning: I am a student.
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生です, reading: がくせいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' am a student.', role: predicate }
+    hint: Identify the noun after は, then check whether the ending is present or past.
+    explanation:
+      私 (わたし) means “I”; は marks the topic. 学生 (がくせい) means “student”, while 先生 (せんせい) means “teacher”
+      and 会社員 (かいしゃいん) means “employee”. です identifies the speaker as a student; “was a student” would use
+      でした.
+  i-do-not-eat-bread:
+    text: パンを食べない。
+    reading: ぱんをたべない。
+    meaning: I do not eat bread.
+    tokens:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べない, reading: たべない, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'do not eat ', role: predicate }
+      - { text: bread., role: object }
+    hint: Check the food word and whether the verb is affirmative, negative, or past.
+    explanation:
+      パン means “bread”; ご飯 (ごはん) means “rice”. を marks what is eaten. 食べない (たべない) means “do not eat”;
+      食べる (たべる) means “eat”, and 食べなかった (たべなかった) means “did not eat”.
+    form: casual
+  today-is-not-hot:
+    text: 今日は暑くないです。
+    reading: きょうはあつくないです。
+    meaning: Today is not hot.
+    tokens:
+      - { text: 今日, reading: きょう, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 暑くないです, reading: あつくないです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Today, role: topic }
+      - { text: ' is not hot.', role: predicate }
+    form: polite
+    hint: Check the time word, the negative ending, and whether this is a question.
+    explanation:
+      '今日 (きょう) means “today”. 暑い (あつい), “hot”, changes to 暑くない (あつくない), “not hot”. Add です for
+      politeness: “Today is not hot.”'
+  is-tanaka-well:
+    text: 田中さんは元気ですか。
+    reading: たなかさんはげんきですか。
+    meaning: Is Tanaka well?
+    tokens:
+      - { text: 田中さん, reading: たなかさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 元気です, reading: げんきです, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    translationTokens:
+      - { text: 'Is ', role: predicate }
+      - { text: Tanaka, role: topic }
+      - { text: ' well', role: predicate }
+      - { text: '?', role: particle }
+    form: polite
+    hint: Check the time word, the negative ending, and whether this is a question.
+    explanation: 元気 (げんき) means “well”. です makes a polite statement, and final か turns it into “Is Tanaka well?”
+  i-do-not-eat-fish:
+    tokens:
+      - { role: object, text: 魚, reading: さかな, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 食べない, reading: たべない, wordClass: predicate }
+    meaning: I do not eat fish.
+    reading: さかなをたべない。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'do not eat ' }
+      - { role: object, text: fish. }
+    text: 魚を食べない。
+    hint: Check the particles and sentence ending.
+    explanation: 魚を食べない。 means “I do not eat fish.” Match the vocabulary, particles, and tense to the English sentence.
+    form: casual
+  tomorrow-is-not-hot:
+    tokens:
+      - { role: topic, text: 明日, reading: あした, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 暑くないです, reading: あつくないです, wordClass: predicate }
+    meaning: Tomorrow is not hot.
+    reading: あしたはあつくないです。
+    translationTokens:
+      - { role: topic, text: Tomorrow }
+      - { role: predicate, text: ' is not hot.' }
+    text: 明日は暑くないです。
+    hint: Check the particles and sentence ending.
+    explanation:
+      明日は暑くないです。 means “Tomorrow is not hot.” Match the vocabulary, particles, and tense to the English
+      sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-am-a-student
+    choices:
+      - text: I am a student.
+        reading: ''
+      - text: I am a teacher.
+        reading: ''
+      - text: I am an employee.
+        reading: ''
+      - text: I was a student.
+        reading: ''
+    answers:
+      - I am a student.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-do-not-eat-bread
+    choices:
+      - sentence: i-do-not-eat-bread
+      - text: パンを食べる。
+        reading: ぱんをたべる。
+        meaning: I eat bread.
+        tokens:
+          - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - { text: 食べる, reading: たべる, role: predicate, wordClass: predicate }
+        translationTokens:
+          - { text: 'I ', role: implicit, implicit: true }
+          - { text: 'eat ', role: predicate }
+          - { text: bread., role: object }
+      - text: パンを食べなかった。
+        reading: ぱんをたべなかった。
+        meaning: I did not eat bread.
+        tokens:
+          - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - { text: 食べなかった, reading: たべなかった, role: predicate, wordClass: predicate }
+        translationTokens:
+          - { text: 'I ', role: implicit, implicit: true }
+          - { text: 'did not eat ', role: predicate }
+          - { text: bread., role: object }
+      - text: ご飯を食べない。
+        reading: ごはんをたべない。
+        meaning: I do not eat rice.
+        tokens:
+          - { text: ご飯, reading: ごはん, role: object, wordClass: noun phrase }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - { text: 食べない, reading: たべない, role: predicate, wordClass: predicate }
+        translationTokens:
+          - { text: 'I ', role: implicit, implicit: true }
+          - { text: 'do not eat ', role: predicate }
+          - { text: rice., role: object }
+    prompt: 'Choose the Japanese: I do not eat bread.'
+    answers:
+      - パンを食べない
+      - パンをたべない
+      - ぱんを食べない
+      - ぱんをたべない
+  - id: gap
+    type: gap
+    sentence: i-do-not-eat-bread
+    prompt: 'Fill the missing part: I do not eat bread. (casual)'
+    explanation:
+      Use 食べない (たべない), “do not eat”. This is the casual non-past negative of 食べる (たべる). The polite
+      equivalent is 食べません (たべません).
+    answers:
+      - 食べない
+      - たべない
+    context:
+      text: パンを___。
+      reading: ぱんを___。
+      tokens:
+        - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+        - { text: を, reading: を, role: particle, wordClass: particle }
+        - { text: ___, reading: ___, role: predicate, wordClass: predicate }
+  - id: tiles
+    type: tiles
+    sentence: i-do-not-eat-bread
+    prompt: 'Build: I do not eat bread. (casual)'
+    explanation:
+      'Put パン, “bread”, before を, then finish with 食べない (たべない), “do not eat”. The verb comes last: “I
+      do not eat bread.”'
+    answers:
+      - パンを食べない
+      - パンをたべない
+      - ぱんを食べない
+      - ぱんをたべない
+    tiles:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べない, reading: たべない, role: predicate, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: today-is-not-hot
+    answers:
+      - 今日は暑くないです
+      - 今日はあつくないです
+      - きょうは暑くないです
+      - きょうはあつくないです
+  - id: alternate
+    type: typing
+    sentence: is-tanaka-well
+    alternate: true
+    prompt: 'Another example: Is Tanaka well? (polite)'
+    answers:
+      - 田中さんは元気ですか
+      - 田中さんはげんきですか
+      - たなかさんは元気ですか
+      - たなかさんはげんきですか
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: i-do-not-eat-fish
+    choices:
+      - text: I do not eat fish.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+      - text: I do not eat bread.
+        reading: ''
+      - text: Today is not hot.
+        reading: ''
+    answers:
+      - I do not eat fish.
+  - id: expanded-1-typing
+    type: typing
+    sentence: i-do-not-eat-fish
+    explanation: 魚を食べない。 means “I do not eat fish.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 魚を食べない
+      - さかなをたべない
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: i-do-not-eat-fish
+    prompt: 'Build this sentence: I do not eat fish. (casual)'
+    explanation: 魚を食べない。 means “I do not eat fish.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 魚を食べない
+      - さかなをたべない
+  - id: expanded-2-meaning
+    type: meaning-choice
+    sentence: tomorrow-is-not-hot
+    choices:
+      - text: Tomorrow is not hot.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+      - text: I do not eat bread.
+        reading: ''
+      - text: Today is not hot.
+        reading: ''
+    answers:
+      - Tomorrow is not hot.
+  - id: expanded-2-typing
+    type: typing
+    sentence: tomorrow-is-not-hot
+    explanation: 明日は暑くないです。 means “Tomorrow is not hot.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 明日は暑くないです
+      - あしたはあつくないです
+  - id: expanded-2-tiles
+    type: tiles
+    sentence: tomorrow-is-not-hot
+    prompt: 'Build this sentence: Tomorrow is not hot. (polite)'
+    explanation: 明日は暑くないです。 means “Tomorrow is not hot.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 明日は暑くないです
+      - あしたはあつくないです
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: i-do-not-eat-fish
+    choices:
+      - sentence: i-do-not-eat-fish
+      - text: 私は学生です。
+        reading: わたしはがくせいです。
+        tokens:
+          - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 学生です, reading: がくせいです, wordClass: predicate }
+      - text: パンを食べない。
+        reading: ぱんをたべない。
+        tokens:
+          - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 食べない, reading: たべない, wordClass: predicate }
+      - text: 今日は暑くないです。
+        reading: きょうはあつくないです。
+        tokens:
+          - { role: topic, text: 今日, reading: きょう, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 暑くないです, reading: あつくないです, wordClass: predicate }
+    prompt: 'Choose the Japanese: I do not eat fish. (casual)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 魚を食べない。 for “I do not eat fish.” The other sentences describe different situations.
+    answers:
+      - 魚を食べない
+      - さかなをたべない
+  - id: expanded-1-gap
+    type: gap
+    sentence: i-do-not-eat-fish
+    prompt: 'Fill the missing part: I do not eat fish. (casual)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 食べない (たべない). Together, the sentence means “I do not eat fish.”
+    answers:
+      - 食べない
+      - たべない
+    context:
+      meaning: I do not eat fish.
+      reading: さかなを___。
+      text: 魚を___。
+  - id: expanded-2-pattern
+    type: pattern-choice
+    sentence: tomorrow-is-not-hot
+    choices:
+      - sentence: tomorrow-is-not-hot
+      - text: 私は学生です。
+        reading: わたしはがくせいです。
+        tokens:
+          - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 学生です, reading: がくせいです, wordClass: predicate }
+      - text: パンを食べない。
+        reading: ぱんをたべない。
+        tokens:
+          - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 食べない, reading: たべない, wordClass: predicate }
+      - text: 今日は暑くないです。
+        reading: きょうはあつくないです。
+        tokens:
+          - { role: topic, text: 今日, reading: きょう, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 暑くないです, reading: あつくないです, wordClass: predicate }
+    prompt: 'Choose the Japanese: Tomorrow is not hot. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 明日は暑くないです。 for “Tomorrow is not hot.” The other sentences describe different situations.
+    answers:
+      - 明日は暑くないです
+      - あしたはあつくないです
+  - id: expanded-2-gap
+    type: gap
+    sentence: tomorrow-is-not-hot
+    prompt: 'Fill the missing part: Tomorrow is not hot. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 暑くないです (あつくないです). Together, the sentence means “Tomorrow is not hot.”
+    answers:
+      - 暑くないです
+      - あつくないです
+    context:
+      meaning: Tomorrow is not hot.
+      reading: あしたは___。
+      text: 明日は___。

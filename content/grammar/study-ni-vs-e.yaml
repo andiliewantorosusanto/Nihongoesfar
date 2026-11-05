@@ -1,0 +1,591 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-ni-vs-e
+  kind: grammar
+  title: 'Going places: に versus へ'
+  japanese: 学校に行きます。
+  reading: がっこうにいきます。
+  meaning: Destination に and direction へ
+  level: N5
+  topic: Travel
+  tags:
+    - Study guide
+    - Particles
+  note:
+    'With 行く (いく), 来る (くる), and 帰る (かえる), に emphasizes the destination and へ emphasizes movement toward it.
+    They are often interchangeable in ordinary travel sentences. The particle へ is pronounced え (e). に has
+    other uses that へ cannot replace: time, existence, and a verb’s target, such as 七時に起きます (しちじにおきます), 部屋にいます
+    (へやにいます), and 電車に乗ります (でんしゃにのります). Use で for the vehicle or means of travel: 車で学校に行きます (くるまでがっこうにいきます).'
+  examples:
+    - japanese: 学校に行きます。
+      reading: がっこうにいきます。
+      meaning: I go to school.
+      tokens:
+        - {
+            text: 学校に行きます,
+            reading: がっこうにいきます,
+            role: predicate,
+            wordClass: sentence,
+          }
+      translationTokens:
+        - { text: I go to school., role: predicate }
+    - japanese: 学校へ行きます。
+      reading: がっこうへいきます。
+      meaning: I go toward school / to school.
+      tokens:
+        - {
+            text: 学校へ行きます,
+            reading: がっこうへいきます,
+            role: predicate,
+            wordClass: sentence,
+          }
+      translationTokens:
+        - { text: I go toward school / to school., role: predicate }
+    - japanese: 車で会社に行きます。
+      reading: くるまでかいしゃにいきます。
+      meaning: I go to work by car.
+      tokens:
+        - {
+            text: 車で会社に行きます,
+            reading: くるまでかいしゃにいきます,
+            role: predicate,
+            wordClass: sentence,
+          }
+      translationTokens:
+        - { text: I go to work by car., role: predicate }
+    - japanese: 家へ帰ります。
+      reading: いえへかえります。
+      meaning: I return home.
+      tokens:
+        - { text: 家へ帰ります, reading: いえへかえります, role: predicate, wordClass: sentence }
+      translationTokens:
+        - { text: I return home., role: predicate }
+sentences:
+  i-go-to-school:
+    text: 学校に行きます。
+    reading: がっこうにいきます。
+    meaning: I go to school.
+    tokens:
+      - { text: 学校に行きます, reading: がっこうにいきます, role: predicate, wordClass: sentence }
+    translationTokens:
+      - { text: I go to school., role: predicate }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'With 行く (いく), 来る (くる), and 帰る (かえる), に emphasizes the destination and へ emphasizes movement
+      toward it. They are often interchangeable in ordinary travel sentences. The particle へ is pronounced え
+      (e). に has other uses that へ cannot replace: time, existence, and a verb’s target, such as 七時に起きます
+      (しちじにおきます), 部屋にいます (へやにいます), and 電車に乗ります (でんしゃにのります). Use で for the vehicle or means of travel:
+      車で学校に行きます (くるまでがっこうにいきます).'
+  i-go-toward-school-to-school:
+    text: 学校へ行きます。
+    reading: がっこうへいきます。
+    meaning: I go toward school / to school.
+    tokens:
+      - { text: 学校へ行きます, reading: がっこうへいきます, role: predicate, wordClass: sentence }
+    translationTokens:
+      - { text: I go toward school / to school., role: predicate }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'With 行く (いく), 来る (くる), and 帰る (かえる), に emphasizes the destination and へ emphasizes movement
+      toward it. They are often interchangeable in ordinary travel sentences. The particle へ is pronounced え
+      (e). に has other uses that へ cannot replace: time, existence, and a verb’s target, such as 七時に起きます
+      (しちじにおきます), 部屋にいます (へやにいます), and 電車に乗ります (でんしゃにのります). Use で for the vehicle or means of travel:
+      車で学校に行きます (くるまでがっこうにいきます).'
+    form: polite
+  i-go-to-work-by-car:
+    text: 車で会社に行きます。
+    reading: くるまでかいしゃにいきます。
+    meaning: I go to work by car.
+    tokens:
+      - {
+          text: 車で会社に行きます,
+          reading: くるまでかいしゃにいきます,
+          role: predicate,
+          wordClass: sentence,
+        }
+    translationTokens:
+      - { text: I go to work by car., role: predicate }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'With 行く (いく), 来る (くる), and 帰る (かえる), に emphasizes the destination and へ emphasizes movement
+      toward it. They are often interchangeable in ordinary travel sentences. The particle へ is pronounced え
+      (e). に has other uses that へ cannot replace: time, existence, and a verb’s target, such as 七時に起きます
+      (しちじにおきます), 部屋にいます (へやにいます), and 電車に乗ります (でんしゃにのります). Use で for the vehicle or means of travel:
+      車で学校に行きます (くるまでがっこうにいきます).'
+  i-return-home:
+    text: 家へ帰ります。
+    reading: いえへかえります。
+    meaning: I return home.
+    tokens:
+      - { text: 家へ帰ります, reading: いえへかえります, role: predicate, wordClass: sentence }
+    translationTokens:
+      - { text: I return home., role: predicate }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'With 行く (いく), 来る (くる), and 帰る (かえる), に emphasizes the destination and へ emphasizes movement
+      toward it. They are often interchangeable in ordinary travel sentences. The particle へ is pronounced え
+      (e). に has other uses that へ cannot replace: time, existence, and a verb’s target, such as 七時に起きます
+      (しちじにおきます), 部屋にいます (へやにいます), and 電車に乗ります (でんしゃにのります). Use で for the vehicle or means of travel:
+      車で学校に行きます (くるまでがっこうにいきます).'
+  i-go-to-the-library:
+    reading: としょかんにいきます。
+    meaning: I go to the library.
+    tokens:
+      - {
+          text: 図書館に行きます,
+          reading: としょかんにいきます,
+          role: predicate,
+          wordClass: sentence,
+        }
+    translationTokens:
+      - { text: I go to the library., role: predicate }
+    text: 図書館に行きます。
+    hint: Check the particles and sentence ending.
+    explanation:
+      図書館に行きます。 means “I go to the library.” Match the vocabulary, particles, and tense to the English
+      sentence.
+    form: polite
+  i-go-toward-the-library-to-the-library:
+    reading: としょかんへいきます。
+    meaning: I go toward the library / to the library.
+    tokens:
+      - {
+          text: 図書館へ行きます,
+          reading: としょかんへいきます,
+          role: predicate,
+          wordClass: sentence,
+        }
+    translationTokens:
+      - { text: I go toward the library / to the library., role: predicate }
+    text: 図書館へ行きます。
+    hint: Check the particles and sentence ending.
+    explanation:
+      図書館へ行きます。 means “I go toward the library / to the library.” Match the vocabulary, particles, and
+      tense to the English sentence.
+    form: polite
+  i-go-to-work-by-bicycle:
+    reading: じてんしゃでかいしゃにいきます。
+    meaning: I go to work by bicycle.
+    tokens:
+      - {
+          text: 自転車で会社に行きます,
+          reading: じてんしゃでかいしゃにいきます,
+          role: predicate,
+          wordClass: sentence,
+        }
+    translationTokens:
+      - { text: I go to work by bicycle., role: predicate }
+    text: 自転車で会社に行きます。
+    hint: Check the particles and sentence ending.
+    explanation:
+      自転車で会社に行きます。 means “I go to work by bicycle.” Match the vocabulary, particles, and tense to the
+      English sentence.
+    form: polite
+  i-return-to-the-station:
+    reading: えきへかえります。
+    meaning: I return to the station.
+    tokens:
+      - { text: 駅へ帰ります, reading: えきへかえります, role: predicate, wordClass: sentence }
+    translationTokens:
+      - { text: I return station., role: predicate }
+    text: 駅へ帰ります。
+    hint: Check the particles and sentence ending.
+    explanation: 駅へ帰ります。 means “I return station.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-go-to-school
+    choices:
+      - text: I go to school.
+        reading: ''
+      - text: I go toward school / to school.
+        reading: ''
+      - text: I go to work by car.
+        reading: ''
+      - text: I return home.
+        reading: ''
+    answers:
+      - I go to school.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-go-toward-school-to-school
+    choices:
+      - sentence: i-go-to-school
+      - sentence: i-go-toward-school-to-school
+    prompt: 'Choose the Japanese: I go toward school / to school.'
+    answers:
+      - 学校へ行きます
+      - がっこうへいきます
+  - id: gap
+    type: gap
+    sentence: i-go-toward-school-to-school
+    prompt: 'Fill the missing part: I go toward school / to school. (polite)'
+    answers:
+      - 学校へ行きます
+      - がっこうへいきます
+    context:
+      text: ___。
+      reading: ___。
+      tokens:
+        - { text: ___, reading: ___, role: predicate, wordClass: sentence }
+  - id: tiles
+    type: tiles
+    sentence: i-go-toward-school-to-school
+    prompt: 'Build: I go toward school / to school. (polite)'
+    answers:
+      - 学校へ行きます
+      - がっこうへいきます
+    tiles:
+      - { text: 学校へ行きます, reading: がっこうへいきます, role: predicate, wordClass: sentence }
+  - id: typing
+    type: typing
+    sentence: i-go-to-work-by-car
+    answers:
+      - 車で会社に行きます
+      - くるまでかいしゃにいきます
+  - id: alternate
+    type: typing
+    sentence: i-return-home
+    alternate: true
+    prompt: 'Another example: I return home. (polite)'
+    answers:
+      - 家へ帰ります
+      - いえへかえります
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: i-go-to-the-library
+    choices:
+      - text: I go to the library.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+      - text: I go toward school / to school.
+        reading: ''
+      - text: I go to work by car.
+        reading: ''
+    answers:
+      - I go to the library.
+  - id: expanded-1-typing
+    type: typing
+    sentence: i-go-to-the-library
+    explanation: 図書館に行きます。 means “I go to the library.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 図書館に行きます
+      - としょかんにいきます
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: i-go-to-the-library
+    prompt: 'Build this sentence: I go to the library. (polite)'
+    explanation: 図書館に行きます。 means “I go to the library.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 図書館に行きます
+      - としょかんにいきます
+  - id: expanded-2-meaning
+    type: meaning-choice
+    sentence: i-go-toward-the-library-to-the-library
+    choices:
+      - text: I go toward the library / to the library.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+      - text: I go toward school / to school.
+        reading: ''
+      - text: I go to work by car.
+        reading: ''
+    answers:
+      - I go toward the library / to the library.
+  - id: expanded-2-typing
+    type: typing
+    sentence: i-go-toward-the-library-to-the-library
+    explanation:
+      図書館へ行きます。 means “I go toward the library / to the library.” Write the complete sentence,
+      including the indicated ending.
+    answers:
+      - 図書館へ行きます
+      - としょかんへいきます
+  - id: expanded-2-tiles
+    type: tiles
+    sentence: i-go-toward-the-library-to-the-library
+    prompt: 'Build this sentence: I go toward the library / to the library. (polite)'
+    explanation:
+      図書館へ行きます。 means “I go toward the library / to the library.” Keep the particles with their phrases
+      and put the predicate last.
+    answers:
+      - 図書館へ行きます
+      - としょかんへいきます
+  - id: expanded-3-meaning
+    type: meaning-choice
+    sentence: i-go-to-work-by-bicycle
+    choices:
+      - text: I go to work by bicycle.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+      - text: I go toward school / to school.
+        reading: ''
+      - text: I go to work by car.
+        reading: ''
+    answers:
+      - I go to work by bicycle.
+  - id: expanded-3-typing
+    type: typing
+    sentence: i-go-to-work-by-bicycle
+    explanation:
+      自転車で会社に行きます。 means “I go to work by bicycle.” Write the complete sentence, including the
+      indicated ending.
+    answers:
+      - 自転車で会社に行きます
+      - じてんしゃでかいしゃにいきます
+  - id: expanded-3-tiles
+    type: tiles
+    sentence: i-go-to-work-by-bicycle
+    prompt: 'Build this sentence: I go to work by bicycle. (polite)'
+    explanation:
+      自転車で会社に行きます。 means “I go to work by bicycle.” Keep the particles with their phrases and put the
+      predicate last.
+    answers:
+      - 自転車で会社に行きます
+      - じてんしゃでかいしゃにいきます
+  - id: expanded-4-meaning
+    type: meaning-choice
+    sentence: i-return-to-the-station
+    choices:
+      - text: I return station.
+        reading: ''
+      - text: I go to school.
+        reading: ''
+      - text: I go toward school / to school.
+        reading: ''
+      - text: I go to work by car.
+        reading: ''
+    answers:
+      - I return station.
+  - id: expanded-4-typing
+    type: typing
+    sentence: i-return-to-the-station
+    prompt: 'Write in Japanese: I return station. (polite)'
+    explanation: 駅へ帰ります。 means “I return station.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 駅へ帰ります
+      - えきへかえります
+  - id: expanded-4-tiles
+    type: tiles
+    sentence: i-return-to-the-station
+    prompt: 'Build this sentence: I return station. (polite)'
+    explanation: 駅へ帰ります。 means “I return station.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 駅へ帰ります
+      - えきへかえります
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: i-go-to-the-library
+    choices:
+      - sentence: i-go-to-the-library
+      - text: 学校に行きます。
+        reading: がっこうにいきます。
+        tokens:
+          - {
+              text: 学校に行きます,
+              reading: がっこうにいきます,
+              role: predicate,
+              wordClass: sentence,
+            }
+      - text: 学校へ行きます。
+        reading: がっこうへいきます。
+        tokens:
+          - {
+              text: 学校へ行きます,
+              reading: がっこうへいきます,
+              role: predicate,
+              wordClass: sentence,
+            }
+      - text: 車で会社に行きます。
+        reading: くるまでかいしゃにいきます。
+        tokens:
+          - {
+              text: 車で会社に行きます,
+              reading: くるまでかいしゃにいきます,
+              role: predicate,
+              wordClass: sentence,
+            }
+    prompt: 'Choose the Japanese: I go to the library. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 図書館に行きます。 for “I go to the library.” The other sentences describe different situations.
+    answers:
+      - 図書館に行きます
+      - としょかんにいきます
+  - id: expanded-1-gap
+    type: gap
+    sentence: i-go-to-the-library
+    prompt: 'Fill the missing part: I go to the library. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 図書館に行きます (としょかんにいきます). Together, the sentence means “I go to the library.”
+    answers:
+      - 図書館に行きます
+      - としょかんにいきます
+    context:
+      reading: ___。
+      meaning: I go to the library.
+      text: ___。
+  - id: expanded-2-pattern
+    type: pattern-choice
+    sentence: i-go-toward-the-library-to-the-library
+    choices:
+      - sentence: i-go-toward-the-library-to-the-library
+      - text: 学校に行きます。
+        reading: がっこうにいきます。
+        tokens:
+          - {
+              text: 学校に行きます,
+              reading: がっこうにいきます,
+              role: predicate,
+              wordClass: sentence,
+            }
+      - text: 学校へ行きます。
+        reading: がっこうへいきます。
+        tokens:
+          - {
+              text: 学校へ行きます,
+              reading: がっこうへいきます,
+              role: predicate,
+              wordClass: sentence,
+            }
+      - text: 車で会社に行きます。
+        reading: くるまでかいしゃにいきます。
+        tokens:
+          - {
+              text: 車で会社に行きます,
+              reading: くるまでかいしゃにいきます,
+              role: predicate,
+              wordClass: sentence,
+            }
+    prompt: 'Choose the Japanese: I go toward the library / to the library. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation:
+      Choose 図書館へ行きます。 for “I go toward the library / to the library.” The other sentences describe
+      different situations.
+    answers:
+      - 図書館へ行きます
+      - としょかんへいきます
+  - id: expanded-2-gap
+    type: gap
+    sentence: i-go-toward-the-library-to-the-library
+    prompt: 'Fill the missing part: I go toward the library / to the library. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation:
+      The missing part is 図書館へ行きます (としょかんへいきます). Together, the sentence means “I go toward the library
+      / to the library.”
+    answers:
+      - 図書館へ行きます
+      - としょかんへいきます
+    context:
+      reading: ___。
+      meaning: I go toward the library / to the library.
+      text: ___。
+  - id: expanded-3-pattern
+    type: pattern-choice
+    sentence: i-go-to-work-by-bicycle
+    choices:
+      - sentence: i-go-to-work-by-bicycle
+      - text: 学校に行きます。
+        reading: がっこうにいきます。
+        tokens:
+          - {
+              text: 学校に行きます,
+              reading: がっこうにいきます,
+              role: predicate,
+              wordClass: sentence,
+            }
+      - text: 学校へ行きます。
+        reading: がっこうへいきます。
+        tokens:
+          - {
+              text: 学校へ行きます,
+              reading: がっこうへいきます,
+              role: predicate,
+              wordClass: sentence,
+            }
+      - text: 車で会社に行きます。
+        reading: くるまでかいしゃにいきます。
+        tokens:
+          - {
+              text: 車で会社に行きます,
+              reading: くるまでかいしゃにいきます,
+              role: predicate,
+              wordClass: sentence,
+            }
+    prompt: 'Choose the Japanese: I go to work by bicycle. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 自転車で会社に行きます。 for “I go to work by bicycle.” The other sentences describe different situations.
+    answers:
+      - 自転車で会社に行きます
+      - じてんしゃでかいしゃにいきます
+  - id: expanded-3-gap
+    type: gap
+    sentence: i-go-to-work-by-bicycle
+    prompt: 'Fill the missing part: I go to work by bicycle. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation:
+      The missing part is 自転車で会社に行きます (じてんしゃでかいしゃにいきます). Together, the sentence means “I go to work by
+      bicycle.”
+    answers:
+      - 自転車で会社に行きます
+      - じてんしゃでかいしゃにいきます
+    context:
+      reading: ___。
+      meaning: I go to work by bicycle.
+      text: ___。
+  - id: expanded-4-pattern
+    type: pattern-choice
+    sentence: i-return-to-the-station
+    choices:
+      - sentence: i-return-to-the-station
+      - text: 学校に行きます。
+        reading: がっこうにいきます。
+        tokens:
+          - {
+              text: 学校に行きます,
+              reading: がっこうにいきます,
+              role: predicate,
+              wordClass: sentence,
+            }
+      - text: 学校へ行きます。
+        reading: がっこうへいきます。
+        tokens:
+          - {
+              text: 学校へ行きます,
+              reading: がっこうへいきます,
+              role: predicate,
+              wordClass: sentence,
+            }
+      - text: 車で会社に行きます。
+        reading: くるまでかいしゃにいきます。
+        tokens:
+          - {
+              text: 車で会社に行きます,
+              reading: くるまでかいしゃにいきます,
+              role: predicate,
+              wordClass: sentence,
+            }
+    prompt: 'Choose the Japanese: I return station. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 駅へ帰ります。 for “I return to the station.” The other sentences describe different situations.
+    answers:
+      - 駅へ帰ります
+      - えきへかえります
+  - id: expanded-4-gap
+    type: gap
+    sentence: i-return-to-the-station
+    prompt: 'Fill the missing part: I return station. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 駅へ帰ります (えきへかえります). Together, the sentence means “I return to the station.”
+    answers:
+      - 駅へ帰ります
+      - えきへかえります
+    context:
+      reading: ___。
+      meaning: I return to the station.
+      text: ___。

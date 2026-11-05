@@ -1,0 +1,1254 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-location
+  kind: grammar
+  note:
+    'Place + に marks where something exists with あります / います. Place + で instead marks where an action
+    happens. For describing an already-known cat: 猫は部屋にいます.'
+  tags:
+    - Grammar
+    - location
+  level: N5
+  title: 'Location of existence: に'
+  topic: Sentence building
+  lesson:
+    goal: Locate a thing, person, or animal.
+    group: Existence and location
+    order: 13
+    recap: に marks the location of existence; で marks the location of an action.
+    examples:
+      - tokens:
+          - { role: modifier, text: 部屋, reading: へや, wordClass: modifier }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: subject, text: 猫, reading: ねこ, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: います, reading: います, wordClass: predicate }
+        meaning: There is a cat in the room.
+        reading: へやにねこがいます。
+        japanese: 部屋に猫がいます。
+        translationTokens:
+          - { role: predicate, text: 'There is ' }
+          - { role: subject, text: a cat }
+          - { role: modifier, text: ' in the room.' }
+      - tokens:
+          - { role: modifier, text: 学校, reading: がっこう, wordClass: modifier }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: subject, text: 先生, reading: せんせい, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: います, reading: います, wordClass: predicate }
+        meaning: There is a teacher at school.
+        reading: がっこうにせんせいがいます。
+        japanese: 学校に先生がいます。
+        translationTokens:
+          - { role: predicate, text: 'There is ' }
+          - { role: subject, text: a teacher }
+          - { role: modifier, text: ' at school.' }
+      - tokens:
+          - { role: modifier, text: 家, reading: いえ, wordClass: modifier }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+        meaning: There is a book at home.
+        reading: いえにほんがあります。
+        japanese: 家に本があります。
+        translationTokens:
+          - { role: predicate, text: 'There is ' }
+          - { role: subject, text: a book }
+          - { role: modifier, text: ' at home.' }
+    comparison: に marks the location of existence; で marks the location of an action.
+    vocabulary:
+      - text: 部屋
+        meaning: room
+        reading: へや
+      - text: 猫
+        meaning: cat
+        reading: ねこ
+      - text: 学校
+        meaning: school
+        reading: がっこう
+      - text: 先生
+        meaning: teacher
+        reading: せんせい
+      - text: 家
+        meaning: home / house
+        reading: いえ
+      - text: 本
+        meaning: book
+        reading: ほん
+      - text: 机
+        meaning: desk
+        reading: つくえ
+    prerequisites:
+      - grammar-arimasu
+      - grammar-imasu
+  meaning: There is a cat in the room.
+  reading: へやにねこがいます。
+  examples:
+    - tokens:
+        - {
+            role: modifier,
+            text: 部屋に,
+            reading: へやに,
+            wordClass: place noun + location particle,
+          }
+        - { role: subject, text: 猫, reading: ねこ, wordClass: noun }
+        - { role: particle, text: が, reading: が, wordClass: subject particle }
+        - { role: predicate, text: います, reading: います, wordClass: existence verb }
+      meaning: There is a cat in the room.
+      reading: へやにねこがいます。
+      japanese: 部屋に猫がいます。
+      translationTokens:
+        - { role: predicate, text: 'There is ', implicit: false }
+        - { role: subject, text: a cat, implicit: false }
+        - { role: modifier, text: ' in the room.', implicit: false }
+  exercise:
+    tiles:
+      - 部屋
+      - に
+      - 猫
+      - が
+      - います
+    prompt: 'Build: “There is a cat in the room.” Start with 部屋に.'
+    answers:
+      - 部屋に猫がいます
+      - へやにねこがいます
+    explanation:
+      'Place + に marks where something exists with あります / います. Place + で instead marks where an action
+      happens. For describing an already-known cat: 猫は部屋にいます.'
+  japanese: 部屋に猫がいます。
+sentences:
+  there-is-a-cat-in-the-room:
+    text: 部屋に猫がいます。
+    tiles:
+      - { text: 部屋, reading: へや }
+      - { text: に, reading: に }
+      - { text: 猫, reading: ねこ }
+      - { text: が, reading: が }
+      - { text: います, reading: います }
+    tokens:
+      - { role: modifier, text: 部屋, reading: へや, wordClass: modifier }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: subject, text: 猫, reading: ねこ, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: います, reading: います, wordClass: predicate }
+    meaning: There is a cat in the room.
+    reading: へやにねこがいます。
+    translationTokens:
+      - { role: predicate, text: 'There is ' }
+      - { role: subject, text: a cat }
+      - { role: modifier, text: ' in the room.' }
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+  there-is-a-teacher-at-school:
+    text: 学校に先生がいます。
+    tiles:
+      - { text: 学校, reading: がっこう }
+      - { text: に, reading: に }
+      - { text: 先生, reading: せんせい }
+      - { text: が, reading: が }
+      - { text: います, reading: います }
+    tokens:
+      - { role: modifier, text: 学校, reading: がっこう, wordClass: modifier }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: subject, text: 先生, reading: せんせい, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: います, reading: います, wordClass: predicate }
+    meaning: There is a teacher at school.
+    reading: がっこうにせんせいがいます。
+    translationTokens:
+      - { role: predicate, text: 'There is ' }
+      - { role: subject, text: a teacher }
+      - { role: modifier, text: ' at school.' }
+    form: polite
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+  there-is-a-book-at-home:
+    text: 家に本があります。
+    tiles:
+      - { text: 家, reading: いえ }
+      - { text: に, reading: に }
+      - { text: 本, reading: ほん }
+      - { text: が, reading: が }
+      - { text: あります, reading: あります }
+    tokens:
+      - { role: modifier, text: 家, reading: いえ, wordClass: modifier }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+    meaning: There is a book at home.
+    reading: いえにほんがあります。
+    translationTokens:
+      - { role: predicate, text: 'There is ' }
+      - { role: subject, text: a book }
+      - { role: modifier, text: ' at home.' }
+    form: polite
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+  there-is-a-desk-in-the-room:
+    text: 部屋に机があります。
+    tiles:
+      - { text: 部屋, reading: へや }
+      - { text: に, reading: に }
+      - { text: 机, reading: つくえ }
+      - { text: が, reading: が }
+      - { text: あります, reading: あります }
+    tokens:
+      - { role: modifier, text: 部屋, reading: へや, wordClass: modifier }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: subject, text: 机, reading: つくえ, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+    meaning: There is a desk in the room.
+    reading: へやにつくえがあります。
+    translationTokens:
+      - { role: predicate, text: 'There is ' }
+      - { role: subject, text: a desk }
+      - { role: modifier, text: ' in the room.' }
+    form: polite
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+  there-is-a-dog-in-the-room:
+    text: 部屋に犬がいます。
+    reading: へやにいぬがいます。
+    meaning: There is a dog in the room.
+    tiles:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 犬, reading: いぬ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 犬, reading: いぬ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a dog, role: subject }
+      - { text: ' in the room.', role: modifier }
+    form: polite
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+  there-is-a-bird-in-the-room:
+    text: 部屋に鳥がいます。
+    reading: へやにとりがいます。
+    meaning: There is a bird in the room.
+    tiles:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 鳥, reading: とり, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 鳥, reading: とり, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a bird, role: subject }
+      - { text: ' in the room.', role: modifier }
+    form: polite
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+  there-is-a-horse-in-the-room:
+    text: 部屋に馬がいます。
+    reading: へやにうまがいます。
+    meaning: There is a horse in the room.
+    tiles:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 馬, reading: うま, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 馬, reading: うま, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a horse, role: subject }
+      - { text: ' in the room.', role: modifier }
+    form: polite
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+  there-is-a-fish-in-the-room:
+    text: 部屋に魚がいます。
+    reading: へやにさかながいます。
+    meaning: There is a fish in the room.
+    tiles:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 魚, reading: さかな, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 魚, reading: さかな, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a fish, role: subject }
+      - { text: ' in the room.', role: modifier }
+    form: polite
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+  there-is-a-rabbit-in-the-room:
+    text: 部屋に兎がいます。
+    reading: へやにうさぎがいます。
+    meaning: There is a rabbit in the room.
+    tiles:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 兎, reading: うさぎ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 兎, reading: うさぎ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a rabbit, role: subject }
+      - { text: ' in the room.', role: modifier }
+    form: polite
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+  there-is-a-turtle-in-the-room:
+    text: 部屋に亀がいます。
+    reading: へやにかめがいます。
+    meaning: There is a turtle in the room.
+    tiles:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 亀, reading: かめ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 亀, reading: かめ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a turtle, role: subject }
+      - { text: ' in the room.', role: modifier }
+    form: polite
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+  there-is-a-cow-in-the-room:
+    text: 部屋に牛がいます。
+    reading: へやにうしがいます。
+    meaning: There is a cow in the room.
+    tiles:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 牛, reading: うし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 牛, reading: うし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a cow, role: subject }
+      - { text: ' in the room.', role: modifier }
+    form: polite
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+  there-is-a-sheep-in-the-room:
+    text: 部屋に羊がいます。
+    reading: へやにひつじがいます。
+    meaning: There is a sheep in the room.
+    tiles:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 羊, reading: ひつじ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 羊, reading: ひつじ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a sheep, role: subject }
+      - { text: ' in the room.', role: modifier }
+    form: polite
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+  there-is-a-monkey-in-the-room:
+    text: 部屋に猿がいます。
+    reading: へやにさるがいます。
+    meaning: There is a monkey in the room.
+    tiles:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 猿, reading: さる, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 猿, reading: さる, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a monkey, role: subject }
+      - { text: ' in the room.', role: modifier }
+    form: polite
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+  there-is-a-pig-in-the-room:
+    text: 部屋に豚がいます。
+    reading: へやにぶたがいます。
+    meaning: There is a pig in the room.
+    tiles:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 豚, reading: ぶた, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 豚, reading: ぶた, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a pig, role: subject }
+      - { text: ' in the room.', role: modifier }
+    form: polite
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+  there-is-a-teacher-at-library:
+    text: 図書館に先生がいます。
+    reading: としょかんにせんせいがいます。
+    meaning: There is a teacher at library.
+    tiles:
+      - { text: 図書館, reading: としょかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 図書館, reading: としょかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a teacher, role: subject }
+      - { text: ' at library.', role: modifier }
+    form: polite
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+  there-is-a-teacher-at-shop:
+    text: 店に先生がいます。
+    reading: みせにせんせいがいます。
+    meaning: There is a teacher at shop.
+    tiles:
+      - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a teacher, role: subject }
+      - { text: ' at shop.', role: modifier }
+    form: polite
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+  there-is-a-teacher-at-bank:
+    text: 銀行に先生がいます。
+    reading: ぎんこうにせんせいがいます。
+    meaning: There is a teacher at bank.
+    tiles:
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a teacher, role: subject }
+      - { text: ' at bank.', role: modifier }
+    form: polite
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+  there-is-a-teacher-at-station:
+    text: 駅に先生がいます。
+    reading: えきにせんせいがいます。
+    meaning: There is a teacher at station.
+    tiles:
+      - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a teacher, role: subject }
+      - { text: ' at station.', role: modifier }
+    form: polite
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+  there-is-a-teacher-at-park:
+    text: 公園に先生がいます。
+    reading: こうえんにせんせいがいます。
+    meaning: There is a teacher at park.
+    tiles:
+      - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a teacher, role: subject }
+      - { text: ' at park.', role: modifier }
+    form: polite
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+  there-is-a-teacher-at-hospital:
+    text: 病院に先生がいます。
+    reading: びょういんにせんせいがいます。
+    meaning: There is a teacher at hospital.
+    tiles:
+      - { text: 病院, reading: びょういん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 病院, reading: びょういん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a teacher, role: subject }
+      - { text: ' at hospital.', role: modifier }
+    form: polite
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+  there-is-a-teacher-at-office:
+    text: 会社に先生がいます。
+    reading: かいしゃにせんせいがいます。
+    meaning: There is a teacher at office.
+    tiles:
+      - { text: 会社, reading: かいしゃ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 会社, reading: かいしゃ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a teacher, role: subject }
+      - { text: ' at office.', role: modifier }
+    form: polite
+    hint: Nothing is doing an action here; choose the existence-location particle.
+    explanation: に marks the location of existence; で marks the location of an action.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: there-is-a-cat-in-the-room
+    choices:
+      - text: There is a cat in the room.
+        reading: ''
+      - text: There is a dog in the room.
+        reading: ''
+    answers:
+      - There is a cat in the room.
+  - id: pattern
+    type: pattern-choice
+    sentence: there-is-a-cat-in-the-room
+    choices:
+      - sentence: there-is-a-cat-in-the-room
+      - text: 部屋で猫がいます。
+        tiles:
+          - { text: 部屋, reading: へや }
+          - { text: で, reading: で }
+          - { text: 猫, reading: ねこ }
+          - { text: が, reading: が }
+          - { text: います, reading: います }
+        tokens:
+          - { role: modifier, text: 部屋, reading: へや, wordClass: modifier }
+          - { role: particle, text: で, reading: で, wordClass: particle }
+          - { role: subject, text: 猫, reading: ねこ, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: います, reading: います, wordClass: predicate }
+        meaning: There is a dog in the room.
+        reading: へやでねこがいます。
+    prompt: 'Choose the correct Japanese: There is a cat in the room.'
+    answers:
+      - 部屋に猫がいます
+      - 部屋にねこがいます
+      - へやに猫がいます
+      - へやにねこがいます
+  - id: gap
+    type: gap
+    sentence: there-is-a-teacher-at-school
+    answers:
+      - に
+      - に
+    context:
+      text: 学校___先生がいます。
+      tokens:
+        - { role: modifier, text: 学校, reading: がっこう, wordClass: modifier }
+        - { role: particle, text: ___, reading: ___, wordClass: particle }
+        - { role: subject, text: 先生, reading: せんせい, wordClass: noun phrase }
+        - { role: particle, text: が, reading: が, wordClass: particle }
+        - { role: predicate, text: います, reading: います, wordClass: predicate }
+      reading: がっこう___せんせいがいます。
+  - id: tiles
+    type: tiles
+    sentence: there-is-a-teacher-at-school
+    prompt: 'Build this sentence: There is a teacher at school. (polite)'
+    answers:
+      - 学校に先生がいます
+      - 学校にせんせいがいます
+      - がっこうに先生がいます
+      - がっこうにせんせいがいます
+    tiles:
+      - { role: modifier, text: 学校, reading: がっこう, wordClass: modifier }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: subject, text: 先生, reading: せんせい, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: います, reading: います, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: there-is-a-book-at-home
+    answers:
+      - 家に本があります
+      - 家にほんがあります
+      - いえに本があります
+      - いえにほんがあります
+  - id: alternate
+    type: typing
+    sentence: there-is-a-desk-in-the-room
+    alternate: true
+    prompt: 'One more example: There is a desk in the room. (polite)'
+    answers:
+      - 部屋に机があります
+      - 部屋につくえがあります
+      - へやに机があります
+      - へやにつくえがあります
+  - id: extra-1-tiles
+    type: tiles
+    sentence: there-is-a-dog-in-the-room
+    prompt: 'Build this sentence: There is a dog in the room. (polite)'
+    answers:
+      - 部屋に犬がいます
+      - 部屋にいぬがいます
+      - へやに犬がいます
+      - へやにいぬがいます
+    tiles:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 犬, reading: いぬ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: there-is-a-dog-in-the-room
+    answers:
+      - 部屋に犬がいます
+      - 部屋にいぬがいます
+      - へやに犬がいます
+      - へやにいぬがいます
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-dog-in-the-room
+    choices:
+      - text: There is a dog in the room.
+        reading: ''
+      - text: There is a cat in the room.
+        reading: ''
+    prompt: 'Choose the meaning: 部屋に犬がいます。'
+    answers:
+      - There is a dog in the room.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: there-is-a-bird-in-the-room
+    prompt: 'Build this sentence: There is a bird in the room. (polite)'
+    answers:
+      - 部屋に鳥がいます
+      - 部屋にとりがいます
+      - へやに鳥がいます
+      - へやにとりがいます
+    tiles:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 鳥, reading: とり, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: there-is-a-bird-in-the-room
+    answers:
+      - 部屋に鳥がいます
+      - 部屋にとりがいます
+      - へやに鳥がいます
+      - へやにとりがいます
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-bird-in-the-room
+    choices:
+      - text: There is a bird in the room.
+        reading: ''
+      - text: There is a cat in the room.
+        reading: ''
+    prompt: 'Choose the meaning: 部屋に鳥がいます。'
+    answers:
+      - There is a bird in the room.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: there-is-a-horse-in-the-room
+    prompt: 'Build this sentence: There is a horse in the room. (polite)'
+    answers:
+      - 部屋に馬がいます
+      - 部屋にうまがいます
+      - へやに馬がいます
+      - へやにうまがいます
+    tiles:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 馬, reading: うま, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: there-is-a-horse-in-the-room
+    answers:
+      - 部屋に馬がいます
+      - 部屋にうまがいます
+      - へやに馬がいます
+      - へやにうまがいます
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-horse-in-the-room
+    choices:
+      - text: There is a horse in the room.
+        reading: ''
+      - text: There is a cat in the room.
+        reading: ''
+    prompt: 'Choose the meaning: 部屋に馬がいます。'
+    answers:
+      - There is a horse in the room.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: there-is-a-fish-in-the-room
+    prompt: 'Build this sentence: There is a fish in the room. (polite)'
+    answers:
+      - 部屋に魚がいます
+      - 部屋にさかながいます
+      - へやに魚がいます
+      - へやにさかながいます
+    tiles:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 魚, reading: さかな, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: there-is-a-fish-in-the-room
+    answers:
+      - 部屋に魚がいます
+      - 部屋にさかながいます
+      - へやに魚がいます
+      - へやにさかながいます
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-fish-in-the-room
+    choices:
+      - text: There is a fish in the room.
+        reading: ''
+      - text: There is a cat in the room.
+        reading: ''
+    prompt: 'Choose the meaning: 部屋に魚がいます。'
+    answers:
+      - There is a fish in the room.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: there-is-a-rabbit-in-the-room
+    prompt: 'Build this sentence: There is a rabbit in the room. (polite)'
+    answers:
+      - 部屋に兎がいます
+      - 部屋にうさぎがいます
+      - へやに兎がいます
+      - へやにうさぎがいます
+    tiles:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 兎, reading: うさぎ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: there-is-a-rabbit-in-the-room
+    answers:
+      - 部屋に兎がいます
+      - 部屋にうさぎがいます
+      - へやに兎がいます
+      - へやにうさぎがいます
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-rabbit-in-the-room
+    choices:
+      - text: There is a rabbit in the room.
+        reading: ''
+      - text: There is a cat in the room.
+        reading: ''
+    prompt: 'Choose the meaning: 部屋に兎がいます。'
+    answers:
+      - There is a rabbit in the room.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: there-is-a-turtle-in-the-room
+    prompt: 'Build this sentence: There is a turtle in the room. (polite)'
+    answers:
+      - 部屋に亀がいます
+      - 部屋にかめがいます
+      - へやに亀がいます
+      - へやにかめがいます
+    tiles:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 亀, reading: かめ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: there-is-a-turtle-in-the-room
+    answers:
+      - 部屋に亀がいます
+      - 部屋にかめがいます
+      - へやに亀がいます
+      - へやにかめがいます
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-turtle-in-the-room
+    choices:
+      - text: There is a turtle in the room.
+        reading: ''
+      - text: There is a cat in the room.
+        reading: ''
+    prompt: 'Choose the meaning: 部屋に亀がいます。'
+    answers:
+      - There is a turtle in the room.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: there-is-a-cow-in-the-room
+    prompt: 'Build this sentence: There is a cow in the room. (polite)'
+    answers:
+      - 部屋に牛がいます
+      - 部屋にうしがいます
+      - へやに牛がいます
+      - へやにうしがいます
+    tiles:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 牛, reading: うし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: there-is-a-cow-in-the-room
+    answers:
+      - 部屋に牛がいます
+      - 部屋にうしがいます
+      - へやに牛がいます
+      - へやにうしがいます
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-cow-in-the-room
+    choices:
+      - text: There is a cow in the room.
+        reading: ''
+      - text: There is a cat in the room.
+        reading: ''
+    prompt: 'Choose the meaning: 部屋に牛がいます。'
+    answers:
+      - There is a cow in the room.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: there-is-a-sheep-in-the-room
+    prompt: 'Build this sentence: There is a sheep in the room. (polite)'
+    answers:
+      - 部屋に羊がいます
+      - 部屋にひつじがいます
+      - へやに羊がいます
+      - へやにひつじがいます
+    tiles:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 羊, reading: ひつじ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: there-is-a-sheep-in-the-room
+    answers:
+      - 部屋に羊がいます
+      - 部屋にひつじがいます
+      - へやに羊がいます
+      - へやにひつじがいます
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-sheep-in-the-room
+    choices:
+      - text: There is a sheep in the room.
+        reading: ''
+      - text: There is a cat in the room.
+        reading: ''
+    prompt: 'Choose the meaning: 部屋に羊がいます。'
+    answers:
+      - There is a sheep in the room.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: there-is-a-monkey-in-the-room
+    prompt: 'Build this sentence: There is a monkey in the room. (polite)'
+    answers:
+      - 部屋に猿がいます
+      - 部屋にさるがいます
+      - へやに猿がいます
+      - へやにさるがいます
+    tiles:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 猿, reading: さる, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: there-is-a-monkey-in-the-room
+    answers:
+      - 部屋に猿がいます
+      - 部屋にさるがいます
+      - へやに猿がいます
+      - へやにさるがいます
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-monkey-in-the-room
+    choices:
+      - text: There is a monkey in the room.
+        reading: ''
+      - text: There is a cat in the room.
+        reading: ''
+    prompt: 'Choose the meaning: 部屋に猿がいます。'
+    answers:
+      - There is a monkey in the room.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: there-is-a-pig-in-the-room
+    prompt: 'Build this sentence: There is a pig in the room. (polite)'
+    answers:
+      - 部屋に豚がいます
+      - 部屋にぶたがいます
+      - へやに豚がいます
+      - へやにぶたがいます
+    tiles:
+      - { text: 部屋, reading: へや, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 豚, reading: ぶた, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: there-is-a-pig-in-the-room
+    answers:
+      - 部屋に豚がいます
+      - 部屋にぶたがいます
+      - へやに豚がいます
+      - へやにぶたがいます
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-pig-in-the-room
+    choices:
+      - text: There is a pig in the room.
+        reading: ''
+      - text: There is a cat in the room.
+        reading: ''
+    prompt: 'Choose the meaning: 部屋に豚がいます。'
+    answers:
+      - There is a pig in the room.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: there-is-a-teacher-at-library
+    prompt: 'Build this sentence: There is a teacher at library. (polite)'
+    answers:
+      - 図書館に先生がいます
+      - 図書館にせんせいがいます
+      - としょかんに先生がいます
+      - としょかんにせんせいがいます
+    tiles:
+      - { text: 図書館, reading: としょかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: there-is-a-teacher-at-library
+    answers:
+      - 図書館に先生がいます
+      - 図書館にせんせいがいます
+      - としょかんに先生がいます
+      - としょかんにせんせいがいます
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-teacher-at-library
+    choices:
+      - text: There is a teacher at library.
+        reading: ''
+      - text: There is a cat in the room.
+        reading: ''
+    prompt: 'Choose the meaning: 図書館に先生がいます。'
+    answers:
+      - There is a teacher at library.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: there-is-a-teacher-at-shop
+    prompt: 'Build this sentence: There is a teacher at shop. (polite)'
+    answers:
+      - 店に先生がいます
+      - 店にせんせいがいます
+      - みせに先生がいます
+      - みせにせんせいがいます
+    tiles:
+      - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: there-is-a-teacher-at-shop
+    answers:
+      - 店に先生がいます
+      - 店にせんせいがいます
+      - みせに先生がいます
+      - みせにせんせいがいます
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-teacher-at-shop
+    choices:
+      - text: There is a teacher at shop.
+        reading: ''
+      - text: There is a cat in the room.
+        reading: ''
+    prompt: 'Choose the meaning: 店に先生がいます。'
+    answers:
+      - There is a teacher at shop.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: there-is-a-teacher-at-bank
+    prompt: 'Build this sentence: There is a teacher at bank. (polite)'
+    answers:
+      - 銀行に先生がいます
+      - 銀行にせんせいがいます
+      - ぎんこうに先生がいます
+      - ぎんこうにせんせいがいます
+    tiles:
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: there-is-a-teacher-at-bank
+    answers:
+      - 銀行に先生がいます
+      - 銀行にせんせいがいます
+      - ぎんこうに先生がいます
+      - ぎんこうにせんせいがいます
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-teacher-at-bank
+    choices:
+      - text: There is a teacher at bank.
+        reading: ''
+      - text: There is a cat in the room.
+        reading: ''
+    prompt: 'Choose the meaning: 銀行に先生がいます。'
+    answers:
+      - There is a teacher at bank.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: there-is-a-teacher-at-station
+    prompt: 'Build this sentence: There is a teacher at station. (polite)'
+    answers:
+      - 駅に先生がいます
+      - 駅にせんせいがいます
+      - えきに先生がいます
+      - えきにせんせいがいます
+    tiles:
+      - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: there-is-a-teacher-at-station
+    answers:
+      - 駅に先生がいます
+      - 駅にせんせいがいます
+      - えきに先生がいます
+      - えきにせんせいがいます
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-teacher-at-station
+    choices:
+      - text: There is a teacher at station.
+        reading: ''
+      - text: There is a cat in the room.
+        reading: ''
+    prompt: 'Choose the meaning: 駅に先生がいます。'
+    answers:
+      - There is a teacher at station.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: there-is-a-teacher-at-park
+    prompt: 'Build this sentence: There is a teacher at park. (polite)'
+    answers:
+      - 公園に先生がいます
+      - 公園にせんせいがいます
+      - こうえんに先生がいます
+      - こうえんにせんせいがいます
+    tiles:
+      - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: there-is-a-teacher-at-park
+    answers:
+      - 公園に先生がいます
+      - 公園にせんせいがいます
+      - こうえんに先生がいます
+      - こうえんにせんせいがいます
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-teacher-at-park
+    choices:
+      - text: There is a teacher at park.
+        reading: ''
+      - text: There is a cat in the room.
+        reading: ''
+    prompt: 'Choose the meaning: 公園に先生がいます。'
+    answers:
+      - There is a teacher at park.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: there-is-a-teacher-at-hospital
+    prompt: 'Build this sentence: There is a teacher at hospital. (polite)'
+    answers:
+      - 病院に先生がいます
+      - 病院にせんせいがいます
+      - びょういんに先生がいます
+      - びょういんにせんせいがいます
+    tiles:
+      - { text: 病院, reading: びょういん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: there-is-a-teacher-at-hospital
+    answers:
+      - 病院に先生がいます
+      - 病院にせんせいがいます
+      - びょういんに先生がいます
+      - びょういんにせんせいがいます
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-teacher-at-hospital
+    choices:
+      - text: There is a teacher at hospital.
+        reading: ''
+      - text: There is a cat in the room.
+        reading: ''
+    prompt: 'Choose the meaning: 病院に先生がいます。'
+    answers:
+      - There is a teacher at hospital.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: there-is-a-teacher-at-office
+    prompt: 'Build this sentence: There is a teacher at office. (polite)'
+    answers:
+      - 会社に先生がいます
+      - 会社にせんせいがいます
+      - かいしゃに先生がいます
+      - かいしゃにせんせいがいます
+    tiles:
+      - { text: 会社, reading: かいしゃ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: there-is-a-teacher-at-office
+    answers:
+      - 会社に先生がいます
+      - 会社にせんせいがいます
+      - かいしゃに先生がいます
+      - かいしゃにせんせいがいます

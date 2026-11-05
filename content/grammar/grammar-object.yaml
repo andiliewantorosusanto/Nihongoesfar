@@ -1,0 +1,1159 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-object
+  kind: grammar
+  note:
+    を marks the direct object of many action verbs and is pronounced o. The person doing the action can be
+    omitted when clear. 水を飲みます is a verb sentence; 水です is a noun sentence.
+  tags:
+    - Grammar
+    - object
+  level: N5
+  title: 'Direct object: を'
+  topic: Sentence building
+  lesson:
+    goal: Say what you eat, drink, or read.
+    group: Polite verbs and particles
+    order: 7
+    recap:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this basic
+      pattern.
+    examples:
+      - tokens:
+          - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 飲みます, reading: のみます, wordClass: predicate }
+        meaning: I drink water.
+        reading: みずをのみます。
+        japanese: 水を飲みます。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: 'drink ' }
+          - { role: object, text: water. }
+      - tokens:
+          - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 読みます, reading: よみます, wordClass: predicate }
+        meaning: I read a book.
+        reading: ほんをよみます。
+        japanese: 本を読みます。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: 'read ' }
+          - { role: object, text: a book. }
+      - tokens:
+          - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 食べます, reading: たべます, wordClass: predicate }
+        meaning: I eat bread.
+        reading: ぱんをたべます。
+        japanese: パンを食べます。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: 'eat ' }
+          - { role: object, text: bread. }
+    comparison:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+    vocabulary:
+      - text: 水
+        meaning: water
+        reading: みず
+      - text: 飲みます
+        meaning: drink
+        reading: のみます
+      - text: 本
+        meaning: book
+        reading: ほん
+      - text: 読みます
+        meaning: read
+        reading: よみます
+      - text: パン
+        meaning: bread
+        reading: ぱん
+      - text: 食べます
+        meaning: eat
+        reading: たべます
+      - text: お茶
+        meaning: tea
+        reading: おちゃ
+    prerequisites:
+      - grammar-masu
+  meaning: I drink water.
+  reading: みずをのみます。
+  examples:
+    - tokens:
+        - { role: object, text: 水, reading: みず, wordClass: noun }
+        - { role: particle, text: を, reading: を, wordClass: object particle }
+        - { role: predicate, text: 飲みます, reading: のみます, wordClass: verb }
+      meaning: I drink water.
+      reading: みずをのみます。
+      japanese: 水を飲みます。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: drink, implicit: false }
+        - { role: object, text: ' water.', implicit: false }
+  exercise:
+    tiles:
+      - 水
+      - を
+      - 飲みます
+    prompt: 'Build: “I drink water.” Leave out 私.'
+    answers:
+      - 水を飲みます
+      - みずをのみます
+    explanation:
+      を marks the direct object of many action verbs and is pronounced o. The person doing the action
+      can be omitted when clear. 水を飲みます is a verb sentence; 水です is a noun sentence.
+  japanese: 水を飲みます。
+sentences:
+  i-drink-water:
+    text: 水を飲みます。
+    tiles:
+      - { text: 水, reading: みず }
+      - { text: を, reading: を }
+      - { text: 飲みます, reading: のみます }
+    tokens:
+      - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 飲みます, reading: のみます, wordClass: predicate }
+    meaning: I drink water.
+    reading: みずをのみます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'drink ' }
+      - { role: object, text: water. }
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+  i-read-a-book:
+    text: 本を読みます。
+    tiles:
+      - { text: 本, reading: ほん }
+      - { text: を, reading: を }
+      - { text: 読みます, reading: よみます }
+    tokens:
+      - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 読みます, reading: よみます, wordClass: predicate }
+    meaning: I read a book.
+    reading: ほんをよみます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'read ' }
+      - { role: object, text: a book. }
+    form: polite
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+  i-eat-bread:
+    text: パンを食べます。
+    tiles:
+      - { text: パン, reading: ぱん }
+      - { text: を, reading: を }
+      - { text: 食べます, reading: たべます }
+    tokens:
+      - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 食べます, reading: たべます, wordClass: predicate }
+    meaning: I eat bread.
+    reading: ぱんをたべます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'eat ' }
+      - { role: object, text: bread. }
+    form: polite
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+  i-drink-tea:
+    text: お茶を飲みます。
+    tiles:
+      - { text: お茶, reading: おちゃ }
+      - { text: を, reading: を }
+      - { text: 飲みます, reading: のみます }
+    tokens:
+      - { role: object, text: お茶, reading: おちゃ, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 飲みます, reading: のみます, wordClass: predicate }
+    meaning: I drink tea.
+    reading: おちゃをのみます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'drink ' }
+      - { role: object, text: tea. }
+    form: polite
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+  i-drink-milk:
+    text: 牛乳を飲みます。
+    reading: ぎゅうにゅうをのみます。
+    meaning: I drink milk.
+    tiles:
+      - { text: 牛乳, reading: ぎゅうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 牛乳, reading: ぎゅうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'drink ', role: predicate }
+      - { text: milk., role: object }
+    form: polite
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+  i-drink-coffee:
+    text: コーヒーを飲みます。
+    reading: こーひーをのみます。
+    meaning: I drink coffee.
+    tiles:
+      - { text: コーヒー, reading: こーひー, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: コーヒー, reading: こーひー, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'drink ', role: predicate }
+      - { text: coffee., role: object }
+    form: polite
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+  i-drink-juice:
+    text: ジュースを飲みます。
+    reading: じゅーすをのみます。
+    meaning: I drink juice.
+    tiles:
+      - { text: ジュース, reading: じゅーす, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: ジュース, reading: じゅーす, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'drink ', role: predicate }
+      - { text: juice., role: object }
+    form: polite
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+  i-drink-black-tea:
+    text: 紅茶を飲みます。
+    reading: こうちゃをのみます。
+    meaning: I drink black tea.
+    tiles:
+      - { text: 紅茶, reading: こうちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 紅茶, reading: こうちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'drink ', role: predicate }
+      - { text: black tea., role: object }
+    form: polite
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+  i-drink-green-tea:
+    text: 緑茶を飲みます。
+    reading: りょくちゃをのみます。
+    meaning: I drink green tea.
+    tiles:
+      - { text: 緑茶, reading: りょくちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 緑茶, reading: りょくちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'drink ', role: predicate }
+      - { text: green tea., role: object }
+    form: polite
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+  i-drink-soy-milk:
+    text: 豆乳を飲みます。
+    reading: とうにゅうをのみます。
+    meaning: I drink soy milk.
+    tiles:
+      - { text: 豆乳, reading: とうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 豆乳, reading: とうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'drink ', role: predicate }
+      - { text: soy milk., role: object }
+    form: polite
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+  i-drink-barley-tea:
+    text: 麦茶を飲みます。
+    reading: むぎちゃをのみます。
+    meaning: I drink barley tea.
+    tiles:
+      - { text: 麦茶, reading: むぎちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 麦茶, reading: むぎちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'drink ', role: predicate }
+      - { text: barley tea., role: object }
+    form: polite
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+  i-drink-cold-water:
+    text: 冷水を飲みます。
+    reading: れいすいをのみます。
+    meaning: I drink cold water.
+    tiles:
+      - { text: 冷水, reading: れいすい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 冷水, reading: れいすい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'drink ', role: predicate }
+      - { text: cold water., role: object }
+    form: polite
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+  i-drink-sparkling-water:
+    text: 炭酸水を飲みます。
+    reading: たんさんすいをのみます。
+    meaning: I drink sparkling water.
+    tiles:
+      - { text: 炭酸水, reading: たんさんすい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 炭酸水, reading: たんさんすい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'drink ', role: predicate }
+      - { text: sparkling water., role: object }
+    form: polite
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+  i-read-a-magazine:
+    text: 雑誌を読みます。
+    reading: ざっしをよみます。
+    meaning: I read a magazine.
+    tiles:
+      - { text: 雑誌, reading: ざっし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 雑誌, reading: ざっし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'read ', role: predicate }
+      - { text: a magazine., role: object }
+    form: polite
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+  i-read-a-newspaper:
+    text: 新聞を読みます。
+    reading: しんぶんをよみます。
+    meaning: I read a newspaper.
+    tiles:
+      - { text: 新聞, reading: しんぶん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 新聞, reading: しんぶん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'read ', role: predicate }
+      - { text: a newspaper., role: object }
+    form: polite
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+  i-read-a-dictionary:
+    text: 辞書を読みます。
+    reading: じしょをよみます。
+    meaning: I read a dictionary.
+    tiles:
+      - { text: 辞書, reading: じしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 辞書, reading: じしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'read ', role: predicate }
+      - { text: a dictionary., role: object }
+    form: polite
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+  i-read-a-novel:
+    text: 小説を読みます。
+    reading: しょうせつをよみます。
+    meaning: I read a novel.
+    tiles:
+      - { text: 小説, reading: しょうせつ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 小説, reading: しょうせつ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'read ', role: predicate }
+      - { text: a novel., role: object }
+    form: polite
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+  i-read-a-comic:
+    text: 漫画を読みます。
+    reading: まんがをよみます。
+    meaning: I read a comic.
+    tiles:
+      - { text: 漫画, reading: まんが, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 漫画, reading: まんが, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'read ', role: predicate }
+      - { text: a comic., role: object }
+    form: polite
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+  i-read-a-textbook:
+    text: 教科書を読みます。
+    reading: きょうかしょをよみます。
+    meaning: I read a textbook.
+    tiles:
+      - { text: 教科書, reading: きょうかしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 教科書, reading: きょうかしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'read ', role: predicate }
+      - { text: a textbook., role: object }
+    form: polite
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+  i-read-a-picture-book:
+    text: 絵本を読みます。
+    reading: えほんをよみます。
+    meaning: I read a picture book.
+    tiles:
+      - { text: 絵本, reading: えほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 絵本, reading: えほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'read ', role: predicate }
+      - { text: a picture book., role: object }
+    form: polite
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+  i-read-a-letter:
+    text: 手紙を読みます。
+    reading: てがみをよみます。
+    meaning: I read a letter.
+    tiles:
+      - { text: 手紙, reading: てがみ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 手紙, reading: てがみ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'read ', role: predicate }
+      - { text: a letter., role: object }
+    form: polite
+    hint: Choose the particle linking the thing to the action done to it.
+    explanation:
+      を marks the object of an action. は marks a topic and does not replace the object marker in this
+      basic pattern.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-drink-water
+    choices:
+      - text: I drink water.
+        reading: ''
+      - text: I eat bread.
+        reading: ''
+    answers:
+      - I drink water.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-drink-water
+    choices:
+      - sentence: i-drink-water
+      - text: 水が飲みます。
+        tiles:
+          - { text: 水, reading: みず }
+          - { text: が, reading: が }
+          - { text: 飲みます, reading: のみます }
+        tokens:
+          - { role: subject, text: 水, reading: みず, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: 飲みます, reading: のみます, wordClass: predicate }
+        meaning: I eat bread.
+        reading: みずがのみます。
+    prompt: 'Choose the correct Japanese: I drink water.'
+    answers:
+      - 水を飲みます
+      - 水をのみます
+      - みずを飲みます
+      - みずをのみます
+  - id: gap
+    type: gap
+    sentence: i-read-a-book
+    answers:
+      - を
+      - を
+    context:
+      text: 本___読みます。
+      tokens:
+        - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+        - { role: particle, text: ___, reading: ___, wordClass: particle }
+        - { role: predicate, text: 読みます, reading: よみます, wordClass: predicate }
+      reading: ほん___よみます。
+  - id: tiles
+    type: tiles
+    sentence: i-read-a-book
+    prompt: 'Build this sentence: I read a book. (polite)'
+    answers:
+      - 本を読みます
+      - 本をよみます
+      - ほんを読みます
+      - ほんをよみます
+    tiles:
+      - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 読みます, reading: よみます, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: i-eat-bread
+    answers:
+      - パンを食べます
+      - パンをたべます
+      - ぱんを食べます
+      - ぱんをたべます
+  - id: alternate
+    type: typing
+    sentence: i-drink-tea
+    alternate: true
+    prompt: 'One more example: I drink tea. (polite)'
+    answers:
+      - お茶を飲みます
+      - お茶をのみます
+      - おちゃを飲みます
+      - おちゃをのみます
+  - id: extra-1-tiles
+    type: tiles
+    sentence: i-drink-milk
+    prompt: 'Build this sentence: I drink milk. (polite)'
+    answers:
+      - 牛乳を飲みます
+      - 牛乳をのみます
+      - ぎゅうにゅうを飲みます
+      - ぎゅうにゅうをのみます
+    tiles:
+      - { text: 牛乳, reading: ぎゅうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: i-drink-milk
+    answers:
+      - 牛乳を飲みます
+      - 牛乳をのみます
+      - ぎゅうにゅうを飲みます
+      - ぎゅうにゅうをのみます
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: i-drink-milk
+    choices:
+      - text: I drink milk.
+        reading: ''
+      - text: I drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 牛乳を飲みます。'
+    answers:
+      - I drink milk.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: i-drink-coffee
+    prompt: 'Build this sentence: I drink coffee. (polite)'
+    answers:
+      - コーヒーを飲みます
+      - コーヒーをのみます
+      - こーひーを飲みます
+      - こーひーをのみます
+    tiles:
+      - { text: コーヒー, reading: こーひー, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: i-drink-coffee
+    answers:
+      - コーヒーを飲みます
+      - コーヒーをのみます
+      - こーひーを飲みます
+      - こーひーをのみます
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: i-drink-coffee
+    choices:
+      - text: I drink coffee.
+        reading: ''
+      - text: I drink water.
+        reading: ''
+    prompt: 'Choose the meaning: コーヒーを飲みます。'
+    answers:
+      - I drink coffee.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: i-drink-juice
+    prompt: 'Build this sentence: I drink juice. (polite)'
+    answers:
+      - ジュースを飲みます
+      - ジュースをのみます
+      - じゅーすを飲みます
+      - じゅーすをのみます
+    tiles:
+      - { text: ジュース, reading: じゅーす, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: i-drink-juice
+    answers:
+      - ジュースを飲みます
+      - ジュースをのみます
+      - じゅーすを飲みます
+      - じゅーすをのみます
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: i-drink-juice
+    choices:
+      - text: I drink juice.
+        reading: ''
+      - text: I drink water.
+        reading: ''
+    prompt: 'Choose the meaning: ジュースを飲みます。'
+    answers:
+      - I drink juice.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: i-drink-black-tea
+    prompt: 'Build this sentence: I drink black tea. (polite)'
+    answers:
+      - 紅茶を飲みます
+      - 紅茶をのみます
+      - こうちゃを飲みます
+      - こうちゃをのみます
+    tiles:
+      - { text: 紅茶, reading: こうちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: i-drink-black-tea
+    answers:
+      - 紅茶を飲みます
+      - 紅茶をのみます
+      - こうちゃを飲みます
+      - こうちゃをのみます
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: i-drink-black-tea
+    choices:
+      - text: I drink black tea.
+        reading: ''
+      - text: I drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 紅茶を飲みます。'
+    answers:
+      - I drink black tea.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: i-drink-green-tea
+    prompt: 'Build this sentence: I drink green tea. (polite)'
+    answers:
+      - 緑茶を飲みます
+      - 緑茶をのみます
+      - りょくちゃを飲みます
+      - りょくちゃをのみます
+    tiles:
+      - { text: 緑茶, reading: りょくちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: i-drink-green-tea
+    answers:
+      - 緑茶を飲みます
+      - 緑茶をのみます
+      - りょくちゃを飲みます
+      - りょくちゃをのみます
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: i-drink-green-tea
+    choices:
+      - text: I drink green tea.
+        reading: ''
+      - text: I drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 緑茶を飲みます。'
+    answers:
+      - I drink green tea.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: i-drink-soy-milk
+    prompt: 'Build this sentence: I drink soy milk. (polite)'
+    answers:
+      - 豆乳を飲みます
+      - 豆乳をのみます
+      - とうにゅうを飲みます
+      - とうにゅうをのみます
+    tiles:
+      - { text: 豆乳, reading: とうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: i-drink-soy-milk
+    answers:
+      - 豆乳を飲みます
+      - 豆乳をのみます
+      - とうにゅうを飲みます
+      - とうにゅうをのみます
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: i-drink-soy-milk
+    choices:
+      - text: I drink soy milk.
+        reading: ''
+      - text: I drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 豆乳を飲みます。'
+    answers:
+      - I drink soy milk.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: i-drink-barley-tea
+    prompt: 'Build this sentence: I drink barley tea. (polite)'
+    answers:
+      - 麦茶を飲みます
+      - 麦茶をのみます
+      - むぎちゃを飲みます
+      - むぎちゃをのみます
+    tiles:
+      - { text: 麦茶, reading: むぎちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: i-drink-barley-tea
+    answers:
+      - 麦茶を飲みます
+      - 麦茶をのみます
+      - むぎちゃを飲みます
+      - むぎちゃをのみます
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: i-drink-barley-tea
+    choices:
+      - text: I drink barley tea.
+        reading: ''
+      - text: I drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 麦茶を飲みます。'
+    answers:
+      - I drink barley tea.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: i-drink-cold-water
+    prompt: 'Build this sentence: I drink cold water. (polite)'
+    answers:
+      - 冷水を飲みます
+      - 冷水をのみます
+      - れいすいを飲みます
+      - れいすいをのみます
+    tiles:
+      - { text: 冷水, reading: れいすい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: i-drink-cold-water
+    answers:
+      - 冷水を飲みます
+      - 冷水をのみます
+      - れいすいを飲みます
+      - れいすいをのみます
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: i-drink-cold-water
+    choices:
+      - text: I drink cold water.
+        reading: ''
+      - text: I drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 冷水を飲みます。'
+    answers:
+      - I drink cold water.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: i-drink-sparkling-water
+    prompt: 'Build this sentence: I drink sparkling water. (polite)'
+    answers:
+      - 炭酸水を飲みます
+      - 炭酸水をのみます
+      - たんさんすいを飲みます
+      - たんさんすいをのみます
+    tiles:
+      - { text: 炭酸水, reading: たんさんすい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: i-drink-sparkling-water
+    answers:
+      - 炭酸水を飲みます
+      - 炭酸水をのみます
+      - たんさんすいを飲みます
+      - たんさんすいをのみます
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: i-drink-sparkling-water
+    choices:
+      - text: I drink sparkling water.
+        reading: ''
+      - text: I drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 炭酸水を飲みます。'
+    answers:
+      - I drink sparkling water.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: i-read-a-magazine
+    prompt: 'Build this sentence: I read a magazine. (polite)'
+    answers:
+      - 雑誌を読みます
+      - 雑誌をよみます
+      - ざっしを読みます
+      - ざっしをよみます
+    tiles:
+      - { text: 雑誌, reading: ざっし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: i-read-a-magazine
+    answers:
+      - 雑誌を読みます
+      - 雑誌をよみます
+      - ざっしを読みます
+      - ざっしをよみます
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: i-read-a-magazine
+    choices:
+      - text: I read a magazine.
+        reading: ''
+      - text: I drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 雑誌を読みます。'
+    answers:
+      - I read a magazine.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: i-read-a-newspaper
+    prompt: 'Build this sentence: I read a newspaper. (polite)'
+    answers:
+      - 新聞を読みます
+      - 新聞をよみます
+      - しんぶんを読みます
+      - しんぶんをよみます
+    tiles:
+      - { text: 新聞, reading: しんぶん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: i-read-a-newspaper
+    answers:
+      - 新聞を読みます
+      - 新聞をよみます
+      - しんぶんを読みます
+      - しんぶんをよみます
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: i-read-a-newspaper
+    choices:
+      - text: I read a newspaper.
+        reading: ''
+      - text: I drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 新聞を読みます。'
+    answers:
+      - I read a newspaper.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: i-read-a-dictionary
+    prompt: 'Build this sentence: I read a dictionary. (polite)'
+    answers:
+      - 辞書を読みます
+      - 辞書をよみます
+      - じしょを読みます
+      - じしょをよみます
+    tiles:
+      - { text: 辞書, reading: じしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: i-read-a-dictionary
+    answers:
+      - 辞書を読みます
+      - 辞書をよみます
+      - じしょを読みます
+      - じしょをよみます
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: i-read-a-dictionary
+    choices:
+      - text: I read a dictionary.
+        reading: ''
+      - text: I drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 辞書を読みます。'
+    answers:
+      - I read a dictionary.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: i-read-a-novel
+    prompt: 'Build this sentence: I read a novel. (polite)'
+    answers:
+      - 小説を読みます
+      - 小説をよみます
+      - しょうせつを読みます
+      - しょうせつをよみます
+    tiles:
+      - { text: 小説, reading: しょうせつ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: i-read-a-novel
+    answers:
+      - 小説を読みます
+      - 小説をよみます
+      - しょうせつを読みます
+      - しょうせつをよみます
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: i-read-a-novel
+    choices:
+      - text: I read a novel.
+        reading: ''
+      - text: I drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 小説を読みます。'
+    answers:
+      - I read a novel.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: i-read-a-comic
+    prompt: 'Build this sentence: I read a comic. (polite)'
+    answers:
+      - 漫画を読みます
+      - 漫画をよみます
+      - まんがを読みます
+      - まんがをよみます
+    tiles:
+      - { text: 漫画, reading: まんが, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: i-read-a-comic
+    answers:
+      - 漫画を読みます
+      - 漫画をよみます
+      - まんがを読みます
+      - まんがをよみます
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: i-read-a-comic
+    choices:
+      - text: I read a comic.
+        reading: ''
+      - text: I drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 漫画を読みます。'
+    answers:
+      - I read a comic.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: i-read-a-textbook
+    prompt: 'Build this sentence: I read a textbook. (polite)'
+    answers:
+      - 教科書を読みます
+      - 教科書をよみます
+      - きょうかしょを読みます
+      - きょうかしょをよみます
+    tiles:
+      - { text: 教科書, reading: きょうかしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: i-read-a-textbook
+    answers:
+      - 教科書を読みます
+      - 教科書をよみます
+      - きょうかしょを読みます
+      - きょうかしょをよみます
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: i-read-a-textbook
+    choices:
+      - text: I read a textbook.
+        reading: ''
+      - text: I drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 教科書を読みます。'
+    answers:
+      - I read a textbook.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: i-read-a-picture-book
+    prompt: 'Build this sentence: I read a picture book. (polite)'
+    answers:
+      - 絵本を読みます
+      - 絵本をよみます
+      - えほんを読みます
+      - えほんをよみます
+    tiles:
+      - { text: 絵本, reading: えほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: i-read-a-picture-book
+    answers:
+      - 絵本を読みます
+      - 絵本をよみます
+      - えほんを読みます
+      - えほんをよみます
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: i-read-a-picture-book
+    choices:
+      - text: I read a picture book.
+        reading: ''
+      - text: I drink water.
+        reading: ''
+    prompt: 'Choose the meaning: 絵本を読みます。'
+    answers:
+      - I read a picture book.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: i-read-a-letter
+    prompt: 'Build this sentence: I read a letter. (polite)'
+    answers:
+      - 手紙を読みます
+      - 手紙をよみます
+      - てがみを読みます
+      - てがみをよみます
+    tiles:
+      - { text: 手紙, reading: てがみ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読みます, reading: よみます, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: i-read-a-letter
+    answers:
+      - 手紙を読みます
+      - 手紙をよみます
+      - てがみを読みます
+      - てがみをよみます

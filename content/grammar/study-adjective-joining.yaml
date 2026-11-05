@@ -1,0 +1,688 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-adjective-joining
+  kind: grammar
+  note:
+    To connect compatible descriptions, change an い-adjective’s final い to くて; add で to a な-adjective or
+    noun. いい becomes よくて. Choose the connector from the first description, even when the next word is a
+    different adjective type. The last predicate carries the sentence’s tense and politeness. Use these
+    patterns for “and”; use が or けど when contrasting descriptions.
+  tags:
+    - Study guide
+    - Adjective guide
+  level: N5
+  title: 'Connect descriptions: ～くて / ～で'
+  topic: Adjectives and noun descriptions
+  meaning: 'Connect descriptions: ～くて / ～で'
+  reading: このりょうりはおいしくてやすいです。
+  examples:
+    - tokens:
+        - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+        - { role: topic, text: 料理, reading: りょうり, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: おいしくて, reading: おいしくて, wordClass: predicate }
+        - { role: predicate, text: 安いです, reading: やすいです, wordClass: predicate }
+      meaning: This dish is delicious and inexpensive.
+      reading: このりょうりはおいしくてやすいです。
+      japanese: この料理はおいしくて安いです。
+      translationTokens:
+        - { role: modifier, text: 'This ' }
+        - { role: topic, text: dish }
+        - { role: predicate, text: ' is delicious and ' }
+        - { role: predicate, text: inexpensive. }
+    - tokens:
+        - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+        - { role: topic, text: 町, reading: まち, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 有名で, reading: ゆうめいで, wordClass: predicate }
+        - { role: predicate, text: にぎやかです, reading: にぎやかです, wordClass: predicate }
+      meaning: This town is famous and lively.
+      reading: このまちはゆうめいでにぎやかです。
+      japanese: この町は有名でにぎやかです。
+      translationTokens:
+        - { role: modifier, text: 'This ' }
+        - { role: topic, text: town }
+        - { role: predicate, text: ' is famous and ' }
+        - { role: predicate, text: lively. }
+    - tokens:
+        - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+        - { role: topic, text: 料理, reading: りょうり, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: おいしくて, reading: おいしくて, wordClass: predicate }
+        - { role: predicate, text: 有名です, reading: ゆうめいです, wordClass: predicate }
+      meaning: This dish is delicious and famous.
+      reading: このりょうりはおいしくてゆうめいです。
+      japanese: この料理はおいしくて有名です。
+      translationTokens:
+        - { role: modifier, text: 'This ' }
+        - { role: topic, text: dish }
+        - { role: predicate, text: ' is delicious and ' }
+        - { role: predicate, text: famous. }
+    - tokens:
+        - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 学生で, reading: がくせいで, wordClass: predicate }
+        - { role: predicate, text: 親切です, reading: しんせつです, wordClass: predicate }
+      meaning: Tanaka is a student and kind.
+      reading: たなかさんはがくせいでしんせつです。
+      japanese: 田中さんは学生で親切です。
+      translationTokens:
+        - { role: topic, text: Tanaka }
+        - { role: predicate, text: ' is a student and ' }
+        - { role: predicate, text: kind. }
+  japanese: この料理はおいしくて安いです。
+  references:
+    - rows:
+        - - text: い-adjective
+            reading: ''
+          - text: おいしい
+            reading: おいしい
+          - text: おいしくて
+            reading: おいしくて
+          - text: おいしくて、安いです
+            reading: おいしくて、やすいです
+        - - text: な-adjective
+            reading: ''
+          - text: 有名
+            reading: ゆうめい
+          - text: 有名で
+            reading: ゆうめいで
+          - text: 有名で、にぎやかです
+            reading: ゆうめいで、にぎやかです
+        - - text: Noun
+            reading: ''
+          - text: 学生
+            reading: がくせい
+          - text: 学生で
+            reading: がくせいで
+          - text: 学生で、親切です
+            reading: がくせいで、しんせつです
+        - - text: Irregular いい
+            reading: ''
+          - text: いい
+            reading: いい
+          - text: よくて
+            reading: よくて
+          - text: 天気がよくて、暖かいです
+            reading: てんきがよくて、あたたかいです
+      columns:
+        - Type
+        - Base
+        - Connecting form
+        - Example
+      heading: The first description chooses the connector
+sentences:
+  this-dish-is-delicious-and-inexpensive:
+    text: この料理はおいしくて安いです。
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+      - { role: topic, text: 料理, reading: りょうり, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: おいしくて, reading: おいしくて, wordClass: predicate }
+      - { role: predicate, text: 安いです, reading: やすいです, wordClass: predicate }
+    meaning: This dish is delicious and inexpensive.
+    reading: このりょうりはおいしくてやすいです。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: dish }
+      - { role: predicate, text: ' is delicious and ' }
+      - { role: predicate, text: inexpensive. }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      To connect compatible descriptions, change an い-adjective’s final い to くて; add で to a な-adjective
+      or noun. いい becomes よくて. Choose the connector from the first description, even when the next word is a
+      different adjective type. The last predicate carries the sentence’s tense and politeness. Use these
+      patterns for “and”; use が or けど when contrasting descriptions.
+  this-town-is-famous-and-lively:
+    text: この町は有名でにぎやかです。
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+      - { role: topic, text: 町, reading: まち, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 有名で, reading: ゆうめいで, wordClass: predicate }
+      - { role: predicate, text: にぎやかです, reading: にぎやかです, wordClass: predicate }
+    meaning: This town is famous and lively.
+    reading: このまちはゆうめいでにぎやかです。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: town }
+      - { role: predicate, text: ' is famous and ' }
+      - { role: predicate, text: lively. }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      To connect compatible descriptions, change an い-adjective’s final い to くて; add で to a な-adjective
+      or noun. いい becomes よくて. Choose the connector from the first description, even when the next word is a
+      different adjective type. The last predicate carries the sentence’s tense and politeness. Use these
+      patterns for “and”; use が or けど when contrasting descriptions.
+    form: polite
+  this-dish-is-delicious-and-famous:
+    text: この料理はおいしくて有名です。
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+      - { role: topic, text: 料理, reading: りょうり, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: おいしくて, reading: おいしくて, wordClass: predicate }
+      - { role: predicate, text: 有名です, reading: ゆうめいです, wordClass: predicate }
+    meaning: This dish is delicious and famous.
+    reading: このりょうりはおいしくてゆうめいです。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: dish }
+      - { role: predicate, text: ' is delicious and ' }
+      - { role: predicate, text: famous. }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      To connect compatible descriptions, change an い-adjective’s final い to くて; add で to a な-adjective
+      or noun. いい becomes よくて. Choose the connector from the first description, even when the next word is a
+      different adjective type. The last predicate carries the sentence’s tense and politeness. Use these
+      patterns for “and”; use が or けど when contrasting descriptions.
+  tanaka-is-a-student-and-kind:
+    text: 田中さんは学生で親切です。
+    tokens:
+      - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 学生で, reading: がくせいで, wordClass: predicate }
+      - { role: predicate, text: 親切です, reading: しんせつです, wordClass: predicate }
+    meaning: Tanaka is a student and kind.
+    reading: たなかさんはがくせいでしんせつです。
+    translationTokens:
+      - { role: topic, text: Tanaka }
+      - { role: predicate, text: ' is a student and ' }
+      - { role: predicate, text: kind. }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      To connect compatible descriptions, change an い-adjective’s final い to くて; add で to a な-adjective
+      or noun. いい becomes よくて. Choose the connector from the first description, even when the next word is a
+      different adjective type. The last predicate carries the sentence’s tense and politeness. Use these
+      patterns for “and”; use が or けど when contrasting descriptions.
+  this-cake-is-delicious-and-inexpensive:
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+      - { role: topic, text: ケーキ, reading: けーき, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: おいしくて, reading: おいしくて, wordClass: predicate }
+      - { role: predicate, text: 安いです, reading: やすいです, wordClass: predicate }
+    meaning: This cake is delicious and inexpensive.
+    reading: このけーきはおいしくてやすいです。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: cake }
+      - { role: predicate, text: ' is delicious and ' }
+      - { role: predicate, text: inexpensive. }
+    text: このケーキはおいしくて安いです。
+    hint: Check the particles and sentence ending.
+    explanation:
+      このケーキはおいしくて安いです。 means “This cake is delicious and inexpensive.” Match the vocabulary, particles,
+      and tense to the English sentence.
+    form: polite
+  this-village-is-famous-and-lively:
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+      - { role: topic, text: 村, reading: むら, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 有名で, reading: ゆうめいで, wordClass: predicate }
+      - { role: predicate, text: にぎやかです, reading: にぎやかです, wordClass: predicate }
+    meaning: This village is famous and lively.
+    reading: このむらはゆうめいでにぎやかです。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: village }
+      - { role: predicate, text: ' is famous and ' }
+      - { role: predicate, text: lively. }
+    text: この村は有名でにぎやかです。
+    hint: Check the particles and sentence ending.
+    explanation:
+      この村は有名でにぎやかです。 means “This village is famous and lively.” Match the vocabulary, particles, and
+      tense to the English sentence.
+    form: polite
+  this-cake-is-delicious-and-famous:
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+      - { role: topic, text: ケーキ, reading: けーき, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: おいしくて, reading: おいしくて, wordClass: predicate }
+      - { role: predicate, text: 有名です, reading: ゆうめいです, wordClass: predicate }
+    meaning: This cake is delicious and famous.
+    reading: このけーきはおいしくてゆうめいです。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: cake }
+      - { role: predicate, text: ' is delicious and ' }
+      - { role: predicate, text: famous. }
+    text: このケーキはおいしくて有名です。
+    hint: Check the particles and sentence ending.
+    explanation:
+      このケーキはおいしくて有名です。 means “This cake is delicious and famous.” Match the vocabulary, particles, and
+      tense to the English sentence.
+    form: polite
+  tanaka-is-a-teacher-and-kind:
+    tokens:
+      - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 先生で, reading: せんせいで, wordClass: predicate }
+      - { role: predicate, text: 親切です, reading: しんせつです, wordClass: predicate }
+    meaning: Tanaka is a teacher and kind.
+    reading: たなかさんはせんせいでしんせつです。
+    translationTokens:
+      - { role: topic, text: Tanaka }
+      - { role: predicate, text: ' is a teacher and ' }
+      - { role: predicate, text: kind. }
+    text: 田中さんは先生で親切です。
+    hint: Check the particles and sentence ending.
+    explanation:
+      田中さんは先生で親切です。 means “Tanaka is a teacher and kind.” Match the vocabulary, particles, and tense to
+      the English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: this-dish-is-delicious-and-inexpensive
+    choices:
+      - text: This dish is delicious and inexpensive.
+        reading: ''
+      - text: This town is famous and lively.
+        reading: ''
+      - text: This dish is delicious and famous.
+        reading: ''
+      - text: Tanaka is a student and kind.
+        reading: ''
+    answers:
+      - This dish is delicious and inexpensive.
+  - id: pattern
+    type: pattern-choice
+    sentence: this-town-is-famous-and-lively
+    choices:
+      - sentence: this-dish-is-delicious-and-inexpensive
+      - sentence: this-town-is-famous-and-lively
+    prompt: 'Choose the Japanese: This town is famous and lively.'
+    answers:
+      - この町は有名でにぎやかです
+      - この町はゆうめいでにぎやかです
+      - このまちは有名でにぎやかです
+      - このまちはゆうめいでにぎやかです
+  - id: gap
+    type: gap
+    sentence: this-town-is-famous-and-lively
+    prompt: 'Fill the missing part: This town is famous and lively. (polite)'
+    answers:
+      - 有名で
+      - ゆうめいで
+    context:
+      text: この町は___にぎやかです。
+      tokens:
+        - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+        - { role: topic, text: 町, reading: まち, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: ___, reading: ___, wordClass: predicate }
+        - { role: predicate, text: にぎやかです, reading: にぎやかです, wordClass: predicate }
+      reading: このまちは___にぎやかです。
+  - id: tiles
+    type: tiles
+    sentence: this-town-is-famous-and-lively
+    prompt: 'Build: This town is famous and lively. (polite)'
+    answers:
+      - この町は有名でにぎやかです
+      - この町はゆうめいでにぎやかです
+      - このまちは有名でにぎやかです
+      - このまちはゆうめいでにぎやかです
+    tiles:
+      - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+      - { role: topic, text: 町, reading: まち, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 有名で, reading: ゆうめいで, wordClass: predicate }
+      - { role: predicate, text: にぎやかです, reading: にぎやかです, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: this-dish-is-delicious-and-famous
+    answers:
+      - この料理はおいしくて有名です
+      - この料理はおいしくてゆうめいです
+      - このりょうりはおいしくて有名です
+      - このりょうりはおいしくてゆうめいです
+  - id: alternate
+    type: typing
+    sentence: tanaka-is-a-student-and-kind
+    alternate: true
+    prompt: 'Another example: Tanaka is a student and kind. (polite)'
+    answers:
+      - 田中さんは学生で親切です
+      - 田中さんは学生でしんせつです
+      - 田中さんはがくせいで親切です
+      - 田中さんはがくせいでしんせつです
+      - たなかさんは学生で親切です
+      - たなかさんは学生でしんせつです
+      - たなかさんはがくせいで親切です
+      - たなかさんはがくせいでしんせつです
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: this-cake-is-delicious-and-inexpensive
+    choices:
+      - text: This cake is delicious and inexpensive.
+        reading: ''
+      - text: This dish is delicious and inexpensive.
+        reading: ''
+      - text: This town is famous and lively.
+        reading: ''
+      - text: This dish is delicious and famous.
+        reading: ''
+    answers:
+      - This cake is delicious and inexpensive.
+  - id: expanded-1-typing
+    type: typing
+    sentence: this-cake-is-delicious-and-inexpensive
+    explanation:
+      このケーキはおいしくて安いです。 means “This cake is delicious and inexpensive.” Write the complete sentence,
+      including the indicated ending.
+    answers:
+      - このケーキはおいしくて安いです
+      - このけーきはおいしくてやすいです
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: this-cake-is-delicious-and-inexpensive
+    prompt: 'Build this sentence: This cake is delicious and inexpensive. (polite)'
+    explanation:
+      このケーキはおいしくて安いです。 means “This cake is delicious and inexpensive.” Keep the particles with their
+      phrases and put the predicate last.
+    answers:
+      - このケーキはおいしくて安いです
+      - このけーきはおいしくてやすいです
+  - id: expanded-2-meaning
+    type: meaning-choice
+    sentence: this-village-is-famous-and-lively
+    choices:
+      - text: This village is famous and lively.
+        reading: ''
+      - text: This dish is delicious and inexpensive.
+        reading: ''
+      - text: This town is famous and lively.
+        reading: ''
+      - text: This dish is delicious and famous.
+        reading: ''
+    answers:
+      - This village is famous and lively.
+  - id: expanded-2-typing
+    type: typing
+    sentence: this-village-is-famous-and-lively
+    explanation:
+      この村は有名でにぎやかです。 means “This village is famous and lively.” Write the complete sentence, including
+      the indicated ending.
+    answers:
+      - この村は有名でにぎやかです
+      - このむらはゆうめいでにぎやかです
+  - id: expanded-2-tiles
+    type: tiles
+    sentence: this-village-is-famous-and-lively
+    prompt: 'Build this sentence: This village is famous and lively. (polite)'
+    explanation:
+      この村は有名でにぎやかです。 means “This village is famous and lively.” Keep the particles with their phrases
+      and put the predicate last.
+    answers:
+      - この村は有名でにぎやかです
+      - このむらはゆうめいでにぎやかです
+  - id: expanded-3-meaning
+    type: meaning-choice
+    sentence: this-cake-is-delicious-and-famous
+    choices:
+      - text: This cake is delicious and famous.
+        reading: ''
+      - text: This dish is delicious and inexpensive.
+        reading: ''
+      - text: This town is famous and lively.
+        reading: ''
+      - text: This dish is delicious and famous.
+        reading: ''
+    answers:
+      - This cake is delicious and famous.
+  - id: expanded-3-typing
+    type: typing
+    sentence: this-cake-is-delicious-and-famous
+    explanation:
+      このケーキはおいしくて有名です。 means “This cake is delicious and famous.” Write the complete sentence,
+      including the indicated ending.
+    answers:
+      - このケーキはおいしくて有名です
+      - このけーきはおいしくてゆうめいです
+  - id: expanded-3-tiles
+    type: tiles
+    sentence: this-cake-is-delicious-and-famous
+    prompt: 'Build this sentence: This cake is delicious and famous. (polite)'
+    explanation:
+      このケーキはおいしくて有名です。 means “This cake is delicious and famous.” Keep the particles with their phrases
+      and put the predicate last.
+    answers:
+      - このケーキはおいしくて有名です
+      - このけーきはおいしくてゆうめいです
+  - id: expanded-4-meaning
+    type: meaning-choice
+    sentence: tanaka-is-a-teacher-and-kind
+    choices:
+      - text: Tanaka is a teacher and kind.
+        reading: ''
+      - text: This dish is delicious and inexpensive.
+        reading: ''
+      - text: This town is famous and lively.
+        reading: ''
+      - text: This dish is delicious and famous.
+        reading: ''
+    answers:
+      - Tanaka is a teacher and kind.
+  - id: expanded-4-typing
+    type: typing
+    sentence: tanaka-is-a-teacher-and-kind
+    explanation:
+      田中さんは先生で親切です。 means “Tanaka is a teacher and kind.” Write the complete sentence, including the
+      indicated ending.
+    answers:
+      - 田中さんは先生で親切です
+      - たなかさんはせんせいでしんせつです
+  - id: expanded-4-tiles
+    type: tiles
+    sentence: tanaka-is-a-teacher-and-kind
+    prompt: 'Build this sentence: Tanaka is a teacher and kind. (polite)'
+    explanation:
+      田中さんは先生で親切です。 means “Tanaka is a teacher and kind.” Keep the particles with their phrases and put
+      the predicate last.
+    answers:
+      - 田中さんは先生で親切です
+      - たなかさんはせんせいでしんせつです
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: this-cake-is-delicious-and-inexpensive
+    choices:
+      - sentence: this-cake-is-delicious-and-inexpensive
+      - text: この料理はおいしくて安いです。
+        reading: このりょうりはおいしくてやすいです。
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+          - { role: topic, text: 料理, reading: りょうり, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: おいしくて, reading: おいしくて, wordClass: predicate }
+          - { role: predicate, text: 安いです, reading: やすいです, wordClass: predicate }
+      - text: この町は有名でにぎやかです。
+        reading: このまちはゆうめいでにぎやかです。
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+          - { role: topic, text: 町, reading: まち, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 有名で, reading: ゆうめいで, wordClass: predicate }
+          - { role: predicate, text: にぎやかです, reading: にぎやかです, wordClass: predicate }
+      - text: この料理はおいしくて有名です。
+        reading: このりょうりはおいしくてゆうめいです。
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+          - { role: topic, text: 料理, reading: りょうり, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: おいしくて, reading: おいしくて, wordClass: predicate }
+          - { role: predicate, text: 有名です, reading: ゆうめいです, wordClass: predicate }
+    prompt: 'Choose the Japanese: This cake is delicious and inexpensive. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation:
+      Choose このケーキはおいしくて安いです。 for “This cake is delicious and inexpensive.” The other sentences
+      describe different situations.
+    answers:
+      - このケーキはおいしくて安いです
+      - このけーきはおいしくてやすいです
+  - id: expanded-1-gap
+    type: gap
+    sentence: this-cake-is-delicious-and-inexpensive
+    prompt: 'Fill the missing part: This cake is delicious and inexpensive. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 安いです (やすいです). Together, the sentence means “This cake is delicious and inexpensive.”
+    answers:
+      - 安いです
+      - やすいです
+    context:
+      meaning: This cake is delicious and inexpensive.
+      reading: このけーきはおいしくて___。
+      text: このケーキはおいしくて___。
+  - id: expanded-2-pattern
+    type: pattern-choice
+    sentence: this-village-is-famous-and-lively
+    choices:
+      - sentence: this-village-is-famous-and-lively
+      - text: この料理はおいしくて安いです。
+        reading: このりょうりはおいしくてやすいです。
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+          - { role: topic, text: 料理, reading: りょうり, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: おいしくて, reading: おいしくて, wordClass: predicate }
+          - { role: predicate, text: 安いです, reading: やすいです, wordClass: predicate }
+      - text: この町は有名でにぎやかです。
+        reading: このまちはゆうめいでにぎやかです。
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+          - { role: topic, text: 町, reading: まち, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 有名で, reading: ゆうめいで, wordClass: predicate }
+          - { role: predicate, text: にぎやかです, reading: にぎやかです, wordClass: predicate }
+      - text: この料理はおいしくて有名です。
+        reading: このりょうりはおいしくてゆうめいです。
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+          - { role: topic, text: 料理, reading: りょうり, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: おいしくて, reading: おいしくて, wordClass: predicate }
+          - { role: predicate, text: 有名です, reading: ゆうめいです, wordClass: predicate }
+    prompt: 'Choose the Japanese: This village is famous and lively. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation:
+      Choose この村は有名でにぎやかです。 for “This village is famous and lively.” The other sentences describe
+      different situations.
+    answers:
+      - この村は有名でにぎやかです
+      - このむらはゆうめいでにぎやかです
+  - id: expanded-2-gap
+    type: gap
+    sentence: this-village-is-famous-and-lively
+    prompt: 'Fill the missing part: This village is famous and lively. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is にぎやかです (にぎやかです). Together, the sentence means “This village is famous and lively.”
+    answers:
+      - にぎやかです
+    context:
+      meaning: This village is famous and lively.
+      reading: このむらはゆうめいで___。
+      text: この村は有名で___。
+  - id: expanded-3-pattern
+    type: pattern-choice
+    sentence: this-cake-is-delicious-and-famous
+    choices:
+      - sentence: this-cake-is-delicious-and-famous
+      - text: この料理はおいしくて安いです。
+        reading: このりょうりはおいしくてやすいです。
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+          - { role: topic, text: 料理, reading: りょうり, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: おいしくて, reading: おいしくて, wordClass: predicate }
+          - { role: predicate, text: 安いです, reading: やすいです, wordClass: predicate }
+      - text: この町は有名でにぎやかです。
+        reading: このまちはゆうめいでにぎやかです。
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+          - { role: topic, text: 町, reading: まち, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 有名で, reading: ゆうめいで, wordClass: predicate }
+          - { role: predicate, text: にぎやかです, reading: にぎやかです, wordClass: predicate }
+      - text: この料理はおいしくて有名です。
+        reading: このりょうりはおいしくてゆうめいです。
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+          - { role: topic, text: 料理, reading: りょうり, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: おいしくて, reading: おいしくて, wordClass: predicate }
+          - { role: predicate, text: 有名です, reading: ゆうめいです, wordClass: predicate }
+    prompt: 'Choose the Japanese: This cake is delicious and famous. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation:
+      Choose このケーキはおいしくて有名です。 for “This cake is delicious and famous.” The other sentences describe
+      different situations.
+    answers:
+      - このケーキはおいしくて有名です
+      - このけーきはおいしくてゆうめいです
+  - id: expanded-3-gap
+    type: gap
+    sentence: this-cake-is-delicious-and-famous
+    prompt: 'Fill the missing part: This cake is delicious and famous. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 有名です (ゆうめいです). Together, the sentence means “This cake is delicious and famous.”
+    answers:
+      - 有名です
+      - ゆうめいです
+    context:
+      meaning: This cake is delicious and famous.
+      reading: このけーきはおいしくて___。
+      text: このケーキはおいしくて___。
+  - id: expanded-4-pattern
+    type: pattern-choice
+    sentence: tanaka-is-a-teacher-and-kind
+    choices:
+      - sentence: tanaka-is-a-teacher-and-kind
+      - text: この料理はおいしくて安いです。
+        reading: このりょうりはおいしくてやすいです。
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+          - { role: topic, text: 料理, reading: りょうり, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: おいしくて, reading: おいしくて, wordClass: predicate }
+          - { role: predicate, text: 安いです, reading: やすいです, wordClass: predicate }
+      - text: この町は有名でにぎやかです。
+        reading: このまちはゆうめいでにぎやかです。
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+          - { role: topic, text: 町, reading: まち, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 有名で, reading: ゆうめいで, wordClass: predicate }
+          - { role: predicate, text: にぎやかです, reading: にぎやかです, wordClass: predicate }
+      - text: この料理はおいしくて有名です。
+        reading: このりょうりはおいしくてゆうめいです。
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+          - { role: topic, text: 料理, reading: りょうり, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: おいしくて, reading: おいしくて, wordClass: predicate }
+          - { role: predicate, text: 有名です, reading: ゆうめいです, wordClass: predicate }
+    prompt: 'Choose the Japanese: Tanaka is a teacher and kind. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation:
+      Choose 田中さんは先生で親切です。 for “Tanaka is a teacher and kind.” The other sentences describe different
+      situations.
+    answers:
+      - 田中さんは先生で親切です
+      - たなかさんはせんせいでしんせつです
+  - id: expanded-4-gap
+    type: gap
+    sentence: tanaka-is-a-teacher-and-kind
+    prompt: 'Fill the missing part: Tanaka is a teacher and kind. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 親切です (しんせつです). Together, the sentence means “Tanaka is a teacher and kind.”
+    answers:
+      - 親切です
+      - しんせつです
+    context:
+      meaning: Tanaka is a teacher and kind.
+      reading: たなかさんはせんせいで___。
+      text: 田中さんは先生で___。

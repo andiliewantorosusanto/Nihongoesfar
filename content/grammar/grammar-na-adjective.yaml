@@ -1,0 +1,1213 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-na-adjective
+  kind: grammar
+  note:
+    'A な-adjective uses な directly before a noun: 静かな部屋. At the end of a polite sentence, use 静かです, not
+    静かなです. Negative: 静かじゃありません; past: 静かでした. きれい and 嫌い belong to this group.'
+  tags:
+    - Grammar
+    - na-adjective
+  level: N5
+  title: な-adjectives in sentences
+  topic: Sentence building
+  lesson:
+    goal: Describe a place with a な-adjective.
+    group: Descriptions and preferences
+    order: 20
+    recap: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+    examples:
+      - tokens:
+          - { role: modifier, text: この, reading: この, wordClass: modifier }
+          - { role: topic, text: 部屋, reading: へや, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 静かです, reading: しずかです, wordClass: predicate }
+        meaning: This room is quiet.
+        reading: このへやはしずかです。
+        japanese: この部屋は静かです。
+        translationTokens:
+          - { role: modifier, text: 'This ' }
+          - { role: topic, text: room }
+          - { role: predicate, text: ' is quiet.' }
+      - tokens:
+          - { role: modifier, text: この, reading: この, wordClass: modifier }
+          - { role: topic, text: 学校, reading: がっこう, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 便利です, reading: べんりです, wordClass: predicate }
+        meaning: This school is convenient.
+        reading: このがっこうはべんりです。
+        japanese: この学校は便利です。
+        translationTokens:
+          - { role: modifier, text: 'This ' }
+          - { role: topic, text: school }
+          - { role: predicate, text: ' is convenient.' }
+      - tokens:
+          - { role: modifier, text: この, reading: この, wordClass: modifier }
+          - { role: topic, text: 部屋, reading: へや, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: きれいです, reading: きれいです, wordClass: predicate }
+        meaning: This room is clean.
+        reading: このへやはきれいです。
+        japanese: この部屋はきれいです。
+        translationTokens:
+          - { role: modifier, text: 'This ' }
+          - { role: topic, text: room }
+          - { role: predicate, text: ' is clean.' }
+    comparison: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+    vocabulary:
+      - text: 部屋
+        meaning: room
+        reading: へや
+      - text: 静か
+        meaning: quiet
+        reading: しずか
+      - text: 学校
+        meaning: school
+        reading: がっこう
+      - text: 便利
+        meaning: convenient
+        reading: べんり
+      - text: きれい
+        meaning: clean / beautiful
+        reading: きれい
+      - text: 町
+        meaning: town
+        reading: まち
+    prerequisites:
+      - grammar-desu
+      - grammar-i-adjective
+  meaning: It is quiet here.
+  reading: ここはしずかです。
+  examples:
+    - tokens:
+        - { role: topic, text: ここ, reading: ここ, wordClass: place pronoun }
+        - { role: particle, text: は, reading: は, wordClass: topic particle }
+        - { role: predicate, text: 静かです, reading: しずかです, wordClass: na-adjective + copula }
+      meaning: It is quiet here.
+      reading: ここはしずかです。
+      japanese: ここは静かです。
+      translationTokens:
+        - { role: implicit, text: 'It ', implicit: true }
+        - { role: predicate, text: is quiet, implicit: false }
+        - { role: topic, text: ' here.', implicit: false }
+  exercise:
+    prompt: 'Fill the missing word: 静か __ 部屋 (a quiet room).'
+    answers:
+      - な
+    explanation:
+      'A な-adjective uses な directly before a noun: 静かな部屋. At the end of a polite sentence, use 静かです,
+      not 静かなです. Negative: 静かじゃありません; past: 静かでした. きれい and 嫌い belong to this group.'
+  japanese: ここは静かです。
+sentences:
+  this-room-is-quiet:
+    text: この部屋は静かです。
+    tiles:
+      - { text: この, reading: この }
+      - { text: 部屋, reading: へや }
+      - { text: は, reading: は }
+      - { text: 静か, reading: しずか }
+      - { text: です, reading: です }
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: modifier }
+      - { role: topic, text: 部屋, reading: へや, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 静かです, reading: しずかです, wordClass: predicate }
+    meaning: This room is quiet.
+    reading: このへやはしずかです。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: room }
+      - { role: predicate, text: ' is quiet.' }
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+  this-school-is-convenient:
+    text: この学校は便利です。
+    tiles:
+      - { text: この, reading: この }
+      - { text: 学校, reading: がっこう }
+      - { text: は, reading: は }
+      - { text: 便利, reading: べんり }
+      - { text: です, reading: です }
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: modifier }
+      - { role: topic, text: 学校, reading: がっこう, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 便利です, reading: べんりです, wordClass: predicate }
+    meaning: This school is convenient.
+    reading: このがっこうはべんりです。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: school }
+      - { role: predicate, text: ' is convenient.' }
+    form: polite
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+  this-room-is-clean:
+    text: この部屋はきれいです。
+    tiles:
+      - { text: この, reading: この }
+      - { text: 部屋, reading: へや }
+      - { text: は, reading: は }
+      - { text: きれい, reading: きれい }
+      - { text: です, reading: です }
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: modifier }
+      - { role: topic, text: 部屋, reading: へや, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: きれいです, reading: きれいです, wordClass: predicate }
+    meaning: This room is clean.
+    reading: このへやはきれいです。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: room }
+      - { role: predicate, text: ' is clean.' }
+    form: polite
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+  this-town-is-quiet:
+    text: この町は静かです。
+    tiles:
+      - { text: この, reading: この }
+      - { text: 町, reading: まち }
+      - { text: は, reading: は }
+      - { text: 静か, reading: しずか }
+      - { text: です, reading: です }
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: modifier }
+      - { role: topic, text: 町, reading: まち, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 静かです, reading: しずかです, wordClass: predicate }
+    meaning: This town is quiet.
+    reading: このまちはしずかです。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: town }
+      - { role: predicate, text: ' is quiet.' }
+    form: polite
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+  this-library-is-convenient:
+    text: この図書館は便利です。
+    reading: このとしょかんはべんりです。
+    meaning: This library is convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 図書館, reading: としょかん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 図書館, reading: としょかん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: library, role: topic }
+      - { text: ' is convenient.', role: predicate }
+    form: polite
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+  this-shop-is-convenient:
+    text: この店は便利です。
+    reading: このみせはべんりです。
+    meaning: This shop is convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 店, reading: みせ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 店, reading: みせ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: shop, role: topic }
+      - { text: ' is convenient.', role: predicate }
+    form: polite
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+  this-bank-is-convenient:
+    text: この銀行は便利です。
+    reading: このぎんこうはべんりです。
+    meaning: This bank is convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 銀行, reading: ぎんこう, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 銀行, reading: ぎんこう, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: bank, role: topic }
+      - { text: ' is convenient.', role: predicate }
+    form: polite
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+  this-station-is-convenient:
+    text: この駅は便利です。
+    reading: このえきはべんりです。
+    meaning: This station is convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 駅, reading: えき, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 駅, reading: えき, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: station, role: topic }
+      - { text: ' is convenient.', role: predicate }
+    form: polite
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+  this-park-is-convenient:
+    text: この公園は便利です。
+    reading: このこうえんはべんりです。
+    meaning: This park is convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 公園, reading: こうえん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 公園, reading: こうえん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: park, role: topic }
+      - { text: ' is convenient.', role: predicate }
+    form: polite
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+  this-hospital-is-convenient:
+    text: この病院は便利です。
+    reading: このびょういんはべんりです。
+    meaning: This hospital is convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 病院, reading: びょういん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 病院, reading: びょういん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: hospital, role: topic }
+      - { text: ' is convenient.', role: predicate }
+    form: polite
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+  this-office-is-convenient:
+    text: この会社は便利です。
+    reading: このかいしゃはべんりです。
+    meaning: This office is convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 会社, reading: かいしゃ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 会社, reading: かいしゃ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: office, role: topic }
+      - { text: ' is convenient.', role: predicate }
+    form: polite
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+  this-post-office-is-convenient:
+    text: この郵便局は便利です。
+    reading: このゆうびんきょくはべんりです。
+    meaning: This post office is convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 郵便局, reading: ゆうびんきょく, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 郵便局, reading: ゆうびんきょく, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: post office, role: topic }
+      - { text: ' is convenient.', role: predicate }
+    form: polite
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+  this-art-museum-is-convenient:
+    text: この美術館は便利です。
+    reading: このびじゅつかんはべんりです。
+    meaning: This art museum is convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 美術館, reading: びじゅつかん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 美術館, reading: びじゅつかん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: art museum, role: topic }
+      - { text: ' is convenient.', role: predicate }
+    form: polite
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+  this-supermarket-is-convenient:
+    text: このスーパーは便利です。
+    reading: このすーぱーはべんりです。
+    meaning: This supermarket is convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: スーパー, reading: すーぱー, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: スーパー, reading: すーぱー, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: supermarket, role: topic }
+      - { text: ' is convenient.', role: predicate }
+    form: polite
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+  this-university-is-convenient:
+    text: この大学は便利です。
+    reading: このだいがくはべんりです。
+    meaning: This university is convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 大学, reading: だいがく, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 大学, reading: だいがく, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: university, role: topic }
+      - { text: ' is convenient.', role: predicate }
+    form: polite
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+  this-airport-is-convenient:
+    text: この空港は便利です。
+    reading: このくうこうはべんりです。
+    meaning: This airport is convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 空港, reading: くうこう, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 空港, reading: くうこう, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: airport, role: topic }
+      - { text: ' is convenient.', role: predicate }
+    form: polite
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+  this-port-is-convenient:
+    text: この港は便利です。
+    reading: このみなとはべんりです。
+    meaning: This port is convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 港, reading: みなと, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 港, reading: みなと, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: port, role: topic }
+      - { text: ' is convenient.', role: predicate }
+    form: polite
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+  this-market-is-convenient:
+    text: この市場は便利です。
+    reading: このいちばはべんりです。
+    meaning: This market is convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 市場, reading: いちば, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 市場, reading: いちば, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: market, role: topic }
+      - { text: ' is convenient.', role: predicate }
+    form: polite
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+  this-theater-is-convenient:
+    text: この劇場は便利です。
+    reading: このげきじょうはべんりです。
+    meaning: This theater is convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 劇場, reading: げきじょう, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 劇場, reading: げきじょう, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: theater, role: topic }
+      - { text: ' is convenient.', role: predicate }
+    form: polite
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+  this-cinema-is-convenient:
+    text: この映画館は便利です。
+    reading: このえいがかんはべんりです。
+    meaning: This cinema is convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 映画館, reading: えいがかん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 映画館, reading: えいがかん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: cinema, role: topic }
+      - { text: ' is convenient.', role: predicate }
+    form: polite
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+  this-museum-is-convenient:
+    text: この博物館は便利です。
+    reading: このはくぶつかんはべんりです。
+    meaning: This museum is convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 博物館, reading: はくぶつかん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 博物館, reading: はくぶつかん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利です, reading: べんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: museum, role: topic }
+      - { text: ' is convenient.', role: predicate }
+    form: polite
+    hint: Before です, use the adjective without な.
+    explanation: 'Use な before a noun, but omit it before です: 静かな部屋 / 部屋は静かです. きれい is a な-adjective despite ending in い.'
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: this-room-is-quiet
+    choices:
+      - text: This room is quiet.
+        reading: ''
+      - text: This room is noisy.
+        reading: ''
+    answers:
+      - This room is quiet.
+  - id: pattern
+    type: pattern-choice
+    sentence: this-room-is-quiet
+    choices:
+      - sentence: this-room-is-quiet
+      - text: この部屋は静かなです。
+        tiles:
+          - { text: この, reading: この }
+          - { text: 部屋, reading: へや }
+          - { text: は, reading: は }
+          - { text: 静か, reading: しずか }
+          - { text: な, reading: な }
+          - { text: です, reading: です }
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: modifier }
+          - { role: topic, text: 部屋, reading: へや, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 静か, reading: しずか, wordClass: predicate }
+          - { role: particle, text: な, reading: な, wordClass: particle }
+          - { role: predicate, text: です, reading: です, wordClass: predicate }
+        meaning: This room is noisy.
+        reading: このへやはしずかなです。
+    prompt: 'Choose the correct Japanese: This room is quiet.'
+    answers:
+      - この部屋は静かです
+      - この部屋はしずかです
+      - このへやは静かです
+      - このへやはしずかです
+  - id: gap
+    type: gap
+    sentence: this-school-is-convenient
+    answers:
+      - 便利
+      - べんり
+    context:
+      text: この学校は___です。
+      tokens:
+        - { role: modifier, text: この, reading: この, wordClass: modifier }
+        - { role: topic, text: 学校, reading: がっこう, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: ___です, reading: ___です, wordClass: predicate }
+      reading: このがっこうは___です。
+  - id: tiles
+    type: tiles
+    sentence: this-school-is-convenient
+    prompt: 'Build this sentence: This school is convenient. (polite)'
+    answers:
+      - この学校は便利です
+      - この学校はべんりです
+      - このがっこうは便利です
+      - このがっこうはべんりです
+    tiles:
+      - { role: modifier, text: この, reading: この, wordClass: modifier }
+      - { role: topic, text: 学校, reading: がっこう, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 便利, reading: べんり, wordClass: predicate }
+      - { role: predicate, text: です, reading: です, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: this-room-is-clean
+    answers:
+      - この部屋はきれいです
+      - このへやはきれいです
+  - id: alternate
+    type: typing
+    sentence: this-town-is-quiet
+    alternate: true
+    prompt: 'One more example: This town is quiet. (polite)'
+    answers:
+      - この町は静かです
+      - この町はしずかです
+      - このまちは静かです
+      - このまちはしずかです
+  - id: extra-1-tiles
+    type: tiles
+    sentence: this-library-is-convenient
+    prompt: 'Build this sentence: This library is convenient. (polite)'
+    answers:
+      - この図書館は便利です
+      - この図書館はべんりです
+      - このとしょかんは便利です
+      - このとしょかんはべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 図書館, reading: としょかん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: this-library-is-convenient
+    answers:
+      - この図書館は便利です
+      - この図書館はべんりです
+      - このとしょかんは便利です
+      - このとしょかんはべんりです
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: this-library-is-convenient
+    choices:
+      - text: This library is convenient.
+        reading: ''
+      - text: This room is quiet.
+        reading: ''
+    prompt: 'Choose the meaning: この図書館は便利です。'
+    answers:
+      - This library is convenient.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: this-shop-is-convenient
+    prompt: 'Build this sentence: This shop is convenient. (polite)'
+    answers:
+      - この店は便利です
+      - この店はべんりです
+      - このみせは便利です
+      - このみせはべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 店, reading: みせ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: this-shop-is-convenient
+    answers:
+      - この店は便利です
+      - この店はべんりです
+      - このみせは便利です
+      - このみせはべんりです
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: this-shop-is-convenient
+    choices:
+      - text: This shop is convenient.
+        reading: ''
+      - text: This room is quiet.
+        reading: ''
+    prompt: 'Choose the meaning: この店は便利です。'
+    answers:
+      - This shop is convenient.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: this-bank-is-convenient
+    prompt: 'Build this sentence: This bank is convenient. (polite)'
+    answers:
+      - この銀行は便利です
+      - この銀行はべんりです
+      - このぎんこうは便利です
+      - このぎんこうはべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 銀行, reading: ぎんこう, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: this-bank-is-convenient
+    answers:
+      - この銀行は便利です
+      - この銀行はべんりです
+      - このぎんこうは便利です
+      - このぎんこうはべんりです
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: this-bank-is-convenient
+    choices:
+      - text: This bank is convenient.
+        reading: ''
+      - text: This room is quiet.
+        reading: ''
+    prompt: 'Choose the meaning: この銀行は便利です。'
+    answers:
+      - This bank is convenient.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: this-station-is-convenient
+    prompt: 'Build this sentence: This station is convenient. (polite)'
+    answers:
+      - この駅は便利です
+      - この駅はべんりです
+      - このえきは便利です
+      - このえきはべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 駅, reading: えき, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: this-station-is-convenient
+    answers:
+      - この駅は便利です
+      - この駅はべんりです
+      - このえきは便利です
+      - このえきはべんりです
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: this-station-is-convenient
+    choices:
+      - text: This station is convenient.
+        reading: ''
+      - text: This room is quiet.
+        reading: ''
+    prompt: 'Choose the meaning: この駅は便利です。'
+    answers:
+      - This station is convenient.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: this-park-is-convenient
+    prompt: 'Build this sentence: This park is convenient. (polite)'
+    answers:
+      - この公園は便利です
+      - この公園はべんりです
+      - このこうえんは便利です
+      - このこうえんはべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 公園, reading: こうえん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: this-park-is-convenient
+    answers:
+      - この公園は便利です
+      - この公園はべんりです
+      - このこうえんは便利です
+      - このこうえんはべんりです
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: this-park-is-convenient
+    choices:
+      - text: This park is convenient.
+        reading: ''
+      - text: This room is quiet.
+        reading: ''
+    prompt: 'Choose the meaning: この公園は便利です。'
+    answers:
+      - This park is convenient.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: this-hospital-is-convenient
+    prompt: 'Build this sentence: This hospital is convenient. (polite)'
+    answers:
+      - この病院は便利です
+      - この病院はべんりです
+      - このびょういんは便利です
+      - このびょういんはべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 病院, reading: びょういん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: this-hospital-is-convenient
+    answers:
+      - この病院は便利です
+      - この病院はべんりです
+      - このびょういんは便利です
+      - このびょういんはべんりです
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: this-hospital-is-convenient
+    choices:
+      - text: This hospital is convenient.
+        reading: ''
+      - text: This room is quiet.
+        reading: ''
+    prompt: 'Choose the meaning: この病院は便利です。'
+    answers:
+      - This hospital is convenient.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: this-office-is-convenient
+    prompt: 'Build this sentence: This office is convenient. (polite)'
+    answers:
+      - この会社は便利です
+      - この会社はべんりです
+      - このかいしゃは便利です
+      - このかいしゃはべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 会社, reading: かいしゃ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: this-office-is-convenient
+    answers:
+      - この会社は便利です
+      - この会社はべんりです
+      - このかいしゃは便利です
+      - このかいしゃはべんりです
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: this-office-is-convenient
+    choices:
+      - text: This office is convenient.
+        reading: ''
+      - text: This room is quiet.
+        reading: ''
+    prompt: 'Choose the meaning: この会社は便利です。'
+    answers:
+      - This office is convenient.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: this-post-office-is-convenient
+    prompt: 'Build this sentence: This post office is convenient. (polite)'
+    answers:
+      - この郵便局は便利です
+      - この郵便局はべんりです
+      - このゆうびんきょくは便利です
+      - このゆうびんきょくはべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 郵便局, reading: ゆうびんきょく, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: this-post-office-is-convenient
+    answers:
+      - この郵便局は便利です
+      - この郵便局はべんりです
+      - このゆうびんきょくは便利です
+      - このゆうびんきょくはべんりです
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: this-post-office-is-convenient
+    choices:
+      - text: This post office is convenient.
+        reading: ''
+      - text: This room is quiet.
+        reading: ''
+    prompt: 'Choose the meaning: この郵便局は便利です。'
+    answers:
+      - This post office is convenient.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: this-art-museum-is-convenient
+    prompt: 'Build this sentence: This art museum is convenient. (polite)'
+    answers:
+      - この美術館は便利です
+      - この美術館はべんりです
+      - このびじゅつかんは便利です
+      - このびじゅつかんはべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 美術館, reading: びじゅつかん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: this-art-museum-is-convenient
+    answers:
+      - この美術館は便利です
+      - この美術館はべんりです
+      - このびじゅつかんは便利です
+      - このびじゅつかんはべんりです
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: this-art-museum-is-convenient
+    choices:
+      - text: This art museum is convenient.
+        reading: ''
+      - text: This room is quiet.
+        reading: ''
+    prompt: 'Choose the meaning: この美術館は便利です。'
+    answers:
+      - This art museum is convenient.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: this-supermarket-is-convenient
+    prompt: 'Build this sentence: This supermarket is convenient. (polite)'
+    answers:
+      - このスーパーは便利です
+      - このスーパーはべんりです
+      - このすーぱーは便利です
+      - このすーぱーはべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: スーパー, reading: すーぱー, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: this-supermarket-is-convenient
+    answers:
+      - このスーパーは便利です
+      - このスーパーはべんりです
+      - このすーぱーは便利です
+      - このすーぱーはべんりです
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: this-supermarket-is-convenient
+    choices:
+      - text: This supermarket is convenient.
+        reading: ''
+      - text: This room is quiet.
+        reading: ''
+    prompt: 'Choose the meaning: このスーパーは便利です。'
+    answers:
+      - This supermarket is convenient.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: this-university-is-convenient
+    prompt: 'Build this sentence: This university is convenient. (polite)'
+    answers:
+      - この大学は便利です
+      - この大学はべんりです
+      - このだいがくは便利です
+      - このだいがくはべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 大学, reading: だいがく, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: this-university-is-convenient
+    answers:
+      - この大学は便利です
+      - この大学はべんりです
+      - このだいがくは便利です
+      - このだいがくはべんりです
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: this-university-is-convenient
+    choices:
+      - text: This university is convenient.
+        reading: ''
+      - text: This room is quiet.
+        reading: ''
+    prompt: 'Choose the meaning: この大学は便利です。'
+    answers:
+      - This university is convenient.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: this-airport-is-convenient
+    prompt: 'Build this sentence: This airport is convenient. (polite)'
+    answers:
+      - この空港は便利です
+      - この空港はべんりです
+      - このくうこうは便利です
+      - このくうこうはべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 空港, reading: くうこう, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: this-airport-is-convenient
+    answers:
+      - この空港は便利です
+      - この空港はべんりです
+      - このくうこうは便利です
+      - このくうこうはべんりです
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: this-airport-is-convenient
+    choices:
+      - text: This airport is convenient.
+        reading: ''
+      - text: This room is quiet.
+        reading: ''
+    prompt: 'Choose the meaning: この空港は便利です。'
+    answers:
+      - This airport is convenient.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: this-port-is-convenient
+    prompt: 'Build this sentence: This port is convenient. (polite)'
+    answers:
+      - この港は便利です
+      - この港はべんりです
+      - このみなとは便利です
+      - このみなとはべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 港, reading: みなと, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: this-port-is-convenient
+    answers:
+      - この港は便利です
+      - この港はべんりです
+      - このみなとは便利です
+      - このみなとはべんりです
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: this-port-is-convenient
+    choices:
+      - text: This port is convenient.
+        reading: ''
+      - text: This room is quiet.
+        reading: ''
+    prompt: 'Choose the meaning: この港は便利です。'
+    answers:
+      - This port is convenient.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: this-market-is-convenient
+    prompt: 'Build this sentence: This market is convenient. (polite)'
+    answers:
+      - この市場は便利です
+      - この市場はべんりです
+      - このいちばは便利です
+      - このいちばはべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 市場, reading: いちば, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: this-market-is-convenient
+    answers:
+      - この市場は便利です
+      - この市場はべんりです
+      - このいちばは便利です
+      - このいちばはべんりです
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: this-market-is-convenient
+    choices:
+      - text: This market is convenient.
+        reading: ''
+      - text: This room is quiet.
+        reading: ''
+    prompt: 'Choose the meaning: この市場は便利です。'
+    answers:
+      - This market is convenient.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: this-theater-is-convenient
+    prompt: 'Build this sentence: This theater is convenient. (polite)'
+    answers:
+      - この劇場は便利です
+      - この劇場はべんりです
+      - このげきじょうは便利です
+      - このげきじょうはべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 劇場, reading: げきじょう, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: this-theater-is-convenient
+    answers:
+      - この劇場は便利です
+      - この劇場はべんりです
+      - このげきじょうは便利です
+      - このげきじょうはべんりです
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: this-theater-is-convenient
+    choices:
+      - text: This theater is convenient.
+        reading: ''
+      - text: This room is quiet.
+        reading: ''
+    prompt: 'Choose the meaning: この劇場は便利です。'
+    answers:
+      - This theater is convenient.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: this-cinema-is-convenient
+    prompt: 'Build this sentence: This cinema is convenient. (polite)'
+    answers:
+      - この映画館は便利です
+      - この映画館はべんりです
+      - このえいがかんは便利です
+      - このえいがかんはべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 映画館, reading: えいがかん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: this-cinema-is-convenient
+    answers:
+      - この映画館は便利です
+      - この映画館はべんりです
+      - このえいがかんは便利です
+      - このえいがかんはべんりです
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: this-cinema-is-convenient
+    choices:
+      - text: This cinema is convenient.
+        reading: ''
+      - text: This room is quiet.
+        reading: ''
+    prompt: 'Choose the meaning: この映画館は便利です。'
+    answers:
+      - This cinema is convenient.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: this-museum-is-convenient
+    prompt: 'Build this sentence: This museum is convenient. (polite)'
+    answers:
+      - この博物館は便利です
+      - この博物館はべんりです
+      - このはくぶつかんは便利です
+      - このはくぶつかんはべんりです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 博物館, reading: はくぶつかん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: this-museum-is-convenient
+    answers:
+      - この博物館は便利です
+      - この博物館はべんりです
+      - このはくぶつかんは便利です
+      - このはくぶつかんはべんりです

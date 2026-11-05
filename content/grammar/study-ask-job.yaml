@@ -1,0 +1,275 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-ask-job
+  kind: grammar
+  note:
+    Ask お仕事は何ですか (おしごとはなんですか). Answer with your occupation + です. A student can answer 学生です. These are
+    example answers, not information about the visitor.
+  tags:
+    - Study guide
+  level: N5
+  title: 'Ask and answer: your job'
+  topic: Grammar basics
+  romaji: oshigoto wa nan desu ka
+  meaning: 'Ask and answer: your job'
+  reading: おしごとはなんですか。
+  examples:
+    - tokens:
+        - { role: topic, text: お仕事, reading: おしごと, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 何です, reading: なんです, wordClass: predicate }
+        - { role: particle, text: か, reading: か, wordClass: particle }
+      meaning: What is your job?
+      reading: おしごとはなんですか。
+      japanese: お仕事は何ですか。
+      translationTokens:
+        - { role: predicate, text: 'What is ' }
+        - { role: topic, text: your job }
+        - { role: particle, text: '?' }
+    - tokens:
+        - { role: predicate, text: 会社員です, reading: かいしゃいんです, wordClass: predicate }
+      meaning: I am a company employee.
+      reading: かいしゃいんです。
+      japanese: 会社員です。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: am a company employee. }
+    - tokens:
+        - { role: predicate, text: 学生です, reading: がくせいです, wordClass: predicate }
+      meaning: I am a student.
+      reading: がくせいです。
+      japanese: 学生です。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: am a student. }
+    - tokens:
+        - { role: predicate, text: 教師です, reading: きょうしです, wordClass: predicate }
+      meaning: I am a teacher.
+      reading: きょうしです。
+      japanese: 教師です。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: am a teacher. }
+  japanese: お仕事は何ですか。
+  references:
+    - rows:
+        - - text: 会社員
+            reading: かいしゃいん
+          - text: company employee
+            reading: ''
+        - - text: 学生
+            reading: がくせい
+          - text: student
+            reading: ''
+        - - text: 教師
+            reading: きょうし
+          - text: teacher (occupation)
+            reading: ''
+        - - text: 医者
+            reading: いしゃ
+          - text: doctor
+            reading: ''
+      columns:
+        - Japanese
+        - Meaning
+      heading: Useful answers
+sentences:
+  what-is-your-job:
+    text: お仕事は何ですか。
+    tokens:
+      - { role: topic, text: お仕事, reading: おしごと, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 何です, reading: なんです, wordClass: predicate }
+      - { role: particle, text: か, reading: か, wordClass: particle }
+    meaning: What is your job?
+    reading: おしごとはなんですか。
+    translationTokens:
+      - { role: predicate, text: 'What is ' }
+      - { role: topic, text: your job }
+      - { role: particle, text: '?' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      Ask お仕事は何ですか (おしごとはなんですか). Answer with your occupation + です. A student can answer 学生です. These are
+      example answers, not information about the visitor.
+  i-am-a-company-employee:
+    text: 会社員です。
+    tokens:
+      - { role: predicate, text: 会社員です, reading: かいしゃいんです, wordClass: predicate }
+    meaning: I am a company employee.
+    reading: かいしゃいんです。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: am a company employee. }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      Ask お仕事は何ですか (おしごとはなんですか). Answer with your occupation + です. A student can answer 学生です. These are
+      example answers, not information about the visitor.
+    form: polite
+  i-am-a-student:
+    text: 学生です。
+    tokens:
+      - { role: predicate, text: 学生です, reading: がくせいです, wordClass: predicate }
+    meaning: I am a student.
+    reading: がくせいです。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: am a student. }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      Ask お仕事は何ですか (おしごとはなんですか). Answer with your occupation + です. A student can answer 学生です. These are
+      example answers, not information about the visitor.
+  i-am-a-teacher:
+    text: 教師です。
+    tokens:
+      - { role: predicate, text: 教師です, reading: きょうしです, wordClass: predicate }
+    meaning: I am a teacher.
+    reading: きょうしです。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: am a teacher. }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      Ask お仕事は何ですか (おしごとはなんですか). Answer with your occupation + です. A student can answer 学生です. These are
+      example answers, not information about the visitor.
+  i-am-a-teacher-2:
+    tokens:
+      - { role: predicate, text: 先生です, reading: せんせいです, wordClass: predicate }
+    meaning: I am a teacher.
+    reading: せんせいです。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: am a teacher. }
+    text: 先生です。
+    hint: Check the particles and sentence ending.
+    explanation: 先生です。 means “I am a teacher.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: what-is-your-job
+    choices:
+      - text: What is your job?
+        reading: ''
+      - text: I am a company employee.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+      - text: I am a teacher.
+        reading: ''
+    answers:
+      - What is your job?
+  - id: pattern
+    type: pattern-choice
+    sentence: i-am-a-company-employee
+    choices:
+      - sentence: what-is-your-job
+      - sentence: i-am-a-company-employee
+    prompt: 'Choose the Japanese: I am a company employee.'
+    answers:
+      - 会社員です
+      - かいしゃいんです
+  - id: gap
+    type: gap
+    sentence: i-am-a-company-employee
+    prompt: 'Fill the missing part: I am a company employee. (polite)'
+    answers:
+      - 会社員です
+      - かいしゃいんです
+    context:
+      text: ___。
+      tokens:
+        - { role: predicate, text: ___, reading: ___, wordClass: predicate }
+      reading: ___。
+  - id: tiles
+    type: tiles
+    sentence: i-am-a-company-employee
+    prompt: 'Build: I am a company employee. (polite)'
+    answers:
+      - 会社員です
+      - かいしゃいんです
+    tiles:
+      - { role: predicate, text: 会社員です, reading: かいしゃいんです, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: i-am-a-student
+    answers:
+      - 学生です
+      - がくせいです
+  - id: alternate
+    type: typing
+    sentence: i-am-a-teacher
+    alternate: true
+    prompt: 'Another example: I am a teacher. (polite)'
+    answers:
+      - 教師です
+      - きょうしです
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: i-am-a-teacher-2
+    choices:
+      - text: I am a teacher.
+        reading: ''
+      - text: What is your job?
+        reading: ''
+      - text: I am a company employee.
+        reading: ''
+      - text: I am a student.
+        reading: ''
+    answers:
+      - I am a teacher.
+  - id: expanded-1-typing
+    type: typing
+    sentence: i-am-a-teacher-2
+    explanation: 先生です。 means “I am a teacher.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 先生です
+      - せんせいです
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: i-am-a-teacher-2
+    prompt: 'Build this sentence: I am a teacher. (polite)'
+    explanation: 先生です。 means “I am a teacher.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 先生です
+      - せんせいです
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: i-am-a-teacher-2
+    choices:
+      - sentence: i-am-a-teacher-2
+      - text: お仕事は何ですか。
+        reading: おしごとはなんですか。
+        tokens:
+          - { role: topic, text: お仕事, reading: おしごと, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 何です, reading: なんです, wordClass: predicate }
+          - { role: particle, text: か, reading: か, wordClass: particle }
+      - text: 会社員です。
+        reading: かいしゃいんです。
+        tokens:
+          - { role: predicate, text: 会社員です, reading: かいしゃいんです, wordClass: predicate }
+      - text: 学生です。
+        reading: がくせいです。
+        tokens:
+          - { role: predicate, text: 学生です, reading: がくせいです, wordClass: predicate }
+    prompt: 'Choose the Japanese: I am a teacher. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 先生です。 for “I am a teacher.” The other sentences describe different situations.
+    answers:
+      - 先生です
+      - せんせいです
+  - id: expanded-1-gap
+    type: gap
+    sentence: i-am-a-teacher-2
+    prompt: 'Fill the missing part: I am a teacher. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 先生です (せんせいです). Together, the sentence means “I am a teacher.”
+    answers:
+      - 先生です
+      - せんせいです
+    context:
+      meaning: I am a teacher.
+      reading: ___。
+      text: ___。

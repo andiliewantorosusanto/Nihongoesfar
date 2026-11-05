@@ -8,7 +8,7 @@ Development, content editing, hosting, and dictionary update instructions.
 
 The static build runs entirely in the browser: no hosted database, API, owner key, or server is needed. Reading preferences stay in each browser, and practice answers are checked locally. The interface is read-only. All exported library entries (including custom notes) are public.
 
-The library is authored directly in the subject JSON files in `public/`; `notebook.json` lists them. No database, API server, Docker, or environment configuration is needed.
+Grammar is authored in `content/grammar/*.yaml` and compiled into `public/grammar.json`. Other subjects are authored directly in their JSON files in `public/`; `notebook.json` lists the published files. No database, API server, Docker, or environment configuration is needed.
 
 Run `npm ci`, then `npm run dev` to develop locally. Run `npm run build` to produce `dist/` and `npm start` to preview it. Upload only the contents of `dist/`.
 
@@ -22,9 +22,13 @@ For AWS hosting:
 
 Navigation is currently in-page, so no SPA path rewrite is required. Keep the S3 bucket: deleting it deletes the published content. Domain registration and AWS usage are billed separately.
 
-## Edit learning material directly in JSON
+## Edit grammar in YAML
 
-The published learning library is split into `public/kana.json`, `public/kanji.json`, `public/grammar.json`, `public/vocabulary.json`, `public/numbers.json`, and `public/adjectives.json`. Each file is an array of entries. Edit the matching subject file to update material or add entries, then commit and push. GitHub Actions builds and publishes that JSON automatically; no database export is needed for this workflow.
+Use the [grammar authoring guide](grammar-authoring.md) for sentence templates, question types, particle blanks, and accepted alternatives. Each grammar topic has its own YAML file; the index preserves topic order. Run `npm run content:build` after editing and commit both the YAML and generated `public/grammar.json`. Do not edit that generated JSON directly. Development watches grammar YAML changes; production builds generate before compiling. `npm run content:check` validates source and checks freshness without writing; CI runs it before building.
+
+## Edit other learning material directly in JSON
+
+The published learning library is split into `public/kana.json`, `public/kanji.json`, `public/grammar.json`, `public/vocabulary.json`, `public/numbers.json`, and `public/adjectives.json`. Each file is an array of entries. Edit the matching subject file for non-grammar material; use YAML for grammar. Then verify and commit your changes. Push only when ready to publish. GitHub Actions builds and publishes that JSON automatically; no database export is needed for this workflow.
 
 To add material, copy an existing entry of the same `kind`, give it a unique `id`, and edit its fields. Supported kinds are `kana`, `kanji`, `grammar`, `vocabulary`, `numbers`, and `adjectives`. Keep the required fields (`id`, `kind`, `title`, `japanese`, `reading`, `meaning`, `level`, `topic`, `tags`, `note`, and `examples`); copy optional lesson, reference, or exercise fields when needed. Exercise answers and explanations live in the same entry. Keep IDs stable because lessons can refer to other entries.
 
@@ -49,7 +53,7 @@ Example entry to append to a subject array:
 
 Preview and verify with `npm run build:static && npm run test:static`. JSON requires commas between entries and does not allow trailing commas or comments.
 
-Special book navigation and interactive number/family guides are defined in application code. Adding an ordinary library entry needs only JSON; a new custom screen needs code. Compound and stroke datasets are also JSON.
+Special book navigation and interactive number/family guides are defined in application code. Adding an ordinary library entry needs only content (YAML for grammar, JSON for other subjects); a new custom screen needs code. Compound and stroke datasets are also JSON.
 
 ## GitHub Actions: push → test → deploy
 
@@ -64,7 +68,7 @@ One-time setup:
 - In GitHub **Settings → Secrets and variables → Actions → Variables**, add repository variables `AWS_ROLE_ARN`, `AWS_DEFAULT_REGION`, `S3_BUCKET`, and `CLOUDFRONT_DISTRIBUTION_ID`. These identifiers are not credentials; no permanent AWS access keys are needed.
 - Protect the default branch and enable GitHub Actions for the repository.
 
-For code or content changes, edit the source or subject JSON files, commit, and push. CI publishes only `dist/`. Old hashed assets remain available to already-open browser tabs.
+For code or content changes, edit the source, generate grammar JSON if needed, and verify before committing. An authorized push publishes the changes. CI publishes only `dist/`. Old hashed assets remain available to already-open browser tabs.
 
 ## Library organization
 
@@ -79,7 +83,7 @@ For code or content changes, edit the source or subject JSON files, commit, and 
 
 Guide data lives in `public/guides/`: `numbers.json` contains number/hour/minute pronunciation tables, `family.json` contains pronunciation help and diagram positions, `topic-books.json` groups existing entry IDs into books, and `tense-topics.json` maps older links to combined lessons. Edit these files, then build, commit, and push to publish changes. Converter and lookup behavior remains in TypeScript. Guide JSON is bundled during the build, so deploy a fresh build after editing it.
 
-The editable subject files and attributed stroke/compound datasets live in `public/`. Stroke and compound code imports those same datasets, avoiding duplicate JSON copies. All lesson material lives in the public subject files; there is no separate TypeScript seed library.
+The editable subject files and attributed stroke/compound datasets live in `public/`. Stroke and compound code imports those same datasets, avoiding duplicate JSON copies. Published lesson material lives in the public subject files; grammar is maintained in YAML and generated into that public snapshot. There is no separate TypeScript seed library.
 
 ## Styles
 

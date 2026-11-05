@@ -1,0 +1,1851 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-te-sequence
+  kind: grammar
+  title: 'Connecting actions: て-form'
+  japanese: パンを食べて学校に行きます。
+  reading: ぱんをたべてがっこうにいきます。
+  meaning: I eat bread and then go to school.
+  level: N5
+  topic: Connecting descriptions and actions
+  tags:
+    - Grammar
+    - te-sequence
+  note:
+    'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to every verb.
+    The final verb sets tense and politeness.'
+  examples:
+    - japanese: パンを食べて学校に行きます。
+      reading: ぱんをたべてがっこうにいきます。
+      meaning: I eat bread and then go to school.
+      tokens:
+        - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+        - { text: を, reading: を, role: particle, wordClass: particle }
+        - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+        - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+        - { text: に, reading: に, role: particle, wordClass: particle }
+        - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+      translationTokens:
+        - { text: 'I ', role: implicit, implicit: true }
+        - { text: 'eat ', role: predicate }
+        - { text: bread, role: object }
+        - { text: ' and then go', role: predicate }
+        - { text: ' to school.', role: modifier }
+    - japanese: 本を読んで寝ます。
+      reading: ほんをよんでねます。
+      meaning: I read a book and then go to bed.
+      tokens:
+        - { text: 本, reading: ほん, role: object, wordClass: noun phrase }
+        - { text: を, reading: を, role: particle, wordClass: particle }
+        - { text: 読んで寝ます, reading: よんでねます, role: predicate, wordClass: predicate }
+      translationTokens:
+        - { text: 'I ', role: implicit, implicit: true }
+        - { text: 'read ', role: predicate }
+        - { text: a book, role: object }
+        - { text: ' and then go to bed.', role: predicate }
+    - japanese: 家に帰って勉強します。
+      reading: いえにかえってべんきょうします。
+      meaning: I return home and then study.
+      tokens:
+        - { text: 家, reading: いえ, role: modifier, wordClass: modifier }
+        - { text: に, reading: に, role: particle, wordClass: particle }
+        - {
+            text: 帰って勉強します,
+            reading: かえってべんきょうします,
+            role: predicate,
+            wordClass: predicate,
+          }
+      translationTokens:
+        - { text: 'I ', role: implicit, implicit: true }
+        - { text: 'return ', role: predicate }
+        - { text: home, role: modifier }
+        - { text: ' and then study.', role: predicate }
+  lesson:
+    order: 28
+    group: Connecting descriptions and actions
+    goal: Connect two actions in sequence.
+    prerequisites:
+      - grammar-te-request
+    recap:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to every
+      verb. The final verb sets tense and politeness.'
+    comparison:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to every
+      verb. The final verb sets tense and politeness.'
+    examples:
+      - japanese: パンを食べて学校に行きます。
+        reading: ぱんをたべてがっこうにいきます。
+        meaning: I eat bread and then go to school.
+        tokens:
+          - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+          - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+          - { text: に, reading: に, role: particle, wordClass: particle }
+          - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+        translationTokens:
+          - { text: 'I ', role: implicit, implicit: true }
+          - { text: 'eat ', role: predicate }
+          - { text: bread, role: object }
+          - { text: ' and then go', role: predicate }
+          - { text: ' to school.', role: modifier }
+      - japanese: 本を読んで寝ます。
+        reading: ほんをよんでねます。
+        meaning: I read a book and then go to bed.
+        tokens:
+          - { text: 本, reading: ほん, role: object, wordClass: noun phrase }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - { text: 読んで寝ます, reading: よんでねます, role: predicate, wordClass: predicate }
+        translationTokens:
+          - { text: 'I ', role: implicit, implicit: true }
+          - { text: 'read ', role: predicate }
+          - { text: a book, role: object }
+          - { text: ' and then go to bed.', role: predicate }
+      - japanese: 家に帰って勉強します。
+        reading: いえにかえってべんきょうします。
+        meaning: I return home and then study.
+        tokens:
+          - { text: 家, reading: いえ, role: modifier, wordClass: modifier }
+          - { text: に, reading: に, role: particle, wordClass: particle }
+          - {
+              text: 帰って勉強します,
+              reading: かえってべんきょうします,
+              role: predicate,
+              wordClass: predicate,
+            }
+        translationTokens:
+          - { text: 'I ', role: implicit, implicit: true }
+          - { text: 'return ', role: predicate }
+          - { text: home, role: modifier }
+          - { text: ' and then study.', role: predicate }
+    vocabulary:
+      - text: パン
+        reading: ぱん
+        role: object
+        wordClass: noun phrase
+        meaning: bread
+      - text: 食べて
+        reading: たべて
+        role: predicate
+        wordClass: predicate
+        meaning: eat (て-form)
+      - text: 学校
+        reading: がっこう
+        role: modifier
+        wordClass: modifier
+        meaning: school
+      - text: 行きます
+        reading: いきます
+        role: predicate
+        wordClass: predicate
+        meaning: go
+      - text: 本
+        reading: ほん
+        role: object
+        wordClass: noun phrase
+        meaning: book
+      - text: 読んで
+        reading: よんで
+        role: predicate
+        wordClass: predicate
+        meaning: read (て-form)
+      - text: 家
+        reading: いえ
+        role: modifier
+        wordClass: modifier
+        meaning: home / house
+      - text: 勉強します
+        reading: べんきょうします
+        role: predicate
+        wordClass: predicate
+        meaning: study
+      - text: 水
+        reading: みず
+        role: object
+        wordClass: noun phrase
+        meaning: water
+      - text: 飲んで
+        reading: のんで
+        role: predicate
+        wordClass: predicate
+        meaning: drink (て-form)
+sentences:
+  i-eat-bread-and-then-go-to-school:
+    text: パンを食べて学校に行きます。
+    reading: ぱんをたべてがっこうにいきます。
+    meaning: I eat bread and then go to school.
+    tiles:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'eat ', role: predicate }
+      - { text: bread, role: object }
+      - { text: ' and then go', role: predicate }
+      - { text: ' to school.', role: modifier }
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+  i-read-a-book-and-then-go-to-bed:
+    text: 本を読んで寝ます。
+    reading: ほんをよんでねます。
+    meaning: I read a book and then go to bed.
+    tiles:
+      - { text: 本, reading: ほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: 寝ます, reading: ねます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 本, reading: ほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで寝ます, reading: よんでねます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'read ', role: predicate }
+      - { text: a book, role: object }
+      - { text: ' and then go to bed.', role: predicate }
+    form: polite
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+  i-return-home-and-then-study:
+    text: 家に帰って勉強します。
+    reading: いえにかえってべんきょうします。
+    meaning: I return home and then study.
+    tiles:
+      - { text: 家, reading: いえ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 帰って, reading: かえって, role: predicate, wordClass: predicate }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 家, reading: いえ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - {
+          text: 帰って勉強します,
+          reading: かえってべんきょうします,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'return ', role: predicate }
+      - { text: home, role: modifier }
+      - { text: ' and then study.', role: predicate }
+    form: polite
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+  i-drink-water-and-then-rest:
+    text: 水を飲んで休みます。
+    reading: みずをのんでやすみます。
+    meaning: I drink water and then rest.
+    tiles:
+      - { text: 水, reading: みず, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んで, reading: のんで, role: predicate, wordClass: predicate }
+      - { text: 休みます, reading: やすみます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 水, reading: みず, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んで休みます, reading: のんでやすみます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'drink ', role: predicate }
+      - { text: water, role: object }
+      - { text: ' and then rest.', role: predicate }
+    form: polite
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+  i-eat-rice-and-then-go-to-school:
+    text: ご飯を食べて学校に行きます。
+    reading: ごはんをたべてがっこうにいきます。
+    meaning: I eat rice and then go to school.
+    tiles:
+      - { text: ご飯, reading: ごはん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: ご飯, reading: ごはん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'eat ', role: predicate }
+      - { text: rice, role: object }
+      - { text: ' and then go', role: predicate }
+      - { text: ' to school.', role: modifier }
+    form: polite
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+  i-eat-sushi-and-then-go-to-school:
+    text: 寿司を食べて学校に行きます。
+    reading: すしをたべてがっこうにいきます。
+    meaning: I eat sushi and then go to school.
+    tiles:
+      - { text: 寿司, reading: すし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 寿司, reading: すし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'eat ', role: predicate }
+      - { text: sushi, role: object }
+      - { text: ' and then go', role: predicate }
+      - { text: ' to school.', role: modifier }
+    form: polite
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+  i-eat-fish-and-then-go-to-school:
+    text: 魚を食べて学校に行きます。
+    reading: さかなをたべてがっこうにいきます。
+    meaning: I eat fish and then go to school.
+    tiles:
+      - { text: 魚, reading: さかな, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 魚, reading: さかな, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'eat ', role: predicate }
+      - { text: fish, role: object }
+      - { text: ' and then go', role: predicate }
+      - { text: ' to school.', role: modifier }
+    form: polite
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+  i-eat-meat-and-then-go-to-school:
+    text: 肉を食べて学校に行きます。
+    reading: にくをたべてがっこうにいきます。
+    meaning: I eat meat and then go to school.
+    tiles:
+      - { text: 肉, reading: にく, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 肉, reading: にく, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'eat ', role: predicate }
+      - { text: meat, role: object }
+      - { text: ' and then go', role: predicate }
+      - { text: ' to school.', role: modifier }
+    form: polite
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+  i-eat-eggs-and-then-go-to-school:
+    text: 卵を食べて学校に行きます。
+    reading: たまごをたべてがっこうにいきます。
+    meaning: I eat eggs and then go to school.
+    tiles:
+      - { text: 卵, reading: たまご, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 卵, reading: たまご, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'eat ', role: predicate }
+      - { text: eggs, role: object }
+      - { text: ' and then go', role: predicate }
+      - { text: ' to school.', role: modifier }
+    form: polite
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+  i-eat-vegetables-and-then-go-to-school:
+    text: 野菜を食べて学校に行きます。
+    reading: やさいをたべてがっこうにいきます。
+    meaning: I eat vegetables and then go to school.
+    tiles:
+      - { text: 野菜, reading: やさい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 野菜, reading: やさい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'eat ', role: predicate }
+      - { text: vegetables, role: object }
+      - { text: ' and then go', role: predicate }
+      - { text: ' to school.', role: modifier }
+    form: polite
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+  i-eat-fruit-and-then-go-to-school:
+    text: 果物を食べて学校に行きます。
+    reading: くだものをたべてがっこうにいきます。
+    meaning: I eat fruit and then go to school.
+    tiles:
+      - { text: 果物, reading: くだもの, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 果物, reading: くだもの, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'eat ', role: predicate }
+      - { text: fruit, role: object }
+      - { text: ' and then go', role: predicate }
+      - { text: ' to school.', role: modifier }
+    form: polite
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+  i-eat-apples-and-then-go-to-school:
+    text: りんごを食べて学校に行きます。
+    reading: りんごをたべてがっこうにいきます。
+    meaning: I eat apples and then go to school.
+    tiles:
+      - { text: りんご, reading: りんご, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: りんご, reading: りんご, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'eat ', role: predicate }
+      - { text: apples, role: object }
+      - { text: ' and then go', role: predicate }
+      - { text: ' to school.', role: modifier }
+    form: polite
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+  i-eat-bananas-and-then-go-to-school:
+    text: バナナを食べて学校に行きます。
+    reading: ばななをたべてがっこうにいきます。
+    meaning: I eat bananas and then go to school.
+    tiles:
+      - { text: バナナ, reading: ばなな, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: バナナ, reading: ばなな, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'eat ', role: predicate }
+      - { text: bananas, role: object }
+      - { text: ' and then go', role: predicate }
+      - { text: ' to school.', role: modifier }
+    form: polite
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+  i-eat-cheese-and-then-go-to-school:
+    text: チーズを食べて学校に行きます。
+    reading: ちーずをたべてがっこうにいきます。
+    meaning: I eat cheese and then go to school.
+    tiles:
+      - { text: チーズ, reading: ちーず, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: チーズ, reading: ちーず, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'eat ', role: predicate }
+      - { text: cheese, role: object }
+      - { text: ' and then go', role: predicate }
+      - { text: ' to school.', role: modifier }
+    form: polite
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+  i-eat-bread-and-then-go-to-library:
+    text: パンを食べて図書館に行きます。
+    reading: ぱんをたべてとしょかんにいきます。
+    meaning: I eat bread and then go to library.
+    tiles:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 図書館, reading: としょかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 図書館, reading: としょかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'eat ', role: predicate }
+      - { text: bread, role: object }
+      - { text: ' and then go', role: predicate }
+      - { text: ' to library.', role: modifier }
+    form: polite
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+  i-eat-bread-and-then-go-to-shop:
+    text: パンを食べて店に行きます。
+    reading: ぱんをたべてみせにいきます。
+    meaning: I eat bread and then go to shop.
+    tiles:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'eat ', role: predicate }
+      - { text: bread, role: object }
+      - { text: ' and then go', role: predicate }
+      - { text: ' to shop.', role: modifier }
+    form: polite
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+  i-eat-bread-and-then-go-to-bank:
+    text: パンを食べて銀行に行きます。
+    reading: ぱんをたべてぎんこうにいきます。
+    meaning: I eat bread and then go to bank.
+    tiles:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'eat ', role: predicate }
+      - { text: bread, role: object }
+      - { text: ' and then go', role: predicate }
+      - { text: ' to bank.', role: modifier }
+    form: polite
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+  i-eat-bread-and-then-go-to-station:
+    text: パンを食べて駅に行きます。
+    reading: ぱんをたべてえきにいきます。
+    meaning: I eat bread and then go to station.
+    tiles:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'eat ', role: predicate }
+      - { text: bread, role: object }
+      - { text: ' and then go', role: predicate }
+      - { text: ' to station.', role: modifier }
+    form: polite
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+  i-eat-bread-and-then-go-to-park:
+    text: パンを食べて公園に行きます。
+    reading: ぱんをたべてこうえんにいきます。
+    meaning: I eat bread and then go to park.
+    tiles:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'eat ', role: predicate }
+      - { text: bread, role: object }
+      - { text: ' and then go', role: predicate }
+      - { text: ' to park.', role: modifier }
+    form: polite
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+  i-eat-bread-and-then-go-to-hospital:
+    text: パンを食べて病院に行きます。
+    reading: ぱんをたべてびょういんにいきます。
+    meaning: I eat bread and then go to hospital.
+    tiles:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 病院, reading: びょういん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 病院, reading: びょういん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'eat ', role: predicate }
+      - { text: bread, role: object }
+      - { text: ' and then go', role: predicate }
+      - { text: ' to hospital.', role: modifier }
+    form: polite
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+  i-eat-bread-and-then-go-to-office:
+    text: パンを食べて会社に行きます。
+    reading: ぱんをたべてかいしゃにいきます。
+    meaning: I eat bread and then go to office.
+    tiles:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 会社, reading: かいしゃ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 会社, reading: かいしゃ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'eat ', role: predicate }
+      - { text: bread, role: object }
+      - { text: ' and then go', role: predicate }
+      - { text: ' to office.', role: modifier }
+    form: polite
+    hint: Put the first action in its て-form.
+    explanation:
+      'Use verb て-form + the next verb. Some て-forms end in で: よむ → よんで. Do not simply attach で to
+      every verb. The final verb sets tense and politeness.'
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-eat-bread-and-then-go-to-school
+    choices:
+      - text: I eat bread and then go to school.
+        reading: ''
+      - text: I eat bread and then return home.
+        reading: ''
+    answers:
+      - I eat bread and then go to school.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-eat-bread-and-then-go-to-school
+    choices:
+      - sentence: i-eat-bread-and-then-go-to-school
+      - text: パンを食べます学校に行きます。
+        reading: ぱんをたべますがっこうにいきます。
+        meaning: I eat bread and then return home.
+        tiles:
+          - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - { text: 食べます, reading: たべます, role: predicate, wordClass: predicate }
+          - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+          - { text: に, reading: に, role: particle, wordClass: particle }
+          - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+        tokens:
+          - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - { text: 食べます, reading: たべます, role: predicate, wordClass: predicate }
+          - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+          - { text: に, reading: に, role: particle, wordClass: particle }
+          - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+    prompt: 'Choose the correct Japanese: I eat bread and then go to school.'
+    answers:
+      - パンを食べて学校に行きます
+      - パンを食べて学校にいきます
+      - パンを食べてがっこうに行きます
+      - パンを食べてがっこうにいきます
+      - パンをたべて学校に行きます
+      - パンをたべて学校にいきます
+      - パンをたべてがっこうに行きます
+      - パンをたべてがっこうにいきます
+      - ぱんを食べて学校に行きます
+      - ぱんを食べて学校にいきます
+      - ぱんを食べてがっこうに行きます
+      - ぱんを食べてがっこうにいきます
+      - ぱんをたべて学校に行きます
+      - ぱんをたべて学校にいきます
+      - ぱんをたべてがっこうに行きます
+      - ぱんをたべてがっこうにいきます
+  - id: gap
+    type: gap
+    sentence: i-read-a-book-and-then-go-to-bed
+    answers:
+      - 読んで
+      - よんで
+    context:
+      tokens:
+        - { text: 本, reading: ほん, role: object, wordClass: noun phrase }
+        - { text: を, reading: を, role: particle, wordClass: particle }
+        - { text: ___寝ます, reading: ___ねます, role: predicate, wordClass: predicate }
+      text: 本を___寝ます。
+      reading: ほんを___ねます。
+  - id: tiles
+    type: tiles
+    sentence: i-read-a-book-and-then-go-to-bed
+    prompt: 'Build this sentence: I read a book and then go to bed. (polite)'
+    answers:
+      - 本を読んで寝ます
+      - 本を読んでねます
+      - 本をよんで寝ます
+      - 本をよんでねます
+      - ほんを読んで寝ます
+      - ほんを読んでねます
+      - ほんをよんで寝ます
+      - ほんをよんでねます
+    tiles:
+      - { text: 本, reading: ほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: 寝ます, reading: ねます, role: predicate, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: i-return-home-and-then-study
+    answers:
+      - 家に帰って勉強します
+      - 家に帰ってべんきょうします
+      - 家にかえって勉強します
+      - 家にかえってべんきょうします
+      - いえに帰って勉強します
+      - いえに帰ってべんきょうします
+      - いえにかえって勉強します
+      - いえにかえってべんきょうします
+  - id: alternate
+    type: typing
+    sentence: i-drink-water-and-then-rest
+    alternate: true
+    prompt: 'One more example: I drink water and then rest. (polite)'
+    answers:
+      - 水を飲んで休みます
+      - 水を飲んでやすみます
+      - 水をのんで休みます
+      - 水をのんでやすみます
+      - みずを飲んで休みます
+      - みずを飲んでやすみます
+      - みずをのんで休みます
+      - みずをのんでやすみます
+  - id: extra-1-tiles
+    type: tiles
+    sentence: i-eat-rice-and-then-go-to-school
+    prompt: 'Build this sentence: I eat rice and then go to school. (polite)'
+    answers:
+      - ご飯を食べて学校に行きます
+      - ご飯を食べて学校にいきます
+      - ご飯を食べてがっこうに行きます
+      - ご飯を食べてがっこうにいきます
+      - ご飯をたべて学校に行きます
+      - ご飯をたべて学校にいきます
+      - ご飯をたべてがっこうに行きます
+      - ご飯をたべてがっこうにいきます
+      - ごはんを食べて学校に行きます
+      - ごはんを食べて学校にいきます
+      - ごはんを食べてがっこうに行きます
+      - ごはんを食べてがっこうにいきます
+      - ごはんをたべて学校に行きます
+      - ごはんをたべて学校にいきます
+      - ごはんをたべてがっこうに行きます
+      - ごはんをたべてがっこうにいきます
+    tiles:
+      - { text: ご飯, reading: ごはん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: i-eat-rice-and-then-go-to-school
+    answers:
+      - ご飯を食べて学校に行きます
+      - ご飯を食べて学校にいきます
+      - ご飯を食べてがっこうに行きます
+      - ご飯を食べてがっこうにいきます
+      - ご飯をたべて学校に行きます
+      - ご飯をたべて学校にいきます
+      - ご飯をたべてがっこうに行きます
+      - ご飯をたべてがっこうにいきます
+      - ごはんを食べて学校に行きます
+      - ごはんを食べて学校にいきます
+      - ごはんを食べてがっこうに行きます
+      - ごはんを食べてがっこうにいきます
+      - ごはんをたべて学校に行きます
+      - ごはんをたべて学校にいきます
+      - ごはんをたべてがっこうに行きます
+      - ごはんをたべてがっこうにいきます
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: i-eat-rice-and-then-go-to-school
+    choices:
+      - text: I eat rice and then go to school.
+        reading: ''
+      - text: I eat bread and then go to school.
+        reading: ''
+    prompt: 'Choose the meaning: ご飯を食べて学校に行きます。'
+    answers:
+      - I eat rice and then go to school.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: i-eat-sushi-and-then-go-to-school
+    prompt: 'Build this sentence: I eat sushi and then go to school. (polite)'
+    answers:
+      - 寿司を食べて学校に行きます
+      - 寿司を食べて学校にいきます
+      - 寿司を食べてがっこうに行きます
+      - 寿司を食べてがっこうにいきます
+      - 寿司をたべて学校に行きます
+      - 寿司をたべて学校にいきます
+      - 寿司をたべてがっこうに行きます
+      - 寿司をたべてがっこうにいきます
+      - すしを食べて学校に行きます
+      - すしを食べて学校にいきます
+      - すしを食べてがっこうに行きます
+      - すしを食べてがっこうにいきます
+      - すしをたべて学校に行きます
+      - すしをたべて学校にいきます
+      - すしをたべてがっこうに行きます
+      - すしをたべてがっこうにいきます
+    tiles:
+      - { text: 寿司, reading: すし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: i-eat-sushi-and-then-go-to-school
+    answers:
+      - 寿司を食べて学校に行きます
+      - 寿司を食べて学校にいきます
+      - 寿司を食べてがっこうに行きます
+      - 寿司を食べてがっこうにいきます
+      - 寿司をたべて学校に行きます
+      - 寿司をたべて学校にいきます
+      - 寿司をたべてがっこうに行きます
+      - 寿司をたべてがっこうにいきます
+      - すしを食べて学校に行きます
+      - すしを食べて学校にいきます
+      - すしを食べてがっこうに行きます
+      - すしを食べてがっこうにいきます
+      - すしをたべて学校に行きます
+      - すしをたべて学校にいきます
+      - すしをたべてがっこうに行きます
+      - すしをたべてがっこうにいきます
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: i-eat-sushi-and-then-go-to-school
+    choices:
+      - text: I eat sushi and then go to school.
+        reading: ''
+      - text: I eat bread and then go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 寿司を食べて学校に行きます。'
+    answers:
+      - I eat sushi and then go to school.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: i-eat-fish-and-then-go-to-school
+    prompt: 'Build this sentence: I eat fish and then go to school. (polite)'
+    answers:
+      - 魚を食べて学校に行きます
+      - 魚を食べて学校にいきます
+      - 魚を食べてがっこうに行きます
+      - 魚を食べてがっこうにいきます
+      - 魚をたべて学校に行きます
+      - 魚をたべて学校にいきます
+      - 魚をたべてがっこうに行きます
+      - 魚をたべてがっこうにいきます
+      - さかなを食べて学校に行きます
+      - さかなを食べて学校にいきます
+      - さかなを食べてがっこうに行きます
+      - さかなを食べてがっこうにいきます
+      - さかなをたべて学校に行きます
+      - さかなをたべて学校にいきます
+      - さかなをたべてがっこうに行きます
+      - さかなをたべてがっこうにいきます
+    tiles:
+      - { text: 魚, reading: さかな, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: i-eat-fish-and-then-go-to-school
+    answers:
+      - 魚を食べて学校に行きます
+      - 魚を食べて学校にいきます
+      - 魚を食べてがっこうに行きます
+      - 魚を食べてがっこうにいきます
+      - 魚をたべて学校に行きます
+      - 魚をたべて学校にいきます
+      - 魚をたべてがっこうに行きます
+      - 魚をたべてがっこうにいきます
+      - さかなを食べて学校に行きます
+      - さかなを食べて学校にいきます
+      - さかなを食べてがっこうに行きます
+      - さかなを食べてがっこうにいきます
+      - さかなをたべて学校に行きます
+      - さかなをたべて学校にいきます
+      - さかなをたべてがっこうに行きます
+      - さかなをたべてがっこうにいきます
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: i-eat-fish-and-then-go-to-school
+    choices:
+      - text: I eat fish and then go to school.
+        reading: ''
+      - text: I eat bread and then go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 魚を食べて学校に行きます。'
+    answers:
+      - I eat fish and then go to school.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: i-eat-meat-and-then-go-to-school
+    prompt: 'Build this sentence: I eat meat and then go to school. (polite)'
+    answers:
+      - 肉を食べて学校に行きます
+      - 肉を食べて学校にいきます
+      - 肉を食べてがっこうに行きます
+      - 肉を食べてがっこうにいきます
+      - 肉をたべて学校に行きます
+      - 肉をたべて学校にいきます
+      - 肉をたべてがっこうに行きます
+      - 肉をたべてがっこうにいきます
+      - にくを食べて学校に行きます
+      - にくを食べて学校にいきます
+      - にくを食べてがっこうに行きます
+      - にくを食べてがっこうにいきます
+      - にくをたべて学校に行きます
+      - にくをたべて学校にいきます
+      - にくをたべてがっこうに行きます
+      - にくをたべてがっこうにいきます
+    tiles:
+      - { text: 肉, reading: にく, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: i-eat-meat-and-then-go-to-school
+    answers:
+      - 肉を食べて学校に行きます
+      - 肉を食べて学校にいきます
+      - 肉を食べてがっこうに行きます
+      - 肉を食べてがっこうにいきます
+      - 肉をたべて学校に行きます
+      - 肉をたべて学校にいきます
+      - 肉をたべてがっこうに行きます
+      - 肉をたべてがっこうにいきます
+      - にくを食べて学校に行きます
+      - にくを食べて学校にいきます
+      - にくを食べてがっこうに行きます
+      - にくを食べてがっこうにいきます
+      - にくをたべて学校に行きます
+      - にくをたべて学校にいきます
+      - にくをたべてがっこうに行きます
+      - にくをたべてがっこうにいきます
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: i-eat-meat-and-then-go-to-school
+    choices:
+      - text: I eat meat and then go to school.
+        reading: ''
+      - text: I eat bread and then go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 肉を食べて学校に行きます。'
+    answers:
+      - I eat meat and then go to school.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: i-eat-eggs-and-then-go-to-school
+    prompt: 'Build this sentence: I eat eggs and then go to school. (polite)'
+    answers:
+      - 卵を食べて学校に行きます
+      - 卵を食べて学校にいきます
+      - 卵を食べてがっこうに行きます
+      - 卵を食べてがっこうにいきます
+      - 卵をたべて学校に行きます
+      - 卵をたべて学校にいきます
+      - 卵をたべてがっこうに行きます
+      - 卵をたべてがっこうにいきます
+      - たまごを食べて学校に行きます
+      - たまごを食べて学校にいきます
+      - たまごを食べてがっこうに行きます
+      - たまごを食べてがっこうにいきます
+      - たまごをたべて学校に行きます
+      - たまごをたべて学校にいきます
+      - たまごをたべてがっこうに行きます
+      - たまごをたべてがっこうにいきます
+    tiles:
+      - { text: 卵, reading: たまご, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: i-eat-eggs-and-then-go-to-school
+    answers:
+      - 卵を食べて学校に行きます
+      - 卵を食べて学校にいきます
+      - 卵を食べてがっこうに行きます
+      - 卵を食べてがっこうにいきます
+      - 卵をたべて学校に行きます
+      - 卵をたべて学校にいきます
+      - 卵をたべてがっこうに行きます
+      - 卵をたべてがっこうにいきます
+      - たまごを食べて学校に行きます
+      - たまごを食べて学校にいきます
+      - たまごを食べてがっこうに行きます
+      - たまごを食べてがっこうにいきます
+      - たまごをたべて学校に行きます
+      - たまごをたべて学校にいきます
+      - たまごをたべてがっこうに行きます
+      - たまごをたべてがっこうにいきます
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: i-eat-eggs-and-then-go-to-school
+    choices:
+      - text: I eat eggs and then go to school.
+        reading: ''
+      - text: I eat bread and then go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 卵を食べて学校に行きます。'
+    answers:
+      - I eat eggs and then go to school.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: i-eat-vegetables-and-then-go-to-school
+    prompt: 'Build this sentence: I eat vegetables and then go to school. (polite)'
+    answers:
+      - 野菜を食べて学校に行きます
+      - 野菜を食べて学校にいきます
+      - 野菜を食べてがっこうに行きます
+      - 野菜を食べてがっこうにいきます
+      - 野菜をたべて学校に行きます
+      - 野菜をたべて学校にいきます
+      - 野菜をたべてがっこうに行きます
+      - 野菜をたべてがっこうにいきます
+      - やさいを食べて学校に行きます
+      - やさいを食べて学校にいきます
+      - やさいを食べてがっこうに行きます
+      - やさいを食べてがっこうにいきます
+      - やさいをたべて学校に行きます
+      - やさいをたべて学校にいきます
+      - やさいをたべてがっこうに行きます
+      - やさいをたべてがっこうにいきます
+    tiles:
+      - { text: 野菜, reading: やさい, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: i-eat-vegetables-and-then-go-to-school
+    answers:
+      - 野菜を食べて学校に行きます
+      - 野菜を食べて学校にいきます
+      - 野菜を食べてがっこうに行きます
+      - 野菜を食べてがっこうにいきます
+      - 野菜をたべて学校に行きます
+      - 野菜をたべて学校にいきます
+      - 野菜をたべてがっこうに行きます
+      - 野菜をたべてがっこうにいきます
+      - やさいを食べて学校に行きます
+      - やさいを食べて学校にいきます
+      - やさいを食べてがっこうに行きます
+      - やさいを食べてがっこうにいきます
+      - やさいをたべて学校に行きます
+      - やさいをたべて学校にいきます
+      - やさいをたべてがっこうに行きます
+      - やさいをたべてがっこうにいきます
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: i-eat-vegetables-and-then-go-to-school
+    choices:
+      - text: I eat vegetables and then go to school.
+        reading: ''
+      - text: I eat bread and then go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 野菜を食べて学校に行きます。'
+    answers:
+      - I eat vegetables and then go to school.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: i-eat-fruit-and-then-go-to-school
+    prompt: 'Build this sentence: I eat fruit and then go to school. (polite)'
+    answers:
+      - 果物を食べて学校に行きます
+      - 果物を食べて学校にいきます
+      - 果物を食べてがっこうに行きます
+      - 果物を食べてがっこうにいきます
+      - 果物をたべて学校に行きます
+      - 果物をたべて学校にいきます
+      - 果物をたべてがっこうに行きます
+      - 果物をたべてがっこうにいきます
+      - くだものを食べて学校に行きます
+      - くだものを食べて学校にいきます
+      - くだものを食べてがっこうに行きます
+      - くだものを食べてがっこうにいきます
+      - くだものをたべて学校に行きます
+      - くだものをたべて学校にいきます
+      - くだものをたべてがっこうに行きます
+      - くだものをたべてがっこうにいきます
+    tiles:
+      - { text: 果物, reading: くだもの, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: i-eat-fruit-and-then-go-to-school
+    answers:
+      - 果物を食べて学校に行きます
+      - 果物を食べて学校にいきます
+      - 果物を食べてがっこうに行きます
+      - 果物を食べてがっこうにいきます
+      - 果物をたべて学校に行きます
+      - 果物をたべて学校にいきます
+      - 果物をたべてがっこうに行きます
+      - 果物をたべてがっこうにいきます
+      - くだものを食べて学校に行きます
+      - くだものを食べて学校にいきます
+      - くだものを食べてがっこうに行きます
+      - くだものを食べてがっこうにいきます
+      - くだものをたべて学校に行きます
+      - くだものをたべて学校にいきます
+      - くだものをたべてがっこうに行きます
+      - くだものをたべてがっこうにいきます
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: i-eat-fruit-and-then-go-to-school
+    choices:
+      - text: I eat fruit and then go to school.
+        reading: ''
+      - text: I eat bread and then go to school.
+        reading: ''
+    prompt: 'Choose the meaning: 果物を食べて学校に行きます。'
+    answers:
+      - I eat fruit and then go to school.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: i-eat-apples-and-then-go-to-school
+    prompt: 'Build this sentence: I eat apples and then go to school. (polite)'
+    answers:
+      - りんごを食べて学校に行きます
+      - りんごを食べて学校にいきます
+      - りんごを食べてがっこうに行きます
+      - りんごを食べてがっこうにいきます
+      - りんごをたべて学校に行きます
+      - りんごをたべて学校にいきます
+      - りんごをたべてがっこうに行きます
+      - りんごをたべてがっこうにいきます
+    tiles:
+      - { text: りんご, reading: りんご, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: i-eat-apples-and-then-go-to-school
+    answers:
+      - りんごを食べて学校に行きます
+      - りんごを食べて学校にいきます
+      - りんごを食べてがっこうに行きます
+      - りんごを食べてがっこうにいきます
+      - りんごをたべて学校に行きます
+      - りんごをたべて学校にいきます
+      - りんごをたべてがっこうに行きます
+      - りんごをたべてがっこうにいきます
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: i-eat-apples-and-then-go-to-school
+    choices:
+      - text: I eat apples and then go to school.
+        reading: ''
+      - text: I eat bread and then go to school.
+        reading: ''
+    prompt: 'Choose the meaning: りんごを食べて学校に行きます。'
+    answers:
+      - I eat apples and then go to school.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: i-eat-bananas-and-then-go-to-school
+    prompt: 'Build this sentence: I eat bananas and then go to school. (polite)'
+    answers:
+      - バナナを食べて学校に行きます
+      - バナナを食べて学校にいきます
+      - バナナを食べてがっこうに行きます
+      - バナナを食べてがっこうにいきます
+      - バナナをたべて学校に行きます
+      - バナナをたべて学校にいきます
+      - バナナをたべてがっこうに行きます
+      - バナナをたべてがっこうにいきます
+      - ばななを食べて学校に行きます
+      - ばななを食べて学校にいきます
+      - ばななを食べてがっこうに行きます
+      - ばななを食べてがっこうにいきます
+      - ばななをたべて学校に行きます
+      - ばななをたべて学校にいきます
+      - ばななをたべてがっこうに行きます
+      - ばななをたべてがっこうにいきます
+    tiles:
+      - { text: バナナ, reading: ばなな, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: i-eat-bananas-and-then-go-to-school
+    answers:
+      - バナナを食べて学校に行きます
+      - バナナを食べて学校にいきます
+      - バナナを食べてがっこうに行きます
+      - バナナを食べてがっこうにいきます
+      - バナナをたべて学校に行きます
+      - バナナをたべて学校にいきます
+      - バナナをたべてがっこうに行きます
+      - バナナをたべてがっこうにいきます
+      - ばななを食べて学校に行きます
+      - ばななを食べて学校にいきます
+      - ばななを食べてがっこうに行きます
+      - ばななを食べてがっこうにいきます
+      - ばななをたべて学校に行きます
+      - ばななをたべて学校にいきます
+      - ばななをたべてがっこうに行きます
+      - ばななをたべてがっこうにいきます
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: i-eat-bananas-and-then-go-to-school
+    choices:
+      - text: I eat bananas and then go to school.
+        reading: ''
+      - text: I eat bread and then go to school.
+        reading: ''
+    prompt: 'Choose the meaning: バナナを食べて学校に行きます。'
+    answers:
+      - I eat bananas and then go to school.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: i-eat-cheese-and-then-go-to-school
+    prompt: 'Build this sentence: I eat cheese and then go to school. (polite)'
+    answers:
+      - チーズを食べて学校に行きます
+      - チーズを食べて学校にいきます
+      - チーズを食べてがっこうに行きます
+      - チーズを食べてがっこうにいきます
+      - チーズをたべて学校に行きます
+      - チーズをたべて学校にいきます
+      - チーズをたべてがっこうに行きます
+      - チーズをたべてがっこうにいきます
+      - ちーずを食べて学校に行きます
+      - ちーずを食べて学校にいきます
+      - ちーずを食べてがっこうに行きます
+      - ちーずを食べてがっこうにいきます
+      - ちーずをたべて学校に行きます
+      - ちーずをたべて学校にいきます
+      - ちーずをたべてがっこうに行きます
+      - ちーずをたべてがっこうにいきます
+    tiles:
+      - { text: チーズ, reading: ちーず, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 学校, reading: がっこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: i-eat-cheese-and-then-go-to-school
+    answers:
+      - チーズを食べて学校に行きます
+      - チーズを食べて学校にいきます
+      - チーズを食べてがっこうに行きます
+      - チーズを食べてがっこうにいきます
+      - チーズをたべて学校に行きます
+      - チーズをたべて学校にいきます
+      - チーズをたべてがっこうに行きます
+      - チーズをたべてがっこうにいきます
+      - ちーずを食べて学校に行きます
+      - ちーずを食べて学校にいきます
+      - ちーずを食べてがっこうに行きます
+      - ちーずを食べてがっこうにいきます
+      - ちーずをたべて学校に行きます
+      - ちーずをたべて学校にいきます
+      - ちーずをたべてがっこうに行きます
+      - ちーずをたべてがっこうにいきます
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: i-eat-cheese-and-then-go-to-school
+    choices:
+      - text: I eat cheese and then go to school.
+        reading: ''
+      - text: I eat bread and then go to school.
+        reading: ''
+    prompt: 'Choose the meaning: チーズを食べて学校に行きます。'
+    answers:
+      - I eat cheese and then go to school.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: i-eat-bread-and-then-go-to-library
+    prompt: 'Build this sentence: I eat bread and then go to library. (polite)'
+    answers:
+      - パンを食べて図書館に行きます
+      - パンを食べて図書館にいきます
+      - パンを食べてとしょかんに行きます
+      - パンを食べてとしょかんにいきます
+      - パンをたべて図書館に行きます
+      - パンをたべて図書館にいきます
+      - パンをたべてとしょかんに行きます
+      - パンをたべてとしょかんにいきます
+      - ぱんを食べて図書館に行きます
+      - ぱんを食べて図書館にいきます
+      - ぱんを食べてとしょかんに行きます
+      - ぱんを食べてとしょかんにいきます
+      - ぱんをたべて図書館に行きます
+      - ぱんをたべて図書館にいきます
+      - ぱんをたべてとしょかんに行きます
+      - ぱんをたべてとしょかんにいきます
+    tiles:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 図書館, reading: としょかん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: i-eat-bread-and-then-go-to-library
+    answers:
+      - パンを食べて図書館に行きます
+      - パンを食べて図書館にいきます
+      - パンを食べてとしょかんに行きます
+      - パンを食べてとしょかんにいきます
+      - パンをたべて図書館に行きます
+      - パンをたべて図書館にいきます
+      - パンをたべてとしょかんに行きます
+      - パンをたべてとしょかんにいきます
+      - ぱんを食べて図書館に行きます
+      - ぱんを食べて図書館にいきます
+      - ぱんを食べてとしょかんに行きます
+      - ぱんを食べてとしょかんにいきます
+      - ぱんをたべて図書館に行きます
+      - ぱんをたべて図書館にいきます
+      - ぱんをたべてとしょかんに行きます
+      - ぱんをたべてとしょかんにいきます
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: i-eat-bread-and-then-go-to-library
+    choices:
+      - text: I eat bread and then go to library.
+        reading: ''
+      - text: I eat bread and then go to school.
+        reading: ''
+    prompt: 'Choose the meaning: パンを食べて図書館に行きます。'
+    answers:
+      - I eat bread and then go to library.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: i-eat-bread-and-then-go-to-shop
+    prompt: 'Build this sentence: I eat bread and then go to shop. (polite)'
+    answers:
+      - パンを食べて店に行きます
+      - パンを食べて店にいきます
+      - パンを食べてみせに行きます
+      - パンを食べてみせにいきます
+      - パンをたべて店に行きます
+      - パンをたべて店にいきます
+      - パンをたべてみせに行きます
+      - パンをたべてみせにいきます
+      - ぱんを食べて店に行きます
+      - ぱんを食べて店にいきます
+      - ぱんを食べてみせに行きます
+      - ぱんを食べてみせにいきます
+      - ぱんをたべて店に行きます
+      - ぱんをたべて店にいきます
+      - ぱんをたべてみせに行きます
+      - ぱんをたべてみせにいきます
+    tiles:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 店, reading: みせ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: i-eat-bread-and-then-go-to-shop
+    answers:
+      - パンを食べて店に行きます
+      - パンを食べて店にいきます
+      - パンを食べてみせに行きます
+      - パンを食べてみせにいきます
+      - パンをたべて店に行きます
+      - パンをたべて店にいきます
+      - パンをたべてみせに行きます
+      - パンをたべてみせにいきます
+      - ぱんを食べて店に行きます
+      - ぱんを食べて店にいきます
+      - ぱんを食べてみせに行きます
+      - ぱんを食べてみせにいきます
+      - ぱんをたべて店に行きます
+      - ぱんをたべて店にいきます
+      - ぱんをたべてみせに行きます
+      - ぱんをたべてみせにいきます
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: i-eat-bread-and-then-go-to-shop
+    choices:
+      - text: I eat bread and then go to shop.
+        reading: ''
+      - text: I eat bread and then go to school.
+        reading: ''
+    prompt: 'Choose the meaning: パンを食べて店に行きます。'
+    answers:
+      - I eat bread and then go to shop.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: i-eat-bread-and-then-go-to-bank
+    prompt: 'Build this sentence: I eat bread and then go to bank. (polite)'
+    answers:
+      - パンを食べて銀行に行きます
+      - パンを食べて銀行にいきます
+      - パンを食べてぎんこうに行きます
+      - パンを食べてぎんこうにいきます
+      - パンをたべて銀行に行きます
+      - パンをたべて銀行にいきます
+      - パンをたべてぎんこうに行きます
+      - パンをたべてぎんこうにいきます
+      - ぱんを食べて銀行に行きます
+      - ぱんを食べて銀行にいきます
+      - ぱんを食べてぎんこうに行きます
+      - ぱんを食べてぎんこうにいきます
+      - ぱんをたべて銀行に行きます
+      - ぱんをたべて銀行にいきます
+      - ぱんをたべてぎんこうに行きます
+      - ぱんをたべてぎんこうにいきます
+    tiles:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 銀行, reading: ぎんこう, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: i-eat-bread-and-then-go-to-bank
+    answers:
+      - パンを食べて銀行に行きます
+      - パンを食べて銀行にいきます
+      - パンを食べてぎんこうに行きます
+      - パンを食べてぎんこうにいきます
+      - パンをたべて銀行に行きます
+      - パンをたべて銀行にいきます
+      - パンをたべてぎんこうに行きます
+      - パンをたべてぎんこうにいきます
+      - ぱんを食べて銀行に行きます
+      - ぱんを食べて銀行にいきます
+      - ぱんを食べてぎんこうに行きます
+      - ぱんを食べてぎんこうにいきます
+      - ぱんをたべて銀行に行きます
+      - ぱんをたべて銀行にいきます
+      - ぱんをたべてぎんこうに行きます
+      - ぱんをたべてぎんこうにいきます
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: i-eat-bread-and-then-go-to-bank
+    choices:
+      - text: I eat bread and then go to bank.
+        reading: ''
+      - text: I eat bread and then go to school.
+        reading: ''
+    prompt: 'Choose the meaning: パンを食べて銀行に行きます。'
+    answers:
+      - I eat bread and then go to bank.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: i-eat-bread-and-then-go-to-station
+    prompt: 'Build this sentence: I eat bread and then go to station. (polite)'
+    answers:
+      - パンを食べて駅に行きます
+      - パンを食べて駅にいきます
+      - パンを食べてえきに行きます
+      - パンを食べてえきにいきます
+      - パンをたべて駅に行きます
+      - パンをたべて駅にいきます
+      - パンをたべてえきに行きます
+      - パンをたべてえきにいきます
+      - ぱんを食べて駅に行きます
+      - ぱんを食べて駅にいきます
+      - ぱんを食べてえきに行きます
+      - ぱんを食べてえきにいきます
+      - ぱんをたべて駅に行きます
+      - ぱんをたべて駅にいきます
+      - ぱんをたべてえきに行きます
+      - ぱんをたべてえきにいきます
+    tiles:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 駅, reading: えき, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: i-eat-bread-and-then-go-to-station
+    answers:
+      - パンを食べて駅に行きます
+      - パンを食べて駅にいきます
+      - パンを食べてえきに行きます
+      - パンを食べてえきにいきます
+      - パンをたべて駅に行きます
+      - パンをたべて駅にいきます
+      - パンをたべてえきに行きます
+      - パンをたべてえきにいきます
+      - ぱんを食べて駅に行きます
+      - ぱんを食べて駅にいきます
+      - ぱんを食べてえきに行きます
+      - ぱんを食べてえきにいきます
+      - ぱんをたべて駅に行きます
+      - ぱんをたべて駅にいきます
+      - ぱんをたべてえきに行きます
+      - ぱんをたべてえきにいきます
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: i-eat-bread-and-then-go-to-station
+    choices:
+      - text: I eat bread and then go to station.
+        reading: ''
+      - text: I eat bread and then go to school.
+        reading: ''
+    prompt: 'Choose the meaning: パンを食べて駅に行きます。'
+    answers:
+      - I eat bread and then go to station.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: i-eat-bread-and-then-go-to-park
+    prompt: 'Build this sentence: I eat bread and then go to park. (polite)'
+    answers:
+      - パンを食べて公園に行きます
+      - パンを食べて公園にいきます
+      - パンを食べてこうえんに行きます
+      - パンを食べてこうえんにいきます
+      - パンをたべて公園に行きます
+      - パンをたべて公園にいきます
+      - パンをたべてこうえんに行きます
+      - パンをたべてこうえんにいきます
+      - ぱんを食べて公園に行きます
+      - ぱんを食べて公園にいきます
+      - ぱんを食べてこうえんに行きます
+      - ぱんを食べてこうえんにいきます
+      - ぱんをたべて公園に行きます
+      - ぱんをたべて公園にいきます
+      - ぱんをたべてこうえんに行きます
+      - ぱんをたべてこうえんにいきます
+    tiles:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 公園, reading: こうえん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: i-eat-bread-and-then-go-to-park
+    answers:
+      - パンを食べて公園に行きます
+      - パンを食べて公園にいきます
+      - パンを食べてこうえんに行きます
+      - パンを食べてこうえんにいきます
+      - パンをたべて公園に行きます
+      - パンをたべて公園にいきます
+      - パンをたべてこうえんに行きます
+      - パンをたべてこうえんにいきます
+      - ぱんを食べて公園に行きます
+      - ぱんを食べて公園にいきます
+      - ぱんを食べてこうえんに行きます
+      - ぱんを食べてこうえんにいきます
+      - ぱんをたべて公園に行きます
+      - ぱんをたべて公園にいきます
+      - ぱんをたべてこうえんに行きます
+      - ぱんをたべてこうえんにいきます
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: i-eat-bread-and-then-go-to-park
+    choices:
+      - text: I eat bread and then go to park.
+        reading: ''
+      - text: I eat bread and then go to school.
+        reading: ''
+    prompt: 'Choose the meaning: パンを食べて公園に行きます。'
+    answers:
+      - I eat bread and then go to park.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: i-eat-bread-and-then-go-to-hospital
+    prompt: 'Build this sentence: I eat bread and then go to hospital. (polite)'
+    answers:
+      - パンを食べて病院に行きます
+      - パンを食べて病院にいきます
+      - パンを食べてびょういんに行きます
+      - パンを食べてびょういんにいきます
+      - パンをたべて病院に行きます
+      - パンをたべて病院にいきます
+      - パンをたべてびょういんに行きます
+      - パンをたべてびょういんにいきます
+      - ぱんを食べて病院に行きます
+      - ぱんを食べて病院にいきます
+      - ぱんを食べてびょういんに行きます
+      - ぱんを食べてびょういんにいきます
+      - ぱんをたべて病院に行きます
+      - ぱんをたべて病院にいきます
+      - ぱんをたべてびょういんに行きます
+      - ぱんをたべてびょういんにいきます
+    tiles:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 病院, reading: びょういん, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: i-eat-bread-and-then-go-to-hospital
+    answers:
+      - パンを食べて病院に行きます
+      - パンを食べて病院にいきます
+      - パンを食べてびょういんに行きます
+      - パンを食べてびょういんにいきます
+      - パンをたべて病院に行きます
+      - パンをたべて病院にいきます
+      - パンをたべてびょういんに行きます
+      - パンをたべてびょういんにいきます
+      - ぱんを食べて病院に行きます
+      - ぱんを食べて病院にいきます
+      - ぱんを食べてびょういんに行きます
+      - ぱんを食べてびょういんにいきます
+      - ぱんをたべて病院に行きます
+      - ぱんをたべて病院にいきます
+      - ぱんをたべてびょういんに行きます
+      - ぱんをたべてびょういんにいきます
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: i-eat-bread-and-then-go-to-hospital
+    choices:
+      - text: I eat bread and then go to hospital.
+        reading: ''
+      - text: I eat bread and then go to school.
+        reading: ''
+    prompt: 'Choose the meaning: パンを食べて病院に行きます。'
+    answers:
+      - I eat bread and then go to hospital.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: i-eat-bread-and-then-go-to-office
+    prompt: 'Build this sentence: I eat bread and then go to office. (polite)'
+    answers:
+      - パンを食べて会社に行きます
+      - パンを食べて会社にいきます
+      - パンを食べてかいしゃに行きます
+      - パンを食べてかいしゃにいきます
+      - パンをたべて会社に行きます
+      - パンをたべて会社にいきます
+      - パンをたべてかいしゃに行きます
+      - パンをたべてかいしゃにいきます
+      - ぱんを食べて会社に行きます
+      - ぱんを食べて会社にいきます
+      - ぱんを食べてかいしゃに行きます
+      - ぱんを食べてかいしゃにいきます
+      - ぱんをたべて会社に行きます
+      - ぱんをたべて会社にいきます
+      - ぱんをたべてかいしゃに行きます
+      - ぱんをたべてかいしゃにいきます
+    tiles:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べて, reading: たべて, role: predicate, wordClass: predicate }
+      - { text: 会社, reading: かいしゃ, role: modifier, wordClass: modifier }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: i-eat-bread-and-then-go-to-office
+    answers:
+      - パンを食べて会社に行きます
+      - パンを食べて会社にいきます
+      - パンを食べてかいしゃに行きます
+      - パンを食べてかいしゃにいきます
+      - パンをたべて会社に行きます
+      - パンをたべて会社にいきます
+      - パンをたべてかいしゃに行きます
+      - パンをたべてかいしゃにいきます
+      - ぱんを食べて会社に行きます
+      - ぱんを食べて会社にいきます
+      - ぱんを食べてかいしゃに行きます
+      - ぱんを食べてかいしゃにいきます
+      - ぱんをたべて会社に行きます
+      - ぱんをたべて会社にいきます
+      - ぱんをたべてかいしゃに行きます
+      - ぱんをたべてかいしゃにいきます

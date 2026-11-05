@@ -1,0 +1,1196 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-question
+  kind: grammar
+  note:
+    Add か to a polite statement to ask a question. A question mark is optional. Answer with はい / いいえ and the
+    relevant predicate. 何ですか asks what something is.
+  tags:
+    - Grammar
+    - question
+  level: N5
+  title: Questions with か
+  topic: Sentence building
+  lesson:
+    goal: Ask a polite yes-or-no question.
+    group: Sentence basics
+    order: 2
+    recap: A statement ends in です; add か to make a question.
+    examples:
+      - tokens:
+          - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 本です, reading: ほんです, wordClass: predicate }
+          - { role: particle, text: か, reading: か, wordClass: particle }
+        meaning: Is this a book?
+        reading: これはほんですか。
+        japanese: これは本ですか。
+        translationTokens:
+          - { role: predicate, text: 'Is ' }
+          - { role: topic, text: this }
+          - { role: predicate, text: ' a book' }
+          - { role: particle, text: '?' }
+      - tokens:
+          - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 先生です, reading: せんせいです, wordClass: predicate }
+          - { role: particle, text: か, reading: か, wordClass: particle }
+        meaning: Is Tanaka a teacher?
+        reading: たなかさんはせんせいですか。
+        japanese: 田中さんは先生ですか。
+        translationTokens:
+          - { role: predicate, text: 'Is ' }
+          - { role: topic, text: Tanaka }
+          - { role: predicate, text: ' a teacher' }
+          - { role: particle, text: '?' }
+      - tokens:
+          - { role: topic, text: それ, reading: それ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 時計です, reading: とけいです, wordClass: predicate }
+          - { role: particle, text: か, reading: か, wordClass: particle }
+        meaning: Is that a clock?
+        reading: それはとけいですか。
+        japanese: それは時計ですか。
+        translationTokens:
+          - { role: predicate, text: 'Is ' }
+          - { role: topic, text: that }
+          - { role: predicate, text: ' a clock' }
+          - { role: particle, text: '?' }
+    comparison: A statement ends in です; add か to make a question.
+    vocabulary:
+      - text: 本
+        meaning: book
+        reading: ほん
+      - text: 田中さん
+        meaning: Tanaka (a person's name)
+        reading: たなかさん
+      - text: 先生
+        meaning: teacher
+        reading: せんせい
+      - text: 時計
+        meaning: clock / watch
+        reading: とけい
+      - text: 学校
+        meaning: school
+        reading: がっこう
+    prerequisites:
+      - grammar-desu
+  meaning: Is this a book?
+  reading: これはほんですか。
+  examples:
+    - tokens:
+        - { role: topic, text: これ, reading: これ, wordClass: demonstrative pronoun }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 本です, reading: ほんです, wordClass: noun + copula }
+        - { role: particle, text: か, reading: か, wordClass: question particle }
+      meaning: Is this a book?
+      reading: これはほんですか。
+      japanese: これは本ですか。
+      translationTokens:
+        - { role: predicate, text: 'Is ', implicit: false }
+        - { role: topic, text: this, implicit: false }
+        - { role: predicate, text: ' a book', implicit: false }
+        - { role: particle, text: '?', implicit: false }
+  exercise:
+    tiles:
+      - これ
+      - は
+      - 本
+      - です
+      - か
+    prompt: 'Build: “Is this a book?”'
+    answers:
+      - これは本ですか
+      - これはほんですか
+    explanation:
+      Add か to a polite statement to ask a question. A question mark is optional. Answer with はい / いいえ
+      and the relevant predicate. 何ですか asks what something is.
+  japanese: これは本ですか。
+sentences:
+  is-this-a-book:
+    text: これは本ですか。
+    tiles:
+      - { text: これ, reading: これ }
+      - { text: は, reading: は }
+      - { text: 本, reading: ほん }
+      - { text: です, reading: です }
+      - { text: か, reading: か }
+    tokens:
+      - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 本です, reading: ほんです, wordClass: predicate }
+      - { role: particle, text: か, reading: か, wordClass: particle }
+    meaning: Is this a book?
+    reading: これはほんですか。
+    translationTokens:
+      - { role: predicate, text: 'Is ' }
+      - { role: topic, text: this }
+      - { role: predicate, text: ' a book' }
+      - { role: particle, text: '?' }
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+  is-tanaka-a-teacher:
+    text: 田中さんは先生ですか。
+    tiles:
+      - { text: 田中さん, reading: たなかさん }
+      - { text: は, reading: は }
+      - { text: 先生, reading: せんせい }
+      - { text: です, reading: です }
+      - { text: か, reading: か }
+    tokens:
+      - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 先生です, reading: せんせいです, wordClass: predicate }
+      - { role: particle, text: か, reading: か, wordClass: particle }
+    meaning: Is Tanaka a teacher?
+    reading: たなかさんはせんせいですか。
+    translationTokens:
+      - { role: predicate, text: 'Is ' }
+      - { role: topic, text: Tanaka }
+      - { role: predicate, text: ' a teacher' }
+      - { role: particle, text: '?' }
+    form: polite
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+  is-that-a-clock:
+    text: それは時計ですか。
+    tiles:
+      - { text: それ, reading: それ }
+      - { text: は, reading: は }
+      - { text: 時計, reading: とけい }
+      - { text: です, reading: です }
+      - { text: か, reading: か }
+    tokens:
+      - { role: topic, text: それ, reading: それ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 時計です, reading: とけいです, wordClass: predicate }
+      - { role: particle, text: か, reading: か, wordClass: particle }
+    meaning: Is that a clock?
+    reading: それはとけいですか。
+    translationTokens:
+      - { role: predicate, text: 'Is ' }
+      - { role: topic, text: that }
+      - { role: predicate, text: ' a clock' }
+      - { role: particle, text: '?' }
+    form: polite
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+  is-that-a-school-over-there:
+    text: あれは学校ですか。
+    tiles:
+      - { text: あれ, reading: あれ }
+      - { text: は, reading: は }
+      - { text: 学校, reading: がっこう }
+      - { text: です, reading: です }
+      - { text: か, reading: か }
+    tokens:
+      - { role: topic, text: あれ, reading: あれ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 学校です, reading: がっこうです, wordClass: predicate }
+      - { role: particle, text: か, reading: か, wordClass: particle }
+    meaning: Is that a school over there?
+    reading: あれはがっこうですか。
+    translationTokens:
+      - { role: predicate, text: 'Is ' }
+      - { role: topic, text: that }
+      - { role: predicate, text: ' a school over there' }
+      - { role: particle, text: '?' }
+    form: polite
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+  is-this-a-magazine:
+    text: これは雑誌ですか。
+    reading: これはざっしですか。
+    meaning: Is this a magazine?
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 雑誌, reading: ざっし, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 雑誌です, reading: ざっしです, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    translationTokens:
+      - { text: 'Is ', role: predicate }
+      - { text: this, role: topic }
+      - { text: ' a magazine', role: predicate }
+      - { text: '?', role: particle }
+    form: polite
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+  is-this-a-newspaper:
+    text: これは新聞ですか。
+    reading: これはしんぶんですか。
+    meaning: Is this a newspaper?
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 新聞, reading: しんぶん, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 新聞です, reading: しんぶんです, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    translationTokens:
+      - { text: 'Is ', role: predicate }
+      - { text: this, role: topic }
+      - { text: ' a newspaper', role: predicate }
+      - { text: '?', role: particle }
+    form: polite
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+  is-this-a-dictionary:
+    text: これは辞書ですか。
+    reading: これはじしょですか。
+    meaning: Is this a dictionary?
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 辞書, reading: じしょ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 辞書です, reading: じしょです, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    translationTokens:
+      - { text: 'Is ', role: predicate }
+      - { text: this, role: topic }
+      - { text: ' a dictionary', role: predicate }
+      - { text: '?', role: particle }
+    form: polite
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+  is-this-a-novel:
+    text: これは小説ですか。
+    reading: これはしょうせつですか。
+    meaning: Is this a novel?
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 小説, reading: しょうせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 小説です, reading: しょうせつです, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    translationTokens:
+      - { text: 'Is ', role: predicate }
+      - { text: this, role: topic }
+      - { text: ' a novel', role: predicate }
+      - { text: '?', role: particle }
+    form: polite
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+  is-this-a-comic:
+    text: これは漫画ですか。
+    reading: これはまんがですか。
+    meaning: Is this a comic?
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 漫画, reading: まんが, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 漫画です, reading: まんがです, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    translationTokens:
+      - { text: 'Is ', role: predicate }
+      - { text: this, role: topic }
+      - { text: ' a comic', role: predicate }
+      - { text: '?', role: particle }
+    form: polite
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+  is-this-a-textbook:
+    text: これは教科書ですか。
+    reading: これはきょうかしょですか。
+    meaning: Is this a textbook?
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 教科書, reading: きょうかしょ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 教科書です, reading: きょうかしょです, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    translationTokens:
+      - { text: 'Is ', role: predicate }
+      - { text: this, role: topic }
+      - { text: ' a textbook', role: predicate }
+      - { text: '?', role: particle }
+    form: polite
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+  is-this-a-picture-book:
+    text: これは絵本ですか。
+    reading: これはえほんですか。
+    meaning: Is this a picture book?
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 絵本, reading: えほん, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 絵本です, reading: えほんです, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    translationTokens:
+      - { text: 'Is ', role: predicate }
+      - { text: this, role: topic }
+      - { text: ' a picture book', role: predicate }
+      - { text: '?', role: particle }
+    form: polite
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+  is-this-a-letter:
+    text: これは手紙ですか。
+    reading: これはてがみですか。
+    meaning: Is this a letter?
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 手紙, reading: てがみ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 手紙です, reading: てがみです, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    translationTokens:
+      - { text: 'Is ', role: predicate }
+      - { text: this, role: topic }
+      - { text: ' a letter', role: predicate }
+      - { text: '?', role: particle }
+    form: polite
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+  is-this-a-diary:
+    text: これは日記ですか。
+    reading: これはにっきですか。
+    meaning: Is this a diary?
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 日記, reading: にっき, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 日記です, reading: にっきです, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    translationTokens:
+      - { text: 'Is ', role: predicate }
+      - { text: this, role: topic }
+      - { text: ' a diary', role: predicate }
+      - { text: '?', role: particle }
+    form: polite
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+  is-this-a-article:
+    text: これは記事ですか。
+    reading: これはきじですか。
+    meaning: Is this a article?
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 記事, reading: きじ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 記事です, reading: きじです, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    translationTokens:
+      - { text: 'Is ', role: predicate }
+      - { text: this, role: topic }
+      - { text: ' a article', role: predicate }
+      - { text: '?', role: particle }
+    form: polite
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+  is-yamada-a-teacher:
+    text: 山田さんは先生ですか。
+    reading: やまださんはせんせいですか。
+    meaning: Is Yamada a teacher?
+    tiles:
+      - { text: 山田さん, reading: やまださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    tokens:
+      - { text: 山田さん, reading: やまださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生です, reading: せんせいです, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    translationTokens:
+      - { text: 'Is ', role: predicate }
+      - { text: Yamada, role: topic }
+      - { text: ' a teacher', role: predicate }
+      - { text: '?', role: particle }
+    form: polite
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+  is-sato-a-teacher:
+    text: 佐藤さんは先生ですか。
+    reading: さとうさんはせんせいですか。
+    meaning: Is Sato a teacher?
+    tiles:
+      - { text: 佐藤さん, reading: さとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    tokens:
+      - { text: 佐藤さん, reading: さとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生です, reading: せんせいです, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    translationTokens:
+      - { text: 'Is ', role: predicate }
+      - { text: Sato, role: topic }
+      - { text: ' a teacher', role: predicate }
+      - { text: '?', role: particle }
+    form: polite
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+  is-suzuki-a-teacher:
+    text: 鈴木さんは先生ですか。
+    reading: すずきさんはせんせいですか。
+    meaning: Is Suzuki a teacher?
+    tiles:
+      - { text: 鈴木さん, reading: すずきさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    tokens:
+      - { text: 鈴木さん, reading: すずきさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生です, reading: せんせいです, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    translationTokens:
+      - { text: 'Is ', role: predicate }
+      - { text: Suzuki, role: topic }
+      - { text: ' a teacher', role: predicate }
+      - { text: '?', role: particle }
+    form: polite
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+  is-takahashi-a-teacher:
+    text: 高橋さんは先生ですか。
+    reading: たかはしさんはせんせいですか。
+    meaning: Is Takahashi a teacher?
+    tiles:
+      - { text: 高橋さん, reading: たかはしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    tokens:
+      - { text: 高橋さん, reading: たかはしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生です, reading: せんせいです, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    translationTokens:
+      - { text: 'Is ', role: predicate }
+      - { text: Takahashi, role: topic }
+      - { text: ' a teacher', role: predicate }
+      - { text: '?', role: particle }
+    form: polite
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+  is-ito-a-teacher:
+    text: 伊藤さんは先生ですか。
+    reading: いとうさんはせんせいですか。
+    meaning: Is Ito a teacher?
+    tiles:
+      - { text: 伊藤さん, reading: いとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    tokens:
+      - { text: 伊藤さん, reading: いとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生です, reading: せんせいです, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    translationTokens:
+      - { text: 'Is ', role: predicate }
+      - { text: Ito, role: topic }
+      - { text: ' a teacher', role: predicate }
+      - { text: '?', role: particle }
+    form: polite
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+  is-nakamura-a-teacher:
+    text: 中村さんは先生ですか。
+    reading: なかむらさんはせんせいですか。
+    meaning: Is Nakamura a teacher?
+    tiles:
+      - { text: 中村さん, reading: なかむらさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    tokens:
+      - { text: 中村さん, reading: なかむらさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生です, reading: せんせいです, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    translationTokens:
+      - { text: 'Is ', role: predicate }
+      - { text: Nakamura, role: topic }
+      - { text: ' a teacher', role: predicate }
+      - { text: '?', role: particle }
+    form: polite
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+  is-kobayashi-a-teacher:
+    text: 小林さんは先生ですか。
+    reading: こばやしさんはせんせいですか。
+    meaning: Is Kobayashi a teacher?
+    tiles:
+      - { text: 小林さん, reading: こばやしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    tokens:
+      - { text: 小林さん, reading: こばやしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生です, reading: せんせいです, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    translationTokens:
+      - { text: 'Is ', role: predicate }
+      - { text: Kobayashi, role: topic }
+      - { text: ' a teacher', role: predicate }
+      - { text: '?', role: particle }
+    form: polite
+    hint: Find the particle that turns a statement into a question.
+    explanation: A statement ends in です; add か to make a question.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: is-this-a-book
+    choices:
+      - text: Is this a book?
+        reading: ''
+      - text: This is a book.
+        reading: ''
+    answers:
+      - Is this a book?
+  - id: pattern
+    type: pattern-choice
+    sentence: is-this-a-book
+    choices:
+      - sentence: is-this-a-book
+      - text: これは本かです。
+        tiles:
+          - { text: これ, reading: これ }
+          - { text: は, reading: は }
+          - { text: 本, reading: ほん }
+          - { text: か, reading: か }
+          - { text: です, reading: です }
+        tokens:
+          - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 本, reading: ほん, wordClass: predicate }
+          - { role: particle, text: か, reading: か, wordClass: particle }
+          - { role: predicate, text: です, reading: です, wordClass: predicate }
+        meaning: This is a book.
+        reading: これはほんかです。
+    prompt: 'Choose the correct Japanese: Is this a book?'
+    answers:
+      - これは本ですか
+      - これはほんですか
+  - id: gap
+    type: gap
+    sentence: is-tanaka-a-teacher
+    answers:
+      - か
+      - か
+    context:
+      text: 田中さんは先生です___。
+      tokens:
+        - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 先生です, reading: せんせいです, wordClass: predicate }
+        - { role: particle, text: ___, reading: ___, wordClass: particle }
+      reading: たなかさんはせんせいです___。
+  - id: tiles
+    type: tiles
+    sentence: is-tanaka-a-teacher
+    prompt: 'Build this sentence: Is Tanaka a teacher? (polite)'
+    answers:
+      - 田中さんは先生ですか
+      - 田中さんはせんせいですか
+      - たなかさんは先生ですか
+      - たなかさんはせんせいですか
+    tiles:
+      - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 先生, reading: せんせい, wordClass: predicate }
+      - { role: predicate, text: です, reading: です, wordClass: predicate }
+      - { role: particle, text: か, reading: か, wordClass: particle }
+  - id: typing
+    type: typing
+    sentence: is-that-a-clock
+    answers:
+      - それは時計ですか
+      - それはとけいですか
+  - id: alternate
+    type: typing
+    sentence: is-that-a-school-over-there
+    alternate: true
+    prompt: 'One more example: Is that a school over there? (polite)'
+    answers:
+      - あれは学校ですか
+      - あれはがっこうですか
+  - id: extra-1-tiles
+    type: tiles
+    sentence: is-this-a-magazine
+    prompt: 'Build this sentence: Is this a magazine? (polite)'
+    answers:
+      - これは雑誌ですか
+      - これはざっしですか
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 雑誌, reading: ざっし, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+  - id: extra-1-typing
+    type: typing
+    sentence: is-this-a-magazine
+    answers:
+      - これは雑誌ですか
+      - これはざっしですか
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: is-this-a-magazine
+    choices:
+      - text: Is this a magazine?
+        reading: ''
+      - text: Is this a book?
+        reading: ''
+    prompt: 'Choose the meaning: これは雑誌ですか。'
+    answers:
+      - Is this a magazine?
+  - id: extra-2-tiles
+    type: tiles
+    sentence: is-this-a-newspaper
+    prompt: 'Build this sentence: Is this a newspaper? (polite)'
+    answers:
+      - これは新聞ですか
+      - これはしんぶんですか
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 新聞, reading: しんぶん, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+  - id: extra-2-typing
+    type: typing
+    sentence: is-this-a-newspaper
+    answers:
+      - これは新聞ですか
+      - これはしんぶんですか
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: is-this-a-newspaper
+    choices:
+      - text: Is this a newspaper?
+        reading: ''
+      - text: Is this a book?
+        reading: ''
+    prompt: 'Choose the meaning: これは新聞ですか。'
+    answers:
+      - Is this a newspaper?
+  - id: extra-3-tiles
+    type: tiles
+    sentence: is-this-a-dictionary
+    prompt: 'Build this sentence: Is this a dictionary? (polite)'
+    answers:
+      - これは辞書ですか
+      - これはじしょですか
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 辞書, reading: じしょ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+  - id: extra-3-typing
+    type: typing
+    sentence: is-this-a-dictionary
+    answers:
+      - これは辞書ですか
+      - これはじしょですか
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: is-this-a-dictionary
+    choices:
+      - text: Is this a dictionary?
+        reading: ''
+      - text: Is this a book?
+        reading: ''
+    prompt: 'Choose the meaning: これは辞書ですか。'
+    answers:
+      - Is this a dictionary?
+  - id: extra-4-tiles
+    type: tiles
+    sentence: is-this-a-novel
+    prompt: 'Build this sentence: Is this a novel? (polite)'
+    answers:
+      - これは小説ですか
+      - これはしょうせつですか
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 小説, reading: しょうせつ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+  - id: extra-4-typing
+    type: typing
+    sentence: is-this-a-novel
+    answers:
+      - これは小説ですか
+      - これはしょうせつですか
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: is-this-a-novel
+    choices:
+      - text: Is this a novel?
+        reading: ''
+      - text: Is this a book?
+        reading: ''
+    prompt: 'Choose the meaning: これは小説ですか。'
+    answers:
+      - Is this a novel?
+  - id: extra-5-tiles
+    type: tiles
+    sentence: is-this-a-comic
+    prompt: 'Build this sentence: Is this a comic? (polite)'
+    answers:
+      - これは漫画ですか
+      - これはまんがですか
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 漫画, reading: まんが, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+  - id: extra-5-typing
+    type: typing
+    sentence: is-this-a-comic
+    answers:
+      - これは漫画ですか
+      - これはまんがですか
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: is-this-a-comic
+    choices:
+      - text: Is this a comic?
+        reading: ''
+      - text: Is this a book?
+        reading: ''
+    prompt: 'Choose the meaning: これは漫画ですか。'
+    answers:
+      - Is this a comic?
+  - id: extra-6-tiles
+    type: tiles
+    sentence: is-this-a-textbook
+    prompt: 'Build this sentence: Is this a textbook? (polite)'
+    answers:
+      - これは教科書ですか
+      - これはきょうかしょですか
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 教科書, reading: きょうかしょ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+  - id: extra-6-typing
+    type: typing
+    sentence: is-this-a-textbook
+    answers:
+      - これは教科書ですか
+      - これはきょうかしょですか
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: is-this-a-textbook
+    choices:
+      - text: Is this a textbook?
+        reading: ''
+      - text: Is this a book?
+        reading: ''
+    prompt: 'Choose the meaning: これは教科書ですか。'
+    answers:
+      - Is this a textbook?
+  - id: extra-7-tiles
+    type: tiles
+    sentence: is-this-a-picture-book
+    prompt: 'Build this sentence: Is this a picture book? (polite)'
+    answers:
+      - これは絵本ですか
+      - これはえほんですか
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 絵本, reading: えほん, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+  - id: extra-7-typing
+    type: typing
+    sentence: is-this-a-picture-book
+    answers:
+      - これは絵本ですか
+      - これはえほんですか
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: is-this-a-picture-book
+    choices:
+      - text: Is this a picture book?
+        reading: ''
+      - text: Is this a book?
+        reading: ''
+    prompt: 'Choose the meaning: これは絵本ですか。'
+    answers:
+      - Is this a picture book?
+  - id: extra-8-tiles
+    type: tiles
+    sentence: is-this-a-letter
+    prompt: 'Build this sentence: Is this a letter? (polite)'
+    answers:
+      - これは手紙ですか
+      - これはてがみですか
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 手紙, reading: てがみ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+  - id: extra-8-typing
+    type: typing
+    sentence: is-this-a-letter
+    answers:
+      - これは手紙ですか
+      - これはてがみですか
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: is-this-a-letter
+    choices:
+      - text: Is this a letter?
+        reading: ''
+      - text: Is this a book?
+        reading: ''
+    prompt: 'Choose the meaning: これは手紙ですか。'
+    answers:
+      - Is this a letter?
+  - id: extra-9-tiles
+    type: tiles
+    sentence: is-this-a-diary
+    prompt: 'Build this sentence: Is this a diary? (polite)'
+    answers:
+      - これは日記ですか
+      - これはにっきですか
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 日記, reading: にっき, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+  - id: extra-9-typing
+    type: typing
+    sentence: is-this-a-diary
+    answers:
+      - これは日記ですか
+      - これはにっきですか
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: is-this-a-diary
+    choices:
+      - text: Is this a diary?
+        reading: ''
+      - text: Is this a book?
+        reading: ''
+    prompt: 'Choose the meaning: これは日記ですか。'
+    answers:
+      - Is this a diary?
+  - id: extra-10-tiles
+    type: tiles
+    sentence: is-this-a-article
+    prompt: 'Build this sentence: Is this a article? (polite)'
+    answers:
+      - これは記事ですか
+      - これはきじですか
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 記事, reading: きじ, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+  - id: extra-10-typing
+    type: typing
+    sentence: is-this-a-article
+    answers:
+      - これは記事ですか
+      - これはきじですか
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: is-this-a-article
+    choices:
+      - text: Is this a article?
+        reading: ''
+      - text: Is this a book?
+        reading: ''
+    prompt: 'Choose the meaning: これは記事ですか。'
+    answers:
+      - Is this a article?
+  - id: extra-11-tiles
+    type: tiles
+    sentence: is-yamada-a-teacher
+    prompt: 'Build this sentence: Is Yamada a teacher? (polite)'
+    answers:
+      - 山田さんは先生ですか
+      - 山田さんはせんせいですか
+      - やまださんは先生ですか
+      - やまださんはせんせいですか
+    tiles:
+      - { text: 山田さん, reading: やまださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+  - id: extra-11-typing
+    type: typing
+    sentence: is-yamada-a-teacher
+    answers:
+      - 山田さんは先生ですか
+      - 山田さんはせんせいですか
+      - やまださんは先生ですか
+      - やまださんはせんせいですか
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: is-yamada-a-teacher
+    choices:
+      - text: Is Yamada a teacher?
+        reading: ''
+      - text: Is this a book?
+        reading: ''
+    prompt: 'Choose the meaning: 山田さんは先生ですか。'
+    answers:
+      - Is Yamada a teacher?
+  - id: extra-12-tiles
+    type: tiles
+    sentence: is-sato-a-teacher
+    prompt: 'Build this sentence: Is Sato a teacher? (polite)'
+    answers:
+      - 佐藤さんは先生ですか
+      - 佐藤さんはせんせいですか
+      - さとうさんは先生ですか
+      - さとうさんはせんせいですか
+    tiles:
+      - { text: 佐藤さん, reading: さとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+  - id: extra-12-typing
+    type: typing
+    sentence: is-sato-a-teacher
+    answers:
+      - 佐藤さんは先生ですか
+      - 佐藤さんはせんせいですか
+      - さとうさんは先生ですか
+      - さとうさんはせんせいですか
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: is-sato-a-teacher
+    choices:
+      - text: Is Sato a teacher?
+        reading: ''
+      - text: Is this a book?
+        reading: ''
+    prompt: 'Choose the meaning: 佐藤さんは先生ですか。'
+    answers:
+      - Is Sato a teacher?
+  - id: extra-13-tiles
+    type: tiles
+    sentence: is-suzuki-a-teacher
+    prompt: 'Build this sentence: Is Suzuki a teacher? (polite)'
+    answers:
+      - 鈴木さんは先生ですか
+      - 鈴木さんはせんせいですか
+      - すずきさんは先生ですか
+      - すずきさんはせんせいですか
+    tiles:
+      - { text: 鈴木さん, reading: すずきさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+  - id: extra-13-typing
+    type: typing
+    sentence: is-suzuki-a-teacher
+    answers:
+      - 鈴木さんは先生ですか
+      - 鈴木さんはせんせいですか
+      - すずきさんは先生ですか
+      - すずきさんはせんせいですか
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: is-suzuki-a-teacher
+    choices:
+      - text: Is Suzuki a teacher?
+        reading: ''
+      - text: Is this a book?
+        reading: ''
+    prompt: 'Choose the meaning: 鈴木さんは先生ですか。'
+    answers:
+      - Is Suzuki a teacher?
+  - id: extra-14-tiles
+    type: tiles
+    sentence: is-takahashi-a-teacher
+    prompt: 'Build this sentence: Is Takahashi a teacher? (polite)'
+    answers:
+      - 高橋さんは先生ですか
+      - 高橋さんはせんせいですか
+      - たかはしさんは先生ですか
+      - たかはしさんはせんせいですか
+    tiles:
+      - { text: 高橋さん, reading: たかはしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+  - id: extra-14-typing
+    type: typing
+    sentence: is-takahashi-a-teacher
+    answers:
+      - 高橋さんは先生ですか
+      - 高橋さんはせんせいですか
+      - たかはしさんは先生ですか
+      - たかはしさんはせんせいですか
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: is-takahashi-a-teacher
+    choices:
+      - text: Is Takahashi a teacher?
+        reading: ''
+      - text: Is this a book?
+        reading: ''
+    prompt: 'Choose the meaning: 高橋さんは先生ですか。'
+    answers:
+      - Is Takahashi a teacher?
+  - id: extra-15-tiles
+    type: tiles
+    sentence: is-ito-a-teacher
+    prompt: 'Build this sentence: Is Ito a teacher? (polite)'
+    answers:
+      - 伊藤さんは先生ですか
+      - 伊藤さんはせんせいですか
+      - いとうさんは先生ですか
+      - いとうさんはせんせいですか
+    tiles:
+      - { text: 伊藤さん, reading: いとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+  - id: extra-15-typing
+    type: typing
+    sentence: is-ito-a-teacher
+    answers:
+      - 伊藤さんは先生ですか
+      - 伊藤さんはせんせいですか
+      - いとうさんは先生ですか
+      - いとうさんはせんせいですか
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: is-ito-a-teacher
+    choices:
+      - text: Is Ito a teacher?
+        reading: ''
+      - text: Is this a book?
+        reading: ''
+    prompt: 'Choose the meaning: 伊藤さんは先生ですか。'
+    answers:
+      - Is Ito a teacher?
+  - id: extra-16-tiles
+    type: tiles
+    sentence: is-nakamura-a-teacher
+    prompt: 'Build this sentence: Is Nakamura a teacher? (polite)'
+    answers:
+      - 中村さんは先生ですか
+      - 中村さんはせんせいですか
+      - なかむらさんは先生ですか
+      - なかむらさんはせんせいですか
+    tiles:
+      - { text: 中村さん, reading: なかむらさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+  - id: extra-16-typing
+    type: typing
+    sentence: is-nakamura-a-teacher
+    answers:
+      - 中村さんは先生ですか
+      - 中村さんはせんせいですか
+      - なかむらさんは先生ですか
+      - なかむらさんはせんせいですか
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: is-nakamura-a-teacher
+    choices:
+      - text: Is Nakamura a teacher?
+        reading: ''
+      - text: Is this a book?
+        reading: ''
+    prompt: 'Choose the meaning: 中村さんは先生ですか。'
+    answers:
+      - Is Nakamura a teacher?
+  - id: extra-17-tiles
+    type: tiles
+    sentence: is-kobayashi-a-teacher
+    prompt: 'Build this sentence: Is Kobayashi a teacher? (polite)'
+    answers:
+      - 小林さんは先生ですか
+      - 小林さんはせんせいですか
+      - こばやしさんは先生ですか
+      - こばやしさんはせんせいですか
+    tiles:
+      - { text: 小林さん, reading: こばやしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 先生, reading: せんせい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+  - id: extra-17-typing
+    type: typing
+    sentence: is-kobayashi-a-teacher
+    answers:
+      - 小林さんは先生ですか
+      - 小林さんはせんせいですか
+      - こばやしさんは先生ですか
+      - こばやしさんはせんせいですか

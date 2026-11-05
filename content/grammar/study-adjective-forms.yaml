@@ -1,0 +1,652 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-adjective-forms
+  kind: grammar
+  note:
+    'For い-adjectives, replace final い with くない, かった, or くなかった. Add です to make these forms polite; do not
+    add だ after an い-adjective. For な-adjectives and nouns, change the ending instead: だ / です, じゃない / じゃありません,
+    だった / でした, じゃなかった / じゃありませんでした. では is a more formal alternative to じゃ. くありません and くありませんでした are also
+    polite い-adjective negatives. いい is irregular: よくない, よかった, よくなかった. きれい and 嫌い (きらい) are な-adjectives even
+    though they end in い.'
+  tags:
+    - Study guide
+    - Adjective guide
+  level: N5
+  title: 'い / な adjectives: present, past, and negatives'
+  topic: Adjectives and noun descriptions
+  meaning: 'い / な adjectives: present, past, and negatives'
+  reading: きょうはあつくないです。
+  examples:
+    - tokens:
+        - { role: topic, text: 今日, reading: きょう, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 暑くないです, reading: あつくないです, wordClass: predicate }
+      meaning: Today is not hot.
+      reading: きょうはあつくないです。
+      japanese: 今日は暑くないです。
+      translationTokens:
+        - { role: topic, text: Today }
+        - { role: predicate, text: ' is not hot.' }
+    - tokens:
+        - { role: topic, text: 昨日, reading: きのう, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 元気でした, reading: げんきでした, wordClass: predicate }
+      meaning: I was well yesterday.
+      reading: きのうはげんきでした。
+      japanese: 昨日は元気でした。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: was well }
+        - { role: topic, text: ' yesterday.' }
+    - tokens:
+        - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+        - { role: topic, text: 料理, reading: りょうり, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - {
+            role: predicate,
+            text: おいしくなかったです,
+            reading: おいしくなかったです,
+            wordClass: predicate,
+          }
+      meaning: This dish was not delicious.
+      reading: このりょうりはおいしくなかったです。
+      japanese: この料理はおいしくなかったです。
+      translationTokens:
+        - { role: modifier, text: 'This ' }
+        - { role: topic, text: dish }
+        - { role: predicate, text: ' was not delicious.' }
+    - tokens:
+        - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+        - { role: topic, text: 部屋, reading: へや, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - {
+            role: predicate,
+            text: きれいじゃなかったです,
+            reading: きれいじゃなかったです,
+            wordClass: predicate,
+          }
+      meaning: This room was not clean.
+      reading: このへやはきれいじゃなかったです。
+      japanese: この部屋はきれいじゃなかったです。
+      translationTokens:
+        - { role: modifier, text: 'This ' }
+        - { role: topic, text: room }
+        - { role: predicate, text: ' was not clean.' }
+  japanese: 今日は暑くないです。
+  references:
+    - rows:
+        - - text: Present · polite
+            reading: ''
+          - text: 暑いです
+            reading: あついです
+          - text: 元気です
+            reading: げんきです
+          - text: 雨です
+            reading: あめです
+        - - text: Present · casual
+            reading: ''
+          - text: 暑い
+            reading: あつい
+          - text: 元気だ
+            reading: げんきだ
+          - text: 雨だ
+            reading: あめだ
+        - - text: Negative · polite
+            reading: ''
+          - text: 暑くないです
+            reading: あつくないです
+          - text: 元気じゃありません
+            reading: げんきじゃありません
+          - text: 雨じゃありません
+            reading: あめじゃありません
+        - - text: Negative · casual
+            reading: ''
+          - text: 暑くない
+            reading: あつくない
+          - text: 元気じゃない
+            reading: げんきじゃない
+          - text: 雨じゃない
+            reading: あめじゃない
+        - - text: Past · polite
+            reading: ''
+          - text: 暑かったです
+            reading: あつかったです
+          - text: 元気でした
+            reading: げんきでした
+          - text: 雨でした
+            reading: あめでした
+        - - text: Past · casual
+            reading: ''
+          - text: 暑かった
+            reading: あつかった
+          - text: 元気だった
+            reading: げんきだった
+          - text: 雨だった
+            reading: あめだった
+        - - text: Negative past · polite
+            reading: ''
+          - text: 暑くなかったです
+            reading: あつくなかったです
+          - text: 元気じゃありませんでした
+            reading: げんきじゃありませんでした
+          - text: 雨じゃありませんでした
+            reading: あめじゃありませんでした
+        - - text: Negative past · casual
+            reading: ''
+          - text: 暑くなかった
+            reading: あつくなかった
+          - text: 元気じゃなかった
+            reading: げんきじゃなかった
+          - text: 雨じゃなかった
+            reading: あめじゃなかった
+      columns:
+        - Form
+        - 'い: hot'
+        - 'な: energetic'
+        - 'Noun: rain'
+      heading: 'Present and past: polite and casual together'
+    - rows:
+        - - text: おいしい
+            reading: おいしい
+          - text: い
+            reading: ''
+          - text: delicious
+            reading: ''
+        - - text: 大きい
+            reading: おおきい
+          - text: い
+            reading: ''
+          - text: big
+            reading: ''
+        - - text: 小さい
+            reading: ちいさい
+          - text: い
+            reading: ''
+          - text: small
+            reading: ''
+        - - text: 高い
+            reading: たかい
+          - text: い
+            reading: ''
+          - text: high; expensive
+            reading: ''
+        - - text: 安い
+            reading: やすい
+          - text: い
+            reading: ''
+          - text: inexpensive
+            reading: ''
+        - - text: 新しい
+            reading: あたらしい
+          - text: い
+            reading: ''
+          - text: new
+            reading: ''
+        - - text: 古い
+            reading: ふるい
+          - text: い
+            reading: ''
+          - text: old (things)
+            reading: ''
+        - - text: 面白い
+            reading: おもしろい
+          - text: い
+            reading: ''
+          - text: interesting; amusing
+            reading: ''
+        - - text: 忙しい
+            reading: いそがしい
+          - text: い
+            reading: ''
+          - text: busy
+            reading: ''
+        - - text: 暑い
+            reading: あつい
+          - text: い
+            reading: ''
+          - text: hot (weather)
+            reading: ''
+        - - text: 寒い
+            reading: さむい
+          - text: い
+            reading: ''
+          - text: cold (weather)
+            reading: ''
+        - - text: 楽しい
+            reading: たのしい
+          - text: い
+            reading: ''
+          - text: enjoyable
+            reading: ''
+        - - text: 静か
+            reading: しずか
+          - text: な
+            reading: ''
+          - text: quiet
+            reading: ''
+        - - text: にぎやか
+            reading: にぎやか
+          - text: な
+            reading: ''
+          - text: lively
+            reading: ''
+        - - text: 便利
+            reading: べんり
+          - text: な
+            reading: ''
+          - text: convenient
+            reading: ''
+        - - text: 元気
+            reading: げんき
+          - text: な
+            reading: ''
+          - text: healthy; energetic
+            reading: ''
+        - - text: 親切
+            reading: しんせつ
+          - text: な
+            reading: ''
+          - text: kind
+            reading: ''
+        - - text: 有名
+            reading: ゆうめい
+          - text: な
+            reading: ''
+          - text: famous
+            reading: ''
+        - - text: きれい
+            reading: きれい
+          - text: な
+            reading: ''
+          - text: beautiful; clean
+            reading: ''
+        - - text: 嫌い
+            reading: きらい
+          - text: な
+            reading: ''
+          - text: disliked
+            reading: ''
+        - - text: 好き
+            reading: すき
+          - text: な
+            reading: ''
+          - text: liked; favorite
+            reading: ''
+        - - text: いい
+            reading: いい
+          - text: い
+            reading: ''
+          - text: good
+            reading: ''
+        - - text: ほしい
+            reading: ほしい
+          - text: い
+            reading: ''
+          - text: wanted; desirable
+            reading: ''
+      columns:
+        - Japanese
+        - Type
+        - Meaning
+      heading: Adjective vocabulary
+    - rows:
+        - - text: いいです
+            reading: いいです
+          - text: よくないです
+            reading: よくないです
+          - text: よかったです
+            reading: よかったです
+          - text: よくなかったです
+            reading: よくなかったです
+      columns:
+        - Present
+        - Negative
+        - Past
+        - Negative past
+      heading: いい uses よい when its ending changes
+sentences:
+  today-is-not-hot:
+    text: 今日は暑くないです。
+    tokens:
+      - { role: topic, text: 今日, reading: きょう, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 暑くないです, reading: あつくないです, wordClass: predicate }
+    meaning: Today is not hot.
+    reading: きょうはあつくないです。
+    translationTokens:
+      - { role: topic, text: Today }
+      - { role: predicate, text: ' is not hot.' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'For い-adjectives, replace final い with くない, かった, or くなかった. Add です to make these forms polite; do
+      not add だ after an い-adjective. For な-adjectives and nouns, change the ending instead: だ / です, じゃない /
+      じゃありません, だった / でした, じゃなかった / じゃありませんでした. では is a more formal alternative to じゃ. くありません and くありませんでした are
+      also polite い-adjective negatives. いい is irregular: よくない, よかった, よくなかった. きれい and 嫌い (きらい) are
+      な-adjectives even though they end in い.'
+  i-was-well-yesterday:
+    text: 昨日は元気でした。
+    tokens:
+      - { role: topic, text: 昨日, reading: きのう, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 元気でした, reading: げんきでした, wordClass: predicate }
+    meaning: I was well yesterday.
+    reading: きのうはげんきでした。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: was well }
+      - { role: topic, text: ' yesterday.' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'For い-adjectives, replace final い with くない, かった, or くなかった. Add です to make these forms polite; do
+      not add だ after an い-adjective. For な-adjectives and nouns, change the ending instead: だ / です, じゃない /
+      じゃありません, だった / でした, じゃなかった / じゃありませんでした. では is a more formal alternative to じゃ. くありません and くありませんでした are
+      also polite い-adjective negatives. いい is irregular: よくない, よかった, よくなかった. きれい and 嫌い (きらい) are
+      な-adjectives even though they end in い.'
+    form: polite
+  this-dish-was-not-delicious:
+    text: この料理はおいしくなかったです。
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+      - { role: topic, text: 料理, reading: りょうり, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - {
+          role: predicate,
+          text: おいしくなかったです,
+          reading: おいしくなかったです,
+          wordClass: predicate,
+        }
+    meaning: This dish was not delicious.
+    reading: このりょうりはおいしくなかったです。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: dish }
+      - { role: predicate, text: ' was not delicious.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'For い-adjectives, replace final い with くない, かった, or くなかった. Add です to make these forms polite; do
+      not add だ after an い-adjective. For な-adjectives and nouns, change the ending instead: だ / です, じゃない /
+      じゃありません, だった / でした, じゃなかった / じゃありませんでした. では is a more formal alternative to じゃ. くありません and くありませんでした are
+      also polite い-adjective negatives. いい is irregular: よくない, よかった, よくなかった. きれい and 嫌い (きらい) are
+      な-adjectives even though they end in い.'
+  this-room-was-not-clean:
+    text: この部屋はきれいじゃなかったです。
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+      - { role: topic, text: 部屋, reading: へや, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - {
+          role: predicate,
+          text: きれいじゃなかったです,
+          reading: きれいじゃなかったです,
+          wordClass: predicate,
+        }
+    meaning: This room was not clean.
+    reading: このへやはきれいじゃなかったです。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: room }
+      - { role: predicate, text: ' was not clean.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'For い-adjectives, replace final い with くない, かった, or くなかった. Add です to make these forms polite; do
+      not add だ after an い-adjective. For な-adjectives and nouns, change the ending instead: だ / です, じゃない /
+      じゃありません, だった / でした, じゃなかった / じゃありませんでした. では is a more formal alternative to じゃ. くありません and くありませんでした are
+      also polite い-adjective negatives. いい is irregular: よくない, よかった, よくなかった. きれい and 嫌い (きらい) are
+      な-adjectives even though they end in い.'
+  tomorrow-is-not-hot:
+    tokens:
+      - { role: topic, text: 明日, reading: あした, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 暑くないです, reading: あつくないです, wordClass: predicate }
+    meaning: Tomorrow is not hot.
+    reading: あしたはあつくないです。
+    translationTokens:
+      - { role: topic, text: Tomorrow }
+      - { role: predicate, text: ' is not hot.' }
+    text: 明日は暑くないです。
+    hint: Check the particles and sentence ending.
+    explanation:
+      明日は暑くないです。 means “Tomorrow is not hot.” Match the vocabulary, particles, and tense to the English
+      sentence.
+    form: polite
+  i-was-well-last-week:
+    tokens:
+      - { role: topic, text: 先週, reading: せんしゅう, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 元気でした, reading: げんきでした, wordClass: predicate }
+    meaning: I was well last week.
+    reading: せんしゅうはげんきでした。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: was well }
+      - { role: topic, text: ' last week.' }
+    text: 先週は元気でした。
+    hint: Check the particles and sentence ending.
+    explanation:
+      先週は元気でした。 means “I was well last week.” Match the vocabulary, particles, and tense to the English
+      sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: today-is-not-hot
+    choices:
+      - text: Today is not hot.
+        reading: ''
+      - text: I was well yesterday.
+        reading: ''
+      - text: This dish was not delicious.
+        reading: ''
+      - text: This room was not clean.
+        reading: ''
+    answers:
+      - Today is not hot.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-was-well-yesterday
+    choices:
+      - sentence: today-is-not-hot
+      - sentence: i-was-well-yesterday
+    prompt: 'Choose the Japanese: I was well yesterday.'
+    answers:
+      - 昨日は元気でした
+      - 昨日はげんきでした
+      - きのうは元気でした
+      - きのうはげんきでした
+  - id: gap
+    type: gap
+    sentence: i-was-well-yesterday
+    prompt: 'Fill the missing part: I was well yesterday. (polite)'
+    answers:
+      - 元気でした
+      - げんきでした
+    context:
+      text: 昨日は___。
+      tokens:
+        - { role: topic, text: 昨日, reading: きのう, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: ___, reading: ___, wordClass: predicate }
+      reading: きのうは___。
+  - id: tiles
+    type: tiles
+    sentence: i-was-well-yesterday
+    prompt: 'Build: I was well yesterday. (polite)'
+    answers:
+      - 昨日は元気でした
+      - 昨日はげんきでした
+      - きのうは元気でした
+      - きのうはげんきでした
+    tiles:
+      - { role: topic, text: 昨日, reading: きのう, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 元気でした, reading: げんきでした, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: this-dish-was-not-delicious
+    answers:
+      - この料理はおいしくなかったです
+      - このりょうりはおいしくなかったです
+  - id: alternate
+    type: typing
+    sentence: this-room-was-not-clean
+    alternate: true
+    prompt: 'Another example: This room was not clean. (polite)'
+    answers:
+      - この部屋はきれいじゃなかったです
+      - このへやはきれいじゃなかったです
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: tomorrow-is-not-hot
+    choices:
+      - text: Tomorrow is not hot.
+        reading: ''
+      - text: Today is not hot.
+        reading: ''
+      - text: I was well yesterday.
+        reading: ''
+      - text: This dish was not delicious.
+        reading: ''
+    answers:
+      - Tomorrow is not hot.
+  - id: expanded-1-typing
+    type: typing
+    sentence: tomorrow-is-not-hot
+    explanation: 明日は暑くないです。 means “Tomorrow is not hot.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 明日は暑くないです
+      - あしたはあつくないです
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: tomorrow-is-not-hot
+    prompt: 'Build this sentence: Tomorrow is not hot. (polite)'
+    explanation: 明日は暑くないです。 means “Tomorrow is not hot.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 明日は暑くないです
+      - あしたはあつくないです
+  - id: expanded-2-meaning
+    type: meaning-choice
+    sentence: i-was-well-last-week
+    choices:
+      - text: I was well last week.
+        reading: ''
+      - text: Today is not hot.
+        reading: ''
+      - text: I was well yesterday.
+        reading: ''
+      - text: This dish was not delicious.
+        reading: ''
+    answers:
+      - I was well last week.
+  - id: expanded-2-typing
+    type: typing
+    sentence: i-was-well-last-week
+    explanation: 先週は元気でした。 means “I was well last week.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 先週は元気でした
+      - せんしゅうはげんきでした
+  - id: expanded-2-tiles
+    type: tiles
+    sentence: i-was-well-last-week
+    prompt: 'Build this sentence: I was well last week. (polite)'
+    explanation: 先週は元気でした。 means “I was well last week.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 先週は元気でした
+      - せんしゅうはげんきでした
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: tomorrow-is-not-hot
+    choices:
+      - sentence: tomorrow-is-not-hot
+      - text: 今日は暑くないです。
+        reading: きょうはあつくないです。
+        tokens:
+          - { role: topic, text: 今日, reading: きょう, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 暑くないです, reading: あつくないです, wordClass: predicate }
+      - text: 昨日は元気でした。
+        reading: きのうはげんきでした。
+        tokens:
+          - { role: topic, text: 昨日, reading: きのう, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 元気でした, reading: げんきでした, wordClass: predicate }
+      - text: この料理はおいしくなかったです。
+        reading: このりょうりはおいしくなかったです。
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+          - { role: topic, text: 料理, reading: りょうり, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - {
+              role: predicate,
+              text: おいしくなかったです,
+              reading: おいしくなかったです,
+              wordClass: predicate,
+            }
+    prompt: 'Choose the Japanese: Tomorrow is not hot. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 明日は暑くないです。 for “Tomorrow is not hot.” The other sentences describe different situations.
+    answers:
+      - 明日は暑くないです
+      - あしたはあつくないです
+  - id: expanded-1-gap
+    type: gap
+    sentence: tomorrow-is-not-hot
+    prompt: 'Fill the missing part: Tomorrow is not hot. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 暑くないです (あつくないです). Together, the sentence means “Tomorrow is not hot.”
+    answers:
+      - 暑くないです
+      - あつくないです
+    context:
+      meaning: Tomorrow is not hot.
+      reading: あしたは___。
+      text: 明日は___。
+  - id: expanded-2-pattern
+    type: pattern-choice
+    sentence: i-was-well-last-week
+    choices:
+      - sentence: i-was-well-last-week
+      - text: 今日は暑くないです。
+        reading: きょうはあつくないです。
+        tokens:
+          - { role: topic, text: 今日, reading: きょう, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 暑くないです, reading: あつくないです, wordClass: predicate }
+      - text: 昨日は元気でした。
+        reading: きのうはげんきでした。
+        tokens:
+          - { role: topic, text: 昨日, reading: きのう, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 元気でした, reading: げんきでした, wordClass: predicate }
+      - text: この料理はおいしくなかったです。
+        reading: このりょうりはおいしくなかったです。
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+          - { role: topic, text: 料理, reading: りょうり, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - {
+              role: predicate,
+              text: おいしくなかったです,
+              reading: おいしくなかったです,
+              wordClass: predicate,
+            }
+    prompt: 'Choose the Japanese: I was well last week. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 先週は元気でした。 for “I was well last week.” The other sentences describe different situations.
+    answers:
+      - 先週は元気でした
+      - せんしゅうはげんきでした
+  - id: expanded-2-gap
+    type: gap
+    sentence: i-was-well-last-week
+    prompt: 'Fill the missing part: I was well last week. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 元気でした (げんきでした). Together, the sentence means “I was well last week.”
+    answers:
+      - 元気でした
+      - げんきでした
+    context:
+      meaning: I was well last week.
+      reading: せんしゅうは___。
+      text: 先週は___。

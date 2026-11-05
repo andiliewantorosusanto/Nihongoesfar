@@ -1,0 +1,343 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-ask-name
+  kind: grammar
+  note:
+    Ask お名前は何ですか (おなまえはなんですか). Answer with your name + です, or 名前は～です. The names here are fictional examples;
+    substitute your own name.
+  tags:
+    - Study guide
+  level: N5
+  title: 'Ask and answer: your name'
+  topic: Grammar basics
+  romaji: onamae wa nan desu ka
+  meaning: 'Ask and answer: your name'
+  reading: おなまえはなんですか。
+  examples:
+    - tokens:
+        - { role: topic, text: お名前, reading: おなまえ, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 何です, reading: なんです, wordClass: predicate }
+        - { role: particle, text: か, reading: か, wordClass: particle }
+      meaning: What is your name?
+      reading: おなまえはなんですか。
+      japanese: お名前は何ですか。
+      translationTokens:
+        - { role: predicate, text: 'What is ' }
+        - { role: topic, text: your name }
+        - { role: particle, text: '?' }
+    - tokens:
+        - { role: predicate, text: アリです, reading: ありです, wordClass: predicate }
+      meaning: My name is Ali.
+      reading: ありです。
+      japanese: アリです。
+      translationTokens:
+        - { role: implicit, text: My name, implicit: true }
+        - { role: predicate, text: ' is Ali.' }
+    - tokens:
+        - { role: predicate, text: 田中です, reading: たなかです, wordClass: predicate }
+      meaning: My name is Tanaka.
+      reading: たなかです。
+      japanese: 田中です。
+      translationTokens:
+        - { role: implicit, text: My name, implicit: true }
+        - { role: predicate, text: ' is Tanaka.' }
+    - tokens:
+        - { role: predicate, text: ハナです, reading: はなです, wordClass: predicate }
+      meaning: My name is Hana.
+      reading: はなです。
+      japanese: ハナです。
+      translationTokens:
+        - { role: implicit, text: My name, implicit: true }
+        - { role: predicate, text: ' is Hana.' }
+  japanese: お名前は何ですか。
+  references:
+    - rows:
+        - - text: お名前は何ですか
+            reading: おなまえはなんですか
+          - text: アリです
+            reading: ありです
+      columns:
+        - Question
+        - Example answer
+      heading: Name
+sentences:
+  what-is-your-name:
+    text: お名前は何ですか。
+    tokens:
+      - { role: topic, text: お名前, reading: おなまえ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 何です, reading: なんです, wordClass: predicate }
+      - { role: particle, text: か, reading: か, wordClass: particle }
+    meaning: What is your name?
+    reading: おなまえはなんですか。
+    translationTokens:
+      - { role: predicate, text: 'What is ' }
+      - { role: topic, text: your name }
+      - { role: particle, text: '?' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      Ask お名前は何ですか (おなまえはなんですか). Answer with your name + です, or 名前は～です. The names here are fictional
+      examples; substitute your own name.
+  my-name-is-ali:
+    text: アリです。
+    tokens:
+      - { role: predicate, text: アリです, reading: ありです, wordClass: predicate }
+    meaning: My name is Ali.
+    reading: ありです。
+    translationTokens:
+      - { role: implicit, text: My name, implicit: true }
+      - { role: predicate, text: ' is Ali.' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      Ask お名前は何ですか (おなまえはなんですか). Answer with your name + です, or 名前は～です. The names here are fictional
+      examples; substitute your own name.
+    form: polite
+  my-name-is-tanaka:
+    text: 田中です。
+    tokens:
+      - { role: predicate, text: 田中です, reading: たなかです, wordClass: predicate }
+    meaning: My name is Tanaka.
+    reading: たなかです。
+    translationTokens:
+      - { role: implicit, text: My name, implicit: true }
+      - { role: predicate, text: ' is Tanaka.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      Ask お名前は何ですか (おなまえはなんですか). Answer with your name + です, or 名前は～です. The names here are fictional
+      examples; substitute your own name.
+  my-name-is-hana:
+    text: ハナです。
+    tokens:
+      - { role: predicate, text: ハナです, reading: はなです, wordClass: predicate }
+    meaning: My name is Hana.
+    reading: はなです。
+    translationTokens:
+      - { role: implicit, text: My name, implicit: true }
+      - { role: predicate, text: ' is Hana.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      Ask お名前は何ですか (おなまえはなんですか). Answer with your name + です, or 名前は～です. The names here are fictional
+      examples; substitute your own name.
+  my-name-is-yuki:
+    tokens:
+      - { role: predicate, text: ユキです, reading: ゆきです, wordClass: predicate }
+    meaning: My name is Yuki.
+    reading: ゆきです。
+    translationTokens:
+      - { role: implicit, text: My name, implicit: true }
+      - { role: predicate, text: ' is Yuki.' }
+    text: ユキです。
+    hint: Check the particles and sentence ending.
+    explanation: ユキです。 means “My name is Yuki.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+  my-name-is-ken:
+    tokens:
+      - { role: predicate, text: ケンです, reading: けんです, wordClass: predicate }
+    meaning: My name is Ken.
+    reading: けんです。
+    translationTokens:
+      - { role: implicit, text: My name, implicit: true }
+      - { role: predicate, text: ' is Ken.' }
+    text: ケンです。
+    hint: Check the particles and sentence ending.
+    explanation: ケンです。 means “My name is Ken.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: what-is-your-name
+    choices:
+      - text: What is your name?
+        reading: ''
+      - text: My name is Ali.
+        reading: ''
+      - text: My name is Tanaka.
+        reading: ''
+      - text: My name is Hana.
+        reading: ''
+    answers:
+      - What is your name?
+  - id: pattern
+    type: pattern-choice
+    sentence: my-name-is-ali
+    choices:
+      - sentence: what-is-your-name
+      - sentence: my-name-is-ali
+    prompt: 'Choose the Japanese: My name is Ali.'
+    answers:
+      - アリです
+      - ありです
+  - id: gap
+    type: gap
+    sentence: my-name-is-ali
+    prompt: 'Fill the missing part: My name is Ali. (polite)'
+    answers:
+      - アリです
+      - ありです
+    context:
+      text: ___。
+      tokens:
+        - { role: predicate, text: ___, reading: ___, wordClass: predicate }
+      reading: ___。
+  - id: tiles
+    type: tiles
+    sentence: my-name-is-ali
+    prompt: 'Build: My name is Ali. (polite)'
+    answers:
+      - アリです
+      - ありです
+    tiles:
+      - { role: predicate, text: アリです, reading: ありです, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: my-name-is-tanaka
+    answers:
+      - 田中です
+      - たなかです
+  - id: alternate
+    type: typing
+    sentence: my-name-is-hana
+    alternate: true
+    prompt: 'Another example: My name is Hana. (polite)'
+    answers:
+      - ハナです
+      - はなです
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: my-name-is-yuki
+    choices:
+      - text: My name is Yuki.
+        reading: ''
+      - text: What is your name?
+        reading: ''
+      - text: My name is Ali.
+        reading: ''
+      - text: My name is Tanaka.
+        reading: ''
+    answers:
+      - My name is Yuki.
+  - id: expanded-1-typing
+    type: typing
+    sentence: my-name-is-yuki
+    explanation: ユキです。 means “My name is Yuki.” Write the complete sentence, including the indicated ending.
+    answers:
+      - ユキです
+      - ゆきです
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: my-name-is-yuki
+    prompt: 'Build this sentence: My name is Yuki. (polite)'
+    explanation: ユキです。 means “My name is Yuki.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - ユキです
+      - ゆきです
+  - id: expanded-2-meaning
+    type: meaning-choice
+    sentence: my-name-is-ken
+    choices:
+      - text: My name is Ken.
+        reading: ''
+      - text: What is your name?
+        reading: ''
+      - text: My name is Ali.
+        reading: ''
+      - text: My name is Tanaka.
+        reading: ''
+    answers:
+      - My name is Ken.
+  - id: expanded-2-typing
+    type: typing
+    sentence: my-name-is-ken
+    explanation: ケンです。 means “My name is Ken.” Write the complete sentence, including the indicated ending.
+    answers:
+      - ケンです
+      - けんです
+  - id: expanded-2-tiles
+    type: tiles
+    sentence: my-name-is-ken
+    prompt: 'Build this sentence: My name is Ken. (polite)'
+    explanation: ケンです。 means “My name is Ken.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - ケンです
+      - けんです
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: my-name-is-yuki
+    choices:
+      - sentence: my-name-is-yuki
+      - text: お名前は何ですか。
+        reading: おなまえはなんですか。
+        tokens:
+          - { role: topic, text: お名前, reading: おなまえ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 何です, reading: なんです, wordClass: predicate }
+          - { role: particle, text: か, reading: か, wordClass: particle }
+      - text: アリです。
+        reading: ありです。
+        tokens:
+          - { role: predicate, text: アリです, reading: ありです, wordClass: predicate }
+      - text: 田中です。
+        reading: たなかです。
+        tokens:
+          - { role: predicate, text: 田中です, reading: たなかです, wordClass: predicate }
+    prompt: 'Choose the Japanese: My name is Yuki. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose ユキです。 for “My name is Yuki.” The other sentences describe different situations.
+    answers:
+      - ユキです
+      - ゆきです
+  - id: expanded-1-gap
+    type: gap
+    sentence: my-name-is-yuki
+    prompt: 'Fill the missing part: My name is Yuki. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is ユキです (ゆきです). Together, the sentence means “My name is Yuki.”
+    answers:
+      - ユキです
+      - ゆきです
+    context:
+      meaning: My name is Yuki.
+      reading: ___。
+      text: ___。
+  - id: expanded-2-pattern
+    type: pattern-choice
+    sentence: my-name-is-ken
+    choices:
+      - sentence: my-name-is-ken
+      - text: お名前は何ですか。
+        reading: おなまえはなんですか。
+        tokens:
+          - { role: topic, text: お名前, reading: おなまえ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 何です, reading: なんです, wordClass: predicate }
+          - { role: particle, text: か, reading: か, wordClass: particle }
+      - text: アリです。
+        reading: ありです。
+        tokens:
+          - { role: predicate, text: アリです, reading: ありです, wordClass: predicate }
+      - text: 田中です。
+        reading: たなかです。
+        tokens:
+          - { role: predicate, text: 田中です, reading: たなかです, wordClass: predicate }
+    prompt: 'Choose the Japanese: My name is Ken. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose ケンです。 for “My name is Ken.” The other sentences describe different situations.
+    answers:
+      - ケンです
+      - けんです
+  - id: expanded-2-gap
+    type: gap
+    sentence: my-name-is-ken
+    prompt: 'Fill the missing part: My name is Ken. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is ケンです (けんです). Together, the sentence means “My name is Ken.”
+    answers:
+      - ケンです
+      - けんです
+    context:
+      meaning: My name is Ken.
+      reading: ___。
+      text: ___。

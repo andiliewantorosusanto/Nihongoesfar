@@ -1,0 +1,309 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-ask-hobby
+  kind: grammar
+  note:
+    Ask 趣味は何ですか or the polite ご趣味は何ですか (ごしゅみはなんですか). Answer 趣味は～です. Use a noun such as 読書 (reading) or 料理
+    (cooking).
+  tags:
+    - Study guide
+  level: N5
+  title: 'Ask and answer: your hobby'
+  topic: Grammar basics
+  romaji: goshumi wa nan desu ka
+  meaning: 'Ask and answer: your hobby'
+  reading: ごしゅみはなんですか。
+  examples:
+    - tokens:
+        - { role: topic, text: ご趣味, reading: ごしゅみ, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 何です, reading: なんです, wordClass: predicate }
+        - { role: particle, text: か, reading: か, wordClass: particle }
+      meaning: What is your hobby?
+      reading: ごしゅみはなんですか。
+      japanese: ご趣味は何ですか。
+      translationTokens:
+        - { role: predicate, text: 'What is ' }
+        - { role: topic, text: your hobby }
+        - { role: particle, text: '?' }
+    - tokens:
+        - { role: topic, text: 趣味, reading: しゅみ, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 読書です, reading: どくしょです, wordClass: predicate }
+      meaning: My hobby is reading.
+      reading: しゅみはどくしょです。
+      japanese: 趣味は読書です。
+      translationTokens:
+        - { role: topic, text: My hobby }
+        - { role: predicate, text: ' is reading.' }
+    - tokens:
+        - { role: topic, text: 趣味, reading: しゅみ, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 料理です, reading: りょうりです, wordClass: predicate }
+      meaning: My hobby is cooking.
+      reading: しゅみはりょうりです。
+      japanese: 趣味は料理です。
+      translationTokens:
+        - { role: topic, text: My hobby }
+        - { role: predicate, text: ' is cooking.' }
+    - tokens:
+        - { role: topic, text: 趣味, reading: しゅみ, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 音楽です, reading: おんがくです, wordClass: predicate }
+      meaning: My hobby is music.
+      reading: しゅみはおんがくです。
+      japanese: 趣味は音楽です。
+      translationTokens:
+        - { role: topic, text: My hobby }
+        - { role: predicate, text: ' is music.' }
+  japanese: ご趣味は何ですか。
+  references:
+    - rows:
+        - - text: 読書
+            reading: どくしょ
+          - text: reading
+            reading: ''
+        - - text: 料理
+            reading: りょうり
+          - text: cooking
+            reading: ''
+        - - text: 音楽
+            reading: おんがく
+          - text: music
+            reading: ''
+        - - text: 旅行
+            reading: りょこう
+          - text: travel
+            reading: ''
+      columns:
+        - Japanese
+        - Meaning
+      heading: Hobbies
+sentences:
+  what-is-your-hobby:
+    text: ご趣味は何ですか。
+    tokens:
+      - { role: topic, text: ご趣味, reading: ごしゅみ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 何です, reading: なんです, wordClass: predicate }
+      - { role: particle, text: か, reading: か, wordClass: particle }
+    meaning: What is your hobby?
+    reading: ごしゅみはなんですか。
+    translationTokens:
+      - { role: predicate, text: 'What is ' }
+      - { role: topic, text: your hobby }
+      - { role: particle, text: '?' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      Ask 趣味は何ですか or the polite ご趣味は何ですか (ごしゅみはなんですか). Answer 趣味は～です. Use a noun such as 読書 (reading)
+      or 料理 (cooking).
+  my-hobby-is-reading:
+    text: 趣味は読書です。
+    tokens:
+      - { role: topic, text: 趣味, reading: しゅみ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 読書です, reading: どくしょです, wordClass: predicate }
+    meaning: My hobby is reading.
+    reading: しゅみはどくしょです。
+    translationTokens:
+      - { role: topic, text: My hobby }
+      - { role: predicate, text: ' is reading.' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      Ask 趣味は何ですか or the polite ご趣味は何ですか (ごしゅみはなんですか). Answer 趣味は～です. Use a noun such as 読書 (reading)
+      or 料理 (cooking).
+    form: polite
+  my-hobby-is-cooking:
+    text: 趣味は料理です。
+    tokens:
+      - { role: topic, text: 趣味, reading: しゅみ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 料理です, reading: りょうりです, wordClass: predicate }
+    meaning: My hobby is cooking.
+    reading: しゅみはりょうりです。
+    translationTokens:
+      - { role: topic, text: My hobby }
+      - { role: predicate, text: ' is cooking.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      Ask 趣味は何ですか or the polite ご趣味は何ですか (ごしゅみはなんですか). Answer 趣味は～です. Use a noun such as 読書 (reading)
+      or 料理 (cooking).
+  my-hobby-is-music:
+    text: 趣味は音楽です。
+    tokens:
+      - { role: topic, text: 趣味, reading: しゅみ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 音楽です, reading: おんがくです, wordClass: predicate }
+    meaning: My hobby is music.
+    reading: しゅみはおんがくです。
+    translationTokens:
+      - { role: topic, text: My hobby }
+      - { role: predicate, text: ' is music.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      Ask 趣味は何ですか or the polite ご趣味は何ですか (ごしゅみはなんですか). Answer 趣味は～です. Use a noun such as 読書 (reading)
+      or 料理 (cooking).
+  my-hobby-is-photography:
+    tokens:
+      - { role: topic, text: 趣味, reading: しゅみ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 写真です, reading: しゃしんです, wordClass: predicate }
+    meaning: My hobby is photography.
+    reading: しゅみはしゃしんです。
+    translationTokens:
+      - { role: topic, text: My hobby }
+      - { role: predicate, text: ' is photography.' }
+    text: 趣味は写真です。
+    hint: Check the particles and sentence ending.
+    explanation:
+      趣味は写真です。 means “My hobby is photography.” Match the vocabulary, particles, and tense to the
+      English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: what-is-your-hobby
+    choices:
+      - text: What is your hobby?
+        reading: ''
+      - text: My hobby is reading.
+        reading: ''
+      - text: My hobby is cooking.
+        reading: ''
+      - text: My hobby is music.
+        reading: ''
+    answers:
+      - What is your hobby?
+  - id: pattern
+    type: pattern-choice
+    sentence: my-hobby-is-reading
+    choices:
+      - sentence: what-is-your-hobby
+      - sentence: my-hobby-is-reading
+    prompt: 'Choose the Japanese: My hobby is reading.'
+    answers:
+      - 趣味は読書です
+      - 趣味はどくしょです
+      - しゅみは読書です
+      - しゅみはどくしょです
+  - id: gap
+    type: gap
+    sentence: my-hobby-is-reading
+    prompt: 'Fill the missing part: My hobby is reading. (polite)'
+    answers:
+      - は
+      - は
+    context:
+      text: 趣味___読書です。
+      tokens:
+        - { role: topic, text: 趣味, reading: しゅみ, wordClass: noun phrase }
+        - { role: particle, text: ___, reading: ___, wordClass: particle }
+        - { role: predicate, text: 読書です, reading: どくしょです, wordClass: predicate }
+      reading: しゅみ___どくしょです。
+  - id: tiles
+    type: tiles
+    sentence: my-hobby-is-reading
+    prompt: 'Build: My hobby is reading. (polite)'
+    answers:
+      - 趣味は読書です
+      - 趣味はどくしょです
+      - しゅみは読書です
+      - しゅみはどくしょです
+    tiles:
+      - { role: topic, text: 趣味, reading: しゅみ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 読書です, reading: どくしょです, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: my-hobby-is-cooking
+    answers:
+      - 趣味は料理です
+      - 趣味はりょうりです
+      - しゅみは料理です
+      - しゅみはりょうりです
+  - id: alternate
+    type: typing
+    sentence: my-hobby-is-music
+    alternate: true
+    prompt: 'Another example: My hobby is music. (polite)'
+    answers:
+      - 趣味は音楽です
+      - 趣味はおんがくです
+      - しゅみは音楽です
+      - しゅみはおんがくです
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: my-hobby-is-photography
+    choices:
+      - text: My hobby is photography.
+        reading: ''
+      - text: What is your hobby?
+        reading: ''
+      - text: My hobby is reading.
+        reading: ''
+      - text: My hobby is cooking.
+        reading: ''
+    answers:
+      - My hobby is photography.
+  - id: expanded-1-typing
+    type: typing
+    sentence: my-hobby-is-photography
+    explanation: 趣味は写真です。 means “My hobby is photography.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 趣味は写真です
+      - しゅみはしゃしんです
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: my-hobby-is-photography
+    prompt: 'Build this sentence: My hobby is photography. (polite)'
+    explanation:
+      趣味は写真です。 means “My hobby is photography.” Keep the particles with their phrases and put the
+      predicate last.
+    answers:
+      - 趣味は写真です
+      - しゅみはしゃしんです
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: my-hobby-is-photography
+    choices:
+      - sentence: my-hobby-is-photography
+      - text: ご趣味は何ですか。
+        reading: ごしゅみはなんですか。
+        tokens:
+          - { role: topic, text: ご趣味, reading: ごしゅみ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 何です, reading: なんです, wordClass: predicate }
+          - { role: particle, text: か, reading: か, wordClass: particle }
+      - text: 趣味は読書です。
+        reading: しゅみはどくしょです。
+        tokens:
+          - { role: topic, text: 趣味, reading: しゅみ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 読書です, reading: どくしょです, wordClass: predicate }
+      - text: 趣味は料理です。
+        reading: しゅみはりょうりです。
+        tokens:
+          - { role: topic, text: 趣味, reading: しゅみ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 料理です, reading: りょうりです, wordClass: predicate }
+    prompt: 'Choose the Japanese: My hobby is photography. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 趣味は写真です。 for “My hobby is photography.” The other sentences describe different situations.
+    answers:
+      - 趣味は写真です
+      - しゅみはしゃしんです
+  - id: expanded-1-gap
+    type: gap
+    sentence: my-hobby-is-photography
+    prompt: 'Fill the missing part: My hobby is photography. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 写真です (しゃしんです). Together, the sentence means “My hobby is photography.”
+    answers:
+      - 写真です
+      - しゃしんです
+    context:
+      meaning: My hobby is photography.
+      reading: しゅみは___。
+      text: 趣味は___。

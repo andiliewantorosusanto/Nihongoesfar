@@ -14,10 +14,11 @@
 
 ## Learning content and deployment
 
-- Edit learning entries in `public/kana.json`, `public/kanji.json`, `public/grammar.json`, `public/vocabulary.json`, `public/numbers.json`, or `public/adjectives.json`.
+- Edit grammar in `content/grammar/*.yaml`; keep topic order in `content/grammar/index.yaml`. Run `npm run content:build` and commit the generated `public/grammar.json` with source changes. Do not edit that generated file directly.
+- Edit other learning entries in `public/kana.json`, `public/kanji.json`, `public/vocabulary.json`, `public/numbers.json`, or `public/adjectives.json`.
 - Edit guide reference tables and topic mappings in `public/guides/`; keep conversion and lookup functions in TypeScript.
 - `public/notebook.json` lists the subject files. Keep entry IDs unique and stable.
 - Verify static-site changes with `npm run build:static` and `npm run test:static`; run `npm run format:check` for formatting.
 - GitHub Actions publishes the static site to S3 and CloudFront after a successful default-branch push.
 
-The application is JSON-only. `npm run dev` serves it locally; `npm run build` creates `dist/`, and `npm start` previews that build. No API server or database is required.
+The application reads static JSON; grammar JSON is generated from YAML. `npm run dev` serves it locally; `npm run build` creates `dist/`, and `npm start` previews that build. No API server or database is required.

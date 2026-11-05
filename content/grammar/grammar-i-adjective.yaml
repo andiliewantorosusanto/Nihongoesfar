@@ -1,0 +1,1222 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-i-adjective
+  kind: grammar
+  note:
+    'Most い-adjectives keep final い before a noun: 面白い本. Negative: 面白くないです; past: 面白かったです; negative past:
+    面白くなかったです. Add です for polite speech, but not な before the noun.'
+  tags:
+    - Grammar
+    - i-adjective
+  level: N5
+  title: い-adjectives in sentences
+  topic: Sentence building
+  lesson:
+    goal: Describe something with an い-adjective.
+    group: Descriptions and preferences
+    order: 19
+    recap: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+    examples:
+      - tokens:
+          - { role: modifier, text: この, reading: この, wordClass: modifier }
+          - { role: topic, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 面白いです, reading: おもしろいです, wordClass: predicate }
+        meaning: This book is interesting.
+        reading: このほんはおもしろいです。
+        japanese: この本は面白いです。
+        translationTokens:
+          - { role: modifier, text: 'This ' }
+          - { role: topic, text: book }
+          - { role: predicate, text: ' is interesting.' }
+      - tokens:
+          - { role: modifier, text: この, reading: この, wordClass: modifier }
+          - { role: topic, text: 車, reading: くるま, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 高いです, reading: たかいです, wordClass: predicate }
+        meaning: This car is expensive.
+        reading: このくるまはたかいです。
+        japanese: この車は高いです。
+        translationTokens:
+          - { role: modifier, text: 'This ' }
+          - { role: topic, text: car }
+          - { role: predicate, text: ' is expensive.' }
+      - tokens:
+          - { role: modifier, text: この, reading: この, wordClass: modifier }
+          - { role: topic, text: 部屋, reading: へや, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 大きいです, reading: おおきいです, wordClass: predicate }
+        meaning: This room is big.
+        reading: このへやはおおきいです。
+        japanese: この部屋は大きいです。
+        translationTokens:
+          - { role: modifier, text: 'This ' }
+          - { role: topic, text: room }
+          - { role: predicate, text: ' is big.' }
+    comparison: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+    vocabulary:
+      - text: 本
+        meaning: book
+        reading: ほん
+      - text: 面白い
+        meaning: interesting
+        reading: おもしろい
+      - text: 車
+        meaning: car
+        reading: くるま
+      - text: 高い
+        meaning: expensive / high
+        reading: たかい
+      - text: 部屋
+        meaning: room
+        reading: へや
+      - text: 大きい
+        meaning: big
+        reading: おおきい
+      - text: 新しい
+        meaning: new
+        reading: あたらしい
+    prerequisites:
+      - grammar-desu
+  meaning: This book is interesting.
+  reading: このほんはおもしろいです。
+  examples:
+    - tokens:
+        - { role: modifier, text: この, reading: この, wordClass: determiner }
+        - { role: topic, text: 本, reading: ほん, wordClass: noun }
+        - { role: particle, text: は, reading: は, wordClass: topic particle }
+        - {
+            role: predicate,
+            text: 面白いです,
+            reading: おもしろいです,
+            wordClass: i-adjective + polite ending,
+          }
+      meaning: This book is interesting.
+      reading: このほんはおもしろいです。
+      japanese: この本は面白いです。
+      translationTokens:
+        - { role: modifier, text: This, implicit: false }
+        - { role: topic, text: ' book', implicit: false }
+        - { role: predicate, text: ' is interesting.', implicit: false }
+  exercise:
+    prompt: Make 面白いです negative.
+    answers:
+      - 面白くないです
+      - おもしろくないです
+      - 面白くありません
+      - おもしろくありません
+    explanation:
+      'Most い-adjectives keep final い before a noun: 面白い本. Negative: 面白くないです; past: 面白かったです; negative
+      past: 面白くなかったです. Add です for polite speech, but not な before the noun.'
+  japanese: この本は面白いです。
+sentences:
+  this-book-is-interesting:
+    text: この本は面白いです。
+    tiles:
+      - { text: この, reading: この }
+      - { text: 本, reading: ほん }
+      - { text: は, reading: は }
+      - { text: 面白い, reading: おもしろい }
+      - { text: です, reading: です }
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: modifier }
+      - { role: topic, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 面白いです, reading: おもしろいです, wordClass: predicate }
+    meaning: This book is interesting.
+    reading: このほんはおもしろいです。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: book }
+      - { role: predicate, text: ' is interesting.' }
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+  this-car-is-expensive:
+    text: この車は高いです。
+    tiles:
+      - { text: この, reading: この }
+      - { text: 車, reading: くるま }
+      - { text: は, reading: は }
+      - { text: 高い, reading: たかい }
+      - { text: です, reading: です }
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: modifier }
+      - { role: topic, text: 車, reading: くるま, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 高いです, reading: たかいです, wordClass: predicate }
+    meaning: This car is expensive.
+    reading: このくるまはたかいです。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: car }
+      - { role: predicate, text: ' is expensive.' }
+    form: polite
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+  this-room-is-big:
+    text: この部屋は大きいです。
+    tiles:
+      - { text: この, reading: この }
+      - { text: 部屋, reading: へや }
+      - { text: は, reading: は }
+      - { text: 大きい, reading: おおきい }
+      - { text: です, reading: です }
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: modifier }
+      - { role: topic, text: 部屋, reading: へや, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 大きいです, reading: おおきいです, wordClass: predicate }
+    meaning: This room is big.
+    reading: このへやはおおきいです。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: room }
+      - { role: predicate, text: ' is big.' }
+    form: polite
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+  this-book-is-new:
+    text: この本は新しいです。
+    tiles:
+      - { text: この, reading: この }
+      - { text: 本, reading: ほん }
+      - { text: は, reading: は }
+      - { text: 新しい, reading: あたらしい }
+      - { text: です, reading: です }
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: modifier }
+      - { role: topic, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 新しいです, reading: あたらしいです, wordClass: predicate }
+    meaning: This book is new.
+    reading: このほんはあたらしいです。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: book }
+      - { role: predicate, text: ' is new.' }
+    form: polite
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+  this-magazine-is-interesting:
+    text: この雑誌は面白いです。
+    reading: このざっしはおもしろいです。
+    meaning: This magazine is interesting.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 雑誌, reading: ざっし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白い, reading: おもしろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 雑誌, reading: ざっし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白いです, reading: おもしろいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: magazine, role: topic }
+      - { text: ' is interesting.', role: predicate }
+    form: polite
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+  this-newspaper-is-interesting:
+    text: この新聞は面白いです。
+    reading: このしんぶんはおもしろいです。
+    meaning: This newspaper is interesting.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 新聞, reading: しんぶん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白い, reading: おもしろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 新聞, reading: しんぶん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白いです, reading: おもしろいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: newspaper, role: topic }
+      - { text: ' is interesting.', role: predicate }
+    form: polite
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+  this-dictionary-is-interesting:
+    text: この辞書は面白いです。
+    reading: このじしょはおもしろいです。
+    meaning: This dictionary is interesting.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 辞書, reading: じしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白い, reading: おもしろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 辞書, reading: じしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白いです, reading: おもしろいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: dictionary, role: topic }
+      - { text: ' is interesting.', role: predicate }
+    form: polite
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+  this-novel-is-interesting:
+    text: この小説は面白いです。
+    reading: このしょうせつはおもしろいです。
+    meaning: This novel is interesting.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 小説, reading: しょうせつ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白い, reading: おもしろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 小説, reading: しょうせつ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白いです, reading: おもしろいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: novel, role: topic }
+      - { text: ' is interesting.', role: predicate }
+    form: polite
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+  this-comic-is-interesting:
+    text: この漫画は面白いです。
+    reading: このまんがはおもしろいです。
+    meaning: This comic is interesting.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 漫画, reading: まんが, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白い, reading: おもしろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 漫画, reading: まんが, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白いです, reading: おもしろいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: comic, role: topic }
+      - { text: ' is interesting.', role: predicate }
+    form: polite
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+  this-textbook-is-interesting:
+    text: この教科書は面白いです。
+    reading: このきょうかしょはおもしろいです。
+    meaning: This textbook is interesting.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 教科書, reading: きょうかしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白い, reading: おもしろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 教科書, reading: きょうかしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白いです, reading: おもしろいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: textbook, role: topic }
+      - { text: ' is interesting.', role: predicate }
+    form: polite
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+  this-picture-book-is-interesting:
+    text: この絵本は面白いです。
+    reading: このえほんはおもしろいです。
+    meaning: This picture book is interesting.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 絵本, reading: えほん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白い, reading: おもしろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 絵本, reading: えほん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白いです, reading: おもしろいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: picture book, role: topic }
+      - { text: ' is interesting.', role: predicate }
+    form: polite
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+  this-letter-is-interesting:
+    text: この手紙は面白いです。
+    reading: このてがみはおもしろいです。
+    meaning: This letter is interesting.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 手紙, reading: てがみ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白い, reading: おもしろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 手紙, reading: てがみ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白いです, reading: おもしろいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: letter, role: topic }
+      - { text: ' is interesting.', role: predicate }
+    form: polite
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+  this-diary-is-interesting:
+    text: この日記は面白いです。
+    reading: このにっきはおもしろいです。
+    meaning: This diary is interesting.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 日記, reading: にっき, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白い, reading: おもしろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 日記, reading: にっき, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白いです, reading: おもしろいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: diary, role: topic }
+      - { text: ' is interesting.', role: predicate }
+    form: polite
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+  this-article-is-interesting:
+    text: この記事は面白いです。
+    reading: このきじはおもしろいです。
+    meaning: This article is interesting.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 記事, reading: きじ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白い, reading: おもしろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 記事, reading: きじ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白いです, reading: おもしろいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: article, role: topic }
+      - { text: ' is interesting.', role: predicate }
+    form: polite
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+  this-clock-is-expensive:
+    text: この時計は高いです。
+    reading: このとけいはたかいです。
+    meaning: This clock is expensive.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 時計, reading: とけい, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高い, reading: たかい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 時計, reading: とけい, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高いです, reading: たかいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: clock, role: topic }
+      - { text: ' is expensive.', role: predicate }
+    form: polite
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+  this-desk-is-expensive:
+    text: この机は高いです。
+    reading: このつくえはたかいです。
+    meaning: This desk is expensive.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 机, reading: つくえ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高い, reading: たかい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 机, reading: つくえ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高いです, reading: たかいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: desk, role: topic }
+      - { text: ' is expensive.', role: predicate }
+    form: polite
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+  this-bag-is-expensive:
+    text: このかばんは高いです。
+    reading: このかばんはたかいです。
+    meaning: This bag is expensive.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: かばん, reading: かばん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高い, reading: たかい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: かばん, reading: かばん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高いです, reading: たかいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: bag, role: topic }
+      - { text: ' is expensive.', role: predicate }
+    form: polite
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+  this-chair-is-expensive:
+    text: この椅子は高いです。
+    reading: このいすはたかいです。
+    meaning: This chair is expensive.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 椅子, reading: いす, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高い, reading: たかい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 椅子, reading: いす, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高いです, reading: たかいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: chair, role: topic }
+      - { text: ' is expensive.', role: predicate }
+    form: polite
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+  this-bicycle-is-expensive:
+    text: この自転車は高いです。
+    reading: このじてんしゃはたかいです。
+    meaning: This bicycle is expensive.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 自転車, reading: じてんしゃ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高い, reading: たかい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 自転車, reading: じてんしゃ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高いです, reading: たかいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: bicycle, role: topic }
+      - { text: ' is expensive.', role: predicate }
+    form: polite
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+  this-shoe-is-expensive:
+    text: この靴は高いです。
+    reading: このくつはたかいです。
+    meaning: This shoe is expensive.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 靴, reading: くつ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高い, reading: たかい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 靴, reading: くつ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高いです, reading: たかいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: shoe, role: topic }
+      - { text: ' is expensive.', role: predicate }
+    form: polite
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+  this-umbrella-is-expensive:
+    text: この傘は高いです。
+    reading: このかさはたかいです。
+    meaning: This umbrella is expensive.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 傘, reading: かさ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高い, reading: たかい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 傘, reading: かさ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高いです, reading: たかいです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: umbrella, role: topic }
+      - { text: ' is expensive.', role: predicate }
+    form: polite
+    hint: Keep the adjective's final い before です.
+    explanation: An い-adjective can go directly before a noun. Do not insert な after an い-adjective such as 高い.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: this-book-is-interesting
+    choices:
+      - text: This book is interesting.
+        reading: ''
+      - text: This book is boring.
+        reading: ''
+    answers:
+      - This book is interesting.
+  - id: pattern
+    type: pattern-choice
+    sentence: this-book-is-interesting
+    choices:
+      - sentence: this-book-is-interesting
+      - text: この本は面白いなです。
+        tiles:
+          - { text: この, reading: この }
+          - { text: 本, reading: ほん }
+          - { text: は, reading: は }
+          - { text: 面白い, reading: おもしろい }
+          - { text: な, reading: な }
+          - { text: です, reading: です }
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: modifier }
+          - { role: topic, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 面白い, reading: おもしろい, wordClass: predicate }
+          - { role: particle, text: な, reading: な, wordClass: particle }
+          - { role: predicate, text: です, reading: です, wordClass: predicate }
+        meaning: This book is boring.
+        reading: このほんはおもしろいなです。
+    prompt: 'Choose the correct Japanese: This book is interesting.'
+    answers:
+      - この本は面白いです
+      - この本はおもしろいです
+      - このほんは面白いです
+      - このほんはおもしろいです
+  - id: gap
+    type: gap
+    sentence: this-car-is-expensive
+    answers:
+      - 高い
+      - たかい
+    context:
+      text: この車は___です。
+      tokens:
+        - { role: modifier, text: この, reading: この, wordClass: modifier }
+        - { role: topic, text: 車, reading: くるま, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: ___です, reading: ___です, wordClass: predicate }
+      reading: このくるまは___です。
+  - id: tiles
+    type: tiles
+    sentence: this-car-is-expensive
+    prompt: 'Build this sentence: This car is expensive. (polite)'
+    answers:
+      - この車は高いです
+      - この車はたかいです
+      - このくるまは高いです
+      - このくるまはたかいです
+    tiles:
+      - { role: modifier, text: この, reading: この, wordClass: modifier }
+      - { role: topic, text: 車, reading: くるま, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 高い, reading: たかい, wordClass: predicate }
+      - { role: predicate, text: です, reading: です, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: this-room-is-big
+    answers:
+      - この部屋は大きいです
+      - この部屋はおおきいです
+      - このへやは大きいです
+      - このへやはおおきいです
+  - id: alternate
+    type: typing
+    sentence: this-book-is-new
+    alternate: true
+    prompt: 'One more example: This book is new. (polite)'
+    answers:
+      - この本は新しいです
+      - この本はあたらしいです
+      - このほんは新しいです
+      - このほんはあたらしいです
+  - id: extra-1-tiles
+    type: tiles
+    sentence: this-magazine-is-interesting
+    prompt: 'Build this sentence: This magazine is interesting. (polite)'
+    answers:
+      - この雑誌は面白いです
+      - この雑誌はおもしろいです
+      - このざっしは面白いです
+      - このざっしはおもしろいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 雑誌, reading: ざっし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白い, reading: おもしろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: this-magazine-is-interesting
+    answers:
+      - この雑誌は面白いです
+      - この雑誌はおもしろいです
+      - このざっしは面白いです
+      - このざっしはおもしろいです
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: this-magazine-is-interesting
+    choices:
+      - text: This magazine is interesting.
+        reading: ''
+      - text: This book is interesting.
+        reading: ''
+    prompt: 'Choose the meaning: この雑誌は面白いです。'
+    answers:
+      - This magazine is interesting.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: this-newspaper-is-interesting
+    prompt: 'Build this sentence: This newspaper is interesting. (polite)'
+    answers:
+      - この新聞は面白いです
+      - この新聞はおもしろいです
+      - このしんぶんは面白いです
+      - このしんぶんはおもしろいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 新聞, reading: しんぶん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白い, reading: おもしろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: this-newspaper-is-interesting
+    answers:
+      - この新聞は面白いです
+      - この新聞はおもしろいです
+      - このしんぶんは面白いです
+      - このしんぶんはおもしろいです
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: this-newspaper-is-interesting
+    choices:
+      - text: This newspaper is interesting.
+        reading: ''
+      - text: This book is interesting.
+        reading: ''
+    prompt: 'Choose the meaning: この新聞は面白いです。'
+    answers:
+      - This newspaper is interesting.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: this-dictionary-is-interesting
+    prompt: 'Build this sentence: This dictionary is interesting. (polite)'
+    answers:
+      - この辞書は面白いです
+      - この辞書はおもしろいです
+      - このじしょは面白いです
+      - このじしょはおもしろいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 辞書, reading: じしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白い, reading: おもしろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: this-dictionary-is-interesting
+    answers:
+      - この辞書は面白いです
+      - この辞書はおもしろいです
+      - このじしょは面白いです
+      - このじしょはおもしろいです
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: this-dictionary-is-interesting
+    choices:
+      - text: This dictionary is interesting.
+        reading: ''
+      - text: This book is interesting.
+        reading: ''
+    prompt: 'Choose the meaning: この辞書は面白いです。'
+    answers:
+      - This dictionary is interesting.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: this-novel-is-interesting
+    prompt: 'Build this sentence: This novel is interesting. (polite)'
+    answers:
+      - この小説は面白いです
+      - この小説はおもしろいです
+      - このしょうせつは面白いです
+      - このしょうせつはおもしろいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 小説, reading: しょうせつ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白い, reading: おもしろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: this-novel-is-interesting
+    answers:
+      - この小説は面白いです
+      - この小説はおもしろいです
+      - このしょうせつは面白いです
+      - このしょうせつはおもしろいです
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: this-novel-is-interesting
+    choices:
+      - text: This novel is interesting.
+        reading: ''
+      - text: This book is interesting.
+        reading: ''
+    prompt: 'Choose the meaning: この小説は面白いです。'
+    answers:
+      - This novel is interesting.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: this-comic-is-interesting
+    prompt: 'Build this sentence: This comic is interesting. (polite)'
+    answers:
+      - この漫画は面白いです
+      - この漫画はおもしろいです
+      - このまんがは面白いです
+      - このまんがはおもしろいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 漫画, reading: まんが, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白い, reading: おもしろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: this-comic-is-interesting
+    answers:
+      - この漫画は面白いです
+      - この漫画はおもしろいです
+      - このまんがは面白いです
+      - このまんがはおもしろいです
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: this-comic-is-interesting
+    choices:
+      - text: This comic is interesting.
+        reading: ''
+      - text: This book is interesting.
+        reading: ''
+    prompt: 'Choose the meaning: この漫画は面白いです。'
+    answers:
+      - This comic is interesting.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: this-textbook-is-interesting
+    prompt: 'Build this sentence: This textbook is interesting. (polite)'
+    answers:
+      - この教科書は面白いです
+      - この教科書はおもしろいです
+      - このきょうかしょは面白いです
+      - このきょうかしょはおもしろいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 教科書, reading: きょうかしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白い, reading: おもしろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: this-textbook-is-interesting
+    answers:
+      - この教科書は面白いです
+      - この教科書はおもしろいです
+      - このきょうかしょは面白いです
+      - このきょうかしょはおもしろいです
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: this-textbook-is-interesting
+    choices:
+      - text: This textbook is interesting.
+        reading: ''
+      - text: This book is interesting.
+        reading: ''
+    prompt: 'Choose the meaning: この教科書は面白いです。'
+    answers:
+      - This textbook is interesting.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: this-picture-book-is-interesting
+    prompt: 'Build this sentence: This picture book is interesting. (polite)'
+    answers:
+      - この絵本は面白いです
+      - この絵本はおもしろいです
+      - このえほんは面白いです
+      - このえほんはおもしろいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 絵本, reading: えほん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白い, reading: おもしろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: this-picture-book-is-interesting
+    answers:
+      - この絵本は面白いです
+      - この絵本はおもしろいです
+      - このえほんは面白いです
+      - このえほんはおもしろいです
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: this-picture-book-is-interesting
+    choices:
+      - text: This picture book is interesting.
+        reading: ''
+      - text: This book is interesting.
+        reading: ''
+    prompt: 'Choose the meaning: この絵本は面白いです。'
+    answers:
+      - This picture book is interesting.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: this-letter-is-interesting
+    prompt: 'Build this sentence: This letter is interesting. (polite)'
+    answers:
+      - この手紙は面白いです
+      - この手紙はおもしろいです
+      - このてがみは面白いです
+      - このてがみはおもしろいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 手紙, reading: てがみ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白い, reading: おもしろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: this-letter-is-interesting
+    answers:
+      - この手紙は面白いです
+      - この手紙はおもしろいです
+      - このてがみは面白いです
+      - このてがみはおもしろいです
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: this-letter-is-interesting
+    choices:
+      - text: This letter is interesting.
+        reading: ''
+      - text: This book is interesting.
+        reading: ''
+    prompt: 'Choose the meaning: この手紙は面白いです。'
+    answers:
+      - This letter is interesting.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: this-diary-is-interesting
+    prompt: 'Build this sentence: This diary is interesting. (polite)'
+    answers:
+      - この日記は面白いです
+      - この日記はおもしろいです
+      - このにっきは面白いです
+      - このにっきはおもしろいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 日記, reading: にっき, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白い, reading: おもしろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: this-diary-is-interesting
+    answers:
+      - この日記は面白いです
+      - この日記はおもしろいです
+      - このにっきは面白いです
+      - このにっきはおもしろいです
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: this-diary-is-interesting
+    choices:
+      - text: This diary is interesting.
+        reading: ''
+      - text: This book is interesting.
+        reading: ''
+    prompt: 'Choose the meaning: この日記は面白いです。'
+    answers:
+      - This diary is interesting.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: this-article-is-interesting
+    prompt: 'Build this sentence: This article is interesting. (polite)'
+    answers:
+      - この記事は面白いです
+      - この記事はおもしろいです
+      - このきじは面白いです
+      - このきじはおもしろいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 記事, reading: きじ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白い, reading: おもしろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: this-article-is-interesting
+    answers:
+      - この記事は面白いです
+      - この記事はおもしろいです
+      - このきじは面白いです
+      - このきじはおもしろいです
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: this-article-is-interesting
+    choices:
+      - text: This article is interesting.
+        reading: ''
+      - text: This book is interesting.
+        reading: ''
+    prompt: 'Choose the meaning: この記事は面白いです。'
+    answers:
+      - This article is interesting.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: this-clock-is-expensive
+    prompt: 'Build this sentence: This clock is expensive. (polite)'
+    answers:
+      - この時計は高いです
+      - この時計はたかいです
+      - このとけいは高いです
+      - このとけいはたかいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 時計, reading: とけい, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高い, reading: たかい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: this-clock-is-expensive
+    answers:
+      - この時計は高いです
+      - この時計はたかいです
+      - このとけいは高いです
+      - このとけいはたかいです
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: this-clock-is-expensive
+    choices:
+      - text: This clock is expensive.
+        reading: ''
+      - text: This book is interesting.
+        reading: ''
+    prompt: 'Choose the meaning: この時計は高いです。'
+    answers:
+      - This clock is expensive.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: this-desk-is-expensive
+    prompt: 'Build this sentence: This desk is expensive. (polite)'
+    answers:
+      - この机は高いです
+      - この机はたかいです
+      - このつくえは高いです
+      - このつくえはたかいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 机, reading: つくえ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高い, reading: たかい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: this-desk-is-expensive
+    answers:
+      - この机は高いです
+      - この机はたかいです
+      - このつくえは高いです
+      - このつくえはたかいです
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: this-desk-is-expensive
+    choices:
+      - text: This desk is expensive.
+        reading: ''
+      - text: This book is interesting.
+        reading: ''
+    prompt: 'Choose the meaning: この机は高いです。'
+    answers:
+      - This desk is expensive.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: this-bag-is-expensive
+    prompt: 'Build this sentence: This bag is expensive. (polite)'
+    answers:
+      - このかばんは高いです
+      - このかばんはたかいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: かばん, reading: かばん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高い, reading: たかい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: this-bag-is-expensive
+    answers:
+      - このかばんは高いです
+      - このかばんはたかいです
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: this-bag-is-expensive
+    choices:
+      - text: This bag is expensive.
+        reading: ''
+      - text: This book is interesting.
+        reading: ''
+    prompt: 'Choose the meaning: このかばんは高いです。'
+    answers:
+      - This bag is expensive.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: this-chair-is-expensive
+    prompt: 'Build this sentence: This chair is expensive. (polite)'
+    answers:
+      - この椅子は高いです
+      - この椅子はたかいです
+      - このいすは高いです
+      - このいすはたかいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 椅子, reading: いす, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高い, reading: たかい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: this-chair-is-expensive
+    answers:
+      - この椅子は高いです
+      - この椅子はたかいです
+      - このいすは高いです
+      - このいすはたかいです
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: this-chair-is-expensive
+    choices:
+      - text: This chair is expensive.
+        reading: ''
+      - text: This book is interesting.
+        reading: ''
+    prompt: 'Choose the meaning: この椅子は高いです。'
+    answers:
+      - This chair is expensive.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: this-bicycle-is-expensive
+    prompt: 'Build this sentence: This bicycle is expensive. (polite)'
+    answers:
+      - この自転車は高いです
+      - この自転車はたかいです
+      - このじてんしゃは高いです
+      - このじてんしゃはたかいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 自転車, reading: じてんしゃ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高い, reading: たかい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: this-bicycle-is-expensive
+    answers:
+      - この自転車は高いです
+      - この自転車はたかいです
+      - このじてんしゃは高いです
+      - このじてんしゃはたかいです
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: this-bicycle-is-expensive
+    choices:
+      - text: This bicycle is expensive.
+        reading: ''
+      - text: This book is interesting.
+        reading: ''
+    prompt: 'Choose the meaning: この自転車は高いです。'
+    answers:
+      - This bicycle is expensive.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: this-shoe-is-expensive
+    prompt: 'Build this sentence: This shoe is expensive. (polite)'
+    answers:
+      - この靴は高いです
+      - この靴はたかいです
+      - このくつは高いです
+      - このくつはたかいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 靴, reading: くつ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高い, reading: たかい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: this-shoe-is-expensive
+    answers:
+      - この靴は高いです
+      - この靴はたかいです
+      - このくつは高いです
+      - このくつはたかいです
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: this-shoe-is-expensive
+    choices:
+      - text: This shoe is expensive.
+        reading: ''
+      - text: This book is interesting.
+        reading: ''
+    prompt: 'Choose the meaning: この靴は高いです。'
+    answers:
+      - This shoe is expensive.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: this-umbrella-is-expensive
+    prompt: 'Build this sentence: This umbrella is expensive. (polite)'
+    answers:
+      - この傘は高いです
+      - この傘はたかいです
+      - このかさは高いです
+      - このかさはたかいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 傘, reading: かさ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 高い, reading: たかい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: this-umbrella-is-expensive
+    answers:
+      - この傘は高いです
+      - この傘はたかいです
+      - このかさは高いです
+      - このかさはたかいです

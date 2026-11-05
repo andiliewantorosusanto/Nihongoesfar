@@ -1,0 +1,452 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-becoming-narimasu
+  kind: grammar
+  title: 'Becoming: い-adjective → く / な-adjective or noun → に + なります'
+  japanese: 寒くなります。
+  reading: さむくなります。
+  meaning: 'Becoming: い-adjective → く / な-adjective or noun → に + なります'
+  level: N5
+  topic: Movement and expressions
+  tags:
+    - Study guide
+  note:
+    'なります means become; it is the polite form of なる. For an い-adjective, replace final い with く: 寒い→寒くなります
+    (さむい→さむくなります). いい is irregular: よくなります. For a な-adjective or noun, use に: 静かになります (しずかになります), 先生になります
+    (せんせいになります). Do not use な before なります. きれい is a な-adjective despite its final い: きれいになります. These are
+    adjective and noun patterns, not a rule for all nouns ending in い. Compare a change of state なります with a
+    deliberate change します: 部屋をきれいにします (へやをきれいにします) means I make the room clean.'
+  examples:
+    - japanese: 寒くなります。
+      reading: さむくなります。
+      meaning: It becomes cold.
+      tokens:
+        - { text: 寒く, reading: さむく, role: modifier, wordClass: phrase }
+        - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+      translationTokens:
+        - { text: 'It ', role: implicit, implicit: true }
+        - { text: becomes, role: predicate }
+        - { text: ' cold', role: modifier }
+        - { text: ., role: implicit, implicit: true }
+    - japanese: 静かになります。
+      reading: しずかになります。
+      meaning: It becomes quiet.
+      tokens:
+        - { text: 静かに, reading: しずかに, role: modifier, wordClass: phrase }
+        - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+      translationTokens:
+        - { text: 'It ', role: implicit, implicit: true }
+        - { text: becomes, role: predicate }
+        - { text: ' quiet', role: modifier }
+        - { text: ., role: implicit, implicit: true }
+    - japanese: 先生になります。
+      reading: せんせいになります。
+      meaning: I become a teacher.
+      tokens:
+        - { text: 先生に, reading: せんせいに, role: modifier, wordClass: phrase }
+        - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+      translationTokens:
+        - { text: 'I ', role: implicit, implicit: true }
+        - { text: become, role: predicate }
+        - { text: ' a teacher', role: modifier }
+        - { text: ., role: implicit, implicit: true }
+    - japanese: よくなります。
+      reading: よくなります。
+      meaning: It gets better.
+      tokens:
+        - { text: よく, reading: よく, role: modifier, wordClass: phrase }
+        - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+      translationTokens:
+        - { text: 'It ', role: implicit, implicit: true }
+        - { text: gets, role: predicate }
+        - { text: ' better', role: modifier }
+        - { text: ., role: implicit, implicit: true }
+sentences:
+  it-becomes-cold:
+    text: 寒くなります。
+    reading: さむくなります。
+    meaning: It becomes cold.
+    tokens:
+      - { text: 寒く, reading: さむく, role: modifier, wordClass: phrase }
+      - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: 'It ', role: implicit, implicit: true }
+      - { text: becomes, role: predicate }
+      - { text: ' cold', role: modifier }
+      - { text: ., role: implicit, implicit: true }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'なります means become; it is the polite form of なる. For an い-adjective, replace final い with く:
+      寒い→寒くなります (さむい→さむくなります). いい is irregular: よくなります. For a な-adjective or noun, use に: 静かになります (しずかになります),
+      先生になります (せんせいになります). Do not use な before なります. きれい is a な-adjective despite its final い: きれいになります. These
+      are adjective and noun patterns, not a rule for all nouns ending in い. Compare a change of state なります
+      with a deliberate change します: 部屋をきれいにします (へやをきれいにします) means I make the room clean.'
+  it-becomes-quiet:
+    text: 静かになります。
+    reading: しずかになります。
+    meaning: It becomes quiet.
+    tokens:
+      - { text: 静かに, reading: しずかに, role: modifier, wordClass: phrase }
+      - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: 'It ', role: implicit, implicit: true }
+      - { text: becomes, role: predicate }
+      - { text: ' quiet', role: modifier }
+      - { text: ., role: implicit, implicit: true }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'なります means become; it is the polite form of なる. For an い-adjective, replace final い with く:
+      寒い→寒くなります (さむい→さむくなります). いい is irregular: よくなります. For a な-adjective or noun, use に: 静かになります (しずかになります),
+      先生になります (せんせいになります). Do not use な before なります. きれい is a な-adjective despite its final い: きれいになります. These
+      are adjective and noun patterns, not a rule for all nouns ending in い. Compare a change of state なります
+      with a deliberate change します: 部屋をきれいにします (へやをきれいにします) means I make the room clean.'
+    form: polite
+  i-become-a-teacher:
+    text: 先生になります。
+    reading: せんせいになります。
+    meaning: I become a teacher.
+    tokens:
+      - { text: 先生に, reading: せんせいに, role: modifier, wordClass: phrase }
+      - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: become, role: predicate }
+      - { text: ' a teacher', role: modifier }
+      - { text: ., role: implicit, implicit: true }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'なります means become; it is the polite form of なる. For an い-adjective, replace final い with く:
+      寒い→寒くなります (さむい→さむくなります). いい is irregular: よくなります. For a な-adjective or noun, use に: 静かになります (しずかになります),
+      先生になります (せんせいになります). Do not use な before なります. きれい is a な-adjective despite its final い: きれいになります. These
+      are adjective and noun patterns, not a rule for all nouns ending in い. Compare a change of state なります
+      with a deliberate change します: 部屋をきれいにします (へやをきれいにします) means I make the room clean.'
+  it-gets-better:
+    text: よくなります。
+    reading: よくなります。
+    meaning: It gets better.
+    tokens:
+      - { text: よく, reading: よく, role: modifier, wordClass: phrase }
+      - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: 'It ', role: implicit, implicit: true }
+      - { text: gets, role: predicate }
+      - { text: ' better', role: modifier }
+      - { text: ., role: implicit, implicit: true }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'なります means become; it is the polite form of なる. For an い-adjective, replace final い with く:
+      寒い→寒くなります (さむい→さむくなります). いい is irregular: よくなります. For a な-adjective or noun, use に: 静かになります (しずかになります),
+      先生になります (せんせいになります). Do not use な before なります. きれい is a な-adjective despite its final い: きれいになります. These
+      are adjective and noun patterns, not a rule for all nouns ending in い. Compare a change of state なります
+      with a deliberate change します: 部屋をきれいにします (へやをきれいにします) means I make the room clean.'
+  it-becomes-warm:
+    reading: あたたかくなります。
+    meaning: It becomes warm.
+    tokens:
+      - { text: 暖かく, reading: あたたかく, role: modifier, wordClass: phrase }
+      - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: 'It ', role: implicit, implicit: true }
+      - { text: becomes, role: predicate }
+      - { text: ' warm', role: modifier }
+      - { text: ., role: implicit, implicit: true }
+    text: 暖かくなります。
+    hint: Check the particles and sentence ending.
+    explanation: 暖かくなります。 means “It becomes warm.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+  it-becomes-energetic:
+    reading: げんきになります。
+    meaning: It becomes energetic.
+    tokens:
+      - { text: 元気に, reading: げんきに, role: modifier, wordClass: phrase }
+      - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: 'It ', role: implicit, implicit: true }
+      - { text: becomes, role: predicate }
+      - { text: ' energetic', role: modifier }
+      - { text: ., role: implicit, implicit: true }
+    text: 元気になります。
+    hint: Check the particles and sentence ending.
+    explanation:
+      元気になります。 means “It becomes energetic.” Match the vocabulary, particles, and tense to the English
+      sentence.
+    form: polite
+  i-become-a-student:
+    reading: がくせいになります。
+    meaning: I become a student.
+    tokens:
+      - { text: 学生に, reading: がくせいに, role: modifier, wordClass: phrase }
+      - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: become, role: predicate }
+      - { text: ' a student', role: modifier }
+      - { text: ., role: implicit, implicit: true }
+    text: 学生になります。
+    hint: Check the particles and sentence ending.
+    explanation: 学生になります。 means “I become a student.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: it-becomes-cold
+    choices:
+      - text: It becomes cold.
+        reading: ''
+      - text: It becomes quiet.
+        reading: ''
+      - text: I become a teacher.
+        reading: ''
+      - text: It gets better.
+        reading: ''
+    answers:
+      - It becomes cold.
+  - id: pattern
+    type: pattern-choice
+    sentence: it-becomes-quiet
+    choices:
+      - sentence: it-becomes-cold
+      - sentence: it-becomes-quiet
+    prompt: 'Choose the Japanese: It becomes quiet.'
+    answers:
+      - 静かになります
+      - しずかになります
+  - id: gap
+    type: gap
+    sentence: it-becomes-quiet
+    prompt: 'Fill the missing part: It becomes quiet. (polite)'
+    answers:
+      - なります
+      - なります
+    context:
+      text: 静かに___。
+      reading: しずかに___。
+      tokens:
+        - { text: 静かに, reading: しずかに, role: modifier, wordClass: phrase }
+        - { text: ___, reading: ___, role: predicate, wordClass: phrase }
+  - id: tiles
+    type: tiles
+    sentence: it-becomes-quiet
+    prompt: 'Build: It becomes quiet. (polite)'
+    answers:
+      - 静かになります
+      - しずかになります
+    tiles:
+      - { text: 静かに, reading: しずかに, role: modifier, wordClass: phrase }
+      - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+  - id: typing
+    type: typing
+    sentence: i-become-a-teacher
+    answers:
+      - 先生になります
+      - せんせいになります
+  - id: alternate
+    type: typing
+    sentence: it-gets-better
+    alternate: true
+    prompt: 'Another example: It gets better. (polite)'
+    answers:
+      - よくなります
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: it-becomes-warm
+    choices:
+      - text: It becomes warm.
+        reading: ''
+      - text: It becomes cold.
+        reading: ''
+      - text: It becomes quiet.
+        reading: ''
+      - text: I become a teacher.
+        reading: ''
+    answers:
+      - It becomes warm.
+  - id: expanded-1-typing
+    type: typing
+    sentence: it-becomes-warm
+    explanation: 暖かくなります。 means “It becomes warm.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 暖かくなります
+      - あたたかくなります
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: it-becomes-warm
+    prompt: 'Build this sentence: It becomes warm. (polite)'
+    explanation: 暖かくなります。 means “It becomes warm.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 暖かくなります
+      - あたたかくなります
+  - id: expanded-2-meaning
+    type: meaning-choice
+    sentence: it-becomes-energetic
+    choices:
+      - text: It becomes energetic.
+        reading: ''
+      - text: It becomes cold.
+        reading: ''
+      - text: It becomes quiet.
+        reading: ''
+      - text: I become a teacher.
+        reading: ''
+    answers:
+      - It becomes energetic.
+  - id: expanded-2-typing
+    type: typing
+    sentence: it-becomes-energetic
+    explanation: 元気になります。 means “It becomes energetic.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 元気になります
+      - げんきになります
+  - id: expanded-2-tiles
+    type: tiles
+    sentence: it-becomes-energetic
+    prompt: 'Build this sentence: It becomes energetic. (polite)'
+    explanation: 元気になります。 means “It becomes energetic.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 元気になります
+      - げんきになります
+  - id: expanded-3-meaning
+    type: meaning-choice
+    sentence: i-become-a-student
+    choices:
+      - text: I become a student.
+        reading: ''
+      - text: It becomes cold.
+        reading: ''
+      - text: It becomes quiet.
+        reading: ''
+      - text: I become a teacher.
+        reading: ''
+    answers:
+      - I become a student.
+  - id: expanded-3-typing
+    type: typing
+    sentence: i-become-a-student
+    explanation: 学生になります。 means “I become a student.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 学生になります
+      - がくせいになります
+  - id: expanded-3-tiles
+    type: tiles
+    sentence: i-become-a-student
+    prompt: 'Build this sentence: I become a student. (polite)'
+    explanation: 学生になります。 means “I become a student.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 学生になります
+      - がくせいになります
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: it-becomes-warm
+    choices:
+      - sentence: it-becomes-warm
+      - text: 寒くなります。
+        reading: さむくなります。
+        tokens:
+          - { text: 寒く, reading: さむく, role: modifier, wordClass: phrase }
+          - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+      - text: 静かになります。
+        reading: しずかになります。
+        tokens:
+          - { text: 静かに, reading: しずかに, role: modifier, wordClass: phrase }
+          - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+      - text: 先生になります。
+        reading: せんせいになります。
+        tokens:
+          - { text: 先生に, reading: せんせいに, role: modifier, wordClass: phrase }
+          - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+    prompt: 'Choose the Japanese: It becomes warm. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 暖かくなります。 for “It becomes warm.” The other sentences describe different situations.
+    answers:
+      - 暖かくなります
+      - あたたかくなります
+  - id: expanded-1-gap
+    type: gap
+    sentence: it-becomes-warm
+    prompt: 'Fill the missing part: It becomes warm. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is なります (なります). Together, the sentence means “It becomes warm.”
+    answers:
+      - なります
+    context:
+      reading: あたたかく___。
+      meaning: It becomes warm.
+      text: 暖かく___。
+  - id: expanded-2-pattern
+    type: pattern-choice
+    sentence: it-becomes-energetic
+    choices:
+      - sentence: it-becomes-energetic
+      - text: 寒くなります。
+        reading: さむくなります。
+        tokens:
+          - { text: 寒く, reading: さむく, role: modifier, wordClass: phrase }
+          - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+      - text: 静かになります。
+        reading: しずかになります。
+        tokens:
+          - { text: 静かに, reading: しずかに, role: modifier, wordClass: phrase }
+          - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+      - text: 先生になります。
+        reading: せんせいになります。
+        tokens:
+          - { text: 先生に, reading: せんせいに, role: modifier, wordClass: phrase }
+          - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+    prompt: 'Choose the Japanese: It becomes energetic. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 元気になります。 for “It becomes energetic.” The other sentences describe different situations.
+    answers:
+      - 元気になります
+      - げんきになります
+  - id: expanded-2-gap
+    type: gap
+    sentence: it-becomes-energetic
+    prompt: 'Fill the missing part: It becomes energetic. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is なります (なります). Together, the sentence means “It becomes energetic.”
+    answers:
+      - なります
+    context:
+      reading: げんきに___。
+      meaning: It becomes energetic.
+      text: 元気に___。
+  - id: expanded-3-pattern
+    type: pattern-choice
+    sentence: i-become-a-student
+    choices:
+      - sentence: i-become-a-student
+      - text: 寒くなります。
+        reading: さむくなります。
+        tokens:
+          - { text: 寒く, reading: さむく, role: modifier, wordClass: phrase }
+          - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+      - text: 静かになります。
+        reading: しずかになります。
+        tokens:
+          - { text: 静かに, reading: しずかに, role: modifier, wordClass: phrase }
+          - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+      - text: 先生になります。
+        reading: せんせいになります。
+        tokens:
+          - { text: 先生に, reading: せんせいに, role: modifier, wordClass: phrase }
+          - { text: なります, reading: なります, role: predicate, wordClass: phrase }
+    prompt: 'Choose the Japanese: I become a student. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 学生になります。 for “I become a student.” The other sentences describe different situations.
+    answers:
+      - 学生になります
+      - がくせいになります
+  - id: expanded-3-gap
+    type: gap
+    sentence: i-become-a-student
+    prompt: 'Fill the missing part: I become a student. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is なります (なります). Together, the sentence means “I become a student.”
+    answers:
+      - なります
+    context:
+      reading: がくせいに___。
+      meaning: I become a student.
+      text: 学生に___。

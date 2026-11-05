@@ -1,0 +1,1088 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-masu
+  kind: grammar
+  note:
+    ます is a polite verb ending. It describes habits or future actions depending on context. It does not by
+    itself mean an action is happening right now. Learn each verb’s ます form alongside its dictionary form.
+  tags:
+    - Grammar
+    - masu
+  level: N5
+  title: 'Polite non-past: ます'
+  topic: Sentence building
+  lesson:
+    goal: Describe a routine with a polite verb.
+    group: Polite verbs and particles
+    order: 6
+    recap: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+    examples:
+      - tokens:
+          - { role: modifier, text: 毎日, reading: まいにち, wordClass: modifier }
+          - { role: predicate, text: 勉強します, reading: べんきょうします, wordClass: predicate }
+        meaning: I study every day.
+        reading: まいにちべんきょうします。
+        japanese: 毎日勉強します。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: study }
+          - { role: modifier, text: ' every day.' }
+      - tokens:
+          - { role: modifier, text: 朝, reading: あさ, wordClass: modifier }
+          - { role: predicate, text: 働きます, reading: はたらきます, wordClass: predicate }
+        meaning: I work in the morning.
+        reading: あさはたらきます。
+        japanese: 朝働きます。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: work }
+          - { role: modifier, text: ' in the morning.' }
+      - tokens:
+          - { role: modifier, text: 毎日, reading: まいにち, wordClass: modifier }
+          - { role: predicate, text: 歩きます, reading: あるきます, wordClass: predicate }
+        meaning: I walk every day.
+        reading: まいにちあるきます。
+        japanese: 毎日歩きます。
+        translationTokens:
+          - { role: implicit, text: 'I ', implicit: true }
+          - { role: predicate, text: walk }
+          - { role: modifier, text: ' every day.' }
+    comparison: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+    vocabulary:
+      - text: 毎日
+        meaning: every day
+        reading: まいにち
+      - text: 勉強し
+        meaning: study (verb stem)
+        reading: べんきょうし
+      - text: 朝
+        meaning: morning
+        reading: あさ
+      - text: 働き
+        meaning: work (verb stem)
+        reading: はたらき
+      - text: 歩き
+        meaning: walk (verb stem)
+        reading: あるき
+      - text: 夜
+        meaning: night
+        reading: よる
+    prerequisites:
+      - grammar-desu
+  meaning: I read a book every day.
+  reading: まいにちほんをよみます。
+  examples:
+    - tokens:
+        - { role: modifier, text: 毎日, reading: まいにち, wordClass: time noun }
+        - { role: object, text: 本, reading: ほん, wordClass: noun }
+        - { role: particle, text: を, reading: を, wordClass: object particle }
+        - { role: predicate, text: 読みます, reading: よみます, wordClass: verb }
+      meaning: I read a book every day.
+      reading: まいにちほんをよみます。
+      japanese: 毎日本を読みます。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: read, implicit: false }
+        - { role: object, text: ' a book', implicit: false }
+        - { role: modifier, text: ' every day.', implicit: false }
+  exercise:
+    tiles:
+      - 毎日
+      - 本
+      - を
+      - 読みます
+    prompt: 'Build: “I read a book every day.” Start with 毎日.'
+    answers:
+      - 毎日本を読みます
+      - まいにちほんをよみます
+    explanation:
+      ます is a polite verb ending. It describes habits or future actions depending on context. It does
+      not by itself mean an action is happening right now. Learn each verb’s ます form alongside its dictionary
+      form.
+  japanese: 毎日本を読みます。
+sentences:
+  i-study-every-day:
+    text: 毎日勉強します。
+    tiles:
+      - { text: 毎日, reading: まいにち }
+      - { text: 勉強し, reading: べんきょうし }
+      - { text: ます, reading: ます }
+    tokens:
+      - { role: modifier, text: 毎日, reading: まいにち, wordClass: modifier }
+      - { role: predicate, text: 勉強します, reading: べんきょうします, wordClass: predicate }
+    meaning: I study every day.
+    reading: まいにちべんきょうします。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: study }
+      - { role: modifier, text: ' every day.' }
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+  i-work-in-the-morning:
+    text: 朝働きます。
+    tiles:
+      - { text: 朝, reading: あさ }
+      - { text: 働き, reading: はたらき }
+      - { text: ます, reading: ます }
+    tokens:
+      - { role: modifier, text: 朝, reading: あさ, wordClass: modifier }
+      - { role: predicate, text: 働きます, reading: はたらきます, wordClass: predicate }
+    meaning: I work in the morning.
+    reading: あさはたらきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: work }
+      - { role: modifier, text: ' in the morning.' }
+    form: polite
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+  i-walk-every-day:
+    text: 毎日歩きます。
+    tiles:
+      - { text: 毎日, reading: まいにち }
+      - { text: 歩き, reading: あるき }
+      - { text: ます, reading: ます }
+    tokens:
+      - { role: modifier, text: 毎日, reading: まいにち, wordClass: modifier }
+      - { role: predicate, text: 歩きます, reading: あるきます, wordClass: predicate }
+    meaning: I walk every day.
+    reading: まいにちあるきます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: walk }
+      - { role: modifier, text: ' every day.' }
+    form: polite
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+  i-study-at-night:
+    text: 夜勉強します。
+    tiles:
+      - { text: 夜, reading: よる }
+      - { text: 勉強し, reading: べんきょうし }
+      - { text: ます, reading: ます }
+    tokens:
+      - { role: modifier, text: 夜, reading: よる, wordClass: modifier }
+      - { role: predicate, text: 勉強します, reading: べんきょうします, wordClass: predicate }
+    meaning: I study at night.
+    reading: よるべんきょうします。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: study }
+      - { role: modifier, text: ' at night.' }
+    form: polite
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+  i-study-in-the-morning:
+    text: 朝勉強します。
+    reading: あさべんきょうします。
+    meaning: I study in the morning.
+    tiles:
+      - { text: 朝, reading: あさ, role: modifier, wordClass: modifier }
+      - { text: 勉強し, reading: べんきょうし, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 朝, reading: あさ, role: modifier, wordClass: modifier }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' in the morning.', role: modifier }
+    form: polite
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+  i-study-every-morning:
+    text: 毎朝勉強します。
+    reading: まいあさべんきょうします。
+    meaning: I study every morning.
+    tiles:
+      - { text: 毎朝, reading: まいあさ, role: modifier, wordClass: modifier }
+      - { text: 勉強し, reading: べんきょうし, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 毎朝, reading: まいあさ, role: modifier, wordClass: modifier }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' every morning.', role: modifier }
+    form: polite
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+  i-study-every-evening:
+    text: 毎晩勉強します。
+    reading: まいばんべんきょうします。
+    meaning: I study every evening.
+    tiles:
+      - { text: 毎晩, reading: まいばん, role: modifier, wordClass: modifier }
+      - { text: 勉強し, reading: べんきょうし, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 毎晩, reading: まいばん, role: modifier, wordClass: modifier }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' every evening.', role: modifier }
+    form: polite
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+  i-study-every-week:
+    text: 毎週勉強します。
+    reading: まいしゅうべんきょうします。
+    meaning: I study every week.
+    tiles:
+      - { text: 毎週, reading: まいしゅう, role: modifier, wordClass: modifier }
+      - { text: 勉強し, reading: べんきょうし, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 毎週, reading: まいしゅう, role: modifier, wordClass: modifier }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' every week.', role: modifier }
+    form: polite
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+  i-study-every-month:
+    text: 毎月勉強します。
+    reading: まいつきべんきょうします。
+    meaning: I study every month.
+    tiles:
+      - { text: 毎月, reading: まいつき, role: modifier, wordClass: modifier }
+      - { text: 勉強し, reading: べんきょうし, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 毎月, reading: まいつき, role: modifier, wordClass: modifier }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' every month.', role: modifier }
+    form: polite
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+  i-study-every-year:
+    text: 毎年勉強します。
+    reading: まいとしべんきょうします。
+    meaning: I study every year.
+    tiles:
+      - { text: 毎年, reading: まいとし, role: modifier, wordClass: modifier }
+      - { text: 勉強し, reading: べんきょうし, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 毎年, reading: まいとし, role: modifier, wordClass: modifier }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' every year.', role: modifier }
+    form: polite
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+  i-study-on-weekends:
+    text: 週末勉強します。
+    reading: しゅうまつべんきょうします。
+    meaning: I study on weekends.
+    tiles:
+      - { text: 週末, reading: しゅうまつ, role: modifier, wordClass: modifier }
+      - { text: 勉強し, reading: べんきょうし, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 週末, reading: しゅうまつ, role: modifier, wordClass: modifier }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' on weekends.', role: modifier }
+    form: polite
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+  i-study-in-the-afternoon:
+    text: 午後勉強します。
+    reading: ごごべんきょうします。
+    meaning: I study in the afternoon.
+    tiles:
+      - { text: 午後, reading: ごご, role: modifier, wordClass: modifier }
+      - { text: 勉強し, reading: べんきょうし, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 午後, reading: ごご, role: modifier, wordClass: modifier }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' in the afternoon.', role: modifier }
+    form: polite
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+  i-study-in-the-evening:
+    text: 夕方勉強します。
+    reading: ゆうがたべんきょうします。
+    meaning: I study in the evening.
+    tiles:
+      - { text: 夕方, reading: ゆうがた, role: modifier, wordClass: modifier }
+      - { text: 勉強し, reading: べんきょうし, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 夕方, reading: ゆうがた, role: modifier, wordClass: modifier }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: study, role: predicate }
+      - { text: ' in the evening.', role: modifier }
+    form: polite
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+  i-work-every-day:
+    text: 毎日働きます。
+    reading: まいにちはたらきます。
+    meaning: I work every day.
+    tiles:
+      - { text: 毎日, reading: まいにち, role: modifier, wordClass: modifier }
+      - { text: 働き, reading: はたらき, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 毎日, reading: まいにち, role: modifier, wordClass: modifier }
+      - { text: 働きます, reading: はたらきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: work, role: predicate }
+      - { text: ' every day.', role: modifier }
+    form: polite
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+  i-work-at-night:
+    text: 夜働きます。
+    reading: よるはたらきます。
+    meaning: I work at night.
+    tiles:
+      - { text: 夜, reading: よる, role: modifier, wordClass: modifier }
+      - { text: 働き, reading: はたらき, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 夜, reading: よる, role: modifier, wordClass: modifier }
+      - { text: 働きます, reading: はたらきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: work, role: predicate }
+      - { text: ' at night.', role: modifier }
+    form: polite
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+  i-work-every-morning:
+    text: 毎朝働きます。
+    reading: まいあさはたらきます。
+    meaning: I work every morning.
+    tiles:
+      - { text: 毎朝, reading: まいあさ, role: modifier, wordClass: modifier }
+      - { text: 働き, reading: はたらき, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 毎朝, reading: まいあさ, role: modifier, wordClass: modifier }
+      - { text: 働きます, reading: はたらきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: work, role: predicate }
+      - { text: ' every morning.', role: modifier }
+    form: polite
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+  i-work-every-evening:
+    text: 毎晩働きます。
+    reading: まいばんはたらきます。
+    meaning: I work every evening.
+    tiles:
+      - { text: 毎晩, reading: まいばん, role: modifier, wordClass: modifier }
+      - { text: 働き, reading: はたらき, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 毎晩, reading: まいばん, role: modifier, wordClass: modifier }
+      - { text: 働きます, reading: はたらきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: work, role: predicate }
+      - { text: ' every evening.', role: modifier }
+    form: polite
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+  i-work-every-week:
+    text: 毎週働きます。
+    reading: まいしゅうはたらきます。
+    meaning: I work every week.
+    tiles:
+      - { text: 毎週, reading: まいしゅう, role: modifier, wordClass: modifier }
+      - { text: 働き, reading: はたらき, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 毎週, reading: まいしゅう, role: modifier, wordClass: modifier }
+      - { text: 働きます, reading: はたらきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: work, role: predicate }
+      - { text: ' every week.', role: modifier }
+    form: polite
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+  i-work-every-month:
+    text: 毎月働きます。
+    reading: まいつきはたらきます。
+    meaning: I work every month.
+    tiles:
+      - { text: 毎月, reading: まいつき, role: modifier, wordClass: modifier }
+      - { text: 働き, reading: はたらき, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 毎月, reading: まいつき, role: modifier, wordClass: modifier }
+      - { text: 働きます, reading: はたらきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: work, role: predicate }
+      - { text: ' every month.', role: modifier }
+    form: polite
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+  i-work-every-year:
+    text: 毎年働きます。
+    reading: まいとしはたらきます。
+    meaning: I work every year.
+    tiles:
+      - { text: 毎年, reading: まいとし, role: modifier, wordClass: modifier }
+      - { text: 働き, reading: はたらき, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 毎年, reading: まいとし, role: modifier, wordClass: modifier }
+      - { text: 働きます, reading: はたらきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: work, role: predicate }
+      - { text: ' every year.', role: modifier }
+    form: polite
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+  i-work-on-weekends:
+    text: 週末働きます。
+    reading: しゅうまつはたらきます。
+    meaning: I work on weekends.
+    tiles:
+      - { text: 週末, reading: しゅうまつ, role: modifier, wordClass: modifier }
+      - { text: 働き, reading: はたらき, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 週末, reading: しゅうまつ, role: modifier, wordClass: modifier }
+      - { text: 働きます, reading: はたらきます, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: work, role: predicate }
+      - { text: ' on weekends.', role: modifier }
+    form: polite
+    hint: The action is habitual, so use the polite non-past ending.
+    explanation: Use ます with a verb stem. Noun + です and verb + ます are different patterns.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-study-every-day
+    choices:
+      - text: I study every day.
+        reading: ''
+      - text: I studied every day.
+        reading: ''
+    answers:
+      - I study every day.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-study-every-day
+    choices:
+      - sentence: i-study-every-day
+      - text: 毎日勉強しです。
+        tiles:
+          - { text: 毎日, reading: まいにち }
+          - { text: 勉強し, reading: べんきょうし }
+          - { text: です, reading: です }
+        tokens:
+          - { role: modifier, text: 毎日, reading: まいにち, wordClass: modifier }
+          - { role: predicate, text: 勉強しです, reading: べんきょうしです, wordClass: predicate }
+        meaning: I studied every day.
+        reading: まいにちべんきょうしです。
+    prompt: 'Choose the correct Japanese: I study every day.'
+    answers:
+      - 毎日勉強します
+      - 毎日べんきょうします
+      - まいにち勉強します
+      - まいにちべんきょうします
+  - id: gap
+    type: gap
+    sentence: i-work-in-the-morning
+    answers:
+      - ます
+      - ます
+    context:
+      text: 朝働き___。
+      tokens:
+        - { role: modifier, text: 朝, reading: あさ, wordClass: modifier }
+        - { role: predicate, text: 働き___, reading: はたらき___, wordClass: predicate }
+      reading: あさはたらき___。
+  - id: tiles
+    type: tiles
+    sentence: i-work-in-the-morning
+    prompt: 'Build this sentence: I work in the morning. (polite)'
+    answers:
+      - 朝働きます
+      - 朝はたらきます
+      - あさ働きます
+      - あさはたらきます
+    tiles:
+      - { role: modifier, text: 朝, reading: あさ, wordClass: modifier }
+      - { role: predicate, text: 働き, reading: はたらき, wordClass: predicate }
+      - { role: predicate, text: ます, reading: ます, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: i-walk-every-day
+    answers:
+      - 毎日歩きます
+      - 毎日あるきます
+      - まいにち歩きます
+      - まいにちあるきます
+  - id: alternate
+    type: typing
+    sentence: i-study-at-night
+    alternate: true
+    prompt: 'One more example: I study at night. (polite)'
+    answers:
+      - 夜勉強します
+      - 夜べんきょうします
+      - よる勉強します
+      - よるべんきょうします
+  - id: extra-1-tiles
+    type: tiles
+    sentence: i-study-in-the-morning
+    prompt: 'Build this sentence: I study in the morning. (polite)'
+    answers:
+      - 朝勉強します
+      - 朝べんきょうします
+      - あさ勉強します
+      - あさべんきょうします
+    tiles:
+      - { text: 朝, reading: あさ, role: modifier, wordClass: modifier }
+      - { text: 勉強し, reading: べんきょうし, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: i-study-in-the-morning
+    answers:
+      - 朝勉強します
+      - 朝べんきょうします
+      - あさ勉強します
+      - あさべんきょうします
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: i-study-in-the-morning
+    choices:
+      - text: I study in the morning.
+        reading: ''
+      - text: I study every day.
+        reading: ''
+    prompt: 'Choose the meaning: 朝勉強します。'
+    answers:
+      - I study in the morning.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: i-study-every-morning
+    prompt: 'Build this sentence: I study every morning. (polite)'
+    answers:
+      - 毎朝勉強します
+      - 毎朝べんきょうします
+      - まいあさ勉強します
+      - まいあさべんきょうします
+    tiles:
+      - { text: 毎朝, reading: まいあさ, role: modifier, wordClass: modifier }
+      - { text: 勉強し, reading: べんきょうし, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: i-study-every-morning
+    answers:
+      - 毎朝勉強します
+      - 毎朝べんきょうします
+      - まいあさ勉強します
+      - まいあさべんきょうします
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: i-study-every-morning
+    choices:
+      - text: I study every morning.
+        reading: ''
+      - text: I study every day.
+        reading: ''
+    prompt: 'Choose the meaning: 毎朝勉強します。'
+    answers:
+      - I study every morning.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: i-study-every-evening
+    prompt: 'Build this sentence: I study every evening. (polite)'
+    answers:
+      - 毎晩勉強します
+      - 毎晩べんきょうします
+      - まいばん勉強します
+      - まいばんべんきょうします
+    tiles:
+      - { text: 毎晩, reading: まいばん, role: modifier, wordClass: modifier }
+      - { text: 勉強し, reading: べんきょうし, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: i-study-every-evening
+    answers:
+      - 毎晩勉強します
+      - 毎晩べんきょうします
+      - まいばん勉強します
+      - まいばんべんきょうします
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: i-study-every-evening
+    choices:
+      - text: I study every evening.
+        reading: ''
+      - text: I study every day.
+        reading: ''
+    prompt: 'Choose the meaning: 毎晩勉強します。'
+    answers:
+      - I study every evening.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: i-study-every-week
+    prompt: 'Build this sentence: I study every week. (polite)'
+    answers:
+      - 毎週勉強します
+      - 毎週べんきょうします
+      - まいしゅう勉強します
+      - まいしゅうべんきょうします
+    tiles:
+      - { text: 毎週, reading: まいしゅう, role: modifier, wordClass: modifier }
+      - { text: 勉強し, reading: べんきょうし, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: i-study-every-week
+    answers:
+      - 毎週勉強します
+      - 毎週べんきょうします
+      - まいしゅう勉強します
+      - まいしゅうべんきょうします
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: i-study-every-week
+    choices:
+      - text: I study every week.
+        reading: ''
+      - text: I study every day.
+        reading: ''
+    prompt: 'Choose the meaning: 毎週勉強します。'
+    answers:
+      - I study every week.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: i-study-every-month
+    prompt: 'Build this sentence: I study every month. (polite)'
+    answers:
+      - 毎月勉強します
+      - 毎月べんきょうします
+      - まいつき勉強します
+      - まいつきべんきょうします
+    tiles:
+      - { text: 毎月, reading: まいつき, role: modifier, wordClass: modifier }
+      - { text: 勉強し, reading: べんきょうし, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: i-study-every-month
+    answers:
+      - 毎月勉強します
+      - 毎月べんきょうします
+      - まいつき勉強します
+      - まいつきべんきょうします
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: i-study-every-month
+    choices:
+      - text: I study every month.
+        reading: ''
+      - text: I study every day.
+        reading: ''
+    prompt: 'Choose the meaning: 毎月勉強します。'
+    answers:
+      - I study every month.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: i-study-every-year
+    prompt: 'Build this sentence: I study every year. (polite)'
+    answers:
+      - 毎年勉強します
+      - 毎年べんきょうします
+      - まいとし勉強します
+      - まいとしべんきょうします
+    tiles:
+      - { text: 毎年, reading: まいとし, role: modifier, wordClass: modifier }
+      - { text: 勉強し, reading: べんきょうし, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: i-study-every-year
+    answers:
+      - 毎年勉強します
+      - 毎年べんきょうします
+      - まいとし勉強します
+      - まいとしべんきょうします
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: i-study-every-year
+    choices:
+      - text: I study every year.
+        reading: ''
+      - text: I study every day.
+        reading: ''
+    prompt: 'Choose the meaning: 毎年勉強します。'
+    answers:
+      - I study every year.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: i-study-on-weekends
+    prompt: 'Build this sentence: I study on weekends. (polite)'
+    answers:
+      - 週末勉強します
+      - 週末べんきょうします
+      - しゅうまつ勉強します
+      - しゅうまつべんきょうします
+    tiles:
+      - { text: 週末, reading: しゅうまつ, role: modifier, wordClass: modifier }
+      - { text: 勉強し, reading: べんきょうし, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: i-study-on-weekends
+    answers:
+      - 週末勉強します
+      - 週末べんきょうします
+      - しゅうまつ勉強します
+      - しゅうまつべんきょうします
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: i-study-on-weekends
+    choices:
+      - text: I study on weekends.
+        reading: ''
+      - text: I study every day.
+        reading: ''
+    prompt: 'Choose the meaning: 週末勉強します。'
+    answers:
+      - I study on weekends.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: i-study-in-the-afternoon
+    prompt: 'Build this sentence: I study in the afternoon. (polite)'
+    answers:
+      - 午後勉強します
+      - 午後べんきょうします
+      - ごご勉強します
+      - ごごべんきょうします
+    tiles:
+      - { text: 午後, reading: ごご, role: modifier, wordClass: modifier }
+      - { text: 勉強し, reading: べんきょうし, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: i-study-in-the-afternoon
+    answers:
+      - 午後勉強します
+      - 午後べんきょうします
+      - ごご勉強します
+      - ごごべんきょうします
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: i-study-in-the-afternoon
+    choices:
+      - text: I study in the afternoon.
+        reading: ''
+      - text: I study every day.
+        reading: ''
+    prompt: 'Choose the meaning: 午後勉強します。'
+    answers:
+      - I study in the afternoon.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: i-study-in-the-evening
+    prompt: 'Build this sentence: I study in the evening. (polite)'
+    answers:
+      - 夕方勉強します
+      - 夕方べんきょうします
+      - ゆうがた勉強します
+      - ゆうがたべんきょうします
+    tiles:
+      - { text: 夕方, reading: ゆうがた, role: modifier, wordClass: modifier }
+      - { text: 勉強し, reading: べんきょうし, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: i-study-in-the-evening
+    answers:
+      - 夕方勉強します
+      - 夕方べんきょうします
+      - ゆうがた勉強します
+      - ゆうがたべんきょうします
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: i-study-in-the-evening
+    choices:
+      - text: I study in the evening.
+        reading: ''
+      - text: I study every day.
+        reading: ''
+    prompt: 'Choose the meaning: 夕方勉強します。'
+    answers:
+      - I study in the evening.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: i-work-every-day
+    prompt: 'Build this sentence: I work every day. (polite)'
+    answers:
+      - 毎日働きます
+      - 毎日はたらきます
+      - まいにち働きます
+      - まいにちはたらきます
+    tiles:
+      - { text: 毎日, reading: まいにち, role: modifier, wordClass: modifier }
+      - { text: 働き, reading: はたらき, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: i-work-every-day
+    answers:
+      - 毎日働きます
+      - 毎日はたらきます
+      - まいにち働きます
+      - まいにちはたらきます
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: i-work-every-day
+    choices:
+      - text: I work every day.
+        reading: ''
+      - text: I study every day.
+        reading: ''
+    prompt: 'Choose the meaning: 毎日働きます。'
+    answers:
+      - I work every day.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: i-work-at-night
+    prompt: 'Build this sentence: I work at night. (polite)'
+    answers:
+      - 夜働きます
+      - 夜はたらきます
+      - よる働きます
+      - よるはたらきます
+    tiles:
+      - { text: 夜, reading: よる, role: modifier, wordClass: modifier }
+      - { text: 働き, reading: はたらき, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: i-work-at-night
+    answers:
+      - 夜働きます
+      - 夜はたらきます
+      - よる働きます
+      - よるはたらきます
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: i-work-at-night
+    choices:
+      - text: I work at night.
+        reading: ''
+      - text: I study every day.
+        reading: ''
+    prompt: 'Choose the meaning: 夜働きます。'
+    answers:
+      - I work at night.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: i-work-every-morning
+    prompt: 'Build this sentence: I work every morning. (polite)'
+    answers:
+      - 毎朝働きます
+      - 毎朝はたらきます
+      - まいあさ働きます
+      - まいあさはたらきます
+    tiles:
+      - { text: 毎朝, reading: まいあさ, role: modifier, wordClass: modifier }
+      - { text: 働き, reading: はたらき, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: i-work-every-morning
+    answers:
+      - 毎朝働きます
+      - 毎朝はたらきます
+      - まいあさ働きます
+      - まいあさはたらきます
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: i-work-every-morning
+    choices:
+      - text: I work every morning.
+        reading: ''
+      - text: I study every day.
+        reading: ''
+    prompt: 'Choose the meaning: 毎朝働きます。'
+    answers:
+      - I work every morning.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: i-work-every-evening
+    prompt: 'Build this sentence: I work every evening. (polite)'
+    answers:
+      - 毎晩働きます
+      - 毎晩はたらきます
+      - まいばん働きます
+      - まいばんはたらきます
+    tiles:
+      - { text: 毎晩, reading: まいばん, role: modifier, wordClass: modifier }
+      - { text: 働き, reading: はたらき, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: i-work-every-evening
+    answers:
+      - 毎晩働きます
+      - 毎晩はたらきます
+      - まいばん働きます
+      - まいばんはたらきます
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: i-work-every-evening
+    choices:
+      - text: I work every evening.
+        reading: ''
+      - text: I study every day.
+        reading: ''
+    prompt: 'Choose the meaning: 毎晩働きます。'
+    answers:
+      - I work every evening.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: i-work-every-week
+    prompt: 'Build this sentence: I work every week. (polite)'
+    answers:
+      - 毎週働きます
+      - 毎週はたらきます
+      - まいしゅう働きます
+      - まいしゅうはたらきます
+    tiles:
+      - { text: 毎週, reading: まいしゅう, role: modifier, wordClass: modifier }
+      - { text: 働き, reading: はたらき, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: i-work-every-week
+    answers:
+      - 毎週働きます
+      - 毎週はたらきます
+      - まいしゅう働きます
+      - まいしゅうはたらきます
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: i-work-every-week
+    choices:
+      - text: I work every week.
+        reading: ''
+      - text: I study every day.
+        reading: ''
+    prompt: 'Choose the meaning: 毎週働きます。'
+    answers:
+      - I work every week.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: i-work-every-month
+    prompt: 'Build this sentence: I work every month. (polite)'
+    answers:
+      - 毎月働きます
+      - 毎月はたらきます
+      - まいつき働きます
+      - まいつきはたらきます
+    tiles:
+      - { text: 毎月, reading: まいつき, role: modifier, wordClass: modifier }
+      - { text: 働き, reading: はたらき, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: i-work-every-month
+    answers:
+      - 毎月働きます
+      - 毎月はたらきます
+      - まいつき働きます
+      - まいつきはたらきます
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: i-work-every-month
+    choices:
+      - text: I work every month.
+        reading: ''
+      - text: I study every day.
+        reading: ''
+    prompt: 'Choose the meaning: 毎月働きます。'
+    answers:
+      - I work every month.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: i-work-every-year
+    prompt: 'Build this sentence: I work every year. (polite)'
+    answers:
+      - 毎年働きます
+      - 毎年はたらきます
+      - まいとし働きます
+      - まいとしはたらきます
+    tiles:
+      - { text: 毎年, reading: まいとし, role: modifier, wordClass: modifier }
+      - { text: 働き, reading: はたらき, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: i-work-every-year
+    answers:
+      - 毎年働きます
+      - 毎年はたらきます
+      - まいとし働きます
+      - まいとしはたらきます
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: i-work-every-year
+    choices:
+      - text: I work every year.
+        reading: ''
+      - text: I study every day.
+        reading: ''
+    prompt: 'Choose the meaning: 毎年働きます。'
+    answers:
+      - I work every year.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: i-work-on-weekends
+    prompt: 'Build this sentence: I work on weekends. (polite)'
+    answers:
+      - 週末働きます
+      - 週末はたらきます
+      - しゅうまつ働きます
+      - しゅうまつはたらきます
+    tiles:
+      - { text: 週末, reading: しゅうまつ, role: modifier, wordClass: modifier }
+      - { text: 働き, reading: はたらき, role: predicate, wordClass: predicate }
+      - { text: ます, reading: ます, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: i-work-on-weekends
+    answers:
+      - 週末働きます
+      - 週末はたらきます
+      - しゅうまつ働きます
+      - しゅうまつはたらきます

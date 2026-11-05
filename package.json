@@ -25,7 +25,12 @@
     "dev:static": "npm run dev",
     "test:static": "npm test",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "content:build": "node scripts/build-grammar.ts",
+    "content:check": "node scripts/build-grammar.ts --check",
+    "predev": "npm run content:build",
+    "prebuild": "npm run content:build",
+    "pretest": "npm run content:check"
   },
   "dependencies": {
     "lucide-react": "^1.31.0",
@@ -38,7 +43,8 @@
     "@types/react-dom": "19.2.3",
     "prettier": "3.9.10",
     "typescript": "5.9.3",
-    "vite": "8.0.13"
+    "vite": "8.0.13",
+    "yaml": "2.9.1"
   },
   "engines": {
     "node": ">=24.0.0"

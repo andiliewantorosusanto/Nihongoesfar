@@ -1,0 +1,381 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-vehicles-appliances
+  kind: grammar
+  note:
+    'Use vehicle + に + 乗ります (のります) to get on or into a vehicle, and vehicle + を + 降ります (おります) to get off or
+    out. For example, 車に乗ります (くるまにのります) means get into a car, not 車に入ります. The place where you board or get off
+    takes で: 駅で電車を降ります (えきででんしゃをおります). To switch an appliance or light on, use object + を + つけます; to switch it
+    off, use object + を + 消します (けします). Compare 電気をつけます (でんきをつけます, I turn on the light) with 電気がつきます (でんきがつきます,
+    the light comes on). 止めます (とめます) means stop a machine or operation; it does not always mean switch off the
+    power.'
+  tags:
+    - Study guide
+  level: N5
+  title: 'Verb pairs: vehicles and appliances'
+  topic: Polite verbs and particles
+  meaning: 'Verb pairs: vehicles and appliances'
+  reading: でんきをつけます。
+  examples:
+    - tokens:
+        - { role: object, text: 電気, reading: でんき, wordClass: noun phrase }
+        - { role: particle, text: を, reading: を, wordClass: particle }
+        - { role: predicate, text: つけます, reading: つけます, wordClass: predicate }
+      meaning: I turn on the light.
+      reading: でんきをつけます。
+      japanese: 電気をつけます。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: 'turn on ' }
+        - { role: object, text: the light. }
+    - tokens:
+        - { role: object, text: テレビ, reading: てれび, wordClass: noun phrase }
+        - { role: particle, text: を, reading: を, wordClass: particle }
+        - { role: predicate, text: 消します, reading: けします, wordClass: predicate }
+      meaning: I turn off the TV.
+      reading: てれびをけします。
+      japanese: テレビを消します。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: 'turn off ' }
+        - { role: object, text: the TV. }
+    - tokens:
+        - { role: modifier, text: 車, reading: くるま, wordClass: noun phrase }
+        - { role: particle, text: に, reading: に, wordClass: particle }
+        - { role: predicate, text: 乗ります, reading: のります, wordClass: predicate }
+      meaning: I get into the car.
+      reading: くるまにのります。
+      japanese: 車に乗ります。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: get into }
+        - { role: modifier, text: ' the car.' }
+    - tokens:
+        - { role: modifier, text: バス, reading: ばす, wordClass: noun phrase }
+        - { role: particle, text: を, reading: を, wordClass: particle }
+        - { role: predicate, text: 降ります, reading: おります, wordClass: predicate }
+      meaning: I get off the bus.
+      reading: ばすをおります。
+      japanese: バスを降ります。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: get off }
+        - { role: modifier, text: ' the bus.' }
+  japanese: 電気をつけます。
+  references:
+    - rows:
+        - - text: Get into a car
+            reading: ''
+          - text: 車に乗ります
+            reading: くるまにのります
+          - text: 車に乗る
+            reading: くるまにのる
+        - - text: Get out of a car
+            reading: ''
+          - text: 車を降ります
+            reading: くるまをおります
+          - text: 車を降りる
+            reading: くるまをおりる
+        - - text: Get on a train
+            reading: ''
+          - text: 電車に乗ります
+            reading: でんしゃにのります
+          - text: 電車に乗る
+            reading: でんしゃにのる
+        - - text: Get off a train
+            reading: ''
+          - text: 電車を降ります
+            reading: でんしゃをおります
+          - text: 電車を降りる
+            reading: でんしゃをおりる
+      columns:
+        - Situation
+        - Polite
+        - Casual
+      heading: Get on / get off
+    - rows:
+        - - text: Turn on the light
+            reading: ''
+          - text: 電気をつけます
+            reading: でんきをつけます
+          - text: 電気をつける
+            reading: でんきをつける
+        - - text: Turn off the light
+            reading: ''
+          - text: 電気を消します
+            reading: でんきをけします
+          - text: 電気を消す
+            reading: でんきをけす
+        - - text: Turn on the TV
+            reading: ''
+          - text: テレビをつけます
+            reading: てれびをつけます
+          - text: テレビをつける
+            reading: てれびをつける
+        - - text: Turn off the TV
+            reading: ''
+          - text: テレビを消します
+            reading: てれびをけします
+          - text: テレビを消す
+            reading: てれびをけす
+        - - text: Turn on the air conditioner
+            reading: ''
+          - text: エアコンをつけます
+            reading: えあこんをつけます
+          - text: エアコンをつける
+            reading: えあこんをつける
+        - - text: Turn off the air conditioner
+            reading: ''
+          - text: エアコンを消します
+            reading: えあこんをけします
+          - text: エアコンを消す
+            reading: えあこんをけす
+      columns:
+        - Situation
+        - Polite
+        - Casual
+      heading: Switch on / switch off
+sentences:
+  i-turn-on-the-light:
+    text: 電気をつけます。
+    tokens:
+      - { role: object, text: 電気, reading: でんき, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: つけます, reading: つけます, wordClass: predicate }
+    meaning: I turn on the light.
+    reading: でんきをつけます。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'turn on ' }
+      - { role: object, text: the light. }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Use vehicle + に + 乗ります (のります) to get on or into a vehicle, and vehicle + を + 降ります (おります) to get
+      off or out. For example, 車に乗ります (くるまにのります) means get into a car, not 車に入ります. The place where you board
+      or get off takes で: 駅で電車を降ります (えきででんしゃをおります). To switch an appliance or light on, use object + を + つけます;
+      to switch it off, use object + を + 消します (けします). Compare 電気をつけます (でんきをつけます, I turn on the light) with
+      電気がつきます (でんきがつきます, the light comes on). 止めます (とめます) means stop a machine or operation; it does not
+      always mean switch off the power.'
+  i-turn-off-the-tv:
+    text: テレビを消します。
+    tokens:
+      - { role: object, text: テレビ, reading: てれび, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 消します, reading: けします, wordClass: predicate }
+    meaning: I turn off the TV.
+    reading: てれびをけします。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'turn off ' }
+      - { role: object, text: the TV. }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Use vehicle + に + 乗ります (のります) to get on or into a vehicle, and vehicle + を + 降ります (おります) to get
+      off or out. For example, 車に乗ります (くるまにのります) means get into a car, not 車に入ります. The place where you board
+      or get off takes で: 駅で電車を降ります (えきででんしゃをおります). To switch an appliance or light on, use object + を + つけます;
+      to switch it off, use object + を + 消します (けします). Compare 電気をつけます (でんきをつけます, I turn on the light) with
+      電気がつきます (でんきがつきます, the light comes on). 止めます (とめます) means stop a machine or operation; it does not
+      always mean switch off the power.'
+    form: polite
+  i-get-into-the-car:
+    text: 車に乗ります。
+    tokens:
+      - { role: modifier, text: 車, reading: くるま, wordClass: noun phrase }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 乗ります, reading: のります, wordClass: predicate }
+    meaning: I get into the car.
+    reading: くるまにのります。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: get into }
+      - { role: modifier, text: ' the car.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Use vehicle + に + 乗ります (のります) to get on or into a vehicle, and vehicle + を + 降ります (おります) to get
+      off or out. For example, 車に乗ります (くるまにのります) means get into a car, not 車に入ります. The place where you board
+      or get off takes で: 駅で電車を降ります (えきででんしゃをおります). To switch an appliance or light on, use object + を + つけます;
+      to switch it off, use object + を + 消します (けします). Compare 電気をつけます (でんきをつけます, I turn on the light) with
+      電気がつきます (でんきがつきます, the light comes on). 止めます (とめます) means stop a machine or operation; it does not
+      always mean switch off the power.'
+  i-get-off-the-bus:
+    text: バスを降ります。
+    tokens:
+      - { role: modifier, text: バス, reading: ばす, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 降ります, reading: おります, wordClass: predicate }
+    meaning: I get off the bus.
+    reading: ばすをおります。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: get off }
+      - { role: modifier, text: ' the bus.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Use vehicle + に + 乗ります (のります) to get on or into a vehicle, and vehicle + を + 降ります (おります) to get
+      off or out. For example, 車に乗ります (くるまにのります) means get into a car, not 車に入ります. The place where you board
+      or get off takes で: 駅で電車を降ります (えきででんしゃをおります). To switch an appliance or light on, use object + を + つけます;
+      to switch it off, use object + を + 消します (けします). Compare 電気をつけます (でんきをつけます, I turn on the light) with
+      電気がつきます (でんきがつきます, the light comes on). 止めます (とめます) means stop a machine or operation; it does not
+      always mean switch off the power.'
+  i-get-on-the-bicycle:
+    tokens:
+      - { role: modifier, text: 自転車, reading: じてんしゃ, wordClass: noun phrase }
+      - { role: particle, text: に, reading: に, wordClass: particle }
+      - { role: predicate, text: 乗ります, reading: のります, wordClass: predicate }
+    meaning: I get on the bicycle.
+    reading: じてんしゃにのります。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: get into }
+      - { role: modifier, text: ' the bicycle.' }
+    text: 自転車に乗ります。
+    hint: Check the particles and sentence ending.
+    explanation:
+      自転車に乗ります。 means “I get on the bicycle.” Match the vocabulary, particles, and tense to the English
+      sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-turn-on-the-light
+    choices:
+      - text: I turn on the light.
+        reading: ''
+      - text: I turn off the TV.
+        reading: ''
+      - text: I get into the car.
+        reading: ''
+      - text: I get off the bus.
+        reading: ''
+    answers:
+      - I turn on the light.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-turn-off-the-tv
+    choices:
+      - sentence: i-turn-on-the-light
+      - sentence: i-turn-off-the-tv
+    prompt: 'Choose the Japanese: I turn off the TV.'
+    answers:
+      - テレビを消します
+      - テレビをけします
+      - てれびを消します
+      - てれびをけします
+  - id: gap
+    type: gap
+    sentence: i-turn-off-the-tv
+    prompt: 'Fill the missing part: I turn off the TV. (polite)'
+    answers:
+      - を
+      - を
+    context:
+      text: テレビ___消します。
+      tokens:
+        - { role: object, text: テレビ, reading: てれび, wordClass: noun phrase }
+        - { role: particle, text: ___, reading: ___, wordClass: particle }
+        - { role: predicate, text: 消します, reading: けします, wordClass: predicate }
+      reading: てれび___けします。
+  - id: tiles
+    type: tiles
+    sentence: i-turn-off-the-tv
+    prompt: 'Build: I turn off the TV. (polite)'
+    answers:
+      - テレビを消します
+      - テレビをけします
+      - てれびを消します
+      - てれびをけします
+    tiles:
+      - { role: object, text: テレビ, reading: てれび, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 消します, reading: けします, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: i-get-into-the-car
+    answers:
+      - 車に乗ります
+      - 車にのります
+      - くるまに乗ります
+      - くるまにのります
+  - id: alternate
+    type: typing
+    sentence: i-get-off-the-bus
+    alternate: true
+    prompt: 'Another example: I get off the bus. (polite)'
+    answers:
+      - バスを降ります
+      - バスをおります
+      - ばすを降ります
+      - ばすをおります
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: i-get-on-the-bicycle
+    choices:
+      - text: I get on the bicycle.
+        reading: ''
+      - text: I turn on the light.
+        reading: ''
+      - text: I turn off the TV.
+        reading: ''
+      - text: I get into the car.
+        reading: ''
+    answers:
+      - I get on the bicycle.
+  - id: expanded-1-typing
+    type: typing
+    sentence: i-get-on-the-bicycle
+    explanation: 自転車に乗ります。 means “I get on the bicycle.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 自転車に乗ります
+      - じてんしゃにのります
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: i-get-on-the-bicycle
+    prompt: 'Build this sentence: I get on the bicycle. (polite)'
+    explanation: 自転車に乗ります。 means “I get on the bicycle.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 自転車に乗ります
+      - じてんしゃにのります
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: i-get-on-the-bicycle
+    choices:
+      - sentence: i-get-on-the-bicycle
+      - text: 電気をつけます。
+        reading: でんきをつけます。
+        tokens:
+          - { role: object, text: 電気, reading: でんき, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: つけます, reading: つけます, wordClass: predicate }
+      - text: テレビを消します。
+        reading: てれびをけします。
+        tokens:
+          - { role: object, text: テレビ, reading: てれび, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 消します, reading: けします, wordClass: predicate }
+      - text: 車に乗ります。
+        reading: くるまにのります。
+        tokens:
+          - { role: modifier, text: 車, reading: くるま, wordClass: noun phrase }
+          - { role: particle, text: に, reading: に, wordClass: particle }
+          - { role: predicate, text: 乗ります, reading: のります, wordClass: predicate }
+    prompt: 'Choose the Japanese: I get on the bicycle. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 自転車に乗ります。 for “I get on the bicycle.” The other sentences describe different situations.
+    answers:
+      - 自転車に乗ります
+      - じてんしゃにのります
+  - id: expanded-1-gap
+    type: gap
+    sentence: i-get-on-the-bicycle
+    prompt: 'Fill the missing part: I get on the bicycle. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 乗ります (のります). Together, the sentence means “I get on the bicycle.”
+    answers:
+      - 乗ります
+      - のります
+    context:
+      meaning: I get on the bicycle.
+      reading: じてんしゃに___。
+      text: 自転車に___。

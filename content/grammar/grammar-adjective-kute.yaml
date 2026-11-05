@@ -1,0 +1,1602 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-adjective-kute
+  kind: grammar
+  title: 'Connecting い-adjectives: 〜くて'
+  japanese: この本は面白くて安いです。
+  reading: このほんはおもしろくてやすいです。
+  meaning: This book is interesting and inexpensive.
+  level: N5
+  topic: Connecting descriptions and actions
+  tags:
+    - Grammar
+    - adjective-kute
+  note:
+    'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final description
+    carries tense and politeness.'
+  examples:
+    - japanese: この本は面白くて安いです。
+      reading: このほんはおもしろくてやすいです。
+      meaning: This book is interesting and inexpensive.
+      tokens:
+        - { text: この, reading: この, role: modifier, wordClass: modifier }
+        - { text: 本, reading: ほん, role: topic, wordClass: noun phrase }
+        - { text: は, reading: は, role: particle, wordClass: particle }
+        - {
+            text: 面白くて安いです,
+            reading: おもしろくてやすいです,
+            role: predicate,
+            wordClass: predicate,
+          }
+      translationTokens:
+        - { text: 'This ', role: modifier }
+        - { text: book, role: topic }
+        - { text: ' is interesting and inexpensive.', role: predicate }
+    - japanese: この車は大きくて新しいです。
+      reading: このくるまはおおきくてあたらしいです。
+      meaning: This car is big and new.
+      tokens:
+        - { text: この, reading: この, role: modifier, wordClass: modifier }
+        - { text: 車, reading: くるま, role: topic, wordClass: noun phrase }
+        - { text: は, reading: は, role: particle, wordClass: particle }
+        - {
+            text: 大きくて新しいです,
+            reading: おおきくてあたらしいです,
+            role: predicate,
+            wordClass: predicate,
+          }
+      translationTokens:
+        - { text: 'This ', role: modifier }
+        - { text: car, role: topic }
+        - { text: ' is big and new.', role: predicate }
+    - japanese: この部屋は明るくて広いです。
+      reading: このへやはあかるくてひろいです。
+      meaning: This room is bright and spacious.
+      tokens:
+        - { text: この, reading: この, role: modifier, wordClass: modifier }
+        - { text: 部屋, reading: へや, role: topic, wordClass: noun phrase }
+        - { text: は, reading: は, role: particle, wordClass: particle }
+        - {
+            text: 明るくて広いです,
+            reading: あかるくてひろいです,
+            role: predicate,
+            wordClass: predicate,
+          }
+      translationTokens:
+        - { text: 'This ', role: modifier }
+        - { text: room, role: topic }
+        - { text: ' is bright and spacious.', role: predicate }
+  lesson:
+    order: 26
+    group: Connecting descriptions and actions
+    goal: Join two descriptions with an い-adjective.
+    prerequisites:
+      - grammar-i-adjective
+    recap:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final description
+      carries tense and politeness.'
+    comparison:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+    examples:
+      - japanese: この本は面白くて安いです。
+        reading: このほんはおもしろくてやすいです。
+        meaning: This book is interesting and inexpensive.
+        tokens:
+          - { text: この, reading: この, role: modifier, wordClass: modifier }
+          - { text: 本, reading: ほん, role: topic, wordClass: noun phrase }
+          - { text: は, reading: は, role: particle, wordClass: particle }
+          - {
+              text: 面白くて安いです,
+              reading: おもしろくてやすいです,
+              role: predicate,
+              wordClass: predicate,
+            }
+        translationTokens:
+          - { text: 'This ', role: modifier }
+          - { text: book, role: topic }
+          - { text: ' is interesting and inexpensive.', role: predicate }
+      - japanese: この車は大きくて新しいです。
+        reading: このくるまはおおきくてあたらしいです。
+        meaning: This car is big and new.
+        tokens:
+          - { text: この, reading: この, role: modifier, wordClass: modifier }
+          - { text: 車, reading: くるま, role: topic, wordClass: noun phrase }
+          - { text: は, reading: は, role: particle, wordClass: particle }
+          - {
+              text: 大きくて新しいです,
+              reading: おおきくてあたらしいです,
+              role: predicate,
+              wordClass: predicate,
+            }
+        translationTokens:
+          - { text: 'This ', role: modifier }
+          - { text: car, role: topic }
+          - { text: ' is big and new.', role: predicate }
+      - japanese: この部屋は明るくて広いです。
+        reading: このへやはあかるくてひろいです。
+        meaning: This room is bright and spacious.
+        tokens:
+          - { text: この, reading: この, role: modifier, wordClass: modifier }
+          - { text: 部屋, reading: へや, role: topic, wordClass: noun phrase }
+          - { text: は, reading: は, role: particle, wordClass: particle }
+          - {
+              text: 明るくて広いです,
+              reading: あかるくてひろいです,
+              role: predicate,
+              wordClass: predicate,
+            }
+        translationTokens:
+          - { text: 'This ', role: modifier }
+          - { text: room, role: topic }
+          - { text: ' is bright and spacious.', role: predicate }
+    vocabulary:
+      - text: 本
+        reading: ほん
+        role: topic
+        wordClass: noun phrase
+        meaning: book
+      - text: 車
+        reading: くるま
+        role: topic
+        wordClass: noun phrase
+        meaning: car
+      - text: 新しい
+        reading: あたらしい
+        role: predicate
+        wordClass: predicate
+        meaning: new
+      - text: 部屋
+        reading: へや
+        role: topic
+        wordClass: noun phrase
+        meaning: room
+      - text: かばん
+        reading: かばん
+        role: topic
+        wordClass: noun phrase
+        meaning: bag
+      - text: 便利
+        reading: べんり
+        role: predicate
+        wordClass: predicate
+        meaning: convenient
+sentences:
+  this-book-is-interesting-and-inexpensive:
+    text: この本は面白くて安いです。
+    reading: このほんはおもしろくてやすいです。
+    meaning: This book is interesting and inexpensive.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 本, reading: ほん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 本, reading: ほん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 面白くて安いです,
+          reading: おもしろくてやすいです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: book, role: topic }
+      - { text: ' is interesting and inexpensive.', role: predicate }
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+  this-car-is-big-and-new:
+    text: この車は大きくて新しいです。
+    reading: このくるまはおおきくてあたらしいです。
+    meaning: This car is big and new.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 車, reading: くるま, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 大きくて, reading: おおきくて, role: predicate, wordClass: predicate }
+      - { text: 新しい, reading: あたらしい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 車, reading: くるま, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 大きくて新しいです,
+          reading: おおきくてあたらしいです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: car, role: topic }
+      - { text: ' is big and new.', role: predicate }
+    form: polite
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+  this-room-is-bright-and-spacious:
+    text: この部屋は明るくて広いです。
+    reading: このへやはあかるくてひろいです。
+    meaning: This room is bright and spacious.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 部屋, reading: へや, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 明るくて, reading: あかるくて, role: predicate, wordClass: predicate }
+      - { text: 広い, reading: ひろい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 部屋, reading: へや, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 明るくて広いです,
+          reading: あかるくてひろいです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: room, role: topic }
+      - { text: ' is bright and spacious.', role: predicate }
+    form: polite
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+  this-bag-is-light-and-convenient:
+    text: このかばんは軽くて便利です。
+    reading: このかばんはかるくてべんりです。
+    meaning: This bag is light and convenient.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: かばん, reading: かばん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 軽くて, reading: かるくて, role: predicate, wordClass: predicate }
+      - { text: 便利, reading: べんり, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: かばん, reading: かばん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 軽くて便利です, reading: かるくてべんりです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: bag, role: topic }
+      - { text: ' is light and convenient.', role: predicate }
+    form: polite
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+  this-magazine-is-interesting-and-inexpensive:
+    text: この雑誌は面白くて安いです。
+    reading: このざっしはおもしろくてやすいです。
+    meaning: This magazine is interesting and inexpensive.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 雑誌, reading: ざっし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 雑誌, reading: ざっし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 面白くて安いです,
+          reading: おもしろくてやすいです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: magazine, role: topic }
+      - { text: ' is interesting and inexpensive.', role: predicate }
+    form: polite
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+  this-newspaper-is-interesting-and-inexpensive:
+    text: この新聞は面白くて安いです。
+    reading: このしんぶんはおもしろくてやすいです。
+    meaning: This newspaper is interesting and inexpensive.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 新聞, reading: しんぶん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 新聞, reading: しんぶん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 面白くて安いです,
+          reading: おもしろくてやすいです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: newspaper, role: topic }
+      - { text: ' is interesting and inexpensive.', role: predicate }
+    form: polite
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+  this-dictionary-is-interesting-and-inexpensive:
+    text: この辞書は面白くて安いです。
+    reading: このじしょはおもしろくてやすいです。
+    meaning: This dictionary is interesting and inexpensive.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 辞書, reading: じしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 辞書, reading: じしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 面白くて安いです,
+          reading: おもしろくてやすいです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: dictionary, role: topic }
+      - { text: ' is interesting and inexpensive.', role: predicate }
+    form: polite
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+  this-novel-is-interesting-and-inexpensive:
+    text: この小説は面白くて安いです。
+    reading: このしょうせつはおもしろくてやすいです。
+    meaning: This novel is interesting and inexpensive.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 小説, reading: しょうせつ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 小説, reading: しょうせつ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 面白くて安いです,
+          reading: おもしろくてやすいです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: novel, role: topic }
+      - { text: ' is interesting and inexpensive.', role: predicate }
+    form: polite
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+  this-comic-is-interesting-and-inexpensive:
+    text: この漫画は面白くて安いです。
+    reading: このまんがはおもしろくてやすいです。
+    meaning: This comic is interesting and inexpensive.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 漫画, reading: まんが, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 漫画, reading: まんが, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 面白くて安いです,
+          reading: おもしろくてやすいです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: comic, role: topic }
+      - { text: ' is interesting and inexpensive.', role: predicate }
+    form: polite
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+  this-textbook-is-interesting-and-inexpensive:
+    text: この教科書は面白くて安いです。
+    reading: このきょうかしょはおもしろくてやすいです。
+    meaning: This textbook is interesting and inexpensive.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 教科書, reading: きょうかしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 教科書, reading: きょうかしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 面白くて安いです,
+          reading: おもしろくてやすいです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: textbook, role: topic }
+      - { text: ' is interesting and inexpensive.', role: predicate }
+    form: polite
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+  this-picture-book-is-interesting-and-inexpensive:
+    text: この絵本は面白くて安いです。
+    reading: このえほんはおもしろくてやすいです。
+    meaning: This picture book is interesting and inexpensive.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 絵本, reading: えほん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 絵本, reading: えほん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 面白くて安いです,
+          reading: おもしろくてやすいです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: picture book, role: topic }
+      - { text: ' is interesting and inexpensive.', role: predicate }
+    form: polite
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+  this-letter-is-interesting-and-inexpensive:
+    text: この手紙は面白くて安いです。
+    reading: このてがみはおもしろくてやすいです。
+    meaning: This letter is interesting and inexpensive.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 手紙, reading: てがみ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 手紙, reading: てがみ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 面白くて安いです,
+          reading: おもしろくてやすいです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: letter, role: topic }
+      - { text: ' is interesting and inexpensive.', role: predicate }
+    form: polite
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+  this-diary-is-interesting-and-inexpensive:
+    text: この日記は面白くて安いです。
+    reading: このにっきはおもしろくてやすいです。
+    meaning: This diary is interesting and inexpensive.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 日記, reading: にっき, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 日記, reading: にっき, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 面白くて安いです,
+          reading: おもしろくてやすいです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: diary, role: topic }
+      - { text: ' is interesting and inexpensive.', role: predicate }
+    form: polite
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+  this-article-is-interesting-and-inexpensive:
+    text: この記事は面白くて安いです。
+    reading: このきじはおもしろくてやすいです。
+    meaning: This article is interesting and inexpensive.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 記事, reading: きじ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 記事, reading: きじ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 面白くて安いです,
+          reading: おもしろくてやすいです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: article, role: topic }
+      - { text: ' is interesting and inexpensive.', role: predicate }
+    form: polite
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+  this-clock-is-big-and-new:
+    text: この時計は大きくて新しいです。
+    reading: このとけいはおおきくてあたらしいです。
+    meaning: This clock is big and new.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 時計, reading: とけい, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 大きくて, reading: おおきくて, role: predicate, wordClass: predicate }
+      - { text: 新しい, reading: あたらしい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 時計, reading: とけい, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 大きくて新しいです,
+          reading: おおきくてあたらしいです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: clock, role: topic }
+      - { text: ' is big and new.', role: predicate }
+    form: polite
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+  this-desk-is-big-and-new:
+    text: この机は大きくて新しいです。
+    reading: このつくえはおおきくてあたらしいです。
+    meaning: This desk is big and new.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 机, reading: つくえ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 大きくて, reading: おおきくて, role: predicate, wordClass: predicate }
+      - { text: 新しい, reading: あたらしい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 机, reading: つくえ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 大きくて新しいです,
+          reading: おおきくてあたらしいです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: desk, role: topic }
+      - { text: ' is big and new.', role: predicate }
+    form: polite
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+  this-bag-is-big-and-new:
+    text: このかばんは大きくて新しいです。
+    reading: このかばんはおおきくてあたらしいです。
+    meaning: This bag is big and new.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: かばん, reading: かばん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 大きくて, reading: おおきくて, role: predicate, wordClass: predicate }
+      - { text: 新しい, reading: あたらしい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: かばん, reading: かばん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 大きくて新しいです,
+          reading: おおきくてあたらしいです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: bag, role: topic }
+      - { text: ' is big and new.', role: predicate }
+    form: polite
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+  this-chair-is-big-and-new:
+    text: この椅子は大きくて新しいです。
+    reading: このいすはおおきくてあたらしいです。
+    meaning: This chair is big and new.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 椅子, reading: いす, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 大きくて, reading: おおきくて, role: predicate, wordClass: predicate }
+      - { text: 新しい, reading: あたらしい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 椅子, reading: いす, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 大きくて新しいです,
+          reading: おおきくてあたらしいです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: chair, role: topic }
+      - { text: ' is big and new.', role: predicate }
+    form: polite
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+  this-bicycle-is-big-and-new:
+    text: この自転車は大きくて新しいです。
+    reading: このじてんしゃはおおきくてあたらしいです。
+    meaning: This bicycle is big and new.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 自転車, reading: じてんしゃ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 大きくて, reading: おおきくて, role: predicate, wordClass: predicate }
+      - { text: 新しい, reading: あたらしい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 自転車, reading: じてんしゃ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 大きくて新しいです,
+          reading: おおきくてあたらしいです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: bicycle, role: topic }
+      - { text: ' is big and new.', role: predicate }
+    form: polite
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+  this-shoe-is-big-and-new:
+    text: この靴は大きくて新しいです。
+    reading: このくつはおおきくてあたらしいです。
+    meaning: This shoe is big and new.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 靴, reading: くつ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 大きくて, reading: おおきくて, role: predicate, wordClass: predicate }
+      - { text: 新しい, reading: あたらしい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 靴, reading: くつ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 大きくて新しいです,
+          reading: おおきくてあたらしいです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: shoe, role: topic }
+      - { text: ' is big and new.', role: predicate }
+    form: polite
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+  this-umbrella-is-big-and-new:
+    text: この傘は大きくて新しいです。
+    reading: このかさはおおきくてあたらしいです。
+    meaning: This umbrella is big and new.
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 傘, reading: かさ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 大きくて, reading: おおきくて, role: predicate, wordClass: predicate }
+      - { text: 新しい, reading: あたらしい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 傘, reading: かさ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 大きくて新しいです,
+          reading: おおきくてあたらしいです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: 'This ', role: modifier }
+      - { text: umbrella, role: topic }
+      - { text: ' is big and new.', role: predicate }
+    form: polite
+    hint: Use くて on the first い-adjective.
+    explanation:
+      'Replace the final い with くて to connect descriptions: たかい → たかくて. いい becomes よくて. The final
+      description carries tense and politeness.'
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: this-book-is-interesting-and-inexpensive
+    choices:
+      - text: This book is interesting and inexpensive.
+        reading: ''
+      - text: This book is interesting but expensive.
+        reading: ''
+    answers:
+      - This book is interesting and inexpensive.
+  - id: pattern
+    type: pattern-choice
+    sentence: this-book-is-interesting-and-inexpensive
+    choices:
+      - sentence: this-book-is-interesting-and-inexpensive
+      - text: この本は面白いで安いです。
+        reading: このほんはおもしろいでやすいです。
+        meaning: This book is interesting but expensive.
+        tiles:
+          - { text: この, reading: この, role: modifier, wordClass: modifier }
+          - { text: 本, reading: ほん, role: topic, wordClass: noun phrase }
+          - { text: は, reading: は, role: particle, wordClass: particle }
+          - { text: 面白いで, reading: おもしろいで, role: predicate, wordClass: predicate }
+          - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+          - { text: です, reading: です, role: predicate, wordClass: predicate }
+        tokens:
+          - { text: この, reading: この, role: modifier, wordClass: modifier }
+          - { text: 本, reading: ほん, role: topic, wordClass: noun phrase }
+          - { text: は, reading: は, role: particle, wordClass: particle }
+          - {
+              text: 面白いで安いです,
+              reading: おもしろいでやすいです,
+              role: predicate,
+              wordClass: predicate,
+            }
+    prompt: 'Choose the correct Japanese: This book is interesting and inexpensive.'
+    answers:
+      - この本は面白くて安いです
+      - この本は面白くてやすいです
+      - この本はおもしろくて安いです
+      - この本はおもしろくてやすいです
+      - このほんは面白くて安いです
+      - このほんは面白くてやすいです
+      - このほんはおもしろくて安いです
+      - このほんはおもしろくてやすいです
+  - id: gap
+    type: gap
+    sentence: this-car-is-big-and-new
+    answers:
+      - 大きくて
+      - おおきくて
+    context:
+      tokens:
+        - { text: この, reading: この, role: modifier, wordClass: modifier }
+        - { text: 車, reading: くるま, role: topic, wordClass: noun phrase }
+        - { text: は, reading: は, role: particle, wordClass: particle }
+        - { text: ___新しいです, reading: ___あたらしいです, role: predicate, wordClass: predicate }
+      text: この車は___新しいです。
+      reading: このくるまは___あたらしいです。
+  - id: tiles
+    type: tiles
+    sentence: this-car-is-big-and-new
+    prompt: 'Build this sentence: This car is big and new. (polite)'
+    answers:
+      - この車は大きくて新しいです
+      - この車は大きくてあたらしいです
+      - この車はおおきくて新しいです
+      - この車はおおきくてあたらしいです
+      - このくるまは大きくて新しいです
+      - このくるまは大きくてあたらしいです
+      - このくるまはおおきくて新しいです
+      - このくるまはおおきくてあたらしいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 車, reading: くるま, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 大きくて, reading: おおきくて, role: predicate, wordClass: predicate }
+      - { text: 新しい, reading: あたらしい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: this-room-is-bright-and-spacious
+    answers:
+      - この部屋は明るくて広いです
+      - この部屋は明るくてひろいです
+      - この部屋はあかるくて広いです
+      - この部屋はあかるくてひろいです
+      - このへやは明るくて広いです
+      - このへやは明るくてひろいです
+      - このへやはあかるくて広いです
+      - このへやはあかるくてひろいです
+  - id: alternate
+    type: typing
+    sentence: this-bag-is-light-and-convenient
+    alternate: true
+    prompt: 'One more example: This bag is light and convenient. (polite)'
+    answers:
+      - このかばんは軽くて便利です
+      - このかばんは軽くてべんりです
+      - このかばんはかるくて便利です
+      - このかばんはかるくてべんりです
+  - id: extra-1-tiles
+    type: tiles
+    sentence: this-magazine-is-interesting-and-inexpensive
+    prompt: 'Build this sentence: This magazine is interesting and inexpensive. (polite)'
+    answers:
+      - この雑誌は面白くて安いです
+      - この雑誌は面白くてやすいです
+      - この雑誌はおもしろくて安いです
+      - この雑誌はおもしろくてやすいです
+      - このざっしは面白くて安いです
+      - このざっしは面白くてやすいです
+      - このざっしはおもしろくて安いです
+      - このざっしはおもしろくてやすいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 雑誌, reading: ざっし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: this-magazine-is-interesting-and-inexpensive
+    answers:
+      - この雑誌は面白くて安いです
+      - この雑誌は面白くてやすいです
+      - この雑誌はおもしろくて安いです
+      - この雑誌はおもしろくてやすいです
+      - このざっしは面白くて安いです
+      - このざっしは面白くてやすいです
+      - このざっしはおもしろくて安いです
+      - このざっしはおもしろくてやすいです
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: this-magazine-is-interesting-and-inexpensive
+    choices:
+      - text: This magazine is interesting and inexpensive.
+        reading: ''
+      - text: This book is interesting and inexpensive.
+        reading: ''
+    prompt: 'Choose the meaning: この雑誌は面白くて安いです。'
+    answers:
+      - This magazine is interesting and inexpensive.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: this-newspaper-is-interesting-and-inexpensive
+    prompt: 'Build this sentence: This newspaper is interesting and inexpensive. (polite)'
+    answers:
+      - この新聞は面白くて安いです
+      - この新聞は面白くてやすいです
+      - この新聞はおもしろくて安いです
+      - この新聞はおもしろくてやすいです
+      - このしんぶんは面白くて安いです
+      - このしんぶんは面白くてやすいです
+      - このしんぶんはおもしろくて安いです
+      - このしんぶんはおもしろくてやすいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 新聞, reading: しんぶん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: this-newspaper-is-interesting-and-inexpensive
+    answers:
+      - この新聞は面白くて安いです
+      - この新聞は面白くてやすいです
+      - この新聞はおもしろくて安いです
+      - この新聞はおもしろくてやすいです
+      - このしんぶんは面白くて安いです
+      - このしんぶんは面白くてやすいです
+      - このしんぶんはおもしろくて安いです
+      - このしんぶんはおもしろくてやすいです
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: this-newspaper-is-interesting-and-inexpensive
+    choices:
+      - text: This newspaper is interesting and inexpensive.
+        reading: ''
+      - text: This book is interesting and inexpensive.
+        reading: ''
+    prompt: 'Choose the meaning: この新聞は面白くて安いです。'
+    answers:
+      - This newspaper is interesting and inexpensive.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: this-dictionary-is-interesting-and-inexpensive
+    prompt: 'Build this sentence: This dictionary is interesting and inexpensive. (polite)'
+    answers:
+      - この辞書は面白くて安いです
+      - この辞書は面白くてやすいです
+      - この辞書はおもしろくて安いです
+      - この辞書はおもしろくてやすいです
+      - このじしょは面白くて安いです
+      - このじしょは面白くてやすいです
+      - このじしょはおもしろくて安いです
+      - このじしょはおもしろくてやすいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 辞書, reading: じしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: this-dictionary-is-interesting-and-inexpensive
+    answers:
+      - この辞書は面白くて安いです
+      - この辞書は面白くてやすいです
+      - この辞書はおもしろくて安いです
+      - この辞書はおもしろくてやすいです
+      - このじしょは面白くて安いです
+      - このじしょは面白くてやすいです
+      - このじしょはおもしろくて安いです
+      - このじしょはおもしろくてやすいです
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: this-dictionary-is-interesting-and-inexpensive
+    choices:
+      - text: This dictionary is interesting and inexpensive.
+        reading: ''
+      - text: This book is interesting and inexpensive.
+        reading: ''
+    prompt: 'Choose the meaning: この辞書は面白くて安いです。'
+    answers:
+      - This dictionary is interesting and inexpensive.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: this-novel-is-interesting-and-inexpensive
+    prompt: 'Build this sentence: This novel is interesting and inexpensive. (polite)'
+    answers:
+      - この小説は面白くて安いです
+      - この小説は面白くてやすいです
+      - この小説はおもしろくて安いです
+      - この小説はおもしろくてやすいです
+      - このしょうせつは面白くて安いです
+      - このしょうせつは面白くてやすいです
+      - このしょうせつはおもしろくて安いです
+      - このしょうせつはおもしろくてやすいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 小説, reading: しょうせつ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: this-novel-is-interesting-and-inexpensive
+    answers:
+      - この小説は面白くて安いです
+      - この小説は面白くてやすいです
+      - この小説はおもしろくて安いです
+      - この小説はおもしろくてやすいです
+      - このしょうせつは面白くて安いです
+      - このしょうせつは面白くてやすいです
+      - このしょうせつはおもしろくて安いです
+      - このしょうせつはおもしろくてやすいです
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: this-novel-is-interesting-and-inexpensive
+    choices:
+      - text: This novel is interesting and inexpensive.
+        reading: ''
+      - text: This book is interesting and inexpensive.
+        reading: ''
+    prompt: 'Choose the meaning: この小説は面白くて安いです。'
+    answers:
+      - This novel is interesting and inexpensive.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: this-comic-is-interesting-and-inexpensive
+    prompt: 'Build this sentence: This comic is interesting and inexpensive. (polite)'
+    answers:
+      - この漫画は面白くて安いです
+      - この漫画は面白くてやすいです
+      - この漫画はおもしろくて安いです
+      - この漫画はおもしろくてやすいです
+      - このまんがは面白くて安いです
+      - このまんがは面白くてやすいです
+      - このまんがはおもしろくて安いです
+      - このまんがはおもしろくてやすいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 漫画, reading: まんが, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: this-comic-is-interesting-and-inexpensive
+    answers:
+      - この漫画は面白くて安いです
+      - この漫画は面白くてやすいです
+      - この漫画はおもしろくて安いです
+      - この漫画はおもしろくてやすいです
+      - このまんがは面白くて安いです
+      - このまんがは面白くてやすいです
+      - このまんがはおもしろくて安いです
+      - このまんがはおもしろくてやすいです
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: this-comic-is-interesting-and-inexpensive
+    choices:
+      - text: This comic is interesting and inexpensive.
+        reading: ''
+      - text: This book is interesting and inexpensive.
+        reading: ''
+    prompt: 'Choose the meaning: この漫画は面白くて安いです。'
+    answers:
+      - This comic is interesting and inexpensive.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: this-textbook-is-interesting-and-inexpensive
+    prompt: 'Build this sentence: This textbook is interesting and inexpensive. (polite)'
+    answers:
+      - この教科書は面白くて安いです
+      - この教科書は面白くてやすいです
+      - この教科書はおもしろくて安いです
+      - この教科書はおもしろくてやすいです
+      - このきょうかしょは面白くて安いです
+      - このきょうかしょは面白くてやすいです
+      - このきょうかしょはおもしろくて安いです
+      - このきょうかしょはおもしろくてやすいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 教科書, reading: きょうかしょ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: this-textbook-is-interesting-and-inexpensive
+    answers:
+      - この教科書は面白くて安いです
+      - この教科書は面白くてやすいです
+      - この教科書はおもしろくて安いです
+      - この教科書はおもしろくてやすいです
+      - このきょうかしょは面白くて安いです
+      - このきょうかしょは面白くてやすいです
+      - このきょうかしょはおもしろくて安いです
+      - このきょうかしょはおもしろくてやすいです
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: this-textbook-is-interesting-and-inexpensive
+    choices:
+      - text: This textbook is interesting and inexpensive.
+        reading: ''
+      - text: This book is interesting and inexpensive.
+        reading: ''
+    prompt: 'Choose the meaning: この教科書は面白くて安いです。'
+    answers:
+      - This textbook is interesting and inexpensive.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: this-picture-book-is-interesting-and-inexpensive
+    prompt: 'Build this sentence: This picture book is interesting and inexpensive. (polite)'
+    answers:
+      - この絵本は面白くて安いです
+      - この絵本は面白くてやすいです
+      - この絵本はおもしろくて安いです
+      - この絵本はおもしろくてやすいです
+      - このえほんは面白くて安いです
+      - このえほんは面白くてやすいです
+      - このえほんはおもしろくて安いです
+      - このえほんはおもしろくてやすいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 絵本, reading: えほん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: this-picture-book-is-interesting-and-inexpensive
+    answers:
+      - この絵本は面白くて安いです
+      - この絵本は面白くてやすいです
+      - この絵本はおもしろくて安いです
+      - この絵本はおもしろくてやすいです
+      - このえほんは面白くて安いです
+      - このえほんは面白くてやすいです
+      - このえほんはおもしろくて安いです
+      - このえほんはおもしろくてやすいです
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: this-picture-book-is-interesting-and-inexpensive
+    choices:
+      - text: This picture book is interesting and inexpensive.
+        reading: ''
+      - text: This book is interesting and inexpensive.
+        reading: ''
+    prompt: 'Choose the meaning: この絵本は面白くて安いです。'
+    answers:
+      - This picture book is interesting and inexpensive.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: this-letter-is-interesting-and-inexpensive
+    prompt: 'Build this sentence: This letter is interesting and inexpensive. (polite)'
+    answers:
+      - この手紙は面白くて安いです
+      - この手紙は面白くてやすいです
+      - この手紙はおもしろくて安いです
+      - この手紙はおもしろくてやすいです
+      - このてがみは面白くて安いです
+      - このてがみは面白くてやすいです
+      - このてがみはおもしろくて安いです
+      - このてがみはおもしろくてやすいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 手紙, reading: てがみ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: this-letter-is-interesting-and-inexpensive
+    answers:
+      - この手紙は面白くて安いです
+      - この手紙は面白くてやすいです
+      - この手紙はおもしろくて安いです
+      - この手紙はおもしろくてやすいです
+      - このてがみは面白くて安いです
+      - このてがみは面白くてやすいです
+      - このてがみはおもしろくて安いです
+      - このてがみはおもしろくてやすいです
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: this-letter-is-interesting-and-inexpensive
+    choices:
+      - text: This letter is interesting and inexpensive.
+        reading: ''
+      - text: This book is interesting and inexpensive.
+        reading: ''
+    prompt: 'Choose the meaning: この手紙は面白くて安いです。'
+    answers:
+      - This letter is interesting and inexpensive.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: this-diary-is-interesting-and-inexpensive
+    prompt: 'Build this sentence: This diary is interesting and inexpensive. (polite)'
+    answers:
+      - この日記は面白くて安いです
+      - この日記は面白くてやすいです
+      - この日記はおもしろくて安いです
+      - この日記はおもしろくてやすいです
+      - このにっきは面白くて安いです
+      - このにっきは面白くてやすいです
+      - このにっきはおもしろくて安いです
+      - このにっきはおもしろくてやすいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 日記, reading: にっき, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: this-diary-is-interesting-and-inexpensive
+    answers:
+      - この日記は面白くて安いです
+      - この日記は面白くてやすいです
+      - この日記はおもしろくて安いです
+      - この日記はおもしろくてやすいです
+      - このにっきは面白くて安いです
+      - このにっきは面白くてやすいです
+      - このにっきはおもしろくて安いです
+      - このにっきはおもしろくてやすいです
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: this-diary-is-interesting-and-inexpensive
+    choices:
+      - text: This diary is interesting and inexpensive.
+        reading: ''
+      - text: This book is interesting and inexpensive.
+        reading: ''
+    prompt: 'Choose the meaning: この日記は面白くて安いです。'
+    answers:
+      - This diary is interesting and inexpensive.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: this-article-is-interesting-and-inexpensive
+    prompt: 'Build this sentence: This article is interesting and inexpensive. (polite)'
+    answers:
+      - この記事は面白くて安いです
+      - この記事は面白くてやすいです
+      - この記事はおもしろくて安いです
+      - この記事はおもしろくてやすいです
+      - このきじは面白くて安いです
+      - このきじは面白くてやすいです
+      - このきじはおもしろくて安いです
+      - このきじはおもしろくてやすいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 記事, reading: きじ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 面白くて, reading: おもしろくて, role: predicate, wordClass: predicate }
+      - { text: 安い, reading: やすい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: this-article-is-interesting-and-inexpensive
+    answers:
+      - この記事は面白くて安いです
+      - この記事は面白くてやすいです
+      - この記事はおもしろくて安いです
+      - この記事はおもしろくてやすいです
+      - このきじは面白くて安いです
+      - このきじは面白くてやすいです
+      - このきじはおもしろくて安いです
+      - このきじはおもしろくてやすいです
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: this-article-is-interesting-and-inexpensive
+    choices:
+      - text: This article is interesting and inexpensive.
+        reading: ''
+      - text: This book is interesting and inexpensive.
+        reading: ''
+    prompt: 'Choose the meaning: この記事は面白くて安いです。'
+    answers:
+      - This article is interesting and inexpensive.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: this-clock-is-big-and-new
+    prompt: 'Build this sentence: This clock is big and new. (polite)'
+    answers:
+      - この時計は大きくて新しいです
+      - この時計は大きくてあたらしいです
+      - この時計はおおきくて新しいです
+      - この時計はおおきくてあたらしいです
+      - このとけいは大きくて新しいです
+      - このとけいは大きくてあたらしいです
+      - このとけいはおおきくて新しいです
+      - このとけいはおおきくてあたらしいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 時計, reading: とけい, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 大きくて, reading: おおきくて, role: predicate, wordClass: predicate }
+      - { text: 新しい, reading: あたらしい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: this-clock-is-big-and-new
+    answers:
+      - この時計は大きくて新しいです
+      - この時計は大きくてあたらしいです
+      - この時計はおおきくて新しいです
+      - この時計はおおきくてあたらしいです
+      - このとけいは大きくて新しいです
+      - このとけいは大きくてあたらしいです
+      - このとけいはおおきくて新しいです
+      - このとけいはおおきくてあたらしいです
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: this-clock-is-big-and-new
+    choices:
+      - text: This clock is big and new.
+        reading: ''
+      - text: This book is interesting and inexpensive.
+        reading: ''
+    prompt: 'Choose the meaning: この時計は大きくて新しいです。'
+    answers:
+      - This clock is big and new.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: this-desk-is-big-and-new
+    prompt: 'Build this sentence: This desk is big and new. (polite)'
+    answers:
+      - この机は大きくて新しいです
+      - この机は大きくてあたらしいです
+      - この机はおおきくて新しいです
+      - この机はおおきくてあたらしいです
+      - このつくえは大きくて新しいです
+      - このつくえは大きくてあたらしいです
+      - このつくえはおおきくて新しいです
+      - このつくえはおおきくてあたらしいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 机, reading: つくえ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 大きくて, reading: おおきくて, role: predicate, wordClass: predicate }
+      - { text: 新しい, reading: あたらしい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: this-desk-is-big-and-new
+    answers:
+      - この机は大きくて新しいです
+      - この机は大きくてあたらしいです
+      - この机はおおきくて新しいです
+      - この机はおおきくてあたらしいです
+      - このつくえは大きくて新しいです
+      - このつくえは大きくてあたらしいです
+      - このつくえはおおきくて新しいです
+      - このつくえはおおきくてあたらしいです
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: this-desk-is-big-and-new
+    choices:
+      - text: This desk is big and new.
+        reading: ''
+      - text: This book is interesting and inexpensive.
+        reading: ''
+    prompt: 'Choose the meaning: この机は大きくて新しいです。'
+    answers:
+      - This desk is big and new.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: this-bag-is-big-and-new
+    prompt: 'Build this sentence: This bag is big and new. (polite)'
+    answers:
+      - このかばんは大きくて新しいです
+      - このかばんは大きくてあたらしいです
+      - このかばんはおおきくて新しいです
+      - このかばんはおおきくてあたらしいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: かばん, reading: かばん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 大きくて, reading: おおきくて, role: predicate, wordClass: predicate }
+      - { text: 新しい, reading: あたらしい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: this-bag-is-big-and-new
+    answers:
+      - このかばんは大きくて新しいです
+      - このかばんは大きくてあたらしいです
+      - このかばんはおおきくて新しいです
+      - このかばんはおおきくてあたらしいです
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: this-bag-is-big-and-new
+    choices:
+      - text: This bag is big and new.
+        reading: ''
+      - text: This book is interesting and inexpensive.
+        reading: ''
+    prompt: 'Choose the meaning: このかばんは大きくて新しいです。'
+    answers:
+      - This bag is big and new.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: this-chair-is-big-and-new
+    prompt: 'Build this sentence: This chair is big and new. (polite)'
+    answers:
+      - この椅子は大きくて新しいです
+      - この椅子は大きくてあたらしいです
+      - この椅子はおおきくて新しいです
+      - この椅子はおおきくてあたらしいです
+      - このいすは大きくて新しいです
+      - このいすは大きくてあたらしいです
+      - このいすはおおきくて新しいです
+      - このいすはおおきくてあたらしいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 椅子, reading: いす, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 大きくて, reading: おおきくて, role: predicate, wordClass: predicate }
+      - { text: 新しい, reading: あたらしい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: this-chair-is-big-and-new
+    answers:
+      - この椅子は大きくて新しいです
+      - この椅子は大きくてあたらしいです
+      - この椅子はおおきくて新しいです
+      - この椅子はおおきくてあたらしいです
+      - このいすは大きくて新しいです
+      - このいすは大きくてあたらしいです
+      - このいすはおおきくて新しいです
+      - このいすはおおきくてあたらしいです
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: this-chair-is-big-and-new
+    choices:
+      - text: This chair is big and new.
+        reading: ''
+      - text: This book is interesting and inexpensive.
+        reading: ''
+    prompt: 'Choose the meaning: この椅子は大きくて新しいです。'
+    answers:
+      - This chair is big and new.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: this-bicycle-is-big-and-new
+    prompt: 'Build this sentence: This bicycle is big and new. (polite)'
+    answers:
+      - この自転車は大きくて新しいです
+      - この自転車は大きくてあたらしいです
+      - この自転車はおおきくて新しいです
+      - この自転車はおおきくてあたらしいです
+      - このじてんしゃは大きくて新しいです
+      - このじてんしゃは大きくてあたらしいです
+      - このじてんしゃはおおきくて新しいです
+      - このじてんしゃはおおきくてあたらしいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 自転車, reading: じてんしゃ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 大きくて, reading: おおきくて, role: predicate, wordClass: predicate }
+      - { text: 新しい, reading: あたらしい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: this-bicycle-is-big-and-new
+    answers:
+      - この自転車は大きくて新しいです
+      - この自転車は大きくてあたらしいです
+      - この自転車はおおきくて新しいです
+      - この自転車はおおきくてあたらしいです
+      - このじてんしゃは大きくて新しいです
+      - このじてんしゃは大きくてあたらしいです
+      - このじてんしゃはおおきくて新しいです
+      - このじてんしゃはおおきくてあたらしいです
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: this-bicycle-is-big-and-new
+    choices:
+      - text: This bicycle is big and new.
+        reading: ''
+      - text: This book is interesting and inexpensive.
+        reading: ''
+    prompt: 'Choose the meaning: この自転車は大きくて新しいです。'
+    answers:
+      - This bicycle is big and new.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: this-shoe-is-big-and-new
+    prompt: 'Build this sentence: This shoe is big and new. (polite)'
+    answers:
+      - この靴は大きくて新しいです
+      - この靴は大きくてあたらしいです
+      - この靴はおおきくて新しいです
+      - この靴はおおきくてあたらしいです
+      - このくつは大きくて新しいです
+      - このくつは大きくてあたらしいです
+      - このくつはおおきくて新しいです
+      - このくつはおおきくてあたらしいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 靴, reading: くつ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 大きくて, reading: おおきくて, role: predicate, wordClass: predicate }
+      - { text: 新しい, reading: あたらしい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: this-shoe-is-big-and-new
+    answers:
+      - この靴は大きくて新しいです
+      - この靴は大きくてあたらしいです
+      - この靴はおおきくて新しいです
+      - この靴はおおきくてあたらしいです
+      - このくつは大きくて新しいです
+      - このくつは大きくてあたらしいです
+      - このくつはおおきくて新しいです
+      - このくつはおおきくてあたらしいです
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: this-shoe-is-big-and-new
+    choices:
+      - text: This shoe is big and new.
+        reading: ''
+      - text: This book is interesting and inexpensive.
+        reading: ''
+    prompt: 'Choose the meaning: この靴は大きくて新しいです。'
+    answers:
+      - This shoe is big and new.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: this-umbrella-is-big-and-new
+    prompt: 'Build this sentence: This umbrella is big and new. (polite)'
+    answers:
+      - この傘は大きくて新しいです
+      - この傘は大きくてあたらしいです
+      - この傘はおおきくて新しいです
+      - この傘はおおきくてあたらしいです
+      - このかさは大きくて新しいです
+      - このかさは大きくてあたらしいです
+      - このかさはおおきくて新しいです
+      - このかさはおおきくてあたらしいです
+    tiles:
+      - { text: この, reading: この, role: modifier, wordClass: modifier }
+      - { text: 傘, reading: かさ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 大きくて, reading: おおきくて, role: predicate, wordClass: predicate }
+      - { text: 新しい, reading: あたらしい, role: predicate, wordClass: predicate }
+      - { text: です, reading: です, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: this-umbrella-is-big-and-new
+    answers:
+      - この傘は大きくて新しいです
+      - この傘は大きくてあたらしいです
+      - この傘はおおきくて新しいです
+      - この傘はおおきくてあたらしいです
+      - このかさは大きくて新しいです
+      - このかさは大きくてあたらしいです
+      - このかさはおおきくて新しいです
+      - このかさはおおきくてあたらしいです

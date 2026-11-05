@@ -1,0 +1,1445 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-suki
+  kind: grammar
+  note:
+    '好き is a な-adjective, not a verb. Use noun が好きです to say what you like. Before another noun, use 好きな:
+    好きな食べ物 (favorite food). 嫌い (disliked) is also a な-adjective despite ending in い.'
+  tags:
+    - Grammar
+    - suki
+  level: N5
+  title: 'Likes: 好きです'
+  topic: Sentence building
+  lesson:
+    goal: Say what you like.
+    group: Descriptions and preferences
+    order: 21
+    recap:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+    examples:
+      - tokens:
+          - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: subject, text: 猫, reading: ねこ, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: 好きです, reading: すきです, wordClass: predicate }
+        meaning: I like cats.
+        reading: わたしはねこがすきです。
+        japanese: 私は猫が好きです。
+        translationTokens:
+          - { role: topic, text: I }
+          - { role: predicate, text: ' like ' }
+          - { role: subject, text: cats. }
+      - tokens:
+          - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: 好きです, reading: すきです, wordClass: predicate }
+        meaning: I like books.
+        reading: わたしはほんがすきです。
+        japanese: 私は本が好きです。
+        translationTokens:
+          - { role: topic, text: I }
+          - { role: predicate, text: ' like ' }
+          - { role: subject, text: books. }
+      - tokens:
+          - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: subject, text: お茶, reading: おちゃ, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: 好きです, reading: すきです, wordClass: predicate }
+        meaning: Tanaka likes tea.
+        reading: たなかさんはおちゃがすきです。
+        japanese: 田中さんはお茶が好きです。
+        translationTokens:
+          - { role: topic, text: Tanaka }
+          - { role: predicate, text: ' likes ' }
+          - { role: subject, text: tea. }
+    comparison:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+    vocabulary:
+      - text: 私
+        meaning: I / me
+        reading: わたし
+      - text: 猫
+        meaning: cat
+        reading: ねこ
+      - text: 好きです
+        meaning: like
+        reading: すきです
+      - text: 本
+        meaning: book
+        reading: ほん
+      - text: 田中さん
+        meaning: Tanaka (a person's name)
+        reading: たなかさん
+      - text: お茶
+        meaning: tea
+        reading: おちゃ
+      - text: 犬
+        meaning: dog
+        reading: いぬ
+    prerequisites:
+      - grammar-na-adjective
+  meaning: I like cats.
+  reading: ねこがすきです。
+  examples:
+    - tokens:
+        - { role: subject, text: 猫, reading: ねこ, wordClass: noun }
+        - { role: particle, text: が, reading: が, wordClass: subject particle }
+        - { role: predicate, text: 好きです, reading: すきです, wordClass: na-adjective + copula }
+      meaning: I like cats.
+      reading: ねこがすきです。
+      japanese: 猫が好きです。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: like, implicit: false }
+        - { role: subject, text: ' cats.', implicit: false }
+  exercise:
+    tiles:
+      - 猫
+      - が
+      - 好き
+      - です
+    prompt: 'Build: “I like cats.” Leave out 私.'
+    answers:
+      - 猫が好きです
+      - ねこがすきです
+      - 猫がすきです
+    explanation:
+      '好き is a な-adjective, not a verb. Use noun が好きです to say what you like. Before another noun, use
+      好きな: 好きな食べ物 (favorite food). 嫌い (disliked) is also a な-adjective despite ending in い.'
+  japanese: 猫が好きです。
+sentences:
+  i-like-cats:
+    text: 私は猫が好きです。
+    tiles:
+      - { text: 私, reading: わたし }
+      - { text: は, reading: は }
+      - { text: 猫, reading: ねこ }
+      - { text: が, reading: が }
+      - { text: 好きです, reading: すきです }
+    tokens:
+      - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: subject, text: 猫, reading: ねこ, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: 好きです, reading: すきです, wordClass: predicate }
+    meaning: I like cats.
+    reading: わたしはねこがすきです。
+    translationTokens:
+      - { role: topic, text: I }
+      - { role: predicate, text: ' like ' }
+      - { role: subject, text: cats. }
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+  i-like-books:
+    text: 私は本が好きです。
+    tiles:
+      - { text: 私, reading: わたし }
+      - { text: は, reading: は }
+      - { text: 本, reading: ほん }
+      - { text: が, reading: が }
+      - { text: 好きです, reading: すきです }
+    tokens:
+      - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: 好きです, reading: すきです, wordClass: predicate }
+    meaning: I like books.
+    reading: わたしはほんがすきです。
+    translationTokens:
+      - { role: topic, text: I }
+      - { role: predicate, text: ' like ' }
+      - { role: subject, text: books. }
+    form: polite
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+  tanaka-likes-tea:
+    text: 田中さんはお茶が好きです。
+    tiles:
+      - { text: 田中さん, reading: たなかさん }
+      - { text: は, reading: は }
+      - { text: お茶, reading: おちゃ }
+      - { text: が, reading: が }
+      - { text: 好きです, reading: すきです }
+    tokens:
+      - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: subject, text: お茶, reading: おちゃ, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: 好きです, reading: すきです, wordClass: predicate }
+    meaning: Tanaka likes tea.
+    reading: たなかさんはおちゃがすきです。
+    translationTokens:
+      - { role: topic, text: Tanaka }
+      - { role: predicate, text: ' likes ' }
+      - { role: subject, text: tea. }
+    form: polite
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+  i-like-dogs:
+    text: 私は犬が好きです。
+    tiles:
+      - { text: 私, reading: わたし }
+      - { text: は, reading: は }
+      - { text: 犬, reading: いぬ }
+      - { text: が, reading: が }
+      - { text: 好きです, reading: すきです }
+    tokens:
+      - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: subject, text: 犬, reading: いぬ, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: 好きです, reading: すきです, wordClass: predicate }
+    meaning: I like dogs.
+    reading: わたしはいぬがすきです。
+    translationTokens:
+      - { role: topic, text: I }
+      - { role: predicate, text: ' like ' }
+      - { role: subject, text: dogs. }
+    form: polite
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+  i-like-birds:
+    text: 私は鳥が好きです。
+    reading: わたしはとりがすきです。
+    meaning: I like birds.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 鳥, reading: とり, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 鳥, reading: とり, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' like ', role: predicate }
+      - { text: birds., role: subject }
+    form: polite
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+  i-like-horses:
+    text: 私は馬が好きです。
+    reading: わたしはうまがすきです。
+    meaning: I like horses.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 馬, reading: うま, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 馬, reading: うま, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' like ', role: predicate }
+      - { text: horses., role: subject }
+    form: polite
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+  i-like-fishs:
+    text: 私は魚が好きです。
+    reading: わたしはさかながすきです。
+    meaning: I like fishs.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 魚, reading: さかな, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 魚, reading: さかな, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' like ', role: predicate }
+      - { text: fishs., role: subject }
+    form: polite
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+  i-like-rabbits:
+    text: 私は兎が好きです。
+    reading: わたしはうさぎがすきです。
+    meaning: I like rabbits.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 兎, reading: うさぎ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 兎, reading: うさぎ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' like ', role: predicate }
+      - { text: rabbits., role: subject }
+    form: polite
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+  i-like-turtles:
+    text: 私は亀が好きです。
+    reading: わたしはかめがすきです。
+    meaning: I like turtles.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 亀, reading: かめ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 亀, reading: かめ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' like ', role: predicate }
+      - { text: turtles., role: subject }
+    form: polite
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+  i-like-cows:
+    text: 私は牛が好きです。
+    reading: わたしはうしがすきです。
+    meaning: I like cows.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 牛, reading: うし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 牛, reading: うし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' like ', role: predicate }
+      - { text: cows., role: subject }
+    form: polite
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+  i-like-sheeps:
+    text: 私は羊が好きです。
+    reading: わたしはひつじがすきです。
+    meaning: I like sheeps.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 羊, reading: ひつじ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 羊, reading: ひつじ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' like ', role: predicate }
+      - { text: sheeps., role: subject }
+    form: polite
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+  i-like-monkeys:
+    text: 私は猿が好きです。
+    reading: わたしはさるがすきです。
+    meaning: I like monkeys.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 猿, reading: さる, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 猿, reading: さる, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' like ', role: predicate }
+      - { text: monkeys., role: subject }
+    form: polite
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+  i-like-pigs:
+    text: 私は豚が好きです。
+    reading: わたしはぶたがすきです。
+    meaning: I like pigs.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 豚, reading: ぶた, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 豚, reading: ぶた, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' like ', role: predicate }
+      - { text: pigs., role: subject }
+    form: polite
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+  i-like-magazines:
+    text: 私は雑誌が好きです。
+    reading: わたしはざっしがすきです。
+    meaning: I like magazines.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 雑誌, reading: ざっし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 雑誌, reading: ざっし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' like ', role: predicate }
+      - { text: magazines., role: subject }
+    form: polite
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+  i-like-newspapers:
+    text: 私は新聞が好きです。
+    reading: わたしはしんぶんがすきです。
+    meaning: I like newspapers.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 新聞, reading: しんぶん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 新聞, reading: しんぶん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' like ', role: predicate }
+      - { text: newspapers., role: subject }
+    form: polite
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+  i-like-dictionarys:
+    text: 私は辞書が好きです。
+    reading: わたしはじしょがすきです。
+    meaning: I like dictionarys.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 辞書, reading: じしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 辞書, reading: じしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' like ', role: predicate }
+      - { text: dictionarys., role: subject }
+    form: polite
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+  i-like-novels:
+    text: 私は小説が好きです。
+    reading: わたしはしょうせつがすきです。
+    meaning: I like novels.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 小説, reading: しょうせつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 小説, reading: しょうせつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' like ', role: predicate }
+      - { text: novels., role: subject }
+    form: polite
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+  i-like-comics:
+    text: 私は漫画が好きです。
+    reading: わたしはまんががすきです。
+    meaning: I like comics.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 漫画, reading: まんが, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 漫画, reading: まんが, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' like ', role: predicate }
+      - { text: comics., role: subject }
+    form: polite
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+  i-like-textbooks:
+    text: 私は教科書が好きです。
+    reading: わたしはきょうかしょがすきです。
+    meaning: I like textbooks.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 教科書, reading: きょうかしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 教科書, reading: きょうかしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' like ', role: predicate }
+      - { text: textbooks., role: subject }
+    form: polite
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+  i-like-picture-books:
+    text: 私は絵本が好きです。
+    reading: わたしはえほんがすきです。
+    meaning: I like picture books.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 絵本, reading: えほん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 絵本, reading: えほん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' like ', role: predicate }
+      - { text: picture books., role: subject }
+    form: polite
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+  i-like-letters:
+    text: 私は手紙が好きです。
+    reading: わたしはてがみがすきです。
+    meaning: I like letters.
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 手紙, reading: てがみ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 手紙, reading: てがみ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: I, role: topic }
+      - { text: ' like ', role: predicate }
+      - { text: letters., role: subject }
+    form: polite
+    hint: Use the particle that introduces the thing you like.
+    explanation:
+      好き is a な-adjective. The liked thing is marked by が in this basic pattern, not the action-object
+      particle を.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-like-cats
+    choices:
+      - text: I like cats.
+        reading: ''
+      - text: I dislike cats.
+        reading: ''
+    answers:
+      - I like cats.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-like-cats
+    choices:
+      - sentence: i-like-cats
+      - text: 私は猫を好きます。
+        tiles:
+          - { text: 私, reading: わたし }
+          - { text: は, reading: は }
+          - { text: 猫, reading: ねこ }
+          - { text: を, reading: を }
+          - { text: 好きます, reading: すきます }
+        tokens:
+          - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: subject, text: 猫, reading: ねこ, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 好きます, reading: すきます, wordClass: predicate }
+        meaning: I dislike cats.
+        reading: わたしはねこをすきます。
+    prompt: 'Choose the correct Japanese: I like cats.'
+    answers:
+      - 私は猫が好きです
+      - 私は猫がすきです
+      - 私はねこが好きです
+      - 私はねこがすきです
+      - わたしは猫が好きです
+      - わたしは猫がすきです
+      - わたしはねこが好きです
+      - わたしはねこがすきです
+  - id: gap
+    type: gap
+    sentence: i-like-books
+    answers:
+      - が
+      - が
+    context:
+      text: 私は本___好きです。
+      tokens:
+        - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+        - { role: particle, text: ___, reading: ___, wordClass: particle }
+        - { role: predicate, text: 好きです, reading: すきです, wordClass: predicate }
+      reading: わたしはほん___すきです。
+  - id: tiles
+    type: tiles
+    sentence: i-like-books
+    prompt: 'Build this sentence: I like books. (polite)'
+    answers:
+      - 私は本が好きです
+      - 私は本がすきです
+      - 私はほんが好きです
+      - 私はほんがすきです
+      - わたしは本が好きです
+      - わたしは本がすきです
+      - わたしはほんが好きです
+      - わたしはほんがすきです
+    tiles:
+      - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: subject, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: 好きです, reading: すきです, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: tanaka-likes-tea
+    answers:
+      - 田中さんはお茶が好きです
+      - 田中さんはお茶がすきです
+      - 田中さんはおちゃが好きです
+      - 田中さんはおちゃがすきです
+      - たなかさんはお茶が好きです
+      - たなかさんはお茶がすきです
+      - たなかさんはおちゃが好きです
+      - たなかさんはおちゃがすきです
+  - id: alternate
+    type: typing
+    sentence: i-like-dogs
+    alternate: true
+    prompt: 'One more example: I like dogs. (polite)'
+    answers:
+      - 私は犬が好きです
+      - 私は犬がすきです
+      - 私はいぬが好きです
+      - 私はいぬがすきです
+      - わたしは犬が好きです
+      - わたしは犬がすきです
+      - わたしはいぬが好きです
+      - わたしはいぬがすきです
+  - id: extra-1-tiles
+    type: tiles
+    sentence: i-like-birds
+    prompt: 'Build this sentence: I like birds. (polite)'
+    answers:
+      - 私は鳥が好きです
+      - 私は鳥がすきです
+      - 私はとりが好きです
+      - 私はとりがすきです
+      - わたしは鳥が好きです
+      - わたしは鳥がすきです
+      - わたしはとりが好きです
+      - わたしはとりがすきです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 鳥, reading: とり, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: i-like-birds
+    answers:
+      - 私は鳥が好きです
+      - 私は鳥がすきです
+      - 私はとりが好きです
+      - 私はとりがすきです
+      - わたしは鳥が好きです
+      - わたしは鳥がすきです
+      - わたしはとりが好きです
+      - わたしはとりがすきです
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: i-like-birds
+    choices:
+      - text: I like birds.
+        reading: ''
+      - text: I like cats.
+        reading: ''
+    prompt: 'Choose the meaning: 私は鳥が好きです。'
+    answers:
+      - I like birds.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: i-like-horses
+    prompt: 'Build this sentence: I like horses. (polite)'
+    answers:
+      - 私は馬が好きです
+      - 私は馬がすきです
+      - 私はうまが好きです
+      - 私はうまがすきです
+      - わたしは馬が好きです
+      - わたしは馬がすきです
+      - わたしはうまが好きです
+      - わたしはうまがすきです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 馬, reading: うま, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: i-like-horses
+    answers:
+      - 私は馬が好きです
+      - 私は馬がすきです
+      - 私はうまが好きです
+      - 私はうまがすきです
+      - わたしは馬が好きです
+      - わたしは馬がすきです
+      - わたしはうまが好きです
+      - わたしはうまがすきです
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: i-like-horses
+    choices:
+      - text: I like horses.
+        reading: ''
+      - text: I like cats.
+        reading: ''
+    prompt: 'Choose the meaning: 私は馬が好きです。'
+    answers:
+      - I like horses.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: i-like-fishs
+    prompt: 'Build this sentence: I like fishs. (polite)'
+    answers:
+      - 私は魚が好きです
+      - 私は魚がすきです
+      - 私はさかなが好きです
+      - 私はさかながすきです
+      - わたしは魚が好きです
+      - わたしは魚がすきです
+      - わたしはさかなが好きです
+      - わたしはさかながすきです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 魚, reading: さかな, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: i-like-fishs
+    answers:
+      - 私は魚が好きです
+      - 私は魚がすきです
+      - 私はさかなが好きです
+      - 私はさかながすきです
+      - わたしは魚が好きです
+      - わたしは魚がすきです
+      - わたしはさかなが好きです
+      - わたしはさかながすきです
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: i-like-fishs
+    choices:
+      - text: I like fishs.
+        reading: ''
+      - text: I like cats.
+        reading: ''
+    prompt: 'Choose the meaning: 私は魚が好きです。'
+    answers:
+      - I like fishs.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: i-like-rabbits
+    prompt: 'Build this sentence: I like rabbits. (polite)'
+    answers:
+      - 私は兎が好きです
+      - 私は兎がすきです
+      - 私はうさぎが好きです
+      - 私はうさぎがすきです
+      - わたしは兎が好きです
+      - わたしは兎がすきです
+      - わたしはうさぎが好きです
+      - わたしはうさぎがすきです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 兎, reading: うさぎ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: i-like-rabbits
+    answers:
+      - 私は兎が好きです
+      - 私は兎がすきです
+      - 私はうさぎが好きです
+      - 私はうさぎがすきです
+      - わたしは兎が好きです
+      - わたしは兎がすきです
+      - わたしはうさぎが好きです
+      - わたしはうさぎがすきです
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: i-like-rabbits
+    choices:
+      - text: I like rabbits.
+        reading: ''
+      - text: I like cats.
+        reading: ''
+    prompt: 'Choose the meaning: 私は兎が好きです。'
+    answers:
+      - I like rabbits.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: i-like-turtles
+    prompt: 'Build this sentence: I like turtles. (polite)'
+    answers:
+      - 私は亀が好きです
+      - 私は亀がすきです
+      - 私はかめが好きです
+      - 私はかめがすきです
+      - わたしは亀が好きです
+      - わたしは亀がすきです
+      - わたしはかめが好きです
+      - わたしはかめがすきです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 亀, reading: かめ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: i-like-turtles
+    answers:
+      - 私は亀が好きです
+      - 私は亀がすきです
+      - 私はかめが好きです
+      - 私はかめがすきです
+      - わたしは亀が好きです
+      - わたしは亀がすきです
+      - わたしはかめが好きです
+      - わたしはかめがすきです
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: i-like-turtles
+    choices:
+      - text: I like turtles.
+        reading: ''
+      - text: I like cats.
+        reading: ''
+    prompt: 'Choose the meaning: 私は亀が好きです。'
+    answers:
+      - I like turtles.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: i-like-cows
+    prompt: 'Build this sentence: I like cows. (polite)'
+    answers:
+      - 私は牛が好きです
+      - 私は牛がすきです
+      - 私はうしが好きです
+      - 私はうしがすきです
+      - わたしは牛が好きです
+      - わたしは牛がすきです
+      - わたしはうしが好きです
+      - わたしはうしがすきです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 牛, reading: うし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: i-like-cows
+    answers:
+      - 私は牛が好きです
+      - 私は牛がすきです
+      - 私はうしが好きです
+      - 私はうしがすきです
+      - わたしは牛が好きです
+      - わたしは牛がすきです
+      - わたしはうしが好きです
+      - わたしはうしがすきです
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: i-like-cows
+    choices:
+      - text: I like cows.
+        reading: ''
+      - text: I like cats.
+        reading: ''
+    prompt: 'Choose the meaning: 私は牛が好きです。'
+    answers:
+      - I like cows.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: i-like-sheeps
+    prompt: 'Build this sentence: I like sheeps. (polite)'
+    answers:
+      - 私は羊が好きです
+      - 私は羊がすきです
+      - 私はひつじが好きです
+      - 私はひつじがすきです
+      - わたしは羊が好きです
+      - わたしは羊がすきです
+      - わたしはひつじが好きです
+      - わたしはひつじがすきです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 羊, reading: ひつじ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: i-like-sheeps
+    answers:
+      - 私は羊が好きです
+      - 私は羊がすきです
+      - 私はひつじが好きです
+      - 私はひつじがすきです
+      - わたしは羊が好きです
+      - わたしは羊がすきです
+      - わたしはひつじが好きです
+      - わたしはひつじがすきです
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: i-like-sheeps
+    choices:
+      - text: I like sheeps.
+        reading: ''
+      - text: I like cats.
+        reading: ''
+    prompt: 'Choose the meaning: 私は羊が好きです。'
+    answers:
+      - I like sheeps.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: i-like-monkeys
+    prompt: 'Build this sentence: I like monkeys. (polite)'
+    answers:
+      - 私は猿が好きです
+      - 私は猿がすきです
+      - 私はさるが好きです
+      - 私はさるがすきです
+      - わたしは猿が好きです
+      - わたしは猿がすきです
+      - わたしはさるが好きです
+      - わたしはさるがすきです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 猿, reading: さる, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: i-like-monkeys
+    answers:
+      - 私は猿が好きです
+      - 私は猿がすきです
+      - 私はさるが好きです
+      - 私はさるがすきです
+      - わたしは猿が好きです
+      - わたしは猿がすきです
+      - わたしはさるが好きです
+      - わたしはさるがすきです
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: i-like-monkeys
+    choices:
+      - text: I like monkeys.
+        reading: ''
+      - text: I like cats.
+        reading: ''
+    prompt: 'Choose the meaning: 私は猿が好きです。'
+    answers:
+      - I like monkeys.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: i-like-pigs
+    prompt: 'Build this sentence: I like pigs. (polite)'
+    answers:
+      - 私は豚が好きです
+      - 私は豚がすきです
+      - 私はぶたが好きです
+      - 私はぶたがすきです
+      - わたしは豚が好きです
+      - わたしは豚がすきです
+      - わたしはぶたが好きです
+      - わたしはぶたがすきです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 豚, reading: ぶた, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: i-like-pigs
+    answers:
+      - 私は豚が好きです
+      - 私は豚がすきです
+      - 私はぶたが好きです
+      - 私はぶたがすきです
+      - わたしは豚が好きです
+      - わたしは豚がすきです
+      - わたしはぶたが好きです
+      - わたしはぶたがすきです
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: i-like-pigs
+    choices:
+      - text: I like pigs.
+        reading: ''
+      - text: I like cats.
+        reading: ''
+    prompt: 'Choose the meaning: 私は豚が好きです。'
+    answers:
+      - I like pigs.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: i-like-magazines
+    prompt: 'Build this sentence: I like magazines. (polite)'
+    answers:
+      - 私は雑誌が好きです
+      - 私は雑誌がすきです
+      - 私はざっしが好きです
+      - 私はざっしがすきです
+      - わたしは雑誌が好きです
+      - わたしは雑誌がすきです
+      - わたしはざっしが好きです
+      - わたしはざっしがすきです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 雑誌, reading: ざっし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: i-like-magazines
+    answers:
+      - 私は雑誌が好きです
+      - 私は雑誌がすきです
+      - 私はざっしが好きです
+      - 私はざっしがすきです
+      - わたしは雑誌が好きです
+      - わたしは雑誌がすきです
+      - わたしはざっしが好きです
+      - わたしはざっしがすきです
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: i-like-magazines
+    choices:
+      - text: I like magazines.
+        reading: ''
+      - text: I like cats.
+        reading: ''
+    prompt: 'Choose the meaning: 私は雑誌が好きです。'
+    answers:
+      - I like magazines.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: i-like-newspapers
+    prompt: 'Build this sentence: I like newspapers. (polite)'
+    answers:
+      - 私は新聞が好きです
+      - 私は新聞がすきです
+      - 私はしんぶんが好きです
+      - 私はしんぶんがすきです
+      - わたしは新聞が好きです
+      - わたしは新聞がすきです
+      - わたしはしんぶんが好きです
+      - わたしはしんぶんがすきです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 新聞, reading: しんぶん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: i-like-newspapers
+    answers:
+      - 私は新聞が好きです
+      - 私は新聞がすきです
+      - 私はしんぶんが好きです
+      - 私はしんぶんがすきです
+      - わたしは新聞が好きです
+      - わたしは新聞がすきです
+      - わたしはしんぶんが好きです
+      - わたしはしんぶんがすきです
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: i-like-newspapers
+    choices:
+      - text: I like newspapers.
+        reading: ''
+      - text: I like cats.
+        reading: ''
+    prompt: 'Choose the meaning: 私は新聞が好きです。'
+    answers:
+      - I like newspapers.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: i-like-dictionarys
+    prompt: 'Build this sentence: I like dictionarys. (polite)'
+    answers:
+      - 私は辞書が好きです
+      - 私は辞書がすきです
+      - 私はじしょが好きです
+      - 私はじしょがすきです
+      - わたしは辞書が好きです
+      - わたしは辞書がすきです
+      - わたしはじしょが好きです
+      - わたしはじしょがすきです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 辞書, reading: じしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: i-like-dictionarys
+    answers:
+      - 私は辞書が好きです
+      - 私は辞書がすきです
+      - 私はじしょが好きです
+      - 私はじしょがすきです
+      - わたしは辞書が好きです
+      - わたしは辞書がすきです
+      - わたしはじしょが好きです
+      - わたしはじしょがすきです
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: i-like-dictionarys
+    choices:
+      - text: I like dictionarys.
+        reading: ''
+      - text: I like cats.
+        reading: ''
+    prompt: 'Choose the meaning: 私は辞書が好きです。'
+    answers:
+      - I like dictionarys.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: i-like-novels
+    prompt: 'Build this sentence: I like novels. (polite)'
+    answers:
+      - 私は小説が好きです
+      - 私は小説がすきです
+      - 私はしょうせつが好きです
+      - 私はしょうせつがすきです
+      - わたしは小説が好きです
+      - わたしは小説がすきです
+      - わたしはしょうせつが好きです
+      - わたしはしょうせつがすきです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 小説, reading: しょうせつ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: i-like-novels
+    answers:
+      - 私は小説が好きです
+      - 私は小説がすきです
+      - 私はしょうせつが好きです
+      - 私はしょうせつがすきです
+      - わたしは小説が好きです
+      - わたしは小説がすきです
+      - わたしはしょうせつが好きです
+      - わたしはしょうせつがすきです
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: i-like-novels
+    choices:
+      - text: I like novels.
+        reading: ''
+      - text: I like cats.
+        reading: ''
+    prompt: 'Choose the meaning: 私は小説が好きです。'
+    answers:
+      - I like novels.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: i-like-comics
+    prompt: 'Build this sentence: I like comics. (polite)'
+    answers:
+      - 私は漫画が好きです
+      - 私は漫画がすきです
+      - 私はまんがが好きです
+      - 私はまんががすきです
+      - わたしは漫画が好きです
+      - わたしは漫画がすきです
+      - わたしはまんがが好きです
+      - わたしはまんががすきです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 漫画, reading: まんが, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: i-like-comics
+    answers:
+      - 私は漫画が好きです
+      - 私は漫画がすきです
+      - 私はまんがが好きです
+      - 私はまんががすきです
+      - わたしは漫画が好きです
+      - わたしは漫画がすきです
+      - わたしはまんがが好きです
+      - わたしはまんががすきです
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: i-like-comics
+    choices:
+      - text: I like comics.
+        reading: ''
+      - text: I like cats.
+        reading: ''
+    prompt: 'Choose the meaning: 私は漫画が好きです。'
+    answers:
+      - I like comics.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: i-like-textbooks
+    prompt: 'Build this sentence: I like textbooks. (polite)'
+    answers:
+      - 私は教科書が好きです
+      - 私は教科書がすきです
+      - 私はきょうかしょが好きです
+      - 私はきょうかしょがすきです
+      - わたしは教科書が好きです
+      - わたしは教科書がすきです
+      - わたしはきょうかしょが好きです
+      - わたしはきょうかしょがすきです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 教科書, reading: きょうかしょ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: i-like-textbooks
+    answers:
+      - 私は教科書が好きです
+      - 私は教科書がすきです
+      - 私はきょうかしょが好きです
+      - 私はきょうかしょがすきです
+      - わたしは教科書が好きです
+      - わたしは教科書がすきです
+      - わたしはきょうかしょが好きです
+      - わたしはきょうかしょがすきです
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: i-like-textbooks
+    choices:
+      - text: I like textbooks.
+        reading: ''
+      - text: I like cats.
+        reading: ''
+    prompt: 'Choose the meaning: 私は教科書が好きです。'
+    answers:
+      - I like textbooks.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: i-like-picture-books
+    prompt: 'Build this sentence: I like picture books. (polite)'
+    answers:
+      - 私は絵本が好きです
+      - 私は絵本がすきです
+      - 私はえほんが好きです
+      - 私はえほんがすきです
+      - わたしは絵本が好きです
+      - わたしは絵本がすきです
+      - わたしはえほんが好きです
+      - わたしはえほんがすきです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 絵本, reading: えほん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: i-like-picture-books
+    answers:
+      - 私は絵本が好きです
+      - 私は絵本がすきです
+      - 私はえほんが好きです
+      - 私はえほんがすきです
+      - わたしは絵本が好きです
+      - わたしは絵本がすきです
+      - わたしはえほんが好きです
+      - わたしはえほんがすきです
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: i-like-picture-books
+    choices:
+      - text: I like picture books.
+        reading: ''
+      - text: I like cats.
+        reading: ''
+    prompt: 'Choose the meaning: 私は絵本が好きです。'
+    answers:
+      - I like picture books.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: i-like-letters
+    prompt: 'Build this sentence: I like letters. (polite)'
+    answers:
+      - 私は手紙が好きです
+      - 私は手紙がすきです
+      - 私はてがみが好きです
+      - 私はてがみがすきです
+      - わたしは手紙が好きです
+      - わたしは手紙がすきです
+      - わたしはてがみが好きです
+      - わたしはてがみがすきです
+    tiles:
+      - { text: 私, reading: わたし, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 手紙, reading: てがみ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: 好きです, reading: すきです, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: i-like-letters
+    answers:
+      - 私は手紙が好きです
+      - 私は手紙がすきです
+      - 私はてがみが好きです
+      - 私はてがみがすきです
+      - わたしは手紙が好きです
+      - わたしは手紙がすきです
+      - わたしはてがみが好きです
+      - わたしはてがみがすきです

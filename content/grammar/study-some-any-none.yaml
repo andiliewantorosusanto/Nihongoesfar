@@ -1,0 +1,356 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-some-any-none
+  kind: grammar
+  title: Something, someone, somewhere; nothing
+  japanese: 何かを食べます。
+  reading: なにかをたべます。
+  meaning: Something, someone, somewhere; nothing
+  level: N5
+  topic: Movement and expressions
+  tags:
+    - Study guide
+  note:
+    '何か (なにか) means something; 誰か (だれか) means someone; どこか means somewhere. 時々 (ときどき) means sometimes: it is
+    a frequency word, not a question word + か. With a negative predicate, 何も (なにも) means nothing / not
+    anything: 何もありません (なにもありません). 誰もいません (だれもいません) means nobody is here. どこにも行きません (どこにもいきません) means I do not
+    go anywhere. 何も can be read なんにも in colloquial speech.'
+  examples:
+    - japanese: 何かを食べます。
+      reading: なにかをたべます。
+      meaning: I eat something.
+      tokens:
+        - { text: 何か, reading: なにか, role: object, wordClass: phrase }
+        - { text: を, reading: を, role: particle, wordClass: particle }
+        - { text: 食べます, reading: たべます, role: predicate, wordClass: phrase }
+      translationTokens:
+        - { text: 'I ', role: implicit, implicit: true }
+        - { text: eat, role: predicate }
+        - { text: ' something', role: object }
+        - { text: ., role: implicit, implicit: true }
+    - japanese: 誰かがいます。
+      reading: だれかがいます。
+      meaning: Someone is here.
+      tokens:
+        - { text: 誰か, reading: だれか, role: topic, wordClass: phrase }
+        - { text: が, reading: が, role: particle, wordClass: particle }
+        - { text: います, reading: います, role: predicate, wordClass: phrase }
+      translationTokens:
+        - { text: Someone, role: topic }
+        - { text: ' is here', role: predicate }
+        - { text: ., role: implicit, implicit: true }
+    - japanese: どこかに行きます。
+      reading: どこかにいきます。
+      meaning: I go somewhere.
+      tokens:
+        - { text: どこか, reading: どこか, role: modifier, wordClass: phrase }
+        - { text: に, reading: に, role: particle, wordClass: particle }
+        - { text: 行きます, reading: いきます, role: predicate, wordClass: phrase }
+      translationTokens:
+        - { text: 'I ', role: implicit, implicit: true }
+        - { text: go, role: predicate }
+        - { text: ' somewhere', role: modifier }
+        - { text: ., role: implicit, implicit: true }
+    - japanese: 何もありません。
+      reading: なにもありません。
+      meaning: There is not anything.
+      tokens:
+        - { text: 何も, reading: なにも, role: object, wordClass: phrase }
+        - { text: ありません, reading: ありません, role: predicate, wordClass: phrase }
+      translationTokens:
+        - { text: There is not, role: predicate }
+        - { text: ' anything', role: object }
+        - { text: ., role: implicit, implicit: true }
+sentences:
+  i-eat-something:
+    text: 何かを食べます。
+    reading: なにかをたべます。
+    meaning: I eat something.
+    tokens:
+      - { text: 何か, reading: なにか, role: object, wordClass: phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べます, reading: たべます, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: eat, role: predicate }
+      - { text: ' something', role: object }
+      - { text: ., role: implicit, implicit: true }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      '何か (なにか) means something; 誰か (だれか) means someone; どこか means somewhere. 時々 (ときどき) means
+      sometimes: it is a frequency word, not a question word + か. With a negative predicate, 何も (なにも) means
+      nothing / not anything: 何もありません (なにもありません). 誰もいません (だれもいません) means nobody is here. どこにも行きません (どこにもいきません)
+      means I do not go anywhere. 何も can be read なんにも in colloquial speech.'
+  someone-is-here:
+    text: 誰かがいます。
+    reading: だれかがいます。
+    meaning: Someone is here.
+    tokens:
+      - { text: 誰か, reading: だれか, role: topic, wordClass: phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: Someone, role: topic }
+      - { text: ' is here', role: predicate }
+      - { text: ., role: implicit, implicit: true }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      '何か (なにか) means something; 誰か (だれか) means someone; どこか means somewhere. 時々 (ときどき) means
+      sometimes: it is a frequency word, not a question word + か. With a negative predicate, 何も (なにも) means
+      nothing / not anything: 何もありません (なにもありません). 誰もいません (だれもいません) means nobody is here. どこにも行きません (どこにもいきません)
+      means I do not go anywhere. 何も can be read なんにも in colloquial speech.'
+    form: polite
+  i-go-somewhere:
+    text: どこかに行きます。
+    reading: どこかにいきます。
+    meaning: I go somewhere.
+    tokens:
+      - { text: どこか, reading: どこか, role: modifier, wordClass: phrase }
+      - { text: に, reading: に, role: particle, wordClass: particle }
+      - { text: 行きます, reading: いきます, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: go, role: predicate }
+      - { text: ' somewhere', role: modifier }
+      - { text: ., role: implicit, implicit: true }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      '何か (なにか) means something; 誰か (だれか) means someone; どこか means somewhere. 時々 (ときどき) means
+      sometimes: it is a frequency word, not a question word + か. With a negative predicate, 何も (なにも) means
+      nothing / not anything: 何もありません (なにもありません). 誰もいません (だれもいません) means nobody is here. どこにも行きません (どこにもいきません)
+      means I do not go anywhere. 何も can be read なんにも in colloquial speech.'
+  there-is-not-anything:
+    text: 何もありません。
+    reading: なにもありません。
+    meaning: There is not anything.
+    tokens:
+      - { text: 何も, reading: なにも, role: object, wordClass: phrase }
+      - { text: ありません, reading: ありません, role: predicate, wordClass: phrase }
+    translationTokens:
+      - { text: There is not, role: predicate }
+      - { text: ' anything', role: object }
+      - { text: ., role: implicit, implicit: true }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      '何か (なにか) means something; 誰か (だれか) means someone; どこか means somewhere. 時々 (ときどき) means
+      sometimes: it is a frequency word, not a question word + か. With a negative predicate, 何も (なにも) means
+      nothing / not anything: 何もありません (なにもありません). 誰もいません (だれもいません) means nobody is here. どこにも行きません (どこにもいきません)
+      means I do not go anywhere. 何も can be read なんにも in colloquial speech.'
+  i-drink-something:
+    text: 何かを飲みます。
+    reading: なにかをのみます。
+    meaning: I drink something.
+    tokens:
+      - { text: 何か, reading: なにか, role: object, wordClass: phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲みます, reading: のみます, role: predicate, wordClass: phrase }
+    hint: 何か means something; どこか means somewhere.
+    explanation: 何かを飲みます。 means “I drink something.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+  i-study-somewhere:
+    text: どこかで勉強します。
+    reading: どこかでべんきょうします。
+    meaning: I study somewhere.
+    tokens:
+      - { text: どこか, reading: どこか, role: modifier, wordClass: phrase }
+      - { text: で, reading: で, role: particle, wordClass: particle }
+      - { text: 勉強します, reading: べんきょうします, role: predicate, wordClass: phrase }
+    hint: 何か means something; どこか means somewhere.
+    explanation: どこかで勉強します。 means “I study somewhere.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-eat-something
+    choices:
+      - text: I eat something.
+        reading: ''
+      - text: Someone is here.
+        reading: ''
+      - text: I go somewhere.
+        reading: ''
+      - text: There is not anything.
+        reading: ''
+    answers:
+      - I eat something.
+  - id: pattern
+    type: pattern-choice
+    sentence: someone-is-here
+    choices:
+      - sentence: i-eat-something
+      - sentence: someone-is-here
+    prompt: 'Choose the Japanese: Someone is here.'
+    answers:
+      - 誰かがいます
+      - だれかがいます
+  - id: gap
+    type: gap
+    sentence: someone-is-here
+    prompt: 'Fill the missing part: Someone is here. (polite)'
+    answers:
+      - が
+      - が
+    context:
+      text: 誰か___います。
+      reading: だれか___います。
+      tokens:
+        - { text: 誰か, reading: だれか, role: topic, wordClass: phrase }
+        - { text: ___, reading: ___, role: particle, wordClass: particle }
+        - { text: います, reading: います, role: predicate, wordClass: phrase }
+  - id: tiles
+    type: tiles
+    sentence: someone-is-here
+    prompt: 'Build: Someone is here. (polite)'
+    answers:
+      - 誰かがいます
+      - だれかがいます
+    tiles:
+      - { text: 誰か, reading: だれか, role: topic, wordClass: phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: phrase }
+  - id: typing
+    type: typing
+    sentence: i-go-somewhere
+    answers:
+      - どこかに行きます
+      - どこかにいきます
+  - id: alternate
+    type: typing
+    sentence: there-is-not-anything
+    alternate: true
+    prompt: 'Another example: There is not anything. (polite)'
+    answers:
+      - 何もありません
+      - なにもありません
+  - id: expanded-1-meaning-choice
+    type: meaning-choice
+    sentence: i-drink-something
+    choices:
+      - text: I drink something.
+        reading: ''
+      - text: I eat something.
+        reading: ''
+      - text: Someone is here.
+        reading: ''
+      - text: I go somewhere.
+        reading: ''
+    answers:
+      - I drink something.
+  - id: expanded-1-typing
+    type: typing
+    sentence: i-drink-something
+    explanation: 何かを飲みます。 means “I drink something.” Write the complete sentence, including the indicated ending.
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: i-drink-something
+    prompt: 'Build this sentence: I drink something. (polite)'
+    explanation: 何かを飲みます。 means “I drink something.” Keep the particles with their phrases and put the predicate last.
+  - id: expanded-2-meaning-choice
+    type: meaning-choice
+    sentence: i-study-somewhere
+    choices:
+      - text: I study somewhere.
+        reading: ''
+      - text: I eat something.
+        reading: ''
+      - text: Someone is here.
+        reading: ''
+      - text: I go somewhere.
+        reading: ''
+    answers:
+      - I study somewhere.
+  - id: expanded-2-typing
+    type: typing
+    sentence: i-study-somewhere
+    explanation: どこかで勉強します。 means “I study somewhere.” Write the complete sentence, including the indicated ending.
+  - id: expanded-2-tiles
+    type: tiles
+    sentence: i-study-somewhere
+    prompt: 'Build this sentence: I study somewhere. (polite)'
+    explanation: どこかで勉強します。 means “I study somewhere.” Keep the particles with their phrases and put the predicate last.
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: i-drink-something
+    choices:
+      - sentence: i-drink-something
+      - text: 何かを食べます。
+        reading: なにかをたべます。
+        tokens:
+          - { text: 何か, reading: なにか, role: object, wordClass: phrase }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - { text: 食べます, reading: たべます, role: predicate, wordClass: phrase }
+      - text: 誰かがいます。
+        reading: だれかがいます。
+        tokens:
+          - { text: 誰か, reading: だれか, role: topic, wordClass: phrase }
+          - { text: が, reading: が, role: particle, wordClass: particle }
+          - { text: います, reading: います, role: predicate, wordClass: phrase }
+      - text: どこかに行きます。
+        reading: どこかにいきます。
+        tokens:
+          - { text: どこか, reading: どこか, role: modifier, wordClass: phrase }
+          - { text: に, reading: に, role: particle, wordClass: particle }
+          - { text: 行きます, reading: いきます, role: predicate, wordClass: phrase }
+    prompt: 'Choose the Japanese: I drink something. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 何かを飲みます。 for “I drink something.” The other sentences describe different situations.
+    answers:
+      - 何かを飲みます。
+      - なにかをのみます。
+  - id: expanded-1-gap
+    type: gap
+    sentence: i-drink-something
+    prompt: 'Fill the missing part: I drink something. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 飲みます (のみます). Together, the sentence means “I drink something.”
+    answers:
+      - 飲みます
+      - のみます
+    context:
+      text: 何かを___。
+      reading: なにかを___。
+      meaning: I drink something.
+  - id: expanded-2-pattern
+    type: pattern-choice
+    sentence: i-study-somewhere
+    choices:
+      - sentence: i-study-somewhere
+      - text: 何かを食べます。
+        reading: なにかをたべます。
+        tokens:
+          - { text: 何か, reading: なにか, role: object, wordClass: phrase }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - { text: 食べます, reading: たべます, role: predicate, wordClass: phrase }
+      - text: 誰かがいます。
+        reading: だれかがいます。
+        tokens:
+          - { text: 誰か, reading: だれか, role: topic, wordClass: phrase }
+          - { text: が, reading: が, role: particle, wordClass: particle }
+          - { text: います, reading: います, role: predicate, wordClass: phrase }
+      - text: どこかに行きます。
+        reading: どこかにいきます。
+        tokens:
+          - { text: どこか, reading: どこか, role: modifier, wordClass: phrase }
+          - { text: に, reading: に, role: particle, wordClass: particle }
+          - { text: 行きます, reading: いきます, role: predicate, wordClass: phrase }
+    prompt: 'Choose the Japanese: I study somewhere. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose どこかで勉強します。 for “I study somewhere.” The other sentences describe different situations.
+    answers:
+      - どこかで勉強します。
+      - どこかでべんきょうします。
+  - id: expanded-2-gap
+    type: gap
+    sentence: i-study-somewhere
+    prompt: 'Fill the missing part: I study somewhere. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 勉強します (べんきょうします). Together, the sentence means “I study somewhere.”
+    answers:
+      - 勉強します
+      - べんきょうします
+    context:
+      text: どこかで___。
+      reading: どこかで___。
+      meaning: I study somewhere.

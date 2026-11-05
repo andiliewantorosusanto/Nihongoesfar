@@ -1,0 +1,422 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-kono-sono-ano
+  kind: grammar
+  note:
+    この / その / あの must be followed by a noun. この本 means “this book”; この alone cannot replace これ. The near-me
+    / near-you / far-from-both distinction is the same.
+  tags:
+    - Study guide
+  level: N5
+  title: この・その・あの — before a noun
+  topic: Grammar basics
+  romaji: kono / sono / ano
+  meaning: この・その・あの — before a noun
+  reading: このほんはわたしのです。
+  examples:
+    - tokens:
+        - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+        - { role: topic, text: 本, reading: ほん, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 私のです, reading: わたしのです, wordClass: predicate }
+      meaning: This book is mine.
+      reading: このほんはわたしのです。
+      japanese: この本は私のです。
+      translationTokens:
+        - { role: modifier, text: 'This ' }
+        - { role: topic, text: book }
+        - { role: predicate, text: ' is mine.' }
+    - tokens:
+        - { role: modifier, text: その, reading: その, wordClass: noun phrase }
+        - { role: topic, text: 時計, reading: とけい, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 先生のです, reading: せんせいのです, wordClass: predicate }
+      meaning: That clock is the teacher's.
+      reading: そのとけいはせんせいのです。
+      japanese: その時計は先生のです。
+      translationTokens:
+        - { role: modifier, text: 'That ' }
+        - { role: topic, text: clock }
+        - { role: predicate, text: " is the teacher's." }
+    - tokens:
+        - { role: modifier, text: あの, reading: あの, wordClass: noun phrase }
+        - { role: topic, text: 車, reading: くるま, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 母のです, reading: ははのです, wordClass: predicate }
+      meaning: That car over there is my mother's.
+      reading: あのくるまはははのです。
+      japanese: あの車は母のです。
+      translationTokens:
+        - { role: modifier, text: 'That ' }
+        - { role: topic, text: car }
+        - { role: modifier, text: ' over there' }
+        - { role: predicate, text: " is my mother's." }
+    - tokens:
+        - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+        - { role: topic, text: かばん, reading: かばん, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 私のです, reading: わたしのです, wordClass: predicate }
+      meaning: This bag is mine.
+      reading: このかばんはわたしのです。
+      japanese: このかばんは私のです。
+      translationTokens:
+        - { role: modifier, text: 'This ' }
+        - { role: topic, text: bag }
+        - { role: predicate, text: ' is mine.' }
+  japanese: この本は私のです。
+  references:
+    - rows:
+        - - text: この
+            reading: この
+          - text: この本
+            reading: このほん
+        - - text: その
+            reading: その
+          - text: その時計
+            reading: そのとけい
+        - - text: あの
+            reading: あの
+          - text: あの車
+            reading: あのくるま
+      columns:
+        - Pattern
+        - Example
+      heading: A pointing word plus a noun
+sentences:
+  this-book-is-mine:
+    text: この本は私のです。
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+      - { role: topic, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 私のです, reading: わたしのです, wordClass: predicate }
+    meaning: This book is mine.
+    reading: このほんはわたしのです。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: book }
+      - { role: predicate, text: ' is mine.' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      この / その / あの must be followed by a noun. この本 means “this book”; この alone cannot replace これ. The
+      near-me / near-you / far-from-both distinction is the same.
+  that-clock-is-the-teacher-s:
+    text: その時計は先生のです。
+    tokens:
+      - { role: modifier, text: その, reading: その, wordClass: noun phrase }
+      - { role: topic, text: 時計, reading: とけい, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 先生のです, reading: せんせいのです, wordClass: predicate }
+    meaning: That clock is the teacher's.
+    reading: そのとけいはせんせいのです。
+    translationTokens:
+      - { role: modifier, text: 'That ' }
+      - { role: topic, text: clock }
+      - { role: predicate, text: " is the teacher's." }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      この / その / あの must be followed by a noun. この本 means “this book”; この alone cannot replace これ. The
+      near-me / near-you / far-from-both distinction is the same.
+    form: polite
+  that-car-over-there-is-my-mother-s:
+    text: あの車は母のです。
+    tokens:
+      - { role: modifier, text: あの, reading: あの, wordClass: noun phrase }
+      - { role: topic, text: 車, reading: くるま, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 母のです, reading: ははのです, wordClass: predicate }
+    meaning: That car over there is my mother's.
+    reading: あのくるまはははのです。
+    translationTokens:
+      - { role: modifier, text: 'That ' }
+      - { role: topic, text: car }
+      - { role: modifier, text: ' over there' }
+      - { role: predicate, text: " is my mother's." }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      この / その / あの must be followed by a noun. この本 means “this book”; この alone cannot replace これ. The
+      near-me / near-you / far-from-both distinction is the same.
+  this-bag-is-mine:
+    text: このかばんは私のです。
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+      - { role: topic, text: かばん, reading: かばん, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 私のです, reading: わたしのです, wordClass: predicate }
+    meaning: This bag is mine.
+    reading: このかばんはわたしのです。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: bag }
+      - { role: predicate, text: ' is mine.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      この / その / あの must be followed by a noun. この本 means “this book”; この alone cannot replace これ. The
+      near-me / near-you / far-from-both distinction is the same.
+  this-magazine-is-mine:
+    tokens:
+      - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+      - { role: topic, text: 雑誌, reading: ざっし, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 私のです, reading: わたしのです, wordClass: predicate }
+    meaning: This magazine is mine.
+    reading: このざっしはわたしのです。
+    translationTokens:
+      - { role: modifier, text: 'This ' }
+      - { role: topic, text: magazine }
+      - { role: predicate, text: ' is mine.' }
+    text: この雑誌は私のです。
+    hint: Check the particles and sentence ending.
+    explanation:
+      この雑誌は私のです。 means “This magazine is mine.” Match the vocabulary, particles, and tense to the
+      English sentence.
+    form: polite
+  that-bicycle-over-there-is-my-mother-s:
+    tokens:
+      - { role: modifier, text: あの, reading: あの, wordClass: noun phrase }
+      - { role: topic, text: 自転車, reading: じてんしゃ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 母のです, reading: ははのです, wordClass: predicate }
+    meaning: That bicycle over there is my mother's.
+    reading: あのじてんしゃはははのです。
+    translationTokens:
+      - { role: modifier, text: 'That ' }
+      - { role: topic, text: bicycle }
+      - { role: modifier, text: ' over there' }
+      - { role: predicate, text: " is my mother's." }
+    text: あの自転車は母のです。
+    hint: Check the particles and sentence ending.
+    explanation:
+      あの自転車は母のです。 means “That bicycle over there is my mother's.” Match the vocabulary, particles, and
+      tense to the English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: this-book-is-mine
+    choices:
+      - text: This book is mine.
+        reading: ''
+      - text: That clock is the teacher's.
+        reading: ''
+      - text: That car over there is my mother's.
+        reading: ''
+      - text: This bag is mine.
+        reading: ''
+    answers:
+      - This book is mine.
+  - id: pattern
+    type: pattern-choice
+    sentence: that-clock-is-the-teacher-s
+    choices:
+      - sentence: this-book-is-mine
+      - sentence: that-clock-is-the-teacher-s
+    prompt: "Choose the Japanese: That clock is the teacher's."
+    answers:
+      - その時計は先生のです
+      - その時計はせんせいのです
+      - そのとけいは先生のです
+      - そのとけいはせんせいのです
+  - id: gap
+    type: gap
+    sentence: that-clock-is-the-teacher-s
+    prompt: "Fill the missing part: That clock is the teacher's. (polite)"
+    answers:
+      - その
+      - その
+    context:
+      text: ___時計は先生のです。
+      tokens:
+        - { role: modifier, text: ___, reading: ___, wordClass: noun phrase }
+        - { role: topic, text: 時計, reading: とけい, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 先生のです, reading: せんせいのです, wordClass: predicate }
+      reading: ___とけいはせんせいのです。
+  - id: tiles
+    type: tiles
+    sentence: that-clock-is-the-teacher-s
+    prompt: "Build: That clock is the teacher's. (polite)"
+    answers:
+      - その時計は先生のです
+      - その時計はせんせいのです
+      - そのとけいは先生のです
+      - そのとけいはせんせいのです
+    tiles:
+      - { role: modifier, text: その, reading: その, wordClass: noun phrase }
+      - { role: topic, text: 時計, reading: とけい, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 先生のです, reading: せんせいのです, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: that-car-over-there-is-my-mother-s
+    answers:
+      - あの車は母のです
+      - あの車はははのです
+      - あのくるまは母のです
+      - あのくるまはははのです
+  - id: alternate
+    type: typing
+    sentence: this-bag-is-mine
+    alternate: true
+    prompt: 'Another example: This bag is mine. (polite)'
+    answers:
+      - このかばんは私のです
+      - このかばんはわたしのです
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: this-magazine-is-mine
+    choices:
+      - text: This magazine is mine.
+        reading: ''
+      - text: This book is mine.
+        reading: ''
+      - text: That clock is the teacher's.
+        reading: ''
+      - text: That car over there is my mother's.
+        reading: ''
+    answers:
+      - This magazine is mine.
+  - id: expanded-1-typing
+    type: typing
+    sentence: this-magazine-is-mine
+    explanation: この雑誌は私のです。 means “This magazine is mine.” Write the complete sentence, including the indicated ending.
+    answers:
+      - この雑誌は私のです
+      - このざっしはわたしのです
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: this-magazine-is-mine
+    prompt: 'Build this sentence: This magazine is mine. (polite)'
+    explanation:
+      この雑誌は私のです。 means “This magazine is mine.” Keep the particles with their phrases and put the
+      predicate last.
+    answers:
+      - この雑誌は私のです
+      - このざっしはわたしのです
+  - id: expanded-2-meaning
+    type: meaning-choice
+    sentence: that-bicycle-over-there-is-my-mother-s
+    choices:
+      - text: That bicycle over there is my mother's.
+        reading: ''
+      - text: This book is mine.
+        reading: ''
+      - text: That clock is the teacher's.
+        reading: ''
+      - text: That car over there is my mother's.
+        reading: ''
+    answers:
+      - That bicycle over there is my mother's.
+  - id: expanded-2-typing
+    type: typing
+    sentence: that-bicycle-over-there-is-my-mother-s
+    explanation:
+      あの自転車は母のです。 means “That bicycle over there is my mother's.” Write the complete sentence,
+      including the indicated ending.
+    answers:
+      - あの自転車は母のです
+      - あのじてんしゃはははのです
+  - id: expanded-2-tiles
+    type: tiles
+    sentence: that-bicycle-over-there-is-my-mother-s
+    prompt: "Build this sentence: That bicycle over there is my mother's. (polite)"
+    explanation:
+      あの自転車は母のです。 means “That bicycle over there is my mother's.” Keep the particles with their phrases
+      and put the predicate last.
+    answers:
+      - あの自転車は母のです
+      - あのじてんしゃはははのです
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: this-magazine-is-mine
+    choices:
+      - sentence: this-magazine-is-mine
+      - text: この本は私のです。
+        reading: このほんはわたしのです。
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+          - { role: topic, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 私のです, reading: わたしのです, wordClass: predicate }
+      - text: その時計は先生のです。
+        reading: そのとけいはせんせいのです。
+        tokens:
+          - { role: modifier, text: その, reading: その, wordClass: noun phrase }
+          - { role: topic, text: 時計, reading: とけい, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 先生のです, reading: せんせいのです, wordClass: predicate }
+      - text: あの車は母のです。
+        reading: あのくるまはははのです。
+        tokens:
+          - { role: modifier, text: あの, reading: あの, wordClass: noun phrase }
+          - { role: topic, text: 車, reading: くるま, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 母のです, reading: ははのです, wordClass: predicate }
+    prompt: 'Choose the Japanese: This magazine is mine. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose この雑誌は私のです。 for “This magazine is mine.” The other sentences describe different situations.
+    answers:
+      - この雑誌は私のです
+      - このざっしはわたしのです
+  - id: expanded-1-gap
+    type: gap
+    sentence: this-magazine-is-mine
+    prompt: 'Fill the missing part: This magazine is mine. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 私のです (わたしのです). Together, the sentence means “This magazine is mine.”
+    answers:
+      - 私のです
+      - わたしのです
+    context:
+      meaning: This magazine is mine.
+      reading: このざっしは___。
+      text: この雑誌は___。
+  - id: expanded-2-pattern
+    type: pattern-choice
+    sentence: that-bicycle-over-there-is-my-mother-s
+    choices:
+      - sentence: that-bicycle-over-there-is-my-mother-s
+      - text: この本は私のです。
+        reading: このほんはわたしのです。
+        tokens:
+          - { role: modifier, text: この, reading: この, wordClass: noun phrase }
+          - { role: topic, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 私のです, reading: わたしのです, wordClass: predicate }
+      - text: その時計は先生のです。
+        reading: そのとけいはせんせいのです。
+        tokens:
+          - { role: modifier, text: その, reading: その, wordClass: noun phrase }
+          - { role: topic, text: 時計, reading: とけい, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 先生のです, reading: せんせいのです, wordClass: predicate }
+      - text: あの車は母のです。
+        reading: あのくるまはははのです。
+        tokens:
+          - { role: modifier, text: あの, reading: あの, wordClass: noun phrase }
+          - { role: topic, text: 車, reading: くるま, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 母のです, reading: ははのです, wordClass: predicate }
+    prompt: "Choose the Japanese: That bicycle over there is my mother's. (polite)"
+    hint: Match both the meaning and the sentence ending.
+    explanation:
+      Choose あの自転車は母のです。 for “That bicycle over there is my mother's.” The other sentences describe
+      different situations.
+    answers:
+      - あの自転車は母のです
+      - あのじてんしゃはははのです
+  - id: expanded-2-gap
+    type: gap
+    sentence: that-bicycle-over-there-is-my-mother-s
+    prompt: "Fill the missing part: That bicycle over there is my mother's. (polite)"
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 母のです (ははのです). Together, the sentence means “That bicycle over there is my mother's.”
+    answers:
+      - 母のです
+      - ははのです
+    context:
+      meaning: That bicycle over there is my mother's.
+      reading: あのじてんしゃは___。
+      text: あの自転車は___。

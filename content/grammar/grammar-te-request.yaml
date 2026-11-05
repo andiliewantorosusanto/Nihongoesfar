@@ -1,0 +1,1143 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-te-request
+  kind: grammar
+  note:
+    'Verb て-form + ください makes a request. 書く becomes 書いて. て-form changes depend on the verb group: 食べる→食べて,
+    読む→読んで, する→して, 来る→来て; 行く is exceptional: 行って.'
+  tags:
+    - Grammar
+    - te-request
+  level: N5
+  title: 'Requests: てください'
+  topic: Sentence building
+  lesson:
+    goal: Make a polite request using a verb's て-form.
+    group: Requests and ongoing actions
+    order: 24
+    recap: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+    examples:
+      - tokens:
+          - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 読んでください, reading: よんでください, wordClass: predicate }
+        meaning: Please read the book.
+        reading: ほんをよんでください。
+        japanese: 本を読んでください。
+        translationTokens:
+          - { role: predicate, text: 'Please read ' }
+          - { role: object, text: the book. }
+      - tokens:
+          - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 飲んでください, reading: のんでください, wordClass: predicate }
+        meaning: Please drink the water.
+        reading: みずをのんでください。
+        japanese: 水を飲んでください。
+        translationTokens:
+          - { role: predicate, text: 'Please drink ' }
+          - { role: object, text: the water. }
+      - tokens:
+          - { role: object, text: 名前, reading: なまえ, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 書いてください, reading: かいてください, wordClass: predicate }
+        meaning: Please write your name.
+        reading: なまえをかいてください。
+        japanese: 名前を書いてください。
+        translationTokens:
+          - { role: predicate, text: 'Please write ' }
+          - { role: object, text: your name. }
+    comparison: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+    vocabulary:
+      - text: 本
+        meaning: book
+        reading: ほん
+      - text: 読んで
+        meaning: read (て-form)
+        reading: よんで
+      - text: 水
+        meaning: water
+        reading: みず
+      - text: 飲んで
+        meaning: drink (て-form)
+        reading: のんで
+      - text: 名前
+        meaning: name
+        reading: なまえ
+      - text: 書いて
+        meaning: write (て-form)
+        reading: かいて
+      - text: パン
+        meaning: bread
+        reading: ぱん
+      - text: 食べて
+        meaning: eat (て-form)
+        reading: たべて
+    prerequisites:
+      - grammar-masu
+      - grammar-object
+  meaning: Please write your name.
+  reading: なまえをかいてください。
+  examples:
+    - tokens:
+        - { role: object, text: 名前, reading: なまえ, wordClass: noun }
+        - { role: particle, text: を, reading: を, wordClass: object particle }
+        - {
+            role: predicate,
+            text: 書いてください,
+            reading: かいてください,
+            wordClass: verb + request expression,
+          }
+      meaning: Please write your name.
+      reading: なまえをかいてください。
+      japanese: 名前を書いてください。
+      translationTokens:
+        - { role: predicate, text: Please write, implicit: false }
+        - { role: object, text: ' your name.', implicit: false }
+  exercise:
+    tiles:
+      - 名前
+      - を
+      - 書いて
+      - ください
+    prompt: 'Build: “Please write your name.”'
+    answers:
+      - 名前を書いてください
+      - なまえをかいてください
+    explanation:
+      'Verb て-form + ください makes a request. 書く becomes 書いて. て-form changes depend on the verb group:
+      食べる→食べて, 読む→読んで, する→して, 来る→来て; 行く is exceptional: 行って.'
+  japanese: 名前を書いてください。
+sentences:
+  please-read-the-book:
+    text: 本を読んでください。
+    tiles:
+      - { text: 本, reading: ほん }
+      - { text: を, reading: を }
+      - { text: 読んで, reading: よんで }
+      - { text: ください, reading: ください }
+    tokens:
+      - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 読んでください, reading: よんでください, wordClass: predicate }
+    meaning: Please read the book.
+    reading: ほんをよんでください。
+    translationTokens:
+      - { role: predicate, text: 'Please read ' }
+      - { role: object, text: the book. }
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+  please-drink-the-water:
+    text: 水を飲んでください。
+    tiles:
+      - { text: 水, reading: みず }
+      - { text: を, reading: を }
+      - { text: 飲んで, reading: のんで }
+      - { text: ください, reading: ください }
+    tokens:
+      - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 飲んでください, reading: のんでください, wordClass: predicate }
+    meaning: Please drink the water.
+    reading: みずをのんでください。
+    translationTokens:
+      - { role: predicate, text: 'Please drink ' }
+      - { role: object, text: the water. }
+    form: casual
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+  please-write-your-name:
+    text: 名前を書いてください。
+    tiles:
+      - { text: 名前, reading: なまえ }
+      - { text: を, reading: を }
+      - { text: 書いて, reading: かいて }
+      - { text: ください, reading: ください }
+    tokens:
+      - { role: object, text: 名前, reading: なまえ, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 書いてください, reading: かいてください, wordClass: predicate }
+    meaning: Please write your name.
+    reading: なまえをかいてください。
+    translationTokens:
+      - { role: predicate, text: 'Please write ' }
+      - { role: object, text: your name. }
+    form: casual
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+  please-eat-the-bread:
+    text: パンを食べてください。
+    tiles:
+      - { text: パン, reading: ぱん }
+      - { text: を, reading: を }
+      - { text: 食べて, reading: たべて }
+      - { text: ください, reading: ください }
+    tokens:
+      - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 食べてください, reading: たべてください, wordClass: predicate }
+    meaning: Please eat the bread.
+    reading: ぱんをたべてください。
+    translationTokens:
+      - { role: predicate, text: 'Please eat ' }
+      - { role: object, text: the bread. }
+    form: casual
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+  please-read-the-magazine:
+    text: 雑誌を読んでください。
+    reading: ざっしをよんでください。
+    meaning: Please read the magazine.
+    tiles:
+      - { text: 雑誌, reading: ざっし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 雑誌, reading: ざっし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでください, reading: よんでください, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'Please read ', role: predicate }
+      - { text: the magazine., role: object }
+    form: casual
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+  please-read-the-newspaper:
+    text: 新聞を読んでください。
+    reading: しんぶんをよんでください。
+    meaning: Please read the newspaper.
+    tiles:
+      - { text: 新聞, reading: しんぶん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 新聞, reading: しんぶん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでください, reading: よんでください, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'Please read ', role: predicate }
+      - { text: the newspaper., role: object }
+    form: casual
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+  please-read-the-dictionary:
+    text: 辞書を読んでください。
+    reading: じしょをよんでください。
+    meaning: Please read the dictionary.
+    tiles:
+      - { text: 辞書, reading: じしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 辞書, reading: じしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでください, reading: よんでください, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'Please read ', role: predicate }
+      - { text: the dictionary., role: object }
+    form: casual
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+  please-read-the-novel:
+    text: 小説を読んでください。
+    reading: しょうせつをよんでください。
+    meaning: Please read the novel.
+    tiles:
+      - { text: 小説, reading: しょうせつ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 小説, reading: しょうせつ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでください, reading: よんでください, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'Please read ', role: predicate }
+      - { text: the novel., role: object }
+    form: casual
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+  please-read-the-comic:
+    text: 漫画を読んでください。
+    reading: まんがをよんでください。
+    meaning: Please read the comic.
+    tiles:
+      - { text: 漫画, reading: まんが, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 漫画, reading: まんが, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでください, reading: よんでください, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'Please read ', role: predicate }
+      - { text: the comic., role: object }
+    form: casual
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+  please-read-the-textbook:
+    text: 教科書を読んでください。
+    reading: きょうかしょをよんでください。
+    meaning: Please read the textbook.
+    tiles:
+      - { text: 教科書, reading: きょうかしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 教科書, reading: きょうかしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでください, reading: よんでください, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'Please read ', role: predicate }
+      - { text: the textbook., role: object }
+    form: casual
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+  please-read-the-picture-book:
+    text: 絵本を読んでください。
+    reading: えほんをよんでください。
+    meaning: Please read the picture book.
+    tiles:
+      - { text: 絵本, reading: えほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 絵本, reading: えほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでください, reading: よんでください, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'Please read ', role: predicate }
+      - { text: the picture book., role: object }
+    form: casual
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+  please-read-the-letter:
+    text: 手紙を読んでください。
+    reading: てがみをよんでください。
+    meaning: Please read the letter.
+    tiles:
+      - { text: 手紙, reading: てがみ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 手紙, reading: てがみ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでください, reading: よんでください, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'Please read ', role: predicate }
+      - { text: the letter., role: object }
+    form: casual
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+  please-read-the-diary:
+    text: 日記を読んでください。
+    reading: にっきをよんでください。
+    meaning: Please read the diary.
+    tiles:
+      - { text: 日記, reading: にっき, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 日記, reading: にっき, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでください, reading: よんでください, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'Please read ', role: predicate }
+      - { text: the diary., role: object }
+    form: casual
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+  please-read-the-article:
+    text: 記事を読んでください。
+    reading: きじをよんでください。
+    meaning: Please read the article.
+    tiles:
+      - { text: 記事, reading: きじ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 記事, reading: きじ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んでください, reading: よんでください, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'Please read ', role: predicate }
+      - { text: the article., role: object }
+    form: casual
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+  please-drink-the-tea:
+    text: お茶を飲んでください。
+    reading: おちゃをのんでください。
+    meaning: Please drink the tea.
+    tiles:
+      - { text: お茶, reading: おちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んで, reading: のんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: お茶, reading: おちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでください, reading: のんでください, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'Please drink ', role: predicate }
+      - { text: the tea., role: object }
+    form: casual
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+  please-drink-the-milk:
+    text: 牛乳を飲んでください。
+    reading: ぎゅうにゅうをのんでください。
+    meaning: Please drink the milk.
+    tiles:
+      - { text: 牛乳, reading: ぎゅうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んで, reading: のんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 牛乳, reading: ぎゅうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでください, reading: のんでください, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'Please drink ', role: predicate }
+      - { text: the milk., role: object }
+    form: casual
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+  please-drink-the-coffee:
+    text: コーヒーを飲んでください。
+    reading: こーひーをのんでください。
+    meaning: Please drink the coffee.
+    tiles:
+      - { text: コーヒー, reading: こーひー, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んで, reading: のんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: コーヒー, reading: こーひー, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでください, reading: のんでください, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'Please drink ', role: predicate }
+      - { text: the coffee., role: object }
+    form: casual
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+  please-drink-the-juice:
+    text: ジュースを飲んでください。
+    reading: じゅーすをのんでください。
+    meaning: Please drink the juice.
+    tiles:
+      - { text: ジュース, reading: じゅーす, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んで, reading: のんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: ジュース, reading: じゅーす, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでください, reading: のんでください, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'Please drink ', role: predicate }
+      - { text: the juice., role: object }
+    form: casual
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+  please-drink-the-black-tea:
+    text: 紅茶を飲んでください。
+    reading: こうちゃをのんでください。
+    meaning: Please drink the black tea.
+    tiles:
+      - { text: 紅茶, reading: こうちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んで, reading: のんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 紅茶, reading: こうちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでください, reading: のんでください, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'Please drink ', role: predicate }
+      - { text: the black tea., role: object }
+    form: casual
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+  please-drink-the-green-tea:
+    text: 緑茶を飲んでください。
+    reading: りょくちゃをのんでください。
+    meaning: Please drink the green tea.
+    tiles:
+      - { text: 緑茶, reading: りょくちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んで, reading: のんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 緑茶, reading: りょくちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでください, reading: のんでください, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'Please drink ', role: predicate }
+      - { text: the green tea., role: object }
+    form: casual
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+  please-drink-the-soy-milk:
+    text: 豆乳を飲んでください。
+    reading: とうにゅうをのんでください。
+    meaning: Please drink the soy milk.
+    tiles:
+      - { text: 豆乳, reading: とうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んで, reading: のんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 豆乳, reading: とうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んでください, reading: のんでください, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'Please drink ', role: predicate }
+      - { text: the soy milk., role: object }
+    form: casual
+    hint: The request needs the verb's て-form followed by ください.
+    explanation: 'Use the て-form before ください: 読む→読んで, 飲む→飲んで, 書く→書いて, 食べる→食べて. Do not use the ます form here.'
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: please-read-the-book
+    choices:
+      - text: Please read the book.
+        reading: ''
+      - text: I read a book.
+        reading: ''
+    answers:
+      - Please read the book.
+  - id: pattern
+    type: pattern-choice
+    sentence: please-read-the-book
+    choices:
+      - sentence: please-read-the-book
+      - text: 本を読みますください。
+        tiles:
+          - { text: 本, reading: ほん }
+          - { text: を, reading: を }
+          - { text: 読みます, reading: よみます }
+          - { text: ください, reading: ください }
+        tokens:
+          - { role: object, text: 本, reading: ほん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - {
+              role: predicate,
+              text: 読みますください,
+              reading: よみますください,
+              wordClass: predicate,
+            }
+        meaning: I read a book.
+        reading: ほんをよみますください。
+    prompt: 'Choose the correct Japanese: Please read the book.'
+    answers:
+      - 本を読んでください
+      - 本をよんでください
+      - ほんを読んでください
+      - ほんをよんでください
+  - id: gap
+    type: gap
+    sentence: please-drink-the-water
+    answers:
+      - 飲んで
+      - のんで
+    context:
+      text: 水を___ください。
+      tokens:
+        - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+        - { role: particle, text: を, reading: を, wordClass: particle }
+        - { role: predicate, text: ___ください, reading: ___ください, wordClass: predicate }
+      reading: みずを___ください。
+  - id: tiles
+    type: tiles
+    sentence: please-drink-the-water
+    prompt: 'Build this sentence: Please drink the water. (casual)'
+    answers:
+      - 水を飲んでください
+      - 水をのんでください
+      - みずを飲んでください
+      - みずをのんでください
+    tiles:
+      - { role: object, text: 水, reading: みず, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 飲んで, reading: のんで, wordClass: predicate }
+      - { role: predicate, text: ください, reading: ください, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: please-write-your-name
+    answers:
+      - 名前を書いてください
+      - 名前をかいてください
+      - なまえを書いてください
+      - なまえをかいてください
+  - id: alternate
+    type: typing
+    sentence: please-eat-the-bread
+    alternate: true
+    prompt: 'One more example: Please eat the bread. (casual)'
+    answers:
+      - パンを食べてください
+      - パンをたべてください
+      - ぱんを食べてください
+      - ぱんをたべてください
+  - id: extra-1-tiles
+    type: tiles
+    sentence: please-read-the-magazine
+    prompt: 'Build this sentence: Please read the magazine. (casual)'
+    answers:
+      - 雑誌を読んでください
+      - 雑誌をよんでください
+      - ざっしを読んでください
+      - ざっしをよんでください
+    tiles:
+      - { text: 雑誌, reading: ざっし, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: please-read-the-magazine
+    answers:
+      - 雑誌を読んでください
+      - 雑誌をよんでください
+      - ざっしを読んでください
+      - ざっしをよんでください
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: please-read-the-magazine
+    choices:
+      - text: Please read the magazine.
+        reading: ''
+      - text: Please read the book.
+        reading: ''
+    prompt: 'Choose the meaning: 雑誌を読んでください。'
+    answers:
+      - Please read the magazine.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: please-read-the-newspaper
+    prompt: 'Build this sentence: Please read the newspaper. (casual)'
+    answers:
+      - 新聞を読んでください
+      - 新聞をよんでください
+      - しんぶんを読んでください
+      - しんぶんをよんでください
+    tiles:
+      - { text: 新聞, reading: しんぶん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: please-read-the-newspaper
+    answers:
+      - 新聞を読んでください
+      - 新聞をよんでください
+      - しんぶんを読んでください
+      - しんぶんをよんでください
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: please-read-the-newspaper
+    choices:
+      - text: Please read the newspaper.
+        reading: ''
+      - text: Please read the book.
+        reading: ''
+    prompt: 'Choose the meaning: 新聞を読んでください。'
+    answers:
+      - Please read the newspaper.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: please-read-the-dictionary
+    prompt: 'Build this sentence: Please read the dictionary. (casual)'
+    answers:
+      - 辞書を読んでください
+      - 辞書をよんでください
+      - じしょを読んでください
+      - じしょをよんでください
+    tiles:
+      - { text: 辞書, reading: じしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: please-read-the-dictionary
+    answers:
+      - 辞書を読んでください
+      - 辞書をよんでください
+      - じしょを読んでください
+      - じしょをよんでください
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: please-read-the-dictionary
+    choices:
+      - text: Please read the dictionary.
+        reading: ''
+      - text: Please read the book.
+        reading: ''
+    prompt: 'Choose the meaning: 辞書を読んでください。'
+    answers:
+      - Please read the dictionary.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: please-read-the-novel
+    prompt: 'Build this sentence: Please read the novel. (casual)'
+    answers:
+      - 小説を読んでください
+      - 小説をよんでください
+      - しょうせつを読んでください
+      - しょうせつをよんでください
+    tiles:
+      - { text: 小説, reading: しょうせつ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: please-read-the-novel
+    answers:
+      - 小説を読んでください
+      - 小説をよんでください
+      - しょうせつを読んでください
+      - しょうせつをよんでください
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: please-read-the-novel
+    choices:
+      - text: Please read the novel.
+        reading: ''
+      - text: Please read the book.
+        reading: ''
+    prompt: 'Choose the meaning: 小説を読んでください。'
+    answers:
+      - Please read the novel.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: please-read-the-comic
+    prompt: 'Build this sentence: Please read the comic. (casual)'
+    answers:
+      - 漫画を読んでください
+      - 漫画をよんでください
+      - まんがを読んでください
+      - まんがをよんでください
+    tiles:
+      - { text: 漫画, reading: まんが, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: please-read-the-comic
+    answers:
+      - 漫画を読んでください
+      - 漫画をよんでください
+      - まんがを読んでください
+      - まんがをよんでください
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: please-read-the-comic
+    choices:
+      - text: Please read the comic.
+        reading: ''
+      - text: Please read the book.
+        reading: ''
+    prompt: 'Choose the meaning: 漫画を読んでください。'
+    answers:
+      - Please read the comic.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: please-read-the-textbook
+    prompt: 'Build this sentence: Please read the textbook. (casual)'
+    answers:
+      - 教科書を読んでください
+      - 教科書をよんでください
+      - きょうかしょを読んでください
+      - きょうかしょをよんでください
+    tiles:
+      - { text: 教科書, reading: きょうかしょ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: please-read-the-textbook
+    answers:
+      - 教科書を読んでください
+      - 教科書をよんでください
+      - きょうかしょを読んでください
+      - きょうかしょをよんでください
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: please-read-the-textbook
+    choices:
+      - text: Please read the textbook.
+        reading: ''
+      - text: Please read the book.
+        reading: ''
+    prompt: 'Choose the meaning: 教科書を読んでください。'
+    answers:
+      - Please read the textbook.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: please-read-the-picture-book
+    prompt: 'Build this sentence: Please read the picture book. (casual)'
+    answers:
+      - 絵本を読んでください
+      - 絵本をよんでください
+      - えほんを読んでください
+      - えほんをよんでください
+    tiles:
+      - { text: 絵本, reading: えほん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: please-read-the-picture-book
+    answers:
+      - 絵本を読んでください
+      - 絵本をよんでください
+      - えほんを読んでください
+      - えほんをよんでください
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: please-read-the-picture-book
+    choices:
+      - text: Please read the picture book.
+        reading: ''
+      - text: Please read the book.
+        reading: ''
+    prompt: 'Choose the meaning: 絵本を読んでください。'
+    answers:
+      - Please read the picture book.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: please-read-the-letter
+    prompt: 'Build this sentence: Please read the letter. (casual)'
+    answers:
+      - 手紙を読んでください
+      - 手紙をよんでください
+      - てがみを読んでください
+      - てがみをよんでください
+    tiles:
+      - { text: 手紙, reading: てがみ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: please-read-the-letter
+    answers:
+      - 手紙を読んでください
+      - 手紙をよんでください
+      - てがみを読んでください
+      - てがみをよんでください
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: please-read-the-letter
+    choices:
+      - text: Please read the letter.
+        reading: ''
+      - text: Please read the book.
+        reading: ''
+    prompt: 'Choose the meaning: 手紙を読んでください。'
+    answers:
+      - Please read the letter.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: please-read-the-diary
+    prompt: 'Build this sentence: Please read the diary. (casual)'
+    answers:
+      - 日記を読んでください
+      - 日記をよんでください
+      - にっきを読んでください
+      - にっきをよんでください
+    tiles:
+      - { text: 日記, reading: にっき, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: please-read-the-diary
+    answers:
+      - 日記を読んでください
+      - 日記をよんでください
+      - にっきを読んでください
+      - にっきをよんでください
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: please-read-the-diary
+    choices:
+      - text: Please read the diary.
+        reading: ''
+      - text: Please read the book.
+        reading: ''
+    prompt: 'Choose the meaning: 日記を読んでください。'
+    answers:
+      - Please read the diary.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: please-read-the-article
+    prompt: 'Build this sentence: Please read the article. (casual)'
+    answers:
+      - 記事を読んでください
+      - 記事をよんでください
+      - きじを読んでください
+      - きじをよんでください
+    tiles:
+      - { text: 記事, reading: きじ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 読んで, reading: よんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: please-read-the-article
+    answers:
+      - 記事を読んでください
+      - 記事をよんでください
+      - きじを読んでください
+      - きじをよんでください
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: please-read-the-article
+    choices:
+      - text: Please read the article.
+        reading: ''
+      - text: Please read the book.
+        reading: ''
+    prompt: 'Choose the meaning: 記事を読んでください。'
+    answers:
+      - Please read the article.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: please-drink-the-tea
+    prompt: 'Build this sentence: Please drink the tea. (casual)'
+    answers:
+      - お茶を飲んでください
+      - お茶をのんでください
+      - おちゃを飲んでください
+      - おちゃをのんでください
+    tiles:
+      - { text: お茶, reading: おちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んで, reading: のんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: please-drink-the-tea
+    answers:
+      - お茶を飲んでください
+      - お茶をのんでください
+      - おちゃを飲んでください
+      - おちゃをのんでください
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: please-drink-the-tea
+    choices:
+      - text: Please drink the tea.
+        reading: ''
+      - text: Please read the book.
+        reading: ''
+    prompt: 'Choose the meaning: お茶を飲んでください。'
+    answers:
+      - Please drink the tea.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: please-drink-the-milk
+    prompt: 'Build this sentence: Please drink the milk. (casual)'
+    answers:
+      - 牛乳を飲んでください
+      - 牛乳をのんでください
+      - ぎゅうにゅうを飲んでください
+      - ぎゅうにゅうをのんでください
+    tiles:
+      - { text: 牛乳, reading: ぎゅうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んで, reading: のんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: please-drink-the-milk
+    answers:
+      - 牛乳を飲んでください
+      - 牛乳をのんでください
+      - ぎゅうにゅうを飲んでください
+      - ぎゅうにゅうをのんでください
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: please-drink-the-milk
+    choices:
+      - text: Please drink the milk.
+        reading: ''
+      - text: Please read the book.
+        reading: ''
+    prompt: 'Choose the meaning: 牛乳を飲んでください。'
+    answers:
+      - Please drink the milk.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: please-drink-the-coffee
+    prompt: 'Build this sentence: Please drink the coffee. (casual)'
+    answers:
+      - コーヒーを飲んでください
+      - コーヒーをのんでください
+      - こーひーを飲んでください
+      - こーひーをのんでください
+    tiles:
+      - { text: コーヒー, reading: こーひー, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んで, reading: のんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: please-drink-the-coffee
+    answers:
+      - コーヒーを飲んでください
+      - コーヒーをのんでください
+      - こーひーを飲んでください
+      - こーひーをのんでください
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: please-drink-the-coffee
+    choices:
+      - text: Please drink the coffee.
+        reading: ''
+      - text: Please read the book.
+        reading: ''
+    prompt: 'Choose the meaning: コーヒーを飲んでください。'
+    answers:
+      - Please drink the coffee.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: please-drink-the-juice
+    prompt: 'Build this sentence: Please drink the juice. (casual)'
+    answers:
+      - ジュースを飲んでください
+      - ジュースをのんでください
+      - じゅーすを飲んでください
+      - じゅーすをのんでください
+    tiles:
+      - { text: ジュース, reading: じゅーす, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んで, reading: のんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: please-drink-the-juice
+    answers:
+      - ジュースを飲んでください
+      - ジュースをのんでください
+      - じゅーすを飲んでください
+      - じゅーすをのんでください
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: please-drink-the-juice
+    choices:
+      - text: Please drink the juice.
+        reading: ''
+      - text: Please read the book.
+        reading: ''
+    prompt: 'Choose the meaning: ジュースを飲んでください。'
+    answers:
+      - Please drink the juice.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: please-drink-the-black-tea
+    prompt: 'Build this sentence: Please drink the black tea. (casual)'
+    answers:
+      - 紅茶を飲んでください
+      - 紅茶をのんでください
+      - こうちゃを飲んでください
+      - こうちゃをのんでください
+    tiles:
+      - { text: 紅茶, reading: こうちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んで, reading: のんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: please-drink-the-black-tea
+    answers:
+      - 紅茶を飲んでください
+      - 紅茶をのんでください
+      - こうちゃを飲んでください
+      - こうちゃをのんでください
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: please-drink-the-black-tea
+    choices:
+      - text: Please drink the black tea.
+        reading: ''
+      - text: Please read the book.
+        reading: ''
+    prompt: 'Choose the meaning: 紅茶を飲んでください。'
+    answers:
+      - Please drink the black tea.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: please-drink-the-green-tea
+    prompt: 'Build this sentence: Please drink the green tea. (casual)'
+    answers:
+      - 緑茶を飲んでください
+      - 緑茶をのんでください
+      - りょくちゃを飲んでください
+      - りょくちゃをのんでください
+    tiles:
+      - { text: 緑茶, reading: りょくちゃ, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んで, reading: のんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: please-drink-the-green-tea
+    answers:
+      - 緑茶を飲んでください
+      - 緑茶をのんでください
+      - りょくちゃを飲んでください
+      - りょくちゃをのんでください
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: please-drink-the-green-tea
+    choices:
+      - text: Please drink the green tea.
+        reading: ''
+      - text: Please read the book.
+        reading: ''
+    prompt: 'Choose the meaning: 緑茶を飲んでください。'
+    answers:
+      - Please drink the green tea.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: please-drink-the-soy-milk
+    prompt: 'Build this sentence: Please drink the soy milk. (casual)'
+    answers:
+      - 豆乳を飲んでください
+      - 豆乳をのんでください
+      - とうにゅうを飲んでください
+      - とうにゅうをのんでください
+    tiles:
+      - { text: 豆乳, reading: とうにゅう, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 飲んで, reading: のんで, role: predicate, wordClass: predicate }
+      - { text: ください, reading: ください, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: please-drink-the-soy-milk
+    answers:
+      - 豆乳を飲んでください
+      - 豆乳をのんでください
+      - とうにゅうを飲んでください
+      - とうにゅうをのんでください

@@ -1,0 +1,1003 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-imasu
+  kind: grammar
+  note:
+    Use います for people and animals. Compare 本があります (there is a book) and 猫がいます (there is a cat). います is also
+    used with verb て-forms, but that is a different construction.
+  tags:
+    - Grammar
+    - imasu
+  level: N5
+  title: 'People and animals: います'
+  topic: Sentence building
+  lesson:
+    goal: Say that a person or animal is present.
+    group: Existence and location
+    order: 12
+    recap: Use います for people and animals; use あります for things.
+    examples:
+      - tokens:
+          - { role: subject, text: 猫, reading: ねこ, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: います, reading: います, wordClass: predicate }
+        meaning: There is a cat.
+        reading: ねこがいます。
+        japanese: 猫がいます。
+        translationTokens:
+          - { role: predicate, text: 'There is ' }
+          - { role: subject, text: a cat. }
+      - tokens:
+          - { role: subject, text: 先生, reading: せんせい, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: います, reading: います, wordClass: predicate }
+        meaning: There is a teacher.
+        reading: せんせいがいます。
+        japanese: 先生がいます。
+        translationTokens:
+          - { role: predicate, text: 'There is ' }
+          - { role: subject, text: a teacher. }
+      - tokens:
+          - { role: subject, text: 犬, reading: いぬ, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: います, reading: います, wordClass: predicate }
+        meaning: There is a dog.
+        reading: いぬがいます。
+        japanese: 犬がいます。
+        translationTokens:
+          - { role: predicate, text: 'There is ' }
+          - { role: subject, text: a dog. }
+    comparison: Use います for people and animals; use あります for things.
+    vocabulary:
+      - text: 猫
+        meaning: cat
+        reading: ねこ
+      - text: 先生
+        meaning: teacher
+        reading: せんせい
+      - text: 犬
+        meaning: dog
+        reading: いぬ
+      - text: 田中さん
+        meaning: Tanaka (a person's name)
+        reading: たなかさん
+    prerequisites:
+      - grammar-arimasu
+  meaning: There is a cat.
+  reading: ねこがいます。
+  examples:
+    - tokens:
+        - { role: subject, text: 猫, reading: ねこ, wordClass: noun }
+        - { role: particle, text: が, reading: が, wordClass: subject particle }
+        - { role: predicate, text: います, reading: います, wordClass: animate existence verb }
+      meaning: There is a cat.
+      reading: ねこがいます。
+      japanese: 猫がいます。
+      translationTokens:
+        - { role: predicate, text: 'There is ', implicit: false }
+        - { role: subject, text: a cat., implicit: false }
+  exercise:
+    tiles:
+      - 猫
+      - が
+      - います
+    prompt: 'Build: “There is a cat.”'
+    answers:
+      - 猫がいます
+      - ねこがいます
+    explanation:
+      Use います for people and animals. Compare 本があります (there is a book) and 猫がいます (there is a cat). います
+      is also used with verb て-forms, but that is a different construction.
+  japanese: 猫がいます。
+sentences:
+  there-is-a-cat:
+    text: 猫がいます。
+    tiles:
+      - { text: 猫, reading: ねこ }
+      - { text: が, reading: が }
+      - { text: います, reading: います }
+    tokens:
+      - { role: subject, text: 猫, reading: ねこ, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: います, reading: います, wordClass: predicate }
+    meaning: There is a cat.
+    reading: ねこがいます。
+    translationTokens:
+      - { role: predicate, text: 'There is ' }
+      - { role: subject, text: a cat. }
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+  there-is-a-teacher:
+    text: 先生がいます。
+    tiles:
+      - { text: 先生, reading: せんせい }
+      - { text: が, reading: が }
+      - { text: います, reading: います }
+    tokens:
+      - { role: subject, text: 先生, reading: せんせい, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: います, reading: います, wordClass: predicate }
+    meaning: There is a teacher.
+    reading: せんせいがいます。
+    translationTokens:
+      - { role: predicate, text: 'There is ' }
+      - { role: subject, text: a teacher. }
+    form: polite
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+  there-is-a-dog:
+    text: 犬がいます。
+    tiles:
+      - { text: 犬, reading: いぬ }
+      - { text: が, reading: が }
+      - { text: います, reading: います }
+    tokens:
+      - { role: subject, text: 犬, reading: いぬ, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: います, reading: います, wordClass: predicate }
+    meaning: There is a dog.
+    reading: いぬがいます。
+    translationTokens:
+      - { role: predicate, text: 'There is ' }
+      - { role: subject, text: a dog. }
+    form: polite
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+  tanaka-is-here:
+    text: 田中さんがいます。
+    tiles:
+      - { text: 田中さん, reading: たなかさん }
+      - { text: が, reading: が }
+      - { text: います, reading: います }
+    tokens:
+      - { role: subject, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: います, reading: います, wordClass: predicate }
+    meaning: Tanaka is here.
+    reading: たなかさんがいます。
+    translationTokens:
+      - { role: subject, text: Tanaka }
+      - { role: predicate, text: ' is here.' }
+    form: polite
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+  there-is-a-bird:
+    text: 鳥がいます。
+    reading: とりがいます。
+    meaning: There is a bird.
+    tiles:
+      - { text: 鳥, reading: とり, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 鳥, reading: とり, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a bird., role: subject }
+    form: polite
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+  there-is-a-horse:
+    text: 馬がいます。
+    reading: うまがいます。
+    meaning: There is a horse.
+    tiles:
+      - { text: 馬, reading: うま, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 馬, reading: うま, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a horse., role: subject }
+    form: polite
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+  there-is-a-fish:
+    text: 魚がいます。
+    reading: さかながいます。
+    meaning: There is a fish.
+    tiles:
+      - { text: 魚, reading: さかな, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 魚, reading: さかな, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a fish., role: subject }
+    form: polite
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+  there-is-a-rabbit:
+    text: 兎がいます。
+    reading: うさぎがいます。
+    meaning: There is a rabbit.
+    tiles:
+      - { text: 兎, reading: うさぎ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 兎, reading: うさぎ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a rabbit., role: subject }
+    form: polite
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+  there-is-a-turtle:
+    text: 亀がいます。
+    reading: かめがいます。
+    meaning: There is a turtle.
+    tiles:
+      - { text: 亀, reading: かめ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 亀, reading: かめ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a turtle., role: subject }
+    form: polite
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+  there-is-a-cow:
+    text: 牛がいます。
+    reading: うしがいます。
+    meaning: There is a cow.
+    tiles:
+      - { text: 牛, reading: うし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 牛, reading: うし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a cow., role: subject }
+    form: polite
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+  there-is-a-sheep:
+    text: 羊がいます。
+    reading: ひつじがいます。
+    meaning: There is a sheep.
+    tiles:
+      - { text: 羊, reading: ひつじ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 羊, reading: ひつじ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a sheep., role: subject }
+    form: polite
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+  there-is-a-monkey:
+    text: 猿がいます。
+    reading: さるがいます。
+    meaning: There is a monkey.
+    tiles:
+      - { text: 猿, reading: さる, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 猿, reading: さる, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a monkey., role: subject }
+    form: polite
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+  there-is-a-pig:
+    text: 豚がいます。
+    reading: ぶたがいます。
+    meaning: There is a pig.
+    tiles:
+      - { text: 豚, reading: ぶた, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 豚, reading: ぶた, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'There is ', role: predicate }
+      - { text: a pig., role: subject }
+    form: polite
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+  yamada-is-here:
+    text: 山田さんがいます。
+    reading: やまださんがいます。
+    meaning: Yamada is here.
+    tiles:
+      - { text: 山田さん, reading: やまださん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 山田さん, reading: やまださん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Yamada, role: subject }
+      - { text: ' is here.', role: predicate }
+    form: polite
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+  sato-is-here:
+    text: 佐藤さんがいます。
+    reading: さとうさんがいます。
+    meaning: Sato is here.
+    tiles:
+      - { text: 佐藤さん, reading: さとうさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 佐藤さん, reading: さとうさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Sato, role: subject }
+      - { text: ' is here.', role: predicate }
+    form: polite
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+  suzuki-is-here:
+    text: 鈴木さんがいます。
+    reading: すずきさんがいます。
+    meaning: Suzuki is here.
+    tiles:
+      - { text: 鈴木さん, reading: すずきさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 鈴木さん, reading: すずきさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Suzuki, role: subject }
+      - { text: ' is here.', role: predicate }
+    form: polite
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+  takahashi-is-here:
+    text: 高橋さんがいます。
+    reading: たかはしさんがいます。
+    meaning: Takahashi is here.
+    tiles:
+      - { text: 高橋さん, reading: たかはしさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 高橋さん, reading: たかはしさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Takahashi, role: subject }
+      - { text: ' is here.', role: predicate }
+    form: polite
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+  ito-is-here:
+    text: 伊藤さんがいます。
+    reading: いとうさんがいます。
+    meaning: Ito is here.
+    tiles:
+      - { text: 伊藤さん, reading: いとうさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 伊藤さん, reading: いとうさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Ito, role: subject }
+      - { text: ' is here.', role: predicate }
+    form: polite
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+  nakamura-is-here:
+    text: 中村さんがいます。
+    reading: なかむらさんがいます。
+    meaning: Nakamura is here.
+    tiles:
+      - { text: 中村さん, reading: なかむらさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 中村さん, reading: なかむらさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Nakamura, role: subject }
+      - { text: ' is here.', role: predicate }
+    form: polite
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+  kobayashi-is-here:
+    text: 小林さんがいます。
+    reading: こばやしさんがいます。
+    meaning: Kobayashi is here.
+    tiles:
+      - { text: 小林さん, reading: こばやしさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 小林さん, reading: こばやしさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Kobayashi, role: subject }
+      - { text: ' is here.', role: predicate }
+    form: polite
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+  kato-is-here:
+    text: 加藤さんがいます。
+    reading: かとうさんがいます。
+    meaning: Kato is here.
+    tiles:
+      - { text: 加藤さん, reading: かとうさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 加藤さん, reading: かとうさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Kato, role: subject }
+      - { text: ' is here.', role: predicate }
+    form: polite
+    hint: A living person or animal needs the animate existence verb.
+    explanation: Use います for people and animals; use あります for things.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: there-is-a-cat
+    choices:
+      - text: There is a cat.
+        reading: ''
+      - text: There is a book.
+        reading: ''
+    answers:
+      - There is a cat.
+  - id: pattern
+    type: pattern-choice
+    sentence: there-is-a-cat
+    choices:
+      - sentence: there-is-a-cat
+      - text: 猫があります。
+        tiles:
+          - { text: 猫, reading: ねこ }
+          - { text: が, reading: が }
+          - { text: あります, reading: あります }
+        tokens:
+          - { role: subject, text: 猫, reading: ねこ, wordClass: noun phrase }
+          - { role: particle, text: が, reading: が, wordClass: particle }
+          - { role: predicate, text: あります, reading: あります, wordClass: predicate }
+        meaning: There is a book.
+        reading: ねこがあります。
+    prompt: 'Choose the correct Japanese: There is a cat.'
+    answers:
+      - 猫がいます
+      - ねこがいます
+  - id: gap
+    type: gap
+    sentence: there-is-a-teacher
+    answers:
+      - います
+      - います
+    context:
+      text: 先生が___。
+      tokens:
+        - { role: subject, text: 先生, reading: せんせい, wordClass: noun phrase }
+        - { role: particle, text: が, reading: が, wordClass: particle }
+        - { role: predicate, text: ___, reading: ___, wordClass: predicate }
+      reading: せんせいが___。
+  - id: tiles
+    type: tiles
+    sentence: there-is-a-teacher
+    prompt: 'Build this sentence: There is a teacher. (polite)'
+    answers:
+      - 先生がいます
+      - せんせいがいます
+    tiles:
+      - { role: subject, text: 先生, reading: せんせい, wordClass: noun phrase }
+      - { role: particle, text: が, reading: が, wordClass: particle }
+      - { role: predicate, text: います, reading: います, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: there-is-a-dog
+    answers:
+      - 犬がいます
+      - いぬがいます
+  - id: alternate
+    type: typing
+    sentence: tanaka-is-here
+    alternate: true
+    prompt: 'One more example: Tanaka is here. (polite)'
+    answers:
+      - 田中さんがいます
+      - たなかさんがいます
+  - id: extra-1-tiles
+    type: tiles
+    sentence: there-is-a-bird
+    prompt: 'Build this sentence: There is a bird. (polite)'
+    answers:
+      - 鳥がいます
+      - とりがいます
+    tiles:
+      - { text: 鳥, reading: とり, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: there-is-a-bird
+    answers:
+      - 鳥がいます
+      - とりがいます
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-bird
+    choices:
+      - text: There is a bird.
+        reading: ''
+      - text: There is a cat.
+        reading: ''
+    prompt: 'Choose the meaning: 鳥がいます。'
+    answers:
+      - There is a bird.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: there-is-a-horse
+    prompt: 'Build this sentence: There is a horse. (polite)'
+    answers:
+      - 馬がいます
+      - うまがいます
+    tiles:
+      - { text: 馬, reading: うま, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: there-is-a-horse
+    answers:
+      - 馬がいます
+      - うまがいます
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-horse
+    choices:
+      - text: There is a horse.
+        reading: ''
+      - text: There is a cat.
+        reading: ''
+    prompt: 'Choose the meaning: 馬がいます。'
+    answers:
+      - There is a horse.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: there-is-a-fish
+    prompt: 'Build this sentence: There is a fish. (polite)'
+    answers:
+      - 魚がいます
+      - さかながいます
+    tiles:
+      - { text: 魚, reading: さかな, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: there-is-a-fish
+    answers:
+      - 魚がいます
+      - さかながいます
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-fish
+    choices:
+      - text: There is a fish.
+        reading: ''
+      - text: There is a cat.
+        reading: ''
+    prompt: 'Choose the meaning: 魚がいます。'
+    answers:
+      - There is a fish.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: there-is-a-rabbit
+    prompt: 'Build this sentence: There is a rabbit. (polite)'
+    answers:
+      - 兎がいます
+      - うさぎがいます
+    tiles:
+      - { text: 兎, reading: うさぎ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: there-is-a-rabbit
+    answers:
+      - 兎がいます
+      - うさぎがいます
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-rabbit
+    choices:
+      - text: There is a rabbit.
+        reading: ''
+      - text: There is a cat.
+        reading: ''
+    prompt: 'Choose the meaning: 兎がいます。'
+    answers:
+      - There is a rabbit.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: there-is-a-turtle
+    prompt: 'Build this sentence: There is a turtle. (polite)'
+    answers:
+      - 亀がいます
+      - かめがいます
+    tiles:
+      - { text: 亀, reading: かめ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: there-is-a-turtle
+    answers:
+      - 亀がいます
+      - かめがいます
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-turtle
+    choices:
+      - text: There is a turtle.
+        reading: ''
+      - text: There is a cat.
+        reading: ''
+    prompt: 'Choose the meaning: 亀がいます。'
+    answers:
+      - There is a turtle.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: there-is-a-cow
+    prompt: 'Build this sentence: There is a cow. (polite)'
+    answers:
+      - 牛がいます
+      - うしがいます
+    tiles:
+      - { text: 牛, reading: うし, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: there-is-a-cow
+    answers:
+      - 牛がいます
+      - うしがいます
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-cow
+    choices:
+      - text: There is a cow.
+        reading: ''
+      - text: There is a cat.
+        reading: ''
+    prompt: 'Choose the meaning: 牛がいます。'
+    answers:
+      - There is a cow.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: there-is-a-sheep
+    prompt: 'Build this sentence: There is a sheep. (polite)'
+    answers:
+      - 羊がいます
+      - ひつじがいます
+    tiles:
+      - { text: 羊, reading: ひつじ, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: there-is-a-sheep
+    answers:
+      - 羊がいます
+      - ひつじがいます
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-sheep
+    choices:
+      - text: There is a sheep.
+        reading: ''
+      - text: There is a cat.
+        reading: ''
+    prompt: 'Choose the meaning: 羊がいます。'
+    answers:
+      - There is a sheep.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: there-is-a-monkey
+    prompt: 'Build this sentence: There is a monkey. (polite)'
+    answers:
+      - 猿がいます
+      - さるがいます
+    tiles:
+      - { text: 猿, reading: さる, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: there-is-a-monkey
+    answers:
+      - 猿がいます
+      - さるがいます
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-monkey
+    choices:
+      - text: There is a monkey.
+        reading: ''
+      - text: There is a cat.
+        reading: ''
+    prompt: 'Choose the meaning: 猿がいます。'
+    answers:
+      - There is a monkey.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: there-is-a-pig
+    prompt: 'Build this sentence: There is a pig. (polite)'
+    answers:
+      - 豚がいます
+      - ぶたがいます
+    tiles:
+      - { text: 豚, reading: ぶた, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: there-is-a-pig
+    answers:
+      - 豚がいます
+      - ぶたがいます
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: there-is-a-pig
+    choices:
+      - text: There is a pig.
+        reading: ''
+      - text: There is a cat.
+        reading: ''
+    prompt: 'Choose the meaning: 豚がいます。'
+    answers:
+      - There is a pig.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: yamada-is-here
+    prompt: 'Build this sentence: Yamada is here. (polite)'
+    answers:
+      - 山田さんがいます
+      - やまださんがいます
+    tiles:
+      - { text: 山田さん, reading: やまださん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: yamada-is-here
+    answers:
+      - 山田さんがいます
+      - やまださんがいます
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: yamada-is-here
+    choices:
+      - text: Yamada is here.
+        reading: ''
+      - text: There is a cat.
+        reading: ''
+    prompt: 'Choose the meaning: 山田さんがいます。'
+    answers:
+      - Yamada is here.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: sato-is-here
+    prompt: 'Build this sentence: Sato is here. (polite)'
+    answers:
+      - 佐藤さんがいます
+      - さとうさんがいます
+    tiles:
+      - { text: 佐藤さん, reading: さとうさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: sato-is-here
+    answers:
+      - 佐藤さんがいます
+      - さとうさんがいます
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: sato-is-here
+    choices:
+      - text: Sato is here.
+        reading: ''
+      - text: There is a cat.
+        reading: ''
+    prompt: 'Choose the meaning: 佐藤さんがいます。'
+    answers:
+      - Sato is here.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: suzuki-is-here
+    prompt: 'Build this sentence: Suzuki is here. (polite)'
+    answers:
+      - 鈴木さんがいます
+      - すずきさんがいます
+    tiles:
+      - { text: 鈴木さん, reading: すずきさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: suzuki-is-here
+    answers:
+      - 鈴木さんがいます
+      - すずきさんがいます
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: suzuki-is-here
+    choices:
+      - text: Suzuki is here.
+        reading: ''
+      - text: There is a cat.
+        reading: ''
+    prompt: 'Choose the meaning: 鈴木さんがいます。'
+    answers:
+      - Suzuki is here.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: takahashi-is-here
+    prompt: 'Build this sentence: Takahashi is here. (polite)'
+    answers:
+      - 高橋さんがいます
+      - たかはしさんがいます
+    tiles:
+      - { text: 高橋さん, reading: たかはしさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: takahashi-is-here
+    answers:
+      - 高橋さんがいます
+      - たかはしさんがいます
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: takahashi-is-here
+    choices:
+      - text: Takahashi is here.
+        reading: ''
+      - text: There is a cat.
+        reading: ''
+    prompt: 'Choose the meaning: 高橋さんがいます。'
+    answers:
+      - Takahashi is here.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: ito-is-here
+    prompt: 'Build this sentence: Ito is here. (polite)'
+    answers:
+      - 伊藤さんがいます
+      - いとうさんがいます
+    tiles:
+      - { text: 伊藤さん, reading: いとうさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: ito-is-here
+    answers:
+      - 伊藤さんがいます
+      - いとうさんがいます
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: ito-is-here
+    choices:
+      - text: Ito is here.
+        reading: ''
+      - text: There is a cat.
+        reading: ''
+    prompt: 'Choose the meaning: 伊藤さんがいます。'
+    answers:
+      - Ito is here.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: nakamura-is-here
+    prompt: 'Build this sentence: Nakamura is here. (polite)'
+    answers:
+      - 中村さんがいます
+      - なかむらさんがいます
+    tiles:
+      - { text: 中村さん, reading: なかむらさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: nakamura-is-here
+    answers:
+      - 中村さんがいます
+      - なかむらさんがいます
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: nakamura-is-here
+    choices:
+      - text: Nakamura is here.
+        reading: ''
+      - text: There is a cat.
+        reading: ''
+    prompt: 'Choose the meaning: 中村さんがいます。'
+    answers:
+      - Nakamura is here.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: kobayashi-is-here
+    prompt: 'Build this sentence: Kobayashi is here. (polite)'
+    answers:
+      - 小林さんがいます
+      - こばやしさんがいます
+    tiles:
+      - { text: 小林さん, reading: こばやしさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: kobayashi-is-here
+    answers:
+      - 小林さんがいます
+      - こばやしさんがいます
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: kobayashi-is-here
+    choices:
+      - text: Kobayashi is here.
+        reading: ''
+      - text: There is a cat.
+        reading: ''
+    prompt: 'Choose the meaning: 小林さんがいます。'
+    answers:
+      - Kobayashi is here.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: kato-is-here
+    prompt: 'Build this sentence: Kato is here. (polite)'
+    answers:
+      - 加藤さんがいます
+      - かとうさんがいます
+    tiles:
+      - { text: 加藤さん, reading: かとうさん, role: subject, wordClass: noun phrase }
+      - { text: が, reading: が, role: particle, wordClass: particle }
+      - { text: います, reading: います, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: kato-is-here
+    answers:
+      - 加藤さんがいます
+      - かとうさんがいます

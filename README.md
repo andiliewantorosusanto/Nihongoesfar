@@ -49,7 +49,7 @@ Open **http://127.0.0.1:4173**. The site runs in the browser and uses the learni
 
 ## Contributing
 
-Learning material lives in the subject JSON files under `public/`. See the [maintenance guide](docs/maintenance.md) for content editing, project structure, hosting, and dictionary updates.
+Edit grammar in small topic YAML files under `content/grammar/`; `npm run content:build` generates `public/grammar.json`. See the [grammar authoring guide](docs/grammar-authoring.md) for reusable sentence templates and multi-blank questions. Other learning material lives in the subject JSON files under `public/`. See the [maintenance guide](docs/maintenance.md) for content editing, project structure, hosting, and dictionary updates.
 
 Before committing changes, run:
 

@@ -1,0 +1,696 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-past-tense
+  kind: grammar
+  note:
+    'Learn the past forms together: polite, casual, negative polite, negative casual, and questions. Nouns
+    and な-adjectives use でした / だった. い-adjectives change final い to かった; negative past is くなかった. Verbs use ました
+    in polite speech and their た-form in casual speech: 食べた (たべた), 読んだ (よんだ). Learn each verb’s conjugation;
+    do not simply remove ました to make the casual form. Negative verbs use ませんでした / なかった. Add か for a polite
+    question; casual questions can use rising intonation: 食べた？ (たべた？). いい becomes よかった / よくなかった. Negative
+    questions can seek confirmation rather than being neutral yes-or-no questions.'
+  tags:
+    - Study guide
+    - Adjective guide
+  level: N5
+  title: Past
+  topic: Tenses
+  meaning: Past
+  reading: きのうはやすみでした。
+  examples:
+    - tokens:
+        - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 休みでした, reading: やすみでした, wordClass: predicate }
+      meaning: Yesterday was a day off.
+      reading: きのうはやすみでした。
+      japanese: 昨日は休みでした。
+      translationTokens:
+        - { role: modifier, text: Yesterday }
+        - { role: predicate, text: ' was a day off.' }
+    - tokens:
+        - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+        - { role: particle, text: を, reading: を, wordClass: particle }
+        - { role: predicate, text: 食べなかった, reading: たべなかった, wordClass: predicate }
+      meaning: I did not eat bread.
+      reading: ぱんをたべなかった。
+      japanese: パンを食べなかった。
+      translationTokens:
+        - { role: implicit, text: 'I ', implicit: true }
+        - { role: predicate, text: 'did not eat ' }
+        - { role: object, text: bread. }
+    - tokens:
+        - { role: topic, text: 昨日, reading: きのう, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - {
+            role: predicate,
+            text: 暑くなかったです,
+            reading: あつくなかったです,
+            wordClass: predicate,
+          }
+      meaning: Yesterday was not hot.
+      reading: きのうはあつくなかったです。
+      japanese: 昨日は暑くなかったです。
+      translationTokens:
+        - { role: topic, text: Yesterday }
+        - { role: predicate, text: ' was not hot.' }
+    - tokens:
+        - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 元気でした, reading: げんきでした, wordClass: predicate }
+        - { role: particle, text: か, reading: か, wordClass: particle }
+      meaning: Was Tanaka well?
+      reading: たなかさんはげんきでしたか。
+      japanese: 田中さんは元気でしたか。
+      translationTokens:
+        - { role: predicate, text: 'Was ' }
+        - { role: topic, text: Tanaka }
+        - { role: predicate, text: ' well' }
+        - { role: particle, text: '?' }
+  japanese: 昨日は休みでした。
+  references:
+    - rows:
+        - - text: Noun — student
+            reading: ''
+          - text: 学生でした
+            reading: がくせいでした
+        - - text: Verb — eat
+            reading: ''
+          - text: 食べました
+            reading: たべました
+        - - text: い-adjective — hot
+            reading: ''
+          - text: 暑かったです
+            reading: あつかったです
+        - - text: な-adjective — well
+            reading: ''
+          - text: 元気でした
+            reading: げんきでした
+        - - text: Existence — things
+            reading: ''
+          - text: ありました
+            reading: ありました
+        - - text: Existence — people / animals
+            reading: ''
+          - text: いました
+            reading: いました
+      columns:
+        - Type
+        - Example
+      heading: Polite
+    - rows:
+        - - text: Noun — student
+            reading: ''
+          - text: 学生だった
+            reading: がくせいだった
+        - - text: Verb — eat
+            reading: ''
+          - text: 食べた
+            reading: たべた
+        - - text: い-adjective — hot
+            reading: ''
+          - text: 暑かった
+            reading: あつかった
+        - - text: な-adjective — well
+            reading: ''
+          - text: 元気だった
+            reading: げんきだった
+        - - text: Existence — things
+            reading: ''
+          - text: あった
+            reading: あった
+        - - text: Existence — people / animals
+            reading: ''
+          - text: いた
+            reading: いた
+      columns:
+        - Type
+        - Example
+      heading: Casual
+    - rows:
+        - - text: Noun — student
+            reading: ''
+          - text: 学生じゃありませんでした
+            reading: がくせいじゃありませんでした
+        - - text: Verb — eat
+            reading: ''
+          - text: 食べませんでした
+            reading: たべませんでした
+        - - text: い-adjective — hot
+            reading: ''
+          - text: 暑くなかったです
+            reading: あつくなかったです
+        - - text: な-adjective — well
+            reading: ''
+          - text: 元気じゃありませんでした
+            reading: げんきじゃありませんでした
+        - - text: Existence — things
+            reading: ''
+          - text: ありませんでした
+            reading: ありませんでした
+        - - text: Existence — people / animals
+            reading: ''
+          - text: いませんでした
+            reading: いませんでした
+      columns:
+        - Type
+        - Example
+      heading: Negative polite
+    - rows:
+        - - text: Noun — student
+            reading: ''
+          - text: 学生じゃなかった
+            reading: がくせいじゃなかった
+        - - text: Verb — eat
+            reading: ''
+          - text: 食べなかった
+            reading: たべなかった
+        - - text: い-adjective — hot
+            reading: ''
+          - text: 暑くなかった
+            reading: あつくなかった
+        - - text: な-adjective — well
+            reading: ''
+          - text: 元気じゃなかった
+            reading: げんきじゃなかった
+        - - text: Existence — things
+            reading: ''
+          - text: なかった
+            reading: なかった
+        - - text: Existence — people / animals
+            reading: ''
+          - text: いなかった
+            reading: いなかった
+      columns:
+        - Type
+        - Example
+      heading: Negative casual
+    - rows:
+        - - text: Noun — student
+            reading: ''
+          - text: 学生でしたか
+            reading: がくせいでしたか
+          - text: 学生じゃありませんでしたか
+            reading: がくせいじゃありませんでしたか
+        - - text: Verb — eat
+            reading: ''
+          - text: 食べましたか
+            reading: たべましたか
+          - text: 食べませんでしたか
+            reading: たべませんでしたか
+        - - text: い-adjective — hot
+            reading: ''
+          - text: 暑かったですか
+            reading: あつかったですか
+          - text: 暑くなかったですか
+            reading: あつくなかったですか
+        - - text: な-adjective — well
+            reading: ''
+          - text: 元気でしたか
+            reading: げんきでしたか
+          - text: 元気じゃありませんでしたか
+            reading: げんきじゃありませんでしたか
+        - - text: Existence — things
+            reading: ''
+          - text: ありましたか
+            reading: ありましたか
+          - text: ありませんでしたか
+            reading: ありませんでしたか
+        - - text: Existence — people / animals
+            reading: ''
+          - text: いましたか
+            reading: いましたか
+          - text: いませんでしたか
+            reading: いませんでしたか
+      columns:
+        - Type
+        - Question
+        - Negative question
+      heading: Question / negative question
+sentences:
+  yesterday-was-a-day-off:
+    text: 昨日は休みでした。
+    reading: きのうはやすみでした。
+    meaning: Yesterday was a day off.
+    tokens:
+      - { text: 昨日, reading: きのう, role: modifier, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 休みでした, reading: やすみでした, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: Yesterday, role: modifier }
+      - { text: ' was a day off.', role: predicate }
+    hint: Check both the time word and the noun before the ending.
+    explanation:
+      '昨日 (きのう) means “yesterday”; 休み (やすみ) means “a day off”. でした makes this a polite past statement:
+      “Yesterday was a day off.” There is no negative ending here.'
+  i-did-not-eat-bread:
+    text: パンを食べなかった。
+    reading: ぱんをたべなかった。
+    meaning: I did not eat bread.
+    tokens:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べなかった, reading: たべなかった, role: predicate, wordClass: predicate }
+    translationTokens:
+      - { text: 'I ', role: implicit, implicit: true }
+      - { text: 'did not eat ', role: predicate }
+      - { text: bread., role: object }
+    hint: Check the food word and whether the verb is affirmative, negative, or past.
+    explanation:
+      'パン means “bread”, and を marks what is eaten. 食べなかった (たべなかった) is the casual past negative of 食べる
+      (たべる): “did not eat”. 食べた means “ate”; 食べない means “do not eat”.'
+    form: casual
+  yesterday-was-not-hot:
+    text: 昨日は暑くなかったです。
+    reading: きのうはあつくなかったです。
+    meaning: Yesterday was not hot.
+    tokens:
+      - { text: 昨日, reading: きのう, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 暑くなかったです,
+          reading: あつくなかったです,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: Yesterday, role: topic }
+      - { text: ' was not hot.', role: predicate }
+    form: polite
+    hint: Check the time word, the negative ending, and whether this is a question.
+    explanation:
+      昨日 (きのう) sets the time to yesterday. 暑い (あつい), “hot”, becomes 暑くなかった (あつくなかった), “was not hot”; です
+      makes the sentence polite.
+  was-tanaka-well:
+    text: 田中さんは元気でしたか。
+    reading: たなかさんはげんきでしたか。
+    meaning: Was Tanaka well?
+    tokens:
+      - { text: 田中さん, reading: たなかさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 元気でした, reading: げんきでした, role: predicate, wordClass: predicate }
+      - { text: か, reading: か, role: particle, wordClass: particle }
+    translationTokens:
+      - { text: 'Was ', role: predicate }
+      - { text: Tanaka, role: topic }
+      - { text: ' well', role: predicate }
+      - { text: '?', role: particle }
+    form: polite
+    hint: Check the time word, the negative ending, and whether this is a question.
+    explanation:
+      '元気 (げんき) means “well”. でした places it in the past, and final か makes a polite question: “Was
+      Tanaka well?”'
+  last-week-was-a-day-off:
+    tokens:
+      - { role: modifier, text: 先週, reading: せんしゅう, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 休みでした, reading: やすみでした, wordClass: predicate }
+    meaning: Last week was a day off.
+    reading: せんしゅうはやすみでした。
+    translationTokens:
+      - { role: modifier, text: Last week }
+      - { role: predicate, text: ' was a day off.' }
+    text: 先週は休みでした。
+    hint: Check the particles and sentence ending.
+    explanation:
+      先週は休みでした。 means “Last week was a day off.” Match the vocabulary, particles, and tense to the
+      English sentence.
+    form: polite
+  i-did-not-eat-fish:
+    tokens:
+      - { role: object, text: 魚, reading: さかな, wordClass: noun phrase }
+      - { role: particle, text: を, reading: を, wordClass: particle }
+      - { role: predicate, text: 食べなかった, reading: たべなかった, wordClass: predicate }
+    meaning: I did not eat fish.
+    reading: さかなをたべなかった。
+    translationTokens:
+      - { role: implicit, text: 'I ', implicit: true }
+      - { role: predicate, text: 'did not eat ' }
+      - { role: object, text: fish. }
+    text: 魚を食べなかった。
+    hint: Check the particles and sentence ending.
+    explanation: 魚を食べなかった。 means “I did not eat fish.” Match the vocabulary, particles, and tense to the English sentence.
+    form: casual
+  last-week-was-not-hot:
+    tokens:
+      - { role: topic, text: 先週, reading: せんしゅう, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - {
+          role: predicate,
+          text: 暑くなかったです,
+          reading: あつくなかったです,
+          wordClass: predicate,
+        }
+    meaning: Last week was not hot.
+    reading: せんしゅうはあつくなかったです。
+    translationTokens:
+      - { role: topic, text: Last week }
+      - { role: predicate, text: ' was not hot.' }
+    text: 先週は暑くなかったです。
+    hint: Check the particles and sentence ending.
+    explanation:
+      先週は暑くなかったです。 means “Last week was not hot.” Match the vocabulary, particles, and tense to the
+      English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: yesterday-was-a-day-off
+    choices:
+      - text: Yesterday was a day off.
+        reading: ''
+      - text: Yesterday was a workday.
+        reading: ''
+      - text: Yesterday was not a day off.
+        reading: ''
+      - text: Tomorrow is a day off.
+        reading: ''
+    answers:
+      - Yesterday was a day off.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-did-not-eat-bread
+    choices:
+      - sentence: i-did-not-eat-bread
+      - text: パンを食べた。
+        reading: ぱんをたべた。
+        meaning: I ate bread.
+        tokens:
+          - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - { text: 食べた, reading: たべた, role: predicate, wordClass: predicate }
+        translationTokens:
+          - { text: 'I ', role: implicit, implicit: true }
+          - { text: 'ate ', role: predicate }
+          - { text: bread., role: object }
+      - text: パンを食べない。
+        reading: ぱんをたべない。
+        meaning: I do not eat bread.
+        tokens:
+          - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - { text: 食べない, reading: たべない, role: predicate, wordClass: predicate }
+        translationTokens:
+          - { text: 'I ', role: implicit, implicit: true }
+          - { text: 'do not eat ', role: predicate }
+          - { text: bread., role: object }
+      - text: ご飯を食べなかった。
+        reading: ごはんをたべなかった。
+        meaning: I did not eat rice.
+        tokens:
+          - { text: ご飯, reading: ごはん, role: object, wordClass: noun phrase }
+          - { text: を, reading: を, role: particle, wordClass: particle }
+          - { text: 食べなかった, reading: たべなかった, role: predicate, wordClass: predicate }
+        translationTokens:
+          - { text: 'I ', role: implicit, implicit: true }
+          - { text: 'did not eat ', role: predicate }
+          - { text: rice., role: object }
+    prompt: 'Choose the Japanese: I did not eat bread.'
+    answers:
+      - パンを食べなかった
+      - パンをたべなかった
+      - ぱんを食べなかった
+      - ぱんをたべなかった
+  - id: gap
+    type: gap
+    sentence: i-did-not-eat-bread
+    prompt: 'Fill the missing part: I did not eat bread. (casual)'
+    explanation:
+      The missing verb is 食べなかった (たべなかった), “did not eat”. The ending なかった expresses a negative action
+      in the past.
+    answers:
+      - 食べなかった
+      - たべなかった
+    context:
+      text: パンを___。
+      reading: ぱんを___。
+      tokens:
+        - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+        - { text: を, reading: を, role: particle, wordClass: particle }
+        - { text: ___, reading: ___, role: predicate, wordClass: predicate }
+  - id: tiles
+    type: tiles
+    sentence: i-did-not-eat-bread
+    prompt: 'Build: I did not eat bread. (casual)'
+    explanation:
+      'Put the object パン first, then を, then 食べなかった (たべなかった): “I did not eat bread.” Japanese normally
+      puts the verb last.'
+    answers:
+      - パンを食べなかった
+      - パンをたべなかった
+      - ぱんを食べなかった
+      - ぱんをたべなかった
+    tiles:
+      - { text: パン, reading: ぱん, role: object, wordClass: noun phrase }
+      - { text: を, reading: を, role: particle, wordClass: particle }
+      - { text: 食べなかった, reading: たべなかった, role: predicate, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: yesterday-was-not-hot
+    answers:
+      - 昨日は暑くなかったです
+      - 昨日はあつくなかったです
+      - きのうは暑くなかったです
+      - きのうはあつくなかったです
+  - id: alternate
+    type: typing
+    sentence: was-tanaka-well
+    alternate: true
+    prompt: 'Another example: Was Tanaka well? (polite)'
+    answers:
+      - 田中さんは元気でしたか
+      - 田中さんはげんきでしたか
+      - たなかさんは元気でしたか
+      - たなかさんはげんきでしたか
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: last-week-was-a-day-off
+    choices:
+      - text: Last week was a day off.
+        reading: ''
+      - text: Yesterday was a day off.
+        reading: ''
+      - text: I did not eat bread.
+        reading: ''
+      - text: Yesterday was not hot.
+        reading: ''
+    answers:
+      - Last week was a day off.
+  - id: expanded-1-typing
+    type: typing
+    sentence: last-week-was-a-day-off
+    explanation: 先週は休みでした。 means “Last week was a day off.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 先週は休みでした
+      - せんしゅうはやすみでした
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: last-week-was-a-day-off
+    prompt: 'Build this sentence: Last week was a day off. (polite)'
+    explanation:
+      先週は休みでした。 means “Last week was a day off.” Keep the particles with their phrases and put the
+      predicate last.
+    answers:
+      - 先週は休みでした
+      - せんしゅうはやすみでした
+  - id: expanded-2-meaning
+    type: meaning-choice
+    sentence: i-did-not-eat-fish
+    choices:
+      - text: I did not eat fish.
+        reading: ''
+      - text: Yesterday was a day off.
+        reading: ''
+      - text: I did not eat bread.
+        reading: ''
+      - text: Yesterday was not hot.
+        reading: ''
+    answers:
+      - I did not eat fish.
+  - id: expanded-2-typing
+    type: typing
+    sentence: i-did-not-eat-fish
+    explanation: 魚を食べなかった。 means “I did not eat fish.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 魚を食べなかった
+      - さかなをたべなかった
+  - id: expanded-2-tiles
+    type: tiles
+    sentence: i-did-not-eat-fish
+    prompt: 'Build this sentence: I did not eat fish. (casual)'
+    explanation: 魚を食べなかった。 means “I did not eat fish.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 魚を食べなかった
+      - さかなをたべなかった
+  - id: expanded-3-meaning
+    type: meaning-choice
+    sentence: last-week-was-not-hot
+    choices:
+      - text: Last week was not hot.
+        reading: ''
+      - text: Yesterday was a day off.
+        reading: ''
+      - text: I did not eat bread.
+        reading: ''
+      - text: Yesterday was not hot.
+        reading: ''
+    answers:
+      - Last week was not hot.
+  - id: expanded-3-typing
+    type: typing
+    sentence: last-week-was-not-hot
+    explanation: 先週は暑くなかったです。 means “Last week was not hot.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 先週は暑くなかったです
+      - せんしゅうはあつくなかったです
+  - id: expanded-3-tiles
+    type: tiles
+    sentence: last-week-was-not-hot
+    prompt: 'Build this sentence: Last week was not hot. (polite)'
+    explanation:
+      先週は暑くなかったです。 means “Last week was not hot.” Keep the particles with their phrases and put the
+      predicate last.
+    answers:
+      - 先週は暑くなかったです
+      - せんしゅうはあつくなかったです
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: last-week-was-a-day-off
+    choices:
+      - sentence: last-week-was-a-day-off
+      - text: 昨日は休みでした。
+        reading: きのうはやすみでした。
+        tokens:
+          - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 休みでした, reading: やすみでした, wordClass: predicate }
+      - text: パンを食べなかった。
+        reading: ぱんをたべなかった。
+        tokens:
+          - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 食べなかった, reading: たべなかった, wordClass: predicate }
+      - text: 昨日は暑くなかったです。
+        reading: きのうはあつくなかったです。
+        tokens:
+          - { role: topic, text: 昨日, reading: きのう, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - {
+              role: predicate,
+              text: 暑くなかったです,
+              reading: あつくなかったです,
+              wordClass: predicate,
+            }
+    prompt: 'Choose the Japanese: Last week was a day off. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 先週は休みでした。 for “Last week was a day off.” The other sentences describe different situations.
+    answers:
+      - 先週は休みでした
+      - せんしゅうはやすみでした
+  - id: expanded-1-gap
+    type: gap
+    sentence: last-week-was-a-day-off
+    prompt: 'Fill the missing part: Last week was a day off. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 休みでした (やすみでした). Together, the sentence means “Last week was a day off.”
+    answers:
+      - 休みでした
+      - やすみでした
+    context:
+      meaning: Last week was a day off.
+      reading: せんしゅうは___。
+      text: 先週は___。
+  - id: expanded-2-pattern
+    type: pattern-choice
+    sentence: i-did-not-eat-fish
+    choices:
+      - sentence: i-did-not-eat-fish
+      - text: 昨日は休みでした。
+        reading: きのうはやすみでした。
+        tokens:
+          - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 休みでした, reading: やすみでした, wordClass: predicate }
+      - text: パンを食べなかった。
+        reading: ぱんをたべなかった。
+        tokens:
+          - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 食べなかった, reading: たべなかった, wordClass: predicate }
+      - text: 昨日は暑くなかったです。
+        reading: きのうはあつくなかったです。
+        tokens:
+          - { role: topic, text: 昨日, reading: きのう, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - {
+              role: predicate,
+              text: 暑くなかったです,
+              reading: あつくなかったです,
+              wordClass: predicate,
+            }
+    prompt: 'Choose the Japanese: I did not eat fish. (casual)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 魚を食べなかった。 for “I did not eat fish.” The other sentences describe different situations.
+    answers:
+      - 魚を食べなかった
+      - さかなをたべなかった
+  - id: expanded-2-gap
+    type: gap
+    sentence: i-did-not-eat-fish
+    prompt: 'Fill the missing part: I did not eat fish. (casual)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 食べなかった (たべなかった). Together, the sentence means “I did not eat fish.”
+    answers:
+      - 食べなかった
+      - たべなかった
+    context:
+      meaning: I did not eat fish.
+      reading: さかなを___。
+      text: 魚を___。
+  - id: expanded-3-pattern
+    type: pattern-choice
+    sentence: last-week-was-not-hot
+    choices:
+      - sentence: last-week-was-not-hot
+      - text: 昨日は休みでした。
+        reading: きのうはやすみでした。
+        tokens:
+          - { role: modifier, text: 昨日, reading: きのう, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 休みでした, reading: やすみでした, wordClass: predicate }
+      - text: パンを食べなかった。
+        reading: ぱんをたべなかった。
+        tokens:
+          - { role: object, text: パン, reading: ぱん, wordClass: noun phrase }
+          - { role: particle, text: を, reading: を, wordClass: particle }
+          - { role: predicate, text: 食べなかった, reading: たべなかった, wordClass: predicate }
+      - text: 昨日は暑くなかったです。
+        reading: きのうはあつくなかったです。
+        tokens:
+          - { role: topic, text: 昨日, reading: きのう, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - {
+              role: predicate,
+              text: 暑くなかったです,
+              reading: あつくなかったです,
+              wordClass: predicate,
+            }
+    prompt: 'Choose the Japanese: Last week was not hot. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 先週は暑くなかったです。 for “Last week was not hot.” The other sentences describe different situations.
+    answers:
+      - 先週は暑くなかったです
+      - せんしゅうはあつくなかったです
+  - id: expanded-3-gap
+    type: gap
+    sentence: last-week-was-not-hot
+    prompt: 'Fill the missing part: Last week was not hot. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 暑くなかったです (あつくなかったです). Together, the sentence means “Last week was not hot.”
+    answers:
+      - 暑くなかったです
+      - あつくなかったです
+    context:
+      meaning: Last week was not hot.
+      reading: せんしゅうは___。
+      text: 先週は___。

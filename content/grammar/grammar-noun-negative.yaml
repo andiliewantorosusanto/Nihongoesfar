@@ -1,0 +1,1433 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: grammar-noun-negative
+  kind: grammar
+  note:
+    For noun predicates, replace です with じゃありません (polite) or ではありません (more formal). じゃないです is also common
+    polite speech. Do not use plain ありません directly after a noun to mean “is not”.
+  tags:
+    - Grammar
+    - noun-negative
+  level: N5
+  title: 'Noun negation: じゃありません'
+  topic: Sentence building
+  lesson:
+    goal: Say that someone or something is not a noun.
+    group: Negatives and past
+    order: 14
+    recap: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+    examples:
+      - tokens:
+          - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - {
+              role: predicate,
+              text: 先生じゃありません,
+              reading: せんせいじゃありません,
+              wordClass: predicate,
+            }
+        meaning: I am not a teacher.
+        reading: わたしはせんせいじゃありません。
+        japanese: 私は先生じゃありません。
+        translationTokens:
+          - { role: topic, text: I }
+          - { role: predicate, text: ' am not a teacher.' }
+      - tokens:
+          - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - {
+              role: predicate,
+              text: 本じゃありません,
+              reading: ほんじゃありません,
+              wordClass: predicate,
+            }
+        meaning: This is not a book.
+        reading: これはほんじゃありません。
+        japanese: これは本じゃありません。
+        translationTokens:
+          - { role: topic, text: This }
+          - { role: predicate, text: ' is not a book.' }
+      - tokens:
+          - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - {
+              role: predicate,
+              text: 学生じゃありません,
+              reading: がくせいじゃありません,
+              wordClass: predicate,
+            }
+        meaning: Tanaka is not a student.
+        reading: たなかさんはがくせいじゃありません。
+        japanese: 田中さんは学生じゃありません。
+        translationTokens:
+          - { role: topic, text: Tanaka }
+          - { role: predicate, text: ' is not a student.' }
+    comparison: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+    vocabulary:
+      - text: 私
+        meaning: I / me
+        reading: わたし
+      - text: 先生
+        meaning: teacher
+        reading: せんせい
+      - text: 本
+        meaning: book
+        reading: ほん
+      - text: 田中さん
+        meaning: Tanaka (a person's name)
+        reading: たなかさん
+      - text: 学生
+        meaning: student
+        reading: がくせい
+      - text: 時計
+        meaning: clock / watch
+        reading: とけい
+    prerequisites:
+      - grammar-desu
+  meaning: I am not a teacher.
+  reading: わたしはせんせいじゃありません。
+  examples:
+    - tokens:
+        - { role: topic, text: 私, reading: わたし, wordClass: pronoun }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - {
+            role: predicate,
+            text: 先生じゃありません,
+            reading: せんせいじゃありません,
+            wordClass: noun + negative copula,
+          }
+      meaning: I am not a teacher.
+      reading: わたしはせんせいじゃありません。
+      japanese: 私は先生じゃありません。
+      translationTokens:
+        - { role: topic, text: I, implicit: false }
+        - { role: predicate, text: ' am not a teacher.', implicit: false }
+  exercise:
+    tiles:
+      - 私
+      - は
+      - 先生
+      - じゃありません
+    prompt: 'Build: “I am not a teacher.” Start with 私.'
+    answers:
+      - 私は先生じゃありません
+      - 私は先生ではありません
+      - 私は先生じゃないです
+      - わたしはせんせいじゃありません
+      - わたしはせんせいではありません
+      - わたしはせんせいじゃないです
+    explanation:
+      For noun predicates, replace です with じゃありません (polite) or ではありません (more formal). じゃないです is also
+      common polite speech. Do not use plain ありません directly after a noun to mean “is not”.
+  japanese: 私は先生じゃありません。
+sentences:
+  i-am-not-a-teacher:
+    text: 私は先生じゃありません。
+    tiles:
+      - { text: 私, reading: わたし }
+      - { text: は, reading: は }
+      - { text: 先生, reading: せんせい }
+      - { text: じゃありません, reading: じゃありません }
+    tokens:
+      - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - {
+          role: predicate,
+          text: 先生じゃありません,
+          reading: せんせいじゃありません,
+          wordClass: predicate,
+        }
+    meaning: I am not a teacher.
+    reading: わたしはせんせいじゃありません。
+    translationTokens:
+      - { role: topic, text: I }
+      - { role: predicate, text: ' am not a teacher.' }
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+  this-is-not-a-book:
+    text: これは本じゃありません。
+    tiles:
+      - { text: これ, reading: これ }
+      - { text: は, reading: は }
+      - { text: 本, reading: ほん }
+      - { text: じゃありません, reading: じゃありません }
+    tokens:
+      - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - {
+          role: predicate,
+          text: 本じゃありません,
+          reading: ほんじゃありません,
+          wordClass: predicate,
+        }
+    meaning: This is not a book.
+    reading: これはほんじゃありません。
+    translationTokens:
+      - { role: topic, text: This }
+      - { role: predicate, text: ' is not a book.' }
+    form: polite
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+  tanaka-is-not-a-student:
+    text: 田中さんは学生じゃありません。
+    tiles:
+      - { text: 田中さん, reading: たなかさん }
+      - { text: は, reading: は }
+      - { text: 学生, reading: がくせい }
+      - { text: じゃありません, reading: じゃありません }
+    tokens:
+      - { role: topic, text: 田中さん, reading: たなかさん, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - {
+          role: predicate,
+          text: 学生じゃありません,
+          reading: がくせいじゃありません,
+          wordClass: predicate,
+        }
+    meaning: Tanaka is not a student.
+    reading: たなかさんはがくせいじゃありません。
+    translationTokens:
+      - { role: topic, text: Tanaka }
+      - { role: predicate, text: ' is not a student.' }
+    form: polite
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+  that-is-not-a-clock:
+    text: それは時計じゃありません。
+    tiles:
+      - { text: それ, reading: それ }
+      - { text: は, reading: は }
+      - { text: 時計, reading: とけい }
+      - { text: じゃありません, reading: じゃありません }
+    tokens:
+      - { role: topic, text: それ, reading: それ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - {
+          role: predicate,
+          text: 時計じゃありません,
+          reading: とけいじゃありません,
+          wordClass: predicate,
+        }
+    meaning: That is not a clock.
+    reading: それはとけいじゃありません。
+    translationTokens:
+      - { role: topic, text: That }
+      - { role: predicate, text: ' is not a clock.' }
+    form: polite
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+  this-is-not-a-magazine:
+    text: これは雑誌じゃありません。
+    reading: これはざっしじゃありません。
+    meaning: This is not a magazine.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 雑誌, reading: ざっし, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 雑誌じゃありません,
+          reading: ざっしじゃありません,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is not a magazine.', role: predicate }
+    form: polite
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+  this-is-not-a-newspaper:
+    text: これは新聞じゃありません。
+    reading: これはしんぶんじゃありません。
+    meaning: This is not a newspaper.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 新聞, reading: しんぶん, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 新聞じゃありません,
+          reading: しんぶんじゃありません,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is not a newspaper.', role: predicate }
+    form: polite
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+  this-is-not-a-dictionary:
+    text: これは辞書じゃありません。
+    reading: これはじしょじゃありません。
+    meaning: This is not a dictionary.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 辞書, reading: じしょ, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 辞書じゃありません,
+          reading: じしょじゃありません,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is not a dictionary.', role: predicate }
+    form: polite
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+  this-is-not-a-novel:
+    text: これは小説じゃありません。
+    reading: これはしょうせつじゃありません。
+    meaning: This is not a novel.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 小説, reading: しょうせつ, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 小説じゃありません,
+          reading: しょうせつじゃありません,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is not a novel.', role: predicate }
+    form: polite
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+  this-is-not-a-comic:
+    text: これは漫画じゃありません。
+    reading: これはまんがじゃありません。
+    meaning: This is not a comic.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 漫画, reading: まんが, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 漫画じゃありません,
+          reading: まんがじゃありません,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is not a comic.', role: predicate }
+    form: polite
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+  this-is-not-a-textbook:
+    text: これは教科書じゃありません。
+    reading: これはきょうかしょじゃありません。
+    meaning: This is not a textbook.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 教科書, reading: きょうかしょ, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 教科書じゃありません,
+          reading: きょうかしょじゃありません,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is not a textbook.', role: predicate }
+    form: polite
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+  this-is-not-a-picture-book:
+    text: これは絵本じゃありません。
+    reading: これはえほんじゃありません。
+    meaning: This is not a picture book.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 絵本, reading: えほん, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 絵本じゃありません,
+          reading: えほんじゃありません,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is not a picture book.', role: predicate }
+    form: polite
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+  this-is-not-a-letter:
+    text: これは手紙じゃありません。
+    reading: これはてがみじゃありません。
+    meaning: This is not a letter.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 手紙, reading: てがみ, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 手紙じゃありません,
+          reading: てがみじゃありません,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is not a letter.', role: predicate }
+    form: polite
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+  this-is-not-a-diary:
+    text: これは日記じゃありません。
+    reading: これはにっきじゃありません。
+    meaning: This is not a diary.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 日記, reading: にっき, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 日記じゃありません,
+          reading: にっきじゃありません,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is not a diary.', role: predicate }
+    form: polite
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+  this-is-not-a-article:
+    text: これは記事じゃありません。
+    reading: これはきじじゃありません。
+    meaning: This is not a article.
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 記事, reading: きじ, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 記事じゃありません,
+          reading: きじじゃありません,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: This, role: topic }
+      - { text: ' is not a article.', role: predicate }
+    form: polite
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+  yamada-is-not-a-student:
+    text: 山田さんは学生じゃありません。
+    reading: やまださんはがくせいじゃありません。
+    meaning: Yamada is not a student.
+    tiles:
+      - { text: 山田さん, reading: やまださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 山田さん, reading: やまださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 学生じゃありません,
+          reading: がくせいじゃありません,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: Yamada, role: topic }
+      - { text: ' is not a student.', role: predicate }
+    form: polite
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+  sato-is-not-a-student:
+    text: 佐藤さんは学生じゃありません。
+    reading: さとうさんはがくせいじゃありません。
+    meaning: Sato is not a student.
+    tiles:
+      - { text: 佐藤さん, reading: さとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 佐藤さん, reading: さとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 学生じゃありません,
+          reading: がくせいじゃありません,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: Sato, role: topic }
+      - { text: ' is not a student.', role: predicate }
+    form: polite
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+  suzuki-is-not-a-student:
+    text: 鈴木さんは学生じゃありません。
+    reading: すずきさんはがくせいじゃありません。
+    meaning: Suzuki is not a student.
+    tiles:
+      - { text: 鈴木さん, reading: すずきさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 鈴木さん, reading: すずきさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 学生じゃありません,
+          reading: がくせいじゃありません,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: Suzuki, role: topic }
+      - { text: ' is not a student.', role: predicate }
+    form: polite
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+  takahashi-is-not-a-student:
+    text: 高橋さんは学生じゃありません。
+    reading: たかはしさんはがくせいじゃありません。
+    meaning: Takahashi is not a student.
+    tiles:
+      - { text: 高橋さん, reading: たかはしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 高橋さん, reading: たかはしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 学生じゃありません,
+          reading: がくせいじゃありません,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: Takahashi, role: topic }
+      - { text: ' is not a student.', role: predicate }
+    form: polite
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+  ito-is-not-a-student:
+    text: 伊藤さんは学生じゃありません。
+    reading: いとうさんはがくせいじゃありません。
+    meaning: Ito is not a student.
+    tiles:
+      - { text: 伊藤さん, reading: いとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 伊藤さん, reading: いとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 学生じゃありません,
+          reading: がくせいじゃありません,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: Ito, role: topic }
+      - { text: ' is not a student.', role: predicate }
+    form: polite
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+  nakamura-is-not-a-student:
+    text: 中村さんは学生じゃありません。
+    reading: なかむらさんはがくせいじゃありません。
+    meaning: Nakamura is not a student.
+    tiles:
+      - { text: 中村さん, reading: なかむらさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 中村さん, reading: なかむらさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 学生じゃありません,
+          reading: がくせいじゃありません,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: Nakamura, role: topic }
+      - { text: ' is not a student.', role: predicate }
+    form: polite
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+  kobayashi-is-not-a-student:
+    text: 小林さんは学生じゃありません。
+    reading: こばやしさんはがくせいじゃありません。
+    meaning: Kobayashi is not a student.
+    tiles:
+      - { text: 小林さん, reading: こばやしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+    tokens:
+      - { text: 小林さん, reading: こばやしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - {
+          text: 学生じゃありません,
+          reading: がくせいじゃありません,
+          role: predicate,
+          wordClass: predicate,
+        }
+    translationTokens:
+      - { text: Kobayashi, role: topic }
+      - { text: ' is not a student.', role: predicate }
+    form: polite
+    hint: Replace です with the polite noun-negative ending.
+    explanation: Noun + じゃありません negates a noun sentence. Plain ありません alone expresses non-existence.
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-am-not-a-teacher
+    choices:
+      - text: I am not a teacher.
+        reading: ''
+      - text: I am a teacher.
+        reading: ''
+    answers:
+      - I am not a teacher.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-am-not-a-teacher
+    choices:
+      - sentence: i-am-not-a-teacher
+      - text: 私は先生ありません。
+        tiles:
+          - { text: 私, reading: わたし }
+          - { text: は, reading: は }
+          - { text: 先生, reading: せんせい }
+          - { text: ありません, reading: ありません }
+        tokens:
+          - { role: topic, text: 私, reading: わたし, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - {
+              role: predicate,
+              text: 先生ありません,
+              reading: せんせいありません,
+              wordClass: predicate,
+            }
+        meaning: I am a teacher.
+        reading: わたしはせんせいありません。
+    prompt: 'Choose the correct Japanese: I am not a teacher.'
+    answers:
+      - 私は先生じゃありません
+      - 私は先生ではありません
+      - 私は先生じゃないです
+      - 私はせんせいじゃありません
+      - 私はせんせいではありません
+      - 私はせんせいじゃないです
+      - わたしは先生じゃありません
+      - わたしは先生ではありません
+      - わたしは先生じゃないです
+      - わたしはせんせいじゃありません
+      - わたしはせんせいではありません
+      - わたしはせんせいじゃないです
+  - id: gap
+    type: gap
+    sentence: this-is-not-a-book
+    answers:
+      - じゃありません
+      - ではありません
+      - じゃないです
+    context:
+      text: これは本___。
+      tokens:
+        - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 本___, reading: ほん___, wordClass: predicate }
+      reading: これはほん___。
+  - id: tiles
+    type: tiles
+    sentence: this-is-not-a-book
+    prompt: 'Build this sentence: This is not a book. (polite)'
+    answers:
+      - これは本じゃありません
+      - これは本ではありません
+      - これは本じゃないです
+      - これはほんじゃありません
+      - これはほんではありません
+      - これはほんじゃないです
+    tiles:
+      - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 本, reading: ほん, wordClass: predicate }
+      - { role: predicate, text: じゃありません, reading: じゃありません, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: tanaka-is-not-a-student
+    answers:
+      - 田中さんは学生じゃありません
+      - 田中さんは学生ではありません
+      - 田中さんは学生じゃないです
+      - 田中さんはがくせいじゃありません
+      - 田中さんはがくせいではありません
+      - 田中さんはがくせいじゃないです
+      - たなかさんは学生じゃありません
+      - たなかさんは学生ではありません
+      - たなかさんは学生じゃないです
+      - たなかさんはがくせいじゃありません
+      - たなかさんはがくせいではありません
+      - たなかさんはがくせいじゃないです
+  - id: alternate
+    type: typing
+    sentence: that-is-not-a-clock
+    alternate: true
+    prompt: 'One more example: That is not a clock. (polite)'
+    answers:
+      - それは時計じゃありません
+      - それは時計ではありません
+      - それは時計じゃないです
+      - それはとけいじゃありません
+      - それはとけいではありません
+      - それはとけいじゃないです
+  - id: extra-1-tiles
+    type: tiles
+    sentence: this-is-not-a-magazine
+    prompt: 'Build this sentence: This is not a magazine. (polite)'
+    answers:
+      - これは雑誌じゃありません
+      - これは雑誌ではありません
+      - これは雑誌じゃないです
+      - これはざっしじゃありません
+      - これはざっしではありません
+      - これはざっしじゃないです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 雑誌, reading: ざっし, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+  - id: extra-1-typing
+    type: typing
+    sentence: this-is-not-a-magazine
+    answers:
+      - これは雑誌じゃありません
+      - これは雑誌ではありません
+      - これは雑誌じゃないです
+      - これはざっしじゃありません
+      - これはざっしではありません
+      - これはざっしじゃないです
+  - id: extra-1-meaning-choice
+    type: meaning-choice
+    sentence: this-is-not-a-magazine
+    choices:
+      - text: This is not a magazine.
+        reading: ''
+      - text: I am not a teacher.
+        reading: ''
+    prompt: 'Choose the meaning: これは雑誌じゃありません。'
+    answers:
+      - This is not a magazine.
+  - id: extra-2-tiles
+    type: tiles
+    sentence: this-is-not-a-newspaper
+    prompt: 'Build this sentence: This is not a newspaper. (polite)'
+    answers:
+      - これは新聞じゃありません
+      - これは新聞ではありません
+      - これは新聞じゃないです
+      - これはしんぶんじゃありません
+      - これはしんぶんではありません
+      - これはしんぶんじゃないです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 新聞, reading: しんぶん, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+  - id: extra-2-typing
+    type: typing
+    sentence: this-is-not-a-newspaper
+    answers:
+      - これは新聞じゃありません
+      - これは新聞ではありません
+      - これは新聞じゃないです
+      - これはしんぶんじゃありません
+      - これはしんぶんではありません
+      - これはしんぶんじゃないです
+  - id: extra-2-meaning-choice
+    type: meaning-choice
+    sentence: this-is-not-a-newspaper
+    choices:
+      - text: This is not a newspaper.
+        reading: ''
+      - text: I am not a teacher.
+        reading: ''
+    prompt: 'Choose the meaning: これは新聞じゃありません。'
+    answers:
+      - This is not a newspaper.
+  - id: extra-3-tiles
+    type: tiles
+    sentence: this-is-not-a-dictionary
+    prompt: 'Build this sentence: This is not a dictionary. (polite)'
+    answers:
+      - これは辞書じゃありません
+      - これは辞書ではありません
+      - これは辞書じゃないです
+      - これはじしょじゃありません
+      - これはじしょではありません
+      - これはじしょじゃないです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 辞書, reading: じしょ, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+  - id: extra-3-typing
+    type: typing
+    sentence: this-is-not-a-dictionary
+    answers:
+      - これは辞書じゃありません
+      - これは辞書ではありません
+      - これは辞書じゃないです
+      - これはじしょじゃありません
+      - これはじしょではありません
+      - これはじしょじゃないです
+  - id: extra-3-meaning-choice
+    type: meaning-choice
+    sentence: this-is-not-a-dictionary
+    choices:
+      - text: This is not a dictionary.
+        reading: ''
+      - text: I am not a teacher.
+        reading: ''
+    prompt: 'Choose the meaning: これは辞書じゃありません。'
+    answers:
+      - This is not a dictionary.
+  - id: extra-4-tiles
+    type: tiles
+    sentence: this-is-not-a-novel
+    prompt: 'Build this sentence: This is not a novel. (polite)'
+    answers:
+      - これは小説じゃありません
+      - これは小説ではありません
+      - これは小説じゃないです
+      - これはしょうせつじゃありません
+      - これはしょうせつではありません
+      - これはしょうせつじゃないです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 小説, reading: しょうせつ, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+  - id: extra-4-typing
+    type: typing
+    sentence: this-is-not-a-novel
+    answers:
+      - これは小説じゃありません
+      - これは小説ではありません
+      - これは小説じゃないです
+      - これはしょうせつじゃありません
+      - これはしょうせつではありません
+      - これはしょうせつじゃないです
+  - id: extra-4-meaning-choice
+    type: meaning-choice
+    sentence: this-is-not-a-novel
+    choices:
+      - text: This is not a novel.
+        reading: ''
+      - text: I am not a teacher.
+        reading: ''
+    prompt: 'Choose the meaning: これは小説じゃありません。'
+    answers:
+      - This is not a novel.
+  - id: extra-5-tiles
+    type: tiles
+    sentence: this-is-not-a-comic
+    prompt: 'Build this sentence: This is not a comic. (polite)'
+    answers:
+      - これは漫画じゃありません
+      - これは漫画ではありません
+      - これは漫画じゃないです
+      - これはまんがじゃありません
+      - これはまんがではありません
+      - これはまんがじゃないです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 漫画, reading: まんが, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+  - id: extra-5-typing
+    type: typing
+    sentence: this-is-not-a-comic
+    answers:
+      - これは漫画じゃありません
+      - これは漫画ではありません
+      - これは漫画じゃないです
+      - これはまんがじゃありません
+      - これはまんがではありません
+      - これはまんがじゃないです
+  - id: extra-5-meaning-choice
+    type: meaning-choice
+    sentence: this-is-not-a-comic
+    choices:
+      - text: This is not a comic.
+        reading: ''
+      - text: I am not a teacher.
+        reading: ''
+    prompt: 'Choose the meaning: これは漫画じゃありません。'
+    answers:
+      - This is not a comic.
+  - id: extra-6-tiles
+    type: tiles
+    sentence: this-is-not-a-textbook
+    prompt: 'Build this sentence: This is not a textbook. (polite)'
+    answers:
+      - これは教科書じゃありません
+      - これは教科書ではありません
+      - これは教科書じゃないです
+      - これはきょうかしょじゃありません
+      - これはきょうかしょではありません
+      - これはきょうかしょじゃないです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 教科書, reading: きょうかしょ, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+  - id: extra-6-typing
+    type: typing
+    sentence: this-is-not-a-textbook
+    answers:
+      - これは教科書じゃありません
+      - これは教科書ではありません
+      - これは教科書じゃないです
+      - これはきょうかしょじゃありません
+      - これはきょうかしょではありません
+      - これはきょうかしょじゃないです
+  - id: extra-6-meaning-choice
+    type: meaning-choice
+    sentence: this-is-not-a-textbook
+    choices:
+      - text: This is not a textbook.
+        reading: ''
+      - text: I am not a teacher.
+        reading: ''
+    prompt: 'Choose the meaning: これは教科書じゃありません。'
+    answers:
+      - This is not a textbook.
+  - id: extra-7-tiles
+    type: tiles
+    sentence: this-is-not-a-picture-book
+    prompt: 'Build this sentence: This is not a picture book. (polite)'
+    answers:
+      - これは絵本じゃありません
+      - これは絵本ではありません
+      - これは絵本じゃないです
+      - これはえほんじゃありません
+      - これはえほんではありません
+      - これはえほんじゃないです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 絵本, reading: えほん, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+  - id: extra-7-typing
+    type: typing
+    sentence: this-is-not-a-picture-book
+    answers:
+      - これは絵本じゃありません
+      - これは絵本ではありません
+      - これは絵本じゃないです
+      - これはえほんじゃありません
+      - これはえほんではありません
+      - これはえほんじゃないです
+  - id: extra-7-meaning-choice
+    type: meaning-choice
+    sentence: this-is-not-a-picture-book
+    choices:
+      - text: This is not a picture book.
+        reading: ''
+      - text: I am not a teacher.
+        reading: ''
+    prompt: 'Choose the meaning: これは絵本じゃありません。'
+    answers:
+      - This is not a picture book.
+  - id: extra-8-tiles
+    type: tiles
+    sentence: this-is-not-a-letter
+    prompt: 'Build this sentence: This is not a letter. (polite)'
+    answers:
+      - これは手紙じゃありません
+      - これは手紙ではありません
+      - これは手紙じゃないです
+      - これはてがみじゃありません
+      - これはてがみではありません
+      - これはてがみじゃないです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 手紙, reading: てがみ, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+  - id: extra-8-typing
+    type: typing
+    sentence: this-is-not-a-letter
+    answers:
+      - これは手紙じゃありません
+      - これは手紙ではありません
+      - これは手紙じゃないです
+      - これはてがみじゃありません
+      - これはてがみではありません
+      - これはてがみじゃないです
+  - id: extra-8-meaning-choice
+    type: meaning-choice
+    sentence: this-is-not-a-letter
+    choices:
+      - text: This is not a letter.
+        reading: ''
+      - text: I am not a teacher.
+        reading: ''
+    prompt: 'Choose the meaning: これは手紙じゃありません。'
+    answers:
+      - This is not a letter.
+  - id: extra-9-tiles
+    type: tiles
+    sentence: this-is-not-a-diary
+    prompt: 'Build this sentence: This is not a diary. (polite)'
+    answers:
+      - これは日記じゃありません
+      - これは日記ではありません
+      - これは日記じゃないです
+      - これはにっきじゃありません
+      - これはにっきではありません
+      - これはにっきじゃないです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 日記, reading: にっき, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+  - id: extra-9-typing
+    type: typing
+    sentence: this-is-not-a-diary
+    answers:
+      - これは日記じゃありません
+      - これは日記ではありません
+      - これは日記じゃないです
+      - これはにっきじゃありません
+      - これはにっきではありません
+      - これはにっきじゃないです
+  - id: extra-9-meaning-choice
+    type: meaning-choice
+    sentence: this-is-not-a-diary
+    choices:
+      - text: This is not a diary.
+        reading: ''
+      - text: I am not a teacher.
+        reading: ''
+    prompt: 'Choose the meaning: これは日記じゃありません。'
+    answers:
+      - This is not a diary.
+  - id: extra-10-tiles
+    type: tiles
+    sentence: this-is-not-a-article
+    prompt: 'Build this sentence: This is not a article. (polite)'
+    answers:
+      - これは記事じゃありません
+      - これは記事ではありません
+      - これは記事じゃないです
+      - これはきじじゃありません
+      - これはきじではありません
+      - これはきじじゃないです
+    tiles:
+      - { text: これ, reading: これ, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 記事, reading: きじ, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+  - id: extra-10-typing
+    type: typing
+    sentence: this-is-not-a-article
+    answers:
+      - これは記事じゃありません
+      - これは記事ではありません
+      - これは記事じゃないです
+      - これはきじじゃありません
+      - これはきじではありません
+      - これはきじじゃないです
+  - id: extra-10-meaning-choice
+    type: meaning-choice
+    sentence: this-is-not-a-article
+    choices:
+      - text: This is not a article.
+        reading: ''
+      - text: I am not a teacher.
+        reading: ''
+    prompt: 'Choose the meaning: これは記事じゃありません。'
+    answers:
+      - This is not a article.
+  - id: extra-11-tiles
+    type: tiles
+    sentence: yamada-is-not-a-student
+    prompt: 'Build this sentence: Yamada is not a student. (polite)'
+    answers:
+      - 山田さんは学生じゃありません
+      - 山田さんは学生ではありません
+      - 山田さんは学生じゃないです
+      - 山田さんはがくせいじゃありません
+      - 山田さんはがくせいではありません
+      - 山田さんはがくせいじゃないです
+      - やまださんは学生じゃありません
+      - やまださんは学生ではありません
+      - やまださんは学生じゃないです
+      - やまださんはがくせいじゃありません
+      - やまださんはがくせいではありません
+      - やまださんはがくせいじゃないです
+    tiles:
+      - { text: 山田さん, reading: やまださん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+  - id: extra-11-typing
+    type: typing
+    sentence: yamada-is-not-a-student
+    answers:
+      - 山田さんは学生じゃありません
+      - 山田さんは学生ではありません
+      - 山田さんは学生じゃないです
+      - 山田さんはがくせいじゃありません
+      - 山田さんはがくせいではありません
+      - 山田さんはがくせいじゃないです
+      - やまださんは学生じゃありません
+      - やまださんは学生ではありません
+      - やまださんは学生じゃないです
+      - やまださんはがくせいじゃありません
+      - やまださんはがくせいではありません
+      - やまださんはがくせいじゃないです
+  - id: extra-11-meaning-choice
+    type: meaning-choice
+    sentence: yamada-is-not-a-student
+    choices:
+      - text: Yamada is not a student.
+        reading: ''
+      - text: I am not a teacher.
+        reading: ''
+    prompt: 'Choose the meaning: 山田さんは学生じゃありません。'
+    answers:
+      - Yamada is not a student.
+  - id: extra-12-tiles
+    type: tiles
+    sentence: sato-is-not-a-student
+    prompt: 'Build this sentence: Sato is not a student. (polite)'
+    answers:
+      - 佐藤さんは学生じゃありません
+      - 佐藤さんは学生ではありません
+      - 佐藤さんは学生じゃないです
+      - 佐藤さんはがくせいじゃありません
+      - 佐藤さんはがくせいではありません
+      - 佐藤さんはがくせいじゃないです
+      - さとうさんは学生じゃありません
+      - さとうさんは学生ではありません
+      - さとうさんは学生じゃないです
+      - さとうさんはがくせいじゃありません
+      - さとうさんはがくせいではありません
+      - さとうさんはがくせいじゃないです
+    tiles:
+      - { text: 佐藤さん, reading: さとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+  - id: extra-12-typing
+    type: typing
+    sentence: sato-is-not-a-student
+    answers:
+      - 佐藤さんは学生じゃありません
+      - 佐藤さんは学生ではありません
+      - 佐藤さんは学生じゃないです
+      - 佐藤さんはがくせいじゃありません
+      - 佐藤さんはがくせいではありません
+      - 佐藤さんはがくせいじゃないです
+      - さとうさんは学生じゃありません
+      - さとうさんは学生ではありません
+      - さとうさんは学生じゃないです
+      - さとうさんはがくせいじゃありません
+      - さとうさんはがくせいではありません
+      - さとうさんはがくせいじゃないです
+  - id: extra-12-meaning-choice
+    type: meaning-choice
+    sentence: sato-is-not-a-student
+    choices:
+      - text: Sato is not a student.
+        reading: ''
+      - text: I am not a teacher.
+        reading: ''
+    prompt: 'Choose the meaning: 佐藤さんは学生じゃありません。'
+    answers:
+      - Sato is not a student.
+  - id: extra-13-tiles
+    type: tiles
+    sentence: suzuki-is-not-a-student
+    prompt: 'Build this sentence: Suzuki is not a student. (polite)'
+    answers:
+      - 鈴木さんは学生じゃありません
+      - 鈴木さんは学生ではありません
+      - 鈴木さんは学生じゃないです
+      - 鈴木さんはがくせいじゃありません
+      - 鈴木さんはがくせいではありません
+      - 鈴木さんはがくせいじゃないです
+      - すずきさんは学生じゃありません
+      - すずきさんは学生ではありません
+      - すずきさんは学生じゃないです
+      - すずきさんはがくせいじゃありません
+      - すずきさんはがくせいではありません
+      - すずきさんはがくせいじゃないです
+    tiles:
+      - { text: 鈴木さん, reading: すずきさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+  - id: extra-13-typing
+    type: typing
+    sentence: suzuki-is-not-a-student
+    answers:
+      - 鈴木さんは学生じゃありません
+      - 鈴木さんは学生ではありません
+      - 鈴木さんは学生じゃないです
+      - 鈴木さんはがくせいじゃありません
+      - 鈴木さんはがくせいではありません
+      - 鈴木さんはがくせいじゃないです
+      - すずきさんは学生じゃありません
+      - すずきさんは学生ではありません
+      - すずきさんは学生じゃないです
+      - すずきさんはがくせいじゃありません
+      - すずきさんはがくせいではありません
+      - すずきさんはがくせいじゃないです
+  - id: extra-13-meaning-choice
+    type: meaning-choice
+    sentence: suzuki-is-not-a-student
+    choices:
+      - text: Suzuki is not a student.
+        reading: ''
+      - text: I am not a teacher.
+        reading: ''
+    prompt: 'Choose the meaning: 鈴木さんは学生じゃありません。'
+    answers:
+      - Suzuki is not a student.
+  - id: extra-14-tiles
+    type: tiles
+    sentence: takahashi-is-not-a-student
+    prompt: 'Build this sentence: Takahashi is not a student. (polite)'
+    answers:
+      - 高橋さんは学生じゃありません
+      - 高橋さんは学生ではありません
+      - 高橋さんは学生じゃないです
+      - 高橋さんはがくせいじゃありません
+      - 高橋さんはがくせいではありません
+      - 高橋さんはがくせいじゃないです
+      - たかはしさんは学生じゃありません
+      - たかはしさんは学生ではありません
+      - たかはしさんは学生じゃないです
+      - たかはしさんはがくせいじゃありません
+      - たかはしさんはがくせいではありません
+      - たかはしさんはがくせいじゃないです
+    tiles:
+      - { text: 高橋さん, reading: たかはしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+  - id: extra-14-typing
+    type: typing
+    sentence: takahashi-is-not-a-student
+    answers:
+      - 高橋さんは学生じゃありません
+      - 高橋さんは学生ではありません
+      - 高橋さんは学生じゃないです
+      - 高橋さんはがくせいじゃありません
+      - 高橋さんはがくせいではありません
+      - 高橋さんはがくせいじゃないです
+      - たかはしさんは学生じゃありません
+      - たかはしさんは学生ではありません
+      - たかはしさんは学生じゃないです
+      - たかはしさんはがくせいじゃありません
+      - たかはしさんはがくせいではありません
+      - たかはしさんはがくせいじゃないです
+  - id: extra-14-meaning-choice
+    type: meaning-choice
+    sentence: takahashi-is-not-a-student
+    choices:
+      - text: Takahashi is not a student.
+        reading: ''
+      - text: I am not a teacher.
+        reading: ''
+    prompt: 'Choose the meaning: 高橋さんは学生じゃありません。'
+    answers:
+      - Takahashi is not a student.
+  - id: extra-15-tiles
+    type: tiles
+    sentence: ito-is-not-a-student
+    prompt: 'Build this sentence: Ito is not a student. (polite)'
+    answers:
+      - 伊藤さんは学生じゃありません
+      - 伊藤さんは学生ではありません
+      - 伊藤さんは学生じゃないです
+      - 伊藤さんはがくせいじゃありません
+      - 伊藤さんはがくせいではありません
+      - 伊藤さんはがくせいじゃないです
+      - いとうさんは学生じゃありません
+      - いとうさんは学生ではありません
+      - いとうさんは学生じゃないです
+      - いとうさんはがくせいじゃありません
+      - いとうさんはがくせいではありません
+      - いとうさんはがくせいじゃないです
+    tiles:
+      - { text: 伊藤さん, reading: いとうさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+  - id: extra-15-typing
+    type: typing
+    sentence: ito-is-not-a-student
+    answers:
+      - 伊藤さんは学生じゃありません
+      - 伊藤さんは学生ではありません
+      - 伊藤さんは学生じゃないです
+      - 伊藤さんはがくせいじゃありません
+      - 伊藤さんはがくせいではありません
+      - 伊藤さんはがくせいじゃないです
+      - いとうさんは学生じゃありません
+      - いとうさんは学生ではありません
+      - いとうさんは学生じゃないです
+      - いとうさんはがくせいじゃありません
+      - いとうさんはがくせいではありません
+      - いとうさんはがくせいじゃないです
+  - id: extra-15-meaning-choice
+    type: meaning-choice
+    sentence: ito-is-not-a-student
+    choices:
+      - text: Ito is not a student.
+        reading: ''
+      - text: I am not a teacher.
+        reading: ''
+    prompt: 'Choose the meaning: 伊藤さんは学生じゃありません。'
+    answers:
+      - Ito is not a student.
+  - id: extra-16-tiles
+    type: tiles
+    sentence: nakamura-is-not-a-student
+    prompt: 'Build this sentence: Nakamura is not a student. (polite)'
+    answers:
+      - 中村さんは学生じゃありません
+      - 中村さんは学生ではありません
+      - 中村さんは学生じゃないです
+      - 中村さんはがくせいじゃありません
+      - 中村さんはがくせいではありません
+      - 中村さんはがくせいじゃないです
+      - なかむらさんは学生じゃありません
+      - なかむらさんは学生ではありません
+      - なかむらさんは学生じゃないです
+      - なかむらさんはがくせいじゃありません
+      - なかむらさんはがくせいではありません
+      - なかむらさんはがくせいじゃないです
+    tiles:
+      - { text: 中村さん, reading: なかむらさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+  - id: extra-16-typing
+    type: typing
+    sentence: nakamura-is-not-a-student
+    answers:
+      - 中村さんは学生じゃありません
+      - 中村さんは学生ではありません
+      - 中村さんは学生じゃないです
+      - 中村さんはがくせいじゃありません
+      - 中村さんはがくせいではありません
+      - 中村さんはがくせいじゃないです
+      - なかむらさんは学生じゃありません
+      - なかむらさんは学生ではありません
+      - なかむらさんは学生じゃないです
+      - なかむらさんはがくせいじゃありません
+      - なかむらさんはがくせいではありません
+      - なかむらさんはがくせいじゃないです
+  - id: extra-16-meaning-choice
+    type: meaning-choice
+    sentence: nakamura-is-not-a-student
+    choices:
+      - text: Nakamura is not a student.
+        reading: ''
+      - text: I am not a teacher.
+        reading: ''
+    prompt: 'Choose the meaning: 中村さんは学生じゃありません。'
+    answers:
+      - Nakamura is not a student.
+  - id: extra-17-tiles
+    type: tiles
+    sentence: kobayashi-is-not-a-student
+    prompt: 'Build this sentence: Kobayashi is not a student. (polite)'
+    answers:
+      - 小林さんは学生じゃありません
+      - 小林さんは学生ではありません
+      - 小林さんは学生じゃないです
+      - 小林さんはがくせいじゃありません
+      - 小林さんはがくせいではありません
+      - 小林さんはがくせいじゃないです
+      - こばやしさんは学生じゃありません
+      - こばやしさんは学生ではありません
+      - こばやしさんは学生じゃないです
+      - こばやしさんはがくせいじゃありません
+      - こばやしさんはがくせいではありません
+      - こばやしさんはがくせいじゃないです
+    tiles:
+      - { text: 小林さん, reading: こばやしさん, role: topic, wordClass: noun phrase }
+      - { text: は, reading: は, role: particle, wordClass: particle }
+      - { text: 学生, reading: がくせい, role: predicate, wordClass: predicate }
+      - { text: じゃありません, reading: じゃありません, role: predicate, wordClass: predicate }
+  - id: extra-17-typing
+    type: typing
+    sentence: kobayashi-is-not-a-student
+    answers:
+      - 小林さんは学生じゃありません
+      - 小林さんは学生ではありません
+      - 小林さんは学生じゃないです
+      - 小林さんはがくせいじゃありません
+      - 小林さんはがくせいではありません
+      - 小林さんはがくせいじゃないです
+      - こばやしさんは学生じゃありません
+      - こばやしさんは学生ではありません
+      - こばやしさんは学生じゃないです
+      - こばやしさんはがくせいじゃありません
+      - こばやしさんはがくせいではありません
+      - こばやしさんはがくせいじゃないです

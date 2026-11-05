@@ -1,0 +1,541 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-noun-descriptions
+  kind: grammar
+  note:
+    'Keep い directly before a noun: おいしい料理 (おいしいりょうり). Add な between a な-adjective and a noun: 静かな町
+    (しずかなまち). Link a describing noun to another noun with の: 日本の料理 (にほんのりょうり). Do not use です or だ between the
+    description and its noun. Compare 日本の料理はおいしいです (にほんのりょうりはおいしいです, Japanese food is delicious) with
+    おいしい日本の料理 (おいしいにほんのりょうり, delicious Japanese food).'
+  tags:
+    - Study guide
+    - Adjective guide
+  level: N5
+  title: 'Describe nouns: い / な / の'
+  topic: Adjectives and noun descriptions
+  meaning: 'Describe nouns: い / な / の'
+  reading: おいしいりょうりです。
+  examples:
+    - tokens:
+        - { role: modifier, text: おいしい, reading: おいしい, wordClass: noun phrase }
+        - { role: predicate, text: 料理, reading: りょうり, wordClass: predicate }
+        - { role: predicate, text: です, reading: です, wordClass: predicate }
+      meaning: It is a delicious dish.
+      reading: おいしいりょうりです。
+      japanese: おいしい料理です。
+      translationTokens:
+        - { role: implicit, text: 'It ', implicit: true }
+        - { role: predicate, text: 'is a ' }
+        - { role: modifier, text: 'delicious ' }
+        - { role: predicate, text: dish. }
+    - tokens:
+        - { role: modifier, text: 静か, reading: しずか, wordClass: noun phrase }
+        - { role: particle, text: な, reading: な, wordClass: particle }
+        - { role: predicate, text: 町, reading: まち, wordClass: predicate }
+        - { role: predicate, text: です, reading: です, wordClass: predicate }
+      meaning: It is a quiet town.
+      reading: しずかなまちです。
+      japanese: 静かな町です。
+      translationTokens:
+        - { role: implicit, text: 'It ', implicit: true }
+        - { role: predicate, text: 'is a ' }
+        - { role: modifier, text: 'quiet ' }
+        - { role: predicate, text: town. }
+    - tokens:
+        - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+        - { role: particle, text: の, reading: の, wordClass: particle }
+        - { role: predicate, text: 料理, reading: りょうり, wordClass: predicate }
+        - { role: predicate, text: です, reading: です, wordClass: predicate }
+      meaning: It is Japanese food.
+      reading: にほんのりょうりです。
+      japanese: 日本の料理です。
+      translationTokens:
+        - { role: implicit, text: 'It ', implicit: true }
+        - { role: predicate, text: 'is ' }
+        - { role: modifier, text: 'Japanese ' }
+        - { role: predicate, text: food. }
+    - tokens:
+        - { role: modifier, text: きれい, reading: きれい, wordClass: noun phrase }
+        - { role: particle, text: な, reading: な, wordClass: particle }
+        - { role: predicate, text: 部屋, reading: へや, wordClass: predicate }
+        - { role: predicate, text: です, reading: です, wordClass: predicate }
+      meaning: It is a clean room.
+      reading: きれいなへやです。
+      japanese: きれいな部屋です。
+      translationTokens:
+        - { role: implicit, text: 'It ', implicit: true }
+        - { role: predicate, text: 'is a ' }
+        - { role: modifier, text: 'clean ' }
+        - { role: predicate, text: room. }
+  japanese: おいしい料理です。
+  references:
+    - rows:
+        - - text: い-adjective
+            reading: ''
+          - text: い-adjective + noun
+            reading: ''
+          - text: おいしい料理
+            reading: おいしいりょうり
+          - text: a delicious dish
+            reading: ''
+        - - text: な-adjective
+            reading: ''
+          - text: な-adjective + な + noun
+            reading: ''
+          - text: 静かな町
+            reading: しずかなまち
+          - text: a quiet town
+            reading: ''
+        - - text: Noun
+            reading: ''
+          - text: noun + の + noun
+            reading: ''
+          - text: 日本の料理
+            reading: にほんのりょうり
+          - text: Japanese food
+            reading: ''
+        - - text: Exception ending in い
+            reading: ''
+          - text: きれい + な + noun
+            reading: きれい + な + noun
+          - text: きれいな部屋
+            reading: きれいなへや
+          - text: a clean room
+            reading: ''
+      columns:
+        - Type
+        - Pattern
+        - Example
+        - Meaning
+      heading: What goes before the noun?
+sentences:
+  it-is-a-delicious-dish:
+    text: おいしい料理です。
+    tokens:
+      - { role: modifier, text: おいしい, reading: おいしい, wordClass: noun phrase }
+      - { role: predicate, text: 料理, reading: りょうり, wordClass: predicate }
+      - { role: predicate, text: です, reading: です, wordClass: predicate }
+    meaning: It is a delicious dish.
+    reading: おいしいりょうりです。
+    translationTokens:
+      - { role: implicit, text: 'It ', implicit: true }
+      - { role: predicate, text: 'is a ' }
+      - { role: modifier, text: 'delicious ' }
+      - { role: predicate, text: dish. }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Keep い directly before a noun: おいしい料理 (おいしいりょうり). Add な between a な-adjective and a noun: 静かな町
+      (しずかなまち). Link a describing noun to another noun with の: 日本の料理 (にほんのりょうり). Do not use です or だ between
+      the description and its noun. Compare 日本の料理はおいしいです (にほんのりょうりはおいしいです, Japanese food is delicious) with
+      おいしい日本の料理 (おいしいにほんのりょうり, delicious Japanese food).'
+  it-is-a-quiet-town:
+    text: 静かな町です。
+    tokens:
+      - { role: modifier, text: 静か, reading: しずか, wordClass: noun phrase }
+      - { role: particle, text: な, reading: な, wordClass: particle }
+      - { role: predicate, text: 町, reading: まち, wordClass: predicate }
+      - { role: predicate, text: です, reading: です, wordClass: predicate }
+    meaning: It is a quiet town.
+    reading: しずかなまちです。
+    translationTokens:
+      - { role: implicit, text: 'It ', implicit: true }
+      - { role: predicate, text: 'is a ' }
+      - { role: modifier, text: 'quiet ' }
+      - { role: predicate, text: town. }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Keep い directly before a noun: おいしい料理 (おいしいりょうり). Add な between a な-adjective and a noun: 静かな町
+      (しずかなまち). Link a describing noun to another noun with の: 日本の料理 (にほんのりょうり). Do not use です or だ between
+      the description and its noun. Compare 日本の料理はおいしいです (にほんのりょうりはおいしいです, Japanese food is delicious) with
+      おいしい日本の料理 (おいしいにほんのりょうり, delicious Japanese food).'
+    form: polite
+  it-is-japanese-food:
+    text: 日本の料理です。
+    tokens:
+      - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+      - { role: particle, text: の, reading: の, wordClass: particle }
+      - { role: predicate, text: 料理, reading: りょうり, wordClass: predicate }
+      - { role: predicate, text: です, reading: です, wordClass: predicate }
+    meaning: It is Japanese food.
+    reading: にほんのりょうりです。
+    translationTokens:
+      - { role: implicit, text: 'It ', implicit: true }
+      - { role: predicate, text: 'is ' }
+      - { role: modifier, text: 'Japanese ' }
+      - { role: predicate, text: food. }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Keep い directly before a noun: おいしい料理 (おいしいりょうり). Add な between a な-adjective and a noun: 静かな町
+      (しずかなまち). Link a describing noun to another noun with の: 日本の料理 (にほんのりょうり). Do not use です or だ between
+      the description and its noun. Compare 日本の料理はおいしいです (にほんのりょうりはおいしいです, Japanese food is delicious) with
+      おいしい日本の料理 (おいしいにほんのりょうり, delicious Japanese food).'
+  it-is-a-clean-room:
+    text: きれいな部屋です。
+    tokens:
+      - { role: modifier, text: きれい, reading: きれい, wordClass: noun phrase }
+      - { role: particle, text: な, reading: な, wordClass: particle }
+      - { role: predicate, text: 部屋, reading: へや, wordClass: predicate }
+      - { role: predicate, text: です, reading: です, wordClass: predicate }
+    meaning: It is a clean room.
+    reading: きれいなへやです。
+    translationTokens:
+      - { role: implicit, text: 'It ', implicit: true }
+      - { role: predicate, text: 'is a ' }
+      - { role: modifier, text: 'clean ' }
+      - { role: predicate, text: room. }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Keep い directly before a noun: おいしい料理 (おいしいりょうり). Add な between a な-adjective and a noun: 静かな町
+      (しずかなまち). Link a describing noun to another noun with の: 日本の料理 (にほんのりょうり). Do not use です or だ between
+      the description and its noun. Compare 日本の料理はおいしいです (にほんのりょうりはおいしいです, Japanese food is delicious) with
+      おいしい日本の料理 (おいしいにほんのりょうり, delicious Japanese food).'
+  it-is-a-delicious-cake:
+    tokens:
+      - { role: modifier, text: おいしい, reading: おいしい, wordClass: noun phrase }
+      - { role: predicate, text: ケーキ, reading: けーき, wordClass: predicate }
+      - { role: predicate, text: です, reading: です, wordClass: predicate }
+    meaning: It is a delicious cake.
+    reading: おいしいけーきです。
+    translationTokens:
+      - { role: implicit, text: 'It ', implicit: true }
+      - { role: predicate, text: 'is a ' }
+      - { role: modifier, text: 'delicious ' }
+      - { role: predicate, text: cake. }
+    text: おいしいケーキです。
+    hint: Check the particles and sentence ending.
+    explanation:
+      おいしいケーキです。 means “It is a delicious cake.” Match the vocabulary, particles, and tense to the
+      English sentence.
+    form: polite
+  it-is-a-quiet-village:
+    tokens:
+      - { role: modifier, text: 静か, reading: しずか, wordClass: noun phrase }
+      - { role: particle, text: な, reading: な, wordClass: particle }
+      - { role: predicate, text: 村, reading: むら, wordClass: predicate }
+      - { role: predicate, text: です, reading: です, wordClass: predicate }
+    meaning: It is a quiet village.
+    reading: しずかなむらです。
+    translationTokens:
+      - { role: implicit, text: 'It ', implicit: true }
+      - { role: predicate, text: 'is a ' }
+      - { role: modifier, text: 'quiet ' }
+      - { role: predicate, text: village. }
+    text: 静かな村です。
+    hint: Check the particles and sentence ending.
+    explanation:
+      静かな村です。 means “It is a quiet village.” Match the vocabulary, particles, and tense to the English
+      sentence.
+    form: polite
+  it-is-an-energetic-town:
+    tokens:
+      - { role: modifier, text: 元気, reading: げんき, wordClass: noun phrase }
+      - { role: particle, text: な, reading: な, wordClass: particle }
+      - { role: predicate, text: 町, reading: まち, wordClass: predicate }
+      - { role: predicate, text: です, reading: です, wordClass: predicate }
+    meaning: It is an energetic town.
+    reading: げんきなまちです。
+    translationTokens:
+      - { role: implicit, text: 'It ', implicit: true }
+      - { role: predicate, text: 'is a ' }
+      - { role: modifier, text: 'energetic ' }
+      - { role: predicate, text: town. }
+    text: 元気な町です。
+    hint: Check the particles and sentence ending.
+    explanation:
+      元気な町です。 means “It is an energetic town.” Match the vocabulary, particles, and tense to the
+      English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: it-is-a-delicious-dish
+    choices:
+      - text: It is a delicious dish.
+        reading: ''
+      - text: It is a quiet town.
+        reading: ''
+      - text: It is Japanese food.
+        reading: ''
+      - text: It is a clean room.
+        reading: ''
+    answers:
+      - It is a delicious dish.
+  - id: pattern
+    type: pattern-choice
+    sentence: it-is-a-quiet-town
+    choices:
+      - sentence: it-is-a-delicious-dish
+      - sentence: it-is-a-quiet-town
+    prompt: 'Choose the Japanese: It is a quiet town.'
+    answers:
+      - 静かな町です
+      - 静かなまちです
+      - しずかな町です
+      - しずかなまちです
+  - id: gap
+    type: gap
+    sentence: it-is-a-quiet-town
+    prompt: 'Fill the missing part: It is a quiet town. (polite)'
+    answers:
+      - な
+      - な
+    context:
+      text: 静か___町です。
+      tokens:
+        - { role: modifier, text: 静か, reading: しずか, wordClass: noun phrase }
+        - { role: particle, text: ___, reading: ___, wordClass: particle }
+        - { role: predicate, text: 町, reading: まち, wordClass: predicate }
+        - { role: predicate, text: です, reading: です, wordClass: predicate }
+      reading: しずか___まちです。
+  - id: tiles
+    type: tiles
+    sentence: it-is-a-quiet-town
+    prompt: 'Build: It is a quiet town. (polite)'
+    answers:
+      - 静かな町です
+      - 静かなまちです
+      - しずかな町です
+      - しずかなまちです
+    tiles:
+      - { role: modifier, text: 静か, reading: しずか, wordClass: noun phrase }
+      - { role: particle, text: な, reading: な, wordClass: particle }
+      - { role: predicate, text: 町, reading: まち, wordClass: predicate }
+      - { role: predicate, text: です, reading: です, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: it-is-japanese-food
+    answers:
+      - 日本の料理です
+      - 日本のりょうりです
+      - にほんの料理です
+      - にほんのりょうりです
+  - id: alternate
+    type: typing
+    sentence: it-is-a-clean-room
+    alternate: true
+    prompt: 'Another example: It is a clean room. (polite)'
+    answers:
+      - きれいな部屋です
+      - きれいなへやです
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: it-is-a-delicious-cake
+    choices:
+      - text: It is a delicious cake.
+        reading: ''
+      - text: It is a delicious dish.
+        reading: ''
+      - text: It is a quiet town.
+        reading: ''
+      - text: It is Japanese food.
+        reading: ''
+    answers:
+      - It is a delicious cake.
+  - id: expanded-1-typing
+    type: typing
+    sentence: it-is-a-delicious-cake
+    explanation: おいしいケーキです。 means “It is a delicious cake.” Write the complete sentence, including the indicated ending.
+    answers:
+      - おいしいケーキです
+      - おいしいけーきです
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: it-is-a-delicious-cake
+    prompt: 'Build this sentence: It is a delicious cake. (polite)'
+    explanation:
+      おいしいケーキです。 means “It is a delicious cake.” Keep the particles with their phrases and put the
+      predicate last.
+    answers:
+      - おいしいケーキです
+      - おいしいけーきです
+  - id: expanded-2-meaning
+    type: meaning-choice
+    sentence: it-is-a-quiet-village
+    choices:
+      - text: It is a quiet village.
+        reading: ''
+      - text: It is a delicious dish.
+        reading: ''
+      - text: It is a quiet town.
+        reading: ''
+      - text: It is Japanese food.
+        reading: ''
+    answers:
+      - It is a quiet village.
+  - id: expanded-2-typing
+    type: typing
+    sentence: it-is-a-quiet-village
+    explanation: 静かな村です。 means “It is a quiet village.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 静かな村です
+      - しずかなむらです
+  - id: expanded-2-tiles
+    type: tiles
+    sentence: it-is-a-quiet-village
+    prompt: 'Build this sentence: It is a quiet village. (polite)'
+    explanation: 静かな村です。 means “It is a quiet village.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 静かな村です
+      - しずかなむらです
+  - id: expanded-3-meaning
+    type: meaning-choice
+    sentence: it-is-an-energetic-town
+    choices:
+      - text: It is an energetic town.
+        reading: ''
+      - text: It is a delicious dish.
+        reading: ''
+      - text: It is a quiet town.
+        reading: ''
+      - text: It is Japanese food.
+        reading: ''
+    answers:
+      - It is an energetic town.
+  - id: expanded-3-typing
+    type: typing
+    sentence: it-is-an-energetic-town
+    explanation: 元気な町です。 means “It is an energetic town.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 元気な町です
+      - げんきなまちです
+  - id: expanded-3-tiles
+    type: tiles
+    sentence: it-is-an-energetic-town
+    prompt: 'Build this sentence: It is an energetic town. (polite)'
+    explanation:
+      元気な町です。 means “It is an energetic town.” Keep the particles with their phrases and put the
+      predicate last.
+    answers:
+      - 元気な町です
+      - げんきなまちです
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: it-is-a-delicious-cake
+    choices:
+      - sentence: it-is-a-delicious-cake
+      - text: おいしい料理です。
+        reading: おいしいりょうりです。
+        tokens:
+          - { role: modifier, text: おいしい, reading: おいしい, wordClass: noun phrase }
+          - { role: predicate, text: 料理, reading: りょうり, wordClass: predicate }
+          - { role: predicate, text: です, reading: です, wordClass: predicate }
+      - text: 静かな町です。
+        reading: しずかなまちです。
+        tokens:
+          - { role: modifier, text: 静か, reading: しずか, wordClass: noun phrase }
+          - { role: particle, text: な, reading: な, wordClass: particle }
+          - { role: predicate, text: 町, reading: まち, wordClass: predicate }
+          - { role: predicate, text: です, reading: です, wordClass: predicate }
+      - text: 日本の料理です。
+        reading: にほんのりょうりです。
+        tokens:
+          - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+          - { role: particle, text: の, reading: の, wordClass: particle }
+          - { role: predicate, text: 料理, reading: りょうり, wordClass: predicate }
+          - { role: predicate, text: です, reading: です, wordClass: predicate }
+    prompt: 'Choose the Japanese: It is a delicious cake. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose おいしいケーキです。 for “It is a delicious cake.” The other sentences describe different situations.
+    answers:
+      - おいしいケーキです
+      - おいしいけーきです
+  - id: expanded-1-gap
+    type: gap
+    sentence: it-is-a-delicious-cake
+    prompt: 'Fill the missing part: It is a delicious cake. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is です (です). Together, the sentence means “It is a delicious cake.”
+    answers:
+      - です
+    context:
+      meaning: It is a delicious cake.
+      reading: おいしいけーき___。
+      text: おいしいケーキ___。
+  - id: expanded-2-pattern
+    type: pattern-choice
+    sentence: it-is-a-quiet-village
+    choices:
+      - sentence: it-is-a-quiet-village
+      - text: おいしい料理です。
+        reading: おいしいりょうりです。
+        tokens:
+          - { role: modifier, text: おいしい, reading: おいしい, wordClass: noun phrase }
+          - { role: predicate, text: 料理, reading: りょうり, wordClass: predicate }
+          - { role: predicate, text: です, reading: です, wordClass: predicate }
+      - text: 静かな町です。
+        reading: しずかなまちです。
+        tokens:
+          - { role: modifier, text: 静か, reading: しずか, wordClass: noun phrase }
+          - { role: particle, text: な, reading: な, wordClass: particle }
+          - { role: predicate, text: 町, reading: まち, wordClass: predicate }
+          - { role: predicate, text: です, reading: です, wordClass: predicate }
+      - text: 日本の料理です。
+        reading: にほんのりょうりです。
+        tokens:
+          - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+          - { role: particle, text: の, reading: の, wordClass: particle }
+          - { role: predicate, text: 料理, reading: りょうり, wordClass: predicate }
+          - { role: predicate, text: です, reading: です, wordClass: predicate }
+    prompt: 'Choose the Japanese: It is a quiet village. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 静かな村です。 for “It is a quiet village.” The other sentences describe different situations.
+    answers:
+      - 静かな村です
+      - しずかなむらです
+  - id: expanded-2-gap
+    type: gap
+    sentence: it-is-a-quiet-village
+    prompt: 'Fill the missing part: It is a quiet village. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is です (です). Together, the sentence means “It is a quiet village.”
+    answers:
+      - です
+    context:
+      meaning: It is a quiet village.
+      reading: しずかなむら___。
+      text: 静かな村___。
+  - id: expanded-3-pattern
+    type: pattern-choice
+    sentence: it-is-an-energetic-town
+    choices:
+      - sentence: it-is-an-energetic-town
+      - text: おいしい料理です。
+        reading: おいしいりょうりです。
+        tokens:
+          - { role: modifier, text: おいしい, reading: おいしい, wordClass: noun phrase }
+          - { role: predicate, text: 料理, reading: りょうり, wordClass: predicate }
+          - { role: predicate, text: です, reading: です, wordClass: predicate }
+      - text: 静かな町です。
+        reading: しずかなまちです。
+        tokens:
+          - { role: modifier, text: 静か, reading: しずか, wordClass: noun phrase }
+          - { role: particle, text: な, reading: な, wordClass: particle }
+          - { role: predicate, text: 町, reading: まち, wordClass: predicate }
+          - { role: predicate, text: です, reading: です, wordClass: predicate }
+      - text: 日本の料理です。
+        reading: にほんのりょうりです。
+        tokens:
+          - { role: modifier, text: 日本, reading: にほん, wordClass: noun phrase }
+          - { role: particle, text: の, reading: の, wordClass: particle }
+          - { role: predicate, text: 料理, reading: りょうり, wordClass: predicate }
+          - { role: predicate, text: です, reading: です, wordClass: predicate }
+    prompt: 'Choose the Japanese: It is an energetic town. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 元気な町です。 for “It is an energetic town.” The other sentences describe different situations.
+    answers:
+      - 元気な町です
+      - げんきなまちです
+  - id: expanded-3-gap
+    type: gap
+    sentence: it-is-an-energetic-town
+    prompt: 'Fill the missing part: It is an energetic town. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is です (です). Together, the sentence means “It is an energetic town.”
+    answers:
+      - です
+    context:
+      meaning: It is an energetic town.
+      reading: げんきなまち___。
+      text: 元気な町___。

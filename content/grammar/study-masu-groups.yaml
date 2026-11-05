@@ -1,0 +1,610 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-masu-groups
+  kind: grammar
+  title: 'Verb groups: dictionary form → ます'
+  japanese: 毎日、歯を磨きます。
+  reading: まいにち、はをみがきます。
+  meaning: Verb groups and polite ます forms
+  level: N5
+  topic: Daily routine
+  tags:
+    - Study guide
+    - Verb forms
+  note:
+    'Group 1 (godan): change the final u-row sound to its i-row partner, then add ます: う→い, く→き, ぐ→ぎ, す→し,
+    つ→ち, ぬ→に, ぶ→び, む→み, る→り. Group 2 (ichidan): remove final る and add ます. Many end in -iru or -eru, but the
+    ending alone is not a reliable rule: 帰る (かえる), 入る (はいる), and 走る (はしる) are group 1. Group 3: する→します and 来る
+    (くる)→来ます (きます). Compounds follow the same pattern: 勉強する→勉強します. ます is polite non-past; “talking” in
+    progress is 話しています (はなしています). 死ぬ means die; 死んでいる (しんでいる) means be dead. 顔 (かお) is face; 皿 (さら) is plate.
+    浴びる (あびる) means bathe or shower; する means do.'
+  examples:
+    - japanese: 毎日、歯を磨きます。
+      reading: まいにち、はをみがきます。
+      meaning: I brush my teeth every day.
+      tokens:
+        - {
+            text: 毎日、歯を磨きます,
+            reading: まいにち、はをみがきます,
+            role: predicate,
+            wordClass: sentence,
+          }
+      translationTokens:
+        - { text: I brush my teeth every day., role: predicate }
+    - japanese: 今、話しています。
+      reading: いま、はなしています。
+      meaning: I am talking now.
+      tokens:
+        - {
+            text: 今、話しています,
+            reading: いま、はなしています,
+            role: predicate,
+            wordClass: sentence,
+          }
+      translationTokens:
+        - { text: I am talking now., role: predicate }
+    - japanese: 学校から帰ります。
+      reading: がっこうからかえります。
+      meaning: I return home from school.
+      tokens:
+        - {
+            text: 学校から帰ります,
+            reading: がっこうからかえります,
+            role: predicate,
+            wordClass: sentence,
+          }
+      translationTokens:
+        - { text: I return home from school., role: predicate }
+    - japanese: 本を読みます。
+      reading: ほんをよみます。
+      meaning: I read a book.
+      tokens:
+        - { text: 本を読みます, reading: ほんをよみます, role: predicate, wordClass: sentence }
+      translationTokens:
+        - { text: I read a book., role: predicate }
+  references:
+    - heading: 'Group 1: final sound → i-row + ます'
+      columns:
+        - Dictionary
+        - Polite
+      rows:
+        - - text: 言う
+            reading: いう
+          - text: 言います
+            reading: いいます
+        - - text: 話す
+            reading: はなす
+          - text: 話します
+            reading: はなします
+        - - text: 立つ
+            reading: たつ
+          - text: 立ちます
+            reading: たちます
+        - - text: 帰る
+            reading: かえる
+          - text: 帰ります
+            reading: かえります
+        - - text: 死ぬ
+            reading: しぬ
+          - text: 死にます
+            reading: しにます
+        - - text: 遊ぶ
+            reading: あそぶ
+          - text: 遊びます
+            reading: あそびます
+        - - text: 読む
+            reading: よむ
+          - text: 読みます
+            reading: よみます
+        - - text: 置く
+            reading: おく
+          - text: 置きます
+            reading: おきます
+        - - text: 泳ぐ
+            reading: およぐ
+          - text: 泳ぎます
+            reading: およぎます
+    - heading: Group 2 and irregular verbs
+      columns:
+        - Dictionary
+        - Polite
+      rows:
+        - - text: あける
+            reading: ''
+          - text: あけます
+            reading: ''
+        - - text: しめる
+            reading: ''
+          - text: しめます
+            reading: ''
+        - - text: つける
+            reading: ''
+          - text: つけます
+            reading: ''
+        - - text: かける
+            reading: ''
+          - text: かけます
+            reading: ''
+        - - text: ねる
+            reading: ''
+          - text: ねます
+            reading: ''
+        - - text: つとめる
+            reading: ''
+          - text: つとめます
+            reading: ''
+        - - text: たべる
+            reading: ''
+          - text: たべます
+            reading: ''
+        - - text: おきる
+            reading: ''
+          - text: おきます
+            reading: ''
+        - - text: みる
+            reading: ''
+          - text: みます
+            reading: ''
+        - - text: あびる
+            reading: ''
+          - text: あびます
+            reading: ''
+        - - text: くる (irregular)
+            reading: ''
+          - text: きます
+            reading: ''
+        - - text: する (irregular)
+            reading: ''
+          - text: します
+            reading: ''
+sentences:
+  i-brush-my-teeth-every-day:
+    text: 毎日、歯を磨きます。
+    reading: まいにち、はをみがきます。
+    meaning: I brush my teeth every day.
+    tokens:
+      - {
+          text: 毎日、歯を磨きます,
+          reading: まいにち、はをみがきます,
+          role: predicate,
+          wordClass: sentence,
+        }
+    translationTokens:
+      - { text: I brush my teeth every day., role: predicate }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Group 1 (godan): change the final u-row sound to its i-row partner, then add ます: う→い, く→き, ぐ→ぎ,
+      す→し, つ→ち, ぬ→に, ぶ→び, む→み, る→り. Group 2 (ichidan): remove final る and add ます. Many end in -iru or -eru,
+      but the ending alone is not a reliable rule: 帰る (かえる), 入る (はいる), and 走る (はしる) are group 1. Group 3:
+      する→します and 来る (くる)→来ます (きます). Compounds follow the same pattern: 勉強する→勉強します. ます is polite non-past;
+      “talking” in progress is 話しています (はなしています). 死ぬ means die; 死んでいる (しんでいる) means be dead. 顔 (かお) is face; 皿
+      (さら) is plate. 浴びる (あびる) means bathe or shower; する means do.'
+  i-am-talking-now:
+    text: 今、話しています。
+    reading: いま、はなしています。
+    meaning: I am talking now.
+    tokens:
+      - {
+          text: 今、話しています,
+          reading: いま、はなしています,
+          role: predicate,
+          wordClass: sentence,
+        }
+    translationTokens:
+      - { text: I am talking now., role: predicate }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Group 1 (godan): change the final u-row sound to its i-row partner, then add ます: う→い, く→き, ぐ→ぎ,
+      す→し, つ→ち, ぬ→に, ぶ→び, む→み, る→り. Group 2 (ichidan): remove final る and add ます. Many end in -iru or -eru,
+      but the ending alone is not a reliable rule: 帰る (かえる), 入る (はいる), and 走る (はしる) are group 1. Group 3:
+      する→します and 来る (くる)→来ます (きます). Compounds follow the same pattern: 勉強する→勉強します. ます is polite non-past;
+      “talking” in progress is 話しています (はなしています). 死ぬ means die; 死んでいる (しんでいる) means be dead. 顔 (かお) is face; 皿
+      (さら) is plate. 浴びる (あびる) means bathe or shower; する means do.'
+    form: polite
+  i-return-home-from-school:
+    text: 学校から帰ります。
+    reading: がっこうからかえります。
+    meaning: I return home from school.
+    tokens:
+      - {
+          text: 学校から帰ります,
+          reading: がっこうからかえります,
+          role: predicate,
+          wordClass: sentence,
+        }
+    translationTokens:
+      - { text: I return home from school., role: predicate }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Group 1 (godan): change the final u-row sound to its i-row partner, then add ます: う→い, く→き, ぐ→ぎ,
+      す→し, つ→ち, ぬ→に, ぶ→び, む→み, る→り. Group 2 (ichidan): remove final る and add ます. Many end in -iru or -eru,
+      but the ending alone is not a reliable rule: 帰る (かえる), 入る (はいる), and 走る (はしる) are group 1. Group 3:
+      する→します and 来る (くる)→来ます (きます). Compounds follow the same pattern: 勉強する→勉強します. ます is polite non-past;
+      “talking” in progress is 話しています (はなしています). 死ぬ means die; 死んでいる (しんでいる) means be dead. 顔 (かお) is face; 皿
+      (さら) is plate. 浴びる (あびる) means bathe or shower; する means do.'
+  i-read-a-book:
+    text: 本を読みます。
+    reading: ほんをよみます。
+    meaning: I read a book.
+    tokens:
+      - { text: 本を読みます, reading: ほんをよみます, role: predicate, wordClass: sentence }
+    translationTokens:
+      - { text: I read a book., role: predicate }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      'Group 1 (godan): change the final u-row sound to its i-row partner, then add ます: う→い, く→き, ぐ→ぎ,
+      す→し, つ→ち, ぬ→に, ぶ→び, む→み, る→り. Group 2 (ichidan): remove final る and add ます. Many end in -iru or -eru,
+      but the ending alone is not a reliable rule: 帰る (かえる), 入る (はいる), and 走る (はしる) are group 1. Group 3:
+      する→します and 来る (くる)→来ます (きます). Compounds follow the same pattern: 勉強する→勉強します. ます is polite non-past;
+      “talking” in progress is 話しています (はなしています). 死ぬ means die; 死んでいる (しんでいる) means be dead. 顔 (かお) is face; 皿
+      (さら) is plate. 浴びる (あびる) means bathe or shower; する means do.'
+  i-brush-my-teeth-every-morning:
+    reading: まいあさ、はをみがきます。
+    meaning: I brush my teeth every morning.
+    tokens:
+      - {
+          text: 毎朝、歯を磨きます,
+          reading: まいあさ、はをみがきます,
+          role: predicate,
+          wordClass: sentence,
+        }
+    translationTokens:
+      - { text: I brush my teeth every morning., role: predicate }
+    text: 毎朝、歯を磨きます。
+    hint: Check the particles and sentence ending.
+    explanation:
+      毎朝、歯を磨きます。 means “I brush my teeth every morning.” Match the vocabulary, particles, and tense to
+      the English sentence.
+    form: polite
+  i-return-home-from-the-library:
+    reading: としょかんからかえります。
+    meaning: I return home from the library.
+    tokens:
+      - {
+          text: 図書館から帰ります,
+          reading: としょかんからかえります,
+          role: predicate,
+          wordClass: sentence,
+        }
+    translationTokens:
+      - { text: I return home from the library., role: predicate }
+    text: 図書館から帰ります。
+    hint: Check the particles and sentence ending.
+    explanation:
+      図書館から帰ります。 means “I return home from the library.” Match the vocabulary, particles, and tense to
+      the English sentence.
+    form: polite
+  i-read-a-magazine:
+    reading: ざっしをよみます。
+    meaning: I read a magazine.
+    tokens:
+      - { text: 雑誌を読みます, reading: ざっしをよみます, role: predicate, wordClass: sentence }
+    translationTokens:
+      - { text: I read a magazine., role: predicate }
+    text: 雑誌を読みます。
+    hint: Check the particles and sentence ending.
+    explanation: 雑誌を読みます。 means “I read a magazine.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: i-brush-my-teeth-every-day
+    choices:
+      - text: I brush my teeth every day.
+        reading: ''
+      - text: I am talking now.
+        reading: ''
+      - text: I return home from school.
+        reading: ''
+      - text: I read a book.
+        reading: ''
+    answers:
+      - I brush my teeth every day.
+  - id: pattern
+    type: pattern-choice
+    sentence: i-am-talking-now
+    choices:
+      - sentence: i-brush-my-teeth-every-day
+      - sentence: i-am-talking-now
+    prompt: 'Choose the Japanese: I am talking now.'
+    answers:
+      - 今、話しています
+      - いま、はなしています
+  - id: gap
+    type: gap
+    sentence: i-am-talking-now
+    prompt: 'Fill the missing part: I am talking now. (polite)'
+    answers:
+      - 今、話しています
+      - いま、はなしています
+    context:
+      text: ___。
+      reading: ___。
+      tokens:
+        - { text: ___, reading: ___, role: predicate, wordClass: sentence }
+  - id: tiles
+    type: tiles
+    sentence: i-am-talking-now
+    prompt: 'Build: I am talking now. (polite)'
+    answers:
+      - 今、話しています
+      - いま、はなしています
+    tiles:
+      - {
+          text: 今、話しています,
+          reading: いま、はなしています,
+          role: predicate,
+          wordClass: sentence,
+        }
+  - id: typing
+    type: typing
+    sentence: i-return-home-from-school
+    answers:
+      - 学校から帰ります
+      - がっこうからかえります
+  - id: alternate
+    type: typing
+    sentence: i-read-a-book
+    alternate: true
+    prompt: 'Another example: I read a book. (polite)'
+    answers:
+      - 本を読みます
+      - ほんをよみます
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: i-brush-my-teeth-every-morning
+    choices:
+      - text: I brush my teeth every morning.
+        reading: ''
+      - text: I brush my teeth every day.
+        reading: ''
+      - text: I am talking now.
+        reading: ''
+      - text: I return home from school.
+        reading: ''
+    answers:
+      - I brush my teeth every morning.
+  - id: expanded-1-typing
+    type: typing
+    sentence: i-brush-my-teeth-every-morning
+    explanation:
+      毎朝、歯を磨きます。 means “I brush my teeth every morning.” Write the complete sentence, including the
+      indicated ending.
+    answers:
+      - 毎朝、歯を磨きます
+      - まいあさ、はをみがきます
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: i-brush-my-teeth-every-morning
+    prompt: 'Build this sentence: I brush my teeth every morning. (polite)'
+    explanation:
+      毎朝、歯を磨きます。 means “I brush my teeth every morning.” Keep the particles with their phrases and put
+      the predicate last.
+    answers:
+      - 毎朝、歯を磨きます
+      - まいあさ、はをみがきます
+  - id: expanded-2-meaning
+    type: meaning-choice
+    sentence: i-return-home-from-the-library
+    choices:
+      - text: I return home from the library.
+        reading: ''
+      - text: I brush my teeth every day.
+        reading: ''
+      - text: I am talking now.
+        reading: ''
+      - text: I return home from school.
+        reading: ''
+    answers:
+      - I return home from the library.
+  - id: expanded-2-typing
+    type: typing
+    sentence: i-return-home-from-the-library
+    explanation:
+      図書館から帰ります。 means “I return home from the library.” Write the complete sentence, including the
+      indicated ending.
+    answers:
+      - 図書館から帰ります
+      - としょかんからかえります
+  - id: expanded-2-tiles
+    type: tiles
+    sentence: i-return-home-from-the-library
+    prompt: 'Build this sentence: I return home from the library. (polite)'
+    explanation:
+      図書館から帰ります。 means “I return home from the library.” Keep the particles with their phrases and put
+      the predicate last.
+    answers:
+      - 図書館から帰ります
+      - としょかんからかえります
+  - id: expanded-3-meaning
+    type: meaning-choice
+    sentence: i-read-a-magazine
+    choices:
+      - text: I read a magazine.
+        reading: ''
+      - text: I brush my teeth every day.
+        reading: ''
+      - text: I am talking now.
+        reading: ''
+      - text: I return home from school.
+        reading: ''
+    answers:
+      - I read a magazine.
+  - id: expanded-3-typing
+    type: typing
+    sentence: i-read-a-magazine
+    explanation: 雑誌を読みます。 means “I read a magazine.” Write the complete sentence, including the indicated ending.
+    answers:
+      - 雑誌を読みます
+      - ざっしをよみます
+  - id: expanded-3-tiles
+    type: tiles
+    sentence: i-read-a-magazine
+    prompt: 'Build this sentence: I read a magazine. (polite)'
+    explanation: 雑誌を読みます。 means “I read a magazine.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - 雑誌を読みます
+      - ざっしをよみます
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: i-brush-my-teeth-every-morning
+    choices:
+      - sentence: i-brush-my-teeth-every-morning
+      - text: 毎日、歯を磨きます。
+        reading: まいにち、はをみがきます。
+        tokens:
+          - {
+              text: 毎日、歯を磨きます,
+              reading: まいにち、はをみがきます,
+              role: predicate,
+              wordClass: sentence,
+            }
+      - text: 今、話しています。
+        reading: いま、はなしています。
+        tokens:
+          - {
+              text: 今、話しています,
+              reading: いま、はなしています,
+              role: predicate,
+              wordClass: sentence,
+            }
+      - text: 学校から帰ります。
+        reading: がっこうからかえります。
+        tokens:
+          - {
+              text: 学校から帰ります,
+              reading: がっこうからかえります,
+              role: predicate,
+              wordClass: sentence,
+            }
+    prompt: 'Choose the Japanese: I brush my teeth every morning. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation:
+      Choose 毎朝、歯を磨きます。 for “I brush my teeth every morning.” The other sentences describe different
+      situations.
+    answers:
+      - 毎朝、歯を磨きます
+      - まいあさ、はをみがきます
+  - id: expanded-1-gap
+    type: gap
+    sentence: i-brush-my-teeth-every-morning
+    prompt: 'Fill the missing part: I brush my teeth every morning. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation:
+      The missing part is 毎朝、歯を磨きます (まいあさ、はをみがきます). Together, the sentence means “I brush my teeth
+      every morning.”
+    answers:
+      - 毎朝、歯を磨きます
+      - まいあさ、はをみがきます
+    context:
+      reading: ___。
+      meaning: I brush my teeth every morning.
+      text: ___。
+  - id: expanded-2-pattern
+    type: pattern-choice
+    sentence: i-return-home-from-the-library
+    choices:
+      - sentence: i-return-home-from-the-library
+      - text: 毎日、歯を磨きます。
+        reading: まいにち、はをみがきます。
+        tokens:
+          - {
+              text: 毎日、歯を磨きます,
+              reading: まいにち、はをみがきます,
+              role: predicate,
+              wordClass: sentence,
+            }
+      - text: 今、話しています。
+        reading: いま、はなしています。
+        tokens:
+          - {
+              text: 今、話しています,
+              reading: いま、はなしています,
+              role: predicate,
+              wordClass: sentence,
+            }
+      - text: 学校から帰ります。
+        reading: がっこうからかえります。
+        tokens:
+          - {
+              text: 学校から帰ります,
+              reading: がっこうからかえります,
+              role: predicate,
+              wordClass: sentence,
+            }
+    prompt: 'Choose the Japanese: I return home from the library. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation:
+      Choose 図書館から帰ります。 for “I return home from the library.” The other sentences describe different
+      situations.
+    answers:
+      - 図書館から帰ります
+      - としょかんからかえります
+  - id: expanded-2-gap
+    type: gap
+    sentence: i-return-home-from-the-library
+    prompt: 'Fill the missing part: I return home from the library. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation:
+      The missing part is 図書館から帰ります (としょかんからかえります). Together, the sentence means “I return home from
+      the library.”
+    answers:
+      - 図書館から帰ります
+      - としょかんからかえります
+    context:
+      reading: ___。
+      meaning: I return home from the library.
+      text: ___。
+  - id: expanded-3-pattern
+    type: pattern-choice
+    sentence: i-read-a-magazine
+    choices:
+      - sentence: i-read-a-magazine
+      - text: 毎日、歯を磨きます。
+        reading: まいにち、はをみがきます。
+        tokens:
+          - {
+              text: 毎日、歯を磨きます,
+              reading: まいにち、はをみがきます,
+              role: predicate,
+              wordClass: sentence,
+            }
+      - text: 今、話しています。
+        reading: いま、はなしています。
+        tokens:
+          - {
+              text: 今、話しています,
+              reading: いま、はなしています,
+              role: predicate,
+              wordClass: sentence,
+            }
+      - text: 学校から帰ります。
+        reading: がっこうからかえります。
+        tokens:
+          - {
+              text: 学校から帰ります,
+              reading: がっこうからかえります,
+              role: predicate,
+              wordClass: sentence,
+            }
+    prompt: 'Choose the Japanese: I read a magazine. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose 雑誌を読みます。 for “I read a magazine.” The other sentences describe different situations.
+    answers:
+      - 雑誌を読みます
+      - ざっしをよみます
+  - id: expanded-3-gap
+    type: gap
+    sentence: i-read-a-magazine
+    prompt: 'Fill the missing part: I read a magazine. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 雑誌を読みます (ざっしをよみます). Together, the sentence means “I read a magazine.”
+    answers:
+      - 雑誌を読みます
+      - ざっしをよみます
+    context:
+      reading: ___。
+      meaning: I read a magazine.
+      text: ___。

@@ -1,0 +1,383 @@
+# Grammar source. Run npm run content:build after editing.
+entry:
+  id: study-kore-sore-are
+  kind: grammar
+  note:
+    これ is near the speaker; それ is near the listener or refers to something just mentioned; あれ is away from
+    both. These words stand alone. Use この / その / あの directly before a noun.
+  tags:
+    - Study guide
+  level: N5
+  title: これ・それ・あれ — this, that, that over there
+  topic: Grammar basics
+  romaji: kore / sore / are
+  meaning: これ・それ・あれ — this, that, that over there
+  reading: これはほんです。
+  examples:
+    - tokens:
+        - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 本です, reading: ほんです, wordClass: predicate }
+      meaning: This is a book.
+      reading: これはほんです。
+      japanese: これは本です。
+      translationTokens:
+        - { role: topic, text: This }
+        - { role: predicate, text: ' is a book.' }
+    - tokens:
+        - { role: topic, text: それ, reading: それ, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 時計です, reading: とけいです, wordClass: predicate }
+      meaning: That is a clock.
+      reading: それはとけいです。
+      japanese: それは時計です。
+      translationTokens:
+        - { role: topic, text: That }
+        - { role: predicate, text: ' is a clock.' }
+    - tokens:
+        - { role: topic, text: あれ, reading: あれ, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 学校です, reading: がっこうです, wordClass: predicate }
+      meaning: That over there is a school.
+      reading: あれはがっこうです。
+      japanese: あれは学校です。
+      translationTokens:
+        - { role: topic, text: That over there }
+        - { role: predicate, text: ' is a school.' }
+    - tokens:
+        - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+        - { role: particle, text: は, reading: は, wordClass: particle }
+        - { role: predicate, text: 何です, reading: なんです, wordClass: predicate }
+        - { role: particle, text: か, reading: か, wordClass: particle }
+      meaning: What is this?
+      reading: これはなんですか。
+      japanese: これは何ですか。
+      translationTokens:
+        - { role: predicate, text: 'What is ' }
+        - { role: topic, text: this }
+        - { role: particle, text: '?' }
+  japanese: これは本です。
+  references:
+    - rows:
+        - - text: これ
+            reading: これ
+          - text: this (near me)
+            reading: ''
+        - - text: それ
+            reading: それ
+          - text: that (near you / just mentioned)
+            reading: ''
+        - - text: あれ
+            reading: あれ
+          - text: that over there (away from both)
+            reading: ''
+      columns:
+        - Word
+        - Meaning
+      heading: Stand-alone pointing words
+sentences:
+  this-is-a-book:
+    text: これは本です。
+    tokens:
+      - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 本です, reading: ほんです, wordClass: predicate }
+    meaning: This is a book.
+    reading: これはほんです。
+    translationTokens:
+      - { role: topic, text: This }
+      - { role: predicate, text: ' is a book.' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      これ is near the speaker; それ is near the listener or refers to something just mentioned; あれ is away
+      from both. These words stand alone. Use この / その / あの directly before a noun.
+  that-is-a-clock:
+    text: それは時計です。
+    tokens:
+      - { role: topic, text: それ, reading: それ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 時計です, reading: とけいです, wordClass: predicate }
+    meaning: That is a clock.
+    reading: それはとけいです。
+    translationTokens:
+      - { role: topic, text: That }
+      - { role: predicate, text: ' is a clock.' }
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      これ is near the speaker; それ is near the listener or refers to something just mentioned; あれ is away
+      from both. These words stand alone. Use この / その / あの directly before a noun.
+    form: polite
+  that-over-there-is-a-school:
+    text: あれは学校です。
+    tokens:
+      - { role: topic, text: あれ, reading: あれ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 学校です, reading: がっこうです, wordClass: predicate }
+    meaning: That over there is a school.
+    reading: あれはがっこうです。
+    translationTokens:
+      - { role: topic, text: That over there }
+      - { role: predicate, text: ' is a school.' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      これ is near the speaker; それ is near the listener or refers to something just mentioned; あれ is away
+      from both. These words stand alone. Use この / その / あの directly before a noun.
+  what-is-this:
+    text: これは何ですか。
+    tokens:
+      - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 何です, reading: なんです, wordClass: predicate }
+      - { role: particle, text: か, reading: か, wordClass: particle }
+    meaning: What is this?
+    reading: これはなんですか。
+    translationTokens:
+      - { role: predicate, text: 'What is ' }
+      - { role: topic, text: this }
+      - { role: particle, text: '?' }
+    form: polite
+    hint: Look at the examples and the comparison table. Notice the particle or ending being used.
+    explanation:
+      これ is near the speaker; それ is near the listener or refers to something just mentioned; あれ is away
+      from both. These words stand alone. Use この / その / あの directly before a noun.
+  this-is-a-magazine:
+    tokens:
+      - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 雑誌です, reading: ざっしです, wordClass: predicate }
+    meaning: This is a magazine.
+    reading: これはざっしです。
+    translationTokens:
+      - { role: topic, text: This }
+      - { role: predicate, text: ' is a magazine.' }
+    text: これは雑誌です。
+    hint: Check the particles and sentence ending.
+    explanation: これは雑誌です。 means “This is a magazine.” Match the vocabulary, particles, and tense to the English sentence.
+    form: polite
+  that-over-there-is-a-library:
+    tokens:
+      - { role: topic, text: あれ, reading: あれ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 図書館です, reading: としょかんです, wordClass: predicate }
+    meaning: That over there is a library.
+    reading: あれはとしょかんです。
+    translationTokens:
+      - { role: topic, text: That over there }
+      - { role: predicate, text: ' is a library.' }
+    text: あれは図書館です。
+    hint: Check the particles and sentence ending.
+    explanation:
+      あれは図書館です。 means “That over there is a library.” Match the vocabulary, particles, and tense to the
+      English sentence.
+    form: polite
+exercises:
+  - id: meaning
+    type: meaning-choice
+    sentence: this-is-a-book
+    choices:
+      - text: This is a book.
+        reading: ''
+      - text: That is a clock.
+        reading: ''
+      - text: That over there is a school.
+        reading: ''
+      - text: What is this?
+        reading: ''
+    answers:
+      - This is a book.
+  - id: pattern
+    type: pattern-choice
+    sentence: that-is-a-clock
+    choices:
+      - sentence: this-is-a-book
+      - sentence: that-is-a-clock
+    prompt: 'Choose the Japanese: That is a clock.'
+    answers:
+      - それは時計です
+      - それはとけいです
+  - id: gap
+    type: gap
+    sentence: that-is-a-clock
+    prompt: 'Fill the missing part: That is a clock. (polite)'
+    answers:
+      - は
+      - は
+    context:
+      text: それ___時計です。
+      tokens:
+        - { role: topic, text: それ, reading: それ, wordClass: noun phrase }
+        - { role: particle, text: ___, reading: ___, wordClass: particle }
+        - { role: predicate, text: 時計です, reading: とけいです, wordClass: predicate }
+      reading: それ___とけいです。
+  - id: tiles
+    type: tiles
+    sentence: that-is-a-clock
+    prompt: 'Build: That is a clock. (polite)'
+    answers:
+      - それは時計です
+      - それはとけいです
+    tiles:
+      - { role: topic, text: それ, reading: それ, wordClass: noun phrase }
+      - { role: particle, text: は, reading: は, wordClass: particle }
+      - { role: predicate, text: 時計です, reading: とけいです, wordClass: predicate }
+  - id: typing
+    type: typing
+    sentence: that-over-there-is-a-school
+    answers:
+      - あれは学校です
+      - あれはがっこうです
+  - id: alternate
+    type: typing
+    sentence: what-is-this
+    alternate: true
+    prompt: 'Another example: What is this? (polite)'
+    answers:
+      - これは何ですか
+      - これはなんですか
+  - id: expanded-1-meaning
+    type: meaning-choice
+    sentence: this-is-a-magazine
+    choices:
+      - text: This is a magazine.
+        reading: ''
+      - text: This is a book.
+        reading: ''
+      - text: That is a clock.
+        reading: ''
+      - text: That over there is a school.
+        reading: ''
+    answers:
+      - This is a magazine.
+  - id: expanded-1-typing
+    type: typing
+    sentence: this-is-a-magazine
+    explanation: これは雑誌です。 means “This is a magazine.” Write the complete sentence, including the indicated ending.
+    answers:
+      - これは雑誌です
+      - これはざっしです
+  - id: expanded-1-tiles
+    type: tiles
+    sentence: this-is-a-magazine
+    prompt: 'Build this sentence: This is a magazine. (polite)'
+    explanation: これは雑誌です。 means “This is a magazine.” Keep the particles with their phrases and put the predicate last.
+    answers:
+      - これは雑誌です
+      - これはざっしです
+  - id: expanded-2-meaning
+    type: meaning-choice
+    sentence: that-over-there-is-a-library
+    choices:
+      - text: That over there is a library.
+        reading: ''
+      - text: This is a book.
+        reading: ''
+      - text: That is a clock.
+        reading: ''
+      - text: That over there is a school.
+        reading: ''
+    answers:
+      - That over there is a library.
+  - id: expanded-2-typing
+    type: typing
+    sentence: that-over-there-is-a-library
+    explanation:
+      あれは図書館です。 means “That over there is a library.” Write the complete sentence, including the
+      indicated ending.
+    answers:
+      - あれは図書館です
+      - あれはとしょかんです
+  - id: expanded-2-tiles
+    type: tiles
+    sentence: that-over-there-is-a-library
+    prompt: 'Build this sentence: That over there is a library. (polite)'
+    explanation:
+      あれは図書館です。 means “That over there is a library.” Keep the particles with their phrases and put the
+      predicate last.
+    answers:
+      - あれは図書館です
+      - あれはとしょかんです
+  - id: expanded-1-pattern
+    type: pattern-choice
+    sentence: this-is-a-magazine
+    choices:
+      - sentence: this-is-a-magazine
+      - text: これは本です。
+        reading: これはほんです。
+        tokens:
+          - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 本です, reading: ほんです, wordClass: predicate }
+      - text: それは時計です。
+        reading: それはとけいです。
+        tokens:
+          - { role: topic, text: それ, reading: それ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 時計です, reading: とけいです, wordClass: predicate }
+      - text: あれは学校です。
+        reading: あれはがっこうです。
+        tokens:
+          - { role: topic, text: あれ, reading: あれ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 学校です, reading: がっこうです, wordClass: predicate }
+    prompt: 'Choose the Japanese: This is a magazine. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose これは雑誌です。 for “This is a magazine.” The other sentences describe different situations.
+    answers:
+      - これは雑誌です
+      - これはざっしです
+  - id: expanded-1-gap
+    type: gap
+    sentence: this-is-a-magazine
+    prompt: 'Fill the missing part: This is a magazine. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 雑誌です (ざっしです). Together, the sentence means “This is a magazine.”
+    answers:
+      - 雑誌です
+      - ざっしです
+    context:
+      meaning: This is a magazine.
+      reading: これは___。
+      text: これは___。
+  - id: expanded-2-pattern
+    type: pattern-choice
+    sentence: that-over-there-is-a-library
+    choices:
+      - sentence: that-over-there-is-a-library
+      - text: これは本です。
+        reading: これはほんです。
+        tokens:
+          - { role: topic, text: これ, reading: これ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 本です, reading: ほんです, wordClass: predicate }
+      - text: それは時計です。
+        reading: それはとけいです。
+        tokens:
+          - { role: topic, text: それ, reading: それ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 時計です, reading: とけいです, wordClass: predicate }
+      - text: あれは学校です。
+        reading: あれはがっこうです。
+        tokens:
+          - { role: topic, text: あれ, reading: あれ, wordClass: noun phrase }
+          - { role: particle, text: は, reading: は, wordClass: particle }
+          - { role: predicate, text: 学校です, reading: がっこうです, wordClass: predicate }
+    prompt: 'Choose the Japanese: That over there is a library. (polite)'
+    hint: Match both the meaning and the sentence ending.
+    explanation: Choose あれは図書館です。 for “That over there is a library.” The other sentences describe different situations.
+    answers:
+      - あれは図書館です
+      - あれはとしょかんです
+  - id: expanded-2-gap
+    type: gap
+    sentence: that-over-there-is-a-library
+    prompt: 'Fill the missing part: That over there is a library. (polite)'
+    hint: Supply the missing predicate in the indicated form.
+    explanation: The missing part is 図書館です (としょかんです). Together, the sentence means “That over there is a library.”
+    answers:
+      - 図書館です
+      - としょかんです
+    context:
+      meaning: That over there is a library.
+      reading: あれは___。
+      text: あれは___。
