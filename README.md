@@ -69,7 +69,7 @@ Practice controls let you choose all question types or focus on meaning choices,
 
 The smaller grammar topics include additional sentence variants with matching readings, answer choices, gap exercises, tiles, and writing prompts.
 
-For focused particle drills, open **Grammar → Particle fill-in practice**. The bank
+For focused particle drills, open **Grammar** and click **Particle practice** in the top practice controls. You can also open the **Particle fill-in practice** topic. The bank
 contains 72 sentences with 2–4 blanks each (210 blanks total). Enter one particle
 in each numbered box; all blanks are checked together. Destination に and へ are
 both accepted. Feedback shows the complete sentence and explains each blank.

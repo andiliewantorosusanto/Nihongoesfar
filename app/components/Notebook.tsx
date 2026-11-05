@@ -429,6 +429,15 @@ export default function Notebook() {
                   {page === 'grammar' ? 'Mixed grammar practice' : 'Practice'}{' '}
                   <ArrowRight size={16} />
                 </button>
+                {page === 'grammar' && (
+                  <button
+                    className="secondary"
+                    disabled={busy}
+                    onClick={() => startPractice(undefined, 'study-particle-fill')}
+                  >
+                    Particle practice <ArrowRight size={16} />
+                  </button>
+                )}
               </div>
             </div>
           )}
