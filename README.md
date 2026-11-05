@@ -68,3 +68,10 @@ Kanji stroke paths come from KanjiVG © Ulrich Apel and contributors, CC BY-SA 3
 Practice controls let you choose all question types or focus on meaning choices, Japanese choices, gaps, sentence tiles, or writing. Enable **Endless practice** to keep receiving shuffled rounds from the current lesson and its linked topics until you close practice. Sentences can repeat after the available pool is exhausted.
 
 The smaller grammar topics include additional sentence variants with matching readings, answer choices, gap exercises, tiles, and writing prompts.
+
+For focused particle drills, open **Grammar → Particle fill-in practice**. The bank
+contains 72 sentences with 2–4 blanks each (210 blanks total). Enter one particle
+in each numbered box; all blanks are checked together. Destination に and へ are
+both accepted. Feedback shows the complete sentence and explains each blank.
+Use **Endless practice** to continue with more particle questions. This focused topic
+uses fill-in questions throughout.

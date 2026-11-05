@@ -125,7 +125,13 @@ export default function Practice({
           />{' '}
           Endless practice
         </label>
-        {questions.some((q) => q.exerciseId) && (
+        {questions.some(
+          (q) =>
+            q.exerciseId &&
+            !entries
+              .find((e) => e.id === q.entryId)
+              ?.exercises?.find((ex) => ex.id === q.exerciseId)?.particleSegments,
+        ) && (
           <label>
             Question type{' '}
             <select

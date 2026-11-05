@@ -407,6 +407,60 @@ function VocabularyPrompt({ exercise }: { exercise: GuidedExercise }) {
   );
 }
 
+function ParticleAnswer({
+  exercise,
+  answer,
+  busy,
+  show,
+  onAnswer,
+}: {
+  exercise: GuidedExercise;
+  answer: string;
+  busy: boolean;
+  show: boolean;
+  onAnswer: (value: string) => void;
+}) {
+  const segments = exercise.particleSegments!;
+  const values = Array.from({ length: segments.length - 1 }, (_, i) => answer.split('|')[i] || '');
+  return (
+    <>
+      <p>Fill each numbered blank with a particle.</p>
+      <div className="particle-sentence jp" lang="ja">
+        {segments.map((segment, i) => (
+          <span key={i}>
+            <Reading value={segment} show={show} />
+            {i < segments.length - 1 && (
+              <input
+                aria-label={`Particle ${i + 1}`}
+                placeholder={`(${i + 1})`}
+                value={values[i]}
+                autoComplete="off"
+                disabled={busy}
+                onChange={(event) => {
+                  const next = [...values];
+                  next[i] = event.target.value;
+                  onAnswer(next.join('|'));
+                }}
+                onKeyDown={(event) => {
+                  if (event.nativeEvent.isComposing && event.key === 'Enter')
+                    event.preventDefault();
+                }}
+              />
+            )}
+          </span>
+        ))}
+      </div>
+      <button
+        className="primary"
+        type="submit"
+        disabled={busy || values.some((value) => !value.trim())}
+      >
+        Check particles →
+      </button>
+    </>
+  );
+}
+
 function AnswerForm(props: AnswerProps) {
   const {
     entries,
@@ -424,6 +478,7 @@ function AnswerForm(props: AnswerProps) {
     onAnswer,
     onSubmit,
   } = props;
+  const exercise = entry.exercises?.find((item) => item.id === question.exerciseId);
   if (question.skill === 'writing')
     return <Writing key={question.id} character={entry.japanese} review onDone={onSubmit} />;
   return (
@@ -433,7 +488,16 @@ function AnswerForm(props: AnswerProps) {
         onSubmit();
       }}
     >
-      {choices.length > 0 ? (
+      {exercise?.particleSegments ? (
+        <ParticleAnswer
+          key={question.id}
+          exercise={exercise}
+          answer={answer}
+          busy={busy}
+          show={preferences.furigana}
+          onAnswer={onAnswer}
+        />
+      ) : choices.length > 0 ? (
         <Choices
           choices={choices}
           answer={answer}
@@ -550,7 +614,7 @@ function AnswerFeedback({
       )}
       {!exercise && <p className="answer-meaning">{meaning}</p>}
       {!result.correct && question.skill !== 'writing' && answer.trim() && (
-        <p className="answer-submitted">Your answer: {answer}</p>
+        <p className="answer-submitted">Your answer: {answer.replaceAll('|', ' → ')}</p>
       )}
       {exercise?.feedback.meaning && (
         <p className="aligned-english">
@@ -560,7 +624,7 @@ function AnswerFeedback({
           />
         </p>
       )}
-      {exercise?.type === 'gap' && <p>Missing part: {result.answers[0]}</p>}
+      {exercise?.type === 'gap' && <p>Missing part: {result.answers[0].replaceAll('|', ' → ')}</p>}
       {explanation && (
         <p>
           <JapaneseProse text={explanation} show={preferences.furigana} />

@@ -259367,5 +259367,5600 @@
         }
       }
     ]
+  },
+  {
+    "id": "study-particle-fill",
+    "kind": "grammar",
+    "title": "Particle fill-in practice",
+    "japanese": "助詞の練習",
+    "reading": "じょしのれんしゅう",
+    "meaning": "Fill multiple particle blanks in complete sentences.",
+    "level": "N5",
+    "topic": "Particles",
+    "tags": [
+      "Grammar",
+      "particles",
+      "fill-in"
+    ],
+    "note": "Fill each numbered blank with a particle. Follow the English meaning. Compare the completed sentence and the explanation after checking. Topic は and subject が can change the focus; these drills follow the focus of the model sentence.",
+    "examples": [
+      {
+        "tokens": [
+          {
+            "role": "topic",
+            "text": "私",
+            "reading": "わたし",
+            "wordClass": "pronoun"
+          },
+          {
+            "role": "particle",
+            "text": "は",
+            "reading": "は",
+            "wordClass": "particle"
+          },
+          {
+            "role": "predicate",
+            "text": "学生です",
+            "reading": "がくせいです",
+            "wordClass": "noun + copula"
+          }
+        ],
+        "meaning": "I am a student.",
+        "reading": "わたしはがくせいです。",
+        "japanese": "私は学生です。",
+        "translationTokens": [
+          {
+            "role": "topic",
+            "text": "I",
+            "implicit": false
+          },
+          {
+            "role": "predicate",
+            "text": " am a student.",
+            "implicit": false
+          }
+        ]
+      },
+      {
+        "tokens": [
+          {
+            "role": "modifier",
+            "text": "図書館で",
+            "reading": "としょかんで",
+            "wordClass": "place noun + particle"
+          },
+          {
+            "role": "predicate",
+            "text": "勉強します",
+            "reading": "べんきょうします",
+            "wordClass": "verb"
+          }
+        ],
+        "meaning": "I study at the library.",
+        "reading": "としょかんでべんきょうします。",
+        "japanese": "図書館で勉強します。",
+        "translationTokens": [
+          {
+            "role": "implicit",
+            "text": "I ",
+            "implicit": true
+          },
+          {
+            "role": "predicate",
+            "text": "study",
+            "implicit": false
+          },
+          {
+            "role": "modifier",
+            "text": " at the library.",
+            "implicit": false
+          }
+        ]
+      },
+      {
+        "tokens": [
+          {
+            "role": "modifier",
+            "text": "学校に",
+            "reading": "がっこうに",
+            "wordClass": "destination noun + particle"
+          },
+          {
+            "role": "predicate",
+            "text": "行きます",
+            "reading": "いきます",
+            "wordClass": "verb"
+          }
+        ],
+        "meaning": "I go to school.",
+        "reading": "がっこうにいきます。",
+        "japanese": "学校に行きます。",
+        "translationTokens": [
+          {
+            "role": "implicit",
+            "text": "I ",
+            "implicit": true
+          },
+          {
+            "role": "predicate",
+            "text": "go",
+            "implicit": false
+          },
+          {
+            "role": "modifier",
+            "text": " to school.",
+            "implicit": false
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "id": "particle-fill-001",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I eat bread at home.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "家",
+            "reading": "いえ"
+          },
+          {
+            "text": "パン",
+            "reading": "パン"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|で|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: で marks the location of an action or means of transport. Blank 3: を marks the direct object.",
+        "feedback": {
+          "text": "私は家でパンを食べます。",
+          "reading": "わたしはいえでパンをたべます。",
+          "meaning": "As for me, I eat bread at home.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "家",
+              "reading": "いえ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "パン",
+              "reading": "パン",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-002",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I go to the library.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "図書館",
+            "reading": "としょかん"
+          },
+          {
+            "text": "行きます。",
+            "reading": "いきます。"
+          }
+        ],
+        "answers": [
+          "は|に",
+          "は|へ"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: に marks the destination, time, or location of existence. に and へ are both accepted for this destination.",
+        "feedback": {
+          "text": "私は図書館に行きます。",
+          "reading": "わたしはとしょかんにいきます。",
+          "meaning": "As for me, I go to the library.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "図書館",
+              "reading": "としょかん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "行きます。",
+              "reading": "いきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-003",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I go to the library with a friend.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "友達",
+            "reading": "ともだち"
+          },
+          {
+            "text": "図書館",
+            "reading": "としょかん"
+          },
+          {
+            "text": "行きます。",
+            "reading": "いきます。"
+          }
+        ],
+        "answers": [
+          "は|と|に",
+          "は|と|へ"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: と marks a companion. Blank 3: に marks the destination, time, or location of existence. に and へ are both accepted for this destination.",
+        "feedback": {
+          "text": "私は友達と図書館に行きます。",
+          "reading": "わたしはともだちととしょかんにいきます。",
+          "meaning": "As for me, I go to the library with a friend.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "友達",
+              "reading": "ともだち",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "と",
+              "reading": "と",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "図書館",
+              "reading": "としょかん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "行きます。",
+              "reading": "いきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-004",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I go to the library by bus.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "バス",
+            "reading": "バス"
+          },
+          {
+            "text": "図書館",
+            "reading": "としょかん"
+          },
+          {
+            "text": "行きます。",
+            "reading": "いきます。"
+          }
+        ],
+        "answers": [
+          "は|で|に",
+          "は|で|へ"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: で marks the location of an action or means of transport. Blank 3: に marks the destination, time, or location of existence. に and へ are both accepted for this destination.",
+        "feedback": {
+          "text": "私はバスで図書館に行きます。",
+          "reading": "わたしはバスでとしょかんにいきます。",
+          "meaning": "As for me, I go to the library by bus.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "バス",
+              "reading": "バス",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "図書館",
+              "reading": "としょかん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "行きます。",
+              "reading": "いきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-005",
+        "type": "gap",
+        "prompt": "Fill every particle blank: I walk from home as far as the library.",
+        "particleSegments": [
+          {
+            "text": "家",
+            "reading": "いえ"
+          },
+          {
+            "text": "図書館",
+            "reading": "としょかん"
+          },
+          {
+            "text": "歩きます。",
+            "reading": "あるきます。"
+          }
+        ],
+        "answers": [
+          "から|まで"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: から marks a starting point. Blank 2: まで marks an endpoint.",
+        "feedback": {
+          "text": "家から図書館まで歩きます。",
+          "reading": "いえからとしょかんまであるきます。",
+          "meaning": "I walk from home as far as the library.",
+          "tokens": [
+            {
+              "text": "家",
+              "reading": "いえ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "から",
+              "reading": "から",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "図書館",
+              "reading": "としょかん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "まで",
+              "reading": "まで",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "歩きます。",
+              "reading": "あるきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-006",
+        "type": "gap",
+        "prompt": "Fill every particle blank: There is a teacher at the library.",
+        "particleSegments": [
+          {
+            "text": "図書館",
+            "reading": "としょかん"
+          },
+          {
+            "text": "先生",
+            "reading": "せんせい"
+          },
+          {
+            "text": "います。",
+            "reading": "います。"
+          }
+        ],
+        "answers": [
+          "に|が"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: に marks the destination, time, or location of existence. Blank 2: が marks the subject.",
+        "feedback": {
+          "text": "図書館に先生がいます。",
+          "reading": "としょかんにせんせいがいます。",
+          "meaning": "There is a teacher at the library.",
+          "tokens": [
+            {
+              "text": "図書館",
+              "reading": "としょかん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "先生",
+              "reading": "せんせい",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "が",
+              "reading": "が",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "います。",
+              "reading": "います。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-007",
+        "type": "gap",
+        "prompt": "Fill every particle blank: This is my book.",
+        "particleSegments": [
+          {
+            "text": "これ",
+            "reading": "これ"
+          },
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "本です。",
+            "reading": "ほんです。"
+          }
+        ],
+        "answers": [
+          "は|の"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: の links a possessor to a noun.",
+        "feedback": {
+          "text": "これは私の本です。",
+          "reading": "これはわたしのほんです。",
+          "meaning": "This is my book.",
+          "tokens": [
+            {
+              "text": "これ",
+              "reading": "これ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "の",
+              "reading": "の",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "本です。",
+              "reading": "ほんです。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-008",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I read a book at the library.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "図書館",
+            "reading": "としょかん"
+          },
+          {
+            "text": "本",
+            "reading": "ほん"
+          },
+          {
+            "text": "読みます。",
+            "reading": "よみます。"
+          }
+        ],
+        "answers": [
+          "は|で|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: で marks the location of an action or means of transport. Blank 3: を marks the direct object.",
+        "feedback": {
+          "text": "私は図書館で本を読みます。",
+          "reading": "わたしはとしょかんでほんをよみます。",
+          "meaning": "As for me, I read a book at the library.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "図書館",
+              "reading": "としょかん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "本",
+              "reading": "ほん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "読みます。",
+              "reading": "よみます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-009",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I eat bread at 7 o’clock.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "七時",
+            "reading": "しちじ"
+          },
+          {
+            "text": "パン",
+            "reading": "パン"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|に|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: に marks the destination, time, or location of existence. Blank 3: を marks the direct object.",
+        "feedback": {
+          "text": "私は七時にパンを食べます。",
+          "reading": "わたしはしちじにパンをたべます。",
+          "meaning": "As for me, I eat bread at 7 o’clock.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "七時",
+              "reading": "しちじ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "パン",
+              "reading": "パン",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-010",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I work at the library from 9 a.m. until 5 p.m.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "午前九時",
+            "reading": "ごぜんくじ"
+          },
+          {
+            "text": "午後五時",
+            "reading": "ごごごじ"
+          },
+          {
+            "text": "図書館",
+            "reading": "としょかん"
+          },
+          {
+            "text": "働きます。",
+            "reading": "はたらきます。"
+          }
+        ],
+        "answers": [
+          "は|から|まで|で"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: から marks a starting point. Blank 3: まで marks an endpoint. Blank 4: で marks the location of an action or means of transport.",
+        "feedback": {
+          "text": "私は午前九時から午後五時まで図書館で働きます。",
+          "reading": "わたしはごぜんくじからごごごじまでとしょかんではたらきます。",
+          "meaning": "As for me, I work at the library from 9 a.m. until 5 p.m.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "午前九時",
+              "reading": "ごぜんくじ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "から",
+              "reading": "から",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "午後五時",
+              "reading": "ごごごじ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "まで",
+              "reading": "まで",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "図書館",
+              "reading": "としょかん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "働きます。",
+              "reading": "はたらきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-011",
+        "type": "gap",
+        "prompt": "Fill every particle blank: Tanaka eats bread. I also eat bread.",
+        "particleSegments": [
+          {
+            "text": "田中さん",
+            "reading": "たなかさん"
+          },
+          {
+            "text": "パン",
+            "reading": "パン"
+          },
+          {
+            "text": "食べます。私",
+            "reading": "たべます。わたし"
+          },
+          {
+            "text": "パン",
+            "reading": "パン"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|を|も|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: を marks the direct object. Blank 3: も means also or too. Blank 4: を marks the direct object.",
+        "feedback": {
+          "text": "田中さんはパンを食べます。私もパンを食べます。",
+          "reading": "たなかさんはパンをたべます。わたしもパンをたべます。",
+          "meaning": "Tanaka eats bread. I also eat bread.",
+          "tokens": [
+            {
+              "text": "田中さん",
+              "reading": "たなかさん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "パン",
+              "reading": "パン",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。私",
+              "reading": "たべます。わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "も",
+              "reading": "も",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "パン",
+              "reading": "パン",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-012",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I eat bread at my friend’s house.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "友達",
+            "reading": "ともだち"
+          },
+          {
+            "text": "家",
+            "reading": "いえ"
+          },
+          {
+            "text": "パン",
+            "reading": "パン"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|の|で|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: の links a possessor to a noun. Blank 3: で marks the location of an action or means of transport. Blank 4: を marks the direct object.",
+        "feedback": {
+          "text": "私は友達の家でパンを食べます。",
+          "reading": "わたしはともだちのいえでパンをたべます。",
+          "meaning": "As for me, I eat bread at my friend’s house.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "友達",
+              "reading": "ともだち",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "の",
+              "reading": "の",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "家",
+              "reading": "いえ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "パン",
+              "reading": "パン",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-013",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I eat an apple at home.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "家",
+            "reading": "いえ"
+          },
+          {
+            "text": "りんご",
+            "reading": "りんご"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|で|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: で marks the location of an action or means of transport. Blank 3: を marks the direct object.",
+        "feedback": {
+          "text": "私は家でりんごを食べます。",
+          "reading": "わたしはいえでりんごをたべます。",
+          "meaning": "As for me, I eat an apple at home.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "家",
+              "reading": "いえ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "りんご",
+              "reading": "りんご",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-014",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I go to school.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "学校",
+            "reading": "がっこう"
+          },
+          {
+            "text": "行きます。",
+            "reading": "いきます。"
+          }
+        ],
+        "answers": [
+          "は|に",
+          "は|へ"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: に marks the destination, time, or location of existence. に and へ are both accepted for this destination.",
+        "feedback": {
+          "text": "私は学校に行きます。",
+          "reading": "わたしはがっこうにいきます。",
+          "meaning": "As for me, I go to school.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "学校",
+              "reading": "がっこう",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "行きます。",
+              "reading": "いきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-015",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I go to school with a friend.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "友達",
+            "reading": "ともだち"
+          },
+          {
+            "text": "学校",
+            "reading": "がっこう"
+          },
+          {
+            "text": "行きます。",
+            "reading": "いきます。"
+          }
+        ],
+        "answers": [
+          "は|と|に",
+          "は|と|へ"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: と marks a companion. Blank 3: に marks the destination, time, or location of existence. に and へ are both accepted for this destination.",
+        "feedback": {
+          "text": "私は友達と学校に行きます。",
+          "reading": "わたしはともだちとがっこうにいきます。",
+          "meaning": "As for me, I go to school with a friend.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "友達",
+              "reading": "ともだち",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "と",
+              "reading": "と",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "学校",
+              "reading": "がっこう",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "行きます。",
+              "reading": "いきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-016",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I go to school by bus.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "バス",
+            "reading": "バス"
+          },
+          {
+            "text": "学校",
+            "reading": "がっこう"
+          },
+          {
+            "text": "行きます。",
+            "reading": "いきます。"
+          }
+        ],
+        "answers": [
+          "は|で|に",
+          "は|で|へ"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: で marks the location of an action or means of transport. Blank 3: に marks the destination, time, or location of existence. に and へ are both accepted for this destination.",
+        "feedback": {
+          "text": "私はバスで学校に行きます。",
+          "reading": "わたしはバスでがっこうにいきます。",
+          "meaning": "As for me, I go to school by bus.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "バス",
+              "reading": "バス",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "学校",
+              "reading": "がっこう",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "行きます。",
+              "reading": "いきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-017",
+        "type": "gap",
+        "prompt": "Fill every particle blank: I walk from home as far as school.",
+        "particleSegments": [
+          {
+            "text": "家",
+            "reading": "いえ"
+          },
+          {
+            "text": "学校",
+            "reading": "がっこう"
+          },
+          {
+            "text": "歩きます。",
+            "reading": "あるきます。"
+          }
+        ],
+        "answers": [
+          "から|まで"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: から marks a starting point. Blank 2: まで marks an endpoint.",
+        "feedback": {
+          "text": "家から学校まで歩きます。",
+          "reading": "いえからがっこうまであるきます。",
+          "meaning": "I walk from home as far as school.",
+          "tokens": [
+            {
+              "text": "家",
+              "reading": "いえ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "から",
+              "reading": "から",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "学校",
+              "reading": "がっこう",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "まで",
+              "reading": "まで",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "歩きます。",
+              "reading": "あるきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-018",
+        "type": "gap",
+        "prompt": "Fill every particle blank: There is a teacher at school.",
+        "particleSegments": [
+          {
+            "text": "学校",
+            "reading": "がっこう"
+          },
+          {
+            "text": "先生",
+            "reading": "せんせい"
+          },
+          {
+            "text": "います。",
+            "reading": "います。"
+          }
+        ],
+        "answers": [
+          "に|が"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: に marks the destination, time, or location of existence. Blank 2: が marks the subject.",
+        "feedback": {
+          "text": "学校に先生がいます。",
+          "reading": "がっこうにせんせいがいます。",
+          "meaning": "There is a teacher at school.",
+          "tokens": [
+            {
+              "text": "学校",
+              "reading": "がっこう",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "先生",
+              "reading": "せんせい",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "が",
+              "reading": "が",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "います。",
+              "reading": "います。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-019",
+        "type": "gap",
+        "prompt": "Fill every particle blank: This is my umbrella.",
+        "particleSegments": [
+          {
+            "text": "これ",
+            "reading": "これ"
+          },
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "傘です。",
+            "reading": "かさです。"
+          }
+        ],
+        "answers": [
+          "は|の"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: の links a possessor to a noun.",
+        "feedback": {
+          "text": "これは私の傘です。",
+          "reading": "これはわたしのかさです。",
+          "meaning": "This is my umbrella.",
+          "tokens": [
+            {
+              "text": "これ",
+              "reading": "これ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "の",
+              "reading": "の",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "傘です。",
+              "reading": "かさです。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-020",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I read a book at school.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "学校",
+            "reading": "がっこう"
+          },
+          {
+            "text": "本",
+            "reading": "ほん"
+          },
+          {
+            "text": "読みます。",
+            "reading": "よみます。"
+          }
+        ],
+        "answers": [
+          "は|で|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: で marks the location of an action or means of transport. Blank 3: を marks the direct object.",
+        "feedback": {
+          "text": "私は学校で本を読みます。",
+          "reading": "わたしはがっこうでほんをよみます。",
+          "meaning": "As for me, I read a book at school.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "学校",
+              "reading": "がっこう",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "本",
+              "reading": "ほん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "読みます。",
+              "reading": "よみます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-021",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I eat an apple at 8 o’clock.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "八時",
+            "reading": "はちじ"
+          },
+          {
+            "text": "りんご",
+            "reading": "りんご"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|に|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: に marks the destination, time, or location of existence. Blank 3: を marks the direct object.",
+        "feedback": {
+          "text": "私は八時にりんごを食べます。",
+          "reading": "わたしははちじにりんごをたべます。",
+          "meaning": "As for me, I eat an apple at 8 o’clock.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "八時",
+              "reading": "はちじ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "りんご",
+              "reading": "りんご",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-022",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I work at school from 9 a.m. until 5 p.m.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "午前九時",
+            "reading": "ごぜんくじ"
+          },
+          {
+            "text": "午後五時",
+            "reading": "ごごごじ"
+          },
+          {
+            "text": "学校",
+            "reading": "がっこう"
+          },
+          {
+            "text": "働きます。",
+            "reading": "はたらきます。"
+          }
+        ],
+        "answers": [
+          "は|から|まで|で"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: から marks a starting point. Blank 3: まで marks an endpoint. Blank 4: で marks the location of an action or means of transport.",
+        "feedback": {
+          "text": "私は午前九時から午後五時まで学校で働きます。",
+          "reading": "わたしはごぜんくじからごごごじまでがっこうではたらきます。",
+          "meaning": "As for me, I work at school from 9 a.m. until 5 p.m.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "午前九時",
+              "reading": "ごぜんくじ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "から",
+              "reading": "から",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "午後五時",
+              "reading": "ごごごじ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "まで",
+              "reading": "まで",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "学校",
+              "reading": "がっこう",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "働きます。",
+              "reading": "はたらきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-023",
+        "type": "gap",
+        "prompt": "Fill every particle blank: Tanaka eats an apple. I also eat an apple.",
+        "particleSegments": [
+          {
+            "text": "田中さん",
+            "reading": "たなかさん"
+          },
+          {
+            "text": "りんご",
+            "reading": "りんご"
+          },
+          {
+            "text": "食べます。私",
+            "reading": "たべます。わたし"
+          },
+          {
+            "text": "りんご",
+            "reading": "りんご"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|を|も|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: を marks the direct object. Blank 3: も means also or too. Blank 4: を marks the direct object.",
+        "feedback": {
+          "text": "田中さんはりんごを食べます。私もりんごを食べます。",
+          "reading": "たなかさんはりんごをたべます。わたしもりんごをたべます。",
+          "meaning": "Tanaka eats an apple. I also eat an apple.",
+          "tokens": [
+            {
+              "text": "田中さん",
+              "reading": "たなかさん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "りんご",
+              "reading": "りんご",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。私",
+              "reading": "たべます。わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "も",
+              "reading": "も",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "りんご",
+              "reading": "りんご",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-024",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I eat an apple at my friend’s house.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "友達",
+            "reading": "ともだち"
+          },
+          {
+            "text": "家",
+            "reading": "いえ"
+          },
+          {
+            "text": "りんご",
+            "reading": "りんご"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|の|で|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: の links a possessor to a noun. Blank 3: で marks the location of an action or means of transport. Blank 4: を marks the direct object.",
+        "feedback": {
+          "text": "私は友達の家でりんごを食べます。",
+          "reading": "わたしはともだちのいえでりんごをたべます。",
+          "meaning": "As for me, I eat an apple at my friend’s house.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "友達",
+              "reading": "ともだち",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "の",
+              "reading": "の",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "家",
+              "reading": "いえ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "りんご",
+              "reading": "りんご",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-025",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I eat rice at home.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "家",
+            "reading": "いえ"
+          },
+          {
+            "text": "ご飯",
+            "reading": "ごはん"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|で|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: で marks the location of an action or means of transport. Blank 3: を marks the direct object.",
+        "feedback": {
+          "text": "私は家でご飯を食べます。",
+          "reading": "わたしはいえでごはんをたべます。",
+          "meaning": "As for me, I eat rice at home.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "家",
+              "reading": "いえ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "ご飯",
+              "reading": "ごはん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-026",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I go to the park.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "公園",
+            "reading": "こうえん"
+          },
+          {
+            "text": "行きます。",
+            "reading": "いきます。"
+          }
+        ],
+        "answers": [
+          "は|に",
+          "は|へ"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: に marks the destination, time, or location of existence. に and へ are both accepted for this destination.",
+        "feedback": {
+          "text": "私は公園に行きます。",
+          "reading": "わたしはこうえんにいきます。",
+          "meaning": "As for me, I go to the park.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "公園",
+              "reading": "こうえん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "行きます。",
+              "reading": "いきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-027",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I go to the park with a friend.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "友達",
+            "reading": "ともだち"
+          },
+          {
+            "text": "公園",
+            "reading": "こうえん"
+          },
+          {
+            "text": "行きます。",
+            "reading": "いきます。"
+          }
+        ],
+        "answers": [
+          "は|と|に",
+          "は|と|へ"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: と marks a companion. Blank 3: に marks the destination, time, or location of existence. に and へ are both accepted for this destination.",
+        "feedback": {
+          "text": "私は友達と公園に行きます。",
+          "reading": "わたしはともだちとこうえんにいきます。",
+          "meaning": "As for me, I go to the park with a friend.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "友達",
+              "reading": "ともだち",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "と",
+              "reading": "と",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "公園",
+              "reading": "こうえん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "行きます。",
+              "reading": "いきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-028",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I go to the park by bus.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "バス",
+            "reading": "バス"
+          },
+          {
+            "text": "公園",
+            "reading": "こうえん"
+          },
+          {
+            "text": "行きます。",
+            "reading": "いきます。"
+          }
+        ],
+        "answers": [
+          "は|で|に",
+          "は|で|へ"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: で marks the location of an action or means of transport. Blank 3: に marks the destination, time, or location of existence. に and へ are both accepted for this destination.",
+        "feedback": {
+          "text": "私はバスで公園に行きます。",
+          "reading": "わたしはバスでこうえんにいきます。",
+          "meaning": "As for me, I go to the park by bus.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "バス",
+              "reading": "バス",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "公園",
+              "reading": "こうえん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "行きます。",
+              "reading": "いきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-029",
+        "type": "gap",
+        "prompt": "Fill every particle blank: I walk from home as far as the park.",
+        "particleSegments": [
+          {
+            "text": "家",
+            "reading": "いえ"
+          },
+          {
+            "text": "公園",
+            "reading": "こうえん"
+          },
+          {
+            "text": "歩きます。",
+            "reading": "あるきます。"
+          }
+        ],
+        "answers": [
+          "から|まで"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: から marks a starting point. Blank 2: まで marks an endpoint.",
+        "feedback": {
+          "text": "家から公園まで歩きます。",
+          "reading": "いえからこうえんまであるきます。",
+          "meaning": "I walk from home as far as the park.",
+          "tokens": [
+            {
+              "text": "家",
+              "reading": "いえ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "から",
+              "reading": "から",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "公園",
+              "reading": "こうえん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "まで",
+              "reading": "まで",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "歩きます。",
+              "reading": "あるきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-030",
+        "type": "gap",
+        "prompt": "Fill every particle blank: There is a teacher at the park.",
+        "particleSegments": [
+          {
+            "text": "公園",
+            "reading": "こうえん"
+          },
+          {
+            "text": "先生",
+            "reading": "せんせい"
+          },
+          {
+            "text": "います。",
+            "reading": "います。"
+          }
+        ],
+        "answers": [
+          "に|が"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: に marks the destination, time, or location of existence. Blank 2: が marks the subject.",
+        "feedback": {
+          "text": "公園に先生がいます。",
+          "reading": "こうえんにせんせいがいます。",
+          "meaning": "There is a teacher at the park.",
+          "tokens": [
+            {
+              "text": "公園",
+              "reading": "こうえん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "先生",
+              "reading": "せんせい",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "が",
+              "reading": "が",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "います。",
+              "reading": "います。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-031",
+        "type": "gap",
+        "prompt": "Fill every particle blank: This is my watch.",
+        "particleSegments": [
+          {
+            "text": "これ",
+            "reading": "これ"
+          },
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "時計です。",
+            "reading": "とけいです。"
+          }
+        ],
+        "answers": [
+          "は|の"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: の links a possessor to a noun.",
+        "feedback": {
+          "text": "これは私の時計です。",
+          "reading": "これはわたしのとけいです。",
+          "meaning": "This is my watch.",
+          "tokens": [
+            {
+              "text": "これ",
+              "reading": "これ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "の",
+              "reading": "の",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "時計です。",
+              "reading": "とけいです。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-032",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I read a book at the park.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "公園",
+            "reading": "こうえん"
+          },
+          {
+            "text": "本",
+            "reading": "ほん"
+          },
+          {
+            "text": "読みます。",
+            "reading": "よみます。"
+          }
+        ],
+        "answers": [
+          "は|で|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: で marks the location of an action or means of transport. Blank 3: を marks the direct object.",
+        "feedback": {
+          "text": "私は公園で本を読みます。",
+          "reading": "わたしはこうえんでほんをよみます。",
+          "meaning": "As for me, I read a book at the park.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "公園",
+              "reading": "こうえん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "本",
+              "reading": "ほん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "読みます。",
+              "reading": "よみます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-033",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I eat rice at 9 o’clock.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "九時",
+            "reading": "くじ"
+          },
+          {
+            "text": "ご飯",
+            "reading": "ごはん"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|に|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: に marks the destination, time, or location of existence. Blank 3: を marks the direct object.",
+        "feedback": {
+          "text": "私は九時にご飯を食べます。",
+          "reading": "わたしはくじにごはんをたべます。",
+          "meaning": "As for me, I eat rice at 9 o’clock.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "九時",
+              "reading": "くじ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "ご飯",
+              "reading": "ごはん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-034",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I work at the park from 9 a.m. until 5 p.m.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "午前九時",
+            "reading": "ごぜんくじ"
+          },
+          {
+            "text": "午後五時",
+            "reading": "ごごごじ"
+          },
+          {
+            "text": "公園",
+            "reading": "こうえん"
+          },
+          {
+            "text": "働きます。",
+            "reading": "はたらきます。"
+          }
+        ],
+        "answers": [
+          "は|から|まで|で"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: から marks a starting point. Blank 3: まで marks an endpoint. Blank 4: で marks the location of an action or means of transport.",
+        "feedback": {
+          "text": "私は午前九時から午後五時まで公園で働きます。",
+          "reading": "わたしはごぜんくじからごごごじまでこうえんではたらきます。",
+          "meaning": "As for me, I work at the park from 9 a.m. until 5 p.m.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "午前九時",
+              "reading": "ごぜんくじ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "から",
+              "reading": "から",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "午後五時",
+              "reading": "ごごごじ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "まで",
+              "reading": "まで",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "公園",
+              "reading": "こうえん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "働きます。",
+              "reading": "はたらきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-035",
+        "type": "gap",
+        "prompt": "Fill every particle blank: Tanaka eats rice. I also eat rice.",
+        "particleSegments": [
+          {
+            "text": "田中さん",
+            "reading": "たなかさん"
+          },
+          {
+            "text": "ご飯",
+            "reading": "ごはん"
+          },
+          {
+            "text": "食べます。私",
+            "reading": "たべます。わたし"
+          },
+          {
+            "text": "ご飯",
+            "reading": "ごはん"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|を|も|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: を marks the direct object. Blank 3: も means also or too. Blank 4: を marks the direct object.",
+        "feedback": {
+          "text": "田中さんはご飯を食べます。私もご飯を食べます。",
+          "reading": "たなかさんはごはんをたべます。わたしもごはんをたべます。",
+          "meaning": "Tanaka eats rice. I also eat rice.",
+          "tokens": [
+            {
+              "text": "田中さん",
+              "reading": "たなかさん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "ご飯",
+              "reading": "ごはん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。私",
+              "reading": "たべます。わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "も",
+              "reading": "も",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "ご飯",
+              "reading": "ごはん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-036",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I eat rice at my friend’s house.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "友達",
+            "reading": "ともだち"
+          },
+          {
+            "text": "家",
+            "reading": "いえ"
+          },
+          {
+            "text": "ご飯",
+            "reading": "ごはん"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|の|で|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: の links a possessor to a noun. Blank 3: で marks the location of an action or means of transport. Blank 4: を marks the direct object.",
+        "feedback": {
+          "text": "私は友達の家でご飯を食べます。",
+          "reading": "わたしはともだちのいえでごはんをたべます。",
+          "meaning": "As for me, I eat rice at my friend’s house.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "友達",
+              "reading": "ともだち",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "の",
+              "reading": "の",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "家",
+              "reading": "いえ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "ご飯",
+              "reading": "ごはん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-037",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I eat fish at home.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "家",
+            "reading": "いえ"
+          },
+          {
+            "text": "魚",
+            "reading": "さかな"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|で|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: で marks the location of an action or means of transport. Blank 3: を marks the direct object.",
+        "feedback": {
+          "text": "私は家で魚を食べます。",
+          "reading": "わたしはいえでさかなをたべます。",
+          "meaning": "As for me, I eat fish at home.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "家",
+              "reading": "いえ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "魚",
+              "reading": "さかな",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-038",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I go to the station.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "駅",
+            "reading": "えき"
+          },
+          {
+            "text": "行きます。",
+            "reading": "いきます。"
+          }
+        ],
+        "answers": [
+          "は|に",
+          "は|へ"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: に marks the destination, time, or location of existence. に and へ are both accepted for this destination.",
+        "feedback": {
+          "text": "私は駅に行きます。",
+          "reading": "わたしはえきにいきます。",
+          "meaning": "As for me, I go to the station.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "駅",
+              "reading": "えき",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "行きます。",
+              "reading": "いきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-039",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I go to the station with a friend.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "友達",
+            "reading": "ともだち"
+          },
+          {
+            "text": "駅",
+            "reading": "えき"
+          },
+          {
+            "text": "行きます。",
+            "reading": "いきます。"
+          }
+        ],
+        "answers": [
+          "は|と|に",
+          "は|と|へ"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: と marks a companion. Blank 3: に marks the destination, time, or location of existence. に and へ are both accepted for this destination.",
+        "feedback": {
+          "text": "私は友達と駅に行きます。",
+          "reading": "わたしはともだちとえきにいきます。",
+          "meaning": "As for me, I go to the station with a friend.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "友達",
+              "reading": "ともだち",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "と",
+              "reading": "と",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "駅",
+              "reading": "えき",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "行きます。",
+              "reading": "いきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-040",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I go to the station by bus.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "バス",
+            "reading": "バス"
+          },
+          {
+            "text": "駅",
+            "reading": "えき"
+          },
+          {
+            "text": "行きます。",
+            "reading": "いきます。"
+          }
+        ],
+        "answers": [
+          "は|で|に",
+          "は|で|へ"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: で marks the location of an action or means of transport. Blank 3: に marks the destination, time, or location of existence. に and へ are both accepted for this destination.",
+        "feedback": {
+          "text": "私はバスで駅に行きます。",
+          "reading": "わたしはバスでえきにいきます。",
+          "meaning": "As for me, I go to the station by bus.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "バス",
+              "reading": "バス",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "駅",
+              "reading": "えき",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "行きます。",
+              "reading": "いきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-041",
+        "type": "gap",
+        "prompt": "Fill every particle blank: I walk from home as far as the station.",
+        "particleSegments": [
+          {
+            "text": "家",
+            "reading": "いえ"
+          },
+          {
+            "text": "駅",
+            "reading": "えき"
+          },
+          {
+            "text": "歩きます。",
+            "reading": "あるきます。"
+          }
+        ],
+        "answers": [
+          "から|まで"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: から marks a starting point. Blank 2: まで marks an endpoint.",
+        "feedback": {
+          "text": "家から駅まで歩きます。",
+          "reading": "いえからえきまであるきます。",
+          "meaning": "I walk from home as far as the station.",
+          "tokens": [
+            {
+              "text": "家",
+              "reading": "いえ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "から",
+              "reading": "から",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "駅",
+              "reading": "えき",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "まで",
+              "reading": "まで",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "歩きます。",
+              "reading": "あるきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-042",
+        "type": "gap",
+        "prompt": "Fill every particle blank: There is a teacher at the station.",
+        "particleSegments": [
+          {
+            "text": "駅",
+            "reading": "えき"
+          },
+          {
+            "text": "先生",
+            "reading": "せんせい"
+          },
+          {
+            "text": "います。",
+            "reading": "います。"
+          }
+        ],
+        "answers": [
+          "に|が"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: に marks the destination, time, or location of existence. Blank 2: が marks the subject.",
+        "feedback": {
+          "text": "駅に先生がいます。",
+          "reading": "えきにせんせいがいます。",
+          "meaning": "There is a teacher at the station.",
+          "tokens": [
+            {
+              "text": "駅",
+              "reading": "えき",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "先生",
+              "reading": "せんせい",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "が",
+              "reading": "が",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "います。",
+              "reading": "います。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-043",
+        "type": "gap",
+        "prompt": "Fill every particle blank: This is my bag.",
+        "particleSegments": [
+          {
+            "text": "これ",
+            "reading": "これ"
+          },
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "かばんです。",
+            "reading": "かばんです。"
+          }
+        ],
+        "answers": [
+          "は|の"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: の links a possessor to a noun.",
+        "feedback": {
+          "text": "これは私のかばんです。",
+          "reading": "これはわたしのかばんです。",
+          "meaning": "This is my bag.",
+          "tokens": [
+            {
+              "text": "これ",
+              "reading": "これ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "の",
+              "reading": "の",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "かばんです。",
+              "reading": "かばんです。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-044",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I read a book at the station.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "駅",
+            "reading": "えき"
+          },
+          {
+            "text": "本",
+            "reading": "ほん"
+          },
+          {
+            "text": "読みます。",
+            "reading": "よみます。"
+          }
+        ],
+        "answers": [
+          "は|で|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: で marks the location of an action or means of transport. Blank 3: を marks the direct object.",
+        "feedback": {
+          "text": "私は駅で本を読みます。",
+          "reading": "わたしはえきでほんをよみます。",
+          "meaning": "As for me, I read a book at the station.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "駅",
+              "reading": "えき",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "本",
+              "reading": "ほん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "読みます。",
+              "reading": "よみます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-045",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I eat fish at 10 o’clock.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "十時",
+            "reading": "じゅうじ"
+          },
+          {
+            "text": "魚",
+            "reading": "さかな"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|に|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: に marks the destination, time, or location of existence. Blank 3: を marks the direct object.",
+        "feedback": {
+          "text": "私は十時に魚を食べます。",
+          "reading": "わたしはじゅうじにさかなをたべます。",
+          "meaning": "As for me, I eat fish at 10 o’clock.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "十時",
+              "reading": "じゅうじ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "魚",
+              "reading": "さかな",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-046",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I work at the station from 9 a.m. until 5 p.m.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "午前九時",
+            "reading": "ごぜんくじ"
+          },
+          {
+            "text": "午後五時",
+            "reading": "ごごごじ"
+          },
+          {
+            "text": "駅",
+            "reading": "えき"
+          },
+          {
+            "text": "働きます。",
+            "reading": "はたらきます。"
+          }
+        ],
+        "answers": [
+          "は|から|まで|で"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: から marks a starting point. Blank 3: まで marks an endpoint. Blank 4: で marks the location of an action or means of transport.",
+        "feedback": {
+          "text": "私は午前九時から午後五時まで駅で働きます。",
+          "reading": "わたしはごぜんくじからごごごじまでえきではたらきます。",
+          "meaning": "As for me, I work at the station from 9 a.m. until 5 p.m.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "午前九時",
+              "reading": "ごぜんくじ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "から",
+              "reading": "から",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "午後五時",
+              "reading": "ごごごじ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "まで",
+              "reading": "まで",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "駅",
+              "reading": "えき",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "働きます。",
+              "reading": "はたらきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-047",
+        "type": "gap",
+        "prompt": "Fill every particle blank: Tanaka eats fish. I also eat fish.",
+        "particleSegments": [
+          {
+            "text": "田中さん",
+            "reading": "たなかさん"
+          },
+          {
+            "text": "魚",
+            "reading": "さかな"
+          },
+          {
+            "text": "食べます。私",
+            "reading": "たべます。わたし"
+          },
+          {
+            "text": "魚",
+            "reading": "さかな"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|を|も|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: を marks the direct object. Blank 3: も means also or too. Blank 4: を marks the direct object.",
+        "feedback": {
+          "text": "田中さんは魚を食べます。私も魚を食べます。",
+          "reading": "たなかさんはさかなをたべます。わたしもさかなをたべます。",
+          "meaning": "Tanaka eats fish. I also eat fish.",
+          "tokens": [
+            {
+              "text": "田中さん",
+              "reading": "たなかさん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "魚",
+              "reading": "さかな",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。私",
+              "reading": "たべます。わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "も",
+              "reading": "も",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "魚",
+              "reading": "さかな",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-048",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I eat fish at my friend’s house.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "友達",
+            "reading": "ともだち"
+          },
+          {
+            "text": "家",
+            "reading": "いえ"
+          },
+          {
+            "text": "魚",
+            "reading": "さかな"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|の|で|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: の links a possessor to a noun. Blank 3: で marks the location of an action or means of transport. Blank 4: を marks the direct object.",
+        "feedback": {
+          "text": "私は友達の家で魚を食べます。",
+          "reading": "わたしはともだちのいえでさかなをたべます。",
+          "meaning": "As for me, I eat fish at my friend’s house.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "友達",
+              "reading": "ともだち",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "の",
+              "reading": "の",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "家",
+              "reading": "いえ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "魚",
+              "reading": "さかな",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-049",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I eat meat at home.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "家",
+            "reading": "いえ"
+          },
+          {
+            "text": "肉",
+            "reading": "にく"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|で|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: で marks the location of an action or means of transport. Blank 3: を marks the direct object.",
+        "feedback": {
+          "text": "私は家で肉を食べます。",
+          "reading": "わたしはいえでにくをたべます。",
+          "meaning": "As for me, I eat meat at home.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "家",
+              "reading": "いえ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "肉",
+              "reading": "にく",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-050",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I go to the office.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "会社",
+            "reading": "かいしゃ"
+          },
+          {
+            "text": "行きます。",
+            "reading": "いきます。"
+          }
+        ],
+        "answers": [
+          "は|に",
+          "は|へ"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: に marks the destination, time, or location of existence. に and へ are both accepted for this destination.",
+        "feedback": {
+          "text": "私は会社に行きます。",
+          "reading": "わたしはかいしゃにいきます。",
+          "meaning": "As for me, I go to the office.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "会社",
+              "reading": "かいしゃ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "行きます。",
+              "reading": "いきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-051",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I go to the office with a friend.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "友達",
+            "reading": "ともだち"
+          },
+          {
+            "text": "会社",
+            "reading": "かいしゃ"
+          },
+          {
+            "text": "行きます。",
+            "reading": "いきます。"
+          }
+        ],
+        "answers": [
+          "は|と|に",
+          "は|と|へ"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: と marks a companion. Blank 3: に marks the destination, time, or location of existence. に and へ are both accepted for this destination.",
+        "feedback": {
+          "text": "私は友達と会社に行きます。",
+          "reading": "わたしはともだちとかいしゃにいきます。",
+          "meaning": "As for me, I go to the office with a friend.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "友達",
+              "reading": "ともだち",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "と",
+              "reading": "と",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "会社",
+              "reading": "かいしゃ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "行きます。",
+              "reading": "いきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-052",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I go to the office by bus.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "バス",
+            "reading": "バス"
+          },
+          {
+            "text": "会社",
+            "reading": "かいしゃ"
+          },
+          {
+            "text": "行きます。",
+            "reading": "いきます。"
+          }
+        ],
+        "answers": [
+          "は|で|に",
+          "は|で|へ"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: で marks the location of an action or means of transport. Blank 3: に marks the destination, time, or location of existence. に and へ are both accepted for this destination.",
+        "feedback": {
+          "text": "私はバスで会社に行きます。",
+          "reading": "わたしはバスでかいしゃにいきます。",
+          "meaning": "As for me, I go to the office by bus.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "バス",
+              "reading": "バス",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "会社",
+              "reading": "かいしゃ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "行きます。",
+              "reading": "いきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-053",
+        "type": "gap",
+        "prompt": "Fill every particle blank: I walk from home as far as the office.",
+        "particleSegments": [
+          {
+            "text": "家",
+            "reading": "いえ"
+          },
+          {
+            "text": "会社",
+            "reading": "かいしゃ"
+          },
+          {
+            "text": "歩きます。",
+            "reading": "あるきます。"
+          }
+        ],
+        "answers": [
+          "から|まで"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: から marks a starting point. Blank 2: まで marks an endpoint.",
+        "feedback": {
+          "text": "家から会社まで歩きます。",
+          "reading": "いえからかいしゃまであるきます。",
+          "meaning": "I walk from home as far as the office.",
+          "tokens": [
+            {
+              "text": "家",
+              "reading": "いえ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "から",
+              "reading": "から",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "会社",
+              "reading": "かいしゃ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "まで",
+              "reading": "まで",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "歩きます。",
+              "reading": "あるきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-054",
+        "type": "gap",
+        "prompt": "Fill every particle blank: There is a teacher at the office.",
+        "particleSegments": [
+          {
+            "text": "会社",
+            "reading": "かいしゃ"
+          },
+          {
+            "text": "先生",
+            "reading": "せんせい"
+          },
+          {
+            "text": "います。",
+            "reading": "います。"
+          }
+        ],
+        "answers": [
+          "に|が"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: に marks the destination, time, or location of existence. Blank 2: が marks the subject.",
+        "feedback": {
+          "text": "会社に先生がいます。",
+          "reading": "かいしゃにせんせいがいます。",
+          "meaning": "There is a teacher at the office.",
+          "tokens": [
+            {
+              "text": "会社",
+              "reading": "かいしゃ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "先生",
+              "reading": "せんせい",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "が",
+              "reading": "が",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "います。",
+              "reading": "います。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-055",
+        "type": "gap",
+        "prompt": "Fill every particle blank: This is my bicycle.",
+        "particleSegments": [
+          {
+            "text": "これ",
+            "reading": "これ"
+          },
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "自転車です。",
+            "reading": "じてんしゃです。"
+          }
+        ],
+        "answers": [
+          "は|の"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: の links a possessor to a noun.",
+        "feedback": {
+          "text": "これは私の自転車です。",
+          "reading": "これはわたしのじてんしゃです。",
+          "meaning": "This is my bicycle.",
+          "tokens": [
+            {
+              "text": "これ",
+              "reading": "これ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "の",
+              "reading": "の",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "自転車です。",
+              "reading": "じてんしゃです。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-056",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I read a book at the office.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "会社",
+            "reading": "かいしゃ"
+          },
+          {
+            "text": "本",
+            "reading": "ほん"
+          },
+          {
+            "text": "読みます。",
+            "reading": "よみます。"
+          }
+        ],
+        "answers": [
+          "は|で|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: で marks the location of an action or means of transport. Blank 3: を marks the direct object.",
+        "feedback": {
+          "text": "私は会社で本を読みます。",
+          "reading": "わたしはかいしゃでほんをよみます。",
+          "meaning": "As for me, I read a book at the office.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "会社",
+              "reading": "かいしゃ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "本",
+              "reading": "ほん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "読みます。",
+              "reading": "よみます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-057",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I eat meat at 11 o’clock.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "十一時",
+            "reading": "じゅういちじ"
+          },
+          {
+            "text": "肉",
+            "reading": "にく"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|に|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: に marks the destination, time, or location of existence. Blank 3: を marks the direct object.",
+        "feedback": {
+          "text": "私は十一時に肉を食べます。",
+          "reading": "わたしはじゅういちじににくをたべます。",
+          "meaning": "As for me, I eat meat at 11 o’clock.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "十一時",
+              "reading": "じゅういちじ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "肉",
+              "reading": "にく",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-058",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I work at the office from 9 a.m. until 5 p.m.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "午前九時",
+            "reading": "ごぜんくじ"
+          },
+          {
+            "text": "午後五時",
+            "reading": "ごごごじ"
+          },
+          {
+            "text": "会社",
+            "reading": "かいしゃ"
+          },
+          {
+            "text": "働きます。",
+            "reading": "はたらきます。"
+          }
+        ],
+        "answers": [
+          "は|から|まで|で"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: から marks a starting point. Blank 3: まで marks an endpoint. Blank 4: で marks the location of an action or means of transport.",
+        "feedback": {
+          "text": "私は午前九時から午後五時まで会社で働きます。",
+          "reading": "わたしはごぜんくじからごごごじまでかいしゃではたらきます。",
+          "meaning": "As for me, I work at the office from 9 a.m. until 5 p.m.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "午前九時",
+              "reading": "ごぜんくじ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "から",
+              "reading": "から",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "午後五時",
+              "reading": "ごごごじ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "まで",
+              "reading": "まで",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "会社",
+              "reading": "かいしゃ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "働きます。",
+              "reading": "はたらきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-059",
+        "type": "gap",
+        "prompt": "Fill every particle blank: Tanaka eats meat. I also eat meat.",
+        "particleSegments": [
+          {
+            "text": "田中さん",
+            "reading": "たなかさん"
+          },
+          {
+            "text": "肉",
+            "reading": "にく"
+          },
+          {
+            "text": "食べます。私",
+            "reading": "たべます。わたし"
+          },
+          {
+            "text": "肉",
+            "reading": "にく"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|を|も|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: を marks the direct object. Blank 3: も means also or too. Blank 4: を marks the direct object.",
+        "feedback": {
+          "text": "田中さんは肉を食べます。私も肉を食べます。",
+          "reading": "たなかさんはにくをたべます。わたしもにくをたべます。",
+          "meaning": "Tanaka eats meat. I also eat meat.",
+          "tokens": [
+            {
+              "text": "田中さん",
+              "reading": "たなかさん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "肉",
+              "reading": "にく",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。私",
+              "reading": "たべます。わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "も",
+              "reading": "も",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "肉",
+              "reading": "にく",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-060",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I eat meat at my friend’s house.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "友達",
+            "reading": "ともだち"
+          },
+          {
+            "text": "家",
+            "reading": "いえ"
+          },
+          {
+            "text": "肉",
+            "reading": "にく"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|の|で|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: の links a possessor to a noun. Blank 3: で marks the location of an action or means of transport. Blank 4: を marks the direct object.",
+        "feedback": {
+          "text": "私は友達の家で肉を食べます。",
+          "reading": "わたしはともだちのいえでにくをたべます。",
+          "meaning": "As for me, I eat meat at my friend’s house.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "友達",
+              "reading": "ともだち",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "の",
+              "reading": "の",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "家",
+              "reading": "いえ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "肉",
+              "reading": "にく",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-061",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I eat a banana at home.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "家",
+            "reading": "いえ"
+          },
+          {
+            "text": "バナナ",
+            "reading": "バナナ"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|で|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: で marks the location of an action or means of transport. Blank 3: を marks the direct object.",
+        "feedback": {
+          "text": "私は家でバナナを食べます。",
+          "reading": "わたしはいえでバナナをたべます。",
+          "meaning": "As for me, I eat a banana at home.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "家",
+              "reading": "いえ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "バナナ",
+              "reading": "バナナ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-062",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I go to the shop.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "店",
+            "reading": "みせ"
+          },
+          {
+            "text": "行きます。",
+            "reading": "いきます。"
+          }
+        ],
+        "answers": [
+          "は|に",
+          "は|へ"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: に marks the destination, time, or location of existence. に and へ are both accepted for this destination.",
+        "feedback": {
+          "text": "私は店に行きます。",
+          "reading": "わたしはみせにいきます。",
+          "meaning": "As for me, I go to the shop.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "店",
+              "reading": "みせ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "行きます。",
+              "reading": "いきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-063",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I go to the shop with a friend.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "友達",
+            "reading": "ともだち"
+          },
+          {
+            "text": "店",
+            "reading": "みせ"
+          },
+          {
+            "text": "行きます。",
+            "reading": "いきます。"
+          }
+        ],
+        "answers": [
+          "は|と|に",
+          "は|と|へ"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: と marks a companion. Blank 3: に marks the destination, time, or location of existence. に and へ are both accepted for this destination.",
+        "feedback": {
+          "text": "私は友達と店に行きます。",
+          "reading": "わたしはともだちとみせにいきます。",
+          "meaning": "As for me, I go to the shop with a friend.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "友達",
+              "reading": "ともだち",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "と",
+              "reading": "と",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "店",
+              "reading": "みせ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "行きます。",
+              "reading": "いきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-064",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I go to the shop by bus.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "バス",
+            "reading": "バス"
+          },
+          {
+            "text": "店",
+            "reading": "みせ"
+          },
+          {
+            "text": "行きます。",
+            "reading": "いきます。"
+          }
+        ],
+        "answers": [
+          "は|で|に",
+          "は|で|へ"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: で marks the location of an action or means of transport. Blank 3: に marks the destination, time, or location of existence. に and へ are both accepted for this destination.",
+        "feedback": {
+          "text": "私はバスで店に行きます。",
+          "reading": "わたしはバスでみせにいきます。",
+          "meaning": "As for me, I go to the shop by bus.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "バス",
+              "reading": "バス",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "店",
+              "reading": "みせ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "行きます。",
+              "reading": "いきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-065",
+        "type": "gap",
+        "prompt": "Fill every particle blank: I walk from home as far as the shop.",
+        "particleSegments": [
+          {
+            "text": "家",
+            "reading": "いえ"
+          },
+          {
+            "text": "店",
+            "reading": "みせ"
+          },
+          {
+            "text": "歩きます。",
+            "reading": "あるきます。"
+          }
+        ],
+        "answers": [
+          "から|まで"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: から marks a starting point. Blank 2: まで marks an endpoint.",
+        "feedback": {
+          "text": "家から店まで歩きます。",
+          "reading": "いえからみせまであるきます。",
+          "meaning": "I walk from home as far as the shop.",
+          "tokens": [
+            {
+              "text": "家",
+              "reading": "いえ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "から",
+              "reading": "から",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "店",
+              "reading": "みせ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "まで",
+              "reading": "まで",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "歩きます。",
+              "reading": "あるきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-066",
+        "type": "gap",
+        "prompt": "Fill every particle blank: There is a teacher at the shop.",
+        "particleSegments": [
+          {
+            "text": "店",
+            "reading": "みせ"
+          },
+          {
+            "text": "先生",
+            "reading": "せんせい"
+          },
+          {
+            "text": "います。",
+            "reading": "います。"
+          }
+        ],
+        "answers": [
+          "に|が"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: に marks the destination, time, or location of existence. Blank 2: が marks the subject.",
+        "feedback": {
+          "text": "店に先生がいます。",
+          "reading": "みせにせんせいがいます。",
+          "meaning": "There is a teacher at the shop.",
+          "tokens": [
+            {
+              "text": "店",
+              "reading": "みせ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "先生",
+              "reading": "せんせい",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "が",
+              "reading": "が",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "います。",
+              "reading": "います。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-067",
+        "type": "gap",
+        "prompt": "Fill every particle blank: This is my dictionary.",
+        "particleSegments": [
+          {
+            "text": "これ",
+            "reading": "これ"
+          },
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "辞書です。",
+            "reading": "じしょです。"
+          }
+        ],
+        "answers": [
+          "は|の"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: の links a possessor to a noun.",
+        "feedback": {
+          "text": "これは私の辞書です。",
+          "reading": "これはわたしのじしょです。",
+          "meaning": "This is my dictionary.",
+          "tokens": [
+            {
+              "text": "これ",
+              "reading": "これ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "の",
+              "reading": "の",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "辞書です。",
+              "reading": "じしょです。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-068",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I read a book at the shop.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "店",
+            "reading": "みせ"
+          },
+          {
+            "text": "本",
+            "reading": "ほん"
+          },
+          {
+            "text": "読みます。",
+            "reading": "よみます。"
+          }
+        ],
+        "answers": [
+          "は|で|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: で marks the location of an action or means of transport. Blank 3: を marks the direct object.",
+        "feedback": {
+          "text": "私は店で本を読みます。",
+          "reading": "わたしはみせでほんをよみます。",
+          "meaning": "As for me, I read a book at the shop.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "店",
+              "reading": "みせ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "本",
+              "reading": "ほん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "読みます。",
+              "reading": "よみます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-069",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I eat a banana at 12 o’clock.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "十二時",
+            "reading": "じゅうにじ"
+          },
+          {
+            "text": "バナナ",
+            "reading": "バナナ"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|に|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: に marks the destination, time, or location of existence. Blank 3: を marks the direct object.",
+        "feedback": {
+          "text": "私は十二時にバナナを食べます。",
+          "reading": "わたしはじゅうにじにバナナをたべます。",
+          "meaning": "As for me, I eat a banana at 12 o’clock.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "十二時",
+              "reading": "じゅうにじ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "に",
+              "reading": "に",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "バナナ",
+              "reading": "バナナ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-070",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I work at the shop from 9 a.m. until 5 p.m.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "午前九時",
+            "reading": "ごぜんくじ"
+          },
+          {
+            "text": "午後五時",
+            "reading": "ごごごじ"
+          },
+          {
+            "text": "店",
+            "reading": "みせ"
+          },
+          {
+            "text": "働きます。",
+            "reading": "はたらきます。"
+          }
+        ],
+        "answers": [
+          "は|から|まで|で"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: から marks a starting point. Blank 3: まで marks an endpoint. Blank 4: で marks the location of an action or means of transport.",
+        "feedback": {
+          "text": "私は午前九時から午後五時まで店で働きます。",
+          "reading": "わたしはごぜんくじからごごごじまでみせではたらきます。",
+          "meaning": "As for me, I work at the shop from 9 a.m. until 5 p.m.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "午前九時",
+              "reading": "ごぜんくじ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "から",
+              "reading": "から",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "午後五時",
+              "reading": "ごごごじ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "まで",
+              "reading": "まで",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "店",
+              "reading": "みせ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "働きます。",
+              "reading": "はたらきます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-071",
+        "type": "gap",
+        "prompt": "Fill every particle blank: Tanaka eats a banana. I also eat a banana.",
+        "particleSegments": [
+          {
+            "text": "田中さん",
+            "reading": "たなかさん"
+          },
+          {
+            "text": "バナナ",
+            "reading": "バナナ"
+          },
+          {
+            "text": "食べます。私",
+            "reading": "たべます。わたし"
+          },
+          {
+            "text": "バナナ",
+            "reading": "バナナ"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|を|も|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: を marks the direct object. Blank 3: も means also or too. Blank 4: を marks the direct object.",
+        "feedback": {
+          "text": "田中さんはバナナを食べます。私もバナナを食べます。",
+          "reading": "たなかさんはバナナをたべます。わたしもバナナをたべます。",
+          "meaning": "Tanaka eats a banana. I also eat a banana.",
+          "tokens": [
+            {
+              "text": "田中さん",
+              "reading": "たなかさん",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "バナナ",
+              "reading": "バナナ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。私",
+              "reading": "たべます。わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "も",
+              "reading": "も",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "バナナ",
+              "reading": "バナナ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      },
+      {
+        "id": "particle-fill-072",
+        "type": "gap",
+        "prompt": "Fill every particle blank: As for me, I eat a banana at my friend’s house.",
+        "particleSegments": [
+          {
+            "text": "私",
+            "reading": "わたし"
+          },
+          {
+            "text": "友達",
+            "reading": "ともだち"
+          },
+          {
+            "text": "家",
+            "reading": "いえ"
+          },
+          {
+            "text": "バナナ",
+            "reading": "バナナ"
+          },
+          {
+            "text": "食べます。",
+            "reading": "たべます。"
+          }
+        ],
+        "answers": [
+          "は|の|で|を"
+        ],
+        "hint": "Use は for the stated topic and が for the subject. Follow the English meaning for also, possession, starting points, and endpoints.",
+        "explanation": "Blank 1: は marks the topic (pronounced wa). Blank 2: の links a possessor to a noun. Blank 3: で marks the location of an action or means of transport. Blank 4: を marks the direct object.",
+        "feedback": {
+          "text": "私は友達の家でバナナを食べます。",
+          "reading": "わたしはともだちのいえでバナナをたべます。",
+          "meaning": "As for me, I eat a banana at my friend’s house.",
+          "tokens": [
+            {
+              "text": "私",
+              "reading": "わたし",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "は",
+              "reading": "は",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "友達",
+              "reading": "ともだち",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "の",
+              "reading": "の",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "家",
+              "reading": "いえ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "で",
+              "reading": "で",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "バナナ",
+              "reading": "バナナ",
+              "role": "modifier",
+              "wordClass": "phrase"
+            },
+            {
+              "text": "を",
+              "reading": "を",
+              "role": "particle",
+              "wordClass": "particle"
+            },
+            {
+              "text": "食べます。",
+              "reading": "たべます。",
+              "role": "modifier",
+              "wordClass": "phrase"
+            }
+          ]
+        }
+      }
+    ]
   }
 ]

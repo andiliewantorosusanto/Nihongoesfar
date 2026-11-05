@@ -90,7 +90,10 @@ export function makePractice(
       const usedSentences = new Set<string>();
       const queue: Question[] = [];
       // Sample each learning step, keeping recognition before independent production.
-      for (const type of ['meaning-choice', 'pattern-choice', 'gap', 'tiles', 'typing']) {
+      const steps = pool.every((item) => item.exercise.particleSegments)
+        ? Array.from({ length: Math.min(5, pool.length) }, () => 'gap')
+        : ['meaning-choice', 'pattern-choice', 'gap', 'tiles', 'typing'];
+      for (const type of steps) {
         const candidates = pool.filter((item) => item.exercise.type === type);
         if (!candidates.length) continue;
         const fresh = candidates.filter(

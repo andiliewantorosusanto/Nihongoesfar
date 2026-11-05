@@ -14,6 +14,7 @@ export type GuidedExercise = {
   type: 'meaning-choice' | 'pattern-choice' | 'gap' | 'tiles' | 'typing';
   prompt: string;
   context?: ReadingText;
+  particleSegments?: ReadingText[];
   choices?: ReadingText[];
   tiles?: ReadingText[];
   answers: string[];
