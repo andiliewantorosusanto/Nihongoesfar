@@ -75,3 +75,5 @@ in each numbered box; all blanks are checked together. Destination に and へ a
 both accepted. Feedback shows the complete sentence and explains each blank.
 Use **Endless practice** to continue with more particle questions. This focused topic
 uses fill-in questions throughout.
+
+In **Time**, choose **Practice time** to see a random clock time and type its kanji or hiragana. Check your answer, then choose **Next time**. Half-past answers using 半 are accepted.

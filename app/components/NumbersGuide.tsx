@@ -16,6 +16,29 @@ export default function NumbersGuide({
   view: 'numbers' | 'time';
   romaji: boolean;
 }>) {
+  const [practice, setPractice] = useState(false);
+  const [clock, setClock] = useState({ hour: 1, minute: 0 });
+  const [answer, setAnswer] = useState('');
+  const [feedback, setFeedback] = useState('');
+  const hour = hourGuide[clock.hour - 1];
+  const unit = clock.minute % 10;
+  const tens = Math.floor(clock.minute / 10);
+  const minuteKana =
+    clock.minute === 0
+      ? ''
+      : unit === 0
+        ? (tens === 1 ? '' : convertNumber(tens).hiragana) + 'じゅっぷん'
+        : (tens ? convertNumber(tens * 10).hiragana : '') + minuteGuide[unit - 1].reading.kana;
+  const kanji =
+    convertNumber(clock.hour).kanji +
+    '時' +
+    (clock.minute ? convertNumber(clock.minute).kanji + '分' : '');
+  const kana = hour.reading.kana + minuteKana;
+  function nextTime() {
+    setClock({ hour: 1 + Math.floor(Math.random() * 12), minute: Math.floor(Math.random() * 60) });
+    setAnswer('');
+    setFeedback('');
+  }
   const [place, setPlace] = useState(1);
   const numberRows = numberGuide.map(({ value }) => {
     const number = value * place;
@@ -81,6 +104,53 @@ export default function NumbersGuide({
             Ask <span lang="ja">今、何時ですか。</span> Answer with the time +{' '}
             <span lang="ja">です</span>. Use 午前 for a.m., 午後 for p.m., and 半 for half past.
           </p>
+          <button
+            type="button"
+            onClick={() => {
+              setPractice(!practice);
+              nextTime();
+            }}
+          >
+            {practice ? 'Close time practice' : 'Practice time'}
+          </button>
+          {practice && (
+            <form
+              onSubmit={(event) => {
+                event.preventDefault();
+                const normalized = answer
+                  .normalize('NFKC')
+                  .replace(/\s|[。．.]/g, '')
+                  .replace(/です$/, '');
+                const half =
+                  clock.minute === 30 &&
+                  [convertNumber(clock.hour).kanji + '時半', hour.half.kana].includes(normalized);
+                setFeedback(
+                  normalized === kanji || normalized === kana || half
+                    ? 'Correct!'
+                    : `Try again. Answer: ${kanji}（${kana}）`,
+                );
+              }}
+            >
+              <h3>Write this time in kanji or hiragana</h3>
+              <p className="jp">
+                {clock.hour}:{String(clock.minute).padStart(2, '0')}
+              </p>
+              <label htmlFor="time-answer">Your answer</label>{' '}
+              <input
+                id="time-answer"
+                lang="ja"
+                value={answer}
+                onChange={(event) => setAnswer(event.target.value)}
+                autoComplete="off"
+                required
+              />{' '}
+              <button type="submit">Check answer</button>{' '}
+              <button type="button" onClick={nextTime}>
+                Next time
+              </button>
+              <p role="status">{feedback}</p>
+            </form>
+          )}
           <GuideTable
             title="Hours and half past"
             romaji={romaji}
