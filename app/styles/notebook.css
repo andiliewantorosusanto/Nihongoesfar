@@ -1,7 +1,3 @@
-.intro {
-  padding: 65px 0 48px;
-  position: relative;
-}
 .eyebrow {
   font-size: 10px;
   letter-spacing: 1.3px;
@@ -10,26 +6,25 @@
   margin-bottom: 15px;
   line-height: 1.7;
 }
-.intro h1 {
-  font-size: 39px;
-  letter-spacing: -1.7px;
-  margin-bottom: 13px;
-  font-weight: 450;
-}
-.intro > p:not(.eyebrow) {
-  font-size: 13px;
-  margin-bottom: 24px;
-}
-.intro-actions {
+.books-heading {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 25px;
+  min-height: 160px;
+  margin-bottom: 21px;
+  border-bottom: 1px solid var(--line);
 }
-.intro-japanese {
+.books-heading h1 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  margin: 0;
+}
+.books-heading-japanese {
   position: absolute;
   right: 25px;
-  top: 55px;
-  font-size: 75px;
+  top: 12px;
+  font-size: 54px;
   font-weight: 300;
   color: #f0f0f0;
   writing-mode: vertical-rl;
@@ -81,23 +76,6 @@
 }
 .full {
   width: 100%;
-}
-.section-heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-top: 1px solid var(--line);
-  padding-top: 25px;
-  margin-bottom: 21px;
-}
-.section-heading h2 {
-  font-size: 14px;
-  letter-spacing: -0.1px;
-  margin: 0;
-}
-.section-heading > span {
-  font-size: 10px;
-  color: #999;
 }
 .book-grid {
   display: grid;

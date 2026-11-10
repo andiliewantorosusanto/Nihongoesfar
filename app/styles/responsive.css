@@ -2,10 +2,6 @@
   main {
     padding-top: 8px;
   }
-  .intro {
-    padding-top: 80px;
-    padding-bottom: 60px;
-  }
   .book-card {
     min-height: 245px;
     padding: 25px;
@@ -63,9 +59,6 @@
   .page-heading {
     align-items: flex-start;
   }
-  .intro-japanese {
-    right: 5px;
-  }
 }
 @media (max-width: 850px) {
   .sidebar {
@@ -86,13 +79,6 @@
     font-size: 11px;
     padding: 11px;
     gap: 9px;
-  }
-  .intro h1 {
-    font-size: 32px;
-    max-width: 330px;
-  }
-  .intro-japanese {
-    font-size: 63px;
   }
   .book-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -194,35 +180,6 @@
   main {
     padding: 0 21px;
   }
-  .intro {
-    padding: 42px 0 36px;
-  }
-  .intro h1 {
-    font-size: 30px;
-    letter-spacing: -1.2px;
-    max-width: 280px;
-    line-height: 1.35;
-  }
-  .intro > .eyebrow {
-    font-size: 9px;
-    margin-bottom: 16px;
-  }
-  .intro > p:not(.eyebrow) {
-    font-size: 12px;
-    max-width: 245px;
-    line-height: 1.9;
-    margin-bottom: 23px;
-  }
-  .intro-japanese {
-    font-size: 44px;
-    right: 2px;
-    top: 55px;
-    color: #f3f3f3;
-    z-index: -1;
-  }
-  .intro-actions {
-    gap: 20px;
-  }
   .primary,
   .secondary {
     font-size: 10px;
@@ -232,15 +189,16 @@
   .text-button {
     font-size: 10px;
   }
-  .section-heading {
-    padding-top: 21px;
+  .books-heading {
+    min-height: 130px;
     margin-bottom: 18px;
   }
-  .section-heading h2 {
-    font-size: 13px;
+  .books-heading h1 {
+    font-size: 18px;
   }
-  .section-heading > span {
-    font-size: 9px;
+  .books-heading-japanese {
+    font-size: 44px;
+    right: 2px;
   }
   .book-grid {
     gap: 11px;

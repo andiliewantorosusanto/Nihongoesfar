@@ -309,26 +309,12 @@ export default function Notebook() {
   function renderHomePage(data: State) {
     return (
       <>
-        <section className="intro">
-          <p className="eyebrow">日本語を、少しずつ。</p>
-          <h1>A place for your Japanese.</h1>
-          <p>Read, write, and practice. Pick a book to begin.</p>
-          <div className="intro-actions">
-            <button className="primary" onClick={() => navigateToBook('library')}>
-              Explore the library <ArrowRight size={16} />
-            </button>
-            <button className="text-button" disabled={busy} onClick={() => startPractice()}>
-              Quick practice <ArrowUpRight size={16} />
-            </button>
-          </div>
-          <span className="intro-japanese jp" aria-hidden="true">
+        <header className="books-heading">
+          <h1>The knowledge books</h1>
+          <span className="books-heading-japanese jp" lang="ja" aria-hidden="true">
             学ぶ
           </span>
-        </section>
-        <div className="section-heading">
-          <h2>The knowledge books</h2>
-          <span>Start anywhere.</span>
-        </div>
+        </header>
         <div className="book-grid">
           {books.map((b, i) => (
             <button className="book-card" key={b.id} onClick={() => navigateToBook(b.id)}>
