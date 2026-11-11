@@ -117,7 +117,31 @@ function EntryReferences({
           </div>
         </div>
       )}
-      {entry.id === 'study-dates' ? (
+      {entry.id === 'study-weekdays' || entry.id === 'study-months' ? (
+        <Scrollable
+          className="calendar-date-scroll"
+          label={entry.id === 'study-weekdays' ? 'Days of the week' : 'Months of the year'}
+        >
+          <ol
+            className={
+              'calendar-date-grid ' + (entry.id === 'study-months' ? 'calendar-month-grid' : '')
+            }
+          >
+            {entry.references?.[0]?.rows.map(([meaning, word]) => (
+              <li key={word.text}>
+                <span className="calendar-date-number">{meaning.text}</span>
+                <span className="calendar-date-japanese jp" lang="ja">
+                  {word.text}
+                </span>
+                <span className="calendar-date-reading" lang="ja">
+                  {word.reading}
+                </span>
+                {data.preferences.romaji && <small>{toRomaji(word.reading)}</small>}
+              </li>
+            ))}
+          </ol>
+        </Scrollable>
+      ) : entry.id === 'study-dates' ? (
         <section className="calendar-dates" aria-label="Days of the month">
           <p className="calendar-reading-key">Special reading</p>
           <Scrollable className="calendar-date-scroll" label="Date readings from 1 to 31">

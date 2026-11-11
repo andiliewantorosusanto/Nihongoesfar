@@ -56,6 +56,15 @@
   padding: 10px 12px 12px;
   background: white;
 }
+.calendar-month-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  min-width: 0;
+}
+@media (max-width: 650px) {
+  .calendar-month-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
 .calendar-date-number {
   color: var(--muted);
   font-size: 11px;
