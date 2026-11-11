@@ -115,7 +115,7 @@ const topicLabels: Record<string, string> = {
   'study-weekdays': 'Weekdays',
   'study-months': 'Months',
   'study-dates': 'Dates',
-  'study-relative-time': 'Relative time',
+  'study-relative-time': 'Before & after',
   'study-durations': 'Durations',
   'study-every': 'Every…',
   'study-ask-name': 'Names',
@@ -437,19 +437,31 @@ export default function Notebook() {
           className={'topic-book' + (page === 'calendar' ? ' calendar-book' : '')}
           aria-label={title + ' book'}
         >
-          {inBook.length > 1 && (
-            <nav className="topic-book-tabs" aria-label={title + ' topics'}>
-              {inBook.map((e) => (
-                <button
-                  key={e.id}
-                  aria-pressed={e.id === selectedTopic?.id}
-                  onClick={() => setTopicEntryId(e.id)}
-                >
-                  {topicLabels[e.id] || e.title}
-                </button>
-              ))}
-            </nav>
-          )}
+          <div className={page === 'calendar' ? 'calendar-toolbar' : undefined}>
+            {inBook.length > 1 && (
+              <nav className="topic-book-tabs" aria-label={title + ' topics'}>
+                {inBook.map((e) => (
+                  <button
+                    key={e.id}
+                    aria-pressed={e.id === selectedTopic?.id}
+                    onClick={() => setTopicEntryId(e.id)}
+                  >
+                    {topicLabels[e.id] || e.title}
+                  </button>
+                ))}
+              </nav>
+            )}
+            {page === 'calendar' && selectedTopic && (
+              <button
+                className="text-button calendar-practice"
+                aria-label={'Practice ' + (topicLabels[selectedTopic.id] || selectedTopic.title)}
+                disabled={busy}
+                onClick={() => startPractice(undefined, selectedTopic.id)}
+              >
+                Practice <ArrowRight size={14} />
+              </button>
+            )}
+          </div>
           {selectedTopic ? (
             <EntryDetail
               key={selectedTopic.id}

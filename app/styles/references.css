@@ -96,9 +96,65 @@
 .special-reading .calendar-date-reading {
   color: #81602b;
 }
-.calendar-book .detail-actions {
-  justify-content: flex-end;
-  margin: 16px 0;
+.calendar-toolbar {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 24px;
+}
+.calendar-toolbar .topic-book-tabs {
+  flex: 1;
+  min-width: 0;
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+.calendar-practice {
+  flex-shrink: 0;
+  padding: 12px 0;
+  line-height: 20px;
+}
+.relative-time-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+}
+.relative-time-grid {
+  min-width: 650px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.relative-time-row {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.relative-time-row + .relative-time-row {
+  border-top: 1px solid var(--line);
+}
+.relative-time-row > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  min-width: 0;
+}
+.relative-time-row > div + div {
+  border-left: 1px solid var(--line);
+}
+.relative-time-row small {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.relative-time-row .jp {
+  font-size: 20px;
+}
+.relative-time-current {
+  background: #eff8f6;
+}
+.relative-time-current .relative-time-label {
+  color: #3b746e;
 }
 .duration-guide {
   display: grid;

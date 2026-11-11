@@ -143,6 +143,41 @@ function EntryReferences({
             </ol>
           </Scrollable>
         </section>
+      ) : entry.id === 'study-relative-time' ? (
+        <Scrollable
+          className="relative-time-scroll"
+          label="Before and after the current day, week, month, or year"
+        >
+          <div className="relative-time-grid">
+            {entry.references?.[0]?.rows.map(([period, ...times]) => (
+              <section className="relative-time-row" key={period.text} aria-label={period.text}>
+                {times.map((time, index) => (
+                  <div
+                    className={index === 2 ? 'relative-time-current' : undefined}
+                    key={time.text}
+                  >
+                    <small className="relative-time-label">
+                      {
+                        [
+                          `2 ${period.text}s before`,
+                          `1 ${period.text} before`,
+                          period.text === 'day' ? 'Today' : `This ${period.text}`,
+                          `1 ${period.text} after`,
+                          `2 ${period.text}s after`,
+                        ][index]
+                      }
+                    </small>
+                    <span className="jp" lang="ja">
+                      {time.text}
+                    </span>
+                    <small lang="ja">{time.reading}</small>
+                    {data.preferences.romaji && <small>{toRomaji(time.reading)}</small>}
+                  </div>
+                ))}
+              </section>
+            ))}
+          </div>
+        </Scrollable>
       ) : entry.id === 'study-durations' ? (
         <section className="duration-guide" aria-label="Duration units">
           {[
@@ -349,10 +384,10 @@ export default function EntryDetail({
         {data.preferences.romaji && entry.romaji && <p className="reading">{entry.romaji}</p>}
         {!entry.references?.length && <p className="detail-meaning">{entry.meaning}</p>}
       </div>
-      {entry.kind !== 'kanji' && (
+      {!calendar && entry.kind !== 'kanji' && (
         <div className="detail-actions">
           <button
-            className={calendar ? 'text-button' : 'primary'}
+            className="primary"
             disabled={busy || !skillsFor(entry, data.strokeIds.includes(entry.japanese)).length}
             onClick={() => onPractice()}
           >
