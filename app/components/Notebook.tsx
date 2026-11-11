@@ -431,37 +431,56 @@ export default function Notebook() {
   }
   function renderBookContents() {
     if (!data) return null;
+    if (page === 'calendar')
+      return (
+        <div className="calendar-book" aria-label="Calendar references">
+          {inBook.map((entry) => (
+            <section
+              className="calendar-section"
+              key={entry.id}
+              aria-label={topicLabels[entry.id] || entry.title}
+            >
+              <div className="calendar-section-header">
+                <span className="calendar-section-label">
+                  {topicLabels[entry.id] || entry.title}
+                </span>
+                <button
+                  className="text-button"
+                  aria-label={'Practice ' + (topicLabels[entry.id] || entry.title)}
+                  disabled={busy}
+                  onClick={() => startPractice(undefined, entry.id)}
+                >
+                  Practice <ArrowRight size={14} />
+                </button>
+              </div>
+              <EntryDetail
+                fullPage
+                entry={entry}
+                data={data}
+                busy={busy}
+                onOpen={openEntry}
+                onPractice={() => startPractice(undefined, entry.id)}
+              />
+            </section>
+          ))}
+        </div>
+      );
     if (topicBooks[page])
       return (
-        <section
-          className={'topic-book' + (page === 'calendar' ? ' calendar-book' : '')}
-          aria-label={title + ' book'}
-        >
-          <div className={page === 'calendar' ? 'calendar-toolbar' : undefined}>
-            {inBook.length > 1 && (
-              <nav className="topic-book-tabs" aria-label={title + ' topics'}>
-                {inBook.map((e) => (
-                  <button
-                    key={e.id}
-                    aria-pressed={e.id === selectedTopic?.id}
-                    onClick={() => setTopicEntryId(e.id)}
-                  >
-                    {topicLabels[e.id] || e.title}
-                  </button>
-                ))}
-              </nav>
-            )}
-            {page === 'calendar' && selectedTopic && (
-              <button
-                className="text-button calendar-practice"
-                aria-label={'Practice ' + (topicLabels[selectedTopic.id] || selectedTopic.title)}
-                disabled={busy}
-                onClick={() => startPractice(undefined, selectedTopic.id)}
-              >
-                Practice <ArrowRight size={14} />
-              </button>
-            )}
-          </div>
+        <section className="topic-book" aria-label={title + ' book'}>
+          {inBook.length > 1 && (
+            <nav className="topic-book-tabs" aria-label={title + ' topics'}>
+              {inBook.map((e) => (
+                <button
+                  key={e.id}
+                  aria-pressed={e.id === selectedTopic?.id}
+                  onClick={() => setTopicEntryId(e.id)}
+                >
+                  {topicLabels[e.id] || e.title}
+                </button>
+              ))}
+            </nav>
+          )}
           {selectedTopic ? (
             <EntryDetail
               key={selectedTopic.id}

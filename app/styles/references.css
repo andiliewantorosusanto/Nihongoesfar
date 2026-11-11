@@ -105,23 +105,30 @@
 .special-reading .calendar-date-reading {
   color: #81602b;
 }
-.calendar-toolbar {
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
-  border-bottom: 1px solid var(--line);
-  margin-bottom: 24px;
+.calendar-book {
+  display: grid;
+  gap: 28px;
 }
-.calendar-toolbar .topic-book-tabs {
-  flex: 1;
+.calendar-section {
   min-width: 0;
-  border-bottom: 0;
-  margin-bottom: 0;
 }
-.calendar-practice {
-  flex-shrink: 0;
-  padding: 12px 0;
-  line-height: 20px;
+.calendar-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.calendar-section-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+}
+.calendar-section .reference-details,
+.calendar-section .calendar-dates,
+.calendar-section .duration-guide,
+.calendar-section .study-reference {
+  margin: 0;
 }
 .relative-time-scroll {
   overflow-x: auto;
