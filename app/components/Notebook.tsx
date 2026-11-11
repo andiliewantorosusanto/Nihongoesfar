@@ -193,7 +193,6 @@ export default function Notebook() {
   const [mode, setMode] = useState('mixed');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
-  const [grammarDetailed, setGrammarDetailed] = useState(false);
   const [practiceSerial, setPracticeSerial] = useState(0);
   const previousGuidedQuestions = useRef(new Map<string, string[]>());
   async function refresh() {
@@ -223,7 +222,6 @@ export default function Notebook() {
   function navigateToBook(p: string) {
     setPage(p);
     setTopicEntryId('');
-    setGrammarDetailed(false);
     setMode('mixed');
     setSearch('');
     setTopic('all');
@@ -425,24 +423,6 @@ export default function Notebook() {
             </div>
           )}
         </div>
-        {page === 'grammar' && (
-          <div className="number-view-switch">
-            <button
-              className={!grammarDetailed ? 'selected' : ''}
-              aria-pressed={!grammarDetailed}
-              onClick={() => setGrammarDetailed(false)}
-            >
-              By level
-            </button>
-            <button
-              className={grammarDetailed ? 'selected' : ''}
-              aria-pressed={grammarDetailed}
-              onClick={() => setGrammarDetailed(true)}
-            >
-              All entries
-            </button>
-          </div>
-        )}
         {renderBookContents()}
       </>
     );
@@ -481,8 +461,7 @@ export default function Notebook() {
           )}
         </section>
       );
-    if (page === 'grammar' && !grammarDetailed)
-      return <GrammarLessons entries={inBook} onOpen={openEntry} />;
+    if (page === 'grammar') return <GrammarLessons entries={inBook} onOpen={openEntry} />;
     if (page === 'numbers' || page === 'time')
       return <NumbersGuide key={page} view={page} romaji={data.preferences.romaji} />;
     return renderLibrary();

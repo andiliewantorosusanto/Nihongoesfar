@@ -14,50 +14,28 @@ export function GrammarLessons({
     return entry.lesson?.order ?? Number.MAX_SAFE_INTEGER;
   };
   const ordered = [...entries].sort((a, b) => lessonOrder(a) - lessonOrder(b));
-  const levels = [...new Set(['N5', ...ordered.map((entry) => entry.level)])].filter((level) =>
-    ordered.some((entry) => entry.level === level),
-  );
   return (
-    <section className="grammar-course" aria-label="Grammar by level">
-      {levels.map((level) => {
-        const lessons = ordered.filter((e) => e.level === level);
-        return (
-          <section className="lesson-group" key={level}>
-            <div className="section-heading">
-              <h2>{level}</h2>
-              <span>
-                {lessons.length} {lessons.length === 1 ? 'entry' : 'entries'}
-              </span>
-            </div>
-            {lessons.length ? (
-              <>
-                {[...new Set(lessons.map((e) => e.lesson?.group || e.topic))].map((group) => (
-                  <section className="grammar-topic-group" key={group}>
-                    <h3>{group}</h3>
-                    <div className="lesson-list">
-                      {lessons
-                        .filter((e) => (e.lesson?.group || e.topic) === group)
-                        .map((e) => (
-                          <button className="lesson-card" key={e.id} onClick={() => onOpen(e)}>
-                            <span>
-                              <strong>{e.title}</strong>
-                              {(!e.references?.length || e.lesson) && (
-                                <span className="lesson-goal">{e.lesson?.goal || e.meaning}</span>
-                              )}
-                            </span>
-                            <span aria-hidden="true">→</span>
-                          </button>
-                        ))}
-                    </div>
-                  </section>
-                ))}
-              </>
-            ) : (
-              <p className="book-note">No grammar entries at this level yet.</p>
-            )}
-          </section>
-        );
-      })}
+    <section className="grammar-course" aria-label="Grammar topics">
+      {[...new Set(ordered.map((e) => e.lesson?.group || e.topic))].map((group) => (
+        <section className="grammar-topic-group" key={group}>
+          <h3>{group}</h3>
+          <div className="lesson-list">
+            {ordered
+              .filter((e) => (e.lesson?.group || e.topic) === group)
+              .map((e) => (
+                <button className="lesson-card" key={e.id} onClick={() => onOpen(e)}>
+                  <span>
+                    <strong>{e.title}</strong>
+                    {(!e.references?.length || e.lesson) && (
+                      <span className="lesson-goal">{e.lesson?.goal || e.meaning}</span>
+                    )}
+                  </span>
+                  <span aria-hidden="true">→</span>
+                </button>
+              ))}
+          </div>
+        </section>
+      ))}
     </section>
   );
 }

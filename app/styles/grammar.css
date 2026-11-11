@@ -1,7 +1,4 @@
 /* Guided grammar keeps the next action close to the explanation. */
-.lesson-group {
-  margin-bottom: 30px;
-}
 .lesson-list {
   display: grid;
   gap: 10px;
