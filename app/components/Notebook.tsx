@@ -633,12 +633,6 @@ export default function Notebook() {
           >
             <BookOpen size={17} /> Overview
           </button>
-          <button
-            className={page === 'library' ? 'active' : ''}
-            onClick={() => navigateToBook('library')}
-          >
-            <Search size={17} /> All entries
-          </button>
           <span className="nav-label">BOOKS</span>
           {books.map((b) => (
             <button
@@ -842,7 +836,7 @@ function pageTitle(page: string, title?: string) {
 }
 function entriesForBook(entries: Entry[], page: string) {
   if (topicBooks[page]) return topicBookEntries(entries, page);
-  if (page === 'library' || page === 'home') return entries;
+  if (page === 'home') return entries;
   if (page === 'family') return entries.filter((entry) => entry.id === 'study-family');
   return entries.filter((entry) => entryInBook(entry, page));
 }
