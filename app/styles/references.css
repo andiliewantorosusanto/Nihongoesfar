@@ -75,6 +75,80 @@
 .calendar-dates {
   margin: 20px 0;
 }
+.duration-guide {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 24px 0;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.duration-unit {
+  min-width: 0;
+  padding: 20px;
+}
+.duration-unit + .duration-unit {
+  border-left: 1px solid var(--line);
+}
+.duration-unit h3 {
+  margin: 0 0 12px;
+  font-size: 14px;
+}
+.duration-counter {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.5;
+}
+.duration-key {
+  margin: 8px 0 24px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.duration-unit ul {
+  display: grid;
+  gap: 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.duration-unit li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.duration-marks {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 3px;
+}
+.duration-marks > span {
+  width: 14px;
+  height: 3px;
+  background: var(--ink);
+}
+.duration-meaning,
+.duration-reading,
+.duration-unit small {
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+.duration-japanese {
+  font-size: 18px;
+  line-height: 1.6;
+}
+@media (max-width: 1000px) {
+  .duration-guide {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .duration-unit:nth-child(3) {
+    border-left: 0;
+  }
+  .duration-unit:nth-child(n + 3) {
+    border-top: 1px solid var(--line);
+  }
+}
 .calendar-topic {
   margin: 30px 0 45px;
   padding-bottom: 22px;

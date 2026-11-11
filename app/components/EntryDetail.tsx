@@ -132,6 +132,47 @@ function EntryReferences({
             </ol>
           </Scrollable>
         </section>
+      ) : entry.id === 'study-durations' ? (
+        <section className="duration-guide" aria-label="Duration units">
+          {[
+            { unit: 'day', label: 'Days', counter: '日・日間' },
+            { unit: 'week', label: 'Weeks', counter: '週間' },
+            { unit: 'month', label: 'Months', counter: 'か月' },
+            { unit: 'year', label: 'Years', counter: '年・年間' },
+          ].map(({ unit, label, counter }) => (
+            <section className="duration-unit" key={unit} aria-label={label}>
+              <h3>{label}</h3>
+              <p className="duration-counter jp" lang="ja">
+                {counter}
+              </p>
+              <p className="duration-key">Each mark = 1 {unit}</p>
+              <ul>
+                {entry.references?.[0]?.rows
+                  .filter(([meaning]) => meaning.text.includes(unit))
+                  .map(([meaning, duration]) => (
+                    <li key={duration.text}>
+                      <span className="duration-marks" aria-hidden="true">
+                        {Array.from(
+                          { length: { 一: 1, 二: 2, 三: 3, 六: 6 }[duration.text[0]] || 1 },
+                          (_, i) => (
+                            <span key={i} />
+                          ),
+                        )}
+                      </span>
+                      <span className="duration-meaning">{meaning.text}</span>
+                      <span className="duration-japanese jp" lang="ja">
+                        {duration.text}
+                      </span>
+                      <span className="duration-reading" lang="ja">
+                        {duration.reading}
+                      </span>
+                      {data.preferences.romaji && <small>{toRomaji(duration.reading)}</small>}
+                    </li>
+                  ))}
+              </ul>
+            </section>
+          ))}
+        </section>
       ) : (
         !!entry.references?.length && (
           <ReferenceTables
