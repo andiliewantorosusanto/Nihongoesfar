@@ -499,14 +499,16 @@ export default function Notebook() {
               <option key={t}>{t}</option>
             ))}
           </select>
-          <select aria-label="Filter tag" value={tag} onChange={(e) => setTag(e.target.value)}>
-            <option value="all">All tags</option>
-            {[...new Set(inBook.flatMap((e) => e.tags))]
-              .sort((a, b) => a.localeCompare(b))
-              .map((t) => (
-                <option key={t}>{t}</option>
-              ))}
-          </select>
+          {page !== 'kanji' && (
+            <select aria-label="Filter tag" value={tag} onChange={(e) => setTag(e.target.value)}>
+              <option value="all">All tags</option>
+              {[...new Set(inBook.flatMap((e) => e.tags))]
+                .sort((a, b) => a.localeCompare(b))
+                .map((t) => (
+                  <option key={t}>{t}</option>
+                ))}
+            </select>
+          )}
         </div>
         <p className="results-heading">
           {filtered.length} {filtered.length === 1 ? 'entry' : 'entries'}

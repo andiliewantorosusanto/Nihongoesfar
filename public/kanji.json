@@ -11,7 +11,7 @@
     ],
     "level": "N5",
     "title": "一",
-    "topic": "Beginner kanji",
+    "topic": "Numbers & money",
     "meaning": "one",
     "reading": "ひとつ",
     "examples": [
@@ -1999,7 +1999,7 @@
     ],
     "level": "N5",
     "title": "二",
-    "topic": "Beginner kanji",
+    "topic": "Numbers & money",
     "meaning": "two",
     "reading": "ふたつ",
     "examples": [
@@ -2475,7 +2475,7 @@
     ],
     "level": "N5",
     "title": "三",
-    "topic": "Beginner kanji",
+    "topic": "Numbers & money",
     "meaning": "three",
     "reading": "みっつ",
     "examples": [
@@ -3011,7 +3011,7 @@
     ],
     "level": "N5",
     "title": "四",
-    "topic": "Beginner kanji",
+    "topic": "Numbers & money",
     "meaning": "four",
     "reading": "しがつ",
     "examples": [
@@ -3277,7 +3277,7 @@
     ],
     "level": "N5",
     "title": "五",
-    "topic": "Beginner kanji",
+    "topic": "Numbers & money",
     "meaning": "five",
     "reading": "いつつ",
     "examples": [
@@ -3489,7 +3489,7 @@
     ],
     "level": "N5",
     "title": "六",
-    "topic": "Beginner kanji",
+    "topic": "Numbers & money",
     "meaning": "six",
     "reading": "むいか",
     "examples": [
@@ -3587,7 +3587,7 @@
     ],
     "level": "N5",
     "title": "七",
-    "topic": "Beginner kanji",
+    "topic": "Numbers & money",
     "meaning": "seven",
     "reading": "しちがつ",
     "examples": [
@@ -3757,7 +3757,7 @@
     ],
     "level": "N5",
     "title": "八",
-    "topic": "Beginner kanji",
+    "topic": "Numbers & money",
     "meaning": "eight",
     "reading": "ようか",
     "examples": [
@@ -3969,7 +3969,7 @@
     ],
     "level": "N5",
     "title": "九",
-    "topic": "Beginner kanji",
+    "topic": "Numbers & money",
     "meaning": "nine",
     "reading": "くがつ",
     "examples": [
@@ -4103,7 +4103,7 @@
     ],
     "level": "N5",
     "title": "十",
-    "topic": "Beginner kanji",
+    "topic": "Numbers & money",
     "meaning": "ten",
     "reading": "とおか",
     "examples": [
@@ -4381,7 +4381,7 @@
     ],
     "level": "N5",
     "title": "百",
-    "topic": "Beginner kanji",
+    "topic": "Numbers & money",
     "meaning": "hundred",
     "reading": "ひゃくえん",
     "examples": [
@@ -4599,7 +4599,7 @@
     ],
     "level": "N5",
     "title": "千",
-    "topic": "Beginner kanji",
+    "topic": "Numbers & money",
     "meaning": "thousand",
     "reading": "せんえん",
     "examples": [
@@ -4793,7 +4793,7 @@
     ],
     "level": "N5",
     "title": "万",
-    "topic": "Beginner kanji",
+    "topic": "Numbers & money",
     "meaning": "ten thousand",
     "reading": "いちまんえん",
     "examples": [
@@ -4993,7 +4993,7 @@
     ],
     "level": "N5",
     "title": "円",
-    "topic": "Beginner kanji",
+    "topic": "Numbers & money",
     "meaning": "yen; circle",
     "reading": "ひゃくえん",
     "examples": [
@@ -5181,7 +5181,7 @@
     ],
     "level": "N5",
     "title": "日",
-    "topic": "Beginner kanji",
+    "topic": "Time & calendar",
     "meaning": "day; sun",
     "reading": "にちようび",
     "examples": [
@@ -6323,7 +6323,7 @@
     ],
     "level": "N5",
     "title": "月",
-    "topic": "Beginner kanji",
+    "topic": "Time & calendar",
     "meaning": "month; moon",
     "reading": "げつようび",
     "examples": [
@@ -6817,7 +6817,7 @@
     ],
     "level": "N5",
     "title": "火",
-    "topic": "Beginner kanji",
+    "topic": "Nature",
     "meaning": "fire",
     "reading": "かようび",
     "examples": [
@@ -7251,7 +7251,7 @@
     ],
     "level": "N5",
     "title": "水",
-    "topic": "Beginner kanji",
+    "topic": "Nature",
     "meaning": "water",
     "reading": "すいようび",
     "examples": [
@@ -8327,7 +8327,7 @@
     ],
     "level": "N5",
     "title": "木",
-    "topic": "Beginner kanji",
+    "topic": "Nature",
     "meaning": "tree; wood",
     "reading": "もくようび",
     "examples": [
@@ -8797,7 +8797,7 @@
     ],
     "level": "N5",
     "title": "金",
-    "topic": "Beginner kanji",
+    "topic": "Numbers & money",
     "meaning": "gold; money",
     "reading": "きんようび",
     "examples": [
@@ -9735,7 +9735,7 @@
     ],
     "level": "N5",
     "title": "土",
-    "topic": "Beginner kanji",
+    "topic": "Nature",
     "meaning": "soil; earth",
     "reading": "どようび",
     "examples": [
@@ -10139,7 +10139,7 @@
     ],
     "level": "N5",
     "title": "年",
-    "topic": "Beginner kanji",
+    "topic": "Time & calendar",
     "meaning": "year",
     "reading": "ことし",
     "examples": [
@@ -11023,7 +11023,7 @@
     ],
     "level": "N5",
     "title": "時",
-    "topic": "Beginner kanji",
+    "topic": "Time & calendar",
     "meaning": "time; hour",
     "reading": "じかん",
     "examples": [
@@ -11685,7 +11685,7 @@
     ],
     "level": "N5",
     "title": "分",
-    "topic": "Beginner kanji",
+    "topic": "Time & calendar",
     "meaning": "minute; part",
     "reading": "ごふん",
     "examples": [
@@ -12473,7 +12473,7 @@
     ],
     "level": "N5",
     "title": "半",
-    "topic": "Beginner kanji",
+    "topic": "Numbers & money",
     "meaning": "half",
     "reading": "さんじはん",
     "examples": [
@@ -12829,7 +12829,7 @@
     ],
     "level": "N5",
     "title": "今",
-    "topic": "Beginner kanji",
+    "topic": "Time & calendar",
     "meaning": "now",
     "reading": "きょう",
     "examples": [
@@ -13041,7 +13041,7 @@
     ],
     "level": "N5",
     "title": "午",
-    "topic": "Beginner kanji",
+    "topic": "Time & calendar",
     "meaning": "noon",
     "reading": "ごぜん",
     "examples": [
@@ -13103,7 +13103,7 @@
     ],
     "level": "N5",
     "title": "前",
-    "topic": "Beginner kanji",
+    "topic": "Position & direction",
     "meaning": "before; front",
     "reading": "なまえ",
     "examples": [
@@ -13879,7 +13879,7 @@
     ],
     "level": "N5",
     "title": "後",
-    "topic": "Beginner kanji",
+    "topic": "Position & direction",
     "meaning": "after; behind",
     "reading": "ごご",
     "examples": [
@@ -14361,7 +14361,7 @@
     ],
     "level": "N5",
     "title": "毎",
-    "topic": "Beginner kanji",
+    "topic": "Time & calendar",
     "meaning": "every",
     "reading": "まいにち",
     "examples": [
@@ -14453,7 +14453,7 @@
     ],
     "level": "N5",
     "title": "週",
-    "topic": "Beginner kanji",
+    "topic": "Time & calendar",
     "meaning": "week",
     "reading": "こんしゅう",
     "examples": [
@@ -14587,7 +14587,7 @@
     ],
     "level": "N5",
     "title": "曜",
-    "topic": "Beginner kanji",
+    "topic": "Time & calendar",
     "meaning": "day of the week",
     "reading": "なんようび",
     "examples": [
@@ -14715,7 +14715,7 @@
     ],
     "level": "N5",
     "title": "人",
-    "topic": "Beginner kanji",
+    "topic": "People & family",
     "meaning": "person",
     "reading": "にほんじん",
     "examples": [
@@ -16601,7 +16601,7 @@
     ],
     "level": "N5",
     "title": "男",
-    "topic": "Beginner kanji",
+    "topic": "People & family",
     "meaning": "man; male",
     "reading": "おとこのこ",
     "examples": [
@@ -16783,7 +16783,7 @@
     ],
     "level": "N5",
     "title": "女",
-    "topic": "Beginner kanji",
+    "topic": "People & family",
     "meaning": "woman; female",
     "reading": "おんなのこ",
     "examples": [
@@ -17211,7 +17211,7 @@
     ],
     "level": "N5",
     "title": "子",
-    "topic": "Beginner kanji",
+    "topic": "People & family",
     "meaning": "child",
     "reading": "こども",
     "examples": [
@@ -18179,7 +18179,7 @@
     ],
     "level": "N5",
     "title": "父",
-    "topic": "Beginner kanji",
+    "topic": "People & family",
     "meaning": "father",
     "reading": "ふぼ",
     "examples": [
@@ -18313,7 +18313,7 @@
     ],
     "level": "N5",
     "title": "母",
-    "topic": "Beginner kanji",
+    "topic": "People & family",
     "meaning": "mother",
     "reading": "ははおや",
     "examples": [
@@ -18579,7 +18579,7 @@
     ],
     "level": "N5",
     "title": "友",
-    "topic": "Beginner kanji",
+    "topic": "People & family",
     "meaning": "friend",
     "reading": "ともだち",
     "examples": [
@@ -18737,7 +18737,7 @@
     ],
     "level": "N5",
     "title": "先",
-    "topic": "Beginner kanji",
+    "topic": "Position & direction",
     "meaning": "ahead; previous",
     "reading": "せんせい",
     "examples": [
@@ -19261,7 +19261,7 @@
     ],
     "level": "N5",
     "title": "生",
-    "topic": "Beginner kanji",
+    "topic": "People & family",
     "meaning": "life; birth",
     "reading": "がくせい",
     "examples": [
@@ -20373,7 +20373,7 @@
     ],
     "level": "N5",
     "title": "学",
-    "topic": "Beginner kanji",
+    "topic": "School & language",
     "meaning": "study; learning",
     "reading": "がっこう",
     "examples": [
@@ -21671,7 +21671,7 @@
     ],
     "level": "N5",
     "title": "校",
-    "topic": "Beginner kanji",
+    "topic": "Places",
     "meaning": "school",
     "reading": "がっこう",
     "examples": [
@@ -22003,7 +22003,7 @@
     ],
     "level": "N5",
     "title": "本",
-    "topic": "Beginner kanji",
+    "topic": "School & language",
     "meaning": "book; origin",
     "reading": "にほん",
     "examples": [
@@ -23061,7 +23061,7 @@
     ],
     "level": "N5",
     "title": "語",
-    "topic": "Beginner kanji",
+    "topic": "School & language",
     "meaning": "language; word",
     "reading": "にほんご",
     "examples": [
@@ -23471,7 +23471,7 @@
     ],
     "level": "N5",
     "title": "文",
-    "topic": "Beginner kanji",
+    "topic": "School & language",
     "meaning": "sentence; writing",
     "reading": "もじ",
     "examples": [
@@ -24301,7 +24301,7 @@
     ],
     "level": "N5",
     "title": "字",
-    "topic": "Beginner kanji",
+    "topic": "School & language",
     "meaning": "character; letter",
     "reading": "かんじ",
     "examples": [
@@ -24603,7 +24603,7 @@
     ],
     "level": "N5",
     "title": "名",
-    "topic": "Beginner kanji",
+    "topic": "People & family",
     "meaning": "name",
     "reading": "なまえ",
     "examples": [
@@ -25343,7 +25343,7 @@
     ],
     "level": "N5",
     "title": "何",
-    "topic": "Beginner kanji",
+    "topic": "Questions",
     "meaning": "what",
     "reading": "なんじ",
     "examples": [
@@ -25555,7 +25555,7 @@
     ],
     "level": "N5",
     "title": "私",
-    "topic": "Beginner kanji",
+    "topic": "People & family",
     "meaning": "I; private",
     "reading": "しりつ",
     "examples": [
@@ -25821,7 +25821,7 @@
     ],
     "level": "N5",
     "title": "大",
-    "topic": "Beginner kanji",
+    "topic": "Descriptions",
     "meaning": "big",
     "reading": "だいがく",
     "examples": [
@@ -27467,7 +27467,7 @@
     ],
     "level": "N5",
     "title": "小",
-    "topic": "Beginner kanji",
+    "topic": "Descriptions",
     "meaning": "small",
     "reading": "しょうがっこう",
     "examples": [
@@ -28249,7 +28249,7 @@
     ],
     "level": "N5",
     "title": "中",
-    "topic": "Beginner kanji",
+    "topic": "Position & direction",
     "meaning": "middle; inside",
     "reading": "ちゅうごく",
     "examples": [
@@ -29457,7 +29457,7 @@
     ],
     "level": "N5",
     "title": "上",
-    "topic": "Beginner kanji",
+    "topic": "Position & direction",
     "meaning": "up; above",
     "reading": "じょうず",
     "examples": [
@@ -30287,7 +30287,7 @@
     ],
     "level": "N5",
     "title": "下",
-    "topic": "Beginner kanji",
+    "topic": "Position & direction",
     "meaning": "down; below",
     "reading": "ちかてつ",
     "examples": [
@@ -31021,7 +31021,7 @@
     ],
     "level": "N5",
     "title": "左",
-    "topic": "Beginner kanji",
+    "topic": "Position & direction",
     "meaning": "left",
     "reading": "さゆう",
     "examples": [
@@ -31185,7 +31185,7 @@
     ],
     "level": "N5",
     "title": "右",
-    "topic": "Beginner kanji",
+    "topic": "Position & direction",
     "meaning": "right",
     "reading": "みぎて",
     "examples": [
@@ -31355,7 +31355,7 @@
     ],
     "level": "N5",
     "title": "東",
-    "topic": "Beginner kanji",
+    "topic": "Position & direction",
     "meaning": "east",
     "reading": "とうきょう",
     "examples": [
@@ -31585,7 +31585,7 @@
     ],
     "level": "N5",
     "title": "西",
-    "topic": "Beginner kanji",
+    "topic": "Position & direction",
     "meaning": "west",
     "reading": "にしぐち",
     "examples": [
@@ -31821,7 +31821,7 @@
     ],
     "level": "N5",
     "title": "南",
-    "topic": "Beginner kanji",
+    "topic": "Position & direction",
     "meaning": "south",
     "reading": "みなみぐち",
     "examples": [
@@ -32069,7 +32069,7 @@
     ],
     "level": "N5",
     "title": "北",
-    "topic": "Beginner kanji",
+    "topic": "Position & direction",
     "meaning": "north",
     "reading": "きたぐち",
     "examples": [
@@ -32341,7 +32341,7 @@
     ],
     "level": "N5",
     "title": "外",
-    "topic": "Beginner kanji",
+    "topic": "Position & direction",
     "meaning": "outside",
     "reading": "がいこく",
     "examples": [
@@ -33093,7 +33093,7 @@
     ],
     "level": "N5",
     "title": "国",
-    "topic": "Beginner kanji",
+    "topic": "Places",
     "meaning": "country",
     "reading": "がいこくじん",
     "examples": [
@@ -34319,7 +34319,7 @@
     ],
     "level": "N5",
     "title": "山",
-    "topic": "Beginner kanji",
+    "topic": "Nature",
     "meaning": "mountain",
     "reading": "ふじさん",
     "examples": [
@@ -34969,7 +34969,7 @@
     ],
     "level": "N5",
     "title": "川",
-    "topic": "Beginner kanji",
+    "topic": "Nature",
     "meaning": "river",
     "reading": "かわぐち",
     "examples": [
@@ -35145,7 +35145,7 @@
     ],
     "level": "N5",
     "title": "田",
-    "topic": "Beginner kanji",
+    "topic": "Nature",
     "meaning": "rice field",
     "reading": "たなか",
     "examples": [
@@ -35309,7 +35309,7 @@
     ],
     "level": "N5",
     "title": "天",
-    "topic": "Beginner kanji",
+    "topic": "Nature",
     "meaning": "sky; heaven",
     "reading": "てんき",
     "examples": [
@@ -35821,7 +35821,7 @@
     ],
     "level": "N5",
     "title": "気",
-    "topic": "Beginner kanji",
+    "topic": "Nature",
     "meaning": "spirit; air",
     "reading": "げんき",
     "examples": [
@@ -36771,7 +36771,7 @@
     ],
     "level": "N5",
     "title": "雨",
-    "topic": "Beginner kanji",
+    "topic": "Nature",
     "meaning": "rain",
     "reading": "うてん",
     "examples": [
@@ -36989,7 +36989,7 @@
     ],
     "level": "N5",
     "title": "電",
-    "topic": "Beginner kanji",
+    "topic": "Nature",
     "meaning": "electricity",
     "reading": "でんしゃ",
     "examples": [
@@ -37543,7 +37543,7 @@
     ],
     "level": "N5",
     "title": "車",
-    "topic": "Beginner kanji",
+    "topic": "Travel & movement",
     "meaning": "vehicle; car",
     "reading": "じどうしゃ",
     "examples": [
@@ -38001,7 +38001,7 @@
     ],
     "level": "N5",
     "title": "駅",
-    "topic": "Beginner kanji",
+    "topic": "Places",
     "meaning": "station",
     "reading": "えきまえ",
     "examples": [
@@ -38081,7 +38081,7 @@
     ],
     "level": "N5",
     "title": "店",
-    "topic": "Beginner kanji",
+    "topic": "Places",
     "meaning": "shop",
     "reading": "てんいん",
     "examples": [
@@ -38383,7 +38383,7 @@
     ],
     "level": "N5",
     "title": "社",
-    "topic": "Beginner kanji",
+    "topic": "Places",
     "meaning": "company; shrine",
     "reading": "かいしゃ",
     "examples": [
@@ -39015,7 +39015,7 @@
     ],
     "level": "N5",
     "title": "会",
-    "topic": "Beginner kanji",
+    "topic": "Everyday actions",
     "meaning": "meet; association",
     "reading": "かいしゃ",
     "examples": [
@@ -40097,7 +40097,7 @@
     ],
     "level": "N5",
     "title": "行",
-    "topic": "Beginner kanji",
+    "topic": "Travel & movement",
     "meaning": "go",
     "reading": "ぎんこう",
     "examples": [
@@ -41095,7 +41095,7 @@
     ],
     "level": "N5",
     "title": "来",
-    "topic": "Beginner kanji",
+    "topic": "Travel & movement",
     "meaning": "come",
     "reading": "らいねん",
     "examples": [
@@ -41487,7 +41487,7 @@
     ],
     "level": "N5",
     "title": "帰",
-    "topic": "Beginner kanji",
+    "topic": "Travel & movement",
     "meaning": "return",
     "reading": "きこく",
     "examples": [
@@ -41639,7 +41639,7 @@
     ],
     "level": "N5",
     "title": "入",
-    "topic": "Beginner kanji",
+    "topic": "Travel & movement",
     "meaning": "enter",
     "reading": "いりぐち",
     "examples": [
@@ -42271,7 +42271,7 @@
     ],
     "level": "N5",
     "title": "出",
-    "topic": "Beginner kanji",
+    "topic": "Travel & movement",
     "meaning": "exit; go out",
     "reading": "でぐち",
     "examples": [
@@ -43215,7 +43215,7 @@
     ],
     "level": "N5",
     "title": "見",
-    "topic": "Beginner kanji",
+    "topic": "Everyday actions",
     "meaning": "see",
     "reading": "けんがく",
     "examples": [
@@ -43607,7 +43607,7 @@
     ],
     "level": "N5",
     "title": "聞",
-    "topic": "Beginner kanji",
+    "topic": "School & language",
     "meaning": "hear; ask",
     "reading": "しんぶん",
     "examples": [
@@ -43723,7 +43723,7 @@
     ],
     "level": "N5",
     "title": "読",
-    "topic": "Beginner kanji",
+    "topic": "School & language",
     "meaning": "read",
     "reading": "どくしょ",
     "examples": [
@@ -43911,7 +43911,7 @@
     ],
     "level": "N5",
     "title": "書",
-    "topic": "Beginner kanji",
+    "topic": "School & language",
     "meaning": "write",
     "reading": "としょかん",
     "examples": [
@@ -44693,7 +44693,7 @@
     ],
     "level": "N5",
     "title": "話",
-    "topic": "Beginner kanji",
+    "topic": "School & language",
     "meaning": "speak; story",
     "reading": "でんわ",
     "examples": [
@@ -45007,7 +45007,7 @@
     ],
     "level": "N5",
     "title": "食",
-    "topic": "Beginner kanji",
+    "topic": "Everyday actions",
     "meaning": "eat; food",
     "reading": "しょくじ",
     "examples": [
@@ -45525,7 +45525,7 @@
     ],
     "level": "N5",
     "title": "飲",
-    "topic": "Beginner kanji",
+    "topic": "Everyday actions",
     "meaning": "drink",
     "reading": "のみもの",
     "examples": [
@@ -45635,7 +45635,7 @@
     ],
     "level": "N5",
     "title": "買",
-    "topic": "Beginner kanji",
+    "topic": "Everyday actions",
     "meaning": "buy",
     "reading": "かいもの",
     "examples": [
@@ -45757,7 +45757,7 @@
     ],
     "level": "N5",
     "title": "休",
-    "topic": "Beginner kanji",
+    "topic": "Everyday actions",
     "meaning": "rest",
     "reading": "きゅうじつ",
     "examples": [
@@ -46017,7 +46017,7 @@
     ],
     "level": "N5",
     "title": "立",
-    "topic": "Beginner kanji",
+    "topic": "Everyday actions",
     "meaning": "stand",
     "reading": "こくりつ",
     "examples": [
@@ -46577,7 +46577,7 @@
     ],
     "level": "N5",
     "title": "手",
-    "topic": "Beginner kanji",
+    "topic": "Body",
     "meaning": "hand",
     "reading": "てがみ",
     "examples": [
@@ -47593,7 +47593,7 @@
     ],
     "level": "N5",
     "title": "足",
-    "topic": "Beginner kanji",
+    "topic": "Body",
     "meaning": "foot; enough",
     "reading": "あしおと",
     "examples": [
@@ -47913,7 +47913,7 @@
     ],
     "level": "N5",
     "title": "目",
-    "topic": "Beginner kanji",
+    "topic": "Body",
     "meaning": "eye",
     "reading": "めぐすり",
     "examples": [
@@ -48497,7 +48497,7 @@
     ],
     "level": "N5",
     "title": "耳",
-    "topic": "Beginner kanji",
+    "topic": "Body",
     "meaning": "ear",
     "reading": "じびか",
     "examples": [
@@ -48577,7 +48577,7 @@
     ],
     "level": "N5",
     "title": "口",
-    "topic": "Beginner kanji",
+    "topic": "Body",
     "meaning": "mouth",
     "reading": "いりぐち",
     "examples": [
@@ -49089,7 +49089,7 @@
     ],
     "level": "N5",
     "title": "力",
-    "topic": "Beginner kanji",
+    "topic": "Body",
     "meaning": "power",
     "reading": "ちからもち",
     "examples": [
@@ -49877,7 +49877,7 @@
     ],
     "level": "N5",
     "title": "白",
-    "topic": "Beginner kanji",
+    "topic": "Descriptions",
     "meaning": "white",
     "reading": "しろい",
     "examples": [
@@ -50359,7 +50359,7 @@
     ],
     "level": "N5",
     "title": "高",
-    "topic": "Beginner kanji",
+    "topic": "Descriptions",
     "meaning": "high; expensive",
     "reading": "こうこう",
     "examples": [
@@ -51057,7 +51057,7 @@
     ],
     "level": "N5",
     "title": "安",
-    "topic": "Beginner kanji",
+    "topic": "Descriptions",
     "meaning": "inexpensive; peaceful",
     "reading": "あんぜん",
     "examples": [
@@ -51407,7 +51407,7 @@
     ],
     "level": "N5",
     "title": "新",
-    "topic": "Beginner kanji",
+    "topic": "Descriptions",
     "meaning": "new",
     "reading": "しんぶん",
     "examples": [
