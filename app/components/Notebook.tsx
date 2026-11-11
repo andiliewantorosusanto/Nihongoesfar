@@ -310,10 +310,7 @@ export default function Notebook() {
     return (
       <>
         <header className="books-heading">
-          <h1>The knowledge books</h1>
-          <span className="books-heading-japanese jp" lang="ja" aria-hidden="true">
-            学ぶ
-          </span>
+          <h1>Your books</h1>
         </header>
         <div className="book-grid">
           {books.map((b, i) => (

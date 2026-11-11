@@ -7,29 +7,13 @@
   line-height: 1.7;
 }
 .books-heading {
-  position: relative;
-  display: flex;
-  align-items: center;
-  min-height: 160px;
-  margin-bottom: 21px;
-  border-bottom: 1px solid var(--line);
+  padding: 32px 0 24px;
 }
 .books-heading h1 {
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 500;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.7px;
   margin: 0;
-}
-.books-heading-japanese {
-  position: absolute;
-  right: 25px;
-  top: 12px;
-  font-size: 54px;
-  font-weight: 300;
-  color: #f0f0f0;
-  writing-mode: vertical-rl;
-  letter-spacing: 0.18em;
-  pointer-events: none;
 }
 .primary,
 .secondary {
