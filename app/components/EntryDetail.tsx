@@ -6,6 +6,7 @@ import { skillsFor } from '../lib/practice/learning';
 import { toRomaji } from '../lib/japanese/romaji';
 import FamilyTree from './FamilyTree';
 import Writing from './Writing';
+import Scrollable from './Scrollable';
 import { Sentence, ReferenceTables } from './Reading';
 import { LessonIntro } from './GrammarLessons';
 
@@ -112,12 +113,33 @@ function EntryReferences({
           </div>
         </div>
       )}
-      {!!entry.references?.length && (
-        <ReferenceTables
-          romaji={data.preferences.romaji}
-          tables={entry.references}
-          furigana={data.preferences.furigana}
-        />
+      {entry.id === 'study-dates' ? (
+        <section className="calendar-dates" aria-label="Days of the month">
+          <Scrollable className="calendar-date-scroll" label="Date readings from 1 to 31">
+            <ol className="calendar-date-grid">
+              {entry.references?.[0]?.rows.map(([meaning, date], index) => (
+                <li key={date.text} title={meaning.text}>
+                  <span className="calendar-date-number">{index + 1}</span>
+                  <span className="calendar-date-japanese jp" lang="ja">
+                    {date.text}
+                  </span>
+                  <span className="calendar-date-reading" lang="ja">
+                    {date.reading}
+                  </span>
+                  {data.preferences.romaji && <small>{toRomaji(date.reading)}</small>}
+                </li>
+              ))}
+            </ol>
+          </Scrollable>
+        </section>
+      ) : (
+        !!entry.references?.length && (
+          <ReferenceTables
+            romaji={data.preferences.romaji}
+            tables={entry.references}
+            furigana={data.preferences.furigana}
+          />
+        )
       )}
       {entry.kind !== 'kanji' && (
         <>

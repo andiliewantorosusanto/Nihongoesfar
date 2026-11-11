@@ -30,6 +30,51 @@
   font-size: 11px;
   white-space: normal;
 }
+.calendar-date-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+}
+.calendar-date-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(90px, 1fr));
+  gap: 1px;
+  min-width: 636px;
+  margin: 0;
+  padding: 1px;
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--line);
+  overflow: hidden;
+}
+.calendar-date-grid li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  min-width: 0;
+  padding: 10px 12px 12px;
+  background: white;
+}
+.calendar-date-number {
+  color: var(--muted);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+.calendar-date-japanese {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.calendar-date-reading,
+.calendar-date-grid small {
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+.calendar-dates {
+  margin: 20px 0;
+}
 .calendar-topic {
   margin: 30px 0 45px;
   padding-bottom: 22px;
