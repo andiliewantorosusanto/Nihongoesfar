@@ -50,6 +50,42 @@
   font-size: 15px !important;
   color: #666;
 }
+.kanji-detail-header {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  column-gap: 16px;
+  align-content: center;
+  margin: 16px 0;
+}
+.kanji-detail-header .detail-title {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  align-self: center;
+  margin: 0;
+  line-height: 1.2;
+  padding: 0;
+}
+.kanji-detail-header p {
+  grid-column: 2;
+  align-self: center;
+  margin: 0;
+}
+.kanji-tabs {
+  margin-bottom: 16px;
+}
+.reference-details.kanji-reference-details {
+  margin: 16px 0 0;
+}
+.kanji-reference-details .kanji-readings {
+  padding: 12px 0;
+  margin-bottom: 16px;
+}
+.kanji-reference-details .kanji-readings small {
+  margin-bottom: 6px;
+}
+.kanji-reference-details .compounds-section {
+  margin-top: 16px;
+}
 .detail-actions {
   display: flex;
   align-items: center;

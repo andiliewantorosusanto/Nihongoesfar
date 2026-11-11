@@ -22,13 +22,9 @@
   color: #888;
   text-decoration: none;
 }
-.compounds-section > p {
-  font-size: 11px;
-  margin: 9px 0 18px;
-}
 .compound-search {
   min-width: 0;
-  margin-bottom: 20px;
+  margin: 12px 0;
 }
 .compound-labels,
 .compound {

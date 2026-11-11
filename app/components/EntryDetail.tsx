@@ -95,7 +95,9 @@ function EntryReferences({
     );
   }
   return (
-    <div className="reference-details">
+    <div
+      className={'reference-details' + (entry.kind === 'kanji' ? ' kanji-reference-details' : '')}
+    >
       {!calendar && entry.kind !== 'kanji' && entry.note && (
         <div className="lesson-note">
           {entry.note.split('\n').map((p) => (
@@ -214,7 +216,6 @@ function EntryReferences({
               JMdict ↗
             </a>
           </div>
-          <p>Dictionary words using this kanji. Some are uncommon or go beyond N5.</p>
           <label className="search-field compound-search">
             <Search size={16} />
             <input
@@ -326,28 +327,30 @@ export default function EntryDetail({
           {entry.level} <span className="slash">/</span> {entry.topic}
         </p>
       )}
-      {!calendar && (!fullPage || entry.id !== 'study-family') && (
-        <h2 className="detail-title">
-          {entry.kind === 'grammar' || entry.references?.length ? (
-            entry.title
-          ) : (
-            <span className="jp" lang="ja">
-              {entry.japanese}
-            </span>
-          )}
-        </h2>
-      )}
-      {data.preferences.furigana && !entry.references?.length && (
-        <p className="reading detail-reading">
-          {entry.kind === 'kanji'
-            ? `${entry.examples[0]?.japanese || ''} · ${entry.reading}`
-            : entry.reading}
-        </p>
-      )}
-      {data.preferences.romaji && entry.romaji && <p className="reading">{entry.romaji}</p>}
-      {!entry.references?.length && <p className="detail-meaning">{entry.meaning}</p>}
-      <div className="detail-actions">
-        {entry.kind !== 'kanji' && (
+      <div className={entry.kind === 'kanji' ? 'kanji-detail-header' : undefined}>
+        {!calendar && (!fullPage || entry.id !== 'study-family') && (
+          <h2 className="detail-title">
+            {entry.kind === 'grammar' || entry.references?.length ? (
+              entry.title
+            ) : (
+              <span className="jp" lang="ja">
+                {entry.japanese}
+              </span>
+            )}
+          </h2>
+        )}
+        {data.preferences.furigana && !entry.references?.length && (
+          <p className="reading detail-reading">
+            {entry.kind === 'kanji'
+              ? `${entry.examples[0]?.japanese || ''} · ${entry.reading}`
+              : entry.reading}
+          </p>
+        )}
+        {data.preferences.romaji && entry.romaji && <p className="reading">{entry.romaji}</p>}
+        {!entry.references?.length && <p className="detail-meaning">{entry.meaning}</p>}
+      </div>
+      {entry.kind !== 'kanji' && (
+        <div className="detail-actions">
           <button
             className={calendar ? 'text-button' : 'primary'}
             disabled={busy || !skillsFor(entry, data.strokeIds.includes(entry.japanese)).length}
@@ -355,8 +358,8 @@ export default function EntryDetail({
           >
             Practice <ArrowRight size={16} />
           </button>
-        )}
-      </div>
+        </div>
+      )}
       <WordForms entry={entry} preferences={data.preferences} />
       {entry.forms && !wordForms(entry) && (
         <section>
@@ -378,7 +381,7 @@ export default function EntryDetail({
         </section>
       )}
       {!fullPage && entry.kind === 'kanji' && (
-        <div className="tabs">
+        <div className="tabs kanji-tabs">
           <button className={tab === 'learn' ? 'selected' : ''} onClick={() => setTab('learn')}>
             Readings & compounds
           </button>
