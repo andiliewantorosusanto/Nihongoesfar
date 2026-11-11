@@ -7,7 +7,7 @@ import strokeData from '../public/stroke-data.json' with { type: 'json' };
 const strokes = strokeData.characters;
 test('every starter kanji has varied, real compounds rather than one repeated example', () => {
   const kanji = entries.filter((e) => e.kind === 'kanji');
-  assert.equal(kanji.length, 100);
+  assert.ok(kanji.length >= 100);
   assert.ok(kanji.some((e) => e.compounds!.length > 20));
   assert.ok(kanji.reduce((n, e) => n + (e.compounds?.length || 0), 0) >= 600);
   for (const e of kanji) {
@@ -36,6 +36,48 @@ test('every starter kanji has varied, real compounds rather than one repeated ex
       fire.compounds?.some((c) => c.japanese === word && c.reading === reading),
       word,
     );
+});
+test('body kanji cover everyday parts with native readings, compounds, and writing practice', () => {
+  const body = entries.filter((e) => e.kind === 'kanji' && e.topic === 'Body');
+  for (const [character, reading] of Object.entries({
+    耳: 'みみ',
+    手: 'て',
+    口: 'くち',
+    目: 'め',
+    足: 'あし',
+    体: 'からだ',
+    頭: 'あたま',
+    顔: 'かお',
+    鼻: 'はな',
+    歯: 'は',
+    首: 'くび',
+    肩: 'かた',
+    腕: 'うで',
+    指: 'ゆび',
+    腹: 'はら',
+    背: 'せ',
+    胸: 'むね',
+  })) {
+    const entry = body.find((e) => e.japanese === character);
+    assert.ok(entry, character);
+    assert.equal(entry.reading, reading, character);
+    assert.ok(entry.examples.some((e) => e.japanese === character && e.reading === reading));
+    assert.ok(entry.compounds && entry.compounds.length >= 3, character);
+    const questions = makePractice(entries, Object.keys(strokes), { entryId: entry.id });
+    assert.ok(
+      questions.some((q) => q.skill === 'writing'),
+      character,
+    );
+    assert.ok(
+      questions.some((q) => q.skill === 'meaning'),
+      character,
+    );
+  }
+  const belly = body.find((e) => e.japanese === '腹')!;
+  assert.ok(belly.examples.some((e) => e.japanese === 'お腹' && e.reading === 'おなか'));
+  const word = belly.compounds!.find((c) => c.japanese === '腹痛')!;
+  assert.equal(word.reading, 'ふくつう');
+  assert.ok(grade(belly, 'reading', 'ふくつう', '腹痛'));
 });
 test('compound reading questions display and grade the actual chosen word', () => {
   const fire = entries.find((e) => e.japanese === '火' && e.kind === 'kanji')!;

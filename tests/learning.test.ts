@@ -15,7 +15,7 @@ test('starter library is complete, linked, and has distinct grammar concepts', (
   assert.equal(new Set(entries.map((e) => e.id)).size, entries.length);
   for (const kind of ['kana', 'grammar', 'kanji', 'vocabulary', 'numbers', 'adjectives'])
     assert.ok(entries.some((e) => e.kind === kind));
-  assert.equal(entries.filter((e) => e.kind === 'kanji').length, 100);
+  assert.ok(entries.filter((e) => e.kind === 'kanji').length >= 100);
   assert.equal(entries.filter((e) => e.lesson).length, 30);
   assert.ok(entries.filter((e) => e.kind === 'grammar').length >= 25);
   assert.ok(entries.filter((e) => e.kind === 'vocabulary').length >= 200);

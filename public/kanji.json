@@ -46579,8 +46579,13 @@
     "title": "手",
     "topic": "Body",
     "meaning": "hand",
-    "reading": "てがみ",
+    "reading": "て",
     "examples": [
+      {
+        "japanese": "手",
+        "reading": "て",
+        "meaning": "hand"
+      },
       {
         "meaning": "letter",
         "reading": "てがみ",
@@ -47579,7 +47584,8 @@
         "meaning": "discounting of a bill",
         "dictionaryId": "1698680"
       }
-    ]
+    ],
+    "romaji": "te"
   },
   {
     "id": "kanji-8db3",
@@ -47594,9 +47600,14 @@
     "level": "N5",
     "title": "足",
     "topic": "Body",
-    "meaning": "foot; enough",
-    "reading": "あしおと",
+    "meaning": "foot; leg",
+    "reading": "あし",
     "examples": [
+      {
+        "japanese": "足",
+        "reading": "あし",
+        "meaning": "foot; leg"
+      },
       {
         "meaning": "footsteps",
         "reading": "あしおと",
@@ -47899,7 +47910,8 @@
         "meaning": "customer satisfaction",
         "dictionaryId": "2195930"
       }
-    ]
+    ],
+    "romaji": "ashi"
   },
   {
     "id": "kanji-76ee",
@@ -47915,8 +47927,13 @@
     "title": "目",
     "topic": "Body",
     "meaning": "eye",
-    "reading": "めぐすり",
+    "reading": "め",
     "examples": [
+      {
+        "japanese": "目",
+        "reading": "め",
+        "meaning": "eye"
+      },
       {
         "meaning": "eye drops",
         "reading": "めぐすり",
@@ -48483,7 +48500,8 @@
         "meaning": "sense of purpose",
         "dictionaryId": "1807990"
       }
-    ]
+    ],
+    "romaji": "me"
   },
   {
     "id": "kanji-8033",
@@ -48499,8 +48517,13 @@
     "title": "耳",
     "topic": "Body",
     "meaning": "ear",
-    "reading": "じびか",
+    "reading": "みみ",
     "examples": [
+      {
+        "japanese": "耳",
+        "reading": "みみ",
+        "meaning": "ear"
+      },
       {
         "meaning": "ear, nose and throat department",
         "reading": "じびか",
@@ -48563,7 +48586,8 @@
         "meaning": "otorhinolaryngology; otolaryngology; ear, nose and throat department",
         "dictionaryId": "1317290"
       }
-    ]
+    ],
+    "romaji": "mimi"
   },
   {
     "id": "kanji-53e3",
@@ -48579,8 +48603,13 @@
     "title": "口",
     "topic": "Body",
     "meaning": "mouth",
-    "reading": "いりぐち",
+    "reading": "くち",
     "examples": [
+      {
+        "japanese": "口",
+        "reading": "くち",
+        "meaning": "mouth"
+      },
       {
         "meaning": "entrance",
         "reading": "いりぐち",
@@ -49075,7 +49104,8 @@
         "meaning": "oral examination; interview",
         "dictionaryId": "1664720"
       }
-    ]
+    ],
+    "romaji": "kuchi"
   },
   {
     "id": "kanji-529b",
@@ -52054,6 +52084,630 @@
         "reading": "さいしんけんきゅう",
         "meaning": "the newest research",
         "dictionaryId": "2131390"
+      }
+    ]
+  },
+  {
+    "id": "kanji-4f53",
+    "on": "タイ、テイ",
+    "kun": "からだ",
+    "kind": "kanji",
+    "note": "Readings change with the word. On-readings are shown in katakana; kun-reading stems are shown in hiragana (add the word’s okurigana). These are selected common readings, not an exhaustive dictionary entry. Reading practice uses whole words and compounds so you learn each reading in context.",
+    "tags": [
+      "Kanji",
+      "Compounds"
+    ],
+    "level": "N4",
+    "title": "体",
+    "topic": "Body",
+    "meaning": "body",
+    "reading": "からだ",
+    "romaji": "karada",
+    "examples": [
+      {
+        "japanese": "体",
+        "reading": "からだ",
+        "meaning": "body"
+      },
+      {
+        "japanese": "体重",
+        "reading": "たいじゅう",
+        "meaning": "body weight"
+      }
+    ],
+    "japanese": "体",
+    "compounds": [
+      {
+        "japanese": "体重",
+        "reading": "たいじゅう",
+        "meaning": "body weight"
+      },
+      {
+        "japanese": "体力",
+        "reading": "たいりょく",
+        "meaning": "physical strength"
+      },
+      {
+        "japanese": "全体",
+        "reading": "ぜんたい",
+        "meaning": "entirety, whole"
+      },
+      {
+        "japanese": "体中",
+        "reading": "からだじゅう",
+        "meaning": "throughout the body"
+      }
+    ]
+  },
+  {
+    "id": "kanji-982d",
+    "on": "トウ、ズ、ト",
+    "kun": "あたま、かしら",
+    "kind": "kanji",
+    "note": "Readings change with the word. On-readings are shown in katakana; kun-reading stems are shown in hiragana (add the word’s okurigana). These are selected common readings, not an exhaustive dictionary entry. Reading practice uses whole words and compounds so you learn each reading in context.",
+    "tags": [
+      "Kanji",
+      "Compounds"
+    ],
+    "level": "N3",
+    "title": "頭",
+    "topic": "Body",
+    "meaning": "head",
+    "reading": "あたま",
+    "romaji": "atama",
+    "examples": [
+      {
+        "japanese": "頭",
+        "reading": "あたま",
+        "meaning": "head"
+      },
+      {
+        "japanese": "頭痛",
+        "reading": "ずつう",
+        "meaning": "headache"
+      }
+    ],
+    "japanese": "頭",
+    "compounds": [
+      {
+        "japanese": "頭痛",
+        "reading": "ずつう",
+        "meaning": "headache"
+      },
+      {
+        "japanese": "頭部",
+        "reading": "とうぶ",
+        "meaning": "head"
+      },
+      {
+        "japanese": "頭脳",
+        "reading": "ずのう",
+        "meaning": "brains"
+      },
+      {
+        "japanese": "目頭",
+        "reading": "めがしら",
+        "meaning": "the corner of the eye"
+      }
+    ]
+  },
+  {
+    "id": "kanji-9854",
+    "on": "ガン",
+    "kun": "かお",
+    "kind": "kanji",
+    "note": "Readings change with the word. On-readings are shown in katakana; kun-reading stems are shown in hiragana (add the word’s okurigana). These are selected common readings, not an exhaustive dictionary entry. Reading practice uses whole words and compounds so you learn each reading in context.",
+    "tags": [
+      "Kanji",
+      "Compounds"
+    ],
+    "level": "N3",
+    "title": "顔",
+    "topic": "Body",
+    "meaning": "face",
+    "reading": "かお",
+    "romaji": "kao",
+    "examples": [
+      {
+        "japanese": "顔",
+        "reading": "かお",
+        "meaning": "face"
+      },
+      {
+        "japanese": "顔色",
+        "reading": "かおいろ",
+        "meaning": "complexion"
+      }
+    ],
+    "japanese": "顔",
+    "compounds": [
+      {
+        "japanese": "顔色",
+        "reading": "かおいろ",
+        "meaning": "complexion"
+      },
+      {
+        "japanese": "素顔",
+        "reading": "すがお",
+        "meaning": "face with no make-up"
+      },
+      {
+        "japanese": "笑顔",
+        "reading": "えがお",
+        "meaning": "smile, smiling face"
+      },
+      {
+        "japanese": "童顔",
+        "reading": "どうがん",
+        "meaning": "baby-faced"
+      }
+    ]
+  },
+  {
+    "id": "kanji-9f3b",
+    "on": "ビ",
+    "kun": "はな",
+    "kind": "kanji",
+    "note": "Readings change with the word. On-readings are shown in katakana; kun-reading stems are shown in hiragana (add the word’s okurigana). These are selected common readings, not an exhaustive dictionary entry. Reading practice uses whole words and compounds so you learn each reading in context.",
+    "tags": [
+      "Kanji",
+      "Compounds"
+    ],
+    "level": "N2",
+    "title": "鼻",
+    "topic": "Body",
+    "meaning": "nose",
+    "reading": "はな",
+    "romaji": "hana",
+    "examples": [
+      {
+        "japanese": "鼻",
+        "reading": "はな",
+        "meaning": "nose"
+      },
+      {
+        "japanese": "鼻水",
+        "reading": "はなみず",
+        "meaning": "mucus"
+      }
+    ],
+    "japanese": "鼻",
+    "compounds": [
+      {
+        "japanese": "鼻水",
+        "reading": "はなみず",
+        "meaning": "mucus"
+      },
+      {
+        "japanese": "鼻血",
+        "reading": "はなぢ",
+        "meaning": "nosebleed"
+      },
+      {
+        "japanese": "鼻炎",
+        "reading": "びえん",
+        "meaning": "nasal inflammation"
+      },
+      {
+        "japanese": "耳鼻科",
+        "reading": "じびか",
+        "meaning": "otolaryngology"
+      }
+    ]
+  },
+  {
+    "id": "kanji-6b6f",
+    "on": "シ",
+    "kun": "は",
+    "kind": "kanji",
+    "note": "Readings change with the word. On-readings are shown in katakana; kun-reading stems are shown in hiragana (add the word’s okurigana). These are selected common readings, not an exhaustive dictionary entry. Reading practice uses whole words and compounds so you learn each reading in context.",
+    "tags": [
+      "Kanji",
+      "Compounds"
+    ],
+    "level": "N3",
+    "title": "歯",
+    "topic": "Body",
+    "meaning": "tooth; teeth",
+    "reading": "は",
+    "romaji": "ha",
+    "examples": [
+      {
+        "japanese": "歯",
+        "reading": "は",
+        "meaning": "tooth; teeth"
+      },
+      {
+        "japanese": "歯医者",
+        "reading": "はいしゃ",
+        "meaning": "dentist"
+      }
+    ],
+    "japanese": "歯",
+    "compounds": [
+      {
+        "japanese": "歯医者",
+        "reading": "はいしゃ",
+        "meaning": "dentist"
+      },
+      {
+        "japanese": "虫歯",
+        "reading": "むしば",
+        "meaning": "(tooth) cavity"
+      },
+      {
+        "japanese": "永久歯",
+        "reading": "えいきゅうし",
+        "meaning": "permanent tooth"
+      },
+      {
+        "japanese": "乳歯",
+        "reading": "にゅうし",
+        "meaning": "milk tooth, first set of teeth"
+      }
+    ]
+  },
+  {
+    "id": "kanji-9996",
+    "on": "シュ",
+    "kun": "くび",
+    "kind": "kanji",
+    "note": "Readings change with the word. On-readings are shown in katakana; kun-reading stems are shown in hiragana (add the word’s okurigana). These are selected common readings, not an exhaustive dictionary entry. Reading practice uses whole words and compounds so you learn each reading in context.",
+    "tags": [
+      "Kanji",
+      "Compounds"
+    ],
+    "level": "N3",
+    "title": "首",
+    "topic": "Body",
+    "meaning": "neck",
+    "reading": "くび",
+    "romaji": "kubi",
+    "examples": [
+      {
+        "japanese": "首",
+        "reading": "くび",
+        "meaning": "neck"
+      },
+      {
+        "japanese": "手首",
+        "reading": "てくび",
+        "meaning": "wrist"
+      }
+    ],
+    "japanese": "首",
+    "compounds": [
+      {
+        "japanese": "手首",
+        "reading": "てくび",
+        "meaning": "wrist"
+      },
+      {
+        "japanese": "首都",
+        "reading": "しゅと",
+        "meaning": "capital city"
+      },
+      {
+        "japanese": "首相",
+        "reading": "しゅしょう",
+        "meaning": "Prime Minister, Chancellor"
+      },
+      {
+        "japanese": "部首",
+        "reading": "ぶしゅ",
+        "meaning": "radical (of kanji)"
+      }
+    ]
+  },
+  {
+    "id": "kanji-80a9",
+    "on": "ケン",
+    "kun": "かた",
+    "kind": "kanji",
+    "note": "Readings change with the word. On-readings are shown in katakana; kun-reading stems are shown in hiragana (add the word’s okurigana). These are selected common readings, not an exhaustive dictionary entry. Reading practice uses whole words and compounds so you learn each reading in context.",
+    "tags": [
+      "Kanji",
+      "Compounds"
+    ],
+    "level": "N2",
+    "title": "肩",
+    "topic": "Body",
+    "meaning": "shoulder",
+    "reading": "かた",
+    "romaji": "kata",
+    "examples": [
+      {
+        "japanese": "肩",
+        "reading": "かた",
+        "meaning": "shoulder"
+      },
+      {
+        "japanese": "肩甲骨",
+        "reading": "けんこうこつ",
+        "meaning": "shoulder-blade"
+      }
+    ],
+    "japanese": "肩",
+    "compounds": [
+      {
+        "japanese": "肩甲骨",
+        "reading": "けんこうこつ",
+        "meaning": "shoulder-blade"
+      },
+      {
+        "japanese": "肩書き",
+        "reading": "かたがき",
+        "meaning": "title"
+      },
+      {
+        "japanese": "強肩",
+        "reading": "きょうけん",
+        "meaning": "strong throwing arm"
+      }
+    ]
+  },
+  {
+    "id": "kanji-8155",
+    "on": "ワン",
+    "kun": "うで",
+    "kind": "kanji",
+    "note": "Readings change with the word. On-readings are shown in katakana; kun-reading stems are shown in hiragana (add the word’s okurigana). These are selected common readings, not an exhaustive dictionary entry. Reading practice uses whole words and compounds so you learn each reading in context.",
+    "tags": [
+      "Kanji",
+      "Compounds"
+    ],
+    "level": "N2",
+    "title": "腕",
+    "topic": "Body",
+    "meaning": "arm",
+    "reading": "うで",
+    "romaji": "ude",
+    "examples": [
+      {
+        "japanese": "腕",
+        "reading": "うで",
+        "meaning": "arm"
+      },
+      {
+        "japanese": "腕時計",
+        "reading": "うでどけい",
+        "meaning": "wristwatch"
+      }
+    ],
+    "japanese": "腕",
+    "compounds": [
+      {
+        "japanese": "腕時計",
+        "reading": "うでどけい",
+        "meaning": "wristwatch"
+      },
+      {
+        "japanese": "上腕",
+        "reading": "じょうわん",
+        "meaning": "upper arm"
+      },
+      {
+        "japanese": "腕力",
+        "reading": "わんりょく",
+        "meaning": "physical strength, brute strength"
+      },
+      {
+        "japanese": "腕前",
+        "reading": "うでまえ",
+        "meaning": "ability, skill, facility"
+      }
+    ]
+  },
+  {
+    "id": "kanji-6307",
+    "on": "シ",
+    "kun": "ゆび、さ、さす",
+    "kind": "kanji",
+    "note": "Readings change with the word. On-readings are shown in katakana; kun-reading stems are shown in hiragana (add the word’s okurigana). These are selected common readings, not an exhaustive dictionary entry. Reading practice uses whole words and compounds so you learn each reading in context.",
+    "tags": [
+      "Kanji",
+      "Compounds"
+    ],
+    "level": "N3",
+    "title": "指",
+    "topic": "Body",
+    "meaning": "finger",
+    "reading": "ゆび",
+    "romaji": "yubi",
+    "examples": [
+      {
+        "japanese": "指",
+        "reading": "ゆび",
+        "meaning": "finger"
+      },
+      {
+        "japanese": "親指",
+        "reading": "おやゆび",
+        "meaning": "thumb"
+      }
+    ],
+    "japanese": "指",
+    "compounds": [
+      {
+        "japanese": "親指",
+        "reading": "おやゆび",
+        "meaning": "thumb"
+      },
+      {
+        "japanese": "指輪",
+        "reading": "ゆびわ",
+        "meaning": "ring"
+      },
+      {
+        "japanese": "指紋",
+        "reading": "しもん",
+        "meaning": "fingerprint"
+      },
+      {
+        "japanese": "指定席",
+        "reading": "していせき",
+        "meaning": "reserved seat"
+      }
+    ]
+  },
+  {
+    "id": "kanji-8179",
+    "on": "フク",
+    "kun": "はら",
+    "kind": "kanji",
+    "note": "Readings change with the word. On-readings are shown in katakana; kun-reading stems are shown in hiragana (add the word’s okurigana). These are selected common readings, not an exhaustive dictionary entry. Reading practice uses whole words and compounds so you learn each reading in context.",
+    "tags": [
+      "Kanji",
+      "Compounds"
+    ],
+    "level": "N3",
+    "title": "腹",
+    "topic": "Body",
+    "meaning": "belly; abdomen; stomach",
+    "reading": "はら",
+    "romaji": "hara",
+    "examples": [
+      {
+        "japanese": "腹",
+        "reading": "はら",
+        "meaning": "belly; abdomen; stomach"
+      },
+      {
+        "japanese": "腹痛",
+        "reading": "ふくつう",
+        "meaning": "stomach ache, abdominal pain"
+      },
+      {
+        "japanese": "お腹",
+        "reading": "おなか",
+        "meaning": "belly; stomach"
+      }
+    ],
+    "japanese": "腹",
+    "compounds": [
+      {
+        "japanese": "腹痛",
+        "reading": "ふくつう",
+        "meaning": "stomach ache, abdominal pain"
+      },
+      {
+        "japanese": "腹部",
+        "reading": "ふくぶ",
+        "meaning": "abdomen"
+      },
+      {
+        "japanese": "空腹",
+        "reading": "くうふく",
+        "meaning": "hunger"
+      },
+      {
+        "japanese": "満腹",
+        "reading": "まんぷく",
+        "meaning": "full, glutted [n.]"
+      }
+    ]
+  },
+  {
+    "id": "kanji-80cc",
+    "on": "ハイ",
+    "kun": "せ、せい、そむく、そむける",
+    "kind": "kanji",
+    "note": "Readings change with the word. On-readings are shown in katakana; kun-reading stems are shown in hiragana (add the word’s okurigana). These are selected common readings, not an exhaustive dictionary entry. Reading practice uses whole words and compounds so you learn each reading in context.",
+    "tags": [
+      "Kanji",
+      "Compounds"
+    ],
+    "level": "N3",
+    "title": "背",
+    "topic": "Body",
+    "meaning": "back; height",
+    "reading": "せ",
+    "romaji": "se",
+    "examples": [
+      {
+        "japanese": "背",
+        "reading": "せ",
+        "meaning": "back; height"
+      },
+      {
+        "japanese": "背中",
+        "reading": "せなか",
+        "meaning": "back (of body)"
+      }
+    ],
+    "japanese": "背",
+    "compounds": [
+      {
+        "japanese": "背中",
+        "reading": "せなか",
+        "meaning": "back (of body)"
+      },
+      {
+        "japanese": "背後",
+        "reading": "はいご",
+        "meaning": "back"
+      },
+      {
+        "japanese": "背広",
+        "reading": "せびろ",
+        "meaning": "business suit"
+      },
+      {
+        "japanese": "背景",
+        "reading": "はいけい",
+        "meaning": "background"
+      }
+    ]
+  },
+  {
+    "id": "kanji-80f8",
+    "on": "キョウ",
+    "kun": "むね、むな",
+    "kind": "kanji",
+    "note": "Readings change with the word. On-readings are shown in katakana; kun-reading stems are shown in hiragana (add the word’s okurigana). These are selected common readings, not an exhaustive dictionary entry. Reading practice uses whole words and compounds so you learn each reading in context.",
+    "tags": [
+      "Kanji",
+      "Compounds"
+    ],
+    "level": "N2",
+    "title": "胸",
+    "topic": "Body",
+    "meaning": "chest",
+    "reading": "むね",
+    "romaji": "mune",
+    "examples": [
+      {
+        "japanese": "胸",
+        "reading": "むね",
+        "meaning": "chest"
+      },
+      {
+        "japanese": "胸囲",
+        "reading": "きょうい",
+        "meaning": "chest measurement"
+      }
+    ],
+    "japanese": "胸",
+    "compounds": [
+      {
+        "japanese": "胸囲",
+        "reading": "きょうい",
+        "meaning": "chest measurement"
+      },
+      {
+        "japanese": "胸元",
+        "reading": "むなもと",
+        "meaning": "breast, pit of stomach"
+      },
+      {
+        "japanese": "胸中",
+        "reading": "きょうちゅう",
+        "meaning": "one's heart, one's mind"
+      },
+      {
+        "japanese": "度胸",
+        "reading": "どきょう",
+        "meaning": "bravery, grit"
       }
     ]
   }

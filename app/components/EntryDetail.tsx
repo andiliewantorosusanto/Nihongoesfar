@@ -272,7 +272,7 @@ function EntryReferences({
               Compounds <span>{entry.compounds.length}</span>
             </h3>
             <a href="/credits.html#dictionary" target="_blank" rel="noreferrer">
-              JMdict ↗
+              Dictionary ↗
             </a>
           </div>
           <label className="search-field compound-search">
