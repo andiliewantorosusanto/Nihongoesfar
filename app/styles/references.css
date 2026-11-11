@@ -108,6 +108,7 @@
 .calendar-book {
   display: grid;
   gap: 28px;
+  padding-top: 24px;
 }
 .calendar-section {
   min-width: 0;
