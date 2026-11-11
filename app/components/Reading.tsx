@@ -187,7 +187,9 @@ export function ReferenceTables({
   tables,
   furigana,
   romaji = false,
+  hideHeadings = false,
 }: Readonly<{
+  hideHeadings?: boolean;
   romaji?: boolean;
   tables: NonNullable<Entry['references']>;
   furigana: boolean;
@@ -196,7 +198,7 @@ export function ReferenceTables({
     <>
       {keyed(tables).map(({ value: table, key }) => (
         <section className="study-reference" key={key}>
-          <h3>{table.heading}</h3>
+          {!hideHeadings && <h3>{table.heading}</h3>}
           <Scrollable className="reference-scroll" label={table.heading}>
             <table className="quick-table">
               <thead>

@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { ArrowRight, ChevronDown, Search } from 'lucide-react';
 import type { Entry } from '../lib/content/content';
 import { skillsFor } from '../lib/practice/learning';
+import { topicBookFor } from '../lib/guides/topic-books';
 import { toRomaji } from '../lib/japanese/romaji';
 import FamilyTree from './FamilyTree';
 import Writing from './Writing';
@@ -75,6 +76,7 @@ function EntryReferences({
   onPractice,
 }: Readonly<Pick<EntryDetailProps, 'entry' | 'data' | 'busy' | 'onPractice'>>) {
   const [compoundSearch, setCompoundSearch] = useState('');
+  const calendar = topicBookFor(entry.id) === 'calendar';
   const [compoundLimit, setCompoundLimit] = useState(12);
   const compounds = (entry.compounds || []).filter((c) =>
     [c.japanese, c.reading, c.meaning]
@@ -94,7 +96,7 @@ function EntryReferences({
   }
   return (
     <div className="reference-details">
-      {entry.kind !== 'kanji' && entry.note && (
+      {!calendar && entry.kind !== 'kanji' && entry.note && (
         <div className="lesson-note">
           {entry.note.split('\n').map((p) => (
             <p key={p}>{p}</p>
@@ -115,10 +117,17 @@ function EntryReferences({
       )}
       {entry.id === 'study-dates' ? (
         <section className="calendar-dates" aria-label="Days of the month">
+          <p className="calendar-reading-key">Special reading</p>
           <Scrollable className="calendar-date-scroll" label="Date readings from 1 to 31">
             <ol className="calendar-date-grid">
               {entry.references?.[0]?.rows.map(([meaning, date], index) => (
-                <li key={date.text} title={meaning.text}>
+                <li
+                  key={date.text}
+                  className={
+                    index < 10 || [14, 20, 24].includes(index + 1) ? 'special-reading' : undefined
+                  }
+                  title={meaning.text}
+                >
                   <span className="calendar-date-number">{index + 1}</span>
                   <span className="calendar-date-japanese jp" lang="ja">
                     {date.text}
@@ -141,7 +150,6 @@ function EntryReferences({
             { unit: 'year', label: 'Years', counter: '年・年間' },
           ].map(({ unit, label, counter }) => (
             <section className="duration-unit" key={unit} aria-label={label}>
-              <h3>{label}</h3>
               <p className="duration-counter jp" lang="ja">
                 {counter}
               </p>
@@ -178,11 +186,12 @@ function EntryReferences({
           <ReferenceTables
             romaji={data.preferences.romaji}
             tables={entry.references}
+            hideHeadings={calendar}
             furigana={data.preferences.furigana}
           />
         )
       )}
-      {entry.kind !== 'kanji' && (
+      {!calendar && entry.kind !== 'kanji' && (
         <>
           <h3>Examples</h3>
           {entry.examples.map((ex) => (
@@ -267,6 +276,7 @@ export default function EntryDetail({
   fullPage = false,
 }: EntryDetailProps) {
   const [tab, setTab] = useState('learn');
+  const calendar = topicBookFor(entry.id) === 'calendar';
   if (entry.kind === 'kana')
     return (
       <>
@@ -311,10 +321,12 @@ export default function EntryDetail({
     );
   return (
     <>
-      <p className="eyebrow">
-        {entry.level} <span className="slash">/</span> {entry.topic}
-      </p>
-      {(!fullPage || entry.id !== 'study-family') && (
+      {!calendar && (
+        <p className="eyebrow">
+          {entry.level} <span className="slash">/</span> {entry.topic}
+        </p>
+      )}
+      {!calendar && (!fullPage || entry.id !== 'study-family') && (
         <h2 className="detail-title">
           {entry.kind === 'grammar' || entry.references?.length ? (
             entry.title
@@ -337,7 +349,7 @@ export default function EntryDetail({
       <div className="detail-actions">
         {entry.kind !== 'kanji' && (
           <button
-            className="primary"
+            className={calendar ? 'text-button' : 'primary'}
             disabled={busy || !skillsFor(entry, data.strokeIds.includes(entry.japanese)).length}
             onClick={() => onPractice()}
           >
