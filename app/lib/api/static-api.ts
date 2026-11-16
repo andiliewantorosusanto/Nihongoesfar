@@ -12,7 +12,8 @@ export function staticResult(entries: Entry[], resource: string, b: any) {
         ? entries.filter(
             (e) =>
               (b.topic === undefined || e.topic === b.topic) &&
-              (b.level === undefined || e.level === b.level),
+              (b.level === undefined || e.level === b.level) &&
+              (b.tag === undefined || e.tags.includes(b.tag)),
           )
         : entries;
     return { queue: makePractice(selected, Object.keys(strokes), b) };

@@ -250,6 +250,7 @@ export default function Notebook() {
           ? {
               topic: topic === 'all' ? undefined : topic,
               level: level === 'all' ? undefined : level,
+              tag: tag === 'all' ? undefined : tag,
             }
           : {}),
         mode: entryId && !word ? 'guided' : 'mixed',
@@ -507,6 +508,32 @@ export default function Notebook() {
   function renderLibrary() {
     return (
       <>
+        {page === 'vocabulary' && (
+          <div className="tabs" role="group" aria-label="Vocabulary word type">
+            <button
+              type="button"
+              className={tag === 'all' ? 'selected' : ''}
+              aria-pressed={tag === 'all'}
+              onClick={() => {
+                setTag('all');
+                setTopic('all');
+              }}
+            >
+              All words
+            </button>
+            <button
+              type="button"
+              className={tag === 'Verb' ? 'selected' : ''}
+              aria-pressed={tag === 'Verb'}
+              onClick={() => {
+                setTag('Verb');
+                setTopic('all');
+              }}
+            >
+              Verbs / actions
+            </button>
+          </div>
+        )}
         <div className="filter-bar">
           <label className="search-field">
             <Search size={17} />
@@ -548,6 +575,9 @@ export default function Notebook() {
             </select>
           )}
         </div>
+        {page === 'vocabulary' && tag === 'Verb' && (
+          <p>Showing verbs / actions. Choose a topic to narrow them down.</p>
+        )}
         <p className="results-heading">
           {filtered.length} {filtered.length === 1 ? 'entry' : 'entries'}
         </p>

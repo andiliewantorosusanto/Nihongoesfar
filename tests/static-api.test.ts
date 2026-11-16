@@ -125,3 +125,43 @@ test('published snapshot loads and guided practice works using only its static f
     globalThis.fetch = original;
   }
 });
+
+test('verbs-only vocabulary practice respects word type across topics and with narrower filters', () => {
+  const verbs = entries.filter(
+    (entry) => entry.kind === 'vocabulary' && entry.tags.includes('Verb'),
+  );
+  const noun = entries.find((entry) => entry.kind === 'vocabulary' && entry.meaning === 'bread')!;
+  // A small pool keeps every expected verb in the round regardless of random ordering.
+  const pool = [
+    ...['read', 'write', "brush one's teeth"].map((meaning) =>
+      verbs.find((entry) => entry.meaning === meaning)!,
+    ),
+    noun,
+  ];
+  assert.ok(pool.every(Boolean));
+  const { queue } = staticResult(pool, 'practice', {
+    kind: 'vocabulary',
+    tag: 'Verb',
+    skill: 'reading',
+  });
+  assert.deepEqual(
+    new Set(queue!.map((question) => question.entryId)),
+    new Set(pool.slice(0, 3).map((entry) => entry.id)),
+  );
+  const { queue: narrowed } = staticResult(pool, 'practice', {
+    kind: 'vocabulary',
+    tag: 'Verb',
+    topic: pool[2].topic,
+    level: pool[2].level,
+    skill: 'reading',
+  });
+  assert.deepEqual(
+    narrowed!.map((question) => question.entryId),
+    [pool[2].id],
+  );
+  const unfiltered = staticResult(pool, 'practice', {
+    kind: 'vocabulary',
+    skill: 'reading',
+  }).queue!;
+  assert.ok(unfiltered.some((question) => question.entryId === noun.id));
+});
