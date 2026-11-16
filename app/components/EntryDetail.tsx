@@ -36,9 +36,9 @@ function WordForms({
   return (
     <section className="word-forms">
       <h3>{forms.group}</h3>
-      <p>{forms.note}</p>
+      {forms.note && <p>{forms.note}</p>}
       <ReferenceTables
-        tables={[forms.table]}
+        tables={[forms.table, ...(forms.guides || [])]}
         furigana={preferences.furigana}
         romaji={preferences.romaji}
       />

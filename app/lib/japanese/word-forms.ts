@@ -1,3 +1,4 @@
+import verbEndingChanges from '../../../public/guides/verb-ending-changes.json' with { type: 'json' };
 import type { Entry } from '../content/content.ts';
 import type { ReferenceTable } from '../content/types.ts';
 
@@ -102,7 +103,7 @@ function verbForms(word: string, group: (typeof roots)[string][1], kana: boolean
 }
 export function wordForms(
   entry: Entry,
-): { group: string; note: string; table: ReferenceTable } | undefined {
+): { group: string; note?: string; table: ReferenceTable; guides?: ReferenceTable[] } | undefined {
   if (entry.kind === 'vocabulary') {
     const root = Object.keys(roots)
       .sort((a, b) => b.length - a.length)
@@ -128,7 +129,7 @@ export function wordForms(
           : group === 'ichidan'
             ? 'Group 2 · る-verb'
             : 'Group 3 · irregular verb',
-      note: 'ます is polite non-past: habits or future actions. The ます-stem is a building block, not a complete polite sentence. ながら means “while doing …”; add the main action afterward. The て-form connects to other endings, such as ています.',
+      guides: verbEndingChanges[group],
       table: {
         heading: 'Verb forms',
         columns: ['Form', 'Japanese'],

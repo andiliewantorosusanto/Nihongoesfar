@@ -1,0 +1,474 @@
+{
+  "godan": [
+    {
+      "heading": "Ending changes · replace the final u sound",
+      "columns": [
+        "Dictionary ending",
+        "ます-stem · u → i",
+        "Negative · u → a (う → わ)",
+        "て-form",
+        "Past"
+      ],
+      "rows": [
+        [
+          {
+            "text": "う (u)",
+            "reading": ""
+          },
+          {
+            "text": "い (i)",
+            "reading": ""
+          },
+          {
+            "text": "わ (wa) + ない",
+            "reading": ""
+          },
+          {
+            "text": "って",
+            "reading": ""
+          },
+          {
+            "text": "った",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "く (ku)",
+            "reading": ""
+          },
+          {
+            "text": "き (ki)",
+            "reading": ""
+          },
+          {
+            "text": "か (ka) + ない",
+            "reading": ""
+          },
+          {
+            "text": "いて",
+            "reading": ""
+          },
+          {
+            "text": "いた",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "ぐ (gu)",
+            "reading": ""
+          },
+          {
+            "text": "ぎ (gi)",
+            "reading": ""
+          },
+          {
+            "text": "が (ga) + ない",
+            "reading": ""
+          },
+          {
+            "text": "いで",
+            "reading": ""
+          },
+          {
+            "text": "いだ",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "す (su)",
+            "reading": ""
+          },
+          {
+            "text": "し (shi)",
+            "reading": ""
+          },
+          {
+            "text": "さ (sa) + ない",
+            "reading": ""
+          },
+          {
+            "text": "して",
+            "reading": ""
+          },
+          {
+            "text": "した",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "つ (tsu)",
+            "reading": ""
+          },
+          {
+            "text": "ち (chi)",
+            "reading": ""
+          },
+          {
+            "text": "た (ta) + ない",
+            "reading": ""
+          },
+          {
+            "text": "って",
+            "reading": ""
+          },
+          {
+            "text": "った",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "ぬ (nu)",
+            "reading": ""
+          },
+          {
+            "text": "に (ni)",
+            "reading": ""
+          },
+          {
+            "text": "な (na) + ない",
+            "reading": ""
+          },
+          {
+            "text": "んで",
+            "reading": ""
+          },
+          {
+            "text": "んだ",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "ぶ (bu)",
+            "reading": ""
+          },
+          {
+            "text": "び (bi)",
+            "reading": ""
+          },
+          {
+            "text": "ば (ba) + ない",
+            "reading": ""
+          },
+          {
+            "text": "んで",
+            "reading": ""
+          },
+          {
+            "text": "んだ",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "む (mu)",
+            "reading": ""
+          },
+          {
+            "text": "み (mi)",
+            "reading": ""
+          },
+          {
+            "text": "ま (ma) + ない",
+            "reading": ""
+          },
+          {
+            "text": "んで",
+            "reading": ""
+          },
+          {
+            "text": "んだ",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "る (ru)",
+            "reading": ""
+          },
+          {
+            "text": "り (ri)",
+            "reading": ""
+          },
+          {
+            "text": "ら (ra) + ない",
+            "reading": ""
+          },
+          {
+            "text": "って",
+            "reading": ""
+          },
+          {
+            "text": "った",
+            "reading": ""
+          }
+        ]
+      ]
+    },
+    {
+      "heading": "Using the changed ending",
+      "columns": ["Rule", "Example"],
+      "rows": [
+        [
+          {
+            "text": "Add ます, ません, ました, or ませんでした to the ます-stem.",
+            "reading": ""
+          },
+          {
+            "text": "泳ぐ → 泳ぎ → 泳ぎます / 泳ぎません / 泳ぎました / 泳ぎませんでした",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "Add ながら to the ます-stem.",
+            "reading": ""
+          },
+          {
+            "text": "泳ぐ → 泳ぎ → 泳ぎながら",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "For past negative, replace ない with なかった.",
+            "reading": ""
+          },
+          {
+            "text": "泳がない → 泳がなかった",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "Exception: 行く uses って / った.",
+            "reading": ""
+          },
+          {
+            "text": "行く → 行って / 行った",
+            "reading": ""
+          }
+        ]
+      ]
+    }
+  ],
+  "ichidan": [
+    {
+      "heading": "Ending changes · drop the final る",
+      "columns": ["Form", "Rule", "Example"],
+      "rows": [
+        [
+          {
+            "text": "ます-stem",
+            "reading": ""
+          },
+          {
+            "text": "Drop る.",
+            "reading": ""
+          },
+          {
+            "text": "食べる → 食べ",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "Polite forms",
+            "reading": ""
+          },
+          {
+            "text": "Add ます, ません, ました, or ませんでした to the stem.",
+            "reading": ""
+          },
+          {
+            "text": "食べます / 食べません / 食べました / 食べませんでした",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "Negative / past negative",
+            "reading": ""
+          },
+          {
+            "text": "Add ない / なかった to the stem.",
+            "reading": ""
+          },
+          {
+            "text": "食べない / 食べなかった",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "て-form / past",
+            "reading": ""
+          },
+          {
+            "text": "Add て / た to the stem.",
+            "reading": ""
+          },
+          {
+            "text": "食べて / 食べた",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "ながら",
+            "reading": ""
+          },
+          {
+            "text": "Add ながら to the stem.",
+            "reading": ""
+          },
+          {
+            "text": "食べながら",
+            "reading": ""
+          }
+        ]
+      ]
+    }
+  ],
+  "suru": [
+    {
+      "heading": "Ending changes · する (including compounds)",
+      "columns": ["Form", "Change", "Example"],
+      "rows": [
+        [
+          {
+            "text": "ます-stem",
+            "reading": ""
+          },
+          {
+            "text": "する → し",
+            "reading": ""
+          },
+          {
+            "text": "勉強する → 勉強し",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "Polite forms",
+            "reading": ""
+          },
+          {
+            "text": "する → し + ます / ません / ました / ませんでした",
+            "reading": ""
+          },
+          {
+            "text": "します / しません / しました / しませんでした",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "Negative / past negative",
+            "reading": ""
+          },
+          {
+            "text": "する → しない / しなかった",
+            "reading": ""
+          },
+          {
+            "text": "勉強しない / 勉強しなかった",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "て-form / past",
+            "reading": ""
+          },
+          {
+            "text": "する → して / した",
+            "reading": ""
+          },
+          {
+            "text": "勉強して / 勉強した",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "ながら",
+            "reading": ""
+          },
+          {
+            "text": "する → しながら",
+            "reading": ""
+          },
+          {
+            "text": "勉強しながら",
+            "reading": ""
+          }
+        ]
+      ]
+    }
+  ],
+  "kuru": [
+    {
+      "heading": "Ending changes · 来る (くる)",
+      "columns": ["Form", "Change"],
+      "rows": [
+        [
+          {
+            "text": "ます-stem",
+            "reading": ""
+          },
+          {
+            "text": "くる → き",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "Polite forms",
+            "reading": ""
+          },
+          {
+            "text": "き + ます / ません / ました / ませんでした",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "Negative / past negative",
+            "reading": ""
+          },
+          {
+            "text": "くる → こない / こなかった",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "て-form / past",
+            "reading": ""
+          },
+          {
+            "text": "くる → きて / きた",
+            "reading": ""
+          }
+        ],
+        [
+          {
+            "text": "ながら",
+            "reading": ""
+          },
+          {
+            "text": "くる → きながら",
+            "reading": ""
+          }
+        ]
+      ]
+    }
+  ]
+}
