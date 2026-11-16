@@ -331,3 +331,21 @@ select {
   font-size: 12px;
   margin: 20px 0;
 }
+
+/* Browsing and practice share the same vocabulary filters. */
+.vocabulary-toolbar .search-field {
+  flex-basis: 100%;
+}
+.vocabulary-toolbar .practice-controls {
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+.vocabulary-toolbar select {
+  min-height: 36px;
+  font-size: 11px;
+}
+.vocabulary-toolbar .primary {
+  min-height: 36px;
+  padding: 9px 12px;
+}

@@ -356,80 +356,52 @@ export default function Notebook() {
                     </p>
                   ))}
             </div>
-            {!topicBooks[page] && (
-              <div className="book-practice-actions">
-                <div className="practice-controls">
-                  {page === 'vocabulary' && (
-                    <>
-                      <select
-                        aria-label="Practice category"
-                        value={topic}
-                        onChange={(e) => setTopic(e.target.value)}
-                      >
-                        <option value="all">All categories</option>
-                        {[...new Set(inBook.map((e) => e.topic))].map((t) => (
-                          <option key={t}>{t}</option>
-                        ))}
-                      </select>
-                      <select
-                        aria-label="Practice level"
-                        value={level}
-                        onChange={(e) => setLevel(e.target.value)}
-                      >
-                        <option value="all">All levels</option>
-                        {[...new Set(inBook.map((e) => e.level))].map((t) => (
-                          <option key={t}>{t}</option>
-                        ))}
-                      </select>
-                    </>
-                  )}
-                  {page === 'numbers' && (
-                    <button className="secondary" onClick={() => setNumberTool('converter')}>
-                      Convert number
-                    </button>
-                  )}
-                  <select
-                    aria-label="Practice type"
-                    value={mode}
-                    onChange={(e) => setMode(e.target.value)}
-                  >
-                    <option value="mixed">Mixed practice</option>
-                    {availableModes.map((s) => (
-                      <option value={s} key={s}>
-                        {s === 'conjugation'
-                          ? 'Verb transformation'
-                          : s[0].toUpperCase() + s.slice(1)}
-                      </option>
-                    ))}
-                  </select>
-                  <button
-                    className="primary"
-                    disabled={busy || !availableModes.length}
-                    onClick={() =>
-                      page === 'numbers'
-                        ? setNumberTool('range')
-                        : startPractice(page === 'notes' ? 'notes' : current?.id)
-                    }
-                  >
-                    {page === 'grammar' ? 'Mixed grammar practice' : 'Practice'}{' '}
-                    <ArrowRight size={16} />
-                  </button>
-                  {page === 'grammar' && (
-                    <button
-                      className="secondary"
-                      disabled={busy}
-                      onClick={() => startPractice(undefined, 'study-particle-fill')}
-                    >
-                      Particle practice <ArrowRight size={16} />
-                    </button>
-                  )}
-                </div>
-              </div>
+            {!topicBooks[page] && page !== 'vocabulary' && (
+              <div className="book-practice-actions">{renderPracticeControls()}</div>
             )}
           </div>
         )}
         {renderBookContents()}
       </>
+    );
+  }
+  function renderPracticeControls() {
+    return (
+      <div className="practice-controls">
+        {page === 'numbers' && (
+          <button className="secondary" onClick={() => setNumberTool('converter')}>
+            Convert number
+          </button>
+        )}
+        <select aria-label="Practice type" value={mode} onChange={(e) => setMode(e.target.value)}>
+          <option value="mixed">Mixed practice</option>
+          {availableModes.map((s) => (
+            <option value={s} key={s}>
+              {s === 'conjugation' ? 'Verb transformation' : s[0].toUpperCase() + s.slice(1)}
+            </option>
+          ))}
+        </select>
+        <button
+          className="primary"
+          disabled={busy || !availableModes.length}
+          onClick={() =>
+            page === 'numbers'
+              ? setNumberTool('range')
+              : startPractice(page === 'notes' ? 'notes' : current?.id)
+          }
+        >
+          {page === 'grammar' ? 'Mixed grammar practice' : 'Practice'} <ArrowRight size={16} />
+        </button>
+        {page === 'grammar' && (
+          <button
+            className="secondary"
+            disabled={busy}
+            onClick={() => startPractice(undefined, 'study-particle-fill')}
+          >
+            Particle practice <ArrowRight size={16} />
+          </button>
+        )}
+      </div>
     );
   }
   function renderBookContents() {
@@ -534,7 +506,7 @@ export default function Notebook() {
             </button>
           </div>
         )}
-        <div className="filter-bar">
+        <div className={'filter-bar' + (page === 'vocabulary' ? ' vocabulary-toolbar' : '')}>
           <label className="search-field">
             <Search size={17} />
             <input
@@ -564,7 +536,7 @@ export default function Notebook() {
               <option key={t}>{t}</option>
             ))}
           </select>
-          {page !== 'kanji' && (
+          {page !== 'kanji' && page !== 'vocabulary' && (
             <select aria-label="Filter tag" value={tag} onChange={(e) => setTag(e.target.value)}>
               <option value="all">All tags</option>
               {[...new Set(inBook.flatMap((e) => e.tags))]
@@ -574,6 +546,7 @@ export default function Notebook() {
                 ))}
             </select>
           )}
+          {page === 'vocabulary' && renderPracticeControls()}
         </div>
         {page === 'vocabulary' && tag === 'Verb' && (
           <p>Showing verbs / actions. Choose a topic to narrow them down.</p>

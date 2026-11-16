@@ -454,3 +454,16 @@
     stroke-dashoffset: 0;
   }
 }
+
+@media (max-width: 650px) {
+  .vocabulary-toolbar > select {
+    max-width: none;
+  }
+  .vocabulary-toolbar .practice-controls {
+    width: 100%;
+    margin-left: 0;
+  }
+  .vocabulary-toolbar .practice-controls select {
+    max-width: none;
+  }
+}
