@@ -1,8 +1,9 @@
+import { verbExercises, verbExercise } from './verb-practice.ts';
 import type { Entry } from '../content/content.ts';
 import { topicBookFor } from '../guides/topic-books.ts';
 import { tenseTopicFor } from '../guides/tense-topics.ts';
 import practiceSources from '../../../public/guides/practice-sources.json' with { type: 'json' };
-export type Skill = 'recognition' | 'reading' | 'meaning' | 'writing' | 'grammar';
+export type Skill = 'recognition' | 'reading' | 'meaning' | 'writing' | 'grammar' | 'conjugation';
 export type Question = {
   id: string;
   entryId: string;
@@ -27,7 +28,7 @@ export function skillsFor(e: Entry, hasStrokes: boolean): Skill[] {
     return ['reading', 'meaning', ...(hasStrokes ? ['writing' as Skill] : [])];
   if (e.kind === 'adjectives' || e.kind === 'numbers')
     return e.exercise ? ['reading', 'meaning', 'grammar'] : ['reading', 'meaning'];
-  return ['reading', 'meaning'];
+  return verbExercises(e).length ? ['reading', 'meaning', 'conjugation'] : ['reading', 'meaning'];
 }
 export function entryInBook(e: Entry, book: string) {
   if (book === 'vocabulary') return e.kind === 'vocabulary' && e.level !== 'Foundation';
@@ -67,6 +68,7 @@ export function makePractice(
     word?: string;
     mode?: 'guided' | 'mixed';
     previousQuestionIds?: string[];
+    verbTarget?: string;
   } = {},
   random = Math.random,
 ): Question[] {
@@ -126,7 +128,17 @@ export function makePractice(
     for (const skill of skillsFor(e, strokeIds.includes(e.japanese)).filter(
       (s) => !options.skill || s === options.skill,
     )) {
-      if (skill === 'grammar' && e.exercises?.length) {
+      if (skill === 'conjugation') {
+        for (const exercise of verbExercises(e).filter(
+          (ex) => !options.verbTarget || ex.id === options.verbTarget,
+        ))
+          questions.push({
+            id: e.id + ':conjugation:' + exercise.id,
+            entryId: e.id,
+            skill,
+            word: exercise.id,
+          });
+      } else if (skill === 'grammar' && e.exercises?.length) {
         for (const exercise of e.exercises.filter((x) => !x.alternate))
           questions.push({
             id: e.id + ':' + exercise.id,
@@ -214,6 +226,7 @@ function timeMeaningAliases(meaning: string): string[] {
   return [...aliases, ...(common[meaning] || [])];
 }
 export function answerFor(e: Entry, skill: Skill, word?: string, exerciseId?: string): string[] {
+  if (skill === 'conjugation') return verbExercise(e, word)?.answers ?? [];
   if (exerciseId)
     return skill === 'grammar' ? e.exercises?.find((x) => x.id === exerciseId)?.answers || [] : [];
   if (word && skill === 'reading')

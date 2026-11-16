@@ -1,6 +1,12 @@
+import { verbExercise, verbTargets } from '../lib/practice/verb-practice';
 import { useMemo, useState } from 'react';
 import type { Entry } from '../lib/content/content';
-import { practiceRound, withAlternate, type Question } from '../lib/practice/learning';
+import {
+  makePractice,
+  practiceRound,
+  withAlternate,
+  type Question,
+} from '../lib/practice/learning';
 import { api } from '../lib/api/api';
 import {
   PracticeFinished,
@@ -30,6 +36,7 @@ export default function Practice({
   const [queue, setQueue] = useState(questions);
   const [endless, setEndless] = useState(false);
   const [practiceType, setPracticeType] = useState('all');
+  const [verbTarget, setVerbTarget] = useState('all');
   const [index, setIndex] = useState(0);
   const [answer, setAnswer] = useState('');
   const [selected, setSelected] = useState<number[]>([]);
@@ -40,7 +47,10 @@ export default function Practice({
   const [readingRevealed, setReadingRevealed] = useState(false);
   const question = queue[index];
   const entry = entries.find((entry) => entry.id === question?.entryId);
-  const exercise = entry?.exercises?.find((item) => item.id === question?.exerciseId);
+  const exercise =
+    entry && question?.skill === 'conjugation'
+      ? verbExercise(entry, question.word)
+      : entry?.exercises?.find((item) => item.id === question?.exerciseId);
   const tiles = useMemo(
     () => practiceTiles(exercise, entry, question?.id ?? ''),
     [question?.id, exercise, entry],
@@ -85,9 +95,20 @@ export default function Practice({
     setSelected([]);
     setResult(null);
   }
+  function verbRound(target: string) {
+    const ids = new Set(questions.filter((q) => q.skill === 'conjugation').map((q) => q.entryId));
+    const round = makePractice(
+      entries.filter((e) => ids.has(e.id)),
+      [],
+      { skill: 'conjugation', verbTarget: target },
+    );
+    if (round.length > 1 && round[0].id === question?.id) round.push(round.shift()!);
+    return round;
+  }
   function next() {
     if (endless && index + 1 >= queue.length) {
-      setQueue(practiceRound(entries, questions, practiceType, question?.id));
+      const round = practiceRound(entries, questions, practiceType, question?.id);
+      setQueue(verbTarget === 'all' ? round : verbRound(verbTarget));
       setIndex(0);
     } else setIndex((index) => index + 1);
     clearAnswer();
@@ -116,6 +137,39 @@ export default function Practice({
   return (
     <>
       <div className="practice-modifiers">
+        {questions.some((q) => q.skill === 'conjugation') && (
+          <label>
+            Verb form{' '}
+            <select
+              aria-label="Verb form"
+              value={verbTarget}
+              disabled={busy}
+              onChange={(event) => {
+                const target = event.target.value;
+                setVerbTarget(target);
+                setPracticeType('all');
+                setQueue(target === 'all' ? questions : verbRound(target));
+                setIndex(0);
+                clearAnswer();
+                setError('');
+                setHadMistake(false);
+                setReadingRevealed(false);
+              }}
+            >
+              <option value="all">
+                {questions.every((q) => q.skill === 'conjugation')
+                  ? 'All verb forms'
+                  : 'All questions'}
+              </option>
+              {verbTargets.map(([id, label]) => (
+                <option key={id} value={id}>
+                  {label}
+                </option>
+              ))}
+            </select>
+          </label>
+        )}
+
         <label>
           <input
             type="checkbox"
@@ -140,6 +194,7 @@ export default function Practice({
               onChange={(event) => {
                 const type = event.target.value;
                 setPracticeType(type);
+                setVerbTarget('all');
                 setQueue(type === 'all' ? questions : practiceRound(entries, questions, type));
                 setIndex(0);
                 clearAnswer();

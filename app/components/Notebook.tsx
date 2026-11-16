@@ -395,7 +395,9 @@ export default function Notebook() {
                     <option value="mixed">Mixed practice</option>
                     {availableModes.map((s) => (
                       <option value={s} key={s}>
-                        {s[0].toUpperCase() + s.slice(1)}
+                        {s === 'conjugation'
+                          ? 'Verb transformation'
+                          : s[0].toUpperCase() + s.slice(1)}
                       </option>
                     ))}
                   </select>

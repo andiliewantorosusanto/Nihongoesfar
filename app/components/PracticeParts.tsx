@@ -1,3 +1,5 @@
+import { toRomaji } from '../lib/japanese/romaji';
+import { verbExercise } from '../lib/practice/verb-practice';
 import { Check, X, SkipForward, Eye, EyeOff } from 'lucide-react';
 import type { Entry } from '../lib/content/content';
 import type { ReadingText, GuidedExercise } from '../lib/content/types';
@@ -116,6 +118,7 @@ function questionReading(entry: Entry, question: Question, target: string) {
 }
 
 function questionLabel(question: Question, exercise?: GuidedExercise) {
+  if (question.skill === 'conjugation') return 'Verb transformation';
   if (!exercise) return question.skill;
   if (exercise.alternate) return 'Extra practice';
   return exercise.type.replaceAll('-', ' ');
@@ -124,6 +127,7 @@ function questionLabel(question: Question, exercise?: GuidedExercise) {
 function answerPlaceholder(entry: Entry, question: Question, testsReading: boolean) {
   if (testsReading && entry.kind === 'kana') return 'Type the sound in romaji or kana…';
   if (testsReading) return 'Type the reading in kana…';
+  if (question.skill === 'conjugation') return 'Kanji, kana, or romaji…';
   if (question.skill === 'grammar') return 'Japanese or kana is accepted…';
   return 'Type your answer…';
 }
@@ -187,6 +191,11 @@ function QuestionPrompt({
         <div className="practice-context jp">
           <Reading value={exercise.context} show={preferences.furigana} />
         </div>
+      )}
+      {question.skill === 'conjugation' && (
+        <p>
+          {entry.meaning} · {entry.reading} ({toRomaji(entry.reading)})
+        </p>
       )}
       {(['reading', 'meaning', 'writing'].includes(question.skill) || testsReading) && (
         <div className="practice-character jp">
@@ -478,7 +487,10 @@ function AnswerForm(props: AnswerProps) {
     onAnswer,
     onSubmit,
   } = props;
-  const exercise = entry.exercises?.find((item) => item.id === question.exerciseId);
+  const exercise =
+    question.skill === 'conjugation'
+      ? verbExercise(entry, question.word)
+      : entry.exercises?.find((item) => item.id === question.exerciseId);
   if (question.skill === 'writing')
     return <Writing key={question.id} character={entry.japanese} review onDone={onSubmit} />;
   return (
